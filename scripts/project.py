@@ -39,8 +39,8 @@ class ProjectConfig:
         return self.cache_dir / "periods"
 
     @property
-    def output_dir(self) -> Path:
-        return self.project_dir / "output"
+    def reports_dir(self) -> Path:
+        return self.project_dir / "reports"
 
     @property
     def summaries_dir(self) -> Path:
@@ -84,7 +84,7 @@ class ProjectConfig:
 
     @property
     def audit_output(self) -> Path:
-        return self.output_dir / "credit-audit.md"
+        return self.reports_dir / "credit-audit.md"
 
     @property
     def gitlab_project(self) -> str:
@@ -140,8 +140,26 @@ class ProjectConfig:
     def ensure_dirs(self) -> None:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.periods_dir.mkdir(parents=True, exist_ok=True)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self._migrate_output_dir()
+        self.reports_dir.mkdir(parents=True, exist_ok=True)
         self.summaries_dir.mkdir(parents=True, exist_ok=True)
+
+    def _migrate_output_dir(self) -> None:
+        """Rename legacy output/ to reports/."""
+        legacy = self.project_dir / "output"
+        if not legacy.is_dir():
+            return
+        target = self.reports_dir
+        if not target.exists():
+            legacy.rename(target)
+            return
+        for path in legacy.iterdir():
+            dest = target / path.name
+            if dest.exists():
+                continue
+            path.rename(dest)
+        if not any(legacy.iterdir()):
+            legacy.rmdir()
 
     @classmethod
     def load(cls, machine_name: str, root: Path = REPO_ROOT) -> ProjectConfig:
@@ -209,6 +227,6 @@ def add_project_argument(parser: argparse.ArgumentParser) -> None:
         metavar="NAME",
         help=(
             f"Drupal project machine name (default: {DEFAULT_PROJECT}). "
-            "Reads {NAME}/config.json; cache and output live under {NAME}/."
+            "Reads {NAME}/config.json; cache and reports live under {NAME}/."
         ),
     )

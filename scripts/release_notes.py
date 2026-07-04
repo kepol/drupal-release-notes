@@ -521,22 +521,6 @@ def milestone_for_closed_at(
     return next_release_version(releases[-1].version)
 
 
-def period_slug_for_milestone(
-    milestone: str,
-    releases: list[ReleaseBoundary],
-) -> str | None:
-    """Report period slug for a release milestone title."""
-    for index, release in enumerate(releases):
-        if release.version != milestone:
-            continue
-        if index == 0:
-            return period_slug(None, milestone)
-        return period_slug(releases[index - 1].version, milestone)
-    if releases and milestone == next_release_version(releases[-1].version):
-        return period_slug(releases[-1].version, None)
-    return None
-
-
 def index_included(included: list[dict[str, Any]]) -> dict[str, dict[str, dict[str, Any]]]:
     indexed: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
     for item in included:
@@ -1388,8 +1372,10 @@ def parse_args() -> argparse.Namespace:
         "--period",
         default="all",
         help=(
-            "Report period slug to generate, or 'all'. "
-            "Slugs are derived from Drupal.org releases (e.g. beta2-to-now)."
+            "Report period to generate, or 'all'. "
+            "With period_source milestones: GitLab milestone title "
+            '(e.g. "1.0.0-beta3"). With releases: slug from Drupal.org tags '
+            "(e.g. beta2-to-now)."
         ),
     )
     parser.add_argument(
@@ -1419,21 +1405,24 @@ def main() -> int:
         PERIOD_SOURCE_MILESTONES,
         build_period_context,
         build_report_periods,
+        migrate_legacy_period_files,
+        select_report_periods,
     )
 
     client = ApiClient(project)
     ctx = build_period_context(project, client)
+    migrate_legacy_period_files(project, ctx)
     releases = ctx.releases
     periods = build_report_periods(ctx, project)
     if ctx.source == PERIOD_SOURCE_MILESTONES:
         print(
-            "Release notes use GitLab milestone assignment "
+            "Release notes use GitLab milestone titles "
             f"({ctx.source}); close date is used only when unassigned."
         )
     release_summary = ", ".join(release.version for release in releases)
     print(f"Release boundaries from Drupal.org: {release_summary}")
     if args.period != "all":
-        matching = [period for period in periods if period.slug == args.period]
+        matching = select_report_periods(args.period, periods)
         if not matching:
             available = ", ".join(period.slug for period in periods)
             print(
@@ -1488,7 +1477,7 @@ def main() -> int:
             ctx=ctx,
         )
         markdown = render_markdown(report, project, exclude_from_lists=exclude_from_lists)
-        output_path = project.output_dir / f"{period.slug}.md"
+        output_path = project.reports_dir / f"{period.slug}.md"
         output_path.write_text(markdown)
         print(f"Wrote {output_path}")
 

@@ -28,8 +28,8 @@ from period_context import (
     build_period_context,
     milestone_period_summary,
     milestone_scope_iids,
+    milestone_window_for,
     milestone_titles,
-    resolve_release_notes_period,
     suggest_milestone_for_close,
     window_label_for,
 )
@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help=(
             "With --list-by-milestone, also write "
-            "{project}/output/milestone-assignments.md."
+            "{project}/reports/milestone-assignments.md."
         ),
     )
     add_project_argument(parser)
@@ -182,10 +182,10 @@ def resolve_issue_state(
     }
 
 
-def release_notes_info(project: ProjectConfig, period_slug: str) -> tuple[str, int | None]:
-    relative = f"{project.machine_name}/output/{period_slug}.md"
-    path = project.output_dir / f"{period_slug}.md"
-    period_cache = project.periods_dir / f"{period_slug}.json"
+def release_notes_info(project: ProjectConfig, milestone: str) -> tuple[str, int | None]:
+    relative = f"{project.machine_name}/reports/{milestone}.md"
+    path = project.reports_dir / f"{milestone}.md"
+    period_cache = project.periods_dir / f"{milestone}.json"
     if period_cache.exists():
         count = len(load_json(period_cache, {}).get("issues", []))
         return relative, count
@@ -197,8 +197,8 @@ def release_notes_info(project: ProjectConfig, period_slug: str) -> tuple[str, i
     return relative, None
 
 
-def load_period_issue_iids(project: ProjectConfig, period_slug: str) -> set[int]:
-    period_cache = project.periods_dir / f"{period_slug}.json"
+def load_period_issue_iids(project: ProjectConfig, milestone: str) -> set[int]:
+    period_cache = project.periods_dir / f"{milestone}.json"
     if not period_cache.exists():
         return set()
     return {
@@ -626,8 +626,8 @@ def list_by_milestone(
     print(output, end="")
 
     if args.write_output:
-        path = project.output_dir / "milestone-assignments.md"
-        project.output_dir.mkdir(parents=True, exist_ok=True)
+        path = project.reports_dir / "milestone-assignments.md"
+        project.reports_dir.mkdir(parents=True, exist_ok=True)
         path.write_text(output)
         print(f"Wrote {path}", file=sys.stderr)
 
@@ -660,6 +660,9 @@ def main() -> int:
     )
 
     ctx = build_period_context(project, client)
+    from period_context import migrate_legacy_period_files
+
+    migrate_legacy_period_files(project, ctx)
     releases = ctx.releases
 
     records = load_cached_audit_records(project)
@@ -702,12 +705,11 @@ def main() -> int:
     )
     pending = filter_by_iids(pending, scope_iids)
 
-    period_slug = resolve_release_notes_period(args.milestone, ctx)
-    if period_slug:
-        notes_path, notes_count = release_notes_info(project, period_slug)
-        period_iids = load_period_issue_iids(project, period_slug)
+    if milestone_window_for(args.milestone, ctx):
+        notes_path, notes_count = release_notes_info(project, args.milestone)
+        period_iids = load_period_issue_iids(project, args.milestone)
     else:
-        notes_path = f"{project.machine_name}/output/(no matching period)"
+        notes_path = f"{project.machine_name}/reports/(no matching milestone)"
         notes_count = None
         period_iids = set()
 
@@ -786,10 +788,10 @@ def main() -> int:
 
     if notes_count is not None:
         notes_line = f"Release notes: {notes_path} ({notes_count} credited)"
-    elif period_slug:
+    elif milestone_window_for(args.milestone, ctx):
         notes_line = f"Release notes: {notes_path} (not generated yet)"
     else:
-        notes_line = f"Release notes: no matching period for {args.milestone!r}"
+        notes_line = f"Release notes: no GitLab milestone {args.milestone!r}"
 
     notes_details: list[str] = []
     if release_notes_gaps:

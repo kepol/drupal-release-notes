@@ -2,7 +2,7 @@
 
 Tools for Drupal contrib release preparation: release notes, contributor credit audits, and pre-release status checks.
 
-Each project has its own directory (`{project}/cache/`, `{project}/output/`, etc.). The default project is [ai_context](https://www.drupal.org/project/ai_context) (Context Control Center).
+Each project has its own directory (`{project}/cache/`, `{project}/reports/`, etc.). The default project is [ai_context](https://www.drupal.org/project/ai_context) (Context Control Center).
 
 | Script | Purpose |
 |--------|---------|
@@ -50,8 +50,8 @@ python3 scripts/credit_audit.py
 
 Output:
 
-- `ai_context/output/{period}.md` — release notes
-- `ai_context/output/credit-audit.md` — credit review report
+- `ai_context/reports/{milestone}.md` — release notes
+- `ai_context/reports/credit-audit.md` — credit review report
 
 After cloning this repo, cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab.
 
@@ -62,7 +62,7 @@ Use `--project MACHINE_NAME` to target another project directory (see [Adding a 
 Create a directory named after the Drupal.org project machine name:
 
 ```bash
-mkdir -p my_module/cache my_module/output my_module/summaries
+mkdir -p my_module/cache my_module/reports my_module/summaries
 ```
 
 Add `my_module/config.json`:
@@ -101,14 +101,14 @@ Optional filters when using `"milestones"`:
 
 `milestone_close_grace_hours` (default `24`) adds extra time after each boundary — after a **release tag** (`releases` mode) or after a milestone **due date** (`milestones` mode).
 
-Release **notes** follow `period_source` when set to `"milestones"`: each period maps to a GitLab milestone title, and credited issues are included when **assigned to that milestone** on GitLab. Close date within the milestone window is used only for issues with no milestone assignment. Rebuild after reassigning issues or changing milestone dates:
+Release **notes** follow `period_source` when set to `"milestones"`: one report per GitLab milestone title (files like `reports/1.0.0-beta1.md`), and credited issues are included when **assigned to that milestone** on GitLab.
 
 ```bash
-python3 scripts/release_notes.py --period alpha1-to-beta1 --rebuild-frozen
+python3 scripts/release_notes.py --period "1.0.0-beta1" --rebuild-frozen
 python3 scripts/credit_audit.py --refresh   # refresh milestone assignments in cache
 ```
 
-With `"releases"` (default), release notes use Drupal.org tag timestamps and GitLab close dates for issue placement.
+With `"releases"` (default), release notes use Drupal.org tag windows and release-derived slugs (e.g. `beta2-to-now.md`).
 
 Find the project node ID (`drupal_org_nid`) on the project page URL, e.g. `https://www.drupal.org/project/my_module` → view source or API, or from `https://www.drupal.org/api-d7/node.json?type=project&field_project_machine_name=my_module`.
 
@@ -127,7 +127,26 @@ python3 scripts/credit_audit.py --project my_module
 
 ## Report periods
 
-Period boundaries are loaded automatically from tagged releases on [drupal.org/project/ai_context/releases](https://www.drupal.org/project/ai_context/releases) via the Drupal.org API. Dev branches such as `1.0.x-dev` are ignored; only static tagged releases are used.
+Behavior depends on `period_source` in `{project}/config.json`.
+
+### Milestones mode (`period_source: "milestones"`)
+
+One report per matching GitLab milestone. **Filenames and `--period` use the milestone title** (e.g. `1.0.0-beta1`, `1.0.0-beta3`):
+
+| File | Milestone |
+|------|-----------|
+| `reports/1.0.0-alpha.md` | `1.0.0-alpha` |
+| `reports/1.0.0-beta1.md` | `1.0.0-beta1` |
+| `reports/1.0.0-beta2.md` | `1.0.0-beta2` |
+| `reports/1.0.0-beta3.md` | `1.0.0-beta3` (current) |
+
+Credited issues are included when assigned to that milestone on GitLab. Milestone start/due dates (plus grace) define the release window for unassigned issues and for `release_prep.py` scoping.
+
+When you add a new GitLab milestone, the next run picks it up automatically. No Drupal.org slug mapping.
+
+### Releases mode (`period_source: "releases"`, default)
+
+Period boundaries come from tagged releases on [drupal.org/project/ai_context/releases](https://www.drupal.org/project/ai_context/releases). Dev branches such as `1.0.x-dev` are ignored.
 
 Each run prints the release versions found, for example:
 
@@ -135,7 +154,7 @@ Each run prints the release versions found, for example:
 Release boundaries from Drupal.org: 0.1.0-alpha1, 1.0.0-beta1, 1.0.0-beta2
 ```
 
-For each consecutive pair of releases, the script creates a report period. The most recent release always gets an open-ended `{last}-to-now` period. Today that looks like:
+For each consecutive pair of releases, the script creates a report period. The most recent release always gets an open-ended `{last}-to-now` period:
 
 | Slug | Period |
 |------|--------|
@@ -144,21 +163,17 @@ For each consecutive pair of releases, the script creates a report period. The m
 | `beta1-to-beta2` | 1.0.0-beta1 → 1.0.0-beta2 |
 | `beta2-to-now` | 1.0.0-beta2 → now (incremental) |
 
-When a new release is published (e.g. `1.0.0-beta3`), the next run automatically:
+When a new release is published (e.g. `1.0.0-beta3`), the next run automatically adds frozen `beta2-to-beta3` and opens `beta3-to-now`.
 
-1. Adds a frozen `beta2-to-beta3` period (credits finalized between those release dates)
-2. Opens a new current period `beta3-to-now`
-3. Writes `ai_context/output/beta2-to-beta3.md` and updates `ai_context/output/beta3-to-now.md`
+Issues are placed by GitLab close date within each release tag window.
 
-No script changes are required for new releases — only publish the release on Drupal.org, then re-run the report.
+### Caching
 
-Issues are assigned to a period based on `field_last_status_change` from the contribution record (when credit was finalized).
-
-Completed periods are cached in `{project}/cache/periods/` and only recomputed with `--rebuild-frozen`. The current `{last}-to-now` period is regenerated on every run.
+Completed periods are cached in `{project}/cache/periods/` and only recomputed with `--rebuild-frozen`. The current (non-frozen) period is regenerated on every run.
 
 ## Output format
 
-Each `{project}/output/{period}.md` file includes:
+Each `{project}/reports/{milestone}.md` file includes:
 
 1. **Credited issue total** at the top
 2. **Summary paragraph** (custom or auto-generated from counts)
@@ -185,21 +200,21 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 # 2. Review and resolve credit issues interactively
 python3 scripts/credit_audit.py --review
 
-# 3. Refresh release notes for the current period
-python3 scripts/release_notes.py --period beta2-to-now --refresh-records --refresh-issues
+# 3. Refresh release notes for the current milestone
+python3 scripts/release_notes.py --period "1.0.0-beta3" --refresh-records --refresh-issues
 ```
 
 After the release is **published** on Drupal.org:
 
 ```bash
-# Refresh credits and issue labels; script picks up the new release automatically
+# Refresh credits and issue labels
 python3 scripts/release_notes.py --refresh-records --refresh-issues
 
-# Or only the current open period (slug changes to beta3-to-now after beta3 exists)
-python3 scripts/release_notes.py --period beta3-to-now --refresh-records --refresh-issues
+# Or only the current milestone
+python3 scripts/release_notes.py --period "1.0.0-beta3" --refresh-records --refresh-issues
 
-# Optional: regenerate AI summary prompt for the new period
-python3 scripts/release_notes.py --period beta3-to-now --write-summary-prompts
+# Optional: regenerate AI summary prompt
+python3 scripts/release_notes.py --period "1.0.0-beta3" --write-summary-prompts
 ```
 
 ### Full rebuild (rare)
@@ -208,10 +223,10 @@ python3 scripts/release_notes.py --period beta3-to-now --write-summary-prompts
 python3 scripts/release_notes.py --refresh-records --refresh-issues --rebuild-frozen
 ```
 
-### One period only
+### One milestone only
 
 ```bash
-python3 scripts/release_notes.py --period alpha1-to-beta1
+python3 scripts/release_notes.py --period "1.0.0-beta1"
 ```
 
 ## Release status
@@ -227,7 +242,7 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 | **Open in milestone** | Open issues still in the milestone (with link to milestone page) |
 | **Credit audit pending** | In-scope issues needing credit review; includes `--review` command when > 0 |
 | **QA issue** | Looks for a `CCC {release} QA` issue (e.g. `CCC beta3 QA`) |
-| **Release notes** | Report for this milestone's release period (not always the current `-to-now` period) |
+| **Release notes** | Report for this GitLab milestone (e.g. `reports/1.0.0-beta3.md`) |
 | **Duplicate d.o records** | In-scope issues with multiple Drupal.org nodes |
 | **Missing contribution records** | In-scope closed issues with no record on new.drupal.org (action needed) |
 | **No record expected** | In-scope issues with `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` — no record by design |
@@ -249,7 +264,7 @@ Release status: ai_context (1.0.0-beta3)
 
 * QA issue: opened (https://git.drupalcode.org/project/ai_context/-/work_items/3586296)
 
-* Release notes: ai_context/output/beta2-to-now.md (83 issues)
+* Release notes: ai_context/reports/1.0.0-beta3.md (83 credited)
 
 * Duplicate d.o records: 1
     #3586238: Fix PHPStan failures in CCC — https://new.drupal.org/node/11454931, https://new.drupal.org/node/11454932
@@ -285,7 +300,7 @@ python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta1"
 python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta2"
 ```
 
-Each line includes the issue number, title, close date, **current** GitLab milestone (often `(none)`), and URL. Output is also written to `{project}/output/milestone-assignments.md` with `--write-output`.
+Each line includes the issue number, title, close date, **current** GitLab milestone (often `(none)`), and URL. Output is also written to `{project}/reports/milestone-assignments.md` with `--write-output`.
 
 Create the missing milestones on GitLab, then assign issues from the list.
 
@@ -302,7 +317,7 @@ Issues labeled `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` on Gi
 Project managers who only add labels (not code) can be listed in `{project}/ignore_uncredited_people.txt`. If they are the **only** uncredited people on an issue, it is omitted from `--review`.
 
 ```bash
-# Generate ai_context/output/credit-audit.md (uses cache after first run)
+# Generate ai_context/reports/credit-audit.md (uses cache after first run)
 python3 scripts/credit_audit.py
 
 # Step through each issue interactively
@@ -466,7 +481,7 @@ ai_context/               Example project (Context Control Center)
     closed_issues.json        Closed GitLab issues for audit comparison
     issues.json               Cached GitLab issue metadata
     periods/                  Frozen period report JSON
-  output/                   Generated markdown release notes
+  reports/                  Generated markdown reports (release notes, credit audit)
     credit-audit.md           Credit review report
   summaries/
     {period}.prompt.md        AI prompt input (optional to regenerate)

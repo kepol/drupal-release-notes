@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T23:38:12.731752+00:00",
+  "generated_at": "2026-07-04T23:55:49.126319+00:00",
   "issues": [
     {
       "category": "task",
@@ -3329,7 +3329,7 @@
   "period": {
     "end": "2026-04-15T23:59:59+00:00",
     "frozen": true,
-    "slug": "alpha1-to-beta1",
+    "slug": "1.0.0-beta1",
     "start": "2025-12-14T00:00:00+00:00",
     "title": "1.0.0-beta1"
   },

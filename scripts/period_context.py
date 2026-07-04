@@ -361,18 +361,17 @@ def build_report_periods(ctx: PeriodContext, project: ProjectConfig) -> list[Any
         return build_periods(ctx.releases, project)
 
     periods: list[ReportPeriod] = []
-    seen_slugs: set[str] = set()
+    seen_titles: set[str] = set()
     for index, window in enumerate(ctx.windows):
-        slug = resolve_release_notes_period(window.title, ctx)
-        if not slug or slug in seen_slugs:
+        if window.title in seen_titles:
             continue
-        seen_slugs.add(slug)
+        seen_titles.add(window.title)
         start = window.start
         end = window.end + ctx.grace if window.end else None
         is_current = index == len(ctx.windows) - 1 and end is None
         periods.append(
             ReportPeriod(
-                slug=slug,
+                slug=window.title,
                 title=window.title,
                 start=start,
                 end=end,
@@ -478,36 +477,65 @@ def enrich_closed_issues_milestones(
     return enriched
 
 
-def resolve_release_notes_period(milestone: str, ctx: PeriodContext) -> str | None:
-    """Map a milestone title to a release-notes period slug."""
-    from release_notes import period_slug, period_slug_for_milestone
+def migrate_legacy_period_files(project: ProjectConfig, ctx: PeriodContext) -> None:
+    """Rename release-slug cache/output files to GitLab milestone titles."""
+    from release_notes import load_json, save_json
 
-    slug = period_slug_for_milestone(milestone, ctx.releases)
-    if slug:
-        return slug
+    if ctx.source != PERIOD_SOURCE_MILESTONES:
+        return
 
-    window = next((item for item in ctx.windows if item.title == milestone), None)
-    if not window or not ctx.releases:
-        return None
+    renames: dict[str, str] = {}
+    for path in sorted(project.periods_dir.glob("*.json")):
+        data = load_json(path, {})
+        period_data = data.get("period") or {}
+        title = period_data.get("title")
+        old_slug = path.stem
+        if not title or old_slug == title:
+            continue
+        renames[old_slug] = title
+        period_data["slug"] = title
+        data["period"] = period_data
+        new_path = project.periods_dir / f"{title}.json"
+        save_json(new_path, data)
+        path.unlink()
+        print(f"Migrated period cache {old_slug}.json → {title}.json")
 
-    releases = ctx.releases
-    grace = ctx.grace
+    for old_slug, title in renames.items():
+        for directory, extensions in [
+            (project.reports_dir, [".md"]),
+            (project.summaries_dir, [".prompt.md", ".txt"]),
+        ]:
+            directory.mkdir(parents=True, exist_ok=True)
+            for ext in extensions:
+                old_path = directory / f"{old_slug}{ext}"
+                new_path = directory / f"{title}{ext}"
+                if not old_path.exists():
+                    continue
+                if new_path.exists():
+                    old_path.unlink()
+                else:
+                    old_path.rename(new_path)
+                    print(f"Migrated {old_path.relative_to(project.project_dir)} → {new_path.name}")
+                if ext == ".prompt.md" and new_path.exists():
+                    text = new_path.read_text()
+                    updated = text.replace(
+                        f"summaries/{old_slug}.txt",
+                        f"summaries/{title}.txt",
+                    )
+                    if updated != text:
+                        new_path.write_text(updated)
 
-    if window.start and window.start >= releases[-1].created:
-        return period_slug(releases[-1].version, None)
 
-    if window.end:
-        closest_index = min(
-            range(len(releases)),
-            key=lambda index: abs(
-                (releases[index].created - window.end).total_seconds()
-            ),
-        )
-        if closest_index == 0:
-            return period_slug(None, releases[0].version)
-        return period_slug(
-            releases[closest_index - 1].version,
-            releases[closest_index].version,
-        )
-
-    return period_slug(releases[-1].version, None)
+def select_report_periods(
+    requested: str,
+    periods: list[Any],
+) -> list[Any]:
+    """Match a --period value to built report periods."""
+    if requested == "all":
+        return periods
+    matching = [
+        period
+        for period in periods
+        if period.slug == requested or period.title == requested
+    ]
+    return matching

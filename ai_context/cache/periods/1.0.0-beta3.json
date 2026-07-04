@@ -2262,7 +2262,7 @@
   "period": {
     "end": "2026-07-07T23:59:59+00:00",
     "frozen": true,
-    "slug": "beta2-to-now",
+    "slug": "1.0.0-beta3",
     "start": "2026-05-11T00:00:00+00:00",
     "title": "1.0.0-beta3"
   },

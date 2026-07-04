@@ -1722,7 +1722,7 @@
   "period": {
     "end": "2026-05-12T23:59:59+00:00",
     "frozen": true,
-    "slug": "beta1-to-beta2",
+    "slug": "1.0.0-beta2",
     "start": "2026-04-15T00:00:00+00:00",
     "title": "1.0.0-beta2"
   },
