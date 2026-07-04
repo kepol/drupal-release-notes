@@ -17,15 +17,13 @@ python3 -m pip install -r requirements.txt
 
 Issue and merge request comments need a [git.drupalcode.org personal access token](https://git.drupalcode.org/-/user_settings/personal_access_tokens) with `read_api` scope.
 
-**Recommended — OS keychain (encrypted, not plaintext):**
+Store it in your OS keychain (encrypted, not plaintext in the repo):
 
 ```bash
 python3 credit_audit.py --store-gitlab-token
 ```
 
 Your input is hidden. On macOS the token is stored in Keychain Access under service `issue-credit-report`. Remove it with `--clear-gitlab-token`.
-
-**Fallbacks** (less secure): gitignored `.gitlab-token` file (see `.gitlab-token.example`) or `GITLAB_TOKEN` in the environment for CI.
 
 ## Quick start
 

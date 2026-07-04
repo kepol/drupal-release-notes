@@ -297,7 +297,7 @@ def prompt_and_store_gitlab_token() -> None:
 
 
 def load_gitlab_token() -> str | None:
-    """Load a GitLab token from keychain, local file, or environment."""
+    """Load a GitLab token from the OS keychain or environment."""
     token = load_gitlab_token_from_keyring()
     if token:
         return token
