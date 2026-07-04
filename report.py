@@ -25,6 +25,12 @@ GITLAB_PROJECT = "project/ai_context"
 GITLAB_PROJECT_ENCODED = quote(GITLAB_PROJECT, safe="")
 ISSUE_URL = "https://git.drupalcode.org/project/ai_context/-/work_items/{iid}"
 
+CONTRIBUTOR_INCLUDE = (
+    "field_contributors,field_contributors.field_contributor_user,"
+    "field_contributors.field_contributor_organisation,"
+    "field_contributors.field_contributor_customer"
+)
+
 ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / "cache"
 OUTPUT_DIR = ROOT / "output"
@@ -46,6 +52,7 @@ FEATURE_CATEGORIES = {"feature"}
 BUG_CATEGORIES = {"bug"}
 OTHER_CATEGORIES = {"plan", "task", "support", "discuss"}
 HIGH_PRIORITIES = {"critical", "major"}
+IGNORED_CONTRIBUTOR_USERNAMES = {"system message", "system_message"}
 SPRINT_PLANNING_TITLE = re.compile(
     r"roadmap updates, sprint planning, and issue triage",
     re.IGNORECASE,
@@ -318,11 +325,12 @@ def index_included(included: list[dict[str, Any]]) -> dict[str, dict[str, dict[s
     return indexed
 
 
-def parse_credited_contributors(
+def parse_contributor_entries(
     record: dict[str, Any],
     included_index: dict[str, dict[str, dict[str, Any]]],
 ) -> list[dict[str, Any]]:
-    contributors: list[dict[str, Any]] = []
+    """Parse all contributor paragraphs, including uncredited entries."""
+    entries: list[dict[str, Any]] = []
     contributor_refs = record.get("relationships", {}).get("field_contributors", {}).get("data", [])
 
     for ref in contributor_refs:
@@ -330,8 +338,6 @@ def parse_credited_contributors(
         if not paragraph:
             continue
         attrs = paragraph.get("attributes", {})
-        if not attrs.get("field_credit_this_contributor"):
-            continue
 
         user_name = None
         user_ref = paragraph.get("relationships", {}).get("field_contributor_user", {}).get("data")
@@ -353,10 +359,132 @@ def parse_credited_contributors(
             if org and org.get("attributes", {}).get("title"):
                 orgs.append(normalize_org(org["attributes"]["title"]))
 
-        if user_name or orgs:
-            contributors.append({"user": user_name, "orgs": orgs})
+        if not user_name and not orgs:
+            continue
+        if user_name and user_name in IGNORED_CONTRIBUTOR_USERNAMES:
+            continue
 
+        entries.append(
+            {
+                "user": user_name,
+                "orgs": orgs,
+                "credited": bool(attrs.get("field_credit_this_contributor")),
+            }
+        )
+
+    return entries
+
+
+def parse_credited_contributors(
+    record: dict[str, Any],
+    included_index: dict[str, dict[str, dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    contributors: list[dict[str, Any]] = []
+    for entry in parse_contributor_entries(record, included_index):
+        if not entry["credited"]:
+            continue
+        if entry["user"] or entry["orgs"]:
+            contributors.append({"user": entry["user"], "orgs": entry["orgs"]})
     return contributors
+
+
+def contribution_record_list_url() -> str:
+    return (
+        "https://new.drupal.org/jsonapi/node/contribution_record"
+        f"?filter[field_project_name]={PROJECT_MACHINE_NAME}"
+        "&filter[field_draft]=0"
+        "&fields[node--contribution_record]=drupal_internal__nid,title,"
+        "field_last_status_change,field_source_link"
+        "&page[limit]=50"
+    )
+
+
+def fetch_contribution_record_detail(
+    client: ApiClient,
+    uuid: str,
+) -> tuple[dict[str, Any], dict[str, dict[str, dict[str, Any]]]]:
+    """Fetch one record with contributors.
+
+    Paginated list responses can return stale contributor paragraphs on
+    new.drupal.org, so always load contributor data per record.
+    """
+    url = (
+        "https://new.drupal.org/jsonapi/node/contribution_record/"
+        f"{uuid}?include={CONTRIBUTOR_INCLUDE}"
+    )
+    payload = client.get_jsonapi(url)
+    return payload["data"], index_included(payload.get("included", []))
+
+
+def summarize_contribution_record(
+    record: dict[str, Any],
+    included_index: dict[str, dict[str, dict[str, Any]]],
+) -> dict[str, Any] | None:
+    attrs = record.get("attributes", {})
+    closed_raw = attrs.get("field_last_status_change")
+    source = attrs.get("field_source_link", {}).get("uri")
+    if not closed_raw or not source:
+        return None
+
+    iid = issue_iid_from_link(source)
+    if not iid:
+        return None
+
+    entries = parse_contributor_entries(record, included_index)
+    credited = sorted(
+        {entry["user"] for entry in entries if entry["credited"] and entry.get("user")}
+    )
+    uncredited = sorted(
+        {entry["user"] for entry in entries if not entry["credited"] and entry.get("user")}
+    )
+    contributors = parse_credited_contributors(record, included_index)
+    nid = attrs.get("drupal_internal__nid")
+    return {
+        "uuid": record["id"],
+        "nid": nid,
+        "title": attrs.get("title", f"Issue #{iid}"),
+        "closed_at": closed_raw,
+        "source_link": source,
+        "iid": iid,
+        "contributors": contributors,
+        "credited": credited,
+        "uncredited": uncredited,
+        "record_url": f"https://new.drupal.org/node/{nid}" if nid else None,
+    }
+
+
+def fetch_project_contribution_records(
+    client: ApiClient,
+    *,
+    require_credits: bool = False,
+) -> list[dict[str, Any]]:
+    print("Listing contribution records from new.drupal.org...")
+    stubs: list[dict[str, Any]] = []
+    url: str | None = contribution_record_list_url()
+    page = 0
+    while url:
+        payload = client.get_jsonapi(url)
+        stubs.extend(payload.get("data", []))
+        page += 1
+        print(f"  list page {page}: {len(stubs)} records")
+        url = payload.get("links", {}).get("next", {}).get("href")
+        time.sleep(0.1)
+
+    print(f"Fetching contributor details for {len(stubs)} records...")
+    parsed_records: list[dict[str, Any]] = []
+    for index, stub in enumerate(stubs, start=1):
+        record, included_index = fetch_contribution_record_detail(client, stub["id"])
+        summary = summarize_contribution_record(record, included_index)
+        if summary is None:
+            continue
+        if require_credits and not summary["contributors"]:
+            continue
+        parsed_records.append(summary)
+        if index % 25 == 0 or index == len(stubs):
+            print(f"  detail {index}/{len(stubs)}: kept {len(parsed_records)}")
+        time.sleep(0.05)
+
+    return parsed_records
 
 
 def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]]:
@@ -370,52 +498,19 @@ def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[st
             return cached
 
     print("Fetching contribution records from new.drupal.org...")
-    start_url = (
-        "https://new.drupal.org/jsonapi/node/contribution_record"
-        f"?filter[field_project_name]={PROJECT_MACHINE_NAME}"
-        "&filter[field_draft]=0"
-        "&include=field_contributors,field_contributors.field_contributor_user,"
-        "field_contributors.field_contributor_organisation,field_contributors.field_contributor_customer"
-        "&page[limit]=50"
-    )
-
-    parsed_records: list[dict[str, Any]] = []
-    url: str | None = start_url
-    page = 0
-    while url:
-        payload = client.get_jsonapi(url)
-        included_index = index_included(payload.get("included", []))
-        for record in payload.get("data", []):
-            attrs = record.get("attributes", {})
-            closed_raw = attrs.get("field_last_status_change")
-            source = attrs.get("field_source_link", {}).get("uri")
-            if not closed_raw or not source:
-                continue
-
-            contributors = parse_credited_contributors(record, included_index)
-            if not contributors:
-                continue
-
-            iid = issue_iid_from_link(source)
-            if not iid:
-                continue
-
-            parsed_records.append(
-                {
-                    "uuid": record["id"],
-                    "nid": attrs.get("drupal_internal__nid"),
-                    "title": attrs.get("title", f"Issue #{iid}"),
-                    "closed_at": closed_raw,
-                    "source_link": source,
-                    "iid": iid,
-                    "contributors": contributors,
-                }
-            )
-
-        page += 1
-        print(f"  page {page}: {len(parsed_records)} credited records so far")
-        url = payload.get("links", {}).get("next", {}).get("href")
-        time.sleep(0.1)
+    summaries = fetch_project_contribution_records(client, require_credits=True)
+    parsed_records = [
+        {
+            "uuid": summary["uuid"],
+            "nid": summary["nid"],
+            "title": summary["title"],
+            "closed_at": summary["closed_at"],
+            "source_link": summary["source_link"],
+            "iid": summary["iid"],
+            "contributors": summary["contributors"],
+        }
+        for summary in summaries
+    ]
 
     save_json(RECORDS_CACHE, parsed_records)
     save_json(

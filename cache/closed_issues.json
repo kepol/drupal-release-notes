@@ -1,0 +1,4856 @@
+{
+  "3545824": {
+    "closed_at": "2026-01-25T19:36:54.000Z",
+    "iid": 3545824,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Create demo Context Control Center for Vienna 2025",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3545824"
+  },
+  "3547033": {
+    "closed_at": "2026-02-16T20:31:33.000Z",
+    "iid": 3547033,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "AI CCC markdown editor integration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547033"
+  },
+  "3547034": {
+    "closed_at": "2026-02-19T00:07:04.000Z",
+    "iid": 3547034,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "[Spike] Research URL support for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547034"
+  },
+  "3547035": {
+    "closed_at": "2026-02-18T23:57:17.000Z",
+    "iid": 3547035,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "[Spike] Research PDF upload support for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547035"
+  },
+  "3547037": {
+    "closed_at": "2026-04-01T23:45:03.000Z",
+    "iid": 3547037,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add AI CCC documentation for beta1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547037"
+  },
+  "3547038": {
+    "closed_at": "2026-04-02T22:55:02.000Z",
+    "iid": 3547038,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update AI CCC project page for beta1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547038"
+  },
+  "3547042": {
+    "closed_at": "2026-01-12T00:34:59.000Z",
+    "iid": 3547042,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation",
+      "why::duplicate"
+    ],
+    "title": "Update AI CCC project page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547042"
+  },
+  "3547050": {
+    "closed_at": "2026-01-21T00:04:05.000Z",
+    "iid": 3547050,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add text filtering on AI CCC context agents page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547050"
+  },
+  "3547892": {
+    "closed_at": "2025-10-07T21:44:02.000Z",
+    "iid": 3547892,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547892"
+  },
+  "3549081": {
+    "closed_at": "2025-10-22T01:59:02.000Z",
+    "iid": 3549081,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Group AI Context menu items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549081"
+  },
+  "3549082": {
+    "closed_at": "2025-10-14T07:09:05.000Z",
+    "iid": 3549082,
+    "labels": [
+      "category::feature",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Within the Context Pools UI, link the Context for the forms to see the details of each context",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549082"
+  },
+  "3549748": {
+    "closed_at": "2025-10-22T01:59:02.000Z",
+    "iid": 3549748,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "The max tokens calculation is hardcoded + use tokenizer for AI CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549748"
+  },
+  "3549752": {
+    "closed_at": "2025-10-25T08:31:22.000Z",
+    "iid": 3549752,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "The selector service does not use the maxOverride at all for AI CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549752"
+  },
+  "3549849": {
+    "closed_at": "2026-03-29T18:00:03.000Z",
+    "iid": 3549849,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "dcd2026",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Update CCC readme in prep for beta1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549849"
+  },
+  "3550034": {
+    "closed_at": "2026-02-06T07:07:12.000Z",
+    "iid": 3550034,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add AI context item usage data and page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550034"
+  },
+  "3550892": {
+    "closed_at": "2025-10-25T08:33:31.000Z",
+    "iid": 3550892,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Show description instead of id in the AI Contexts listing page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550892"
+  },
+  "3550895": {
+    "closed_at": "2025-10-23T08:34:01.000Z",
+    "iid": 3550895,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC tags should be required",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550895"
+  },
+  "3550896": {
+    "closed_at": "2026-02-05T16:02:06.000Z",
+    "iid": 3550896,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "[Discuss] Usage of context tags taxonomy for categorization",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550896"
+  },
+  "3552972": {
+    "closed_at": "2025-10-25T08:31:57.000Z",
+    "iid": 3552972,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Wrong dependency definition in info.yml causes composer to not install",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3552972"
+  },
+  "3554221": {
+    "closed_at": "2026-02-19T00:34:33.000Z",
+    "iid": 3554221,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Setting context pools acts differently between agent form and context pool form",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554221"
+  },
+  "3554277": {
+    "closed_at": "2025-10-25T08:31:41.000Z",
+    "iid": 3554277,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "ai_context_ai_function_call_info_alter does not work with contexts only set via \"always_include\"",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554277"
+  },
+  "3554616": {
+    "closed_at": "2025-11-22T05:17:31.000Z",
+    "iid": 3554616,
+    "labels": [
+      "category::bug",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Setting AI contexts has no effect on some agents",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554616"
+  },
+  "3555225": {
+    "closed_at": "2025-11-23T20:19:11.000Z",
+    "iid": 3555225,
+    "labels": [
+      "category::feature",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add a single global context, making Vienna Driesnote AI demos much simpler",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3555225"
+  },
+  "3556878": {
+    "closed_at": "2025-11-22T06:24:33.000Z",
+    "iid": 3556878,
+    "labels": [
+      "category::task",
+      "dx",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update AI Context module with doc blocks and check coding standards",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556878"
+  },
+  "3556881": {
+    "closed_at": "2026-04-29T17:38:30.694Z",
+    "iid": 3556881,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "user interface"
+    ],
+    "title": "[Discuss] Finalize name for AI Context module (Context Control Center)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556881"
+  },
+  "3556908": {
+    "closed_at": "2026-02-19T06:35:56.000Z",
+    "iid": 3556908,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "needs testing steps",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Do not hardcode English language prompts in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556908"
+  },
+  "3556909": {
+    "closed_at": "2026-04-01T00:40:03.000Z",
+    "iid": 3556909,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "[Discuss] Decouple AI Context from AI Agents",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556909"
+  },
+  "3557700": {
+    "closed_at": "2025-11-22T06:13:32.000Z",
+    "iid": 3557700,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "AI Context architecture meeting 13 Nov 2025",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3557700"
+  },
+  "3557719": {
+    "closed_at": "2026-02-06T06:28:31.000Z",
+    "iid": 3557719,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "ux",
+      "version::v1.0.x-dev"
+    ],
+    "title": "[Spike] Research AI Context categories",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3557719"
+  },
+  "3558583": {
+    "closed_at": "2025-11-22T06:07:51.000Z",
+    "iid": 3558583,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "AI Context UX meeting 18 Nov 2025",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3558583"
+  },
+  "3558814": {
+    "closed_at": "2026-02-19T02:59:23.000Z",
+    "iid": 3558814,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "[Spike] CCC 1.0 brainstorming",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3558814"
+  },
+  "3559379": {
+    "closed_at": "2026-02-08T00:29:51.000Z",
+    "iid": 3559379,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "[Meta] CCC rearchitecture and roadmap",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559379"
+  },
+  "3559380": {
+    "closed_at": "2025-12-30T03:19:04.000Z",
+    "iid": 3559380,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Document current CCC architecture Nov 2025",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559380"
+  },
+  "3559384": {
+    "closed_at": "2026-02-16T03:39:40.000Z",
+    "iid": 3559384,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Add multilingual support to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559384"
+  },
+  "3559388": {
+    "closed_at": "2025-11-22T07:35:30.000Z",
+    "iid": 3559388,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::management"
+    ],
+    "title": "Update CCC project components to be more useful and add tracker to issues",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559388"
+  },
+  "3559504": {
+    "closed_at": "2026-01-07T04:24:04.000Z",
+    "iid": 3559504,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "ux",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Toggling between AI Context local tasks losing content",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559504"
+  },
+  "3563000": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563000,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Switch the AiContext config entity to a content entity",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563000"
+  },
+  "3563008": {
+    "closed_at": "2025-12-13T16:34:04.000Z",
+    "iid": 3563008,
+    "labels": [
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Tag ai_context for v2025 repo before rearchitecture",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563008"
+  },
+  "3563036": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563036,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Introduce more granular permissions to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563036"
+  },
+  "3563038": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563038,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Move CCC routes to higher level to be more similar to admin/content",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563038"
+  },
+  "3563043": {
+    "closed_at": "2026-01-01T15:24:02.000Z",
+    "iid": 3563043,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "ux",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Add toolbar icon to CCC top level menu item",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563043"
+  },
+  "3563049": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563049,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add draft support to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563049"
+  },
+  "3563052": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563052,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add revision support to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563052"
+  },
+  "3563089": {
+    "closed_at": "2026-01-21T00:32:28.000Z",
+    "iid": 3563089,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add revision comparison diff support for context item revisions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563089"
+  },
+  "3563100": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563100,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Minor cleanup on CCC pools page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563100"
+  },
+  "3563107": {
+    "closed_at": "2026-02-27T01:58:48.000Z",
+    "iid": 3563107,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Remove \"pool\" and \"pools\" from CCC code",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563107"
+  },
+  "3563108": {
+    "closed_at": "2025-12-30T05:24:04.000Z",
+    "iid": 3563108,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context item edit form to better align with core",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563108"
+  },
+  "3563127": {
+    "closed_at": "2026-01-29T18:34:20.000Z",
+    "iid": 3563127,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add created date to context item entity",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563127"
+  },
+  "3563357": {
+    "closed_at": "2025-12-22T22:41:58.000Z",
+    "iid": 3563357,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add duplicate context item feature like Drupal CMS has for nodes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563357"
+  },
+  "3563360": {
+    "closed_at": "2026-01-06T05:34:01.000Z",
+    "iid": 3563360,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add scheduling options for context items like nodes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563360"
+  },
+  "3563361": {
+    "closed_at": "2026-01-06T07:24:03.000Z",
+    "iid": 3563361,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add moderation workflow support for context items like nodes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563361"
+  },
+  "3563362": {
+    "closed_at": "2026-01-01T05:44:04.000Z",
+    "iid": 3563362,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "ux",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add toolbar dropdown menu for context items like nodes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563362"
+  },
+  "3563365": {
+    "closed_at": "2026-01-01T18:04:01.000Z",
+    "iid": 3563365,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "ux",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Add tagify styling to taxonomy fields for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563365"
+  },
+  "3563366": {
+    "closed_at": "2026-03-06T03:27:10.000Z",
+    "iid": 3563366,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Create nicer context item view page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563366"
+  },
+  "3563371": {
+    "closed_at": "2026-01-06T20:59:03.000Z",
+    "iid": 3563371,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::minor",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Switch context items page to use a view",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563371"
+  },
+  "3563372": {
+    "closed_at": "2026-01-01T15:19:02.000Z",
+    "iid": 3563372,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Differentiate between description and purpose for context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563372"
+  },
+  "3563975": {
+    "closed_at": "2025-12-18T18:36:09.000Z",
+    "iid": 3563975,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code",
+      "why::worksAsDesigned"
+    ],
+    "title": "Something in CCC is causing node form to not show some fields",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563975"
+  },
+  "3564629": {
+    "closed_at": "2026-03-06T06:08:16.000Z",
+    "iid": 3564629,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::ideas"
+    ],
+    "title": "[Discuss] Analyze Cognizant MAKER approach for CCC context granularity, selection, and flagging",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564629"
+  },
+  "3564653": {
+    "closed_at": "2026-01-06T21:04:03.000Z",
+    "iid": 3564653,
+    "labels": [
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Create CCC moderation workflow and scheduling local tasks",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564653"
+  },
+  "3564667": {
+    "closed_at": "2026-01-10T19:05:38.000Z",
+    "iid": 3564667,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "novice",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add a composer.json to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564667"
+  },
+  "3564691": {
+    "closed_at": "2026-01-06T21:44:03.000Z",
+    "iid": 3564691,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Create settings and sub-settings hierarchy for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564691"
+  },
+  "3564706": {
+    "closed_at": "2026-02-25T05:39:20.000Z",
+    "iid": 3564706,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "[Meta] Context Scope feature",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564706"
+  },
+  "3564709": {
+    "closed_at": "2026-01-07T04:24:04.000Z",
+    "iid": 3564709,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Switch global context to checkbox on context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564709"
+  },
+  "3564714": {
+    "closed_at": "2026-01-17T06:30:35.000Z",
+    "iid": 3564714,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Allow context scoped to entities in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564714"
+  },
+  "3566811": {
+    "closed_at": "2026-01-20T22:45:58.000Z",
+    "iid": 3566811,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::management"
+    ],
+    "title": "Add AI usage to CCC issue template",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566811"
+  },
+  "3566842": {
+    "closed_at": "2026-01-25T19:59:53.000Z",
+    "iid": 3566842,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "ux",
+      "version::v1.0.x-dev"
+    ],
+    "title": "[META] Add overviews, better descriptions, and help text in CCC for better UX",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566842"
+  },
+  "3566852": {
+    "closed_at": "2026-01-17T06:59:59.000Z",
+    "iid": 3566852,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Add CCC overview page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566852"
+  },
+  "3566858": {
+    "closed_at": "2026-01-16T22:15:49.000Z",
+    "iid": 3566858,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context items page with description and link when there are empty results",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566858"
+  },
+  "3566861": {
+    "closed_at": "2026-01-20T23:24:07.000Z",
+    "iid": 3566861,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update CCC general settings page descriptions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566861"
+  },
+  "3566862": {
+    "closed_at": "2026-01-20T20:34:56.000Z",
+    "iid": 3566862,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context items settings page descriptions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566862"
+  },
+  "3566863": {
+    "closed_at": "2026-01-21T00:03:10.000Z",
+    "iid": 3566863,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update CCC agents settings page description and table",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566863"
+  },
+  "3566865": {
+    "closed_at": "2026-01-20T23:00:12.000Z",
+    "iid": 3566865,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context item edit form field descriptions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566865"
+  },
+  "3566866": {
+    "closed_at": "2026-01-21T00:53:00.000Z",
+    "iid": 3566866,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update agent context edit form description, help text, and table",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566866"
+  },
+  "3567568": {
+    "closed_at": "2026-02-06T04:25:26.000Z",
+    "iid": 3567568,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::ideas"
+    ],
+    "title": "[Discuss] Look at Progressive Disclosure for Context items using a progressive disclosure inspired by Claude Skills",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567568"
+  },
+  "3567570": {
+    "closed_at": "2026-04-01T01:50:03.000Z",
+    "iid": 3567570,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::plan",
+      "demo",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "[Meta] Context Control Center MVP demo",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567570"
+  },
+  "3567571": {
+    "closed_at": "2026-03-04T18:24:10.000Z",
+    "iid": 3567571,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "demo",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC MVP Demo: Create draft FinDrop context",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567571"
+  },
+  "3567791": {
+    "closed_at": "2026-02-19T00:25:56.000Z",
+    "iid": 3567791,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "demo",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "[Spike] CCC MCP server integration PoC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567791"
+  },
+  "3568086": {
+    "closed_at": "2026-01-21T01:08:19.000Z",
+    "iid": 3568086,
+    "labels": [
+      "category::task",
+      "priority::minor",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "why::duplicate"
+    ],
+    "title": "CCC testing ai usage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568086"
+  },
+  "3568115": {
+    "closed_at": "2026-01-29T18:37:58.000Z",
+    "iid": 3568115,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "New context items do not default to published when setting is chosen",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568115"
+  },
+  "3568177": {
+    "closed_at": "2026-01-21T00:33:33.000Z",
+    "iid": 3568177,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Error when reinstalling after creating CCC taxonomy terms",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568177"
+  },
+  "3568384": {
+    "closed_at": "2026-02-05T15:39:05.000Z",
+    "iid": 3568384,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::ideas"
+    ],
+    "title": "[Discuss] Context graphs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568384"
+  },
+  "3568673": {
+    "closed_at": "2026-02-25T05:06:53.000Z",
+    "iid": 3568673,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add context scope base code and use case context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568673"
+  },
+  "3568674": {
+    "closed_at": "2026-02-20T07:52:25.000Z",
+    "iid": 3568674,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Switch context tags to be a context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568674"
+  },
+  "3568676": {
+    "closed_at": "2026-02-20T07:50:12.000Z",
+    "iid": 3568676,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add site section context scope for MVP",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568676"
+  },
+  "3568677": {
+    "closed_at": "2026-02-20T07:52:04.000Z",
+    "iid": 3568677,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Allow agents to subscribe to context scope",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568677"
+  },
+  "3569310": {
+    "closed_at": "2026-06-24T15:59:00.816Z",
+    "iid": 3569310,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "[Meta] Context source plugin feature (context from PDF/MD/TXT/URL)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569310"
+  },
+  "3569311": {
+    "closed_at": "2026-02-25T05:24:13.000Z",
+    "iid": 3569311,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "[Meta] Subcontext feature in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569311"
+  },
+  "3569312": {
+    "closed_at": "2026-02-06T06:21:29.000Z",
+    "iid": 3569312,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add parent / child relationship for context",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569312"
+  },
+  "3569313": {
+    "closed_at": "2026-02-05T16:08:48.000Z",
+    "iid": 3569313,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Create design for context list UI to include subcontext",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569313"
+  },
+  "3569514": {
+    "closed_at": "2026-02-06T06:23:55.000Z",
+    "iid": 3569514,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::ideas"
+    ],
+    "title": "[Spike] Research what Google Analytics data can be used in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569514"
+  },
+  "3569776": {
+    "closed_at": "2026-03-28T02:45:03.000Z",
+    "iid": 3569776,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI UX",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Adopt AI Core shared UI library in CCC and escape data before rendering",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569776"
+  },
+  "3569967": {
+    "closed_at": "2026-03-06T02:10:33.000Z",
+    "iid": 3569967,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "[Discuss] Figure out which CCC features can be optional for MVP",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569967"
+  },
+  "3570933": {
+    "closed_at": "2026-02-20T07:52:56.000Z",
+    "iid": 3570933,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add language context scope for MVP",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3570933"
+  },
+  "3570934": {
+    "closed_at": "2026-02-05T15:48:16.000Z",
+    "iid": 3570934,
+    "labels": [
+      "category::feature",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code",
+      "why::wontFix"
+    ],
+    "title": "Add content type context scope for MVP",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3570934"
+  },
+  "3570940": {
+    "closed_at": "2026-02-20T07:51:40.000Z",
+    "iid": 3570940,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Convert global option to context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3570940"
+  },
+  "3571006": {
+    "closed_at": "2026-02-06T07:12:17.000Z",
+    "iid": 3571006,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::bug",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Clean up CCC install process and composer.json file",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571006"
+  },
+  "3571188": {
+    "closed_at": "2026-02-15T19:46:37.000Z",
+    "iid": 3571188,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Error on installation: The state 'draft' already exists in workflow",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571188"
+  },
+  "3571195": {
+    "closed_at": "2026-02-06T07:10:27.000Z",
+    "iid": 3571195,
+    "labels": [
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Schema errors from scheduler after installing CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571195"
+  },
+  "3571299": {
+    "closed_at": "2026-02-19T04:47:20.000Z",
+    "iid": 3571299,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Add D11 CCC install steps on the project page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571299"
+  },
+  "3571354": {
+    "closed_at": "2026-05-03T22:17:25.635Z",
+    "iid": 3571354,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Create CCC example module that adds scope plugin and extends existing plugins",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571354"
+  },
+  "3571392": {
+    "closed_at": "2026-02-04T00:08:24.000Z",
+    "iid": 3571392,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::bug",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Toolbar menu issue in Drupal 11.3 when CCC installed",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571392"
+  },
+  "3571393": {
+    "closed_at": "2026-02-19T00:20:52.000Z",
+    "iid": 3571393,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add GitLab CI linting to CCC project",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571393"
+  },
+  "3571788": {
+    "closed_at": "2026-02-19T05:20:11.000Z",
+    "iid": 3571788,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update subcontext feature to specify required vs conditional selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571788"
+  },
+  "3571794": {
+    "closed_at": "2026-03-06T02:12:49.000Z",
+    "iid": 3571794,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context list UI to include subcontext and scope",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571794"
+  },
+  "3571909": {
+    "closed_at": "2026-03-06T03:28:56.000Z",
+    "iid": 3571909,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::alpha",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update context selection logic to handle subcontext",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571909"
+  },
+  "3572067": {
+    "closed_at": "2026-02-19T04:42:15.000Z",
+    "iid": 3572067,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Sprint 3 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572067"
+  },
+  "3572160": {
+    "closed_at": "2026-02-20T07:53:20.000Z",
+    "iid": 3572160,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Switch target entities to be a context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572160"
+  },
+  "3572891": {
+    "closed_at": "2026-02-20T01:26:51.000Z",
+    "iid": 3572891,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Create docs for Cursor and Claude code quality for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572891"
+  },
+  "3573708": {
+    "closed_at": "2026-03-06T04:18:16.000Z",
+    "iid": 3573708,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add optional debug logging to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573708"
+  },
+  "3573709": {
+    "closed_at": "2026-02-20T18:23:17.000Z",
+    "iid": 3573709,
+    "labels": [
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "sprint candidate",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code",
+      "why::outdated"
+    ],
+    "title": "Fix phpunit test errors in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573709"
+  },
+  "3573713": {
+    "closed_at": "2026-03-06T04:19:56.000Z",
+    "iid": 3573713,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Full architecture review of CCC in prep for 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573713"
+  },
+  "3573715": {
+    "closed_at": "2026-05-07T00:59:47.320Z",
+    "iid": 3573715,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "Full UX review of CCC in prep for rc1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573715"
+  },
+  "3573717": {
+    "closed_at": "2026-03-06T06:10:37.000Z",
+    "iid": 3573717,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::miscellaneous"
+    ],
+    "title": "Add automated testing to CCC in prep for 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573717"
+  },
+  "3573719": {
+    "closed_at": "2026-03-05T19:52:29.000Z",
+    "iid": 3573719,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Sprint 4 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573719"
+  },
+  "3574136": {
+    "closed_at": "2026-04-21T03:35:19.000Z",
+    "iid": 3574136,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Go through Chicago CCC test cases and make sure they work",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574136"
+  },
+  "3574359": {
+    "closed_at": "2026-04-06T02:30:01.000Z",
+    "iid": 3574359,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Refactor context selection logic",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574359"
+  },
+  "3574413": {
+    "closed_at": "2026-06-24T16:01:58.984Z",
+    "iid": 3574413,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add PDF context source plugin to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574413"
+  },
+  "3574414": {
+    "closed_at": "2026-06-24T16:06:41.693Z",
+    "iid": 3574414,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add webpage (URL) context source plugin to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574414"
+  },
+  "3574420": {
+    "closed_at": "2026-02-25T05:51:53.000Z",
+    "iid": 3574420,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "novice",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add Drupal CMS 2.0 support to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574420"
+  },
+  "3574445": {
+    "closed_at": "2026-03-24T17:25:02.000Z",
+    "iid": 3574445,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "needs manual testing",
+      "novice",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Add Drupal CMS 2.0 CCC install steps on the project page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574445"
+  },
+  "3574904": {
+    "closed_at": "2026-03-30T02:20:03.000Z",
+    "iid": 3574904,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to remove N+1 patterns: batch children & term loads",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574904"
+  },
+  "3574905": {
+    "closed_at": "2026-05-01T22:39:38.477Z",
+    "iid": 3574905,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574905"
+  },
+  "3574906": {
+    "closed_at": "2026-03-30T02:00:03.000Z",
+    "iid": 3574906,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to move key form validations into entity-level validators / presave",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574906"
+  },
+  "3574907": {
+    "closed_at": "2026-04-29T06:42:25.692Z",
+    "iid": 3574907,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574907"
+  },
+  "3574908": {
+    "closed_at": "2026-03-31T19:05:03.000Z",
+    "iid": 3574908,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to convert entity HTML helpers to data-only methods and render arrays",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574908"
+  },
+  "3574910": {
+    "closed_at": "2026-04-06T02:40:02.000Z",
+    "iid": 3574910,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC: Refactor to harden function-call plugin / runtime surface (GetAiRelevantContext)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574910"
+  },
+  "3574923": {
+    "closed_at": "2026-02-25T05:33:13.000Z",
+    "iid": 3574923,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "novice",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Remove _ESLINT_EXTRA in GitLab CI to avoid error in CCC project",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574923"
+  },
+  "3574928": {
+    "closed_at": "2026-06-24T16:03:47.064Z",
+    "iid": 3574928,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add MD context source plugin to CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574928"
+  },
+  "3574936": {
+    "closed_at": "2026-03-06T06:35:55.000Z",
+    "iid": 3574936,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add search or filters to context listing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574936"
+  },
+  "3575590": {
+    "closed_at": "2026-04-01T01:30:03.000Z",
+    "iid": 3575590,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "dx",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3575590"
+  },
+  "3575595": {
+    "closed_at": "2026-03-06T02:48:00.000Z",
+    "iid": 3575595,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Format context item markdown on view page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3575595"
+  },
+  "3576089": {
+    "closed_at": "2026-03-06T22:32:14.000Z",
+    "iid": 3576089,
+    "labels": [
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code",
+      "why::outdated"
+    ],
+    "title": "Remove support for D10 for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576089"
+  },
+  "3576092": {
+    "closed_at": "2026-04-29T17:30:17.671Z",
+    "iid": 3576092,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "what::planning"
+    ],
+    "title": "[Discuss] Subcontext scope vs parent scope",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576092"
+  },
+  "3576093": {
+    "closed_at": "2026-06-28T01:40:54.132Z",
+    "iid": 3576093,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Fix eslint errors in GitLab UI even when pipeline is green",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576093"
+  },
+  "3576094": {
+    "closed_at": "2026-04-21T06:28:28.000Z",
+    "iid": 3576094,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Fix local ./lint.sh stylelint script errors for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576094"
+  },
+  "3576100": {
+    "closed_at": "2026-05-02T06:35:05.008Z",
+    "iid": 3576100,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::stable",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "[Discuss] CCC architecture audit decision log questions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576100"
+  },
+  "3576102": {
+    "closed_at": "2026-04-02T23:25:02.000Z",
+    "iid": 3576102,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::task",
+      "mvp",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Pre-beta security review in prep for CCC beta1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576102"
+  },
+  "3577087": {
+    "closed_at": "2026-04-01T01:40:02.000Z",
+    "iid": 3577087,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "demo",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC MVP Demo: Finalize FinDrop context",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577087"
+  },
+  "3577379": {
+    "closed_at": "2026-04-01T01:40:02.000Z",
+    "iid": 3577379,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Sprint 5 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577379"
+  },
+  "3577398": {
+    "closed_at": "2026-03-07T21:51:20.000Z",
+    "iid": 3577398,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Update CCC readme for new mdxeditor location",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577398"
+  },
+  "3577425": {
+    "closed_at": "2026-04-21T21:49:19.000Z",
+    "iid": 3577425,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::fixed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "[Discuss] Possible styling updates for context listing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577425"
+  },
+  "3577426": {
+    "closed_at": "2026-03-24T17:20:02.000Z",
+    "iid": 3577426,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Redo context item duplicate feature without ECA",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577426"
+  },
+  "3577427": {
+    "closed_at": "2026-03-29T03:05:02.000Z",
+    "iid": 3577427,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update context item revision diff feature for progressive enhancement",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577427"
+  },
+  "3577428": {
+    "closed_at": "2026-04-21T19:36:21.000Z",
+    "iid": 3577428,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Update context item target entities for progressive enhancement",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577428"
+  },
+  "3577429": {
+    "closed_at": "2026-06-27T02:18:06.616Z",
+    "iid": 3577429,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "AI Sprint 9",
+      "blocker::stable",
+      "category::feature",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Move scheduler feature to submodule or progressive enhancement",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577429"
+  },
+  "3577512": {
+    "closed_at": "2026-03-29T03:15:01.000Z",
+    "iid": 3577512,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Duplicate Revisions tabs appear when editing an AI Context Item.",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577512"
+  },
+  "3577644": {
+    "closed_at": "2026-04-14T20:50:03.000Z",
+    "iid": 3577644,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "CCC beta1 release planning",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577644"
+  },
+  "3577656": {
+    "closed_at": "2026-03-24T19:10:04.000Z",
+    "iid": 3577656,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "novice",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Remove zero badge when context has no subcontext",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577656"
+  },
+  "3577657": {
+    "closed_at": "2026-05-11T18:31:35.654Z",
+    "iid": 3577657,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "what::documentation"
+    ],
+    "title": "CCC beta blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577657"
+  },
+  "3577658": {
+    "closed_at": "2026-04-14T20:50:03.000Z",
+    "iid": 3577658,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC beta1 video",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577658"
+  },
+  "3577661": {
+    "closed_at": "2026-04-14T21:25:02.000Z",
+    "iid": 3577661,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC Chicago session slides",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577661"
+  },
+  "3577664": {
+    "closed_at": "2026-04-14T21:25:02.000Z",
+    "iid": 3577664,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC Chicago keynote slides",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577664"
+  },
+  "3577667": {
+    "closed_at": "2026-04-07T00:50:03.000Z",
+    "iid": 3577667,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Create CCC beta1 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577667"
+  },
+  "3577669": {
+    "closed_at": "2026-04-06T21:10:04.000Z",
+    "iid": 3577669,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "CCC beta1 QA",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577669"
+  },
+  "3577670": {
+    "closed_at": "2026-04-14T22:15:02.000Z",
+    "iid": 3577670,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "Chicago2026",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "CCC Chicago planning",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577670"
+  },
+  "3577745": {
+    "closed_at": "2026-03-28T22:45:02.000Z",
+    "iid": 3577745,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Context item revision comparison is missing some scope info",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577745"
+  },
+  "3578114": {
+    "closed_at": "2026-03-31T19:50:03.000Z",
+    "iid": 3578114,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Update context scope plugin manage link/url/route functionality",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3578114"
+  },
+  "3578386": {
+    "closed_at": "2026-03-28T03:30:01.000Z",
+    "iid": 3578386,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "Multiple entities can be set on the target entity reference autocomplete field but only 1 is saved",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3578386"
+  },
+  "3578657": {
+    "closed_at": "2026-03-29T21:15:03.000Z",
+    "iid": 3578657,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::alpha",
+      "category::bug",
+      "priority::critical",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Drupal 10: Error on /admin/ai/context/items/add: scheduler_content_moderation_integration module conflict",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3578657"
+  },
+  "3579234": {
+    "closed_at": "2026-03-30T03:25:02.000Z",
+    "iid": 3579234,
+    "labels": [
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Add context scope plugin target entities manage link",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579234"
+  },
+  "3579344": {
+    "closed_at": "2026-04-05T19:50:03.000Z",
+    "iid": 3579344,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Create CONTRIBUTORS.md for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579344"
+  },
+  "3579354": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3579354,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "Generate CCC beta1 release notes with contributing organizations and individuals",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579354"
+  },
+  "3579372": {
+    "closed_at": "2026-04-21T05:05:48.000Z",
+    "iid": 3579372,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Test error: \"The node_make_sticky_action plugin does not exist\" when running CCC tests locally",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579372"
+  },
+  "3579394": {
+    "closed_at": "2026-03-30T17:50:03.000Z",
+    "iid": 3579394,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "user interface",
+      "version::v1.0.x-dev"
+    ],
+    "title": "CCC icon doesn't show in vanilla Drupal 10 and Drupal 11 install",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579394"
+  },
+  "3579396": {
+    "closed_at": "2026-03-30T17:50:03.000Z",
+    "iid": 3579396,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "mvp",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC target entity types settings not working",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579396"
+  },
+  "3579841": {
+    "closed_at": "2026-04-01T00:35:03.000Z",
+    "iid": 3579841,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::bug",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Can't Apply Scheduler Patch",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841"
+  },
+  "3579857": {
+    "closed_at": "2026-03-31T19:20:03.000Z",
+    "iid": 3579857,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::task",
+      "demo",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::documentation"
+    ],
+    "title": "CCC beta1 features list and blurbs for demos and promotions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579857"
+  },
+  "3580063": {
+    "closed_at": "2026-06-08T16:24:20.457Z",
+    "iid": 3580063,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Publish the Docs to GitLab Pages",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3580063"
+  },
+  "3580400": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3580400,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "blocker::beta",
+      "category::bug",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "CCC mkdocs failing in CI pipeline",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3580400"
+  },
+  "3580910": {
+    "closed_at": "2026-06-12T23:16:28.840Z",
+    "iid": 3580910,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Improve config validation and use #config_target for settings form",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3580910"
+  },
+  "3581498": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3581498,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI-accelerated",
+      "Chicago2026",
+      "category::bug",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Required parameter '$logger_factory' missing in AiContextItemStorage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581498"
+  },
+  "3581501": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3581501,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "Chicago2026",
+      "category::bug",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "ai_context_install breaks existing config site installs (and probably recipes)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581501"
+  },
+  "3581533": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3581533,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "Chicago2026",
+      "category::feature",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Do not link to agent edit form unless the user has access",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581533"
+  },
+  "3582288": {
+    "closed_at": "2026-05-01T20:29:02.207Z",
+    "iid": 3582288,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "SystemPromptSubscriber re-injects full context on every agent loop iteration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582288"
+  },
+  "3582494": {
+    "closed_at": "2026-05-02T04:47:42.315Z",
+    "iid": 3582494,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "mvp",
+      "priority::normal",
+      "what::planning"
+    ],
+    "title": "Analyze CCC roadmap notes against issue queue",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582494"
+  },
+  "3582504": {
+    "closed_at": "2026-05-01T23:38:56.826Z",
+    "iid": 3582504,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "priority::normal",
+      "what::planning"
+    ],
+    "title": "Analyze CCC features and roadmap against context engineering best practices",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582504"
+  },
+  "3582536": {
+    "closed_at": "2026-04-16T20:20:02.000Z",
+    "iid": 3582536,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Sprint 6 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582536"
+  },
+  "3582544": {
+    "closed_at": "2026-04-16T20:00:04.000Z",
+    "iid": 3582544,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Fix PHPStan errors in CCC after 2.1.45 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582544"
+  },
+  "3582562": {
+    "closed_at": "2026-04-15T18:30:03.000Z",
+    "iid": 3582562,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Increase gitlab ci timeout for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582562"
+  },
+  "3582920": {
+    "closed_at": "2026-04-25T18:18:02.045Z",
+    "iid": 3582920,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "mvp",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add entity type and bundle context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3582920"
+  },
+  "3583319": {
+    "closed_at": "2026-04-21T21:55:16.000Z",
+    "iid": 3583319,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "priority::normal",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Drupal Developer Days CCC contribution planning",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3583319"
+  },
+  "3584775": {
+    "closed_at": "2026-06-12T17:46:59.948Z",
+    "iid": 3584775,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::feature",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Remove AiContextItemType",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3584775"
+  },
+  "3584838": {
+    "closed_at": "2026-04-25T19:59:24.620Z",
+    "iid": 3584838,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Add convenience API for non-agent programmatic context retrieval",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3584838"
+  },
+  "3585041": {
+    "closed_at": "2026-04-25T07:00:26.568Z",
+    "iid": 3585041,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "priority::normal",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "title": "Local tasks for scopes should be dynamically generated",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585041"
+  },
+  "3585850": {
+    "closed_at": "2026-05-02T05:23:11.966Z",
+    "iid": 3585850,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "Sprint 8 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585850"
+  },
+  "3585902": {
+    "closed_at": "2026-05-09T18:26:16.716Z",
+    "iid": 3585902,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "CCC beta2 release planning",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585902"
+  },
+  "3585917": {
+    "closed_at": "2026-04-25T07:01:25.877Z",
+    "iid": 3585917,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "what::miscellaneous"
+    ],
+    "title": "CCC beta testing at Drupal Dev Days (DDD) 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585917"
+  },
+  "3585920": {
+    "closed_at": "2026-05-11T04:01:10.389Z",
+    "iid": 3585920,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "what::management"
+    ],
+    "title": "Create CCC beta2 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585920"
+  },
+  "3586082": {
+    "closed_at": "2026-05-24T03:49:33.249Z",
+    "iid": 3586082,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Clean up follow-ups from target entity decoupling review",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586082"
+  },
+  "3586090": {
+    "closed_at": "2026-04-25T16:49:49.886Z",
+    "iid": 3586090,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Remove Scheduler content moderation integration CCC patch once a new release is available",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586090"
+  },
+  "3586091": {
+    "closed_at": "2026-04-21T20:42:41.000Z",
+    "iid": 3586091,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::planning"
+    ],
+    "title": "Review CCC todo comments for action items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586091"
+  },
+  "3586108": {
+    "closed_at": "2026-05-10T16:46:13.185Z",
+    "iid": 3586108,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Address todos in scope form rendering and persistence tests",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586108"
+  },
+  "3586109": {
+    "closed_at": "2026-05-08T21:34:10.521Z",
+    "iid": 3586109,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Address todos in CCC taxonomy entity type dependency in kernel tests",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586109"
+  },
+  "3586110": {
+    "closed_at": "2026-05-08T00:54:49.666Z",
+    "iid": 3586110,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Address todos in CCC empty scope / subscription handling tests",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586110"
+  },
+  "3586111": {
+    "closed_at": "2026-05-08T00:50:43.137Z",
+    "iid": 3586111,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Address todos in CCC subscription update logic and scope visibility in tests",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586111"
+  },
+  "3586116": {
+    "closed_at": "2026-05-28T20:00:49.152Z",
+    "iid": 3586116,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::ux",
+      "why::duplicate"
+    ],
+    "title": "Update context listing to not use target column",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586116"
+  },
+  "3586120": {
+    "closed_at": "2026-04-26T16:12:37.986Z",
+    "iid": 3586120,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::feature",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Make subcontext feature optional",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586120"
+  },
+  "3586127": {
+    "closed_at": "2026-05-26T16:37:35.356Z",
+    "iid": 3586127,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::feature",
+      "must have",
+      "priority::normal",
+      "state::closed",
+      "what::ux",
+      "why::duplicate"
+    ],
+    "title": "Update context listing to show workflow state",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586127"
+  },
+  "3586138": {
+    "closed_at": "2026-04-25T14:49:30.680Z",
+    "iid": 3586138,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "what::code",
+      "why::worksAsDesigned"
+    ],
+    "title": "Still getting GitLab CI timeouts for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586138"
+  },
+  "3586139": {
+    "closed_at": "2026-04-25T06:45:47.278Z",
+    "iid": 3586139,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::bug",
+      "priority::major"
+    ],
+    "title": "Add regular CCC contributors as GitLab reporter members",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586139"
+  },
+  "3586140": {
+    "closed_at": "2026-05-10T16:16:33.569Z",
+    "iid": 3586140,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "category::plan",
+      "priority::normal",
+      "what::design"
+    ],
+    "title": "Design Improved Context Items List View",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586140"
+  },
+  "3586141": {
+    "closed_at": "2026-05-10T15:42:36.954Z",
+    "iid": 3586141,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "category::plan",
+      "priority::normal",
+      "what::design"
+    ],
+    "title": "Design for the Context Item single entity view (manual/markdown/text/static)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586141"
+  },
+  "3586142": {
+    "closed_at": "2026-05-08T19:37:59.119Z",
+    "iid": 3586142,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::major",
+      "state::needsWork",
+      "what::management"
+    ],
+    "title": "Configure GitLab metadata for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586142"
+  },
+  "3586143": {
+    "closed_at": "2026-05-04T19:09:46.586Z",
+    "iid": 3586143,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::bug",
+      "must have",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "ai_context overview CSS references missing   external.svg asset via bad relative path",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586143"
+  },
+  "3586144": {
+    "closed_at": "2026-04-25T03:30:58.132Z",
+    "iid": 3586144,
+    "labels": [
+      "category::task",
+      "what::miscellaneous"
+    ],
+    "title": "Testing ccc issue + mr connection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586144"
+  },
+  "3586145": {
+    "closed_at": "2026-05-16T13:50:04.332Z",
+    "iid": 3586145,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Handle the case when scope plugin values are no longer available",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586145"
+  },
+  "3586146": {
+    "closed_at": "2026-05-03T05:58:01.398Z",
+    "iid": 3586146,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "dx",
+      "must have",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Normalize token/item limit naming \u2014 eliminate `tokenBudget` and align on `maxTokens`/`maxItems`",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586146"
+  },
+  "3586147": {
+    "closed_at": "2026-05-08T16:42:14.009Z",
+    "iid": 3586147,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "mvp",
+      "what::code"
+    ],
+    "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 1)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586147"
+  },
+  "3586148": {
+    "closed_at": "2026-06-12T23:20:08.117Z",
+    "iid": 3586148,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 9",
+      "AI UX",
+      "category::support",
+      "must have",
+      "needs ux review",
+      "priority::normal",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Usage of \"Context scope\" and \"Target bundles\"",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586148"
+  },
+  "3586149": {
+    "closed_at": "2026-05-03T21:48:28.023Z",
+    "iid": 3586149,
+    "labels": [
+      "AI Initiative Sprint",
+      "category::support",
+      "priority::normal",
+      "state::fixed",
+      "what::miscellaneous"
+    ],
+    "title": "Question about \"Subcontext type = Conditional - included based on relevance\"",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586149"
+  },
+  "3586152": {
+    "closed_at": "2026-05-03T21:50:19.660Z",
+    "iid": 3586152,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "category::task",
+      "priority::normal",
+      "what::miscellaneous"
+    ],
+    "title": "Test CCC using DrupalForge DrupalCon Chicago Driesnote template",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586152"
+  },
+  "3586154": {
+    "closed_at": "2026-05-11T18:30:08.058Z",
+    "iid": 3586154,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "what::documentation"
+    ],
+    "title": "Create CCC status update video",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586154"
+  },
+  "3586155": {
+    "closed_at": "2026-06-18T22:49:08.847Z",
+    "iid": 3586155,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Create GitLab issue and merge request templates for ai_context project",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586155"
+  },
+  "3586156": {
+    "closed_at": "2026-05-11T00:40:50.147Z",
+    "iid": 3586156,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "mvp",
+      "priority::major",
+      "what::testing"
+    ],
+    "title": "CCC beta2 QA",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586156"
+  },
+  "3586157": {
+    "closed_at": "2026-06-06T05:59:26.006Z",
+    "iid": 3586157,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 9",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Improve context selection cacheability and request-level scope performance",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586157"
+  },
+  "3586158": {
+    "closed_at": "2026-05-08T19:04:06.514Z",
+    "iid": 3586158,
+    "labels": [
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::bug",
+      "must have",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Fix custom path matching for site section scope",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586158"
+  },
+  "3586159": {
+    "closed_at": "2026-05-08T00:33:45.833Z",
+    "iid": 3586159,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "Require provider for conditional subcontext before RC1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586159"
+  },
+  "3586160": {
+    "closed_at": "2026-05-25T22:57:29.387Z",
+    "iid": 3586160,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "category::feature",
+      "priority::normal",
+      "state::closed",
+      "what::code"
+    ],
+    "title": "Add per-agent context injection limits and selection mode",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586160"
+  },
+  "3586161": {
+    "closed_at": "2026-05-23T18:42:37.627Z",
+    "iid": 3586161,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "category::task",
+      "must have",
+      "priority::normal",
+      "state::closed",
+      "what::code",
+      "why::wontFix"
+    ],
+    "title": "Reserve pre-RC1 entity schema fields for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586161"
+  },
+  "3586162": {
+    "closed_at": "2026-06-12T22:48:08.268Z",
+    "iid": 3586162,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 9",
+      "blocker::stable",
+      "category::feature",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add stable selection pipeline events for contrib extension",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586162"
+  },
+  "3586169": {
+    "closed_at": "2026-05-29T23:20:01.213Z",
+    "iid": 3586169,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::plan",
+      "priority::major",
+      "state::closed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Selection extension points and diagnostics for context selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586169"
+  },
+  "3586170": {
+    "closed_at": "2026-06-06T01:47:25.912Z",
+    "iid": 3586170,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::plan",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Structured context content format and authoring model",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586170"
+  },
+  "3586183": {
+    "closed_at": "2026-05-07T04:24:27.105Z",
+    "iid": 3586183,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::plan",
+      "mvp",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "Sprint 9 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586183"
+  },
+  "3586184": {
+    "closed_at": "2026-05-04T19:08:24.084Z",
+    "iid": 3586184,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Add `AiContextSelectorInterface` before RC1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586184"
+  },
+  "3586185": {
+    "closed_at": "2026-05-03T16:26:26.496Z",
+    "iid": 3586185,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::documentation"
+    ],
+    "title": "Document subcontext entity validation rules for RC1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586185"
+  },
+  "3586186": {
+    "closed_at": "2026-05-04T19:29:25.491Z",
+    "iid": 3586186,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "priority::normal",
+      "what::code"
+    ],
+    "title": "Set default usage record retention to 90 days",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586186"
+  },
+  "3586189": {
+    "closed_at": "2026-05-08T01:02:59.985Z",
+    "iid": 3586189,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::task",
+      "must have",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "Stabilize global context item ordering before RC1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586189"
+  },
+  "3586190": {
+    "closed_at": "2026-05-03T15:52:20.844Z",
+    "iid": 3586190,
+    "labels": [
+      "category::feature",
+      "priority::normal",
+      "what::code",
+      "why::wontFix"
+    ],
+    "title": "Allow AI Context provider/model setting to be explicitly unset",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586190"
+  },
+  "3586191": {
+    "closed_at": "2026-05-04T19:06:30.567Z",
+    "iid": 3586191,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "what::code"
+    ],
+    "title": "Long context items are skipped instead of truncated when max token limit is reached",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586191"
+  },
+  "3586192": {
+    "closed_at": "2026-06-12T23:13:37.279Z",
+    "iid": 3586192,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 2)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586192"
+  },
+  "3586193": {
+    "closed_at": "2026-05-04T05:18:05.719Z",
+    "iid": 3586193,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "priority::major"
+    ],
+    "title": "Test CCC on Drupal CMS 2.1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586193"
+  },
+  "3586194": {
+    "closed_at": "2026-05-05T23:07:30.742Z",
+    "iid": 3586194,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "blocker::stable",
+      "category::plan",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "[Discuss] Conditional subcontext logic",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586194"
+  },
+  "3586195": {
+    "closed_at": "2026-05-05T22:57:06.653Z",
+    "iid": 3586195,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "category::task",
+      "priority::normal",
+      "what::ux"
+    ],
+    "title": "(Discuss) Logic for multiple context scope items being handled separately",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586195"
+  },
+  "3586196": {
+    "closed_at": "2026-06-21T21:03:50.291Z",
+    "iid": 3586196,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Context scope matching semantics: additive OR, filters, and UX clarity",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586196"
+  },
+  "3586198": {
+    "closed_at": "2026-05-29T03:13:21.959Z",
+    "iid": 3586198,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::plan",
+      "priority::normal",
+      "state::closed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Associating adhoc vocabularies (freetagging) with context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586198"
+  },
+  "3586200": {
+    "closed_at": "2026-05-23T17:52:44.099Z",
+    "iid": 3586200,
+    "labels": [
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "DrupalSouth2026",
+      "category::task",
+      "priority::normal",
+      "what::marketing"
+    ],
+    "title": "CCC slides and presentation for DrupalSouth Wellington 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586200"
+  },
+  "3586201": {
+    "closed_at": "2026-05-23T16:44:12.235Z",
+    "iid": 3586201,
+    "labels": [
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "NYC2026",
+      "category::task",
+      "priority::normal",
+      "what::marketing"
+    ],
+    "title": "CCC slides and presentation for NYC Drupal AI Summit 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586201"
+  },
+  "3586202": {
+    "closed_at": "2026-05-06T21:31:12.725Z",
+    "iid": 3586202,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "blocker::stable",
+      "category::plan",
+      "must have",
+      "priority::major",
+      "what::planning"
+    ],
+    "title": "CCC beta2 codebase review",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586202"
+  },
+  "3586203": {
+    "closed_at": "2026-05-26T06:10:07.425Z",
+    "iid": 3586203,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::documentation"
+    ],
+    "title": "Pre-rc1 CCC docs updates",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586203"
+  },
+  "3586205": {
+    "closed_at": "2026-05-23T17:57:14.685Z",
+    "iid": 3586205,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::task",
+      "performance",
+      "priority::normal",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "Avoid recreating scope plugins during selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586205"
+  },
+  "3586207": {
+    "closed_at": "2026-06-23T20:27:29.338Z",
+    "iid": 3586207,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "must have",
+      "needs ux review",
+      "performance",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Conditional Subcontext Provider Calls",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586207"
+  },
+  "3586208": {
+    "closed_at": "2026-06-12T22:51:35.509Z",
+    "iid": 3586208,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "category::task",
+      "must have",
+      "performance",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "CCC Non-Agent `match_all` Convenience API",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586208"
+  },
+  "3586209": {
+    "closed_at": "2026-06-24T16:20:43.555Z",
+    "iid": 3586209,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "must have",
+      "performance",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "CCC Usage Tracking Query/Save Pattern",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586209"
+  },
+  "3586210": {
+    "closed_at": "2026-05-26T01:11:43.096Z",
+    "iid": 3586210,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "blocker::stable",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::code"
+    ],
+    "title": "Update use case context scope defaults",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586210"
+  },
+  "3586211": {
+    "closed_at": "2026-05-29T21:24:05.063Z",
+    "iid": 3586211,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Update CCC overview page with hide option and new wording",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586211"
+  },
+  "3586212": {
+    "closed_at": "2026-05-27T04:01:31.192Z",
+    "iid": 3586212,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "blocker::stable",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Update max context items in general settings",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586212"
+  },
+  "3586214": {
+    "closed_at": "2026-06-06T06:04:12.387Z",
+    "iid": 3586214,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI UX",
+      "category::task",
+      "easy wins",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Hide additional context scope options if global is selected",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586214"
+  },
+  "3586219": {
+    "closed_at": "2026-06-12T22:19:36.393Z",
+    "iid": 3586219,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "category::feature",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Update context listing page per new design",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586219"
+  },
+  "3586220": {
+    "closed_at": "2026-06-30T20:51:57.990Z",
+    "iid": 3586220,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "AI Sprint 13",
+      "AI Sprint 9",
+      "category::task",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Add full view layout for context item canonical and revision pages based on new design",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586220"
+  },
+  "3586221": {
+    "closed_at": "2026-06-12T01:41:26.494Z",
+    "iid": 3586221,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 9",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "title": "Test Chicago Driesnote repo with cheaper models",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586221"
+  },
+  "3586223": {
+    "closed_at": "2026-05-10T16:46:10.678Z",
+    "iid": 3586223,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "blocker::beta",
+      "category::bug",
+      "priority::critical",
+      "what::code"
+    ],
+    "title": "Fatal errors when uninstalling CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586223"
+  },
+  "3586224": {
+    "closed_at": "2026-05-10T15:46:10.020Z",
+    "iid": 3586224,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "category::plan",
+      "priority::normal",
+      "what::design"
+    ],
+    "title": "Design for the Context Item single entity view (connected/remote/dynamic)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586224"
+  },
+  "3586225": {
+    "closed_at": "2026-05-29T05:04:14.540Z",
+    "iid": 3586225,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 9",
+      "category::plan",
+      "priority::major",
+      "state::closed",
+      "what::planning"
+    ],
+    "title": "Sprint 10 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586225"
+  },
+  "3586227": {
+    "closed_at": "2026-05-11T01:03:00.996Z",
+    "iid": 3586227,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 9",
+      "AI UX",
+      "category::bug",
+      "priority::normal"
+    ],
+    "title": "CCC navigation icon missing due to menu changes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586227"
+  },
+  "3586228": {
+    "closed_at": "2026-06-23T03:01:32.243Z",
+    "iid": 3586228,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586228"
+  },
+  "3586229": {
+    "closed_at": "2026-05-29T06:37:53.777Z",
+    "iid": 3586229,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI UX",
+      "category::feature",
+      "easy wins",
+      "priority::normal",
+      "state::closed",
+      "what::ux"
+    ],
+    "title": "CCC optional feature suggestions in UI",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586229"
+  },
+  "3586230": {
+    "closed_at": "2026-05-26T05:56:36.873Z",
+    "iid": 3586230,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "blocker::stable",
+      "category::bug",
+      "priority::critical",
+      "state::closed",
+      "what::code"
+    ],
+    "title": "TypeError when trying to \"Configure context items\" from /admin/ai/context/settings/agents",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586230"
+  },
+  "3586232": {
+    "closed_at": "2026-06-12T02:39:57.339Z",
+    "iid": 3586232,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "title": "Sprint 11 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586232"
+  },
+  "3586233": {
+    "closed_at": "2026-06-12T22:27:47.928Z",
+    "iid": 3586233,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::task",
+      "easy wins",
+      "must have",
+      "priority::major",
+      "state::fixed"
+    ],
+    "title": "Bump AI Context to AI Core 1.4",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586233"
+  },
+  "3586236": {
+    "closed_at": "2026-05-29T06:56:46.534Z",
+    "iid": 3586236,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "AI UX",
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "what::ux"
+    ],
+    "title": "CCC UX sync 27 May 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586236"
+  },
+  "3586238": {
+    "closed_at": "2026-05-29T07:08:37.027Z",
+    "iid": 3586238,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 10",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::code"
+    ],
+    "title": "Fix PHPStan failures in CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586238"
+  },
+  "3586239": {
+    "closed_at": "2026-06-05T22:13:34.573Z",
+    "iid": 3586239,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] \"Context Control Center\" at top-level of admin menu?",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586239"
+  },
+  "3586240": {
+    "closed_at": "2026-06-05T21:49:35.011Z",
+    "iid": 3586240,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::task",
+      "easy wins",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Default settings - \"Show overview page\" and \"Enable subcontext hierarchy\"",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586240"
+  },
+  "3586241": {
+    "closed_at": "2026-06-21T04:34:21.186Z",
+    "iid": 3586241,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Document supported vs internal CCC APIs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586241"
+  },
+  "3586244": {
+    "closed_at": "2026-06-23T18:14:52.333Z",
+    "iid": 3586244,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "title": "Provide test context items for testing CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586244"
+  },
+  "3586245": {
+    "closed_at": "2026-05-31T21:11:33.613Z",
+    "iid": 3586245,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::task",
+      "priority::minor",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Ignore AGENTS.md in AI Context",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586245"
+  },
+  "3586246": {
+    "closed_at": "2026-06-23T18:40:39.456Z",
+    "iid": 3586246,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::bug",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "hook_ai_context_scope_values_alter() is not honored in scope value forms",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586246"
+  },
+  "3586247": {
+    "closed_at": "2026-06-12T22:42:37.489Z",
+    "iid": 3586247,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::plan",
+      "easy wins",
+      "needs ux review",
+      "priority::major",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Recipe naming conventions and locations for AI Context (CCC) recipes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586247"
+  },
+  "3586249": {
+    "closed_at": "2026-06-23T05:53:56.712Z",
+    "iid": 3586249,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::miscellaneous"
+    ],
+    "title": "Evaluate empathy CCC integration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586249"
+  },
+  "3586250": {
+    "closed_at": "2026-06-12T18:59:52.057Z",
+    "iid": 3586250,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "title": "[Discuss] Context item content entity bundles",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586250"
+  },
+  "3586251": {
+    "closed_at": "2026-06-20T23:55:20.391Z",
+    "iid": 3586251,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Update subcontext feature description and docs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586251"
+  },
+  "3586252": {
+    "closed_at": "2026-06-18T21:18:13.756Z",
+    "iid": 3586252,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Update overview page description and docs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586252"
+  },
+  "3586253": {
+    "closed_at": "2026-06-07T15:34:03.648Z",
+    "iid": 3586253,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Move CCC menu from top-level to under AI configuration section",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586253"
+  },
+  "3586256": {
+    "closed_at": "2026-06-09T19:44:36.043Z",
+    "iid": 3586256,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Switch context item text fields to string_long for clean MDXEditor integration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586256"
+  },
+  "3586257": {
+    "closed_at": "2026-06-12T02:44:26.016Z",
+    "iid": 3586257,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "title": "Assess AI Knowledge Connector and how it might work with CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586257"
+  },
+  "3586258": {
+    "closed_at": "2026-06-26T20:57:52.041Z",
+    "iid": 3586258,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "title": "Test AI Best Practices skills on AI Context codebase",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586258"
+  },
+  "3586259": {
+    "closed_at": "2026-06-06T18:26:22.597Z",
+    "iid": 3586259,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "category::bug",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Fix phpstan error in AiContextSubcontextToggleTrait",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586259"
+  },
+  "3586260": {
+    "closed_at": "2026-06-18T14:57:35.274Z",
+    "iid": 3586260,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "category::bug",
+      "easy wins",
+      "priority::minor",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Show this overview page checkbox is misaligned on vanilla Drupal 11",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586260"
+  },
+  "3586261": {
+    "closed_at": "2026-07-01T00:16:29.928Z",
+    "iid": 3586261,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::stable",
+      "category::task",
+      "easy wins",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Clean up bundleless context item follow-ups",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586261"
+  },
+  "3586264": {
+    "closed_at": "2026-06-26T19:06:34.148Z",
+    "iid": 3586264,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::plan",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "[Discuss] Moderation status of subcontext vs parent context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586264"
+  },
+  "3586267": {
+    "closed_at": "2026-06-18T15:22:35.888Z",
+    "iid": 3586267,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 11",
+      "AI Sprint 12",
+      "blocker::stable",
+      "category::task",
+      "easy wins",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Create SECURITY.md file for AI Context (CCC)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586267"
+  },
+  "3586270": {
+    "closed_at": "2026-06-21T05:00:40.854Z",
+    "iid": 3586270,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Clarify Context scope: Tags in documentation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586270"
+  },
+  "3586272": {
+    "closed_at": "2026-06-23T03:01:05.523Z",
+    "iid": 3586272,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add context settings validation: max_global_items must not exceed max_items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586272"
+  },
+  "3586274": {
+    "closed_at": "2026-06-27T19:04:49.797Z",
+    "iid": 3586274,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "AI Sprint 13",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "UX improvements on new context listing page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586274"
+  },
+  "3586275": {
+    "closed_at": "2026-06-21T17:23:53.438Z",
+    "iid": 3586275,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Create Document Loader submodule for CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586275"
+  },
+  "3586277": {
+    "closed_at": "2026-06-25T04:44:29.238Z",
+    "iid": 3586277,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "title": "Sprint 12 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586277"
+  },
+  "3586280": {
+    "closed_at": "2026-06-30T23:24:17.725Z",
+    "iid": 3586280,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280"
+  },
+  "3586284": {
+    "closed_at": "2026-06-23T03:12:11.040Z",
+    "iid": 3586284,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Copy and layout updates on context item scope form",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586284"
+  },
+  "3586285": {
+    "closed_at": "2026-06-23T01:08:46.911Z",
+    "iid": 3586285,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Add Configure Link in Modules Page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586285"
+  },
+  "3586286": {
+    "closed_at": "2026-06-23T05:21:11.771Z",
+    "iid": 3586286,
+    "labels": [
+      "blocker::stable",
+      "category::bug",
+      "priority::major",
+      "state::accepted",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "`hook_ai_context_scope_values_alter()` is ignored by scope forms and labels",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586286"
+  },
+  "3586287": {
+    "closed_at": "2026-06-23T21:55:36.129Z",
+    "iid": 3586287,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "blocker::stable",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "No public API for building scope subscription forms; consumers must depend on the internal scope manager",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586287"
+  },
+  "3586288": {
+    "closed_at": "2026-06-23T18:21:57.014Z",
+    "iid": 3586288,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "title": "Update core_version_requirement for all CCC submodules to be same as parent module",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586288"
+  },
+  "3586294": {
+    "closed_at": "2026-07-02T21:49:00.032Z",
+    "iid": 3586294,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::stable",
+      "category::plan",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "title": "CCC beta3 codebase review (pre-release)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586294"
+  },
+  "3586297": {
+    "closed_at": "2026-06-27T21:17:31.846Z",
+    "iid": 3586297,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 12",
+      "AI Sprint 13",
+      "category::plan",
+      "easy wins",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "title": "Add warning on subcontext edit form if parent is unpublished",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586297"
+  },
+  "3586307": {
+    "closed_at": "2026-07-02T00:45:48.608Z",
+    "iid": 3586307,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Update project page to change to the correct paths in the Installation and Testing Steps section",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586307"
+  },
+  "3586312": {
+    "closed_at": "2026-07-02T21:29:50.398Z",
+    "iid": 3586312,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::critical",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "Unset inherit_parent_scope silently wipes stored scope on save (data loss)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586312"
+  },
+  "3586313": {
+    "closed_at": "2026-07-02T21:32:04.412Z",
+    "iid": 3586313,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "Syncing saves bypass all integrity constraints instead of only the global cap",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586313"
+  },
+  "3586314": {
+    "closed_at": "2026-07-02T21:31:16.056Z",
+    "iid": 3586314,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::critical",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "Item form discards user-entered scope when the subcontext feature is disabled",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586314"
+  },
+  "3586316": {
+    "closed_at": "2026-07-02T21:33:02.996Z",
+    "iid": 3586316,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "title": "Harden update 10011: empty-chunk guard and NULL-only backfill",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586316"
+  },
+  "3586317": {
+    "closed_at": "2026-07-03T04:45:43.412Z",
+    "iid": 3586317,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "title": "Documentation corrections: dependency requirements and AI module version",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586317"
+  },
+  "3586318": {
+    "closed_at": "2026-07-03T19:07:02.942Z",
+    "iid": 3586318,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "category::plan",
+      "priority::major",
+      "state::inProgress",
+      "what::planning"
+    ],
+    "title": "Beta vs 1.1 CCC API gap analysis",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586318"
+  }
+}

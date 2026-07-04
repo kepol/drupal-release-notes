@@ -1,0 +1,12 @@
+# Usernames listed on contribution records but not expected to receive
+# credit — for example project managers who only add labels to issues.
+#
+# If the only missing credits on an issue are for people in this file,
+# the issue is omitted from the credit audit review queue.
+#
+# One username per line. Lines starting with # are ignored.
+# Usernames are normalized (lowercase, spaces become underscores).
+#
+rakhimandhania
+vidit-anjaria
+arianraeesi

@@ -1,0 +1,4530 @@
+[
+  {
+    "closed_at": "2026-01-25T19:36:54+00:00",
+    "credited": [
+      "ahmedj",
+      "kafmil",
+      "kepol",
+      "marcus_johansson",
+      "yautja_cetanu"
+    ],
+    "iid": 3545824,
+    "nid": 11423808,
+    "record_url": "https://new.drupal.org/node/11423808",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3545824",
+    "title": "Create demo Context Control Center for Vienna 2025",
+    "uncredited": [
+      "catia_penas"
+    ],
+    "uuid": "3a09b562-eb93-4779-b36a-ac0a865e7d92"
+  },
+  {
+    "closed_at": "2026-02-16T20:31:33+00:00",
+    "credited": [
+      "bbruno",
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3547033,
+    "nid": 11424626,
+    "record_url": "https://new.drupal.org/node/11424626",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547033",
+    "title": "AI CCC markdown editor integration",
+    "uncredited": [
+      "marcus_johansson"
+    ],
+    "uuid": "8ab620a9-2f61-4f8d-ac22-3589624779e7"
+  },
+  {
+    "closed_at": "2026-02-19T00:07:04+00:00",
+    "credited": [
+      "aidanfoster",
+      "ajv009",
+      "kepol",
+      "robloach",
+      "unqunq",
+      "webbywe"
+    ],
+    "iid": 3547034,
+    "nid": 11424627,
+    "record_url": "https://new.drupal.org/node/11424627",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547034",
+    "title": "[Spike] Research URL support for CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "f8d7a4fc-7da7-43cf-aa0e-b0b2947faf25"
+  },
+  {
+    "closed_at": "2026-02-18T23:57:17+00:00",
+    "credited": [
+      "ahmad-khader",
+      "aidanfoster",
+      "kepol",
+      "marcus_johansson",
+      "robloach"
+    ],
+    "iid": 3547035,
+    "nid": 11424628,
+    "record_url": "https://new.drupal.org/node/11424628",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547035",
+    "title": "[Spike] Research PDF upload support for CCC",
+    "uncredited": [],
+    "uuid": "8f784012-5756-4a79-8b7a-df840177ddf8"
+  },
+  {
+    "closed_at": "2026-04-01T23:45:03+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3547037,
+    "nid": 11424630,
+    "record_url": "https://new.drupal.org/node/11424630",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547037",
+    "title": "Add AI CCC documentation for beta1",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "ec828ff7-54fd-4a03-b606-1302a3c25b99"
+  },
+  {
+    "closed_at": "2026-04-02T22:55:02+00:00",
+    "credited": [
+      "danrod",
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3547038,
+    "nid": 11424631,
+    "record_url": "https://new.drupal.org/node/11424631",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547038",
+    "title": "Update AI CCC project page for beta1",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8be6a867-9cc0-4373-90b9-2cded5fa65a2"
+  },
+  {
+    "closed_at": "2026-01-12T00:34:59+00:00",
+    "credited": [],
+    "iid": 3547042,
+    "nid": 11424635,
+    "record_url": "https://new.drupal.org/node/11424635",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547042",
+    "title": "Update AI CCC project page",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "fccf81a1-5d34-46e5-91df-cadd0498ac68"
+  },
+  {
+    "closed_at": "2026-01-21T00:04:05+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3547050,
+    "nid": 11424640,
+    "record_url": "https://new.drupal.org/node/11424640",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547050",
+    "title": "Add text filtering on AI CCC context agents page",
+    "uncredited": [],
+    "uuid": "b8dd6468-8c69-4de1-939a-c5b7c9cc606c"
+  },
+  {
+    "closed_at": "2025-10-07T21:44:02+00:00",
+    "credited": [
+      "ahmedj",
+      "marcus_johansson"
+    ],
+    "iid": 3547892,
+    "nid": 11425215,
+    "record_url": "https://new.drupal.org/node/11425215",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547892",
+    "title": "CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "0d5d1bf4-5da7-48a5-a2b1-604978930e3b"
+  },
+  {
+    "closed_at": "2025-10-22T01:59:02+00:00",
+    "credited": [
+      "ahmedj",
+      "mandclu",
+      "marcus_johansson"
+    ],
+    "iid": 3549081,
+    "nid": 11425980,
+    "record_url": "https://new.drupal.org/node/11425980",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3549081",
+    "title": "Group AI Context menu items",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "62d2bbfc-64b0-4a49-8f17-c9cfd480000a"
+  },
+  {
+    "closed_at": "2025-10-14T07:09:05+00:00",
+    "credited": [
+      "ahmedj",
+      "mandclu",
+      "marcus_johansson"
+    ],
+    "iid": 3549082,
+    "nid": 11425981,
+    "record_url": "https://new.drupal.org/node/11425981",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3549082",
+    "title": "Within the Context Pools UI, link the Context for the forms to see the details of each context",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "a40e0b71-6598-4205-8ecf-185e3337ca9b"
+  },
+  {
+    "closed_at": "2025-10-22T01:59:02+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3549748,
+    "nid": 11426429,
+    "record_url": "https://new.drupal.org/node/11426429",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3549748",
+    "title": "The max tokens calculation is hardcoded + use tokenizer for AI CCC",
+    "uncredited": [],
+    "uuid": "2c2bf8ec-ccda-4e93-bdf3-d2300356550f"
+  },
+  {
+    "closed_at": "2025-10-25T08:31:22+00:00",
+    "credited": [
+      "ahmedj",
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3549752,
+    "nid": 11426432,
+    "record_url": "https://new.drupal.org/node/11426432",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3549752",
+    "title": "The selector service does not use the maxOverride at all for AI CCC",
+    "uncredited": [],
+    "uuid": "8e7ca67e-8b1f-4abb-bafa-047d41776624"
+  },
+  {
+    "closed_at": "2026-03-29T18:00:03+00:00",
+    "credited": [
+      "guptahemant",
+      "kepol",
+      "naveen.prakash.work"
+    ],
+    "iid": 3549849,
+    "nid": 11426492,
+    "record_url": "https://new.drupal.org/node/11426492",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3549849",
+    "title": "Update CCC readme in prep for beta1",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "3c06af8c-c386-46c4-b909-8ddaaa9ff785"
+  },
+  {
+    "closed_at": "2026-02-06T07:07:12+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol",
+      "robloach",
+      "scottfalconer"
+    ],
+    "iid": 3550034,
+    "nid": 11426623,
+    "record_url": "https://new.drupal.org/node/11426623",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3550034",
+    "title": "Add AI context item usage data and page",
+    "uncredited": [
+      "marcus_johansson",
+      "rakhimandhania"
+    ],
+    "uuid": "8ce2ab5b-dfaa-4c1b-a440-ff580b5c5b43"
+  },
+  {
+    "closed_at": "2025-10-25T08:33:31+00:00",
+    "credited": [
+      "ahmedj",
+      "marcus_johansson"
+    ],
+    "iid": 3550892,
+    "nid": 11427195,
+    "record_url": "https://new.drupal.org/node/11427195",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3550892",
+    "title": "Show description instead of id in the AI Contexts listing page",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "e4953707-5364-4efb-bad1-c40929677edc"
+  },
+  {
+    "closed_at": "2025-10-23T08:34:01+00:00",
+    "credited": [
+      "ahmedj",
+      "marcus_johansson"
+    ],
+    "iid": 3550895,
+    "nid": 11427196,
+    "record_url": "https://new.drupal.org/node/11427196",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3550895",
+    "title": "CCC tags should be required",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "b2c9023b-623b-4a37-ac65-41303c7cffe5"
+  },
+  {
+    "closed_at": "2026-02-05T16:02:06+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson",
+      "tedbow"
+    ],
+    "iid": 3550896,
+    "nid": 11427197,
+    "record_url": "https://new.drupal.org/node/11427197",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3550896",
+    "title": "[Discuss] Usage of context tags taxonomy for categorization",
+    "uncredited": [],
+    "uuid": "80a05a42-469f-444b-89c9-3ce4bea41644"
+  },
+  {
+    "closed_at": "2025-10-25T08:31:57+00:00",
+    "credited": [
+      "ahmedj",
+      "roromedia",
+      "tedbow"
+    ],
+    "iid": 3552972,
+    "nid": 11428504,
+    "record_url": "https://new.drupal.org/node/11428504",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3552972",
+    "title": "Wrong dependency definition in info.yml causes composer to not install",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "c675918e-3325-4a2a-9fa8-1d314343cc98"
+  },
+  {
+    "closed_at": "2026-02-19T00:34:33+00:00",
+    "credited": [
+      "kepol",
+      "tedbow"
+    ],
+    "iid": 3554221,
+    "nid": 11429362,
+    "record_url": "https://new.drupal.org/node/11429362",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3554221",
+    "title": "Setting context pools acts differently between agent form and context pool form",
+    "uncredited": [],
+    "uuid": "bf0a9dbb-059e-4f7c-99d7-08933f403d91"
+  },
+  {
+    "closed_at": "2025-10-25T08:31:41+00:00",
+    "credited": [
+      "ahmedj",
+      "tedbow"
+    ],
+    "iid": 3554277,
+    "nid": 11429395,
+    "record_url": "https://new.drupal.org/node/11429395",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3554277",
+    "title": "ai_context_ai_function_call_info_alter does not work with contexts only set via \"always_include\"",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "50e43326-1aff-4483-8878-e5eac561023d"
+  },
+  {
+    "closed_at": "2025-11-22T05:17:31+00:00",
+    "credited": [
+      "kepol",
+      "tedbow"
+    ],
+    "iid": 3554616,
+    "nid": 11429616,
+    "record_url": "https://new.drupal.org/node/11429616",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3554616",
+    "title": "Setting AI contexts has no effect on some agents",
+    "uncredited": [],
+    "uuid": "4f03b57c-7657-4c94-94cd-8c42ab5a2945"
+  },
+  {
+    "closed_at": "2025-11-23T20:19:11+00:00",
+    "credited": [
+      "kepol",
+      "tedbow"
+    ],
+    "iid": 3555225,
+    "nid": 11430016,
+    "record_url": "https://new.drupal.org/node/11430016",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3555225",
+    "title": "Add a single global context, making Vienna Driesnote AI demos much simpler",
+    "uncredited": [],
+    "uuid": "facbb554-711e-4772-8f87-2ce50acc6642"
+  },
+  {
+    "closed_at": "2025-11-22T06:24:33+00:00",
+    "credited": [
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3556878,
+    "nid": 11431118,
+    "record_url": "https://new.drupal.org/node/11431118",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3556878",
+    "title": "Update AI Context module with doc blocks and check coding standards",
+    "uncredited": [],
+    "uuid": "ff91025f-b9bc-4892-b53f-7934041f9da8"
+  },
+  {
+    "closed_at": "2026-04-29T17:38:30+00:00",
+    "credited": [
+      "aidanfoster",
+      "danrod",
+      "emma-horrell",
+      "jibran",
+      "kepol",
+      "robloach",
+      "ronaldtebrake",
+      "scottfalconer",
+      "wouters_frederik"
+    ],
+    "iid": 3556881,
+    "nid": 11431121,
+    "record_url": "https://new.drupal.org/node/11431121",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3556881",
+    "title": "[Discuss] Finalize name for AI Context module (Context Control Center)",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "f342db40-93e5-435d-aae9-5500dd934ee0"
+  },
+  {
+    "closed_at": "2026-02-19T06:35:56+00:00",
+    "credited": [
+      "breidert",
+      "horvan",
+      "kepol",
+      "kumarimedha09",
+      "marcus_johansson",
+      "svendecabooter"
+    ],
+    "iid": 3556908,
+    "nid": 11431135,
+    "record_url": "https://new.drupal.org/node/11431135",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3556908",
+    "title": "Do not hardcode English language prompts in CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "455626e8-9030-41da-96a9-d212c4a40cfc"
+  },
+  {
+    "closed_at": "2026-04-01T00:40:03+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3556909,
+    "nid": 11431136,
+    "record_url": "https://new.drupal.org/node/11431136",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3556909",
+    "title": "[Discuss] Decouple AI Context from AI Agents",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "83651376-41fc-40a8-97d0-c20ce6ada21e"
+  },
+  {
+    "closed_at": "2025-11-22T06:13:32+00:00",
+    "credited": [
+      "aidanfoster",
+      "kepol",
+      "marcus_johansson",
+      "yautja_cetanu"
+    ],
+    "iid": 3557700,
+    "nid": 11431667,
+    "record_url": "https://new.drupal.org/node/11431667",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3557700",
+    "title": "AI Context architecture meeting 13 Nov 2025",
+    "uncredited": [],
+    "uuid": "5730abbd-2eea-4946-8ffe-66bbb158cb66"
+  },
+  {
+    "closed_at": "2026-02-06T06:28:31+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3557719,
+    "nid": 11431673,
+    "record_url": "https://new.drupal.org/node/11431673",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3557719",
+    "title": "[Spike] Research AI Context categories",
+    "uncredited": [
+      "emma",
+      "fjgarlin",
+      "rakhimandhania"
+    ],
+    "uuid": "ee94a5e6-c622-42cb-862c-7934075dccbc"
+  },
+  {
+    "closed_at": "2025-11-22T06:07:51+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "tedbow",
+      "yautja_cetanu"
+    ],
+    "iid": 3558583,
+    "nid": 11432212,
+    "record_url": "https://new.drupal.org/node/11432212",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3558583",
+    "title": "AI Context UX meeting 18 Nov 2025",
+    "uncredited": [
+      "emma"
+    ],
+    "uuid": "47045b80-6d9b-461b-b9ed-a25da224f448"
+  },
+  {
+    "closed_at": "2026-02-19T02:59:23+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "tonypaulbarker",
+      "yautja_cetanu"
+    ],
+    "iid": 3558814,
+    "nid": 11432363,
+    "record_url": "https://new.drupal.org/node/11432363",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3558814",
+    "title": "[Spike] CCC 1.0 brainstorming",
+    "uncredited": [
+      "emma",
+      "marcus_johansson",
+      "tedbow"
+    ],
+    "uuid": "78cc8cdf-175b-4b47-862e-038fa785a005"
+  },
+  {
+    "closed_at": "2026-02-08T00:29:51+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3559379,
+    "nid": 11432736,
+    "record_url": "https://new.drupal.org/node/11432736",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559379",
+    "title": "[Meta] CCC rearchitecture and roadmap",
+    "uncredited": [],
+    "uuid": "427782ba-d77d-4b18-81ae-d9c822294bf7"
+  },
+  {
+    "closed_at": "2025-12-30T03:19:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3559380,
+    "nid": 11432737,
+    "record_url": "https://new.drupal.org/node/11432737",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559380",
+    "title": "Document current CCC architecture Nov 2025",
+    "uncredited": [],
+    "uuid": "a21f366a-c55d-4ae7-91c4-897a7dadf91c"
+  },
+  {
+    "closed_at": "2026-02-16T03:39:40+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer",
+      "thamas"
+    ],
+    "iid": 3559384,
+    "nid": 11432738,
+    "record_url": "https://new.drupal.org/node/11432738",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559384",
+    "title": "Add multilingual support to CCC",
+    "uncredited": [
+      "tonypaulbarker"
+    ],
+    "uuid": "275ce3e9-a0c3-48ae-a6d1-e6c5f193c8bc"
+  },
+  {
+    "closed_at": "2025-11-22T07:35:30+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3559388,
+    "nid": 11432741,
+    "record_url": "https://new.drupal.org/node/11432741",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559388",
+    "title": "Update CCC project components to be more useful and add tracker to issues",
+    "uncredited": [],
+    "uuid": "4f1a6e52-bfcb-46a3-8d29-cfe19246d38a"
+  },
+  {
+    "closed_at": "2026-01-07T04:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3559504,
+    "nid": 11432808,
+    "record_url": "https://new.drupal.org/node/11432808",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559504",
+    "title": "Toggling between AI Context local tasks losing content",
+    "uncredited": [],
+    "uuid": "d400ccd1-54de-4086-b87d-d6ae1e781fc8"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563000,
+    "nid": 11435031,
+    "record_url": "https://new.drupal.org/node/11435031",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563000",
+    "title": "Switch the AiContext config entity to a content entity",
+    "uncredited": [],
+    "uuid": "e536978c-acf7-4a0e-964b-7e27c88cf16b"
+  },
+  {
+    "closed_at": "2025-12-13T16:34:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563008,
+    "nid": 11435038,
+    "record_url": "https://new.drupal.org/node/11435038",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563008",
+    "title": "Tag ai_context for v2025 repo before rearchitecture",
+    "uncredited": [],
+    "uuid": "dd51411a-e408-4cae-9d23-90ab9012b17d"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563036,
+    "nid": 11435060,
+    "record_url": "https://new.drupal.org/node/11435060",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563036",
+    "title": "Introduce more granular permissions to CCC",
+    "uncredited": [],
+    "uuid": "1c336b6b-c4eb-4324-871a-66b0f7779a24"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563038,
+    "nid": 11435062,
+    "record_url": "https://new.drupal.org/node/11435062",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563038",
+    "title": "Move CCC routes to higher level to be more similar to admin/content",
+    "uncredited": [],
+    "uuid": "2c7e86e6-3b4c-46a9-b26c-77843f110619"
+  },
+  {
+    "closed_at": "2026-01-01T15:24:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563043,
+    "nid": 11435065,
+    "record_url": "https://new.drupal.org/node/11435065",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563043",
+    "title": "Add toolbar icon to CCC top level menu item",
+    "uncredited": [
+      "marcus_johansson"
+    ],
+    "uuid": "3cf9e281-5361-4478-8eda-c9b81fdd6d57"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563049,
+    "nid": 11435071,
+    "record_url": "https://new.drupal.org/node/11435071",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563049",
+    "title": "Add draft support to CCC",
+    "uncredited": [],
+    "uuid": "d6edac6f-45e4-4885-a6c2-373f0efd7fad"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563052,
+    "nid": 11435074,
+    "record_url": "https://new.drupal.org/node/11435074",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563052",
+    "title": "Add revision support to CCC",
+    "uncredited": [],
+    "uuid": "b320c392-aae3-451a-90eb-78a706204c4a"
+  },
+  {
+    "closed_at": "2026-01-21T00:32:28+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563089,
+    "nid": 11435100,
+    "record_url": "https://new.drupal.org/node/11435100",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563089",
+    "title": "Add revision comparison diff support for context item revisions",
+    "uncredited": [
+      "marcus_johansson",
+      "rakhimandhania"
+    ],
+    "uuid": "110933d7-510a-45c4-83ab-e892f9f080c5"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563100,
+    "nid": 11435107,
+    "record_url": "https://new.drupal.org/node/11435107",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563100",
+    "title": "Minor cleanup on CCC pools page",
+    "uncredited": [],
+    "uuid": "2158d83a-800a-42d8-a6f1-3880c35faf9e"
+  },
+  {
+    "closed_at": "2026-02-27T01:58:48+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol"
+    ],
+    "iid": 3563107,
+    "nid": 11435110,
+    "record_url": "https://new.drupal.org/node/11435110",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563107",
+    "title": "Remove \"pool\" and \"pools\" from CCC code",
+    "uncredited": [],
+    "uuid": "2fc778e8-b82e-485b-9c9c-8f0d663e1b12"
+  },
+  {
+    "closed_at": "2025-12-30T05:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563108,
+    "nid": 11435111,
+    "record_url": "https://new.drupal.org/node/11435111",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563108",
+    "title": "Update context item edit form to better align with core",
+    "uncredited": [],
+    "uuid": "0033da97-2c60-44ff-9e12-945ff79a0058"
+  },
+  {
+    "closed_at": "2026-01-29T18:34:20+00:00",
+    "credited": [
+      "b_sharpe",
+      "harivansh",
+      "kepol"
+    ],
+    "iid": 3563127,
+    "nid": 11435123,
+    "record_url": "https://new.drupal.org/node/11435123",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563127",
+    "title": "Add created date to context item entity",
+    "uncredited": [
+      "marcus_johansson",
+      "rakhimandhania"
+    ],
+    "uuid": "56a0ef26-053b-4b6e-8046-0e04323d10f9"
+  },
+  {
+    "closed_at": "2025-12-22T22:41:58+00:00",
+    "credited": [
+      "jurgenhaas",
+      "kepol"
+    ],
+    "iid": 3563357,
+    "nid": 11435277,
+    "record_url": "https://new.drupal.org/node/11435277",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563357",
+    "title": "Add duplicate context item feature like Drupal CMS has for nodes",
+    "uncredited": [],
+    "uuid": "b010dd32-f5a7-4ce6-99ad-c4d63360f3eb"
+  },
+  {
+    "closed_at": "2026-01-06T05:34:01+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563360,
+    "nid": 11435280,
+    "record_url": "https://new.drupal.org/node/11435280",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563360",
+    "title": "Add scheduling options for context items like nodes",
+    "uncredited": [],
+    "uuid": "3cfd5856-357e-4c8d-b8c4-ecacd0fce39e"
+  },
+  {
+    "closed_at": "2026-01-06T07:24:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563361,
+    "nid": 11435281,
+    "record_url": "https://new.drupal.org/node/11435281",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563361",
+    "title": "Add moderation workflow support for context items like nodes",
+    "uncredited": [],
+    "uuid": "631c68a8-6ede-4209-a245-433e7c7437b6"
+  },
+  {
+    "closed_at": "2026-01-01T05:44:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563362,
+    "nid": 11435282,
+    "record_url": "https://new.drupal.org/node/11435282",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563362",
+    "title": "Add toolbar dropdown menu for context items like nodes",
+    "uncredited": [],
+    "uuid": "f6aec413-9f02-4306-adbd-88790ab5dad3"
+  },
+  {
+    "closed_at": "2026-01-01T18:04:01+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563365,
+    "nid": 11435285,
+    "record_url": "https://new.drupal.org/node/11435285",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563365",
+    "title": "Add tagify styling to taxonomy fields for CCC",
+    "uncredited": [],
+    "uuid": "068a1362-1c08-49ad-ad80-7dab2a08b80f"
+  },
+  {
+    "closed_at": "2026-03-06T03:27:10+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563366,
+    "nid": 11435286,
+    "record_url": "https://new.drupal.org/node/11435286",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563366",
+    "title": "Create nicer context item view page",
+    "uncredited": [],
+    "uuid": "680bb2cd-54d4-4d40-97cf-aec301b59fd9"
+  },
+  {
+    "closed_at": "2026-01-06T20:59:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563371,
+    "nid": 11435290,
+    "record_url": "https://new.drupal.org/node/11435290",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563371",
+    "title": "Switch context items page to use a view",
+    "uncredited": [],
+    "uuid": "3862c825-4b9c-4874-bb12-f1f74911cff2"
+  },
+  {
+    "closed_at": "2026-01-01T15:19:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3563372,
+    "nid": 11435291,
+    "record_url": "https://new.drupal.org/node/11435291",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563372",
+    "title": "Differentiate between description and purpose for context items",
+    "uncredited": [],
+    "uuid": "1c217944-43e4-4958-a689-f888a9592c18"
+  },
+  {
+    "closed_at": "2025-12-18T18:36:09+00:00",
+    "credited": [],
+    "iid": 3563975,
+    "nid": 11435651,
+    "record_url": "https://new.drupal.org/node/11435651",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563975",
+    "title": "Something in CCC is causing node form to not show some fields",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "ca20e475-2bcb-4796-a9b4-f548bc431f60"
+  },
+  {
+    "closed_at": "2026-03-06T06:08:16+00:00",
+    "credited": [
+      "aidanfoster",
+      "kafmil",
+      "kepol"
+    ],
+    "iid": 3564629,
+    "nid": 11436017,
+    "record_url": "https://new.drupal.org/node/11436017",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564629",
+    "title": "[Discuss] Analyze Cognizant MAKER approach for CCC context granularity, selection, and flagging",
+    "uncredited": [],
+    "uuid": "3301f197-5555-480c-af0a-fe48e841462b"
+  },
+  {
+    "closed_at": "2026-01-06T21:04:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3564653,
+    "nid": 11436029,
+    "record_url": "https://new.drupal.org/node/11436029",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564653",
+    "title": "Create CCC moderation workflow and scheduling local tasks",
+    "uncredited": [],
+    "uuid": "53877f81-b398-4c69-acbe-4243af6bc1b3"
+  },
+  {
+    "closed_at": "2026-01-10T19:05:38+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson",
+      "shamir.vs",
+      "sujal_31"
+    ],
+    "iid": 3564667,
+    "nid": 11436040,
+    "record_url": "https://new.drupal.org/node/11436040",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564667",
+    "title": "Add a composer.json to CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "4c9a541a-93ba-4be2-bac0-9f68cca7cc98"
+  },
+  {
+    "closed_at": "2026-01-06T21:44:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3564691,
+    "nid": 11436055,
+    "record_url": "https://new.drupal.org/node/11436055",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564691",
+    "title": "Create settings and sub-settings hierarchy for CCC",
+    "uncredited": [],
+    "uuid": "daac85c4-1893-4252-aad8-e1762f788a90"
+  },
+  {
+    "closed_at": "2026-02-25T05:39:20+00:00",
+    "credited": [
+      "aidanfoster",
+      "dstorozhuk",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3564706,
+    "nid": 11436063,
+    "record_url": "https://new.drupal.org/node/11436063",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564706",
+    "title": "[Meta] Context Scope feature",
+    "uncredited": [
+      "emma"
+    ],
+    "uuid": "22ee161d-91c8-464c-9ef9-07973e0da1ba"
+  },
+  {
+    "closed_at": "2026-01-07T04:24:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3564709,
+    "nid": 11436065,
+    "record_url": "https://new.drupal.org/node/11436065",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564709",
+    "title": "Switch global context to checkbox on context items",
+    "uncredited": [],
+    "uuid": "85696d6d-1fd5-4b6d-952e-accaf02c41e3"
+  },
+  {
+    "closed_at": "2026-01-17T06:30:35+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3564714,
+    "nid": 11436070,
+    "record_url": "https://new.drupal.org/node/11436070",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564714",
+    "title": "Allow context scoped to entities in CCC",
+    "uncredited": [
+      "marcus_johansson",
+      "rakhimandhania"
+    ],
+    "uuid": "c44b4c16-4bee-4baf-a750-d41491c65126"
+  },
+  {
+    "closed_at": "2026-01-20T22:45:58+00:00",
+    "credited": [
+      "bbruno",
+      "breidert",
+      "guptahemant",
+      "kepol",
+      "marcus_johansson",
+      "rakhimandhania"
+    ],
+    "iid": 3566811,
+    "nid": 11437529,
+    "record_url": "https://new.drupal.org/node/11437529",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566811",
+    "title": "Add AI usage to CCC issue template",
+    "uncredited": [],
+    "uuid": "7354caf5-2b90-40d6-9559-ebe171359ec4"
+  },
+  {
+    "closed_at": "2026-01-25T19:59:53+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3566842,
+    "nid": 11437549,
+    "record_url": "https://new.drupal.org/node/11437549",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566842",
+    "title": "[META] Add overviews, better descriptions, and help text in CCC for better UX",
+    "uncredited": [],
+    "uuid": "431c0cf7-8c6c-4c6c-8554-11f74624c53e"
+  },
+  {
+    "closed_at": "2026-01-17T06:59:59+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3566852,
+    "nid": 11437557,
+    "record_url": "https://new.drupal.org/node/11437557",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566852",
+    "title": "Add CCC overview page",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "5d1739b5-1c57-4e1b-882e-e2c39e0a6438"
+  },
+  {
+    "closed_at": "2026-01-16T22:15:49+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3566858,
+    "nid": 11437562,
+    "record_url": "https://new.drupal.org/node/11437562",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566858",
+    "title": "Update context items page with description and link when there are empty results",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "5e8f3692-e581-4aa7-b698-73e50a4e0a31"
+  },
+  {
+    "closed_at": "2026-01-20T23:24:07+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3566861,
+    "nid": 11437565,
+    "record_url": "https://new.drupal.org/node/11437565",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566861",
+    "title": "Update CCC general settings page descriptions",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "fad6c314-b599-4f55-a733-eff885747cd5"
+  },
+  {
+    "closed_at": "2026-01-20T20:34:56+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3566862,
+    "nid": 11437566,
+    "record_url": "https://new.drupal.org/node/11437566",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566862",
+    "title": "Update context items settings page descriptions",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "d98af1ca-0e4c-458f-954b-dc7b37362a75"
+  },
+  {
+    "closed_at": "2026-01-21T00:03:10+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3566863,
+    "nid": 11437567,
+    "record_url": "https://new.drupal.org/node/11437567",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566863",
+    "title": "Update CCC agents settings page description and table",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "7441bbf2-5188-4767-98a7-2d4ec1e70539"
+  },
+  {
+    "closed_at": "2026-01-20T23:00:12+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3566865,
+    "nid": 11437569,
+    "record_url": "https://new.drupal.org/node/11437569",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566865",
+    "title": "Update context item edit form field descriptions",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "6868d626-cb17-449c-b8a7-e193e3edebfc"
+  },
+  {
+    "closed_at": "2026-01-21T00:53:00+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3566866,
+    "nid": 11437570,
+    "record_url": "https://new.drupal.org/node/11437570",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566866",
+    "title": "Update agent context edit form description, help text, and table",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "9e60622f-dfc3-4ef0-a022-f5f966aa3c0c"
+  },
+  {
+    "closed_at": "2026-02-06T04:25:26+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3567568,
+    "nid": 11438101,
+    "record_url": "https://new.drupal.org/node/11438101",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3567568",
+    "title": "[Discuss] Look at Progressive Disclosure for Context items using a progressive disclosure inspired by Claude Skills",
+    "uncredited": [],
+    "uuid": "dbeba603-09be-4b75-903f-e6ac620f9094"
+  },
+  {
+    "closed_at": "2026-04-01T01:50:03+00:00",
+    "credited": [
+      "aidanfoster",
+      "kepol"
+    ],
+    "iid": 3567570,
+    "nid": 11438103,
+    "record_url": "https://new.drupal.org/node/11438103",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3567570",
+    "title": "[Meta] Context Control Center MVP demo",
+    "uncredited": [],
+    "uuid": "81347822-7dae-4897-9229-3f51810d93f3"
+  },
+  {
+    "closed_at": "2026-03-04T18:24:10+00:00",
+    "credited": [
+      "aidanfoster"
+    ],
+    "iid": 3567571,
+    "nid": 11438104,
+    "record_url": "https://new.drupal.org/node/11438104",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3567571",
+    "title": "CCC MVP Demo: Create draft FinDrop context",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "7a42c827-48d8-49dd-8578-68f9c28a2775"
+  },
+  {
+    "closed_at": "2026-02-19T00:25:56+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol",
+      "nikro"
+    ],
+    "iid": 3567791,
+    "nid": 11438236,
+    "record_url": "https://new.drupal.org/node/11438236",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3567791",
+    "title": "[Spike] CCC MCP server integration PoC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "b77b7fb8-923d-4c6d-8fd4-f810843dd6c0"
+  },
+  {
+    "closed_at": "2026-01-21T01:08:19+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3568086,
+    "nid": 11438431,
+    "record_url": "https://new.drupal.org/node/11438431",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568086",
+    "title": "CCC testing ai usage",
+    "uncredited": [],
+    "uuid": "0621e6d2-3d8e-4e93-82a6-1bc28cc438d7"
+  },
+  {
+    "closed_at": "2026-01-29T18:37:58+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3568115,
+    "nid": 11438448,
+    "record_url": "https://new.drupal.org/node/11438448",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568115",
+    "title": "New context items do not default to published when setting is chosen",
+    "uncredited": [],
+    "uuid": "393c669c-0a32-48aa-af9a-764027eaef99"
+  },
+  {
+    "closed_at": "2026-01-21T00:33:33+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3568177,
+    "nid": 11438482,
+    "record_url": "https://new.drupal.org/node/11438482",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568177",
+    "title": "Error when reinstalling after creating CCC taxonomy terms",
+    "uncredited": [],
+    "uuid": "1d3aedee-9656-4ef7-a6bd-e95fad1d152c"
+  },
+  {
+    "closed_at": "2026-02-05T15:39:05+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3568384,
+    "nid": 11438617,
+    "record_url": "https://new.drupal.org/node/11438617",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568384",
+    "title": "[Discuss] Context graphs",
+    "uncredited": [],
+    "uuid": "920958be-5a81-4220-a6f7-d1929cb3731c"
+  },
+  {
+    "closed_at": "2026-02-25T05:06:53+00:00",
+    "credited": [
+      "aidanfoster",
+      "dstorozhuk",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3568673,
+    "nid": 11438808,
+    "record_url": "https://new.drupal.org/node/11438808",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568673",
+    "title": "Add context scope base code and use case context scope plugin",
+    "uncredited": [
+      "nickolaj"
+    ],
+    "uuid": "9ce92534-8999-4194-9e46-738298c6780f"
+  },
+  {
+    "closed_at": "2026-02-20T07:52:25+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3568674,
+    "nid": 11438809,
+    "record_url": "https://new.drupal.org/node/11438809",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568674",
+    "title": "Switch context tags to be a context scope plugin",
+    "uncredited": [],
+    "uuid": "d0d88423-17f5-4002-947c-ef5c3d9a5724"
+  },
+  {
+    "closed_at": "2026-02-20T07:50:12+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3568676,
+    "nid": 11438811,
+    "record_url": "https://new.drupal.org/node/11438811",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568676",
+    "title": "Add site section context scope for MVP",
+    "uncredited": [],
+    "uuid": "74ba5299-0de1-4596-8dfc-07e303503b5c"
+  },
+  {
+    "closed_at": "2026-02-20T07:52:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3568677,
+    "nid": 11438812,
+    "record_url": "https://new.drupal.org/node/11438812",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3568677",
+    "title": "Allow agents to subscribe to context scope",
+    "uncredited": [],
+    "uuid": "1851222b-3326-43e8-8e43-7ff17965a989"
+  },
+  {
+    "closed_at": "2026-06-24T15:59:00+00:00",
+    "credited": [
+      "ahmad-khader",
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3569310,
+    "nid": 11439291,
+    "record_url": "https://new.drupal.org/node/11439291",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569310",
+    "title": "[Meta] Context source plugin feature (context from PDF/MD/TXT/URL)",
+    "uncredited": [
+      "mglaman",
+      "rakhimandhania"
+    ],
+    "uuid": "781b2085-9930-4c60-bd73-629ccf6d84ea"
+  },
+  {
+    "closed_at": "2026-02-25T05:24:13+00:00",
+    "credited": [
+      "aidanfoster",
+      "danrod",
+      "emma-horrell",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3569311,
+    "nid": 11439292,
+    "record_url": "https://new.drupal.org/node/11439292",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569311",
+    "title": "[Meta] Subcontext feature in CCC",
+    "uncredited": [],
+    "uuid": "acf0db26-dc12-4ca7-9fc0-0c7f423bbb8d"
+  },
+  {
+    "closed_at": "2026-02-06T06:21:29+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "nickolaj"
+    ],
+    "iid": 3569312,
+    "nid": 11439293,
+    "record_url": "https://new.drupal.org/node/11439293",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569312",
+    "title": "Add parent / child relationship for context",
+    "uncredited": [],
+    "uuid": "9119641d-3d93-4eb4-ada5-9067a5d53ed6"
+  },
+  {
+    "closed_at": "2026-02-05T16:08:48+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "nickolaj"
+    ],
+    "iid": 3569313,
+    "nid": 11439294,
+    "record_url": "https://new.drupal.org/node/11439294",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569313",
+    "title": "Create design for context list UI to include subcontext",
+    "uncredited": [],
+    "uuid": "58571c68-1a19-4b0b-96c5-af72b45552af"
+  },
+  {
+    "closed_at": "2026-02-06T06:23:55+00:00",
+    "credited": [
+      "aidanfoster",
+      "gantal",
+      "kepol"
+    ],
+    "iid": 3569514,
+    "nid": 11439411,
+    "record_url": "https://new.drupal.org/node/11439411",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569514",
+    "title": "[Spike] Research what Google Analytics data can be used in CCC",
+    "uncredited": [],
+    "uuid": "4ea1f535-bc4b-4da5-9249-ce1348138429"
+  },
+  {
+    "closed_at": "2026-03-28T02:45:03+00:00",
+    "credited": [
+      "aidanfoster",
+      "b_sharpe",
+      "bbruno",
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3569776,
+    "nid": 11439560,
+    "record_url": "https://new.drupal.org/node/11439560",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569776",
+    "title": "Adopt AI Core shared UI library in CCC and escape data before rendering",
+    "uncredited": [
+      "arianraeesi",
+      "rakhimandhania"
+    ],
+    "uuid": "6d38f24d-e971-42e7-bdff-912610acb2fd"
+  },
+  {
+    "closed_at": "2026-03-06T02:10:33+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3569967,
+    "nid": 11439670,
+    "record_url": "https://new.drupal.org/node/11439670",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3569967",
+    "title": "[Discuss] Figure out which CCC features can be optional for MVP",
+    "uncredited": [],
+    "uuid": "7234da4e-f29e-40b3-9f2a-2351c28270cf"
+  },
+  {
+    "closed_at": "2026-02-20T07:52:56+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3570933,
+    "nid": 11440302,
+    "record_url": "https://new.drupal.org/node/11440302",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3570933",
+    "title": "Add language context scope for MVP",
+    "uncredited": [],
+    "uuid": "218a6e56-b19d-4ab2-92ab-7a00139db814"
+  },
+  {
+    "closed_at": "2026-02-05T15:48:16+00:00",
+    "credited": [],
+    "iid": 3570934,
+    "nid": 11440303,
+    "record_url": "https://new.drupal.org/node/11440303",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3570934",
+    "title": "Add content type context scope for MVP",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "ddca0cdf-4421-4b30-818f-052c95eddf3f"
+  },
+  {
+    "closed_at": "2026-02-20T07:51:40+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3570940,
+    "nid": 11440307,
+    "record_url": "https://new.drupal.org/node/11440307",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3570940",
+    "title": "Convert global option to context scope plugin",
+    "uncredited": [],
+    "uuid": "9c309897-1254-49d4-9511-e278bdf932c2"
+  },
+  {
+    "closed_at": "2026-02-06T07:12:17+00:00",
+    "credited": [
+      "kepol",
+      "svendecabooter"
+    ],
+    "iid": 3571006,
+    "nid": 11440352,
+    "record_url": "https://new.drupal.org/node/11440352",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571006",
+    "title": "Clean up CCC install process and composer.json file",
+    "uncredited": [],
+    "uuid": "f539bb22-f4ec-4356-b409-0a575778a05a"
+  },
+  {
+    "closed_at": "2026-02-15T19:46:37+00:00",
+    "credited": [
+      "b_sharpe",
+      "kepol",
+      "svendecabooter"
+    ],
+    "iid": 3571188,
+    "nid": 11440484,
+    "record_url": "https://new.drupal.org/node/11440484",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571188",
+    "title": "Error on installation: The state 'draft' already exists in workflow",
+    "uncredited": [],
+    "uuid": "27a61313-9a69-4b83-ac71-3bd5d9eaad65"
+  },
+  {
+    "closed_at": "2026-02-06T07:10:27+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer",
+      "svendecabooter"
+    ],
+    "iid": 3571195,
+    "nid": 11440489,
+    "record_url": "https://new.drupal.org/node/11440489",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571195",
+    "title": "Schema errors from scheduler after installing CCC",
+    "uncredited": [],
+    "uuid": "5d86a842-f88d-4ed9-bdfa-9205a2bae342"
+  },
+  {
+    "closed_at": "2026-02-19T04:47:20+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3571299,
+    "nid": 11440563,
+    "record_url": "https://new.drupal.org/node/11440563",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571299",
+    "title": "Add D11 CCC install steps on the project page",
+    "uncredited": [],
+    "uuid": "0795d109-5191-419e-ad80-b3f4413e0a68"
+  },
+  {
+    "closed_at": "2026-05-03T22:17:25+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3571354,
+    "nid": 11440606,
+    "record_url": "https://new.drupal.org/node/11440606",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571354",
+    "title": "Create CCC example module that adds scope plugin and extends existing plugins",
+    "uncredited": [],
+    "uuid": "2780266e-442d-4a89-acd8-ff1c8c0c6af0"
+  },
+  {
+    "closed_at": "2026-02-04T00:08:24+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3571392,
+    "nid": 11440624,
+    "record_url": "https://new.drupal.org/node/11440624",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571392",
+    "title": "Toolbar menu issue in Drupal 11.3 when CCC installed",
+    "uncredited": [],
+    "uuid": "fcde478b-cdc2-41a9-8014-bd973ba4c0b7"
+  },
+  {
+    "closed_at": "2026-02-19T00:20:52+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol",
+      "kostiantyn"
+    ],
+    "iid": 3571393,
+    "nid": 11440625,
+    "record_url": "https://new.drupal.org/node/11440625",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571393",
+    "title": "Add GitLab CI linting to CCC project",
+    "uncredited": [
+      "nickolaj"
+    ],
+    "uuid": "819d4ac0-3412-430a-9279-f23b916c57e3"
+  },
+  {
+    "closed_at": "2026-02-19T05:20:11+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3571788,
+    "nid": 11440878,
+    "record_url": "https://new.drupal.org/node/11440878",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571788",
+    "title": "Update subcontext feature to specify required vs conditional selection",
+    "uncredited": [],
+    "uuid": "41407a48-7073-4f66-9a68-1e75e0268715"
+  },
+  {
+    "closed_at": "2026-03-06T02:12:49+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3571794,
+    "nid": 11440879,
+    "record_url": "https://new.drupal.org/node/11440879",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571794",
+    "title": "Update context list UI to include subcontext and scope",
+    "uncredited": [],
+    "uuid": "873be2fb-74eb-464d-9ee5-4b7ce73064b0"
+  },
+  {
+    "closed_at": "2026-03-06T03:28:56+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3571909,
+    "nid": 11440956,
+    "record_url": "https://new.drupal.org/node/11440956",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571909",
+    "title": "Update context selection logic to handle subcontext",
+    "uncredited": [],
+    "uuid": "5b87bf4a-213c-4262-9547-812f9a8a0b93"
+  },
+  {
+    "closed_at": "2026-02-19T04:42:15+00:00",
+    "credited": [
+      "kepol",
+      "rakhimandhania"
+    ],
+    "iid": 3572067,
+    "nid": 11441068,
+    "record_url": "https://new.drupal.org/node/11441068",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3572067",
+    "title": "Sprint 3 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "67ce1eb9-9c6a-4e45-8207-dc62e7740e5a"
+  },
+  {
+    "closed_at": "2026-02-20T07:53:20+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3572160,
+    "nid": 11441115,
+    "record_url": "https://new.drupal.org/node/11441115",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3572160",
+    "title": "Switch target entities to be a context scope plugin",
+    "uncredited": [],
+    "uuid": "bf461b0a-49ef-41bc-8443-9c395a96c12c"
+  },
+  {
+    "closed_at": "2026-02-20T01:26:51+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol"
+    ],
+    "iid": 3572891,
+    "nid": 11441564,
+    "record_url": "https://new.drupal.org/node/11441564",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3572891",
+    "title": "Create docs for Cursor and Claude code quality for CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "2373acd3-521e-4ad5-9d5a-b64de4ae4cfa"
+  },
+  {
+    "closed_at": "2026-03-06T04:18:16+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3573708,
+    "nid": 11442048,
+    "record_url": "https://new.drupal.org/node/11442048",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573708",
+    "title": "Add optional debug logging to CCC",
+    "uncredited": [],
+    "uuid": "f10d2a56-355c-442d-8865-88fcda539cb9"
+  },
+  {
+    "closed_at": "2026-02-20T18:23:17+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3573709,
+    "nid": 11442049,
+    "record_url": "https://new.drupal.org/node/11442049",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573709",
+    "title": "Fix phpunit test errors in CCC",
+    "uncredited": [],
+    "uuid": "46faf412-cdd7-4487-bc49-d44d2b757c02"
+  },
+  {
+    "closed_at": "2026-03-06T04:19:56+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3573713,
+    "nid": 11442052,
+    "record_url": "https://new.drupal.org/node/11442052",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573713",
+    "title": "Full architecture review of CCC in prep for 1.0",
+    "uncredited": [],
+    "uuid": "60bd2e9d-76c6-4096-af0e-071b425de1ef"
+  },
+  {
+    "closed_at": "2026-05-07T00:59:47+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3573715,
+    "nid": 11442054,
+    "record_url": "https://new.drupal.org/node/11442054",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573715",
+    "title": "Full UX review of CCC in prep for rc1",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8eccd759-13e8-4e73-b4fb-d0c9621139ad"
+  },
+  {
+    "closed_at": "2026-03-06T06:10:37+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3573717,
+    "nid": 11442056,
+    "record_url": "https://new.drupal.org/node/11442056",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573717",
+    "title": "Add automated testing to CCC in prep for 1.0",
+    "uncredited": [],
+    "uuid": "e624a131-6235-4f7c-8688-7ec0e6072bb2"
+  },
+  {
+    "closed_at": "2026-03-05T19:52:29+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3573719,
+    "nid": 11442058,
+    "record_url": "https://new.drupal.org/node/11442058",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3573719",
+    "title": "Sprint 4 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "3db890c9-4452-4bba-ad0e-e5aae702b8d7"
+  },
+  {
+    "closed_at": "2026-04-21T03:35:19+00:00",
+    "credited": [
+      "aidanfoster",
+      "kepol"
+    ],
+    "iid": 3574136,
+    "nid": 11442377,
+    "record_url": "https://new.drupal.org/node/11442377",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574136",
+    "title": "Go through Chicago CCC test cases and make sure they work",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "e3cb8635-ca09-4b2f-98d3-726c3e5acd97"
+  },
+  {
+    "closed_at": "2026-04-06T02:30:01+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol",
+      "marcus_johansson",
+      "scottfalconer"
+    ],
+    "iid": 3574359,
+    "nid": 11442511,
+    "record_url": "https://new.drupal.org/node/11442511",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574359",
+    "title": "Refactor context selection logic",
+    "uncredited": [
+      "danrod",
+      "rakhimandhania"
+    ],
+    "uuid": "2c50d35d-0f35-486a-8d36-2b080b7ce53b"
+  },
+  {
+    "closed_at": "2026-06-24T16:01:58+00:00",
+    "credited": [
+      "ahmad-khader",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3574413,
+    "nid": 11442543,
+    "record_url": "https://new.drupal.org/node/11442543",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574413",
+    "title": "Add PDF context source plugin to CCC",
+    "uncredited": [
+      "mglaman"
+    ],
+    "uuid": "4eba1185-5ae8-4efb-83b6-3190608adf24"
+  },
+  {
+    "closed_at": "2026-06-24T16:06:41+00:00",
+    "credited": [
+      "ahmad-khader",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3574414,
+    "nid": 11442544,
+    "record_url": "https://new.drupal.org/node/11442544",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574414",
+    "title": "Add webpage (URL) context source plugin to CCC",
+    "uncredited": [
+      "mglaman"
+    ],
+    "uuid": "7291198f-b33a-4a74-8cb3-28c7660a922d"
+  },
+  {
+    "closed_at": "2026-02-25T05:51:53+00:00",
+    "credited": [
+      "axioteo",
+      "divyamdotfoo",
+      "hrishikesh-dalal",
+      "kepol",
+      "kostiantyn"
+    ],
+    "iid": 3574420,
+    "nid": 11442549,
+    "record_url": "https://new.drupal.org/node/11442549",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574420",
+    "title": "Add Drupal CMS 2.0 support to CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "24100671-58d0-471e-8df4-8f20b3479fdf"
+  },
+  {
+    "closed_at": "2026-03-24T17:25:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3574445,
+    "nid": 11442566,
+    "record_url": "https://new.drupal.org/node/11442566",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574445",
+    "title": "Add Drupal CMS 2.0 CCC install steps on the project page",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "54086ea8-f349-4794-8316-498089da0c81"
+  },
+  {
+    "closed_at": "2026-03-30T02:20:03+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3574904,
+    "nid": 11442879,
+    "record_url": "https://new.drupal.org/node/11442879",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574904",
+    "title": "CCC: Refactor to remove N+1 patterns: batch children & term loads",
+    "uncredited": [
+      "nikro",
+      "rakhimandhania"
+    ],
+    "uuid": "6476ef90-f3be-41c2-995b-717f1c40fe19"
+  },
+  {
+    "closed_at": "2026-05-01T22:39:38+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3574905,
+    "nid": 11442880,
+    "record_url": "https://new.drupal.org/node/11442880",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574905",
+    "title": "CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "28f99d99-b44a-4197-8ab5-23cfa61175db"
+  },
+  {
+    "closed_at": "2026-03-30T02:00:03+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "scottfalconer",
+      "svendecabooter"
+    ],
+    "iid": 3574906,
+    "nid": 11442881,
+    "record_url": "https://new.drupal.org/node/11442881",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574906",
+    "title": "CCC: Refactor to move key form validations into entity-level validators / presave",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "d9bedee0-3c64-401f-a8ce-479981aec717"
+  },
+  {
+    "closed_at": "2026-04-29T06:42:25+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3574907,
+    "nid": 11442882,
+    "record_url": "https://new.drupal.org/node/11442882",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574907",
+    "title": "CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "979d9f99-a5b2-4b17-9bc0-39a6ca3d6277"
+  },
+  {
+    "closed_at": "2026-03-31T19:05:03+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3574908,
+    "nid": 11442883,
+    "record_url": "https://new.drupal.org/node/11442883",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574908",
+    "title": "CCC: Refactor to convert entity HTML helpers to data-only methods and render arrays",
+    "uncredited": [
+      "danrod",
+      "hrishikesh-dalal",
+      "rakhimandhania"
+    ],
+    "uuid": "984223af-1e2c-4e59-b593-d7bacbe1b0eb"
+  },
+  {
+    "closed_at": "2026-04-06T02:40:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3574910,
+    "nid": 11442885,
+    "record_url": "https://new.drupal.org/node/11442885",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574910",
+    "title": "CCC: Refactor to harden function-call plugin / runtime surface (GetAiRelevantContext)",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "704d835b-20a5-4c9d-8f70-d6ec08db2297"
+  },
+  {
+    "closed_at": "2026-02-25T05:33:13+00:00",
+    "credited": [
+      "divyamdotfoo",
+      "fjgarlin",
+      "kepol",
+      "twiesing"
+    ],
+    "iid": 3574923,
+    "nid": 11442895,
+    "record_url": "https://new.drupal.org/node/11442895",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574923",
+    "title": "Remove _ESLINT_EXTRA in GitLab CI to avoid error in CCC project",
+    "uncredited": [],
+    "uuid": "e7650cb4-f44a-413b-9efe-45608c71cf1a"
+  },
+  {
+    "closed_at": "2026-06-24T16:03:47+00:00",
+    "credited": [
+      "ahmad-khader",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3574928,
+    "nid": 11442900,
+    "record_url": "https://new.drupal.org/node/11442900",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574928",
+    "title": "Add MD context source plugin to CCC",
+    "uncredited": [
+      "mglaman"
+    ],
+    "uuid": "cf0d3b56-3408-466c-97e9-6041f067c76c"
+  },
+  {
+    "closed_at": "2026-03-06T06:35:55+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3574936,
+    "nid": 11442903,
+    "record_url": "https://new.drupal.org/node/11442903",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574936",
+    "title": "Add search or filters to context listing",
+    "uncredited": [],
+    "uuid": "27d83879-db03-4d16-ad45-bf513b32b7dc"
+  },
+  {
+    "closed_at": "2026-04-01T01:30:03+00:00",
+    "credited": [
+      "axioteo",
+      "kepol",
+      "scottfalconer",
+      "unqunq"
+    ],
+    "iid": 3575590,
+    "nid": 11443348,
+    "record_url": "https://new.drupal.org/node/11443348",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3575590",
+    "title": "Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "047747de-cb81-4dc3-a349-5c4992cac2aa"
+  },
+  {
+    "closed_at": "2026-03-06T02:48:00+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3575595,
+    "nid": 11443351,
+    "record_url": "https://new.drupal.org/node/11443351",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3575595",
+    "title": "Format context item markdown on view page",
+    "uncredited": [],
+    "uuid": "5603d6e8-b8ce-4844-b46d-eeae8e08373b"
+  },
+  {
+    "closed_at": "2026-03-06T22:32:14+00:00",
+    "credited": [
+      "dstorozhuk",
+      "kepol"
+    ],
+    "iid": 3576089,
+    "nid": 11443753,
+    "record_url": "https://new.drupal.org/node/11443753",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576089",
+    "title": "Remove support for D10 for CCC",
+    "uncredited": [],
+    "uuid": "f21e17a4-4d97-4e66-b2bd-04b389b6bac1"
+  },
+  {
+    "closed_at": "2026-04-29T17:30:17+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3576092,
+    "nid": 11443754,
+    "record_url": "https://new.drupal.org/node/11443754",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576092",
+    "title": "[Discuss] Subcontext scope vs parent scope",
+    "uncredited": [
+      "flux423",
+      "rakhimandhania"
+    ],
+    "uuid": "e7b44d3f-d0b8-41cb-83ad-8cfca1e40814"
+  },
+  {
+    "closed_at": "2026-06-28T01:40:54+00:00",
+    "credited": [
+      "kepol",
+      "kieran.cott"
+    ],
+    "iid": 3576093,
+    "nid": 11443755,
+    "record_url": "https://new.drupal.org/node/11443755",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576093",
+    "title": "Fix eslint errors in GitLab UI even when pipeline is green",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "a3499a88-efe7-4bd4-baaa-f7bc3bcb9cc5"
+  },
+  {
+    "closed_at": "2026-04-21T06:28:28+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3576094,
+    "nid": 11443756,
+    "record_url": "https://new.drupal.org/node/11443756",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576094",
+    "title": "Fix local ./lint.sh stylelint script errors for CCC",
+    "uncredited": [],
+    "uuid": "e4d3662a-db0c-4523-ad15-a579b75244f9"
+  },
+  {
+    "closed_at": "2026-05-02T06:35:05+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3576100,
+    "nid": 11443761,
+    "record_url": "https://new.drupal.org/node/11443761",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576100",
+    "title": "[Discuss] CCC architecture audit decision log questions",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "17821220-7766-4b2d-bdbb-d30681266cd0"
+  },
+  {
+    "closed_at": "2026-04-02T23:25:02+00:00",
+    "credited": [
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3576102,
+    "nid": 11443762,
+    "record_url": "https://new.drupal.org/node/11443762",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576102",
+    "title": "Pre-beta security review in prep for CCC beta1",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "ce24b819-58e8-4636-a489-97287e2f19c8"
+  },
+  {
+    "closed_at": "2026-04-01T01:40:02+00:00",
+    "credited": [
+      "aidanfoster"
+    ],
+    "iid": 3577087,
+    "nid": 11444545,
+    "record_url": "https://new.drupal.org/node/11444545",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577087",
+    "title": "CCC MVP Demo: Finalize FinDrop context",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "9d3cbc2e-b5e1-40cb-8ff9-3b711efffa78"
+  },
+  {
+    "closed_at": "2026-04-01T01:40:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577379,
+    "nid": 11444732,
+    "record_url": "https://new.drupal.org/node/11444732",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577379",
+    "title": "Sprint 5 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "3757a153-d070-40cf-95fe-96f93da83f7b"
+  },
+  {
+    "closed_at": "2026-03-07T21:51:20+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577398,
+    "nid": 11444748,
+    "record_url": "https://new.drupal.org/node/11444748",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577398",
+    "title": "Update CCC readme for new mdxeditor location",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8bb145ff-d39e-4a47-b3d6-d50c0160dc4d"
+  },
+  {
+    "closed_at": "2026-04-21T21:49:19+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3577425,
+    "nid": 11444768,
+    "record_url": "https://new.drupal.org/node/11444768",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577425",
+    "title": "[Discuss] Possible styling updates for context listing",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "7d9e8c5b-37f1-494e-bf92-9bb00a91a272"
+  },
+  {
+    "closed_at": "2026-03-24T17:20:02+00:00",
+    "credited": [
+      "kepol",
+      "kostiantyn",
+      "scottfalconer"
+    ],
+    "iid": 3577426,
+    "nid": 11444769,
+    "record_url": "https://new.drupal.org/node/11444769",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577426",
+    "title": "Redo context item duplicate feature without ECA",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "34c98ab1-eb09-4a01-8ec4-3bf384404862"
+  },
+  {
+    "closed_at": "2026-03-29T03:05:02+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "danrod",
+      "dstorozhuk",
+      "erichomanchuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3577427,
+    "nid": 11444770,
+    "record_url": "https://new.drupal.org/node/11444770",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577427",
+    "title": "Update context item revision diff feature for progressive enhancement",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "d086e11d-6338-4cef-bc0d-99fd8704b691"
+  },
+  {
+    "closed_at": "2026-04-21T19:36:21+00:00",
+    "credited": [
+      "annmarysruthy",
+      "danrod",
+      "kepol",
+      "kostiantyn",
+      "mglaman"
+    ],
+    "iid": 3577428,
+    "nid": 11444771,
+    "record_url": "https://new.drupal.org/node/11444771",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577428",
+    "title": "Update context item target entities for progressive enhancement",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "cc97dc7d-e5f1-49a5-b710-69660cfe4a54"
+  },
+  {
+    "closed_at": "2026-06-27T02:18:06+00:00",
+    "credited": [
+      "annmarysruthy",
+      "axioteo",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3577429,
+    "nid": 11444772,
+    "record_url": "https://new.drupal.org/node/11444772",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577429",
+    "title": "Move scheduler feature to submodule or progressive enhancement",
+    "uncredited": [
+      "flux423",
+      "rakhimandhania"
+    ],
+    "uuid": "06d03537-0271-49e4-8d6b-980607af1fcd"
+  },
+  {
+    "closed_at": "2026-03-29T03:15:01+00:00",
+    "credited": [
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3577512,
+    "nid": 11444830,
+    "record_url": "https://new.drupal.org/node/11444830",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577512",
+    "title": "Duplicate Revisions tabs appear when editing an AI Context Item.",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8116b627-3234-49b5-b3e2-ec4e61135cc9"
+  },
+  {
+    "closed_at": "2026-04-14T20:50:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577644,
+    "nid": 11444907,
+    "record_url": "https://new.drupal.org/node/11444907",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577644",
+    "title": "CCC beta1 release planning",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "f96aa829-b7d0-4346-8506-d99d6b383c76"
+  },
+  {
+    "closed_at": "2026-03-24T19:10:04+00:00",
+    "credited": [
+      "bbruno",
+      "kepol",
+      "nexusnovaz"
+    ],
+    "iid": 3577656,
+    "nid": 11444918,
+    "record_url": "https://new.drupal.org/node/11444918",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577656",
+    "title": "Remove zero badge when context has no subcontext",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "20922d93-86fa-4f20-ac87-52a71a8cdb7c"
+  },
+  {
+    "closed_at": "2026-05-11T18:31:35+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577657,
+    "nid": 11444919,
+    "record_url": "https://new.drupal.org/node/11444919",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577657",
+    "title": "CCC beta blog post",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "97633a69-1ce8-4de8-9af3-4d0bcbe8d239"
+  },
+  {
+    "closed_at": "2026-04-14T20:50:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577658,
+    "nid": 11444920,
+    "record_url": "https://new.drupal.org/node/11444920",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577658",
+    "title": "CCC beta1 video",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "4776d995-bc4b-4d59-a88d-5809cd1599c1"
+  },
+  {
+    "closed_at": "2026-04-14T21:25:02+00:00",
+    "credited": [
+      "aidanfoster",
+      "kepol"
+    ],
+    "iid": 3577661,
+    "nid": 11444922,
+    "record_url": "https://new.drupal.org/node/11444922",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577661",
+    "title": "CCC Chicago session slides",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "95baa924-a71d-4659-9f87-fbd291cf6340"
+  },
+  {
+    "closed_at": "2026-04-14T21:25:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577664,
+    "nid": 11444924,
+    "record_url": "https://new.drupal.org/node/11444924",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577664",
+    "title": "CCC Chicago keynote slides",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "25de8269-5f9f-4878-aeb5-cdb4da656cf4"
+  },
+  {
+    "closed_at": "2026-04-07T00:50:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577667,
+    "nid": 11444926,
+    "record_url": "https://new.drupal.org/node/11444926",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577667",
+    "title": "Create CCC beta1 release",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "47fb3cfe-1725-4b69-bb42-ea0c46b7af42"
+  },
+  {
+    "closed_at": "2026-04-06T21:10:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577669,
+    "nid": 11444927,
+    "record_url": "https://new.drupal.org/node/11444927",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577669",
+    "title": "CCC beta1 QA",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "3ea3da62-161a-4bdd-978f-52c415bea7d3"
+  },
+  {
+    "closed_at": "2026-04-14T22:15:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3577670,
+    "nid": 11444928,
+    "record_url": "https://new.drupal.org/node/11444928",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577670",
+    "title": "CCC Chicago planning",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "5c1a9ae4-62f3-417e-99c2-4760f29c1a36"
+  },
+  {
+    "closed_at": "2026-03-28T22:45:02+00:00",
+    "credited": [
+      "hrishikesh-dalal",
+      "kepol",
+      "root_emarketing"
+    ],
+    "iid": 3577745,
+    "nid": 11444974,
+    "record_url": "https://new.drupal.org/node/11444974",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3577745",
+    "title": "Context item revision comparison is missing some scope info",
+    "uncredited": [
+      "danrod",
+      "rakhimandhania"
+    ],
+    "uuid": "d7de7f5c-b473-4098-b887-08000a71d539"
+  },
+  {
+    "closed_at": "2026-03-31T19:50:03+00:00",
+    "credited": [
+      "danrod",
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3578114,
+    "nid": 11445189,
+    "record_url": "https://new.drupal.org/node/11445189",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3578114",
+    "title": "Update context scope plugin manage link/url/route functionality",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "04c13b37-725c-41d6-87b0-77a46a1f8453"
+  },
+  {
+    "closed_at": "2026-03-28T03:30:01+00:00",
+    "credited": [
+      "annmarysruthy",
+      "erichomanchuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3578386,
+    "nid": 11445363,
+    "record_url": "https://new.drupal.org/node/11445363",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3578386",
+    "title": "Multiple entities can be set on the target entity reference autocomplete field but only 1 is saved",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "17389606-fd40-4897-b51a-85ba1ec13b20"
+  },
+  {
+    "closed_at": "2026-03-29T21:15:03+00:00",
+    "credited": [
+      "annmarysruthy",
+      "dstorozhuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3578657,
+    "nid": 11445570,
+    "record_url": "https://new.drupal.org/node/11445570",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3578657",
+    "title": "Drupal 10: Error on /admin/ai/context/items/add: scheduler_content_moderation_integration module conflict",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "c8128b9b-c2d8-41e3-ba99-a8c31f57122b"
+  },
+  {
+    "closed_at": "2026-03-30T03:25:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3579234,
+    "nid": 11445912,
+    "record_url": "https://new.drupal.org/node/11445912",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579234",
+    "title": "Add context scope plugin target entities manage link",
+    "uncredited": [],
+    "uuid": "fffcd1f2-f12f-4598-a249-5de08e680965"
+  },
+  {
+    "closed_at": "2026-04-05T19:50:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3579344,
+    "nid": 11445962,
+    "record_url": "https://new.drupal.org/node/11445962",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579344",
+    "title": "Create CONTRIBUTORS.md for CCC",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "ca5f6ae7-84d4-4bb6-80d5-1bee7942f733"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3579354,
+    "nid": 11445967,
+    "record_url": "https://new.drupal.org/node/11445967",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579354",
+    "title": "Generate CCC beta1 release notes with contributing organizations and individuals",
+    "uncredited": [],
+    "uuid": "6af6e3b1-a29c-4400-aec9-99ef50566032"
+  },
+  {
+    "closed_at": "2026-04-21T05:05:48+00:00",
+    "credited": [
+      "awojcik1107",
+      "jrockowitz",
+      "kepol"
+    ],
+    "iid": 3579372,
+    "nid": 11445979,
+    "record_url": "https://new.drupal.org/node/11445979",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579372",
+    "title": "Test error: \"The node_make_sticky_action plugin does not exist\" when running CCC tests locally",
+    "uncredited": [],
+    "uuid": "81790bea-9460-4372-af44-bc46113dda17"
+  },
+  {
+    "closed_at": "2026-03-30T17:50:03+00:00",
+    "credited": [
+      "bbruno",
+      "kepol",
+      "svendecabooter"
+    ],
+    "iid": 3579394,
+    "nid": 11445994,
+    "record_url": "https://new.drupal.org/node/11445994",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579394",
+    "title": "CCC icon doesn't show in vanilla Drupal 10 and Drupal 11 install",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "2cbda072-6bd9-4af1-9d48-1fcac783970d"
+  },
+  {
+    "closed_at": "2026-03-30T17:50:03+00:00",
+    "credited": [
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3579396,
+    "nid": 11445995,
+    "record_url": "https://new.drupal.org/node/11445995",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579396",
+    "title": "CCC target entity types settings not working",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "7457dbf3-9f82-4d0f-b421-63ff9735b8a0"
+  },
+  {
+    "closed_at": "2026-04-01T00:35:03+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson",
+      "robloach"
+    ],
+    "iid": 3579841,
+    "nid": 11446290,
+    "record_url": "https://new.drupal.org/node/11446290",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
+    "title": "Can't Apply Scheduler Patch",
+    "uncredited": [
+      "rajabnatshah",
+      "rakhimandhania"
+    ],
+    "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
+  },
+  {
+    "closed_at": "2026-03-31T19:20:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3579857,
+    "nid": 11446302,
+    "record_url": "https://new.drupal.org/node/11446302",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579857",
+    "title": "CCC beta1 features list and blurbs for demos and promotions",
+    "uncredited": [],
+    "uuid": "6cf7d230-10c6-4769-a0a6-7dd0f6648ac6"
+  },
+  {
+    "closed_at": "2026-06-08T16:24:20+00:00",
+    "credited": [
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3580063,
+    "nid": 11446467,
+    "record_url": "https://new.drupal.org/node/11446467",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3580063",
+    "title": "Publish the Docs to GitLab Pages",
+    "uncredited": [],
+    "uuid": "7905432a-1f16-4220-bdd4-02815615a0c9"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "kepol",
+      "marcus_johansson",
+      "robloach"
+    ],
+    "iid": 3580400,
+    "nid": 11446666,
+    "record_url": "https://new.drupal.org/node/11446666",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3580400",
+    "title": "CCC mkdocs failing in CI pipeline",
+    "uncredited": [],
+    "uuid": "53490448-8b8a-4a93-977e-bb7acc5a7866"
+  },
+  {
+    "closed_at": "2026-06-12T23:16:28+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol",
+      "mglaman",
+      "svendecabooter"
+    ],
+    "iid": 3580910,
+    "nid": 11446936,
+    "record_url": "https://new.drupal.org/node/11446936",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3580910",
+    "title": "Improve config validation and use #config_target for settings form",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "13aa9e2b-f1ae-4726-b9fa-91a85c1c1b91"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3581498,
+    "nid": 11447295,
+    "record_url": "https://new.drupal.org/node/11447295",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3581498",
+    "title": "Required parameter '$logger_factory' missing in AiContextItemStorage",
+    "uncredited": [],
+    "uuid": "28705398-e551-4cc9-8171-79b4ce8f13c4"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3581501,
+    "nid": 11447297,
+    "record_url": "https://new.drupal.org/node/11447297",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3581501",
+    "title": "ai_context_install breaks existing config site installs (and probably recipes)",
+    "uncredited": [],
+    "uuid": "94a17309-1904-4483-abff-d9eaa84ae06e"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3581533,
+    "nid": 11447316,
+    "record_url": "https://new.drupal.org/node/11447316",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3581533",
+    "title": "Do not link to agent edit form unless the user has access",
+    "uncredited": [],
+    "uuid": "6342f067-79ae-4342-86ae-03898f5a608b"
+  },
+  {
+    "closed_at": "2026-05-01T20:29:02+00:00",
+    "credited": [
+      "ajv009",
+      "alexua",
+      "dstorozhuk",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3582288,
+    "nid": 11447827,
+    "record_url": "https://new.drupal.org/node/11447827",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582288",
+    "title": "SystemPromptSubscriber re-injects full context on every agent loop iteration",
+    "uncredited": [
+      "alex"
+    ],
+    "uuid": "2292abc0-2313-4163-8f62-a72026f1d54b"
+  },
+  {
+    "closed_at": "2026-05-02T04:47:42+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3582494,
+    "nid": 11447970,
+    "record_url": "https://new.drupal.org/node/11447970",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582494",
+    "title": "Analyze CCC roadmap notes against issue queue",
+    "uncredited": [],
+    "uuid": "c1fcb6e0-b749-49e5-b686-4dd523625ce5"
+  },
+  {
+    "closed_at": "2026-05-01T23:38:56+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3582504,
+    "nid": 11447979,
+    "record_url": "https://new.drupal.org/node/11447979",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582504",
+    "title": "Analyze CCC features and roadmap against context engineering best practices",
+    "uncredited": [],
+    "uuid": "ef3b5ef2-52b6-4c0a-9975-04aea9d65804"
+  },
+  {
+    "closed_at": "2026-04-16T20:20:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3582536,
+    "nid": 11447998,
+    "record_url": "https://new.drupal.org/node/11447998",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582536",
+    "title": "Sprint 6 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "b47431b2-b24a-40f3-b408-5947cd324ce2"
+  },
+  {
+    "closed_at": "2026-04-16T20:00:04+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3582544,
+    "nid": 11448005,
+    "record_url": "https://new.drupal.org/node/11448005",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582544",
+    "title": "Fix PHPStan errors in CCC after 2.1.45 release",
+    "uncredited": [],
+    "uuid": "b64d6515-2ad1-40bb-a41c-c4344ee30eed"
+  },
+  {
+    "closed_at": "2026-04-15T18:30:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3582562,
+    "nid": 11448017,
+    "record_url": "https://new.drupal.org/node/11448017",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582562",
+    "title": "Increase gitlab ci timeout for CCC",
+    "uncredited": [],
+    "uuid": "35440c0e-e7d2-45fa-be90-aab4df255672"
+  },
+  {
+    "closed_at": "2026-04-25T18:18:02+00:00",
+    "credited": [
+      "jessehs",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3582920,
+    "nid": 11448287,
+    "record_url": "https://new.drupal.org/node/11448287",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3582920",
+    "title": "Add entity type and bundle context scope plugin",
+    "uncredited": [
+      "danrod",
+      "ultimike"
+    ],
+    "uuid": "3fc49070-21c5-4946-a6f3-a574e8b179bc"
+  },
+  {
+    "closed_at": "2026-04-21T21:55:16+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3583319,
+    "nid": 11448512,
+    "record_url": "https://new.drupal.org/node/11448512",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3583319",
+    "title": "Drupal Developer Days CCC contribution planning",
+    "uncredited": [],
+    "uuid": "131e1e1d-e51b-402d-b2fb-99727f5d5862"
+  },
+  {
+    "closed_at": "2026-06-12T17:46:59+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3584775,
+    "nid": 11449473,
+    "record_url": "https://new.drupal.org/node/11449473",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3584775",
+    "title": "Remove AiContextItemType",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "9bebe5b6-1e26-4cd0-ba91-98dc8685865e"
+  },
+  {
+    "closed_at": "2026-04-25T19:59:24+00:00",
+    "credited": [
+      "joshua1234511",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3584838,
+    "nid": 11449523,
+    "record_url": "https://new.drupal.org/node/11449523",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3584838",
+    "title": "Add convenience API for non-agent programmatic context retrieval",
+    "uncredited": [],
+    "uuid": "44d9b717-c725-4a70-be73-f84700651320"
+  },
+  {
+    "closed_at": "2026-04-25T07:00:26+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3585041,
+    "nid": 11449643,
+    "record_url": "https://new.drupal.org/node/11449643",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3585041",
+    "title": "Local tasks for scopes should be dynamically generated",
+    "uncredited": [],
+    "uuid": "194841ab-6264-4987-a661-fefa6e24feaa"
+  },
+  {
+    "closed_at": "2026-05-02T05:23:11+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3585850,
+    "nid": 11450236,
+    "record_url": "https://new.drupal.org/node/11450236",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3585850",
+    "title": "Sprint 8 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "1a56dd66-536c-448d-9020-cde78ed2ae85"
+  },
+  {
+    "closed_at": "2026-05-09T18:26:16+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3585902,
+    "nid": 11450269,
+    "record_url": "https://new.drupal.org/node/11450269",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3585902",
+    "title": "CCC beta2 release planning",
+    "uncredited": [],
+    "uuid": "8831a3b2-4a16-429b-b7b4-3d92154a9d50"
+  },
+  {
+    "closed_at": "2026-04-25T07:01:25+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3585917,
+    "nid": 11450275,
+    "record_url": "https://new.drupal.org/node/11450275",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3585917",
+    "title": "CCC beta testing at Drupal Dev Days (DDD) 2026",
+    "uncredited": [],
+    "uuid": "04bf6b32-6b4b-4a04-9fdf-d8110e8f8444"
+  },
+  {
+    "closed_at": "2026-05-11T04:01:10+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3585920,
+    "nid": 11450278,
+    "record_url": "https://new.drupal.org/node/11450278",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3585920",
+    "title": "Create CCC beta2 release",
+    "uncredited": [],
+    "uuid": "4a9b64a6-9c6f-4bac-81b4-55e8f718a002"
+  },
+  {
+    "closed_at": "2026-05-24T03:49:33+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586082,
+    "nid": 11450387,
+    "record_url": "https://new.drupal.org/node/11450387",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586082",
+    "title": "Clean up follow-ups from target entity decoupling review",
+    "uncredited": [],
+    "uuid": "4c66e2d9-a5ca-4e45-9da4-319c314a7d13"
+  },
+  {
+    "closed_at": "2026-04-25T16:49:49+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "michele.r",
+      "smustgrave"
+    ],
+    "iid": 3586090,
+    "nid": 11450393,
+    "record_url": "https://new.drupal.org/node/11450393",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586090",
+    "title": "Remove Scheduler content moderation integration CCC patch once a new release is available",
+    "uncredited": [],
+    "uuid": "4dadff06-7bba-4706-a2b3-abb4b5912086"
+  },
+  {
+    "closed_at": "2026-04-21T20:42:41+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586091,
+    "nid": 11450394,
+    "record_url": "https://new.drupal.org/node/11450394",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586091",
+    "title": "Review CCC todo comments for action items",
+    "uncredited": [],
+    "uuid": "f07f3c6c-91b8-4add-8d30-779e8bf21ab7"
+  },
+  {
+    "closed_at": "2026-05-10T16:46:13+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586108,
+    "nid": 11450402,
+    "record_url": "https://new.drupal.org/node/11450402",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586108",
+    "title": "Address todos in scope form rendering and persistence tests",
+    "uncredited": [],
+    "uuid": "ed1a549e-565d-4772-9852-9431470e2a66"
+  },
+  {
+    "closed_at": "2026-05-08T21:34:10+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586109,
+    "nid": 11450403,
+    "record_url": "https://new.drupal.org/node/11450403",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586109",
+    "title": "Address todos in CCC taxonomy entity type dependency in kernel tests",
+    "uncredited": [],
+    "uuid": "14278811-753e-4504-8d19-bc998bd3e24f"
+  },
+  {
+    "closed_at": "2026-05-08T00:54:49+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586110,
+    "nid": 11450404,
+    "record_url": "https://new.drupal.org/node/11450404",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586110",
+    "title": "Address todos in CCC empty scope / subscription handling tests",
+    "uncredited": [],
+    "uuid": "0a10a4c8-57ad-4dd2-8d07-1889a50f767b"
+  },
+  {
+    "closed_at": "2026-05-08T00:50:43+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586111,
+    "nid": 11450405,
+    "record_url": "https://new.drupal.org/node/11450405",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586111",
+    "title": "Address todos in CCC subscription update logic and scope visibility in tests",
+    "uncredited": [],
+    "uuid": "56943f4a-3f10-410e-a479-f74ceb1d71f6"
+  },
+  {
+    "closed_at": "2026-05-28T20:00:49+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586116,
+    "nid": 11450408,
+    "record_url": "https://new.drupal.org/node/11450408",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586116",
+    "title": "Update context listing to not use target column",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8739a3b6-80af-4fa0-a97d-d1362f6281b1"
+  },
+  {
+    "closed_at": "2026-04-26T16:12:37+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3586120,
+    "nid": 11450411,
+    "record_url": "https://new.drupal.org/node/11450411",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586120",
+    "title": "Make subcontext feature optional",
+    "uncredited": [],
+    "uuid": "07ed14ff-29cd-4ce1-a799-58cfc5f7bf63"
+  },
+  {
+    "closed_at": "2026-05-26T16:37:35+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586127,
+    "nid": 11450416,
+    "record_url": "https://new.drupal.org/node/11450416",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586127",
+    "title": "Update context listing to show workflow state",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "7d301fa0-1ae1-4590-a1bf-0f77519f501b"
+  },
+  {
+    "closed_at": "2026-04-25T14:49:30+00:00",
+    "credited": [
+      "andypost",
+      "cmlara",
+      "drumm",
+      "hestenet",
+      "kepol"
+    ],
+    "iid": 3586138,
+    "nid": 11450422,
+    "record_url": "https://new.drupal.org/node/11450422",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586138",
+    "title": "Still getting GitLab CI timeouts for CCC",
+    "uncredited": [],
+    "uuid": "5126a085-2743-4631-94f3-d8e81023ede0"
+  },
+  {
+    "closed_at": "2026-04-25T06:45:47+00:00",
+    "credited": [
+      "hestenet",
+      "kepol"
+    ],
+    "iid": 3586139,
+    "nid": 11450898,
+    "record_url": "https://new.drupal.org/node/11450898",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586139",
+    "title": "Add regular CCC contributors as GitLab reporter members",
+    "uncredited": [],
+    "uuid": "f1083d74-fb63-4452-9524-79124bc3f0de"
+  },
+  {
+    "closed_at": "2026-05-10T16:16:33+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586140,
+    "nid": 11452298,
+    "record_url": "https://new.drupal.org/node/11452298",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586140",
+    "title": "Design Improved Context Items List View",
+    "uncredited": [],
+    "uuid": "8a173c50-0a11-48f0-bee5-d55d13065a94"
+  },
+  {
+    "closed_at": "2026-05-10T15:42:36+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586141,
+    "nid": 11452297,
+    "record_url": "https://new.drupal.org/node/11452297",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586141",
+    "title": "Design for the Context Item single entity view (manual/markdown/text/static)",
+    "uncredited": [],
+    "uuid": "eda7742e-e7da-4d92-a565-ac592374eb31"
+  },
+  {
+    "closed_at": "2026-05-08T19:37:59+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586142,
+    "nid": 11450892,
+    "record_url": "https://new.drupal.org/node/11450892",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586142",
+    "title": "Configure GitLab metadata for CCC",
+    "uncredited": [],
+    "uuid": "1658f7bc-dab5-4815-abf9-63e0cdb966fb"
+  },
+  {
+    "closed_at": "2026-05-04T19:09:46+00:00",
+    "credited": [
+      "bbruno",
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3586143,
+    "nid": 11451904,
+    "record_url": "https://new.drupal.org/node/11451904",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586143",
+    "title": "ai_context overview CSS references missing   external.svg asset via bad relative path",
+    "uncredited": [],
+    "uuid": "7e1ebcfe-8772-4494-9a4f-3904597e81b8"
+  },
+  {
+    "closed_at": "2026-04-25T03:30:58+00:00",
+    "credited": [],
+    "iid": 3586144,
+    "nid": 11452632,
+    "record_url": "https://new.drupal.org/node/11452632",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586144",
+    "title": "Testing ccc issue + mr connection",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "1ad0a677-506e-43e5-964d-779d6ff9a3aa"
+  },
+  {
+    "closed_at": "2026-05-16T13:50:04+00:00",
+    "credited": [
+      "kepol",
+      "mglaman",
+      "scottfalconer"
+    ],
+    "iid": 3586145,
+    "nid": 11453450,
+    "record_url": "https://new.drupal.org/node/11453450",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586145",
+    "title": "Handle the case when scope plugin values are no longer available",
+    "uncredited": [],
+    "uuid": "8bb009ad-dc32-4aeb-8efa-a6c096c1ef41"
+  },
+  {
+    "closed_at": "2026-05-03T05:58:01+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586146,
+    "nid": 11451753,
+    "record_url": "https://new.drupal.org/node/11451753",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586146",
+    "title": "Normalize token/item limit naming \u2014 eliminate `tokenBudget` and align on `maxTokens`/`maxItems`",
+    "uncredited": [],
+    "uuid": "d9849d82-ead6-4ad3-9025-4dae093339a9"
+  },
+  {
+    "closed_at": "2026-05-08T16:42:14+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol"
+    ],
+    "iid": 3586147,
+    "nid": 11452590,
+    "record_url": "https://new.drupal.org/node/11452590",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586147",
+    "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 1)",
+    "uncredited": [],
+    "uuid": "c03e0dc2-a695-4a7f-b3a3-2c61048449f3"
+  },
+  {
+    "closed_at": "2026-06-12T23:20:08+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "mglaman",
+      "ultimike"
+    ],
+    "iid": 3586148,
+    "nid": 11451529,
+    "record_url": "https://new.drupal.org/node/11451529",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586148",
+    "title": "[Discuss] Usage of \"Context scope\" and \"Target bundles\"",
+    "uncredited": [],
+    "uuid": "28b85d82-6746-49af-b00c-cca501df25ce"
+  },
+  {
+    "closed_at": "2026-05-03T21:48:28+00:00",
+    "credited": [
+      "kepol",
+      "ultimike"
+    ],
+    "iid": 3586149,
+    "nid": 11451530,
+    "record_url": "https://new.drupal.org/node/11451530",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586149",
+    "title": "Question about \"Subcontext type = Conditional - included based on relevance\"",
+    "uncredited": [],
+    "uuid": "a6d21c47-fbc1-4a12-8a59-90dd5d1180fb"
+  },
+  {
+    "closed_at": "2026-05-03T21:50:19+00:00",
+    "credited": [
+      "darrenoh",
+      "erichomanchuk",
+      "kepol"
+    ],
+    "iid": 3586152,
+    "nid": 11451797,
+    "record_url": "https://new.drupal.org/node/11451797",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586152",
+    "title": "Test CCC using DrupalForge DrupalCon Chicago Driesnote template",
+    "uncredited": [],
+    "uuid": "dab04075-244d-4967-b50a-5b274b6c22a5"
+  },
+  {
+    "closed_at": "2026-05-11T18:30:08+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586154,
+    "nid": 11452799,
+    "record_url": "https://new.drupal.org/node/11452799",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586154",
+    "title": "Create CCC status update video",
+    "uncredited": [],
+    "uuid": "fa71e6ef-5a69-4802-9d76-12781d85a943"
+  },
+  {
+    "closed_at": "2026-06-18T22:49:08+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586155,
+    "nid": 11466339,
+    "record_url": "https://new.drupal.org/node/11466339",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586155",
+    "title": "Create GitLab issue and merge request templates for ai_context project",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "1ae5eff9-4516-4927-8f3a-72aeebe5ea87"
+  },
+  {
+    "closed_at": "2026-05-11T00:40:50+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586156,
+    "nid": 11452683,
+    "record_url": "https://new.drupal.org/node/11452683",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586156",
+    "title": "CCC beta2 QA",
+    "uncredited": [],
+    "uuid": "4d7ac605-9537-4018-aaaa-5c89c67056e3"
+  },
+  {
+    "closed_at": "2026-06-06T05:59:26+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586157,
+    "nid": 11455851,
+    "record_url": "https://new.drupal.org/node/11455851",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586157",
+    "title": "Improve context selection cacheability and request-level scope performance",
+    "uncredited": [],
+    "uuid": "97ec9289-f27f-436a-a4d6-27bb98671866"
+  },
+  {
+    "closed_at": "2026-05-08T19:04:06+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol"
+    ],
+    "iid": 3586158,
+    "nid": 11452591,
+    "record_url": "https://new.drupal.org/node/11452591",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586158",
+    "title": "Fix custom path matching for site section scope",
+    "uncredited": [],
+    "uuid": "c5209e05-017c-497b-a107-95ce991721d9"
+  },
+  {
+    "closed_at": "2026-05-08T00:33:45+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3586159,
+    "nid": 11452493,
+    "record_url": "https://new.drupal.org/node/11452493",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586159",
+    "title": "Require provider for conditional subcontext before RC1",
+    "uncredited": [],
+    "uuid": "ad6cb512-5edd-491c-8668-d2dc4888e806"
+  },
+  {
+    "closed_at": "2026-05-25T22:57:29+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586160,
+    "nid": 11454542,
+    "record_url": "https://new.drupal.org/node/11454542",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586160",
+    "title": "Add per-agent context injection limits and selection mode",
+    "uncredited": [],
+    "uuid": "f8f3412b-d1f7-4847-8c4c-f2218460fd74"
+  },
+  {
+    "closed_at": "2026-05-23T18:42:37+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586161,
+    "nid": 11454405,
+    "record_url": "https://new.drupal.org/node/11454405",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586161",
+    "title": "Reserve pre-RC1 entity schema fields for CCC",
+    "uncredited": [],
+    "uuid": "d8e43e4c-16c2-4689-9e73-4a6ea3e19c99"
+  },
+  {
+    "closed_at": "2026-06-12T22:48:08+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586162,
+    "nid": 11459795,
+    "record_url": "https://new.drupal.org/node/11459795",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586162",
+    "title": "Add stable selection pipeline events for contrib extension",
+    "uncredited": [],
+    "uuid": "7891d0e9-5786-4c1b-b764-738883d27f49"
+  },
+  {
+    "closed_at": "2026-05-29T23:20:01+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586169,
+    "nid": 11455040,
+    "record_url": "https://new.drupal.org/node/11455040",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586169",
+    "title": "[Discuss] Selection extension points and diagnostics for context selection",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "9af6f2f8-bf4b-4cd9-8e0f-5bb958bb0543"
+  },
+  {
+    "closed_at": "2026-06-06T01:47:25+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586170,
+    "nid": 11459797,
+    "record_url": "https://new.drupal.org/node/11459797",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586170",
+    "title": "[Discuss] Structured context content format and authoring model",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "1652c9d3-ed49-46c9-9cb3-80370c5f2817"
+  },
+  {
+    "closed_at": "2026-05-07T04:24:27+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586183,
+    "nid": 11452301,
+    "record_url": "https://new.drupal.org/node/11452301",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586183",
+    "title": "Sprint 9 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "8d724757-5e64-4c0f-b3ad-0640a7e6398c"
+  },
+  {
+    "closed_at": "2026-05-04T19:08:24+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol"
+    ],
+    "iid": 3586184,
+    "nid": 11451906,
+    "record_url": "https://new.drupal.org/node/11451906",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586184",
+    "title": "Add `AiContextSelectorInterface` before RC1",
+    "uncredited": [],
+    "uuid": "765b683d-e2d2-4ce6-96cb-5a72738a66b9"
+  },
+  {
+    "closed_at": "2026-05-03T16:26:26+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586185,
+    "nid": 11452631,
+    "record_url": "https://new.drupal.org/node/11452631",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586185",
+    "title": "Document subcontext entity validation rules for RC1",
+    "uncredited": [],
+    "uuid": "f03c028d-f329-4776-b7ee-e4f263be3977"
+  },
+  {
+    "closed_at": "2026-05-04T19:29:25+00:00",
+    "credited": [
+      "bbruno",
+      "kepol"
+    ],
+    "iid": 3586186,
+    "nid": 11451895,
+    "record_url": "https://new.drupal.org/node/11451895",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586186",
+    "title": "Set default usage record retention to 90 days",
+    "uncredited": [],
+    "uuid": "bfae6f53-ccf9-4919-8e60-7ff3c2d09370"
+  },
+  {
+    "closed_at": "2026-05-08T01:02:59+00:00",
+    "credited": [
+      "akhilbabu",
+      "kepol"
+    ],
+    "iid": 3586189,
+    "nid": 11452494,
+    "record_url": "https://new.drupal.org/node/11452494",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586189",
+    "title": "Stabilize global context item ordering before RC1",
+    "uncredited": [],
+    "uuid": "a52e68ab-d61c-4bb8-887d-3bbd001fd410"
+  },
+  {
+    "closed_at": "2026-05-03T15:52:20+00:00",
+    "credited": [],
+    "iid": 3586190,
+    "nid": 11454558,
+    "record_url": "https://new.drupal.org/node/11454558",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586190",
+    "title": "Allow AI Context provider/model setting to be explicitly unset",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "2458273f-4bcb-43f8-ba31-68b8a496ed6e"
+  },
+  {
+    "closed_at": "2026-05-04T19:06:30+00:00",
+    "credited": [
+      "kepol",
+      "scottfalconer"
+    ],
+    "iid": 3586191,
+    "nid": 11451907,
+    "record_url": "https://new.drupal.org/node/11451907",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586191",
+    "title": "Long context items are skipped instead of truncated when max token limit is reached",
+    "uncredited": [],
+    "uuid": "dc418817-12e5-49b6-93b1-293f2680284b"
+  },
+  {
+    "closed_at": "2026-06-12T23:13:37+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "jucs7",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586192,
+    "nid": 11459794,
+    "record_url": "https://new.drupal.org/node/11459794",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586192",
+    "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 2)",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "5fc91c5f-e6f6-43f0-bd8c-3d1c32b8f93e"
+  },
+  {
+    "closed_at": "2026-05-04T05:18:05+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586193,
+    "nid": 11451806,
+    "record_url": "https://new.drupal.org/node/11451806",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586193",
+    "title": "Test CCC on Drupal CMS 2.1",
+    "uncredited": [],
+    "uuid": "f1705f2e-d78b-4141-a3ca-e055306706ba"
+  },
+  {
+    "closed_at": "2026-05-05T23:07:30+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586194,
+    "nid": 11452053,
+    "record_url": "https://new.drupal.org/node/11452053",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586194",
+    "title": "[Discuss] Conditional subcontext logic",
+    "uncredited": [],
+    "uuid": "3e3138aa-db40-4730-bffd-59134aff5a90"
+  },
+  {
+    "closed_at": "2026-05-05T22:57:06+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586195,
+    "nid": 11452055,
+    "record_url": "https://new.drupal.org/node/11452055",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586195",
+    "title": "(Discuss) Logic for multiple context scope items being handled separately",
+    "uncredited": [],
+    "uuid": "8bbb4d10-9e83-4c5e-94dd-a73e4773dc21"
+  },
+  {
+    "closed_at": "2026-06-21T21:03:50+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586196,
+    "nid": 11466433,
+    "record_url": "https://new.drupal.org/node/11466433",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586196",
+    "title": "[Discuss] Context scope matching semantics: additive OR, filters, and UX clarity",
+    "uncredited": [
+      "rakhimandhania",
+      "vidit-anjaria"
+    ],
+    "uuid": "a0d8512b-38df-4dee-9ba0-cd7becf7c345"
+  },
+  {
+    "closed_at": "2026-05-29T03:13:21+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586198,
+    "nid": 11454919,
+    "record_url": "https://new.drupal.org/node/11454919",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586198",
+    "title": "[Discuss] Associating adhoc vocabularies (freetagging) with context items",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "b547a502-f34a-48b5-9e04-a0e0e2bae97e"
+  },
+  {
+    "closed_at": "2026-05-23T17:52:44+00:00",
+    "credited": [
+      "gargsuchi",
+      "kepol"
+    ],
+    "iid": 3586200,
+    "nid": 11452067,
+    "record_url": "https://new.drupal.org/node/11452067",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586200",
+    "title": "CCC slides and presentation for DrupalSouth Wellington 2026",
+    "uncredited": [],
+    "uuid": "ba091145-4bb6-403a-96b1-06e24c4a8ab7"
+  },
+  {
+    "closed_at": "2026-05-23T16:44:12+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586201,
+    "nid": 11452068,
+    "record_url": "https://new.drupal.org/node/11452068",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586201",
+    "title": "CCC slides and presentation for NYC Drupal AI Summit 2026",
+    "uncredited": [],
+    "uuid": "cdf70936-d5fa-4116-8fad-23a9a405b84c"
+  },
+  {
+    "closed_at": "2026-05-06T21:31:12+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586202,
+    "nid": 11454559,
+    "record_url": "https://new.drupal.org/node/11454559",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586202",
+    "title": "CCC beta2 codebase review",
+    "uncredited": [],
+    "uuid": "7230a994-cc0d-44d1-a380-75f8157d3499"
+  },
+  {
+    "closed_at": "2026-05-26T06:10:07+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586203,
+    "nid": 11454557,
+    "record_url": "https://new.drupal.org/node/11454557",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586203",
+    "title": "Pre-rc1 CCC docs updates",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "9ba470e7-07aa-43a9-bebf-f4f9c641daf8"
+  },
+  {
+    "closed_at": "2026-05-23T17:57:14+00:00",
+    "credited": [],
+    "iid": 3586205,
+    "nid": 11454536,
+    "record_url": "https://new.drupal.org/node/11454536",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586205",
+    "title": "Avoid recreating scope plugins during selection",
+    "uncredited": [
+      "kepol",
+      "rakhimandhania"
+    ],
+    "uuid": "a4303746-2b1e-47ea-97d9-fb44f92eaf50"
+  },
+  {
+    "closed_at": "2026-06-23T20:27:29+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "ahmad-khalil-imagex",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586207,
+    "nid": 11466693,
+    "record_url": "https://new.drupal.org/node/11466693",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586207",
+    "title": "Conditional Subcontext Provider Calls",
+    "uncredited": [
+      "aidanfoster",
+      "rakhimandhania"
+    ],
+    "uuid": "4fe44680-3527-449d-91d0-23f299832b0a"
+  },
+  {
+    "closed_at": "2026-06-12T22:51:35+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol"
+    ],
+    "iid": 3586208,
+    "nid": 11459796,
+    "record_url": "https://new.drupal.org/node/11459796",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586208",
+    "title": "CCC Non-Agent `match_all` Convenience API",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "4ae6bb67-f343-4ee3-8ad5-7fb0b55db851"
+  },
+  {
+    "closed_at": "2026-06-24T16:20:43+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol"
+    ],
+    "iid": 3586209,
+    "nid": 11466797,
+    "record_url": "https://new.drupal.org/node/11466797",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586209",
+    "title": "CCC Usage Tracking Query/Save Pattern",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "11a96419-d7ca-4c8a-89a8-552ef0755b3c"
+  },
+  {
+    "closed_at": "2026-05-26T01:11:43+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586210,
+    "nid": 11454404,
+    "record_url": "https://new.drupal.org/node/11454404",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586210",
+    "title": "Update use case context scope defaults",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "8d1fe98c-b3c3-432b-838e-47e3c8b09415"
+  },
+  {
+    "closed_at": "2026-05-29T21:24:05+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586211,
+    "nid": 11452454,
+    "record_url": "https://new.drupal.org/node/11452454",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586211",
+    "title": "Update CCC overview page with hide option and new wording",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "e57210d4-83ea-4fd3-b6e0-72a20886a2fa"
+  },
+  {
+    "closed_at": "2026-05-27T04:01:31+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "aidanfoster",
+      "kepol"
+    ],
+    "iid": 3586212,
+    "nid": 11452452,
+    "record_url": "https://new.drupal.org/node/11452452",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586212",
+    "title": "Update max context items in general settings",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "7a403682-2dac-4112-abdf-fe9819b5d4f1"
+  },
+  {
+    "closed_at": "2026-06-06T06:04:12+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "jucs7",
+      "kepol"
+    ],
+    "iid": 3586214,
+    "nid": 11452451,
+    "record_url": "https://new.drupal.org/node/11452451",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586214",
+    "title": "Hide additional context scope options if global is selected",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "c7754aca-fb81-44ce-8197-40549a795ebe"
+  },
+  {
+    "closed_at": "2026-06-12T22:19:36+00:00",
+    "credited": [
+      "adaptative",
+      "aidanfoster",
+      "kepol",
+      "mglaman",
+      "rakhimandhania"
+    ],
+    "iid": 3586219,
+    "nid": 11455647,
+    "record_url": "https://new.drupal.org/node/11455647",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586219",
+    "title": "Update context listing page per new design",
+    "uncredited": [
+      "erichomanchuk"
+    ],
+    "uuid": "5189b6b1-d3db-4c91-ac28-962dffce52d9"
+  },
+  {
+    "closed_at": "2026-06-30T20:51:57+00:00",
+    "credited": [
+      "adaptative",
+      "aidanfoster",
+      "csakiistvan",
+      "danrod",
+      "erichomanchuk",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586220,
+    "nid": 11454896,
+    "record_url": "https://new.drupal.org/node/11454896",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586220",
+    "title": "Add full view layout for context item canonical and revision pages based on new design",
+    "uncredited": [],
+    "uuid": "49dea813-4ec3-49e5-82f4-1a68ab44ed4f"
+  },
+  {
+    "closed_at": "2026-06-12T01:41:26+00:00",
+    "credited": [
+      "aidanfoster",
+      "akhilbabu",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586221,
+    "nid": 11459792,
+    "record_url": "https://new.drupal.org/node/11459792",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586221",
+    "title": "Test Chicago Driesnote repo with cheaper models",
+    "uncredited": [],
+    "uuid": "52a3afb2-176d-47d4-9219-fd0ff3915322"
+  },
+  {
+    "closed_at": "2026-05-10T16:46:10+00:00",
+    "credited": [
+      "kepol",
+      "rajabnatshah",
+      "scottfalconer"
+    ],
+    "iid": 3586223,
+    "nid": 11452667,
+    "record_url": "https://new.drupal.org/node/11452667",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586223",
+    "title": "Fatal errors when uninstalling CCC",
+    "uncredited": [],
+    "uuid": "17cf9d2f-dfa9-4307-9e37-4a3629259fb9"
+  },
+  {
+    "closed_at": "2026-05-10T15:46:10+00:00",
+    "credited": [
+      "aidanfoster",
+      "bbruno",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586224,
+    "nid": 11452665,
+    "record_url": "https://new.drupal.org/node/11452665",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586224",
+    "title": "Design for the Context Item single entity view (connected/remote/dynamic)",
+    "uncredited": [],
+    "uuid": "0b49edbc-adab-44aa-949c-c957d8da377e"
+  },
+  {
+    "closed_at": "2026-05-29T05:04:14+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586225,
+    "nid": 11454921,
+    "record_url": "https://new.drupal.org/node/11454921",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586225",
+    "title": "Sprint 10 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "93c495a1-a2f9-4af0-8ffe-81ed3ab81fbe"
+  },
+  {
+    "closed_at": "2026-05-11T01:03:00+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586227,
+    "nid": 11452681,
+    "record_url": "https://new.drupal.org/node/11452681",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586227",
+    "title": "CCC navigation icon missing due to menu changes",
+    "uncredited": [],
+    "uuid": "fe32d263-f192-468f-919b-b2bce3c98b2e"
+  },
+  {
+    "closed_at": "2026-06-23T03:01:32+00:00",
+    "credited": [
+      "ahmad-khader",
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3586228,
+    "nid": 11454420,
+    "record_url": "https://new.drupal.org/node/11454420",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586228",
+    "title": "Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "42262956-b147-4924-9e25-d0eae9a8f572"
+  },
+  {
+    "closed_at": "2026-05-29T06:37:53+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "aidanfoster",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3586229,
+    "nid": 11454917,
+    "record_url": "https://new.drupal.org/node/11454917",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586229",
+    "title": "CCC optional feature suggestions in UI",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "f5c12ff4-27b3-4556-ad80-9ecd687c6411"
+  },
+  {
+    "closed_at": "2026-05-26T05:56:36+00:00",
+    "credited": [
+      "kepol",
+      "mglaman",
+      "ultimike"
+    ],
+    "iid": 3586230,
+    "nid": 11454540,
+    "record_url": "https://new.drupal.org/node/11454540",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586230",
+    "title": "TypeError when trying to \"Configure context items\" from /admin/ai/context/settings/agents",
+    "uncredited": [],
+    "uuid": "a8cebd2f-1e0c-42f9-bb78-b108dc5db4a1"
+  },
+  {
+    "closed_at": "2026-06-12T02:39:57+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586232,
+    "nid": 11459799,
+    "record_url": "https://new.drupal.org/node/11459799",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586232",
+    "title": "Sprint 11 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "1e1087f8-0219-40f1-a9d9-9ef1684ab5e6"
+  },
+  {
+    "closed_at": "2026-06-12T22:27:47+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586233,
+    "nid": 11462076,
+    "record_url": "https://new.drupal.org/node/11462076",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586233",
+    "title": "Bump AI Context to AI Core 1.4",
+    "uncredited": [
+      "akhilbabu"
+    ],
+    "uuid": "40502346-0821-4c91-8f5f-14ffcb53bf28"
+  },
+  {
+    "closed_at": "2026-05-29T06:56:46+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586236,
+    "nid": 11454894,
+    "record_url": "https://new.drupal.org/node/11454894",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586236",
+    "title": "CCC UX sync 27 May 2026",
+    "uncredited": [],
+    "uuid": "6726a1ce-1f5f-4e62-a535-572c016644c9"
+  },
+  {
+    "closed_at": "2026-05-29T07:08:37+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "duplicate_nids": [
+      11454931,
+      11454932
+    ],
+    "iid": 3586238,
+    "nid": 11454931,
+    "record_url": "https://new.drupal.org/node/11454931",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586238",
+    "title": "Fix PHPStan failures in CCC",
+    "uncredited": [],
+    "uuid": "2f5707fb-2f7f-4841-a9ed-bc06e2c63765"
+  },
+  {
+    "closed_at": "2026-06-05T22:13:34+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "ultimike"
+    ],
+    "iid": 3586239,
+    "nid": 11455070,
+    "record_url": "https://new.drupal.org/node/11455070",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586239",
+    "title": "[Discuss] \"Context Control Center\" at top-level of admin menu?",
+    "uncredited": [],
+    "uuid": "b79ef644-b1da-45d3-b5bb-663b0bae60d8"
+  },
+  {
+    "closed_at": "2026-06-05T21:49:35+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "ultimike"
+    ],
+    "iid": 3586240,
+    "nid": 11455543,
+    "record_url": "https://new.drupal.org/node/11455543",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586240",
+    "title": "[Discuss] Default settings - \"Show overview page\" and \"Enable subcontext hierarchy\"",
+    "uncredited": [],
+    "uuid": "2a4b1e1a-952a-4725-b82f-bd33ff9a6ff5"
+  },
+  {
+    "closed_at": "2026-06-21T04:34:21+00:00",
+    "credited": [
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3586241,
+    "nid": 11466340,
+    "record_url": "https://new.drupal.org/node/11466340",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586241",
+    "title": "Document supported vs internal CCC APIs",
+    "uncredited": [],
+    "uuid": "1351f529-a53b-43b3-97b1-6c06ae62956b"
+  },
+  {
+    "closed_at": "2026-06-23T18:14:52+00:00",
+    "credited": [
+      "kepol",
+      "ultimike",
+      "violaniko"
+    ],
+    "iid": 3586244,
+    "nid": 11466675,
+    "record_url": "https://new.drupal.org/node/11466675",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586244",
+    "title": "Provide test context items for testing CCC",
+    "uncredited": [],
+    "uuid": "03241ec0-d3a1-48a6-b1a6-0af9a984604a"
+  },
+  {
+    "closed_at": "2026-05-31T21:11:33+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586245,
+    "nid": 11455108,
+    "record_url": "https://new.drupal.org/node/11455108",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586245",
+    "title": "Ignore AGENTS.md in AI Context",
+    "uncredited": [],
+    "uuid": "17bc1b98-f377-4ac3-a928-71ef79e128ec"
+  },
+  {
+    "closed_at": "2026-06-23T18:40:39+00:00",
+    "credited": [
+      "ahmad-khader",
+      "ahmad-khalil-imagex",
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586246,
+    "nid": 11466686,
+    "record_url": "https://new.drupal.org/node/11466686",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586246",
+    "title": "hook_ai_context_scope_values_alter() is not honored in scope value forms",
+    "uncredited": [],
+    "uuid": "e4c5c063-d075-4509-8ac2-510b694c4fbf"
+  },
+  {
+    "closed_at": "2026-06-12T22:42:37+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "aidanfoster",
+      "emma-horrell",
+      "hestenet",
+      "kepol",
+      "marcus_johansson",
+      "phenaproxima",
+      "robloach",
+      "thejimbirch"
+    ],
+    "iid": 3586247,
+    "nid": 11455333,
+    "record_url": "https://new.drupal.org/node/11455333",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586247",
+    "title": "[Discuss] Recipe naming conventions and locations for AI Context (CCC) recipes",
+    "uncredited": [],
+    "uuid": "728b82a6-266a-4495-aa6b-e8b0121c4e84"
+  },
+  {
+    "closed_at": "2026-06-23T05:53:56+00:00",
+    "credited": [
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586249,
+    "nid": 11466583,
+    "record_url": "https://new.drupal.org/node/11466583",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586249",
+    "title": "Evaluate empathy CCC integration",
+    "uncredited": [],
+    "uuid": "046ec18f-a90f-4cff-8b54-e002445a954b"
+  },
+  {
+    "closed_at": "2026-06-12T18:59:52+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586250,
+    "nid": 11459793,
+    "record_url": "https://new.drupal.org/node/11459793",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586250",
+    "title": "[Discuss] Context item content entity bundles",
+    "uncredited": [],
+    "uuid": "51e09784-b15e-47fe-825c-c2df1c2e4a5c"
+  },
+  {
+    "closed_at": "2026-06-20T23:55:20+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586251,
+    "nid": 11466330,
+    "record_url": "https://new.drupal.org/node/11466330",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586251",
+    "title": "Update subcontext feature description and docs",
+    "uncredited": [],
+    "uuid": "47fadb71-9eb9-42e5-93f3-76bd5175a30c"
+  },
+  {
+    "closed_at": "2026-06-18T21:18:13+00:00",
+    "credited": [
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586252,
+    "nid": 11465367,
+    "record_url": "https://new.drupal.org/node/11465367",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586252",
+    "title": "Update overview page description and docs",
+    "uncredited": [],
+    "uuid": "31aab3ff-ae83-4fdd-9aa4-7121026eece9"
+  },
+  {
+    "closed_at": "2026-06-07T15:34:03+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586253,
+    "nid": 11455919,
+    "record_url": "https://new.drupal.org/node/11455919",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586253",
+    "title": "Move CCC menu from top-level to under AI configuration section",
+    "uncredited": [],
+    "uuid": "16ba386f-b0dc-4fa8-8d20-ca6af0085f05"
+  },
+  {
+    "closed_at": "2026-06-09T19:44:36+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586256,
+    "nid": 11456573,
+    "record_url": "https://new.drupal.org/node/11456573",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586256",
+    "title": "Switch context item text fields to string_long for clean MDXEditor integration",
+    "uncredited": [],
+    "uuid": "7aa04f0e-d35c-4bca-bbbc-9c294e3716f9"
+  },
+  {
+    "closed_at": "2026-06-12T02:44:26+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586257,
+    "nid": 11459800,
+    "record_url": "https://new.drupal.org/node/11459800",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586257",
+    "title": "Assess AI Knowledge Connector and how it might work with CCC",
+    "uncredited": [],
+    "uuid": "7b645b3b-4f0f-43ff-9403-fd910536aef5"
+  },
+  {
+    "closed_at": "2026-06-26T20:57:52+00:00",
+    "credited": [
+      "codeitwisely",
+      "kepol",
+      "leofishman",
+      "zorz"
+    ],
+    "iid": 3586258,
+    "nid": 11466786,
+    "record_url": "https://new.drupal.org/node/11466786",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586258",
+    "title": "Test AI Best Practices skills on AI Context codebase",
+    "uncredited": [],
+    "uuid": "6c2614a3-660a-4539-a5ff-936cb02a5a7f"
+  },
+  {
+    "closed_at": "2026-06-06T18:26:22+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586259,
+    "nid": 11459798,
+    "record_url": "https://new.drupal.org/node/11459798",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586259",
+    "title": "Fix phpstan error in AiContextSubcontextToggleTrait",
+    "uncredited": [
+      "vidit-anjaria"
+    ],
+    "uuid": "c010a12e-d4f1-4455-ba38-5da5f21b86fe"
+  },
+  {
+    "closed_at": "2026-06-18T14:57:35+00:00",
+    "credited": [
+      "jucs7",
+      "kepol",
+      "tormi"
+    ],
+    "iid": 3586260,
+    "nid": 11462529,
+    "record_url": "https://new.drupal.org/node/11462529",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586260",
+    "title": "Show this overview page checkbox is misaligned on vanilla Drupal 11",
+    "uncredited": [],
+    "uuid": "5ff0103e-bd9d-4c66-867f-40e32fc9e7ea"
+  },
+  {
+    "closed_at": "2026-07-01T00:16:29+00:00",
+    "credited": [
+      "kepol",
+      "kieran.cott"
+    ],
+    "iid": 3586261,
+    "nid": 11468032,
+    "record_url": "https://new.drupal.org/node/11468032",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586261",
+    "title": "Clean up bundleless context item follow-ups",
+    "uncredited": [
+      "vidit-anjaria"
+    ],
+    "uuid": "fca1ac7c-ed14-4a29-be43-6725a5777a50"
+  },
+  {
+    "closed_at": "2026-06-26T19:06:34+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586264,
+    "nid": 11467092,
+    "record_url": "https://new.drupal.org/node/11467092",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586264",
+    "title": "[Discuss] Moderation status of subcontext vs parent context items",
+    "uncredited": [],
+    "uuid": "0c026d16-e556-4b86-bc39-f75e6f8479d9"
+  },
+  {
+    "closed_at": "2026-06-18T15:22:35+00:00",
+    "credited": [
+      "danrod",
+      "kepol",
+      "tormi"
+    ],
+    "iid": 3586267,
+    "nid": 11465320,
+    "record_url": "https://new.drupal.org/node/11465320",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586267",
+    "title": "Create SECURITY.md file for AI Context (CCC)",
+    "uncredited": [],
+    "uuid": "98f5589a-8e31-4693-b2cd-844c34b37cc0"
+  },
+  {
+    "closed_at": "2026-06-21T05:00:40+00:00",
+    "credited": [
+      "kepol",
+      "mglaman",
+      "ultimike"
+    ],
+    "iid": 3586270,
+    "nid": 11466338,
+    "record_url": "https://new.drupal.org/node/11466338",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586270",
+    "title": "Clarify Context scope: Tags in documentation",
+    "uncredited": [],
+    "uuid": "c43c9fd6-e26e-4e7e-997f-b6e5e608fb3a"
+  },
+  {
+    "closed_at": "2026-06-23T03:01:05+00:00",
+    "credited": [
+      "kepol",
+      "mglaman",
+      "tbalog"
+    ],
+    "iid": 3586272,
+    "nid": 11466581,
+    "record_url": "https://new.drupal.org/node/11466581",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586272",
+    "title": "Add context settings validation: max_global_items must not exceed max_items",
+    "uncredited": [],
+    "uuid": "4bd5fb7b-064a-441d-b6ab-4630bb693689"
+  },
+  {
+    "closed_at": "2026-06-27T19:04:49+00:00",
+    "credited": [
+      "bbruno",
+      "danrod",
+      "kepol",
+      "mglaman"
+    ],
+    "iid": 3586274,
+    "nid": 11467630,
+    "record_url": "https://new.drupal.org/node/11467630",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586274",
+    "title": "UX improvements on new context listing page",
+    "uncredited": [],
+    "uuid": "4b266280-e6c9-4e1d-aea4-3bf31eeedd20"
+  },
+  {
+    "closed_at": "2026-06-21T17:23:53+00:00",
+    "credited": [
+      "ahmad-khader",
+      "aidanfoster",
+      "emma-horrell",
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3586275,
+    "nid": 11465322,
+    "record_url": "https://new.drupal.org/node/11465322",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586275",
+    "title": "Create Document Loader submodule for CCC",
+    "uncredited": [
+      "mglaman"
+    ],
+    "uuid": "7d7fe2f0-1135-4c2b-b73b-aee16266d043"
+  },
+  {
+    "closed_at": "2026-06-25T04:44:29+00:00",
+    "credited": [
+      "kepol",
+      "vidit-anjaria"
+    ],
+    "iid": 3586277,
+    "nid": 11467530,
+    "record_url": "https://new.drupal.org/node/11467530",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586277",
+    "title": "Sprint 12 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "740808f3-bfaa-447d-b19e-55ba134a2861"
+  },
+  {
+    "closed_at": "2026-06-30T23:24:17+00:00",
+    "credited": [
+      "ahmad-khader",
+      "jucs7",
+      "kepol"
+    ],
+    "iid": 3586280,
+    "nid": 11467991,
+    "record_url": "https://new.drupal.org/node/11467991",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280",
+    "title": "Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes",
+    "uncredited": [
+      "vidit-anjaria"
+    ],
+    "uuid": "28aa8c69-1e79-4688-b8f9-145b2ae380e0"
+  },
+  {
+    "closed_at": "2026-06-23T03:12:11+00:00",
+    "credited": [
+      "aidanfoster",
+      "emma-horrell",
+      "kepol"
+    ],
+    "iid": 3586284,
+    "nid": 11466434,
+    "record_url": "https://new.drupal.org/node/11466434",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586284",
+    "title": "Copy and layout updates on context item scope form",
+    "uncredited": [],
+    "uuid": "211783c4-ef9c-48d4-831c-a590fe697c5d"
+  },
+  {
+    "closed_at": "2026-06-23T01:08:46+00:00",
+    "credited": [
+      "kepol",
+      "robloach"
+    ],
+    "iid": 3586285,
+    "nid": 11466577,
+    "record_url": "https://new.drupal.org/node/11466577",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586285",
+    "title": "Add Configure Link in Modules Page",
+    "uncredited": [],
+    "uuid": "f4810ad9-fd5f-40cb-bcff-40b36c4bb333"
+  },
+  {
+    "closed_at": "2026-06-23T21:55:36+00:00",
+    "credited": [
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586287,
+    "nid": 11466695,
+    "record_url": "https://new.drupal.org/node/11466695",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586287",
+    "title": "No public API for building scope subscription forms; consumers must depend on the internal scope manager",
+    "uncredited": [],
+    "uuid": "8348df8f-ae47-4345-a3d2-ce2fc4293912"
+  },
+  {
+    "closed_at": "2026-06-23T18:21:57+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586288,
+    "nid": 11466677,
+    "record_url": "https://new.drupal.org/node/11466677",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586288",
+    "title": "Update core_version_requirement for all CCC submodules to be same as parent module",
+    "uncredited": [],
+    "uuid": "ecbf3cbb-3662-42f1-9e66-f11e6a97b81c"
+  },
+  {
+    "closed_at": "2026-07-02T21:49:00+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586294,
+    "nid": 11468766,
+    "record_url": "https://new.drupal.org/node/11468766",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586294",
+    "title": "CCC beta3 codebase review (pre-release)",
+    "uncredited": [],
+    "uuid": "604c96dc-3b81-4b59-a54a-8730c6570143"
+  },
+  {
+    "closed_at": "2026-06-27T21:17:31+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586297,
+    "nid": 11467635,
+    "record_url": "https://new.drupal.org/node/11467635",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586297",
+    "title": "Add warning on subcontext edit form if parent is unpublished",
+    "uncredited": [],
+    "uuid": "c1cbe458-47bf-4077-8a30-8b3fd4c7caf7"
+  },
+  {
+    "closed_at": "2026-07-02T00:45:48+00:00",
+    "credited": [
+      "danrod",
+      "kepol"
+    ],
+    "iid": 3586307,
+    "nid": 11468570,
+    "record_url": "https://new.drupal.org/node/11468570",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586307",
+    "title": "Update project page to change to the correct paths in the Installation and Testing Steps section",
+    "uncredited": [],
+    "uuid": "5c5d6f22-7ae8-4118-b053-8abfc0b0f8a9"
+  },
+  {
+    "closed_at": "2026-07-02T21:29:50+00:00",
+    "credited": [],
+    "iid": 3586312,
+    "nid": 11468778,
+    "record_url": "https://new.drupal.org/node/11468778",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586312",
+    "title": "Unset inherit_parent_scope silently wipes stored scope on save (data loss)",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "3ae7843c-aa84-4a6c-9bcf-9b7fb9608b03"
+  },
+  {
+    "closed_at": "2026-07-03T04:45:43+00:00",
+    "credited": [
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586317,
+    "nid": 11468777,
+    "record_url": "https://new.drupal.org/node/11468777",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586317",
+    "title": "Documentation corrections: dependency requirements and AI module version",
+    "uncredited": [],
+    "uuid": "69773be1-6620-4c6c-979d-c213a9c4cc09"
+  },
+  {
+    "closed_at": "2026-07-03T19:07:02+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586318,
+    "nid": 11468940,
+    "record_url": "https://new.drupal.org/node/11468940",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586318",
+    "title": "Beta vs 1.1 CCC API gap analysis",
+    "uncredited": [],
+    "uuid": "f5dbd122-b4e7-40cb-9a36-2990677e8b5f"
+  }
+]

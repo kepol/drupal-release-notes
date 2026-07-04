@@ -102,6 +102,54 @@ python3 report.py --refresh-records --refresh-issues --rebuild-frozen
 python3 report.py --period alpha1-to-beta1
 ```
 
+## Credit audit
+
+Use `credit_audit.py` to find closed issues where credits may be incomplete:
+
+- **No contribution record** — closed on GitLab, nothing on new.drupal.org yet
+- **No credits granted** — record exists but nobody has “Credit this contributor” checked
+- **Uncredited people** — listed on the record but not granted credit (often reviewers or people you decided not to credit)
+
+Issues labeled `why::duplicate` or `why::wontFix` on GitLab are exempt (no record and/or no credits expected) and are excluded from `--review`.
+
+Project managers who only add labels (not code) can be listed in `ignore_uncredited_people.txt`. If they are the **only** uncredited people on an issue, it is omitted from `--review`.
+
+```bash
+# Generate output/credit-audit.md (uses cache after first run)
+python3 credit_audit.py
+
+# Step through each issue interactively
+python3 credit_audit.py --review
+
+# Refresh from Drupal.org and GitLab
+python3 credit_audit.py --refresh
+```
+
+Interactive prompts:
+
+- **y** — Approve (OK as-is; won't show again)
+- **n** — Deny / skip (still needs review next run)
+- **p** — Approve only some uncredited people (when several are listed)
+- **q** — Quit (progress saved)
+
+After reviewing an issue manually, you can also approve from the command line:
+
+```bash
+# Whole issue reviewed
+python3 credit_audit.py --approve 3586230
+
+# Only one uncredited person is intentional
+python3 credit_audit.py --approve 3545824:catia_penas
+
+# Undo
+python3 credit_audit.py --unapprove 3586230
+
+# List saved approvals
+python3 credit_audit.py --list-approvals
+```
+
+Approvals are stored in `cache/credit_approvals.json`.
+
 ## AI-written summary paragraph
 
 By default, a factual summary is generated from section counts. For prose suitable for Drupal.org:
@@ -171,14 +219,20 @@ https://new.drupal.org/contribution-record?source_link=ISSUE_URL&format=jsonapi
 ## Repository layout
 
 ```
-report.py                 Main script
+report.py                 Release credit reports
+credit_audit.py           Missing/partial credit audit + approvals
 requirements.txt
 exclude_from_lists.txt    Manual issue exclusions
+ignore_uncredited_people.txt  PM usernames not expected to receive credit
 cache/
   contribution_records.json Cached credited issues + contributor org attributions
+  credit_audit_records.json Full contributor lists for audit (credited + uncredited)
+  credit_approvals.json     Issues and people you have reviewed
+  closed_issues.json        Closed GitLab issues for audit comparison
   issues.json               Cached GitLab issue metadata
   periods/                  Frozen period report JSON
 output/                   Generated markdown release notes
+  credit-audit.md           Credit review report
 summaries/
   {period}.prompt.md        AI prompt input (optional to regenerate)
   {period}.txt              Custom summary paragraph (optional)
