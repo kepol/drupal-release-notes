@@ -1,0 +1,13 @@
+# Prefer the OS keychain instead of this file:
+#
+#   python3 credit_audit.py --store-gitlab-token
+#
+# That stores your git.drupalcode.org token encrypted in macOS Keychain
+# (or the secret service on Linux with `keyring` installed). Input is
+# hidden while you paste.
+#
+# Plaintext file fallback (not recommended):
+#   cp .gitlab-token.example .gitlab-token
+#   chmod 600 .gitlab-token
+#
+# .gitlab-token is gitignored — do not commit it.

@@ -2,9 +2,9 @@
 
 Closed ai_context issues that may need credit review on [new.drupal.org](https://new.drupal.org).
 
-**22 issues need review** · **9 exempt (duplicate / won't fix)** · **73 ignored (PM labels only)** · **21 issues approved**
+**6 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **34 issues approved**
 
-_Generated 2026-07-04T19:25:35.514134+00:00_
+_Generated 2026-07-04T20:18:24.886128+00:00_
 
 ## How to approve
 
@@ -41,142 +41,32 @@ _None._
 
 _None._
 
-## People listed but not credited (22)
-
-* [#3547033](https://git.drupalcode.org/project/ai_context/-/work_items/3547033): AI CCC markdown editor integration
-  * Contribution record: [node/11424626](https://new.drupal.org/node/11424626)
-  * Credited: bbruno, danrod, kepol
-  * Uncredited: marcus_johansson
-  * Approve `marcus_johansson`: `python3 credit_audit.py --approve 3547033:marcus_johansson`
-  * Approve issue: `python3 credit_audit.py --approve 3547033`
-
-* [#3558814](https://git.drupalcode.org/project/ai_context/-/work_items/3558814): [Spike] CCC 1.0 brainstorming
-  * Contribution record: [node/11432363](https://new.drupal.org/node/11432363)
-  * Credited: aidanfoster, emma-horrell, kepol, tonypaulbarker, yautja_cetanu
-  * Uncredited: emma, marcus_johansson, tedbow
-  * Approve `emma`: `python3 credit_audit.py --approve 3558814:emma`
-  * Approve `marcus_johansson`: `python3 credit_audit.py --approve 3558814:marcus_johansson`
-  * Approve `tedbow`: `python3 credit_audit.py --approve 3558814:tedbow`
-  * Approve issue: `python3 credit_audit.py --approve 3558814`
-
-* [#3559384](https://git.drupalcode.org/project/ai_context/-/work_items/3559384): Add multilingual support to CCC
-  * Contribution record: [node/11432738](https://new.drupal.org/node/11432738)
-  * Credited: kepol, scottfalconer, thamas
-  * Uncredited: tonypaulbarker
-  * Approve `tonypaulbarker`: `python3 credit_audit.py --approve 3559384:tonypaulbarker`
-  * Approve issue: `python3 credit_audit.py --approve 3559384`
-
-* [#3569776](https://git.drupalcode.org/project/ai_context/-/work_items/3569776): Adopt AI Core shared UI library in CCC and escape data before rendering
-  * Contribution record: [node/11439560](https://new.drupal.org/node/11439560)
-  * Credited: aidanfoster, b_sharpe, bbruno, erichomanchuk, kepol
-  * Uncredited: arianraeesi
-  * Approve `arianraeesi`: `python3 credit_audit.py --approve 3569776:arianraeesi`
-  * Approve issue: `python3 credit_audit.py --approve 3569776`
-
-* [#3571393](https://git.drupalcode.org/project/ai_context/-/work_items/3571393): Add GitLab CI linting to CCC project
-  * Contribution record: [node/11440625](https://new.drupal.org/node/11440625)
-  * Credited: dstorozhuk, kepol, kostiantyn
-  * Uncredited: nickolaj
-  * Approve `nickolaj`: `python3 credit_audit.py --approve 3571393:nickolaj`
-  * Approve issue: `python3 credit_audit.py --approve 3571393`
-
-* [#3574359](https://git.drupalcode.org/project/ai_context/-/work_items/3574359): Refactor context selection logic
-  * Contribution record: [node/11442511](https://new.drupal.org/node/11442511)
-  * Credited: akhilbabu, kepol, marcus_johansson, scottfalconer
-  * Uncredited: danrod
-  * Approve `danrod`: `python3 credit_audit.py --approve 3574359:danrod`
-  * Approve issue: `python3 credit_audit.py --approve 3574359`
-
-* [#3574413](https://git.drupalcode.org/project/ai_context/-/work_items/3574413): Add PDF context source plugin to CCC
-  * Contribution record: [node/11442543](https://new.drupal.org/node/11442543)
-  * Credited: ahmad-khader, kepol, robloach
-  * Uncredited: mglaman
-  * Approve `mglaman`: `python3 credit_audit.py --approve 3574413:mglaman`
-  * Approve issue: `python3 credit_audit.py --approve 3574413`
-
-* [#3574414](https://git.drupalcode.org/project/ai_context/-/work_items/3574414): Add webpage (URL) context source plugin to CCC
-  * Contribution record: [node/11442544](https://new.drupal.org/node/11442544)
-  * Credited: ahmad-khader, kepol, robloach
-  * Uncredited: mglaman
-  * Approve `mglaman`: `python3 credit_audit.py --approve 3574414:mglaman`
-  * Approve issue: `python3 credit_audit.py --approve 3574414`
-
-* [#3574904](https://git.drupalcode.org/project/ai_context/-/work_items/3574904): CCC: Refactor to remove N+1 patterns: batch children & term loads
-  * Contribution record: [node/11442879](https://new.drupal.org/node/11442879)
-  * Credited: kepol, scottfalconer
-  * Uncredited: nikro
-  * Approve `nikro`: `python3 credit_audit.py --approve 3574904:nikro`
-  * Approve issue: `python3 credit_audit.py --approve 3574904`
-
-* [#3574908](https://git.drupalcode.org/project/ai_context/-/work_items/3574908): CCC: Refactor to convert entity HTML helpers to data-only methods and render arrays
-  * Contribution record: [node/11442883](https://new.drupal.org/node/11442883)
-  * Credited: kepol, scottfalconer
-  * Uncredited: danrod, hrishikesh-dalal
-  * Approve `danrod`: `python3 credit_audit.py --approve 3574908:danrod`
-  * Approve `hrishikesh-dalal`: `python3 credit_audit.py --approve 3574908:hrishikesh-dalal`
-  * Approve issue: `python3 credit_audit.py --approve 3574908`
-
-* [#3574928](https://git.drupalcode.org/project/ai_context/-/work_items/3574928): Add MD context source plugin to CCC
-  * Contribution record: [node/11442900](https://new.drupal.org/node/11442900)
-  * Credited: ahmad-khader, kepol, robloach
-  * Uncredited: mglaman
-  * Approve `mglaman`: `python3 credit_audit.py --approve 3574928:mglaman`
-  * Approve issue: `python3 credit_audit.py --approve 3574928`
+## People listed but not credited (6)
 
 * [#3576092](https://git.drupalcode.org/project/ai_context/-/work_items/3576092): [Discuss] Subcontext scope vs parent scope
   * Contribution record: [node/11443754](https://new.drupal.org/node/11443754)
   * Credited: aidanfoster, emma-horrell, kepol, scottfalconer
   * Uncredited: flux423
+  * `flux423` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `flux423`: `python3 credit_audit.py --approve 3576092:flux423`
   * Approve issue: `python3 credit_audit.py --approve 3576092`
-
-* [#3577087](https://git.drupalcode.org/project/ai_context/-/work_items/3577087): CCC MVP Demo: Finalize FinDrop context
-  * Contribution record: [node/11444545](https://new.drupal.org/node/11444545)
-  * Credited: aidanfoster
-  * Uncredited: kepol
-  * Approve `kepol`: `python3 credit_audit.py --approve 3577087:kepol`
-  * Approve issue: `python3 credit_audit.py --approve 3577087`
-
-* [#3577429](https://git.drupalcode.org/project/ai_context/-/work_items/3577429): Move scheduler feature to submodule or progressive enhancement
-  * Contribution record: [node/11444772](https://new.drupal.org/node/11444772)
-  * Credited: annmarysruthy, axioteo, kepol, mglaman
-  * Uncredited: flux423
-  * Approve `flux423`: `python3 credit_audit.py --approve 3577429:flux423`
-  * Approve issue: `python3 credit_audit.py --approve 3577429`
-
-* [#3577745](https://git.drupalcode.org/project/ai_context/-/work_items/3577745): Context item revision comparison is missing some scope info
-  * Contribution record: [node/11444974](https://new.drupal.org/node/11444974)
-  * Credited: hrishikesh-dalal, kepol, root_emarketing
-  * Uncredited: danrod
-  * Approve `danrod`: `python3 credit_audit.py --approve 3577745:danrod`
-  * Approve issue: `python3 credit_audit.py --approve 3577745`
 
 * [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
   * Contribution record: [node/11446290](https://new.drupal.org/node/11446290)
   * Credited: kepol, marcus_johansson, robloach
   * Uncredited: rajabnatshah
+  * `rajabnatshah` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `rajabnatshah`: `python3 credit_audit.py --approve 3579841:rajabnatshah`
   * Approve issue: `python3 credit_audit.py --approve 3579841`
-
-* [#3582288](https://git.drupalcode.org/project/ai_context/-/work_items/3582288): SystemPromptSubscriber re-injects full context on every agent loop iteration
-  * Contribution record: [node/11447827](https://new.drupal.org/node/11447827)
-  * Credited: ajv009, alexua, dstorozhuk, kepol, scottfalconer
-  * Uncredited: alex
-  * Approve `alex`: `python3 credit_audit.py --approve 3582288:alex`
-  * Approve issue: `python3 credit_audit.py --approve 3582288`
-
-* [#3582920](https://git.drupalcode.org/project/ai_context/-/work_items/3582920): Add entity type and bundle context scope plugin
-  * Contribution record: [node/11448287](https://new.drupal.org/node/11448287)
-  * Credited: jessehs, kepol, scottfalconer
-  * Uncredited: danrod, ultimike
-  * Approve `danrod`: `python3 credit_audit.py --approve 3582920:danrod`
-  * Approve `ultimike`: `python3 credit_audit.py --approve 3582920:ultimike`
-  * Approve issue: `python3 credit_audit.py --approve 3582920`
 
 * [#3586207](https://git.drupalcode.org/project/ai_context/-/work_items/3586207): Conditional Subcontext Provider Calls
   * Contribution record: [node/11466693](https://new.drupal.org/node/11466693)
   * Credited: abhisekmazumdar, ahmad-khalil-imagex, kepol, mglaman
   * Uncredited: aidanfoster
+  * `aidanfoster` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `aidanfoster`: `python3 credit_audit.py --approve 3586207:aidanfoster`
   * Approve issue: `python3 credit_audit.py --approve 3586207`
 
@@ -184,6 +74,8 @@ _None._
   * Contribution record: [node/11455647](https://new.drupal.org/node/11455647)
   * Credited: adaptative, aidanfoster, kepol, mglaman, rakhimandhania
   * Uncredited: erichomanchuk
+  * `erichomanchuk` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `erichomanchuk`: `python3 credit_audit.py --approve 3586219:erichomanchuk`
   * Approve issue: `python3 credit_audit.py --approve 3586219`
 
@@ -191,6 +83,8 @@ _None._
   * Contribution record: [node/11462076](https://new.drupal.org/node/11462076)
   * Credited: ahmad-khalil-imagex, danrod, kepol
   * Uncredited: akhilbabu
+  * `akhilbabu` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `akhilbabu`: `python3 credit_audit.py --approve 3586233:akhilbabu`
   * Approve issue: `python3 credit_audit.py --approve 3586233`
 
@@ -198,6 +92,8 @@ _None._
   * Contribution record: [node/11465322](https://new.drupal.org/node/11465322)
   * Credited: ahmad-khader, aidanfoster, emma-horrell, kepol, robloach
   * Uncredited: mglaman
+  * `mglaman` activity:
+    _Set GITLAB_TOKEN to load issue/MR comments._
   * Approve `mglaman`: `python3 credit_audit.py --approve 3586275:mglaman`
   * Approve issue: `python3 credit_audit.py --approve 3586275`
 
@@ -237,7 +133,7 @@ GitLab labels `why::duplicate` or `why::wontFix`. These issues do not need a con
 * [#3586316](https://git.drupalcode.org/project/ai_context/-/work_items/3586316): Harden update 10011: empty-chunk guard and NULL-only backfill
   * GitLab label: `why::duplicate` (duplicate)
 
-## Ignored uncredited — project managers (73)
+## Ignored uncredited — project managers (74)
 
 The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs who add labels, not code).
 
@@ -320,6 +216,11 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Credited: abhisekmazumdar, kepol, nikro
   * Ignored (not expected to credit): rakhimandhania
   * Contribution record: [node/11438236](https://new.drupal.org/node/11438236)
+
+* [#3569776](https://git.drupalcode.org/project/ai_context/-/work_items/3569776): Adopt AI Core shared UI library in CCC and escape data before rendering
+  * Credited: aidanfoster, b_sharpe, bbruno, erichomanchuk, kepol
+  * Ignored (not expected to credit): arianraeesi, rakhimandhania
+  * Contribution record: [node/11439560](https://new.drupal.org/node/11439560)
 
 * [#3572891](https://git.drupalcode.org/project/ai_context/-/work_items/3572891): Create docs for Cursor and Claude code quality for CCC
   * Credited: dstorozhuk, kepol
@@ -606,7 +507,7 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Ignored (not expected to credit): vidit-anjaria
   * Contribution record: [node/11467991](https://new.drupal.org/node/11467991)
 
-## Approved (21)
+## Approved (34)
 
 _These closed issues were marked reviewed. Use `--unapprove` to restore them to the audit._
 
@@ -621,6 +522,7 @@ _These closed issues were marked reviewed. Use `--unapprove` to restore them to 
 * [#3554277](https://git.drupalcode.org/project/ai_context/-/work_items/3554277): ai_context_ai_function_call_info_alter does not work with contexts only set via "always_include"
 * [#3557719](https://git.drupalcode.org/project/ai_context/-/work_items/3557719): [Spike] Research AI Context categories
 * [#3558583](https://git.drupalcode.org/project/ai_context/-/work_items/3558583): AI Context UX meeting 18 Nov 2025
+* [#3558814](https://git.drupalcode.org/project/ai_context/-/work_items/3558814): [Spike] CCC 1.0 brainstorming
 * [#3563043](https://git.drupalcode.org/project/ai_context/-/work_items/3563043): Add toolbar icon to CCC top level menu item
 * [#3563089](https://git.drupalcode.org/project/ai_context/-/work_items/3563089): Add revision comparison diff support for context item revisions
 * [#3563127](https://git.drupalcode.org/project/ai_context/-/work_items/3563127): Add created date to context item entity
@@ -629,5 +531,4 @@ _These closed issues were marked reviewed. Use `--unapprove` to restore them to 
 * [#3564714](https://git.drupalcode.org/project/ai_context/-/work_items/3564714): Allow context scoped to entities in CCC
 * [#3567571](https://git.drupalcode.org/project/ai_context/-/work_items/3567571): CCC MVP Demo: Create draft FinDrop context
 * [#3568673](https://git.drupalcode.org/project/ai_context/-/work_items/3568673): Add context scope base code and use case context scope plugin
-* [#3569310](https://git.drupalcode.org/project/ai_context/-/work_items/3569310): [Meta] Context source plugin feature (context from PDF/MD/TXT/URL)
-* … and 1 more
+* … and 14 more

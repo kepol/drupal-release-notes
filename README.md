@@ -13,7 +13,19 @@ Reports are grouped by release date ranges, with credited issues listed by categ
 python3 -m pip install -r requirements.txt
 ```
 
-Optional: set `GITLAB_TOKEN` or `GITLAB_PRIVATE_TOKEN` for higher GitLab API rate limits.
+### GitLab token (for credit audit comments)
+
+Issue and merge request comments need a [git.drupalcode.org personal access token](https://git.drupalcode.org/-/user_settings/personal_access_tokens) with `read_api` scope.
+
+**Recommended — OS keychain (encrypted, not plaintext):**
+
+```bash
+python3 credit_audit.py --store-gitlab-token
+```
+
+Your input is hidden. On macOS the token is stored in Keychain Access under service `issue-credit-report`. Remove it with `--clear-gitlab-token`.
+
+**Fallbacks** (less secure): gitignored `.gitlab-token` file (see `.gitlab-token.example`) or `GITLAB_TOKEN` in the environment for CI.
 
 ## Quick start
 
@@ -123,7 +135,12 @@ python3 credit_audit.py --review
 
 # Refresh from Drupal.org and GitLab
 python3 credit_audit.py --refresh
+
+# Re-fetch GitLab comments for uncredited people
+python3 credit_audit.py --refresh-comments
 ```
+
+For each uncredited person on a pending issue, the audit loads their GitLab **issue** comments and **merge request** comments (when a linked MR is found). Results are cached in `cache/issue_activity.json`.
 
 Interactive prompts:
 
@@ -228,6 +245,7 @@ cache/
   contribution_records.json Cached credited issues + contributor org attributions
   credit_audit_records.json Full contributor lists for audit (credited + uncredited)
   credit_approvals.json     Issues and people you have reviewed
+  issue_activity.json       Cached GitLab issue/MR comments for audit
   closed_issues.json        Closed GitLab issues for audit comparison
   issues.json               Cached GitLab issue metadata
   periods/                  Frozen period report JSON

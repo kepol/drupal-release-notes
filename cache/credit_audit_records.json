@@ -23,16 +23,15 @@
     "credited": [
       "bbruno",
       "danrod",
-      "kepol"
+      "kepol",
+      "marcus_johansson"
     ],
     "iid": 3547033,
     "nid": 11424626,
     "record_url": "https://new.drupal.org/node/11424626",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547033",
     "title": "AI CCC markdown editor integration",
-    "uncredited": [
-      "marcus_johansson"
-    ],
+    "uncredited": [],
     "uuid": "8ab620a9-2f61-4f8d-ac22-3589624779e7"
   },
   {
@@ -504,6 +503,7 @@
       "aidanfoster",
       "emma-horrell",
       "kepol",
+      "marcus_johansson",
       "tonypaulbarker",
       "yautja_cetanu"
     ],
@@ -514,7 +514,6 @@
     "title": "[Spike] CCC 1.0 brainstorming",
     "uncredited": [
       "emma",
-      "marcus_johansson",
       "tedbow"
     ],
     "uuid": "78cc8cdf-175b-4b47-862e-038fa785a005"
@@ -550,16 +549,15 @@
     "credited": [
       "kepol",
       "scottfalconer",
-      "thamas"
+      "thamas",
+      "tonypaulbarker"
     ],
     "iid": 3559384,
     "nid": 11432738,
     "record_url": "https://new.drupal.org/node/11432738",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3559384",
     "title": "Add multilingual support to CCC",
-    "uncredited": [
-      "tonypaulbarker"
-    ],
+    "uncredited": [],
     "uuid": "275ce3e9-a0c3-48ae-a6d1-e6c5f193c8bc"
   },
   {

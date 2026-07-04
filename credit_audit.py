@@ -12,6 +12,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from gitlab_activity import (
+    enrich_issues_with_gitlab_activity,
+    format_user_activity_lines,
+)
 from report import (
     ApiClient,
     CACHE_DIR,
@@ -21,9 +25,13 @@ from report import (
     ROOT,
     PROJECT_MACHINE_NAME,
     GITLAB_PROJECT_ENCODED,
+    clear_gitlab_token_from_keyring,
     fetch_project_contribution_records,
+    gitlab_token_configured,
+    gitlab_token_setup_hint,
     load_json,
     normalize_username,
+    prompt_and_store_gitlab_token,
     save_json,
 )
 
@@ -54,6 +62,7 @@ class AuditIssue:
     exemption: str | None = None
     duplicate_nids: list[int] = field(default_factory=list)
     ignored_uncredited: list[str] = field(default_factory=list)
+    user_activity: dict[str, Any] = field(default_factory=dict)
 
     @property
     def pending_uncredited(self) -> list[str]:
@@ -444,6 +453,23 @@ def sort_pending_issues(pending: list[AuditIssue]) -> list[AuditIssue]:
     return sorted(pending, key=lambda issue: (priority.get(issue.problem, 9), issue.iid))
 
 
+def append_uncredited_activity(
+    lines: list[str],
+    issue: AuditIssue,
+    *,
+    indent: str = "  ",
+) -> None:
+    if not issue.uncredited:
+        return
+    for user in issue.uncredited:
+        lines.append(f"{indent}* `{user}` activity:")
+        if issue.user_activity:
+            for activity_line in format_user_activity_lines(user, issue.user_activity):
+                lines.append(f"{indent}  {activity_line.strip()}")
+        elif not gitlab_token_configured():
+            lines.append(f"{indent}  _{gitlab_token_setup_hint()}_")
+
+
 def format_issue_review(issue: AuditIssue, index: int, total: int) -> str:
     lines = [
         "",
@@ -460,6 +486,12 @@ def format_issue_review(issue: AuditIssue, index: int, total: int) -> str:
         lines.append("Credited: (none)")
     if issue.uncredited:
         lines.append(f"Missing (not credited): {', '.join(issue.uncredited)}")
+        if issue.user_activity:
+            for user in issue.uncredited:
+                for activity_line in format_user_activity_lines(user, issue.user_activity):
+                    lines.append(activity_line)
+        elif not gitlab_token_configured():
+            lines.append(f"  ({gitlab_token_setup_hint()})")
     elif issue.problem in {"no_record", "no_credits"}:
         lines.append("Missing: credits still need to be added on Drupal.org")
     return "\n".join(lines)
@@ -677,6 +709,7 @@ def render_audit_markdown(
                 lines.append(f"  * Credited: {', '.join(issue.credited)}")
             if issue.uncredited:
                 lines.append(f"  * Uncredited: {', '.join(issue.uncredited)}")
+                append_uncredited_activity(lines, issue)
             if problem == "no_record":
                 lines.append(
                     "  * Create a contribution record on Drupal.org and credit contributors."
@@ -791,6 +824,21 @@ def parse_args() -> argparse.Namespace:
         help="Remove an issue or uncredited-person approval.",
     )
     parser.add_argument(
+        "--store-gitlab-token",
+        action="store_true",
+        help="Securely save a GitLab token to your OS keychain (input hidden).",
+    )
+    parser.add_argument(
+        "--clear-gitlab-token",
+        action="store_true",
+        help="Remove the GitLab token from your OS keychain.",
+    )
+    parser.add_argument(
+        "--refresh-comments",
+        action="store_true",
+        help="Re-fetch GitLab issue and MR comments (requires keychain token).",
+    )
+    parser.add_argument(
         "--ignore-list",
         type=Path,
         default=IGNORE_UNCREDITED_FILE,
@@ -813,6 +861,17 @@ def main() -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     approvals = load_approvals()
+
+    if args.store_gitlab_token:
+        prompt_and_store_gitlab_token()
+        return 0
+
+    if args.clear_gitlab_token:
+        if clear_gitlab_token_from_keyring():
+            print("Removed GitLab token from your OS keychain.")
+        else:
+            print("No GitLab token found in keychain.")
+        return 0
 
     if args.approve:
         iid, username = parse_approval_target(args.approve)
@@ -868,6 +927,16 @@ def main() -> int:
         ignored_users=ignored_users,
     )
 
+    if pending and any(issue.uncredited for issue in pending):
+        if not gitlab_token_configured():
+            print(f"Note: {gitlab_token_setup_hint()}")
+        else:
+            enrich_issues_with_gitlab_activity(
+                client,
+                pending,
+                refresh=args.refresh_comments or args.refresh,
+            )
+
     if args.review:
         run_interactive_review(pending, approvals)
         pending, approved_items, exempt_items = build_audit_findings(
@@ -877,6 +946,12 @@ def main() -> int:
             issues_cache=issues_cache,
             ignored_users=ignored_users,
         )
+        if pending and any(issue.uncredited for issue in pending) and gitlab_token_configured():
+            enrich_issues_with_gitlab_activity(
+                client,
+                pending,
+                refresh=False,
+            )
 
     generated_at = datetime.now(tz=timezone.utc).isoformat()
     duplicate_records = [

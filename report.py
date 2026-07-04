@@ -4,9 +4,11 @@
 from __future__ import annotations
 
 import argparse
+import getpass
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from collections import Counter, defaultdict
@@ -40,6 +42,9 @@ ISSUES_CACHE = CACHE_DIR / "issues.json"
 RECORDS_CACHE = CACHE_DIR / "contribution_records.json"
 STATE_FILE = CACHE_DIR / "state.json"
 PERIODS_DIR = CACHE_DIR / "periods"
+GITLAB_TOKEN_FILE = ROOT / ".gitlab-token"
+GITLAB_KEYCHAIN_SERVICE = "issue-credit-report"
+GITLAB_KEYCHAIN_ACCOUNT = "git.drupalcode.org"
 
 CATEGORY_LABEL = re.compile(r"^category::(\w+)$")
 PRIORITY_LABEL = re.compile(r"^priority::(\w+)$")
@@ -149,11 +154,185 @@ class PeriodReport:
         return mapping
 
 
+def gitlab_token_file_candidates() -> list[Path]:
+    return [
+        GITLAB_TOKEN_FILE,
+        ROOT / ".gitlab-token.local",
+        Path.home() / ".config" / "issue-credit-report" / "gitlab-token",
+    ]
+
+
+def load_gitlab_token_from_keyring() -> str | None:
+    """Load token from OS keychain (macOS Keychain, Linux Secret Service, etc.)."""
+    try:
+        import keyring
+    except ImportError:
+        return _load_gitlab_token_from_macos_keychain()
+
+    try:
+        token = keyring.get_password(GITLAB_KEYCHAIN_SERVICE, GITLAB_KEYCHAIN_ACCOUNT)
+    except Exception:
+        return None
+    return token.strip() if token else None
+
+
+def _load_gitlab_token_from_macos_keychain() -> str | None:
+    if sys.platform != "darwin":
+        return None
+    try:
+        result = subprocess.run(
+            [
+                "security",
+                "find-generic-password",
+                "-s",
+                GITLAB_KEYCHAIN_SERVICE,
+                "-a",
+                GITLAB_KEYCHAIN_ACCOUNT,
+                "-w",
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+    token = result.stdout.strip()
+    return token or None
+
+
+def store_gitlab_token_in_keyring(token: str) -> None:
+    token = token.strip()
+    if not token:
+        raise ValueError("GitLab token is empty.")
+
+    try:
+        import keyring
+
+        keyring.set_password(GITLAB_KEYCHAIN_SERVICE, GITLAB_KEYCHAIN_ACCOUNT, token)
+        return
+    except ImportError:
+        if sys.platform == "darwin":
+            _store_gitlab_token_in_macos_keychain(token)
+            return
+        raise RuntimeError(
+            "Install keyring to store tokens in your OS secret store: "
+            "python3 -m pip install keyring"
+        ) from None
+    except Exception as exc:
+        raise RuntimeError(f"Could not save GitLab token to keychain: {exc}") from exc
+
+
+def _store_gitlab_token_in_macos_keychain(token: str) -> None:
+    try:
+        subprocess.run(
+            [
+                "security",
+                "add-generic-password",
+                "-s",
+                GITLAB_KEYCHAIN_SERVICE,
+                "-a",
+                GITLAB_KEYCHAIN_ACCOUNT,
+                "-w",
+                token,
+                "-U",
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except subprocess.CalledProcessError as exc:
+        stderr = (exc.stderr or "").strip()
+        raise RuntimeError(stderr or "security add-generic-password failed") from exc
+
+
+def clear_gitlab_token_from_keyring() -> bool:
+    """Remove token from keychain. Returns True if something was removed."""
+    removed = False
+    try:
+        import keyring
+
+        try:
+            keyring.delete_password(GITLAB_KEYCHAIN_SERVICE, GITLAB_KEYCHAIN_ACCOUNT)
+            removed = True
+        except keyring.errors.PasswordDeleteError:
+            pass
+    except ImportError:
+        if sys.platform == "darwin":
+            removed = _clear_gitlab_token_from_macos_keychain() or removed
+
+    return removed
+
+
+def _clear_gitlab_token_from_macos_keychain() -> bool:
+    try:
+        subprocess.run(
+            [
+                "security",
+                "delete-generic-password",
+                "-s",
+                GITLAB_KEYCHAIN_SERVICE,
+                "-a",
+                GITLAB_KEYCHAIN_ACCOUNT,
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+
+def prompt_and_store_gitlab_token() -> None:
+    print(
+        "Paste a git.drupalcode.org personal access token with read_api scope.\n"
+        "Input is hidden. The token is stored in your OS keychain (encrypted), "
+        "not in a plaintext project file."
+    )
+    token = getpass.getpass("GitLab token: ").strip()
+    if not token:
+        raise SystemExit("No token entered.")
+    store_gitlab_token_in_keyring(token)
+    print("Saved GitLab token to your OS keychain.")
+
+
+def load_gitlab_token() -> str | None:
+    """Load a GitLab token from keychain, local file, or environment."""
+    token = load_gitlab_token_from_keyring()
+    if token:
+        return token
+
+    for path in gitlab_token_file_candidates():
+        if not path.is_file():
+            continue
+        for line in path.read_text().splitlines():
+            stripped = line.strip()
+            if stripped and not stripped.startswith("#"):
+                return stripped
+
+    for key in ("GITLAB_TOKEN", "GITLAB_PRIVATE_TOKEN"):
+        value = os.environ.get(key, "").strip()
+        if value:
+            return value
+    return None
+
+
+def gitlab_token_configured() -> bool:
+    return load_gitlab_token() is not None
+
+
+def gitlab_token_setup_hint() -> str:
+    return (
+        "Run: python3 credit_audit.py --store-gitlab-token "
+        "(saves to your OS keychain; not stored in plaintext)"
+    )
+
+
 class ApiClient:
     def __init__(self) -> None:
         self.session = requests.Session()
         headers = {"User-Agent": USER_AGENT}
-        gitlab_token = os.environ.get("GITLAB_TOKEN") or os.environ.get("GITLAB_PRIVATE_TOKEN")
+        gitlab_token = load_gitlab_token()
         if gitlab_token:
             headers["PRIVATE-TOKEN"] = gitlab_token
         self.session.headers.update(headers)
@@ -406,11 +585,12 @@ def fetch_contribution_record_detail(
     """Fetch one record with contributors.
 
     Paginated list responses can return stale contributor paragraphs on
-    new.drupal.org, so always load contributor data per record.
+    new.drupal.org, so always load contributor data per record. Use the
+    latest revision — the default revision can lag after edits on Drupal.org.
     """
     url = (
         "https://new.drupal.org/jsonapi/node/contribution_record/"
-        f"{uuid}?include={CONTRIBUTOR_INCLUDE}"
+        f"{uuid}?include={CONTRIBUTOR_INCLUDE}&resourceVersion=rel:latest-version"
     )
     payload = client.get_jsonapi(url)
     return payload["data"], index_included(payload.get("included", []))
