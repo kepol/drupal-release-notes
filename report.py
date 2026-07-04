@@ -219,6 +219,7 @@ def save_json(path: Path, data: Any) -> None:
 
 
 def fetch_release_boundaries(client: ApiClient) -> list[ReleaseBoundary]:
+    """Load tagged releases from Drupal.org (same data as /project/ai_context/releases)."""
     url = (
         "https://www.drupal.org/api-d7/node.json"
         f"?type=project_release&field_release_project={PROJECT_NID}"
@@ -227,6 +228,8 @@ def fetch_release_boundaries(client: ApiClient) -> list[ReleaseBoundary]:
     payload = client.get_json(url)
     releases: list[ReleaseBoundary] = []
     for node in payload.get("list", []):
+        if node.get("field_release_build_type") == "dynamic":
+            continue
         version = node.get("field_release_version")
         created = node.get("created")
         if not version or not created:
@@ -237,50 +240,75 @@ def fetch_release_boundaries(client: ApiClient) -> list[ReleaseBoundary]:
                 created=datetime.fromtimestamp(int(created), tz=timezone.utc),
             )
         )
+    releases.sort(key=lambda release: release.created)
     return releases
 
 
+def version_short_slug(version: str) -> str:
+    """Short slug segment for a release version (e.g. 1.0.0-beta2 -> beta2)."""
+    match = re.search(r"-(alpha|beta|rc)(\d+)$", version, re.IGNORECASE)
+    if match:
+        return f"{match.group(1).lower()}{match.group(2)}"
+    return version.replace(".", "-")
+
+
+def period_slug(start_version: str | None, end_version: str | None) -> str:
+    if start_version is None:
+        return f"pre-{version_short_slug(end_version or '')}"
+    if end_version is None:
+        return f"{version_short_slug(start_version)}-to-now"
+    return f"{version_short_slug(start_version)}-to-{version_short_slug(end_version)}"
+
+
+def period_title(start_version: str | None, end_version: str | None) -> str:
+    if start_version is None:
+        return f"Inception to {end_version}"
+    if end_version is None:
+        return f"{start_version} to now"
+    return f"{start_version} to {end_version}"
+
+
 def build_periods(releases: list[ReleaseBoundary]) -> list[ReportPeriod]:
-    by_version = {release.version: release for release in releases}
-    required = ["0.1.0-alpha1", "1.0.0-beta1", "1.0.0-beta2"]
-    missing = [version for version in required if version not in by_version]
-    if missing:
-        raise RuntimeError(f"Missing release boundaries: {', '.join(missing)}")
+    if not releases:
+        raise RuntimeError(
+            "No tagged releases found on Drupal.org for ai_context. "
+            "See https://www.drupal.org/project/ai_context/releases"
+        )
 
-    alpha1 = by_version["0.1.0-alpha1"].created
-    beta1 = by_version["1.0.0-beta1"].created
-    beta2 = by_version["1.0.0-beta2"].created
-
-    return [
+    periods: list[ReportPeriod] = [
         ReportPeriod(
-            slug="pre-alpha1",
-            title="Inception to 0.1.0-alpha1",
+            slug=period_slug(None, releases[0].version),
+            title=period_title(None, releases[0].version),
             start=None,
-            end=alpha1,
+            end=releases[0].created,
             frozen=True,
-        ),
+        )
+    ]
+
+    for index in range(len(releases) - 1):
+        previous = releases[index]
+        current = releases[index + 1]
+        periods.append(
+            ReportPeriod(
+                slug=period_slug(previous.version, current.version),
+                title=period_title(previous.version, current.version),
+                start=previous.created,
+                end=current.created,
+                frozen=True,
+            )
+        )
+
+    last = releases[-1]
+    periods.append(
         ReportPeriod(
-            slug="alpha1-to-beta1",
-            title="0.1.0-alpha1 to 1.0.0-beta1",
-            start=alpha1,
-            end=beta1,
-            frozen=True,
-        ),
-        ReportPeriod(
-            slug="beta1-to-beta2",
-            title="1.0.0-beta1 to 1.0.0-beta2",
-            start=beta1,
-            end=beta2,
-            frozen=True,
-        ),
-        ReportPeriod(
-            slug="beta2-to-now",
-            title="1.0.0-beta2 to now",
-            start=beta2,
+            slug=period_slug(last.version, None),
+            title=period_title(last.version, None),
+            start=last.created,
             end=None,
             frozen=False,
-        ),
-    ]
+        )
+    )
+    return periods
 
 
 def index_included(included: list[dict[str, Any]]) -> dict[str, dict[str, dict[str, Any]]]:
@@ -935,13 +963,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--rebuild-frozen",
         action="store_true",
-        help="Recompute inception through beta2 periods.",
+        help="Recompute all completed (non-current) release periods.",
     )
     parser.add_argument(
         "--period",
-        choices=["pre-alpha1", "alpha1-to-beta1", "beta1-to-beta2", "beta2-to-now", "all"],
         default="all",
-        help="Which report period to generate.",
+        help=(
+            "Report period slug to generate, or 'all'. "
+            "Slugs are derived from Drupal.org releases (e.g. beta2-to-now)."
+        ),
     )
     parser.add_argument(
         "--exclude-list",
@@ -967,8 +997,18 @@ def main() -> int:
     client = ApiClient()
     releases = fetch_release_boundaries(client)
     periods = build_periods(releases)
+    release_summary = ", ".join(release.version for release in releases)
+    print(f"Release boundaries from Drupal.org: {release_summary}")
     if args.period != "all":
-        periods = [period for period in periods if period.slug == args.period]
+        matching = [period for period in periods if period.slug == args.period]
+        if not matching:
+            available = ", ".join(period.slug for period in periods)
+            print(
+                f"Unknown period {args.period!r}. Available: {available}",
+                file=sys.stderr,
+            )
+            return 1
+        periods = matching
 
     records = fetch_contribution_records(client, refresh=args.refresh_records)
     iids = {int(record["iid"]) for record in records}

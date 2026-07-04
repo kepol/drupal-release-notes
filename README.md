@@ -28,7 +28,15 @@ After cloning this repo, cached data under `cache/` is reused so you do not need
 
 ## Report periods
 
-Period boundaries are loaded automatically from ai_context release dates on Drupal.org:
+Period boundaries are loaded automatically from tagged releases on [drupal.org/project/ai_context/releases](https://www.drupal.org/project/ai_context/releases) via the Drupal.org API. Dev branches such as `1.0.x-dev` are ignored; only static tagged releases are used.
+
+Each run prints the release versions found, for example:
+
+```
+Release boundaries from Drupal.org: 0.1.0-alpha1, 1.0.0-beta1, 1.0.0-beta2
+```
+
+For each consecutive pair of releases, the script creates a report period. The most recent release always gets an open-ended `{last}-to-now` period. Today that looks like:
 
 | Slug | Period |
 |------|--------|
@@ -37,9 +45,17 @@ Period boundaries are loaded automatically from ai_context release dates on Drup
 | `beta1-to-beta2` | 1.0.0-beta1 → 1.0.0-beta2 |
 | `beta2-to-now` | 1.0.0-beta2 → now (incremental) |
 
+When a new release is published (e.g. `1.0.0-beta3`), the next run automatically:
+
+1. Adds a frozen `beta2-to-beta3` period (credits finalized between those release dates)
+2. Opens a new current period `beta3-to-now`
+3. Writes `output/beta2-to-beta3.md` and updates `output/beta3-to-now.md`
+
+No script changes are required for new releases — only publish the release on Drupal.org, then re-run the report.
+
 Issues are assigned to a period based on `field_last_status_change` from the contribution record (when credit was finalized).
 
-Frozen periods (`pre-alpha1` through `beta1-to-beta2`) are cached in `cache/periods/` and only recomputed with `--rebuild-frozen`. The current period (`beta2-to-now`) is regenerated on every run.
+Completed periods are cached in `cache/periods/` and only recomputed with `--rebuild-frozen`. The current `{last}-to-now` period is regenerated on every run.
 
 ## Output format
 
@@ -61,12 +77,17 @@ Section totals are designed to match organization counts for Salsa Digital / Itt
 
 ### Preparing a new release (e.g. beta3)
 
-```bash
-# Refresh credits and issue labels since last run
-python3 report.py --period beta2-to-now --refresh-records --refresh-issues
+After the release is published on Drupal.org:
 
-# Optional: regenerate AI summary prompt
-python3 report.py --period beta2-to-now --write-summary-prompts
+```bash
+# Refresh credits and issue labels; script picks up the new release automatically
+python3 report.py --refresh-records --refresh-issues
+
+# Or only the current open period (slug changes to beta3-to-now after beta3 exists)
+python3 report.py --period beta3-to-now --refresh-records --refresh-issues
+
+# Optional: regenerate AI summary prompt for the new period
+python3 report.py --period beta3-to-now --write-summary-prompts
 ```
 
 ### Full rebuild (rare)
@@ -125,7 +146,7 @@ These are omitted from **Other Major Contributions** lists but still counted in 
 ## Command-line options
 
 ```
---period PERIOD          pre-alpha1 | alpha1-to-beta1 | beta1-to-beta2 | beta2-to-now | all (default)
+--period SLUG             Period slug or 'all' (default). Slugs are derived from releases.
 --refresh-records        Re-fetch contribution records from new.drupal.org
 --refresh-issues         Re-fetch GitLab issue metadata
 --rebuild-frozen         Recompute frozen period reports
@@ -139,7 +160,7 @@ These are omitted from **Other Major Contributions** lists but still counted in 
 |------|--------|
 | Issue credits (people, orgs) | [new.drupal.org](https://new.drupal.org) JSON:API — `contribution_record` nodes |
 | Issue category, priority, title | [git.drupalcode.org](https://git.drupalcode.org/project/ai_context) GitLab API (paginated, ~5 requests) |
-| Release date boundaries | [drupal.org](https://www.drupal.org) `api-d7` — `project_release` nodes |
+| Release date boundaries | [drupal.org/project/ai_context/releases](https://www.drupal.org/project/ai_context/releases) via `api-d7` `project_release` nodes |
 
 Per-issue credit lookup (for debugging):
 
