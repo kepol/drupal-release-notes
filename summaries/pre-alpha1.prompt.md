@@ -1,0 +1,34 @@
+# Summary prompt: Inception to 0.1.0-alpha1
+
+Write 1–2 paragraphs summarizing this release for Drupal.org release notes.
+Focus on user-facing value, major themes, and stability improvements.
+Do not list every issue; synthesize the work below.
+
+Period: Inception to 0.1.0-alpha1
+Credited issues in this report: 15
+
+## New Features
+- #3549082: Within the Context Pools UI, link the Context for the forms to see the details of each context
+- #3555225: Add a single global context, making Vienna Driesnote AI demos much simpler
+
+## Bug Fixes
+- #3547892: CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection
+- #3549748: The max tokens calculation is hardcoded + use tokenizer for AI CCC
+- #3549752: The selector service does not use the maxOverride at all for AI CCC
+- #3550895: CCC tags should be required
+- #3552972: Wrong dependency definition in info.yml causes composer to not install
+- #3554277: ai_context_ai_function_call_info_alter does not work with contexts only set via "always_include"
+- #3554616: Setting AI contexts has no effect on some agents
+
+## Additional Contributions (titles only)
+- #3549081: Group AI Context menu items
+- #3550892: Show description instead of id in the AI Contexts listing page
+- #3556878: Update AI Context module with doc blocks and check coding standards
+- #3557700: AI Context architecture meeting 13 Nov 2025
+- #3558583: AI Context UX meeting 18 Nov 2025
+- #3559388: Update CCC project components to be more useful and add tracker to issues
+
+---
+
+Save the finished summary to: summaries/pre-alpha1.txt
+

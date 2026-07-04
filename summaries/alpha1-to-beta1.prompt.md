@@ -1,0 +1,109 @@
+# Summary prompt: 0.1.0-alpha1 to 1.0.0-beta1
+
+Write 1–2 paragraphs summarizing this release for Drupal.org release notes.
+Focus on user-facing value, major themes, and stability improvements.
+Do not list every issue; synthesize the work below.
+
+Period: 0.1.0-alpha1 to 1.0.0-beta1
+Credited issues in this report: 88
+
+## New Features
+- #3547033: AI CCC markdown editor integration
+- #3547034: [Spike] Research URL support for CCC
+- #3547035: [Spike] Research PDF upload support for CCC
+- #3547050: Add text filtering on AI CCC context agents page
+- #3550034: Add AI context item usage data and page
+- #3559384: Add multilingual support to CCC
+- #3563049: Add draft support to CCC
+- #3563052: Add revision support to CCC
+- #3563089: Add revision comparison diff support for context item revisions
+- #3563357: Add duplicate context item feature like Drupal CMS has for nodes
+- #3563360: Add scheduling options for context items like nodes
+- #3563361: Add moderation workflow support for context items like nodes
+- #3563362: Add toolbar dropdown menu for context items like nodes
+- #3563365: Add tagify styling to taxonomy fields for CCC
+- #3563371: Switch context items page to use a view
+- #3564653: Create CCC moderation workflow and scheduling local tasks
+- #3564706: [Meta] Context Scope feature
+- #3564714: Allow context scoped to entities in CCC
+- #3566852: Add CCC overview page
+- #3567791: [Spike] CCC MCP server integration PoC
+- #3568673: Add context scope base code and use case context scope plugin
+- #3568674: Switch context tags to be a context scope plugin
+- #3568676: Add site section context scope for MVP
+- #3568677: Allow agents to subscribe to context scope
+- #3569311: [Meta] Subcontext feature in CCC
+- #3569313: Create design for context list UI to include subcontext
+- #3570933: Add language context scope for MVP
+- #3570940: Convert global option to context scope plugin
+- #3571788: Update subcontext feature to specify required vs conditional selection
+- #3571909: Update context selection logic to handle subcontext
+- #3572160: Switch target entities to be a context scope plugin
+- #3575595: Format context item markdown on view page
+
+## Bug Fixes
+- #3554221: Setting context pools acts differently between agent form and context pool form
+- #3568115: New context items do not default to published when setting is chosen
+- #3568177: Error when reinstalling after creating CCC taxonomy terms
+- #3571006: Clean up CCC install process and composer.json file
+- #3571188: Error on installation: The state 'draft' already exists in workflow
+- #3571195: Schema errors from scheduler after installing CCC
+- #3571392: Toolbar menu issue in Drupal 11.3 when CCC installed
+
+## Other Major Contributions
+- #3545824: Create demo Context Control Center for Vienna 2025
+- #3558814: [Spike] CCC 1.0 brainstorming
+- #3559379: [Meta] CCC rearchitecture and roadmap
+- #3563000: Switch the AiContext config entity to a content entity
+- #3564709: Switch global context to checkbox on context items
+- #3566842: [META] Add overviews, better descriptions, and help text in CCC for better UX
+- #3569514: [Spike] Research what Google Analytics data can be used in CCC
+- #3569967: [Discuss] Figure out which CCC features can be optional for MVP
+- #3571393: Add GitLab CI linting to CCC project
+- #3571794: Update context list UI to include subcontext and scope
+- #3573713: Full architecture review of CCC in prep for 1.0
+- #3573717: Add automated testing to CCC in prep for 1.0
+- #3574420: Add Drupal CMS 2.0 support to CCC
+- #3574936: Add search or filters to context listing
+- #3576089: Remove support for D10 for CCC
+
+## Additional Contributions (titles only)
+- #3550896: [Discuss] Usage of context tags taxonomy for categorization
+- #3556908: Do not hardcode English language prompts in CCC
+- #3557719: [Spike] Research AI Context categories
+- #3559380: Document current CCC architecture Nov 2025
+- #3559504: Toggling between AI Context local tasks losing content
+- #3563036: Introduce more granular permissions to CCC
+- #3563038: Move CCC routes to higher level to be more similar to admin/content
+- #3563043: Add toolbar icon to CCC top level menu item
+- #3563100: Minor cleanup on CCC pools page
+- #3563107: Remove "pool" and "pools" from CCC code
+- #3563108: Update context item edit form to better align with core
+- #3563127: Add created date to context item entity
+- #3563366: Create nicer context item view page
+- #3563372: Differentiate between description and purpose for context items
+- #3564629: [Discuss] Analyze Cognizant MAKER approach for CCC context granularity, selection, and flagging
+- #3564667: Add a composer.json to CCC
+- #3564691: Create settings and sub-settings hierarchy for CCC
+- #3566858: Update context items page with description and link when there are empty results
+- #3566861: Update CCC general settings page descriptions
+- #3566862: Update context items settings page descriptions
+- #3566863: Update CCC agents settings page description and table
+- #3566865: Update context item edit form field descriptions
+- #3566866: Update agent context edit form description, help text, and table
+- #3567568: [Discuss] Look at Progressive Disclosure for Context items using a progressive disclosure inspired by Claude Skills
+- #3568086: CCC testing ai usage
+- #3568384: [Discuss] Context graphs
+- #3569312: Add parent / child relationship for context
+- #3572067: Sprint 3 CCC roadmap updates, sprint planning, and issue triage
+- #3572891: Create docs for Cursor and Claude code quality for CCC
+- #3573708: Add optional debug logging to CCC
+- #3573709: Fix phpunit test errors in CCC
+- #3573719: Sprint 4 CCC roadmap updates, sprint planning, and issue triage
+- #3574923: Remove _ESLINT_EXTRA in GitLab CI to avoid error in CCC project
+- #3577398: Update CCC readme for new mdxeditor location
+
+---
+
+Save the finished summary to: summaries/alpha1-to-beta1.txt
+

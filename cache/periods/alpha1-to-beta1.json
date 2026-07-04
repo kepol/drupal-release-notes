@@ -1,0 +1,2323 @@
+{
+  "generated_at": "2026-07-04T18:06:13.556574+00:00",
+  "issues": [
+    {
+      "category": "task",
+      "closed_at": "2026-01-25T19:36:54+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "yautja_cetanu"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "kafmil"
+        },
+        {
+          "orgs": [],
+          "user": "ahmedj"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        }
+      ],
+      "iid": 3545824,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3545824",
+      "priority": "major",
+      "title": "Create demo Context Control Center for Vienna 2025",
+      "uuid": "3a09b562-eb93-4779-b36a-ac0a865e7d92"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-16T20:31:33+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        },
+        {
+          "orgs": [
+            "optasy"
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3547033,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547033",
+      "priority": "major",
+      "title": "AI CCC markdown editor integration",
+      "uuid": "8ab620a9-2f61-4f8d-ac22-3589624779e7"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-19T00:07:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "civicactions"
+          ],
+          "user": "webbywe"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [],
+          "user": "ajv009"
+        },
+        {
+          "orgs": [
+            "digitaltrotter"
+          ],
+          "user": "unqunq"
+        },
+        {
+          "orgs": [
+            "kalamuna"
+          ],
+          "user": "robloach"
+        }
+      ],
+      "iid": 3547034,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547034",
+      "priority": "normal",
+      "title": "[Spike] Research URL support for CCC",
+      "uuid": "f8d7a4fc-7da7-43cf-aa0e-b0b2947faf25"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-18T23:57:17+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "kalamuna"
+          ],
+          "user": "robloach"
+        },
+        {
+          "orgs": [
+            "vardot"
+          ],
+          "user": "ahmad-khader"
+        }
+      ],
+      "iid": 3547035,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547035",
+      "priority": "normal",
+      "title": "[Spike] Research PDF upload support for CCC",
+      "uuid": "8f784012-5756-4a79-8b7a-df840177ddf8"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-21T00:04:05+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3547050,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547050",
+      "priority": "normal",
+      "title": "Add text filtering on AI CCC context agents page",
+      "uuid": "b8dd6468-8c69-4de1-939a-c5b7c9cc606c"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-06T07:07:12+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        },
+        {
+          "orgs": [
+            "kalamuna"
+          ],
+          "user": "robloach"
+        }
+      ],
+      "iid": 3550034,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550034",
+      "priority": "major",
+      "title": "Add AI context item usage data and page",
+      "uuid": "8ce2ab5b-dfaa-4c1b-a440-ff580b5c5b43"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-02-05T16:02:06+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3550896,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550896",
+      "priority": "normal",
+      "title": "[Discuss] Usage of context tags taxonomy for categorization",
+      "uuid": "80a05a42-469f-444b-89c9-3ce4bea41644"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-02-19T00:34:33+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3554221,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554221",
+      "priority": "normal",
+      "title": "Setting context pools acts differently between agent form and context pool form",
+      "uuid": "bf0a9dbb-059e-4f7c-99d7-08933f403d91"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-19T06:35:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [],
+          "user": "horvan"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "kumarimedha09"
+        },
+        {
+          "orgs": [
+            "sven decabooter",
+            "entityone",
+            "dynamate"
+          ],
+          "user": "svendecabooter"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "breidert"
+        }
+      ],
+      "iid": 3556908,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556908",
+      "priority": "normal",
+      "title": "Do not hardcode English language prompts in CCC",
+      "uuid": "455626e8-9030-41da-96a9-d212c4a40cfc"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-06T06:28:31+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3557719,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3557719",
+      "priority": "normal",
+      "title": "[Spike] Research AI Context categories",
+      "uuid": "ee94a5e6-c622-42cb-862c-7934075dccbc"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-19T02:59:23+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "yautja_cetanu"
+        },
+        {
+          "orgs": [
+            "annertech",
+            "localgov drupal"
+          ],
+          "user": "tonypaulbarker"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3558814,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3558814",
+      "priority": "major",
+      "title": "[Spike] CCC 1.0 brainstorming",
+      "uuid": "78cc8cdf-175b-4b47-862e-038fa785a005"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-02-08T00:29:51+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3559379,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559379",
+      "priority": "major",
+      "title": "[Meta] CCC rearchitecture and roadmap",
+      "uuid": "427782ba-d77d-4b18-81ae-d9c822294bf7"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T03:19:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3559380,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559380",
+      "priority": "normal",
+      "title": "Document current CCC architecture Nov 2025",
+      "uuid": "a21f366a-c55d-4ae7-91c4-897a7dadf91c"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-16T03:39:40+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "thamas"
+        }
+      ],
+      "iid": 3559384,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559384",
+      "priority": "major",
+      "title": "Add multilingual support to CCC",
+      "uuid": "275ce3e9-a0c3-48ae-a6d1-e6c5f193c8bc"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-07T04:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3559504,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559504",
+      "priority": "normal",
+      "title": "Toggling between AI Context local tasks losing content",
+      "uuid": "d400ccd1-54de-4086-b87d-d6ae1e781fc8"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563000,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563000",
+      "priority": "major",
+      "title": "Switch the AiContext config entity to a content entity",
+      "uuid": "e536978c-acf7-4a0e-964b-7e27c88cf16b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563036,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563036",
+      "priority": "normal",
+      "title": "Introduce more granular permissions to CCC",
+      "uuid": "1c336b6b-c4eb-4324-871a-66b0f7779a24"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563038,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563038",
+      "priority": "normal",
+      "title": "Move CCC routes to higher level to be more similar to admin/content",
+      "uuid": "2c7e86e6-3b4c-46a9-b26c-77843f110619"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-01T15:24:02+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563043,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563043",
+      "priority": "normal",
+      "title": "Add toolbar icon to CCC top level menu item",
+      "uuid": "3cf9e281-5361-4478-8eda-c9b81fdd6d57"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563049,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563049",
+      "priority": "normal",
+      "title": "Add draft support to CCC",
+      "uuid": "d6edac6f-45e4-4885-a6c2-373f0efd7fad"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563052,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563052",
+      "priority": "major",
+      "title": "Add revision support to CCC",
+      "uuid": "b320c392-aae3-451a-90eb-78a706204c4a"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-21T00:32:28+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563089,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563089",
+      "priority": "normal",
+      "title": "Add revision comparison diff support for context item revisions",
+      "uuid": "110933d7-510a-45c4-83ab-e892f9f080c5"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563100,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563100",
+      "priority": "normal",
+      "title": "Minor cleanup on CCC pools page",
+      "uuid": "2158d83a-800a-42d8-a6f1-3880c35faf9e"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-27T01:58:48+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        }
+      ],
+      "iid": 3563107,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563107",
+      "priority": "normal",
+      "title": "Remove \"pool\" and \"pools\" from CCC code",
+      "uuid": "2fc778e8-b82e-485b-9c9c-8f0d663e1b12"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-30T05:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563108,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563108",
+      "priority": "normal",
+      "title": "Update context item edit form to better align with core",
+      "uuid": "0033da97-2c60-44ff-9e12-945ff79a0058"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-29T18:34:20+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "opensense labs",
+            "drupalfit"
+          ],
+          "user": "harivansh"
+        },
+        {
+          "orgs": [
+            "imagex"
+          ],
+          "user": "b_sharpe"
+        }
+      ],
+      "iid": 3563127,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563127",
+      "priority": "normal",
+      "title": "Add created date to context item entity",
+      "uuid": "56a0ef26-053b-4b6e-8046-0e04323d10f9"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2025-12-22T22:41:58+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "lakedrops"
+          ],
+          "user": "jurgenhaas"
+        }
+      ],
+      "iid": 3563357,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563357",
+      "priority": "normal",
+      "title": "Add duplicate context item feature like Drupal CMS has for nodes",
+      "uuid": "b010dd32-f5a7-4ce6-99ad-c4d63360f3eb"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-06T05:34:01+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563360,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563360",
+      "priority": "normal",
+      "title": "Add scheduling options for context items like nodes",
+      "uuid": "3cfd5856-357e-4c8d-b8c4-ecacd0fce39e"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-06T07:24:03+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563361,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563361",
+      "priority": "normal",
+      "title": "Add moderation workflow support for context items like nodes",
+      "uuid": "631c68a8-6ede-4209-a245-433e7c7437b6"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-01T05:44:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563362,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563362",
+      "priority": "normal",
+      "title": "Add toolbar dropdown menu for context items like nodes",
+      "uuid": "f6aec413-9f02-4306-adbd-88790ab5dad3"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-01T18:04:01+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563365,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563365",
+      "priority": "normal",
+      "title": "Add tagify styling to taxonomy fields for CCC",
+      "uuid": "068a1362-1c08-49ad-ad80-7dab2a08b80f"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T03:27:10+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563366,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563366",
+      "priority": "normal",
+      "title": "Create nicer context item view page",
+      "uuid": "680bb2cd-54d4-4d40-97cf-aec301b59fd9"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-06T20:59:03+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563371,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563371",
+      "priority": "minor",
+      "title": "Switch context items page to use a view",
+      "uuid": "3862c825-4b9c-4874-bb12-f1f74911cff2"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-01T15:19:02+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563372,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563372",
+      "priority": "normal",
+      "title": "Differentiate between description and purpose for context items",
+      "uuid": "1c217944-43e4-4958-a689-f888a9592c18"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-03-06T06:08:16+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "kafmil"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        }
+      ],
+      "iid": 3564629,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564629",
+      "priority": "normal",
+      "title": "[Discuss] Analyze Cognizant MAKER approach for CCC context granularity, selection, and flagging",
+      "uuid": "3301f197-5555-480c-af0a-fe48e841462b"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-06T21:04:03+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3564653,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564653",
+      "priority": "major",
+      "title": "Create CCC moderation workflow and scheduling local tasks",
+      "uuid": "53877f81-b398-4c69-acbe-4243af6bc1b3"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-10T19:05:38+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "sujal_31"
+        },
+        {
+          "orgs": [
+            "zyxware technologies"
+          ],
+          "user": "shamir.vs"
+        }
+      ],
+      "iid": 3564667,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564667",
+      "priority": "normal",
+      "title": "Add a composer.json to CCC",
+      "uuid": "4c9a541a-93ba-4be2-bac0-9f68cca7cc98"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-06T21:44:03+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3564691,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564691",
+      "priority": "normal",
+      "title": "Create settings and sub-settings hierarchy for CCC",
+      "uuid": "daac85c4-1893-4252-aad8-e1762f788a90"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-25T05:39:20+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        }
+      ],
+      "iid": 3564706,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564706",
+      "priority": "major",
+      "title": "[Meta] Context Scope feature",
+      "uuid": "22ee161d-91c8-464c-9ef9-07973e0da1ba"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-07T04:24:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3564709,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564709",
+      "priority": "major",
+      "title": "Switch global context to checkbox on context items",
+      "uuid": "85696d6d-1fd5-4b6d-952e-accaf02c41e3"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-17T06:30:35+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3564714,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3564714",
+      "priority": "major",
+      "title": "Allow context scoped to entities in CCC",
+      "uuid": "c44b4c16-4bee-4baf-a750-d41491c65126"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-25T19:59:53+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3566842,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566842",
+      "priority": "major",
+      "title": "[META] Add overviews, better descriptions, and help text in CCC for better UX",
+      "uuid": "431c0cf7-8c6c-4c6c-8554-11f74624c53e"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-01-17T06:59:59+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3566852,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566852",
+      "priority": "major",
+      "title": "Add CCC overview page",
+      "uuid": "5d1739b5-1c57-4e1b-882e-e2c39e0a6438"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-16T22:15:49+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3566858,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566858",
+      "priority": "normal",
+      "title": "Update context items page with description and link when there are empty results",
+      "uuid": "5e8f3692-e581-4aa7-b698-73e50a4e0a31"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-20T23:24:07+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3566861,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566861",
+      "priority": "normal",
+      "title": "Update CCC general settings page descriptions",
+      "uuid": "fad6c314-b599-4f55-a733-eff885747cd5"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-20T20:34:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3566862,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566862",
+      "priority": "normal",
+      "title": "Update context items settings page descriptions",
+      "uuid": "d98af1ca-0e4c-458f-954b-dc7b37362a75"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-21T00:03:10+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3566863,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566863",
+      "priority": "normal",
+      "title": "Update CCC agents settings page description and table",
+      "uuid": "7441bbf2-5188-4767-98a7-2d4ec1e70539"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-20T23:00:12+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3566865,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566865",
+      "priority": "normal",
+      "title": "Update context item edit form field descriptions",
+      "uuid": "6868d626-cb17-449c-b8a7-e193e3edebfc"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-21T00:53:00+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3566866,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3566866",
+      "priority": "normal",
+      "title": "Update agent context edit form description, help text, and table",
+      "uuid": "9e60622f-dfc3-4ef0-a022-f5f966aa3c0c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-06T04:25:26+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3567568,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567568",
+      "priority": "normal",
+      "title": "[Discuss] Look at Progressive Disclosure for Context items using a progressive disclosure inspired by Claude Skills",
+      "uuid": "dbeba603-09be-4b75-903f-e6ac620f9094"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-04T18:24:10+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        }
+      ],
+      "iid": 3567571,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567571",
+      "priority": "major",
+      "title": "CCC MVP Demo: Create draft FinDrop context",
+      "uuid": "7a42c827-48d8-49dd-8578-68f9c28a2775"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-19T00:25:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "dropsolid"
+          ],
+          "user": "nikro"
+        },
+        {
+          "orgs": [
+            "dropsolid",
+            "dropsolid"
+          ],
+          "user": "abhisekmazumdar"
+        }
+      ],
+      "iid": 3567791,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567791",
+      "priority": "normal",
+      "title": "[Spike] CCC MCP server integration PoC",
+      "uuid": "b77b7fb8-923d-4c6d-8fd4-f810843dd6c0"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-01-21T01:08:19+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3568086,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568086",
+      "priority": "minor",
+      "title": "CCC testing ai usage",
+      "uuid": "0621e6d2-3d8e-4e93-82a6-1bc28cc438d7"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-01-29T18:37:58+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "optasy"
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3568115,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568115",
+      "priority": "normal",
+      "title": "New context items do not default to published when setting is chosen",
+      "uuid": "393c669c-0a32-48aa-af9a-764027eaef99"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-01-21T00:33:33+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3568177,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568177",
+      "priority": "normal",
+      "title": "Error when reinstalling after creating CCC taxonomy terms",
+      "uuid": "1d3aedee-9656-4ef7-a6bd-e95fad1d152c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-05T15:39:05+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        }
+      ],
+      "iid": 3568384,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568384",
+      "priority": "normal",
+      "title": "[Discuss] Context graphs",
+      "uuid": "920958be-5a81-4220-a6f7-d1929cb3731c"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-25T05:06:53+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3568673,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568673",
+      "priority": "major",
+      "title": "Add context scope base code and use case context scope plugin",
+      "uuid": "9ce92534-8999-4194-9e46-738298c6780f"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:52:25+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3568674,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568674",
+      "priority": "major",
+      "title": "Switch context tags to be a context scope plugin",
+      "uuid": "d0d88423-17f5-4002-947c-ef5c3d9a5724"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:50:12+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3568676,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568676",
+      "priority": "major",
+      "title": "Add site section context scope for MVP",
+      "uuid": "74ba5299-0de1-4596-8dfc-07e303503b5c"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:52:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3568677,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3568677",
+      "priority": "major",
+      "title": "Allow agents to subscribe to context scope",
+      "uuid": "1851222b-3326-43e8-8e43-7ff17965a989"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-25T05:24:13+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        },
+        {
+          "orgs": [
+            "optasy"
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3569311,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569311",
+      "priority": "major",
+      "title": "[Meta] Subcontext feature in CCC",
+      "uuid": "acf0db26-dc12-4ca7-9fc0-0c7f423bbb8d"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-06T06:21:29+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "nickolaj"
+        },
+        {
+          "orgs": [
+            "optasy"
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3569312,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569312",
+      "priority": "normal",
+      "title": "Add parent / child relationship for context",
+      "uuid": "9119641d-3d93-4eb4-ada5-9067a5d53ed6"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-05T16:08:48+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "nickolaj"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3569313,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569313",
+      "priority": "normal",
+      "title": "Create design for context list UI to include subcontext",
+      "uuid": "58571c68-1a19-4b0b-96c5-af72b45552af"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-06T06:23:55+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "elevated third"
+          ],
+          "user": "gantal"
+        }
+      ],
+      "iid": 3569514,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569514",
+      "priority": "major",
+      "title": "[Spike] Research what Google Analytics data can be used in CCC",
+      "uuid": "4ea1f535-bc4b-4da5-9249-ce1348138429"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-03-06T02:10:33+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "a.dmitriiev"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3569967,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3569967",
+      "priority": "major",
+      "title": "[Discuss] Figure out which CCC features can be optional for MVP",
+      "uuid": "7234da4e-f29e-40b3-9f2a-2351c28270cf"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:52:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3570933,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3570933",
+      "priority": "major",
+      "title": "Add language context scope for MVP",
+      "uuid": "218a6e56-b19d-4ab2-92ab-7a00139db814"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:51:40+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3570940,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3570940",
+      "priority": "major",
+      "title": "Convert global option to context scope plugin",
+      "uuid": "9c309897-1254-49d4-9511-e278bdf932c2"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-02-06T07:12:17+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "sven decabooter",
+            "entityone",
+            "dynamate"
+          ],
+          "user": "svendecabooter"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3571006,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571006",
+      "priority": "critical",
+      "title": "Clean up CCC install process and composer.json file",
+      "uuid": "f539bb22-f4ec-4356-b409-0a575778a05a"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-02-15T19:46:37+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "sven decabooter",
+            "dynamate"
+          ],
+          "user": "svendecabooter"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "imagex"
+          ],
+          "user": "b_sharpe"
+        }
+      ],
+      "iid": 3571188,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571188",
+      "priority": "major",
+      "title": "Error on installation: The state 'draft' already exists in workflow",
+      "uuid": "27a61313-9a69-4b83-ac71-3bd5d9eaad65"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-02-06T07:10:27+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "sven decabooter",
+            "dynamate"
+          ],
+          "user": "svendecabooter"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        }
+      ],
+      "iid": 3571195,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571195",
+      "priority": "normal",
+      "title": "Schema errors from scheduler after installing CCC",
+      "uuid": "5d86a842-f88d-4ed9-bdfa-9205a2bae342"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-02-04T00:08:24+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3571392,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571392",
+      "priority": "major",
+      "title": "Toolbar menu issue in Drupal 11.3 when CCC installed",
+      "uuid": "fcde478b-cdc2-41a9-8014-bd973ba4c0b7"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-19T00:20:52+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "kostiantyn"
+        }
+      ],
+      "iid": 3571393,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571393",
+      "priority": "major",
+      "title": "Add GitLab CI linting to CCC project",
+      "uuid": "819d4ac0-3412-430a-9279-f23b916c57e3"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-19T05:20:11+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        }
+      ],
+      "iid": 3571788,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571788",
+      "priority": "major",
+      "title": "Update subcontext feature to specify required vs conditional selection",
+      "uuid": "41407a48-7073-4f66-9a68-1e75e0268715"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T02:12:49+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "1xinternet"
+          ],
+          "user": "bbruno"
+        },
+        {
+          "orgs": [
+            "kalamuna"
+          ],
+          "user": "robloach"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3571794,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571794",
+      "priority": "major",
+      "title": "Update context list UI to include subcontext and scope",
+      "uuid": "873be2fb-74eb-464d-9ee5-4b7ce73064b0"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-03-06T03:28:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3571909,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571909",
+      "priority": "major",
+      "title": "Update context selection logic to handle subcontext",
+      "uuid": "5b87bf4a-213c-4262-9547-812f9a8a0b93"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-02-19T04:42:15+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "qed42"
+          ],
+          "user": "rakhimandhania"
+        }
+      ],
+      "iid": 3572067,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572067",
+      "priority": "major",
+      "title": "Sprint 3 CCC roadmap updates, sprint planning, and issue triage",
+      "uuid": "67ce1eb9-9c6a-4e45-8207-dc62e7740e5a"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-02-20T07:53:20+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3572160,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572160",
+      "priority": "major",
+      "title": "Switch target entities to be a context scope plugin",
+      "uuid": "bf461b0a-49ef-41bc-8443-9c395a96c12c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-20T01:26:51+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        }
+      ],
+      "iid": 3572891,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3572891",
+      "priority": "normal",
+      "title": "Create docs for Cursor and Claude code quality for CCC",
+      "uuid": "2373acd3-521e-4ad5-9d5a-b64de4ae4cfa"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T04:18:16+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        }
+      ],
+      "iid": 3573708,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573708",
+      "priority": "normal",
+      "title": "Add optional debug logging to CCC",
+      "uuid": "f10d2a56-355c-442d-8865-88fcda539cb9"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-20T18:23:17+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3573709,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573709",
+      "priority": "normal",
+      "title": "Fix phpunit test errors in CCC",
+      "uuid": "46faf412-cdd7-4487-bc49-d44d2b757c02"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T04:19:56+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        }
+      ],
+      "iid": 3573713,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573713",
+      "priority": "major",
+      "title": "Full architecture review of CCC in prep for 1.0",
+      "uuid": "60bd2e9d-76c6-4096-af0e-071b425de1ef"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T06:10:37+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        }
+      ],
+      "iid": 3573717,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573717",
+      "priority": "major",
+      "title": "Add automated testing to CCC in prep for 1.0",
+      "uuid": "e624a131-6235-4f7c-8688-7ec0e6072bb2"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-03-05T19:52:29+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3573719,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3573719",
+      "priority": "major",
+      "title": "Sprint 4 CCC roadmap updates, sprint planning, and issue triage",
+      "uuid": "3db890c9-4452-4bba-ad0e-e5aae702b8d7"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-25T05:51:53+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [],
+          "user": "divyamdotfoo"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "kostiantyn"
+        },
+        {
+          "orgs": [
+            "e-sepia web innovation"
+          ],
+          "user": "axioteo"
+        },
+        {
+          "orgs": [],
+          "user": "hrishikesh-dalal"
+        }
+      ],
+      "iid": 3574420,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574420",
+      "priority": "major",
+      "title": "Add Drupal CMS 2.0 support to CCC",
+      "uuid": "24100671-58d0-471e-8df4-8f20b3479fdf"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-02-25T05:33:13+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "drupal association"
+          ],
+          "user": "fjgarlin"
+        },
+        {
+          "orgs": [],
+          "user": "twiesing"
+        },
+        {
+          "orgs": [],
+          "user": "divyamdotfoo"
+        }
+      ],
+      "iid": 3574923,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574923",
+      "priority": "normal",
+      "title": "Remove _ESLINT_EXTRA in GitLab CI to avoid error in CCC project",
+      "uuid": "e7650cb4-f44a-413b-9efe-45608c71cf1a"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T06:35:55+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3574936,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574936",
+      "priority": "major",
+      "title": "Add search or filters to context listing",
+      "uuid": "27d83879-db03-4d16-ad45-bf513b32b7dc"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-03-06T02:48:00+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "scottfalconer"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        }
+      ],
+      "iid": 3575595,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3575595",
+      "priority": "normal",
+      "title": "Format context item markdown on view page",
+      "uuid": "5603d6e8-b8ce-4844-b46d-eeae8e08373b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-06T22:32:14+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "itech4web",
+            "drupal ukraine community"
+          ],
+          "user": "dstorozhuk"
+        }
+      ],
+      "iid": 3576089,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3576089",
+      "priority": "major",
+      "title": "Remove support for D10 for CCC",
+      "uuid": "f21e17a4-4d97-4e66-b2bd-04b389b6bac1"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-03-07T21:51:20+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3577398,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577398",
+      "priority": "normal",
+      "title": "Update CCC readme for new mdxeditor location",
+      "uuid": "8bb145ff-d39e-4a47-b3d6-d50c0160dc4d"
+    }
+  ],
+  "org_counts": {
+    "1xinternet": 12,
+    "acquia": 11,
+    "annertech": 1,
+    "civicactions": 1,
+    "digitaltrotter": 1,
+    "dropsolid": 1,
+    "drupal association": 1,
+    "drupal ukraine community": 9,
+    "drupalfit": 1,
+    "dynamate": 4,
+    "e-sepia web innovation": 1,
+    "elevated third": 1,
+    "entityone": 2,
+    "foster interactive inc.": 16,
+    "freelygive": 7,
+    "imagex": 2,
+    "itech4web": 9,
+    "itty bitty byte": 88,
+    "kalamuna": 4,
+    "lakedrops": 1,
+    "localgov drupal": 1,
+    "opensense labs": 1,
+    "optasy": 4,
+    "qed42": 1,
+    "salsa digital": 88,
+    "sven decabooter": 4,
+    "the university of edinburgh": 11,
+    "vardot": 1,
+    "zyxware technologies": 1
+  },
+  "period": {
+    "end": "2026-03-24T00:24:03+00:00",
+    "frozen": true,
+    "slug": "alpha1-to-beta1",
+    "start": "2025-12-13T16:25:02+00:00",
+    "title": "0.1.0-alpha1 to 1.0.0-beta1"
+  },
+  "user_counts": {
+    "a.dmitriiev": 1,
+    "abhisekmazumdar": 1,
+    "ahmad-khader": 1,
+    "ahmedj": 1,
+    "aidanfoster": 16,
+    "ajv009": 1,
+    "axioteo": 1,
+    "b_sharpe": 2,
+    "bbruno": 9,
+    "breidert": 1,
+    "danrod": 4,
+    "divyamdotfoo": 2,
+    "dstorozhuk": 8,
+    "emma-horrell": 11,
+    "fjgarlin": 1,
+    "gantal": 1,
+    "harivansh": 1,
+    "horvan": 1,
+    "hrishikesh-dalal": 1,
+    "jurgenhaas": 1,
+    "kafmil": 2,
+    "kepol": 88,
+    "kostiantyn": 2,
+    "kumarimedha09": 1,
+    "marcus_johansson": 6,
+    "nickolaj": 2,
+    "nikro": 1,
+    "rakhimandhania": 1,
+    "robloach": 4,
+    "scottfalconer": 9,
+    "shamir.vs": 1,
+    "sujal_31": 1,
+    "svendecabooter": 4,
+    "tedbow": 2,
+    "thamas": 1,
+    "tonypaulbarker": 1,
+    "twiesing": 1,
+    "unqunq": 1,
+    "webbywe": 1,
+    "yautja_cetanu": 2
+  }
+}

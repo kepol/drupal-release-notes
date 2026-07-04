@@ -1,0 +1,104 @@
+# Summary prompt: 1.0.0-beta2 to now
+
+Write 1–2 paragraphs summarizing this release for Drupal.org release notes.
+Focus on user-facing value, major themes, and stability improvements.
+Do not list every issue; synthesize the work below.
+
+Period: 1.0.0-beta2 to now
+Credited issues in this report: 83
+
+## New Features
+- #3569310: [Meta] Context source plugin feature (context from PDF/MD/TXT/URL)
+- #3574413: Add PDF context source plugin to CCC
+- #3574414: Add webpage (URL) context source plugin to CCC
+- #3574928: Add MD context source plugin to CCC
+- #3577429: Move scheduler feature to submodule or progressive enhancement
+- #3584775: Remove AiContextItemType
+- #3586127: Update context listing to show workflow state
+- #3586160: Add per-agent context injection limits and selection mode
+- #3586162: Add stable selection pipeline events for contrib extension
+- #3586219: Update context listing page per new design
+- #3586229: CCC optional feature suggestions in UI
+- #3586244: Provide test context items for testing CCC
+- #3586275: Create Document Loader submodule for CCC
+- #3586287: No public API for building scope subscription forms; consumers must depend on the internal scope manager
+
+## Bug Fixes
+- #3586157: Improve context selection cacheability and request-level scope performance
+- #3586230: TypeError when trying to "Configure context items" from /admin/ai/context/settings/agents
+- #3586246: hook_ai_context_scope_values_alter() is not honored in scope value forms
+- #3586259: Fix phpstan error in AiContextSubcontextToggleTrait
+- #3586260: Show this overview page checkbox is misaligned on vanilla Drupal 11
+- #3586317: Documentation corrections: dependency requirements and AI module version
+
+## Other Major Contributions
+- #3586155: Create GitLab issue and merge request templates for ai_context project
+- #3586169: [Discuss] Selection extension points and diagnostics for context selection
+- #3586170: [Discuss] Structured context content format and authoring model
+- #3586192: Clean up CCC inconsistencies and DX issues before rc1 (part 2)
+- #3586220: Add full view layout for context item canonical and revision pages based on new design
+- #3586228: Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule
+- #3586233: Bump AI Context to AI Core 1.4
+- #3586239: [Discuss] "Context Control Center" at top-level of admin menu?
+- #3586247: [Discuss] Recipe naming conventions and locations for AI Context (CCC) recipes
+- #3586250: [Discuss] Context item content entity bundles
+- #3586256: Switch context item text fields to string_long for clean MDXEditor integration
+- #3586261: Clean up bundleless context item follow-ups
+- #3586267: Create SECURITY.md file for AI Context (CCC)
+- #3586294: CCC beta3 codebase review (pre-release)
+- #3586318: Beta vs 1.1 CCC API gap analysis
+
+## Additional Contributions (titles only)
+- #3576093: Fix eslint errors in GitLab UI even when pipeline is green
+- #3577657: CCC beta blog post
+- #3580063: Publish the Docs to GitLab Pages
+- #3580910: Improve config validation and use #config_target for settings form
+- #3585920: Create CCC beta2 release
+- #3586082: Clean up follow-ups from target entity decoupling review
+- #3586116: Update context listing to not use target column
+- #3586145: Handle the case when scope plugin values are no longer available
+- #3586148: [Discuss] Usage of "Context scope" and "Target bundles"
+- #3586154: Create CCC status update video
+- #3586161: Reserve pre-RC1 entity schema fields for CCC
+- #3586196: [Discuss] Context scope matching semantics: additive OR, filters, and UX clarity
+- #3586198: [Discuss] Associating adhoc vocabularies (freetagging) with context items
+- #3586200: CCC slides and presentation for DrupalSouth Wellington 2026
+- #3586201: CCC slides and presentation for NYC Drupal AI Summit 2026
+- #3586203: Pre-rc1 CCC docs updates
+- #3586207: Conditional Subcontext Provider Calls
+- #3586208: CCC Non-Agent `match_all` Convenience API
+- #3586209: CCC Usage Tracking Query/Save Pattern
+- #3586210: Update use case context scope defaults
+- #3586211: Update CCC overview page with hide option and new wording
+- #3586212: Update max context items in general settings
+- #3586214: Hide additional context scope options if global is selected
+- #3586221: Test Chicago Driesnote repo with cheaper models
+- #3586225: Sprint 10 CCC roadmap updates, sprint planning, and issue triage
+- #3586232: Sprint 11 CCC roadmap updates, sprint planning, and issue triage
+- #3586236: CCC UX sync 27 May 2026
+- #3586238: Fix PHPStan failures in CCC
+- #3586240: [Discuss] Default settings - "Show overview page" and "Enable subcontext hierarchy"
+- #3586241: Document supported vs internal CCC APIs
+- #3586245: Ignore AGENTS.md in AI Context
+- #3586249: Evaluate empathy CCC integration
+- #3586251: Update subcontext feature description and docs
+- #3586252: Update overview page description and docs
+- #3586253: Move CCC menu from top-level to under AI configuration section
+- #3586257: Assess AI Knowledge Connector and how it might work with CCC
+- #3586258: Test AI Best Practices skills on AI Context codebase
+- #3586264: [Discuss] Moderation status of subcontext vs parent context items
+- #3586270: Clarify Context scope: Tags in documentation
+- #3586272: Add context settings validation: max_global_items must not exceed max_items
+- #3586274: UX improvements on new context listing page
+- #3586277: Sprint 12 CCC roadmap updates, sprint planning, and issue triage
+- #3586280: Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes
+- #3586284: Copy and layout updates on context item scope form
+- #3586285: Add Configure Link in Modules Page
+- #3586288: Update core_version_requirement for all CCC submodules to be same as parent module
+- #3586297: Add warning on subcontext edit form if parent is unpublished
+- #3586307: Update project page to change to the correct paths in the Installation and Testing Steps section
+
+---
+
+Save the finished summary to: summaries/beta2-to-now.txt
+

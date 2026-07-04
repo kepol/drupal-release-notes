@@ -1,0 +1,431 @@
+{
+  "generated_at": "2026-07-04T18:06:13.555402+00:00",
+  "issues": [
+    {
+      "category": "bug",
+      "closed_at": "2025-10-07T21:44:02+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3547892,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547892",
+      "priority": "normal",
+      "title": "CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection",
+      "uuid": "0d5d1bf4-5da7-48a5-a2b1-604978930e3b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-10-22T01:59:02+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "mandclu"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3549081,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549081",
+      "priority": "normal",
+      "title": "Group AI Context menu items",
+      "uuid": "62d2bbfc-64b0-4a49-8f17-c9cfd480000a"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2025-10-14T07:09:05+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "mandclu"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3549082,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549082",
+      "priority": "normal",
+      "title": "Within the Context Pools UI, link the Context for the forms to see the details of each context",
+      "uuid": "a40e0b71-6598-4205-8ecf-185e3337ca9b"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-10-22T01:59:02+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3549748,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549748",
+      "priority": "normal",
+      "title": "The max tokens calculation is hardcoded + use tokenizer for AI CCC",
+      "uuid": "2c2bf8ec-ccda-4e93-bdf3-d2300356550f"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-10-25T08:31:22+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3549752,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3549752",
+      "priority": "normal",
+      "title": "The selector service does not use the maxOverride at all for AI CCC",
+      "uuid": "8e7ca67e-8b1f-4abb-bafa-047d41776624"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-10-25T08:33:31+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3550892,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550892",
+      "priority": "normal",
+      "title": "Show description instead of id in the AI Contexts listing page",
+      "uuid": "e4953707-5364-4efb-bad1-c40929677edc"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-10-23T08:34:01+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3550895,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3550895",
+      "priority": "normal",
+      "title": "CCC tags should be required",
+      "uuid": "b2c9023b-623b-4a37-ac65-41303c7cffe5"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-10-25T08:31:57+00:00",
+      "contributors": [
+        {
+          "orgs": [],
+          "user": "roromedia"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3552972,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3552972",
+      "priority": "normal",
+      "title": "Wrong dependency definition in info.yml causes composer to not install",
+      "uuid": "c675918e-3325-4a2a-9fa8-1d314343cc98"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-10-25T08:31:41+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "salsa digital"
+          ],
+          "user": "ahmedj"
+        }
+      ],
+      "iid": 3554277,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554277",
+      "priority": "normal",
+      "title": "ai_context_ai_function_call_info_alter does not work with contexts only set via \"always_include\"",
+      "uuid": "50e43326-1aff-4483-8878-e5eac561023d"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2025-11-22T05:17:31+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3554616,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3554616",
+      "priority": "major",
+      "title": "Setting AI contexts has no effect on some agents",
+      "uuid": "4f03b57c-7657-4c94-94cd-8c42ab5a2945"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2025-11-23T20:19:11+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3555225,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3555225",
+      "priority": "major",
+      "title": "Add a single global context, making Vienna Driesnote AI demos much simpler",
+      "uuid": "facbb554-711e-4772-8f87-2ce50acc6642"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-11-22T06:24:33+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "erichomanchuk"
+        }
+      ],
+      "iid": 3556878,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3556878",
+      "priority": "normal",
+      "title": "Update AI Context module with doc blocks and check coding standards",
+      "uuid": "ff91025f-b9bc-4892-b53f-7934041f9da8"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-11-22T06:13:32+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "yautja_cetanu"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "marcus_johansson"
+        }
+      ],
+      "iid": 3557700,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3557700",
+      "priority": "normal",
+      "title": "AI Context architecture meeting 13 Nov 2025",
+      "uuid": "5730abbd-2eea-4946-8ffe-66bbb158cb66"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-11-22T06:07:51+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "orgs": [
+            "acquia"
+          ],
+          "user": "tedbow"
+        },
+        {
+          "orgs": [
+            "freelygive"
+          ],
+          "user": "yautja_cetanu"
+        }
+      ],
+      "iid": 3558583,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3558583",
+      "priority": "normal",
+      "title": "AI Context UX meeting 18 Nov 2025",
+      "uuid": "47045b80-6d9b-461b-b9ed-a25da224f448"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-11-22T07:35:30+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3559388,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3559388",
+      "priority": "normal",
+      "title": "Update CCC project components to be more useful and add tracker to issues",
+      "uuid": "4f1a6e52-bfcb-46a3-8d29-cfe19246d38a"
+    }
+  ],
+  "org_counts": {
+    "acquia": 7,
+    "foster interactive inc.": 3,
+    "freelygive": 9,
+    "itty bitty byte": 8,
+    "salsa digital": 15,
+    "the university of edinburgh": 1
+  },
+  "period": {
+    "end": "2025-12-13T16:25:02+00:00",
+    "frozen": true,
+    "slug": "pre-alpha1",
+    "start": null,
+    "title": "Inception to 0.1.0-alpha1"
+  },
+  "user_counts": {
+    "ahmedj": 8,
+    "aidanfoster": 2,
+    "emma-horrell": 1,
+    "erichomanchuk": 1,
+    "kepol": 8,
+    "mandclu": 2,
+    "marcus_johansson": 8,
+    "roromedia": 1,
+    "tedbow": 5,
+    "yautja_cetanu": 2
+  }
+}
