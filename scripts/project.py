@@ -121,6 +121,12 @@ class ProjectConfig:
             f"/-/merge_requests/{iid}"
         )
 
+    def milestone_search_url(self, title: str) -> str:
+        return (
+            f"https://git.drupalcode.org/project/{self.machine_name}"
+            f"/-/milestones?search={quote(title, safe='')}"
+        )
+
     def issue_iid_from_link(self, uri: str) -> int | None:
         match = self.issue_iid_pattern.search(uri)
         if not match:

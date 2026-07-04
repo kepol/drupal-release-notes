@@ -157,6 +157,74 @@ def index_records_by_iid(records: list[dict[str, Any]]) -> dict[int, dict[str, A
     return {int(record["iid"]): record for record in merge_records_by_iid(records)}
 
 
+def load_cached_audit_records(project: ProjectConfig) -> list[dict[str, Any]]:
+    """Load merged audit records from cache without printing status."""
+    if not project.audit_records_cache.exists():
+        return []
+    return merge_records_by_iid(load_json(project.audit_records_cache, []))
+
+
+def load_cached_closed_issues(project: ProjectConfig) -> dict[int, dict[str, Any]]:
+    """Load closed GitLab issues from cache without printing status."""
+    if not project.closed_issues_cache.exists():
+        return {}
+    cached = load_json(project.closed_issues_cache, {})
+    return {int(iid): issue for iid, issue in cached.items()}
+
+
+@dataclass(frozen=True)
+class MissingContributionRecord:
+    iid: int
+    title: str
+    issue_url: str
+
+
+def closed_issues_missing_records(
+    records: list[dict[str, Any]],
+    closed_issues: dict[int, dict[str, Any]],
+    issues_cache: dict[str, dict[str, Any]] | None = None,
+) -> tuple[list[MissingContributionRecord], list[MissingContributionRecord]]:
+    """Closed GitLab issues with no contribution record on new.drupal.org.
+
+    Returns (needs_record, exempt). Exempt issues carry duplicate / won't fix
+    labels where no Drupal.org record is expected.
+    """
+    known = {int(record["iid"]) for record in merge_records_by_iid(records)}
+    label_cache = issues_cache or {}
+    needs_record: list[MissingContributionRecord] = []
+    exempt: list[MissingContributionRecord] = []
+    for iid in sorted(closed_issues):
+        if iid in known:
+            continue
+        issue = closed_issues[iid]
+        entry = MissingContributionRecord(
+            iid=iid,
+            title=issue.get("title", f"Issue #{iid}"),
+            issue_url=issue.get("web_url", ""),
+        )
+        labels = resolve_issue_labels(iid, issue, label_cache)
+        if credit_exemption_reason(labels):
+            exempt.append(entry)
+        else:
+            needs_record.append(entry)
+    return needs_record, exempt
+
+
+def duplicate_contribution_records(
+    records: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Contribution records where multiple Drupal.org nodes point at one issue."""
+    return [
+        record for record in records if len(record.get("duplicate_nids") or []) > 1
+    ]
+
+
+def format_duplicate_record_line(record: dict[str, Any]) -> str:
+    nids = record.get("duplicate_nids") or []
+    nid_links = ", ".join(f"https://new.drupal.org/node/{nid}" for nid in nids)
+    return f"  #{record['iid']}: {record['title']} — {nid_links}"
+
+
 def fetch_audit_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]]:
     project = client.project
     if project.audit_records_cache.exists() and not refresh:
@@ -1053,9 +1121,7 @@ def main() -> int:
             )
 
     generated_at = datetime.now(tz=timezone.utc).isoformat()
-    duplicate_records = [
-        record for record in records if len(record.get("duplicate_nids") or []) > 1
-    ]
+    duplicate_records = duplicate_contribution_records(records)
     markdown = render_audit_markdown(
         project,
         pending,
@@ -1086,6 +1152,27 @@ def main() -> int:
     print(f"Exempt (duplicate / won't fix): {label_exempt_count} issues")
     print(f"Ignored (PM labels only): {pm_exempt_count} issues")
     print(f"Approved: {len(approved_items)} issues")
+
+    missing_all, exempt_missing = closed_issues_missing_records(
+        records,
+        closed_issues,
+        issues_cache=issues_cache,
+    )
+    if missing_all:
+        print(f"Closed without contribution record: {len(missing_all)}")
+        for issue in missing_all[:15]:
+            print(f"  #{issue.iid}: {issue.title}")
+        if len(missing_all) > 15:
+            print(f"  … and {len(missing_all) - 15} more")
+    if exempt_missing:
+        print(
+            f"No record expected (duplicate / won't fix): {len(exempt_missing)} "
+            "(not listed above)"
+        )
+    if duplicate_records:
+        print(f"Duplicate d.o records: {len(duplicate_records)}")
+        for record in duplicate_records:
+            print(format_duplicate_record_line(record))
     return 0
 
 

@@ -4,7 +4,7 @@ Closed ai_context issues that may need credit review on [new.drupal.org](https:/
 
 **2 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **38 issues approved**
 
-_Generated 2026-07-04T20:51:58.938038+00:00_
+_Generated 2026-07-04T21:09:44.395811+00:00_
 
 ## How to approve
 
