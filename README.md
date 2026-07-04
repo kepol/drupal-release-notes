@@ -169,6 +169,9 @@ python3 scripts/credit_audit.py --review
 # Refresh from Drupal.org and GitLab
 python3 scripts/credit_audit.py --refresh
 
+# Refresh one issue after editing credits on Drupal.org
+python3 scripts/credit_audit.py --refresh-issue 3579841
+
 # Re-fetch GitLab comments for uncredited people
 python3 scripts/credit_audit.py --refresh-comments
 ```

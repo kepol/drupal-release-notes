@@ -2,9 +2,9 @@
 
 Closed ai_context issues that may need credit review on [new.drupal.org](https://new.drupal.org).
 
-**6 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **34 issues approved**
+**2 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **38 issues approved**
 
-_Generated 2026-07-04T20:26:26.637149+00:00_
+_Generated 2026-07-04T20:51:58.938038+00:00_
 
 ## How to approve
 
@@ -41,23 +41,19 @@ _None._
 
 _None._
 
-## People listed but not credited (6)
-
-* [#3576092](https://git.drupalcode.org/project/ai_context/-/work_items/3576092): [Discuss] Subcontext scope vs parent scope
-  * Contribution record: [node/11443754](https://new.drupal.org/node/11443754)
-  * Credited: aidanfoster, emma-horrell, kepol, scottfalconer
-  * Uncredited: flux423
-  * `flux423` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
-  * Approve `flux423`: `python3 scripts/credit_audit.py --project ai_context --approve 3576092:flux423`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3576092`
+## People listed but not credited (2)
 
 * [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
   * Contribution record: [node/11446290](https://new.drupal.org/node/11446290)
   * Credited: kepol, marcus_johansson, robloach
   * Uncredited: rajabnatshah
   * `rajabnatshah` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+    Issue comments by `rajabnatshah`:
+    - [2026-05-10 15:29:58] Thank you so much for working on the CCC module, it is so important. Hopping for a new tag release. as the patch is not longer needed.
+    - [2026-05-10 15:41:59] Thanks @kepol managing with ``` "composer-patches": { "ignore-dependency-patches": ["drupal/ai_context"] }, ``` Trying to manage a wiled card one in projects not to add a static one like ``` "compose…
+    - [2026-05-10 15:53:50] I confirm the issue still remain on Uninstall
+    - [2026-05-10 15:59:53] I talked with Adam about having something like `drupal/drupal_cms_patches` or `drupal/cmspatches` Much like the [drupal/webpatches](http://drupal.org/project/webpatches) with a bit of UI listing for…
+    Merge request comments by `rajabnatshah`: no linked MR found
   * Approve `rajabnatshah`: `python3 scripts/credit_audit.py --project ai_context --approve 3579841:rajabnatshah`
   * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3579841`
 
@@ -66,36 +62,11 @@ _None._
   * Credited: abhisekmazumdar, ahmad-khalil-imagex, kepol, mglaman
   * Uncredited: aidanfoster
   * `aidanfoster` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+    Issue comments by `aidanfoster`:
+    - [2026-06-24 17:46:47] Emma and I met and suggest: If context sub-item is created but the setting are changed to disable them we think they should: 1. Any agent calling the parent context ignores them. 2. They should appea…
+    Merge request comments by `aidanfoster`: no linked MR found
   * Approve `aidanfoster`: `python3 scripts/credit_audit.py --project ai_context --approve 3586207:aidanfoster`
   * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586207`
-
-* [#3586219](https://git.drupalcode.org/project/ai_context/-/work_items/3586219): Update context listing page per new design
-  * Contribution record: [node/11455647](https://new.drupal.org/node/11455647)
-  * Credited: adaptative, aidanfoster, kepol, mglaman, rakhimandhania
-  * Uncredited: erichomanchuk
-  * `erichomanchuk` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
-  * Approve `erichomanchuk`: `python3 scripts/credit_audit.py --project ai_context --approve 3586219:erichomanchuk`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586219`
-
-* [#3586233](https://git.drupalcode.org/project/ai_context/-/work_items/3586233): Bump AI Context to AI Core 1.4
-  * Contribution record: [node/11462076](https://new.drupal.org/node/11462076)
-  * Credited: ahmad-khalil-imagex, danrod, kepol
-  * Uncredited: akhilbabu
-  * `akhilbabu` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
-  * Approve `akhilbabu`: `python3 scripts/credit_audit.py --project ai_context --approve 3586233:akhilbabu`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586233`
-
-* [#3586275](https://git.drupalcode.org/project/ai_context/-/work_items/3586275): Create Document Loader submodule for CCC
-  * Contribution record: [node/11465322](https://new.drupal.org/node/11465322)
-  * Credited: ahmad-khader, aidanfoster, emma-horrell, kepol, robloach
-  * Uncredited: mglaman
-  * `mglaman` activity:
-    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
-  * Approve `mglaman`: `python3 scripts/credit_audit.py --project ai_context --approve 3586275:mglaman`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586275`
 
 ## No credits expected — duplicate / won't fix (9)
 
@@ -507,7 +478,7 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Ignored (not expected to credit): vidit-anjaria
   * Contribution record: [node/11467991](https://new.drupal.org/node/11467991)
 
-## Approved (34)
+## Approved (38)
 
 _These closed issues were marked reviewed. Use `--unapprove` to restore them to the audit._
 
@@ -531,4 +502,4 @@ _These closed issues were marked reviewed. Use `--unapprove` to restore them to 
 * [#3564714](https://git.drupalcode.org/project/ai_context/-/work_items/3564714): Allow context scoped to entities in CCC
 * [#3567571](https://git.drupalcode.org/project/ai_context/-/work_items/3567571): CCC MVP Demo: Create draft FinDrop context
 * [#3568673](https://git.drupalcode.org/project/ai_context/-/work_items/3568673): Add context scope base code and use case context scope plugin
-* … and 14 more
+* … and 18 more

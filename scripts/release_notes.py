@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import unquote
+from urllib.parse import quote, unquote
 
 import requests
 
@@ -644,6 +644,61 @@ def fetch_project_contribution_records(
         time.sleep(0.05)
 
     return parsed_records
+
+
+def fetch_contribution_records_for_issue(
+    client: ApiClient,
+    iid: int,
+) -> list[dict[str, Any]]:
+    """Fetch fresh contributor lists for all records linked to one GitLab issue."""
+    project = client.project
+    issue_url = project.issue_url(iid)
+    list_url = (
+        "https://new.drupal.org/jsonapi/node/contribution_record"
+        f"?filter[field_source_link.uri]={quote(issue_url, safe='')}"
+        "&filter[field_draft]=0"
+        "&fields[node--contribution_record]=drupal_internal__nid,title,"
+        "field_last_status_change,field_source_link"
+    )
+    payload = client.get_jsonapi(list_url)
+    stubs = payload.get("data") or []
+    if isinstance(stubs, dict):
+        stubs = [stubs]
+
+    summaries: list[dict[str, Any]] = []
+    for stub in stubs:
+        record, included_index = fetch_contribution_record_detail(client, stub["id"])
+        summary = summarize_contribution_record(record, included_index, project)
+        if summary and int(summary["iid"]) == iid:
+            summaries.append(summary)
+    return summaries
+
+
+def upsert_release_record_cache_for_issue(
+    client: ApiClient,
+    iid: int,
+    summaries: list[dict[str, Any]],
+) -> None:
+    """Update release-notes cache for one issue when that cache already exists."""
+    project = client.project
+    if not project.records_cache.exists():
+        return
+    cached = load_json(project.records_cache, [])
+    cached = [record for record in cached if int(record["iid"]) != iid]
+    for summary in summaries:
+        if summary.get("contributors"):
+            cached.append(
+                {
+                    "uuid": summary["uuid"],
+                    "nid": summary["nid"],
+                    "title": summary["title"],
+                    "closed_at": summary["closed_at"],
+                    "source_link": summary["source_link"],
+                    "iid": summary["iid"],
+                    "contributors": summary["contributors"],
+                }
+            )
+    save_json(project.records_cache, cached)
 
 
 def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]]:

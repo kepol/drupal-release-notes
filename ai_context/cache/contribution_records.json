@@ -4013,35 +4013,6 @@
     "uuid": "7457dbf3-9f82-4d0f-b421-63ff9735b8a0"
   },
   {
-    "closed_at": "2026-04-01T00:35:03+00:00",
-    "contributors": [
-      {
-        "orgs": [
-          "kalamuna"
-        ],
-        "user": "robloach"
-      },
-      {
-        "orgs": [
-          "itty bitty byte",
-          "salsa digital"
-        ],
-        "user": "kepol"
-      },
-      {
-        "orgs": [
-          "freelygive"
-        ],
-        "user": "marcus_johansson"
-      }
-    ],
-    "iid": 3579841,
-    "nid": 11446290,
-    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
-    "title": "Can't Apply Scheduler Patch",
-    "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
-  },
-  {
     "closed_at": "2026-06-08T16:24:20+00:00",
     "contributors": [
       {
@@ -7284,5 +7255,34 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586318",
     "title": "Beta vs 1.1 CCC API gap analysis",
     "uuid": "f5dbd122-b4e7-40cb-9a36-2990677e8b5f"
+  },
+  {
+    "closed_at": "2026-04-01T00:35:03+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "kalamuna"
+        ],
+        "user": "robloach"
+      },
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      },
+      {
+        "orgs": [
+          "freelygive"
+        ],
+        "user": "marcus_johansson"
+      }
+    ],
+    "iid": 3579841,
+    "nid": 11446290,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
+    "title": "Can't Apply Scheduler Patch",
+    "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
   }
 ]

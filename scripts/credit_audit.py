@@ -12,6 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import requests
+
 from gitlab_activity import (
     enrich_issues_with_gitlab_activity,
     format_user_activity_lines,
@@ -20,6 +22,7 @@ from project import ProjectConfig, add_project_argument
 from release_notes import (
     ApiClient,
     clear_gitlab_token_from_keyring,
+    fetch_contribution_records_for_issue,
     fetch_project_contribution_records,
     gitlab_token_configured,
     gitlab_token_setup_hint,
@@ -27,6 +30,7 @@ from release_notes import (
     normalize_username,
     prompt_and_store_gitlab_token,
     save_json,
+    upsert_release_record_cache_for_issue,
 )
 
 CREDIT_EXEMPT_WHY_LABELS = {
@@ -196,6 +200,79 @@ def fetch_audit_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]
     save_json(project.audit_records_cache, parsed_records)
     print(f"Cached {len(parsed_records)} contribution records for audit.")
     return parsed_records
+
+
+def audit_record_from_summary(summary: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "uuid": summary["uuid"],
+        "nid": summary["nid"],
+        "title": summary["title"],
+        "closed_at": summary["closed_at"],
+        "source_link": summary["source_link"],
+        "iid": summary["iid"],
+        "credited": summary["credited"],
+        "uncredited": summary["uncredited"],
+        "record_url": summary["record_url"],
+    }
+
+
+def refresh_audit_issue(client: ApiClient, iid: int) -> dict[str, Any] | None:
+    """Re-fetch Drupal.org record(s) for one issue and update caches."""
+    project = client.project
+    print(f"Refreshing contribution record(s) for issue #{iid}...")
+    summaries = fetch_contribution_records_for_issue(client, iid)
+
+    cached = load_json(project.audit_records_cache, [])
+    cached = [record for record in cached if int(record["iid"]) != iid]
+    cached.extend(audit_record_from_summary(summary) for summary in summaries)
+    merged = merge_records_by_iid(cached)
+    save_json(project.audit_records_cache, merged)
+    upsert_release_record_cache_for_issue(client, iid, summaries)
+
+    match = next((record for record in merged if int(record["iid"]) == iid), None)
+    if match:
+        credited = ", ".join(match.get("credited") or []) or "(none)"
+        uncredited = ", ".join(match.get("uncredited") or []) or "(none)"
+        print(f"  node/{match.get('nid')}: credited={credited}; uncredited={uncredited}")
+    elif summaries:
+        print("  updated (merged duplicate records)")
+    else:
+        print("  no contribution record found on new.drupal.org")
+    return match
+
+
+def refresh_closed_issue_in_cache(client: ApiClient, iid: int) -> None:
+    project = client.project
+    url = (
+        f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}"
+        f"/issues/{iid}"
+    )
+    try:
+        issue = client.get_json(url)
+    except requests.HTTPError as exc:
+        print(f"  warning: could not refresh GitLab issue #{iid}: {exc}", file=sys.stderr)
+        return
+
+    cached = load_json(project.closed_issues_cache, {})
+    cached[str(iid)] = {
+        "iid": iid,
+        "title": issue.get("title", f"Issue #{iid}"),
+        "closed_at": issue.get("closed_at"),
+        "web_url": issue.get("web_url", project.issue_url(iid)),
+        "labels": issue.get("labels", []),
+    }
+    save_json(project.closed_issues_cache, cached)
+    print(f"  refreshed GitLab metadata for issue #{iid}")
+
+
+def clear_issue_activity_cache(client: ApiClient, iid: int) -> None:
+    project = client.project
+    if not project.issue_activity_cache.exists():
+        return
+    cached = load_json(project.issue_activity_cache, {})
+    if str(iid) in cached:
+        del cached[str(iid)]
+        save_json(project.issue_activity_cache, cached)
 
 
 def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, dict[str, Any]]:
@@ -804,7 +881,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--refresh",
         action="store_true",
-        help="Re-fetch contribution records and closed GitLab issues.",
+        help="Re-fetch all contribution records and closed GitLab issues.",
+    )
+    parser.add_argument(
+        "--refresh-issue",
+        type=int,
+        metavar="IID",
+        help="Re-fetch contribution record(s) for one GitLab issue only (implies fresh GitLab comments for that issue).",
     )
     parser.add_argument(
         "--approve",
@@ -906,8 +989,20 @@ def main() -> int:
         return 0
 
     client = ApiClient(project)
-    records = fetch_audit_records(client, refresh=args.refresh)
-    closed_issues = fetch_closed_gitlab_issues(client, refresh=args.refresh)
+
+    if args.refresh_issue:
+        refresh_audit_issue(client, args.refresh_issue)
+        refresh_closed_issue_in_cache(client, args.refresh_issue)
+        clear_issue_activity_cache(client, args.refresh_issue)
+
+    records = fetch_audit_records(
+        client,
+        refresh=args.refresh and not args.refresh_issue,
+    )
+    closed_issues = fetch_closed_gitlab_issues(
+        client,
+        refresh=args.refresh and not args.refresh_issue,
+    )
     issues_cache = load_json(project.issues_cache, {})
     ignored_users = load_ignored_uncredited_people(ignore_list)
     if ignored_users:
@@ -927,11 +1022,19 @@ def main() -> int:
         if not gitlab_token_configured():
             print(f"Note: {gitlab_token_setup_hint()}")
         else:
-            enrich_issues_with_gitlab_activity(
-                client,
-                pending,
-                refresh=args.refresh_comments or args.refresh,
-            )
+            activity_targets = pending
+            refresh_activity = args.refresh_comments or args.refresh
+            if args.refresh_issue:
+                refresh_activity = True
+                activity_targets = [
+                    issue for issue in pending if issue.iid == args.refresh_issue
+                ]
+            if activity_targets:
+                enrich_issues_with_gitlab_activity(
+                    client,
+                    activity_targets,
+                    refresh=refresh_activity,
+                )
 
     if args.review:
         run_interactive_review(pending, approvals, project)

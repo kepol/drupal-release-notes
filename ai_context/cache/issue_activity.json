@@ -1,0 +1,134 @@
+{
+  "3576092": {
+    "fetched_at": "2026-07-04T20:34:34.780953+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "flux423": {
+        "issue": [
+          {
+            "body": "> _Migrated from comment #7 posted 25 Mar 2026 at 18:38 UTC_ We just shipped duadp_ai_context , an optional bridge module that maps DUADP federation trust-tier metadata into a CCC scope dimension. It\u2026",
+            "created_at": "2026-04-22 22:20:40"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3579841": {
+    "fetched_at": "2026-07-04T20:50:26.921384+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 102,
+        "title": "Issue #3579841: Move the patch to a URL",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/102"
+      }
+    ],
+    "users": {
+      "rajabnatshah": {
+        "issue": [
+          {
+            "body": "Thank you so much for working on the CCC module, it is so important. Hopping for a new tag release. as the patch is not longer needed.",
+            "created_at": "2026-05-10 15:29:58"
+          },
+          {
+            "body": "Thanks @kepol managing with ``` \"composer-patches\": { \"ignore-dependency-patches\": [\"drupal/ai_context\"] }, ``` Trying to manage a wiled card one in projects not to add a static one like ``` \"compose\u2026",
+            "created_at": "2026-05-10 15:41:59"
+          },
+          {
+            "body": "I confirm the issue still remain on Uninstall",
+            "created_at": "2026-05-10 15:53:50"
+          },
+          {
+            "body": "I talked with Adam about having something like `drupal/drupal_cms_patches` or `drupal/cmspatches` Much like the [drupal/webpatches](http://drupal.org/project/webpatches) with a bit of UI listing for\u2026",
+            "created_at": "2026-05-10 15:59:53"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586207": {
+    "fetched_at": "2026-07-04T20:49:26.141268+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 166,
+        "title": "Issue #3586207: Add conditional subcontext toggle, cap, and per-request cache.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/166"
+      },
+      {
+        "iid": 194,
+        "title": "Issue #3586292: Ignore conditional context when disabled.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/194"
+      }
+    ],
+    "users": {
+      "aidanfoster": {
+        "issue": [
+          {
+            "body": "Emma and I met and suggest: If context sub-item is created but the setting are changed to disable them we think they should: 1. Any agent calling the parent context ignores them. 2. They should appea\u2026",
+            "created_at": "2026-06-24 17:46:47"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586219": {
+    "fetched_at": "2026-07-04T20:34:39.730416+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 152,
+        "title": "Issue #3586219: Update context listing page per new design",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/152"
+      },
+      {
+        "iid": 184,
+        "title": "Issue #3586274: Merge Use cases/Scope columns and add cascading scope filter",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/184"
+      }
+    ],
+    "users": {
+      "erichomanchuk": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586233": {
+    "fetched_at": "2026-07-04T20:34:42.212268+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 161,
+        "title": "Issue #3586233: Bumped AI version to 1.4",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/161"
+      }
+    ],
+    "users": {
+      "akhilbabu": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586275": {
+    "fetched_at": "2026-07-04T20:34:43.724091+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 1,
+        "title": "Issue #3586275: Follow ups on Document Loader MR",
+        "web_url": "https://git.drupalcode.org/issue/ai_context-3586275/-/merge_requests/1"
+      },
+      {
+        "iid": 176,
+        "title": "Issue #3586275: Add ai_context_document_loader submodule for MDXEditor imports.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/176"
+      }
+    ],
+    "users": {
+      "mglaman": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  }
+}
