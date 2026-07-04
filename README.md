@@ -12,6 +12,11 @@ Each project has its own directory (`{project}/cache/`, `{project}/reports/`, et
 
 Reports are grouped by release date ranges, with credited issues listed by category, contributor counts for people and organizations, and markdown output ready to paste into Drupal.org release notes.
 
+## AI usage
+
+This repo code has been vibe coded with Cursor Composer 2.5.
+Your mileage may vary. PRs are welcome.
+
 ## Requirements
 
 - Python 3.10+
