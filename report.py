@@ -62,10 +62,6 @@ CCC_QA_TITLE = re.compile(
     r"^CCC .+ QA$",
     re.IGNORECASE,
 )
-CCC_MVP_DEMO_TITLE = re.compile(
-    r"^CCC MVP Demo:",
-    re.IGNORECASE,
-)
 
 
 @dataclass(frozen=True)
@@ -694,11 +690,6 @@ def is_excluded_from_other_major(title: str) -> bool:
     )
 
 
-def is_excluded_from_section_totals(issue: CreditedIssue) -> bool:
-    """Foster-only MVP demo work: keep contributor credits, omit from section totals."""
-    return bool(CCC_MVP_DEMO_TITLE.search(issue.title))
-
-
 def is_other_major_contribution(issue: CreditedIssue) -> bool:
     if issue.category in FEATURE_CATEGORIES | BUG_CATEGORIES:
         return False
@@ -712,10 +703,6 @@ def is_other_major_contribution(issue: CreditedIssue) -> bool:
 def major_contribution_iids(issues: list[CreditedIssue]) -> set[int]:
     """Major non-feature/bug issues, including those hidden from display lists."""
     return {issue.iid for issue in issues if is_other_major_contribution(issue)}
-
-
-def section_accountable_issues(issues: list[CreditedIssue]) -> list[CreditedIssue]:
-    return [issue for issue in issues if not is_excluded_from_section_totals(issue)]
 
 
 def load_summary_paragraph(period_slug: str) -> str | None:
@@ -823,7 +810,7 @@ def render_markdown(
     exclude_from_lists: set[int] | None = None,
 ) -> str:
     manual_excludes = exclude_from_lists or set()
-    accountable = section_accountable_issues(report.issues)
+    accountable = report.issues
     major_iids = major_contribution_iids(report.issues)
     listable = [issue for issue in accountable if issue.iid not in manual_excludes]
 
@@ -1006,7 +993,7 @@ def main() -> int:
         print(f"Wrote {output_path}")
 
         if args.write_summary_prompts:
-            accountable = section_accountable_issues(report.issues)
+            accountable = report.issues
             major_iids = major_contribution_iids(report.issues)
             listable = [issue for issue in accountable if issue.iid not in exclude_from_lists]
             prompt_path = write_summary_prompt(
