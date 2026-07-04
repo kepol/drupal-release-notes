@@ -1,0 +1,6 @@
+cache/
+output/
+summaries/*.prompt.md
+__pycache__/
+*.pyc
+.venv/
