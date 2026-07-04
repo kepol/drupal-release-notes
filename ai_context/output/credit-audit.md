@@ -4,7 +4,7 @@ Closed ai_context issues that may need credit review on [new.drupal.org](https:/
 
 **6 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **34 issues approved**
 
-_Generated 2026-07-04T20:18:24.886128+00:00_
+_Generated 2026-07-04T20:26:26.637149+00:00_
 
 ## How to approve
 
@@ -12,20 +12,20 @@ After reviewing an issue on Drupal.org, mark it so it won't appear again:
 
 ```bash
 # Interactive review (step through each issue)
-python3 credit_audit.py --review
+python3 scripts/credit_audit.py --project ai_context --review
 
 # Whole issue reviewed (no record, no credits, or all uncredited people OK)
-python3 credit_audit.py --approve 3586230
+python3 scripts/credit_audit.py --project ai_context --approve 3586230
 
 # Only one listed-but-uncredited person is OK
-python3 credit_audit.py --approve 3586230:danrod
+python3 scripts/credit_audit.py --project ai_context --approve 3586230:danrod
 
 # Undo
-python3 credit_audit.py --unapprove 3586230
-python3 credit_audit.py --unapprove 3586230:danrod
+python3 scripts/credit_audit.py --project ai_context --unapprove 3586230
+python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod
 ```
 
-Approvals are stored in `cache/credit_approvals.json`.
+Approvals are stored in `ai_context/cache/credit_approvals.json`.
 
 ## Duplicate contribution records (1)
 
@@ -48,54 +48,54 @@ _None._
   * Credited: aidanfoster, emma-horrell, kepol, scottfalconer
   * Uncredited: flux423
   * `flux423` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `flux423`: `python3 credit_audit.py --approve 3576092:flux423`
-  * Approve issue: `python3 credit_audit.py --approve 3576092`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `flux423`: `python3 scripts/credit_audit.py --project ai_context --approve 3576092:flux423`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3576092`
 
 * [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
   * Contribution record: [node/11446290](https://new.drupal.org/node/11446290)
   * Credited: kepol, marcus_johansson, robloach
   * Uncredited: rajabnatshah
   * `rajabnatshah` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `rajabnatshah`: `python3 credit_audit.py --approve 3579841:rajabnatshah`
-  * Approve issue: `python3 credit_audit.py --approve 3579841`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `rajabnatshah`: `python3 scripts/credit_audit.py --project ai_context --approve 3579841:rajabnatshah`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3579841`
 
 * [#3586207](https://git.drupalcode.org/project/ai_context/-/work_items/3586207): Conditional Subcontext Provider Calls
   * Contribution record: [node/11466693](https://new.drupal.org/node/11466693)
   * Credited: abhisekmazumdar, ahmad-khalil-imagex, kepol, mglaman
   * Uncredited: aidanfoster
   * `aidanfoster` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `aidanfoster`: `python3 credit_audit.py --approve 3586207:aidanfoster`
-  * Approve issue: `python3 credit_audit.py --approve 3586207`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `aidanfoster`: `python3 scripts/credit_audit.py --project ai_context --approve 3586207:aidanfoster`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586207`
 
 * [#3586219](https://git.drupalcode.org/project/ai_context/-/work_items/3586219): Update context listing page per new design
   * Contribution record: [node/11455647](https://new.drupal.org/node/11455647)
   * Credited: adaptative, aidanfoster, kepol, mglaman, rakhimandhania
   * Uncredited: erichomanchuk
   * `erichomanchuk` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `erichomanchuk`: `python3 credit_audit.py --approve 3586219:erichomanchuk`
-  * Approve issue: `python3 credit_audit.py --approve 3586219`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `erichomanchuk`: `python3 scripts/credit_audit.py --project ai_context --approve 3586219:erichomanchuk`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586219`
 
 * [#3586233](https://git.drupalcode.org/project/ai_context/-/work_items/3586233): Bump AI Context to AI Core 1.4
   * Contribution record: [node/11462076](https://new.drupal.org/node/11462076)
   * Credited: ahmad-khalil-imagex, danrod, kepol
   * Uncredited: akhilbabu
   * `akhilbabu` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `akhilbabu`: `python3 credit_audit.py --approve 3586233:akhilbabu`
-  * Approve issue: `python3 credit_audit.py --approve 3586233`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `akhilbabu`: `python3 scripts/credit_audit.py --project ai_context --approve 3586233:akhilbabu`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586233`
 
 * [#3586275](https://git.drupalcode.org/project/ai_context/-/work_items/3586275): Create Document Loader submodule for CCC
   * Contribution record: [node/11465322](https://new.drupal.org/node/11465322)
   * Credited: ahmad-khader, aidanfoster, emma-horrell, kepol, robloach
   * Uncredited: mglaman
   * `mglaman` activity:
-    _Set GITLAB_TOKEN to load issue/MR comments._
-  * Approve `mglaman`: `python3 credit_audit.py --approve 3586275:mglaman`
-  * Approve issue: `python3 credit_audit.py --approve 3586275`
+    _Run: python3 scripts/credit_audit.py --store-gitlab-token (saves to your OS keychain; not stored in plaintext)_
+  * Approve `mglaman`: `python3 scripts/credit_audit.py --project ai_context --approve 3586275:mglaman`
+  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586275`
 
 ## No credits expected — duplicate / won't fix (9)
 

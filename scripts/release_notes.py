@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate ai_context release credit reports from Drupal.org APIs."""
+"""Generate Drupal project release credit reports from Drupal.org APIs."""
 
 from __future__ import annotations
 
@@ -16,16 +16,11 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote, unquote
+from urllib.parse import unquote
 
 import requests
 
-USER_AGENT = "issue-credit-report/1.0 (+https://www.drupal.org/project/ai_context)"
-PROJECT_MACHINE_NAME = "ai_context"
-PROJECT_NID = 3546505
-GITLAB_PROJECT = "project/ai_context"
-GITLAB_PROJECT_ENCODED = quote(GITLAB_PROJECT, safe="")
-ISSUE_URL = "https://git.drupalcode.org/project/ai_context/-/work_items/{iid}"
+from project import REPO_ROOT, ProjectConfig, add_project_argument
 
 CONTRIBUTOR_INCLUDE = (
     "field_contributors,field_contributors.field_contributor_user,"
@@ -33,25 +28,12 @@ CONTRIBUTOR_INCLUDE = (
     "field_contributors.field_contributor_customer"
 )
 
-ROOT = Path(__file__).resolve().parent
-CACHE_DIR = ROOT / "cache"
-OUTPUT_DIR = ROOT / "output"
-SUMMARIES_DIR = ROOT / "summaries"
-EXCLUDE_LIST_FILE = ROOT / "exclude_from_lists.txt"
-ISSUES_CACHE = CACHE_DIR / "issues.json"
-RECORDS_CACHE = CACHE_DIR / "contribution_records.json"
-STATE_FILE = CACHE_DIR / "state.json"
-PERIODS_DIR = CACHE_DIR / "periods"
-GITLAB_TOKEN_FILE = ROOT / ".gitlab-token"
+GITLAB_TOKEN_FILE = REPO_ROOT / ".gitlab-token"
 GITLAB_KEYCHAIN_SERVICE = "issue-credit-report"
 GITLAB_KEYCHAIN_ACCOUNT = "git.drupalcode.org"
 
 CATEGORY_LABEL = re.compile(r"^category::(\w+)$")
 PRIORITY_LABEL = re.compile(r"^priority::(\w+)$")
-ISSUE_IID = re.compile(
-    r"(?:git\.drupalcode\.org/project/ai_context/-/work_items/(\d+)"
-    r"|www\.drupal\.org/(?:node|project/[^/]+/issues)/(\d+))"
-)
 
 FEATURE_CATEGORIES = {"feature"}
 BUG_CATEGORIES = {"bug"}
@@ -157,7 +139,7 @@ class PeriodReport:
 def gitlab_token_file_candidates() -> list[Path]:
     return [
         GITLAB_TOKEN_FILE,
-        ROOT / ".gitlab-token.local",
+        REPO_ROOT / ".gitlab-token.local",
         Path.home() / ".config" / "issue-credit-report" / "gitlab-token",
     ]
 
@@ -323,15 +305,16 @@ def gitlab_token_configured() -> bool:
 
 def gitlab_token_setup_hint() -> str:
     return (
-        "Run: python3 credit_audit.py --store-gitlab-token "
+        "Run: python3 scripts/credit_audit.py --store-gitlab-token "
         "(saves to your OS keychain; not stored in plaintext)"
     )
 
 
 class ApiClient:
-    def __init__(self) -> None:
+    def __init__(self, project: ProjectConfig) -> None:
+        self.project = project
         self.session = requests.Session()
-        headers = {"User-Agent": USER_AGENT}
+        headers = {"User-Agent": project.user_agent}
         gitlab_token = load_gitlab_token()
         if gitlab_token:
             headers["PRIVATE-TOKEN"] = gitlab_token
@@ -386,13 +369,6 @@ def normalize_org(title: str) -> str:
     return title.strip().lower()
 
 
-def issue_iid_from_link(uri: str) -> int | None:
-    match = ISSUE_IID.search(uri)
-    if not match:
-        return None
-    return int(match.group(1) or match.group(2))
-
-
 def load_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
@@ -405,10 +381,11 @@ def save_json(path: Path, data: Any) -> None:
 
 
 def fetch_release_boundaries(client: ApiClient) -> list[ReleaseBoundary]:
-    """Load tagged releases from Drupal.org (same data as /project/ai_context/releases)."""
+    """Load tagged releases from Drupal.org."""
+    project = client.project
     url = (
         "https://www.drupal.org/api-d7/node.json"
-        f"?type=project_release&field_release_project={PROJECT_NID}"
+        f"?type=project_release&field_release_project={project.drupal_org_nid}"
         "&limit=50&sort=nid&direction=asc"
     )
     payload = client.get_json(url)
@@ -454,11 +431,11 @@ def period_title(start_version: str | None, end_version: str | None) -> str:
     return f"{start_version} to {end_version}"
 
 
-def build_periods(releases: list[ReleaseBoundary]) -> list[ReportPeriod]:
+def build_periods(releases: list[ReleaseBoundary], project: ProjectConfig) -> list[ReportPeriod]:
     if not releases:
         raise RuntimeError(
-            "No tagged releases found on Drupal.org for ai_context. "
-            "See https://www.drupal.org/project/ai_context/releases"
+            f"No tagged releases found on Drupal.org for {project.machine_name}. "
+            f"See {project.drupal_releases_url}"
         )
 
     periods: list[ReportPeriod] = [
@@ -567,10 +544,10 @@ def parse_credited_contributors(
     return contributors
 
 
-def contribution_record_list_url() -> str:
+def contribution_record_list_url(project: ProjectConfig) -> str:
     return (
         "https://new.drupal.org/jsonapi/node/contribution_record"
-        f"?filter[field_project_name]={PROJECT_MACHINE_NAME}"
+        f"?filter[field_project_name]={project.machine_name}"
         "&filter[field_draft]=0"
         "&fields[node--contribution_record]=drupal_internal__nid,title,"
         "field_last_status_change,field_source_link"
@@ -599,6 +576,7 @@ def fetch_contribution_record_detail(
 def summarize_contribution_record(
     record: dict[str, Any],
     included_index: dict[str, dict[str, dict[str, Any]]],
+    project: ProjectConfig,
 ) -> dict[str, Any] | None:
     attrs = record.get("attributes", {})
     closed_raw = attrs.get("field_last_status_change")
@@ -606,7 +584,7 @@ def summarize_contribution_record(
     if not closed_raw or not source:
         return None
 
-    iid = issue_iid_from_link(source)
+    iid = project.issue_iid_from_link(source)
     if not iid:
         return None
 
@@ -638,9 +616,10 @@ def fetch_project_contribution_records(
     *,
     require_credits: bool = False,
 ) -> list[dict[str, Any]]:
+    project = client.project
     print("Listing contribution records from new.drupal.org...")
     stubs: list[dict[str, Any]] = []
-    url: str | None = contribution_record_list_url()
+    url: str | None = contribution_record_list_url(project)
     page = 0
     while url:
         payload = client.get_jsonapi(url)
@@ -654,7 +633,7 @@ def fetch_project_contribution_records(
     parsed_records: list[dict[str, Any]] = []
     for index, stub in enumerate(stubs, start=1):
         record, included_index = fetch_contribution_record_detail(client, stub["id"])
-        summary = summarize_contribution_record(record, included_index)
+        summary = summarize_contribution_record(record, included_index, project)
         if summary is None:
             continue
         if require_credits and not summary["contributors"]:
@@ -668,8 +647,9 @@ def fetch_project_contribution_records(
 
 
 def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]]:
-    if RECORDS_CACHE.exists() and not refresh:
-        cached = load_json(RECORDS_CACHE, [])
+    project = client.project
+    if project.records_cache.exists() and not refresh:
+        cached = load_json(project.records_cache, [])
         if cached and "contributors" not in cached[0]:
             print("Contribution record cache uses old format; refreshing...")
             refresh = True
@@ -692,9 +672,9 @@ def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[st
         for summary in summaries
     ]
 
-    save_json(RECORDS_CACHE, parsed_records)
+    save_json(project.records_cache, parsed_records)
     save_json(
-        STATE_FILE,
+        project.state_cache,
         {
             "records_cached_at": datetime.now(tz=timezone.utc).isoformat(),
             "record_count": len(parsed_records),
@@ -704,15 +684,15 @@ def fetch_contribution_records(client: ApiClient, refresh: bool) -> list[dict[st
     return parsed_records
 
 
-def load_issues_cache() -> dict[str, dict[str, Any]]:
-    return load_json(ISSUES_CACHE, {})
+def load_issues_cache(project: ProjectConfig) -> dict[str, dict[str, Any]]:
+    return load_json(project.issues_cache, {})
 
 
-def save_issues_cache(cache: dict[str, dict[str, Any]]) -> None:
-    save_json(ISSUES_CACHE, cache)
+def save_issues_cache(project: ProjectConfig, cache: dict[str, dict[str, Any]]) -> None:
+    save_json(project.issues_cache, cache)
 
 
-def parse_issue_entry(issue: dict[str, Any]) -> dict[str, Any]:
+def parse_issue_entry(issue: dict[str, Any], project: ProjectConfig) -> dict[str, Any]:
     iid = int(issue["iid"])
     category = None
     priority = None
@@ -729,7 +709,7 @@ def parse_issue_entry(issue: dict[str, Any]) -> dict[str, Any]:
         "labels": issue.get("labels", []),
         "category": category,
         "priority": priority,
-        "web_url": issue.get("web_url", ISSUE_URL.format(iid=iid)),
+        "web_url": issue.get("web_url", project.issue_url(iid)),
     }
 
 
@@ -758,6 +738,7 @@ def issues_cache_needs_refresh(
 
 def fetch_all_gitlab_issues(client: ApiClient) -> dict[int, dict[str, Any]]:
     """Fetch all project issues in paginated batches (~5 requests total)."""
+    project = client.project
     all_issues: dict[int, dict[str, Any]] = {}
     page = 1
     per_page = 100
@@ -765,7 +746,7 @@ def fetch_all_gitlab_issues(client: ApiClient) -> dict[int, dict[str, Any]]:
     print("Fetching GitLab issue metadata (paginated)...")
     while True:
         url = (
-            f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/issues"
+            f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/issues"
             f"?state=all&per_page={per_page}&page={page}"
         )
         batch = client.get_json(url)
@@ -773,7 +754,7 @@ def fetch_all_gitlab_issues(client: ApiClient) -> dict[int, dict[str, Any]]:
             break
 
         for issue in batch:
-            entry = parse_issue_entry(issue)
+            entry = parse_issue_entry(issue, project)
             all_issues[entry["iid"]] = entry
 
         print(f"  page {page}: {len(batch)} issues ({len(all_issues)} total)")
@@ -794,6 +775,7 @@ def fetch_missing_issues_by_iids(
     if not missing_iids:
         return
 
+    project = client.project
     print(f"Fetching {len(missing_iids)} missing issues via bulk iids[] lookup...")
     batch_size = 50
     sorted_iids = sorted(missing_iids)
@@ -801,7 +783,7 @@ def fetch_missing_issues_by_iids(
         chunk = sorted_iids[start : start + batch_size]
         params = "&".join(f"iids[]={iid}" for iid in chunk)
         url = (
-            f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/issues"
+            f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/issues"
             f"?{params}&per_page={batch_size}"
         )
         try:
@@ -810,7 +792,7 @@ def fetch_missing_issues_by_iids(
             print(f"  warning: bulk fetch failed: {exc}", file=sys.stderr)
             continue
         for issue in batch:
-            entry = parse_issue_entry(issue)
+            entry = parse_issue_entry(issue, project)
             issues_cache[str(entry["iid"])] = entry
         time.sleep(1.0)
 
@@ -821,6 +803,7 @@ def fetch_issue_metadata(
     issues_cache: dict[str, dict[str, Any]],
     refresh: bool,
 ) -> dict[int, dict[str, Any]]:
+    project = client.project
     if refresh or issues_cache_needs_refresh(iids, issues_cache):
         if refresh:
             print("Refreshing GitLab issue cache...")
@@ -828,12 +811,12 @@ def fetch_issue_metadata(
             print("Issue cache is missing or invalid; refreshing...")
         all_issues = fetch_all_gitlab_issues(client)
         issues_cache = {str(iid): entry for iid, entry in all_issues.items()}
-        save_issues_cache(issues_cache)
+        save_issues_cache(project, issues_cache)
 
     missing = {iid for iid in iids if str(iid) not in issues_cache}
     if missing:
         fetch_missing_issues_by_iids(client, missing, issues_cache)
-        save_issues_cache(issues_cache)
+        save_issues_cache(project, issues_cache)
 
     still_missing = [iid for iid in iids if str(iid) not in issues_cache]
     if still_missing:
@@ -858,6 +841,7 @@ def build_period_report(
     period: ReportPeriod,
     records: list[dict[str, Any]],
     issue_meta: dict[int, dict[str, Any]],
+    project: ProjectConfig,
 ) -> PeriodReport:
     issues: list[CreditedIssue] = []
     for record in records:
@@ -874,7 +858,7 @@ def build_period_report(
                 closed_at=closed_at,
                 category=meta.get("category"),
                 priority=meta.get("priority"),
-                issue_url=meta.get("web_url", ISSUE_URL.format(iid=iid)),
+                issue_url=meta.get("web_url", project.issue_url(iid)),
                 contributors=record.get("contributors", []),
             )
         )
@@ -968,7 +952,7 @@ def format_people_counter(report: PeriodReport) -> str:
     return ", ".join(f"{user} ({user_counts[user]})" for user in sorted_users)
 
 
-def load_manual_list_exclusions(path: Path = EXCLUDE_LIST_FILE) -> set[int]:
+def load_manual_list_exclusions(path: Path) -> set[int]:
     """Load issue numbers to hide from list sections but keep in Additional totals."""
     if not path.exists():
         return set()
@@ -1008,10 +992,10 @@ def major_contribution_iids(issues: list[CreditedIssue]) -> set[int]:
     return {issue.iid for issue in issues if is_other_major_contribution(issue)}
 
 
-def load_summary_paragraph(period_slug: str) -> str | None:
+def load_summary_paragraph(project: ProjectConfig, period_slug: str) -> str | None:
     """Load optional AI-written summary from summaries/{slug}.txt."""
     for suffix in (".txt", ".md"):
-        path = SUMMARIES_DIR / f"{period_slug}{suffix}"
+        path = project.summaries_dir / f"{period_slug}{suffix}"
         if path.exists():
             text = path.read_text().strip()
             if text:
@@ -1051,14 +1035,15 @@ def generate_factual_summary(
 
 
 def write_summary_prompt(
+    project: ProjectConfig,
     period: ReportPeriod,
     accountable: list[CreditedIssue],
     major_iids: set[int],
     listable: list[CreditedIssue],
 ) -> Path:
     """Write a prompt file to feed to an AI for a prose release summary."""
-    SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
-    path = SUMMARIES_DIR / f"{period.slug}.prompt.md"
+    project.summaries_dir.mkdir(parents=True, exist_ok=True)
+    path = project.summaries_dir / f"{period.slug}.prompt.md"
 
     def group_lines(issues: list[CreditedIssue]) -> list[str]:
         return [
@@ -1100,7 +1085,7 @@ def write_summary_prompt(
         [
             "---",
             "",
-            f"Save the finished summary to: summaries/{period.slug}.txt",
+            f"Save the finished summary to: {project.machine_name}/summaries/{period.slug}.txt",
             "",
         ]
     )
@@ -1110,6 +1095,7 @@ def write_summary_prompt(
 
 def render_markdown(
     report: PeriodReport,
+    project: ProjectConfig,
     exclude_from_lists: set[int] | None = None,
 ) -> str:
     manual_excludes = exclude_from_lists or set()
@@ -1138,7 +1124,7 @@ def render_markdown(
     major_count = len(other_major_accounted)
     total_issues = len(accountable)
 
-    summary = load_summary_paragraph(report.period.slug)
+    summary = load_summary_paragraph(project, report.period.slug)
     if summary is None:
         summary = generate_factual_summary(
             report.period,
@@ -1204,17 +1190,19 @@ def render_markdown(
 
 
 def load_or_build_period_report(
+    client: ApiClient,
     period: ReportPeriod,
     records: list[dict[str, Any]],
     issue_meta: dict[int, dict[str, Any]],
     rebuild_frozen: bool,
 ) -> PeriodReport:
-    cache_path = PERIODS_DIR / f"{period.slug}.json"
+    project = client.project
+    cache_path = project.periods_dir / f"{period.slug}.json"
     if period.frozen and cache_path.exists() and not rebuild_frozen:
         print(f"Using frozen cache for {period.slug}")
         return deserialize_report(load_json(cache_path, {}))
 
-    report = build_period_report(period, records, issue_meta)
+    report = build_period_report(period, records, issue_meta, project)
     save_json(cache_path, serialize_report(report))
     print(
         f"Built {period.slug}: {len(report.issues)} credited issues, "
@@ -1251,27 +1239,29 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--exclude-list",
         type=Path,
-        default=EXCLUDE_LIST_FILE,
-        help="Path to issue exclusion list (default: exclude_from_lists.txt).",
+        default=None,
+        help="Path to issue exclusion list (default: {project}/exclude_from_lists.txt).",
     )
     parser.add_argument(
         "--write-summary-prompts",
         action="store_true",
         help=(
-            "Write summaries/{period}.prompt.md files for AI-assisted prose summaries."
+            "Write {project}/summaries/{period}.prompt.md files for AI-assisted prose summaries."
         ),
     )
+    add_project_argument(parser)
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    project = ProjectConfig.load(args.project)
+    project.ensure_dirs()
+    exclude_list = args.exclude_list or project.exclude_list_file
 
-    client = ApiClient()
+    client = ApiClient(project)
     releases = fetch_release_boundaries(client)
-    periods = build_periods(releases)
+    periods = build_periods(releases, project)
     release_summary = ", ".join(release.version for release in releases)
     print(f"Release boundaries from Drupal.org: {release_summary}")
     if args.period != "all":
@@ -1287,23 +1277,24 @@ def main() -> int:
 
     records = fetch_contribution_records(client, refresh=args.refresh_records)
     iids = {int(record["iid"]) for record in records}
-    issues_cache = load_issues_cache()
+    issues_cache = load_issues_cache(project)
     needs_issue_refresh = args.refresh_issues or issues_cache_needs_refresh(iids, issues_cache)
     issue_meta = fetch_issue_metadata(client, iids, issues_cache, refresh=needs_issue_refresh)
     rebuild_frozen = args.rebuild_frozen or needs_issue_refresh
-    exclude_from_lists = load_manual_list_exclusions(args.exclude_list)
+    exclude_from_lists = load_manual_list_exclusions(exclude_list)
     if exclude_from_lists:
-        print(f"Loaded {len(exclude_from_lists)} manual list exclusions from {args.exclude_list}.")
+        print(f"Loaded {len(exclude_from_lists)} manual list exclusions from {exclude_list}.")
 
     for period in periods:
         report = load_or_build_period_report(
+            client,
             period,
             records,
             issue_meta,
             rebuild_frozen=rebuild_frozen,
         )
-        markdown = render_markdown(report, exclude_from_lists=exclude_from_lists)
-        output_path = OUTPUT_DIR / f"{period.slug}.md"
+        markdown = render_markdown(report, project, exclude_from_lists=exclude_from_lists)
+        output_path = project.output_dir / f"{period.slug}.md"
         output_path.write_text(markdown)
         print(f"Wrote {output_path}")
 
@@ -1312,6 +1303,7 @@ def main() -> int:
             major_iids = major_contribution_iids(report.issues)
             listable = [issue for issue in accountable if issue.iid not in exclude_from_lists]
             prompt_path = write_summary_prompt(
+                project,
                 report.period,
                 accountable,
                 major_iids,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit ai_context issue credits and track reviewed approvals."""
+"""Audit Drupal project issue credits and track reviewed approvals."""
 
 from __future__ import annotations
 
@@ -16,15 +16,9 @@ from gitlab_activity import (
     enrich_issues_with_gitlab_activity,
     format_user_activity_lines,
 )
-from report import (
+from project import ProjectConfig, add_project_argument
+from release_notes import (
     ApiClient,
-    CACHE_DIR,
-    ISSUE_URL,
-    ISSUES_CACHE,
-    OUTPUT_DIR,
-    ROOT,
-    PROJECT_MACHINE_NAME,
-    GITLAB_PROJECT_ENCODED,
     clear_gitlab_token_from_keyring,
     fetch_project_contribution_records,
     gitlab_token_configured,
@@ -34,12 +28,6 @@ from report import (
     prompt_and_store_gitlab_token,
     save_json,
 )
-
-AUDIT_CACHE = CACHE_DIR / "credit_audit_records.json"
-CLOSED_ISSUES_CACHE = CACHE_DIR / "closed_issues.json"
-APPROVALS_FILE = CACHE_DIR / "credit_approvals.json"
-AUDIT_OUTPUT = OUTPUT_DIR / "credit-audit.md"
-IGNORE_UNCREDITED_FILE = ROOT / "ignore_uncredited_people.txt"
 
 CREDIT_EXEMPT_WHY_LABELS = {
     "why::duplicate": "duplicate",
@@ -87,7 +75,7 @@ def credit_exemption_reason(labels: list[str]) -> str | None:
     return None
 
 
-def load_ignored_uncredited_people(path: Path = IGNORE_UNCREDITED_FILE) -> set[str]:
+def load_ignored_uncredited_people(path: Path) -> set[str]:
     if not path.exists():
         return set()
     ignored: set[str] = set()
@@ -166,12 +154,13 @@ def index_records_by_iid(records: list[dict[str, Any]]) -> dict[int, dict[str, A
 
 
 def fetch_audit_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]]:
-    if AUDIT_CACHE.exists() and not refresh:
-        cached = merge_records_by_iid(load_json(AUDIT_CACHE, []))
+    project = client.project
+    if project.audit_records_cache.exists() and not refresh:
+        cached = merge_records_by_iid(load_json(project.audit_records_cache, []))
         if cached:
-            raw_count = len(load_json(AUDIT_CACHE, []))
+            raw_count = len(load_json(project.audit_records_cache, []))
             if raw_count != len(cached):
-                save_json(AUDIT_CACHE, cached)
+                save_json(project.audit_records_cache, cached)
                 print(
                     f"Merged {raw_count} cached records into {len(cached)} issues "
                     "(duplicate contribution records per issue)."
@@ -204,14 +193,15 @@ def fetch_audit_records(client: ApiClient, refresh: bool) -> list[dict[str, Any]
             f"  merged {raw_count} API records into {len(parsed_records)} issues "
             "(duplicate contribution records per issue)"
         )
-    save_json(AUDIT_CACHE, parsed_records)
+    save_json(project.audit_records_cache, parsed_records)
     print(f"Cached {len(parsed_records)} contribution records for audit.")
     return parsed_records
 
 
 def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, dict[str, Any]]:
-    if CLOSED_ISSUES_CACHE.exists() and not refresh:
-        cached = load_json(CLOSED_ISSUES_CACHE, {})
+    project = client.project
+    if project.closed_issues_cache.exists() and not refresh:
+        cached = load_json(project.closed_issues_cache, {})
         if cached:
             print(f"Loaded {len(cached)} closed GitLab issues from cache.")
             return {int(iid): issue for iid, issue in cached.items()}
@@ -222,7 +212,7 @@ def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, di
     per_page = 100
     while True:
         url = (
-            f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/issues"
+            f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/issues"
             f"?state=closed&per_page={per_page}&page={page}"
         )
         batch = client.get_json(url)
@@ -235,7 +225,7 @@ def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, di
                 "iid": iid,
                 "title": issue.get("title", f"Issue #{iid}"),
                 "closed_at": issue.get("closed_at"),
-                "web_url": issue.get("web_url", ISSUE_URL.format(iid=iid)),
+                "web_url": issue.get("web_url", project.issue_url(iid)),
                 "labels": issue.get("labels", []),
             }
 
@@ -245,7 +235,7 @@ def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, di
         page += 1
         time.sleep(1.0)
 
-    save_json(CLOSED_ISSUES_CACHE, {str(iid): issue for iid, issue in all_issues.items()})
+    save_json(project.closed_issues_cache, {str(iid): issue for iid, issue in all_issues.items()})
     print(f"Cached {len(all_issues)} closed GitLab issues.")
     return all_issues
 
@@ -254,15 +244,15 @@ def default_approvals() -> dict[str, Any]:
     return {"issues": {}, "uncredited": {}}
 
 
-def load_approvals() -> dict[str, Any]:
-    data = load_json(APPROVALS_FILE, default_approvals())
+def load_approvals(project: ProjectConfig) -> dict[str, Any]:
+    data = load_json(project.approvals_cache, default_approvals())
     data.setdefault("issues", {})
     data.setdefault("uncredited", {})
     return data
 
 
-def save_approvals(data: dict[str, Any]) -> None:
-    save_json(APPROVALS_FILE, data)
+def save_approvals(project: ProjectConfig, data: dict[str, Any]) -> None:
+    save_json(project.approvals_cache, data)
 
 
 def is_issue_approved(approvals: dict[str, Any], iid: int) -> bool:
@@ -550,6 +540,7 @@ def prompt_partial_uncredited(issue: AuditIssue) -> list[str]:
 def run_interactive_review(
     pending: list[AuditIssue],
     approvals: dict[str, Any],
+    project: ProjectConfig,
 ) -> tuple[int, int, bool]:
     """Walk through pending issues. Returns approved count, skipped count, quit early."""
     queue = sort_pending_issues(pending)
@@ -583,7 +574,7 @@ def run_interactive_review(
                 continue
             for user in selected:
                 approve_uncredited(approvals, issue.iid, user)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             remaining = [
                 user
                 for user in issue.uncredited
@@ -601,7 +592,7 @@ def run_interactive_review(
 
         if choice == "y":
             approve_issue(approvals, issue.iid)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             print("Approved — won't appear again.")
             approved_count += 1
 
@@ -610,6 +601,7 @@ def run_interactive_review(
 
 
 def render_audit_markdown(
+    project: ProjectConfig,
     pending: list[AuditIssue],
     approved_items: list[AuditIssue],
     exempt_items: list[AuditIssue],
@@ -634,7 +626,7 @@ def render_audit_markdown(
     lines = [
         "# Credit audit",
         "",
-        "Closed ai_context issues that may need credit review on "
+        f"Closed {project.machine_name} issues that may need credit review on "
         "[new.drupal.org](https://new.drupal.org).",
         "",
         f"**{len(pending)} issues need review** · "
@@ -650,20 +642,20 @@ def render_audit_markdown(
         "",
         "```bash",
         "# Interactive review (step through each issue)",
-        "python3 credit_audit.py --review",
+        f"python3 scripts/credit_audit.py --project {project.machine_name} --review",
         "",
         "# Whole issue reviewed (no record, no credits, or all uncredited people OK)",
-        "python3 credit_audit.py --approve 3586230",
+        f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230",
         "",
         "# Only one listed-but-uncredited person is OK",
-        "python3 credit_audit.py --approve 3586230:danrod",
+        f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230:danrod",
         "",
         "# Undo",
-        "python3 credit_audit.py --unapprove 3586230",
-        "python3 credit_audit.py --unapprove 3586230:danrod",
+        f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230",
+        f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230:danrod",
         "```",
         "",
-        "Approvals are stored in `cache/credit_approvals.json`.",
+        f"Approvals are stored in `{project.machine_name}/cache/credit_approvals.json`.",
         "",
     ]
 
@@ -722,10 +714,11 @@ def render_audit_markdown(
                 for user in issue.uncredited:
                     lines.append(
                         f"  * Approve `{user}`: "
-                        f"`python3 credit_audit.py --approve {issue.iid}:{user}`"
+                        f"`python3 scripts/credit_audit.py --project {project.machine_name} "
+                        f"--approve {issue.iid}:{user}`"
                     )
             lines.append(
-                f"  * Approve issue: `python3 credit_audit.py --approve {issue.iid}`"
+                f"  * Approve issue: `python3 scripts/credit_audit.py --project {project.machine_name} --approve {issue.iid}`"
             )
             lines.append("")
 
@@ -801,7 +794,7 @@ def parse_approval_target(value: str) -> tuple[int, str | None]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Audit ai_context issue credits and track reviewed approvals.",
+        description="Audit Drupal project issue credits and track reviewed approvals.",
     )
     parser.add_argument(
         "--review",
@@ -841,10 +834,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--ignore-list",
         type=Path,
-        default=IGNORE_UNCREDITED_FILE,
+        default=None,
         help=(
             "Path to usernames not expected to receive credit "
-            "(default: ignore_uncredited_people.txt)."
+            "(default: {project}/ignore_uncredited_people.txt)."
         ),
     )
     parser.add_argument(
@@ -852,15 +845,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Print current approvals and exit.",
     )
+    add_project_argument(parser)
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    approvals = load_approvals()
 
     if args.store_gitlab_token:
         prompt_and_store_gitlab_token()
@@ -873,15 +863,21 @@ def main() -> int:
             print("No GitLab token found in keychain.")
         return 0
 
+    project = ProjectConfig.load(args.project)
+    project.ensure_dirs()
+    ignore_list = args.ignore_list or project.ignore_uncredited_file
+
+    approvals = load_approvals(project)
+
     if args.approve:
         iid, username = parse_approval_target(args.approve)
         if username:
             approve_uncredited(approvals, iid, username)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             print(f"Approved uncredited person {username!r} on issue #{iid}.")
         else:
             approve_issue(approvals, iid)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             print(f"Approved issue #{iid}.")
         return 0
 
@@ -889,11 +885,11 @@ def main() -> int:
         iid, username = parse_approval_target(args.unapprove)
         if username:
             unapprove_uncredited(approvals, iid, username)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             print(f"Removed uncredited approval for {username!r} on issue #{iid}.")
         else:
             unapprove_issue(approvals, iid)
-            save_approvals(approvals)
+            save_approvals(project, approvals)
             print(f"Removed approval for issue #{iid}.")
         return 0
 
@@ -909,15 +905,15 @@ def main() -> int:
                 print(f"  #{iid}: {user}")
         return 0
 
-    client = ApiClient()
+    client = ApiClient(project)
     records = fetch_audit_records(client, refresh=args.refresh)
     closed_issues = fetch_closed_gitlab_issues(client, refresh=args.refresh)
-    issues_cache = load_json(ISSUES_CACHE, {})
-    ignored_users = load_ignored_uncredited_people(args.ignore_list)
+    issues_cache = load_json(project.issues_cache, {})
+    ignored_users = load_ignored_uncredited_people(ignore_list)
     if ignored_users:
         print(
             f"Loaded {len(ignored_users)} ignored uncredited usernames "
-            f"from {args.ignore_list}."
+            f"from {ignore_list}."
         )
     pending, approved_items, exempt_items = build_audit_findings(
         records,
@@ -938,7 +934,7 @@ def main() -> int:
             )
 
     if args.review:
-        run_interactive_review(pending, approvals)
+        run_interactive_review(pending, approvals, project)
         pending, approved_items, exempt_items = build_audit_findings(
             records,
             closed_issues,
@@ -958,14 +954,15 @@ def main() -> int:
         record for record in records if len(record.get("duplicate_nids") or []) > 1
     ]
     markdown = render_audit_markdown(
+        project,
         pending,
         approved_items,
         exempt_items,
         generated_at,
         duplicate_records=duplicate_records,
     )
-    AUDIT_OUTPUT.write_text(markdown)
-    print(f"Wrote {AUDIT_OUTPUT}")
+    project.audit_output.write_text(markdown)
+    print(f"Wrote {project.audit_output}")
 
     counts = {
         "no_record": sum(1 for issue in pending if issue.problem == "no_record"),

@@ -4,7 +4,7 @@
 
 This release (1.0.0-beta2 to now) includes 83 credited issues. It includes 14 new features, 6 bug fixes, 15 other major contributions, 48 additional contributions.
 
-_Generated 2026-07-04T18:37:23.965368+00:00_
+_Generated 2026-07-04T20:26:26.496007+00:00_
 
 ## New Features (14)
 
@@ -58,4 +58,4 @@ _Generated 2026-07-04T18:37:23.965368+00:00_
 
 **People:** kepol (83), mglaman (27), aidanfoster (20), emma-horrell (16), robloach (11), ahmad-khader (8), danrod (8), ultimike (6), ahmad-khalil-imagex (6), abhisekmazumdar (4), jucs7 (4), akhilbabu (3), joshua1234511 (3), a.dmitriiev (2), adaptative (2), bbruno (2), kieran.cott (2), tormi (2), gargsuchi (1), phenaproxima (1), scottfalconer (1), erichomanchuk (1), annmarysruthy (1), rakhimandhania (1), vidit-anjaria (1), csakiistvan (1), tbalog (1), violaniko (1), axioteo (1), codeitwisely (1), hestenet (1), marcus_johansson (1), pravesh_poonia (1), svendecabooter (1), thejimbirch (1), zorz (1), leofishman (1)
 
-**Organizations:** salsa digital (83), itty bitty byte (83), acquia (28), foster interactive inc. (20), the university of edinburgh (16), kalamuna (11), vardot (8), optasy (8), qed42 (6), drupaleasy (6), 1xinternet (5), axelerant (5), dropsolid (4), esinergia (4), reading room (2), imagex (2), integral vision ltd (2), e-sepia web innovation (1), sven decabooter (1), dynamate (1), kanopi studios (1), drupal association (1), freelygive (1), point blank (1), codeit wisely (1), mearra (formerly known as wunder) (1), drupalfit (1), opensense labs (1)
+**Organizations:** itty bitty byte (83), salsa digital (83), acquia (28), foster interactive inc. (20), the university of edinburgh (16), kalamuna (11), vardot (8), optasy (8), qed42 (6), drupaleasy (6), 1xinternet (5), axelerant (5), dropsolid (4), esinergia (4), reading room (2), imagex (2), integral vision ltd (2), e-sepia web innovation (1), sven decabooter (1), dynamate (1), drupal association (1), kanopi studios (1), freelygive (1), codeit wisely (1), point blank (1), mearra (formerly known as wunder) (1), opensense labs (1), drupalfit (1)

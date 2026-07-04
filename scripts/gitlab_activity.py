@@ -9,18 +9,8 @@ from typing import Any
 
 import requests
 
-from report import (
-    CACHE_DIR,
-    GITLAB_PROJECT_ENCODED,
-    ApiClient,
-    gitlab_token_configured,
-    load_json,
-    normalize_username,
-    save_json,
-)
+from release_notes import ApiClient, gitlab_token_configured, load_json, normalize_username, save_json
 
-ISSUE_ACTIVITY_CACHE = CACHE_DIR / "issue_activity.json"
-GITLAB_MR_URL = "https://git.drupalcode.org/project/ai_context/-/merge_requests/{iid}"
 NOTE_BODY_LIMIT = 200
 BOT_USERNAMES = {"drupalbot", "system", "system_message", "ghost"}
 
@@ -51,6 +41,7 @@ def fetch_paginated(client: ApiClient, base_url: str) -> list[dict[str, Any]]:
 
 
 def find_merge_requests(client: ApiClient, issue_iid: int) -> list[dict[str, Any]]:
+    project = client.project
     seen: set[int] = set()
     merge_requests: list[dict[str, Any]] = []
 
@@ -77,13 +68,13 @@ def find_merge_requests(client: ApiClient, issue_iid: int) -> list[dict[str, Any
                         "title": title,
                         "web_url": merge_request.get(
                             "web_url",
-                            GITLAB_MR_URL.format(iid=mr_iid),
+                            project.merge_request_url(mr_iid),
                         ),
                     }
                 )
 
     related_url = (
-        f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/issues/"
+        f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/issues/"
         f"{issue_iid}/related_merge_requests"
     )
     try:
@@ -92,7 +83,7 @@ def find_merge_requests(client: ApiClient, issue_iid: int) -> list[dict[str, Any
         pass
 
     search_url = (
-        f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/"
+        f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/"
         f"merge_requests?search={issue_iid}&state=all&per_page=100"
     )
     try:
@@ -105,16 +96,18 @@ def find_merge_requests(client: ApiClient, issue_iid: int) -> list[dict[str, Any
 
 
 def fetch_issue_notes(client: ApiClient, issue_iid: int) -> list[dict[str, Any]]:
+    project = client.project
     base_url = (
-        f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/issues/"
+        f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/issues/"
         f"{issue_iid}/notes?per_page=100&sort=asc&order_by=created_at"
     )
     return fetch_paginated(client, base_url)
 
 
 def fetch_merge_request_notes(client: ApiClient, mr_iid: int) -> list[dict[str, Any]]:
+    project = client.project
     base_url = (
-        f"https://git.drupalcode.org/api/v4/projects/{GITLAB_PROJECT_ENCODED}/"
+        f"https://git.drupalcode.org/api/v4/projects/{project.gitlab_project_encoded}/"
         f"merge_requests/{mr_iid}/notes?per_page=100&sort=asc&order_by=created_at"
     )
     return fetch_paginated(client, base_url)
@@ -190,12 +183,12 @@ def fetch_issue_user_activity(
     return activity
 
 
-def load_activity_cache() -> dict[str, Any]:
-    return load_json(ISSUE_ACTIVITY_CACHE, {})
+def load_activity_cache(client: ApiClient) -> dict[str, Any]:
+    return load_json(client.project.issue_activity_cache, {})
 
 
-def save_activity_cache(cache: dict[str, Any]) -> None:
-    save_json(ISSUE_ACTIVITY_CACHE, cache)
+def save_activity_cache(client: ApiClient, cache: dict[str, Any]) -> None:
+    save_json(client.project.issue_activity_cache, cache)
 
 
 def get_cached_activity(
@@ -226,7 +219,7 @@ def enrich_issues_with_gitlab_activity(
     if not pending:
         return
 
-    cache = load_activity_cache()
+    cache = load_activity_cache(client)
     print(f"Loading GitLab comments for {len(pending)} issues...")
     for index, issue in enumerate(pending, start=1):
         cached = None if refresh else get_cached_activity(cache, issue.iid, issue.uncredited)
@@ -245,7 +238,7 @@ def enrich_issues_with_gitlab_activity(
                     "error": str(exc),
                 }
             cache[str(issue.iid)] = cached
-            save_activity_cache(cache)
+            save_activity_cache(client, cache)
             time.sleep(0.2)
         issue.user_activity = cached.get("users", {})
         if index % 10 == 0 or index == len(pending):
