@@ -13,7 +13,7 @@ import sys
 import time
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote, unquote
@@ -21,6 +21,8 @@ from urllib.parse import quote, unquote
 import requests
 
 from project import REPO_ROOT, ProjectConfig, add_project_argument
+
+DEFAULT_MILESTONE_CLOSE_GRACE_HOURS = 24.0
 
 CONTRIBUTOR_INCLUDE = (
     "field_contributors,field_contributors.field_contributor_user,"
@@ -474,6 +476,67 @@ def build_periods(releases: list[ReleaseBoundary], project: ProjectConfig) -> li
     return periods
 
 
+def next_release_version(version: str) -> str:
+    """Return the next pre-release version (increment alpha/beta/rc suffix)."""
+    match = re.search(
+        r"^(?P<prefix>.+-)(?P<phase>alpha|beta|rc)(?P<num>\d+)$",
+        version,
+        re.IGNORECASE,
+    )
+    if match:
+        prefix = match.group("prefix")
+        phase = match.group("phase").lower()
+        num = int(match.group("num"))
+        return f"{prefix}{phase}{num + 1}"
+    raise ValueError(f"Cannot infer next release after {version!r}")
+
+
+def milestone_for_closed_at(
+    closed_at: datetime,
+    releases: list[ReleaseBoundary],
+    *,
+    grace_hours: float = DEFAULT_MILESTONE_CLOSE_GRACE_HOURS,
+) -> str:
+    """Return the GitLab milestone title for when an issue was closed.
+
+    Work closed between two tagged releases belongs to the later release's
+    milestone. Each release boundary includes a grace period (default 24 hours
+    after the tag) so release-day housekeeping issues still map to that release.
+    """
+    if not releases:
+        raise ValueError("At least one release boundary is required.")
+
+    grace = timedelta(hours=grace_hours)
+
+    if closed_at < releases[0].created:
+        return releases[0].version
+
+    for index in range(len(releases) - 1):
+        if releases[index].created <= closed_at < releases[index + 1].created + grace:
+            return releases[index + 1].version
+
+    if closed_at < releases[-1].created + grace:
+        return releases[-1].version
+
+    return next_release_version(releases[-1].version)
+
+
+def period_slug_for_milestone(
+    milestone: str,
+    releases: list[ReleaseBoundary],
+) -> str | None:
+    """Report period slug for a release milestone title."""
+    for index, release in enumerate(releases):
+        if release.version != milestone:
+            continue
+        if index == 0:
+            return period_slug(None, milestone)
+        return period_slug(releases[index - 1].version, milestone)
+    if releases and milestone == next_release_version(releases[-1].version):
+        return period_slug(releases[-1].version, None)
+    return None
+
+
 def index_included(included: list[dict[str, Any]]) -> dict[str, dict[str, dict[str, Any]]]:
     indexed: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
     for item in included:
@@ -892,16 +955,45 @@ def in_period(closed_at: datetime, period: ReportPeriod) -> bool:
     return True
 
 
+def issue_closed_at_for_period(
+    record: dict[str, Any],
+    closed_issues: dict[int, dict[str, Any]],
+) -> datetime:
+    """Prefer GitLab close date over Drupal.org credit-finalized date."""
+    iid = int(record["iid"])
+    gitlab = closed_issues.get(iid, {})
+    closed_raw = gitlab.get("closed_at") or record.get("closed_at")
+    return parse_dt(closed_raw)
+
+
 def build_period_report(
     period: ReportPeriod,
     records: list[dict[str, Any]],
     issue_meta: dict[int, dict[str, Any]],
     project: ProjectConfig,
+    closed_issues: dict[int, dict[str, Any]] | None = None,
+    ctx: Any | None = None,
 ) -> PeriodReport:
+    from period_context import (
+        PERIOD_SOURCE_MILESTONES,
+        issue_in_milestone_release_period,
+    )
+
+    closed_lookup = closed_issues or {}
+    use_milestones = ctx is not None and ctx.source == PERIOD_SOURCE_MILESTONES
     issues: list[CreditedIssue] = []
     for record in records:
-        closed_at = parse_dt(record["closed_at"])
-        if not in_period(closed_at, period):
+        closed_at = issue_closed_at_for_period(record, closed_lookup)
+        if use_milestones:
+            if not issue_in_milestone_release_period(
+                int(record["iid"]),
+                period.title,
+                ctx,
+                closed_lookup,
+                closed_at,
+            ):
+                continue
+        elif not in_period(closed_at, period):
             continue
         iid = int(record["iid"])
         meta = issue_meta.get(iid, {})
@@ -1250,6 +1342,8 @@ def load_or_build_period_report(
     records: list[dict[str, Any]],
     issue_meta: dict[int, dict[str, Any]],
     rebuild_frozen: bool,
+    closed_issues: dict[int, dict[str, Any]] | None = None,
+    ctx: Any | None = None,
 ) -> PeriodReport:
     project = client.project
     cache_path = project.periods_dir / f"{period.slug}.json"
@@ -1257,7 +1351,14 @@ def load_or_build_period_report(
         print(f"Using frozen cache for {period.slug}")
         return deserialize_report(load_json(cache_path, {}))
 
-    report = build_period_report(period, records, issue_meta, project)
+    report = build_period_report(
+        period,
+        records,
+        issue_meta,
+        project,
+        closed_issues=closed_issues,
+        ctx=ctx,
+    )
     save_json(cache_path, serialize_report(report))
     print(
         f"Built {period.slug}: {len(report.issues)} credited issues, "
@@ -1314,9 +1415,21 @@ def main() -> int:
     project.ensure_dirs()
     exclude_list = args.exclude_list or project.exclude_list_file
 
+    from period_context import (
+        PERIOD_SOURCE_MILESTONES,
+        build_period_context,
+        build_report_periods,
+    )
+
     client = ApiClient(project)
-    releases = fetch_release_boundaries(client)
-    periods = build_periods(releases, project)
+    ctx = build_period_context(project, client)
+    releases = ctx.releases
+    periods = build_report_periods(ctx, project)
+    if ctx.source == PERIOD_SOURCE_MILESTONES:
+        print(
+            "Release notes use GitLab milestone assignment "
+            f"({ctx.source}); close date is used only when unassigned."
+        )
     release_summary = ", ".join(release.version for release in releases)
     print(f"Release boundaries from Drupal.org: {release_summary}")
     if args.period != "all":
@@ -1336,6 +1449,30 @@ def main() -> int:
     needs_issue_refresh = args.refresh_issues or issues_cache_needs_refresh(iids, issues_cache)
     issue_meta = fetch_issue_metadata(client, iids, issues_cache, refresh=needs_issue_refresh)
     rebuild_frozen = args.rebuild_frozen or needs_issue_refresh
+
+    closed_issues: dict[int, dict[str, Any]] = {}
+    if project.period_source == PERIOD_SOURCE_MILESTONES:
+        from credit_audit import load_cached_closed_issues
+        from period_context import enrich_closed_issues_milestones
+
+        closed_issues = load_cached_closed_issues(project)
+        if not closed_issues:
+            print(
+                "Warning: no closed GitLab issues cache; run "
+                "python3 scripts/credit_audit.py --refresh",
+                file=sys.stderr,
+            )
+        elif ctx.source == PERIOD_SOURCE_MILESTONES:
+            closed_issues = enrich_closed_issues_milestones(
+                client,
+                closed_issues,
+                iids,
+            )
+            save_json(
+                project.closed_issues_cache,
+                {str(iid): issue for iid, issue in closed_issues.items()},
+            )
+
     exclude_from_lists = load_manual_list_exclusions(exclude_list)
     if exclude_from_lists:
         print(f"Loaded {len(exclude_from_lists)} manual list exclusions from {exclude_list}.")
@@ -1347,6 +1484,8 @@ def main() -> int:
             records,
             issue_meta,
             rebuild_frozen=rebuild_frozen,
+            closed_issues=closed_issues,
+            ctx=ctx,
         )
         markdown = render_markdown(report, project, exclude_from_lists=exclude_from_lists)
         output_path = project.output_dir / f"{period.slug}.md"

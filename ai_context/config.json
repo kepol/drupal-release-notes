@@ -1,4 +1,7 @@
 {
   "machine_name": "ai_context",
-  "drupal_org_nid": 3546505
+  "drupal_org_nid": 3546505,
+  "period_source": "milestones",
+  "milestone_exclude_titles": ["Future"],
+  "milestone_close_grace_hours": 24
 }

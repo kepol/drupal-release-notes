@@ -20,6 +20,10 @@ class ProjectConfig:
 
     machine_name: str
     drupal_org_nid: int
+    period_source: str = "releases"
+    milestone_close_grace_hours: float = 24.0
+    milestone_include_pattern: str = r"^\d+\.\d+\.\d+(-(alpha|beta|rc)\d*)?$"
+    milestone_exclude_titles: tuple[str, ...] = ()
     root: Path = REPO_ROOT
 
     @property
@@ -164,7 +168,30 @@ class ProjectConfig:
                 f"machine_name in {config_path} ({configured_name!r}) "
                 f"must match directory name ({machine_name!r})."
             )
-        return cls(machine_name=configured_name, drupal_org_nid=int(nid), root=root)
+        grace_hours = float(data.get("milestone_close_grace_hours", 24.0))
+        period_source = data.get("period_source", "releases")
+        if period_source not in ("releases", "milestones"):
+            raise SystemExit(
+                f"{config_path} period_source must be 'releases' or 'milestones'."
+            )
+        include_pattern = data.get(
+            "milestone_include_pattern",
+            r"^\d+\.\d+\.\d+(-(alpha|beta|rc)\d*)?$",
+        )
+        exclude_raw = data.get("milestone_exclude_titles") or []
+        if isinstance(exclude_raw, str):
+            exclude_titles = tuple(exclude_raw.split(","))
+        else:
+            exclude_titles = tuple(str(title) for title in exclude_raw)
+        return cls(
+            machine_name=configured_name,
+            drupal_org_nid=int(nid),
+            period_source=period_source,
+            milestone_close_grace_hours=grace_hours,
+            milestone_include_pattern=include_pattern,
+            milestone_exclude_titles=exclude_titles,
+            root=root,
+        )
 
     @classmethod
     def list_projects(cls, root: Path = REPO_ROOT) -> list[str]:

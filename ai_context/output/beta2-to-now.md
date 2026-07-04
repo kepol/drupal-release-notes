@@ -1,10 +1,10 @@
-# 1.0.0-beta2 to now
+# 1.0.0-beta3
 
-**83 credited issues**
+**77 credited issues**
 
-This release (1.0.0-beta2 to now) includes 83 credited issues. It includes 14 new features, 6 bug fixes, 15 other major contributions, 48 additional contributions.
+This release (1.0.0-beta3) includes 77 credited issues. It includes 14 new features, 5 bug fixes, 14 other major contributions, 44 additional contributions.
 
-_Generated 2026-07-04T20:26:26.496007+00:00_
+_Generated 2026-07-04T23:44:33.096429+00:00_
 
 ## New Features (14)
 
@@ -23,16 +23,15 @@ _Generated 2026-07-04T20:26:26.496007+00:00_
 * [#3586275](https://git.drupalcode.org/project/ai_context/-/work_items/3586275): Create Document Loader submodule for CCC
 * [#3586287](https://git.drupalcode.org/project/ai_context/-/work_items/3586287): No public API for building scope subscription forms; consumers must depend on the internal scope manager
 
-## Bug Fixes (6)
+## Bug Fixes (5)
 
 * [#3586157](https://git.drupalcode.org/project/ai_context/-/work_items/3586157): Improve context selection cacheability and request-level scope performance
 * [#3586230](https://git.drupalcode.org/project/ai_context/-/work_items/3586230): TypeError when trying to "Configure context items" from /admin/ai/context/settings/agents
 * [#3586246](https://git.drupalcode.org/project/ai_context/-/work_items/3586246): hook_ai_context_scope_values_alter() is not honored in scope value forms
 * [#3586259](https://git.drupalcode.org/project/ai_context/-/work_items/3586259): Fix phpstan error in AiContextSubcontextToggleTrait
-* [#3586260](https://git.drupalcode.org/project/ai_context/-/work_items/3586260): Show this overview page checkbox is misaligned on vanilla Drupal 11
 * [#3586317](https://git.drupalcode.org/project/ai_context/-/work_items/3586317): Documentation corrections: dependency requirements and AI module version
 
-## Other Major Contributions (15)
+## Other Major Contributions (14)
 
 * [#3586169](https://git.drupalcode.org/project/ai_context/-/work_items/3586169): [Discuss] Selection extension points and diagnostics for context selection
 * [#3586170](https://git.drupalcode.org/project/ai_context/-/work_items/3586170): [Discuss] Structured context content format and authoring model
@@ -50,12 +49,12 @@ _Generated 2026-07-04T20:26:26.496007+00:00_
 ## Additional Contributions
 
 * Plan: 6
-* Task: 41
+* Task: 37
 * Support: 1
 * Discuss: 0
 
 ## Contributors
 
-**People:** kepol (83), mglaman (27), aidanfoster (20), emma-horrell (16), robloach (11), ahmad-khader (8), danrod (8), ultimike (6), ahmad-khalil-imagex (6), abhisekmazumdar (4), jucs7 (4), akhilbabu (3), joshua1234511 (3), a.dmitriiev (2), adaptative (2), bbruno (2), kieran.cott (2), tormi (2), gargsuchi (1), phenaproxima (1), scottfalconer (1), erichomanchuk (1), annmarysruthy (1), rakhimandhania (1), vidit-anjaria (1), csakiistvan (1), tbalog (1), violaniko (1), axioteo (1), codeitwisely (1), hestenet (1), marcus_johansson (1), pravesh_poonia (1), svendecabooter (1), thejimbirch (1), zorz (1), leofishman (1)
+**People:** kepol (77), mglaman (27), aidanfoster (21), emma-horrell (17), robloach (11), ahmad-khader (7), danrod (7), ultimike (6), ahmad-khalil-imagex (6), abhisekmazumdar (4), akhilbabu (3), joshua1234511 (3), a.dmitriiev (2), adaptative (2), bbruno (2), jucs7 (2), kieran.cott (2), gargsuchi (1), phenaproxima (1), scottfalconer (1), erichomanchuk (1), annmarysruthy (1), rakhimandhania (1), vidit-anjaria (1), csakiistvan (1), tbalog (1), violaniko (1), axioteo (1), codeitwisely (1), hestenet (1), marcus_johansson (1), pravesh_poonia (1), svendecabooter (1), thejimbirch (1), zorz (1), leofishman (1)
 
-**Organizations:** itty bitty byte (83), salsa digital (83), acquia (28), foster interactive inc. (20), the university of edinburgh (16), kalamuna (11), vardot (8), optasy (8), qed42 (6), drupaleasy (6), 1xinternet (5), axelerant (5), dropsolid (4), esinergia (4), reading room (2), imagex (2), integral vision ltd (2), e-sepia web innovation (1), sven decabooter (1), dynamate (1), drupal association (1), kanopi studios (1), freelygive (1), codeit wisely (1), point blank (1), mearra (formerly known as wunder) (1), opensense labs (1), drupalfit (1)
+**Organizations:** salsa digital (77), itty bitty byte (77), acquia (28), foster interactive inc. (21), the university of edinburgh (17), kalamuna (11), vardot (7), optasy (7), qed42 (6), drupaleasy (6), 1xinternet (5), axelerant (5), dropsolid (4), reading room (2), esinergia (2), imagex (2), integral vision ltd (2), e-sepia web innovation (1), sven decabooter (1), dynamate (1), drupal association (1), freelygive (1), kanopi studios (1), point blank (1), codeit wisely (1), drupalfit (1), opensense labs (1)

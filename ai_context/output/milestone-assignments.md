@@ -1,0 +1,324 @@
+# Milestone assignments: ai_context
+
+Suggested GitLab milestones from close dates and Drupal.org release boundaries. Create missing milestones on GitLab, then assign each issue.
+
+## 0.1.0-alpha1 (15 issues)
+
+closed before 2025-12-13.
+
+- #3547892 — CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection — closed 2025-10-07, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547892
+- #3549082 — Within the Context Pools UI, link the Context for the forms to see the details of each context — closed 2025-10-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3549082
+- #3549748 — The max tokens calculation is hardcoded + use tokenizer for AI CCC — closed 2025-10-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3549748
+- #3549081 — Group AI Context menu items — closed 2025-10-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3549081
+- #3550895 — CCC tags should be required — closed 2025-10-23, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3550895
+- #3549752 — The selector service does not use the maxOverride at all for AI CCC — closed 2025-10-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3549752
+- #3554277 — ai_context_ai_function_call_info_alter does not work with contexts only set via "always_include" — closed 2025-10-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3554277
+- #3552972 — Wrong dependency definition in info.yml causes composer to not install — closed 2025-10-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3552972
+- #3550892 — Show description instead of id in the AI Contexts listing page — closed 2025-10-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3550892
+- #3554616 — Setting AI contexts has no effect on some agents — closed 2025-11-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3554616
+- #3558583 — AI Context UX meeting 18 Nov 2025 — closed 2025-11-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3558583
+- #3557700 — AI Context architecture meeting 13 Nov 2025 — closed 2025-11-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3557700
+- #3556878 — Update AI Context module with doc blocks and check coding standards — closed 2025-11-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3556878
+- #3559388 — Update CCC project components to be more useful and add tracker to issues — closed 2025-11-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3559388
+- #3555225 — Add a single global context, making Vienna Driesnote AI demos much simpler — closed 2025-11-23, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3555225
+
+## 1.0.0-beta1 (95 issues)
+
+closed 2025-12-13 through 2026-03-24 (before 1.0.0-beta1 tag).
+
+- #3563008 — Tag ai_context for v2025 repo before rearchitecture — closed 2025-12-13, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563008
+- #3563975 — Something in CCC is causing node form to not show some fields — closed 2025-12-18, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563975
+- #3563357 — Add duplicate context item feature like Drupal CMS has for nodes — closed 2025-12-22, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563357
+- #3559380 — Document current CCC architecture Nov 2025 — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3559380
+- #3563108 — Update context item edit form to better align with core — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563108
+- #3563100 — Minor cleanup on CCC pools page — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563100
+- #3563052 — Add revision support to CCC — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563052
+- #3563049 — Add draft support to CCC — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563049
+- #3563038 — Move CCC routes to higher level to be more similar to admin/content — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563038
+- #3563036 — Introduce more granular permissions to CCC — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563036
+- #3563000 — Switch the AiContext config entity to a content entity — closed 2025-12-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563000
+- #3563362 — Add toolbar dropdown menu for context items like nodes — closed 2026-01-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563362
+- #3563372 — Differentiate between description and purpose for context items — closed 2026-01-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563372
+- #3563043 — Add toolbar icon to CCC top level menu item — closed 2026-01-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563043
+- #3563365 — Add tagify styling to taxonomy fields for CCC — closed 2026-01-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563365
+- #3563360 — Add scheduling options for context items like nodes — closed 2026-01-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563360
+- #3563361 — Add moderation workflow support for context items like nodes — closed 2026-01-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563361
+- #3563371 — Switch context items page to use a view — closed 2026-01-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563371
+- #3564653 — Create CCC moderation workflow and scheduling local tasks — closed 2026-01-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564653
+- #3564691 — Create settings and sub-settings hierarchy for CCC — closed 2026-01-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564691
+- #3564709 — Switch global context to checkbox on context items — closed 2026-01-07, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564709
+- #3559504 — Toggling between AI Context local tasks losing content — closed 2026-01-07, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3559504
+- #3564667 — Add a composer.json to CCC — closed 2026-01-10, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564667
+- #3547042 — Update AI CCC project page — closed 2026-01-12, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547042
+- #3566858 — Update context items page with description and link when there are empty results — closed 2026-01-16, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566858
+- #3564714 — Allow context scoped to entities in CCC — closed 2026-01-17, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564714
+- #3566852 — Add CCC overview page — closed 2026-01-17, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566852
+- #3566862 — Update context items settings page descriptions — closed 2026-01-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566862
+- #3566811 — Add AI usage to CCC issue template — closed 2026-01-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566811
+- #3566865 — Update context item edit form field descriptions — closed 2026-01-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566865
+- #3566861 — Update CCC general settings page descriptions — closed 2026-01-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566861
+- #3566863 — Update CCC agents settings page description and table — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566863
+- #3547050 — Add text filtering on AI CCC context agents page — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547050
+- #3563089 — Add revision comparison diff support for context item revisions — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563089
+- #3568177 — Error when reinstalling after creating CCC taxonomy terms — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568177
+- #3566866 — Update agent context edit form description, help text, and table — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566866
+- #3568086 — CCC testing ai usage — closed 2026-01-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568086
+- #3545824 — Create demo Context Control Center for Vienna 2025 — closed 2026-01-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3545824
+- #3566842 — [META] Add overviews, better descriptions, and help text in CCC for better UX — closed 2026-01-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3566842
+- #3563127 — Add created date to context item entity — closed 2026-01-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563127
+- #3568115 — New context items do not default to published when setting is chosen — closed 2026-01-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568115
+- #3571392 — Toolbar menu issue in Drupal 11.3 when CCC installed — closed 2026-02-04, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571392
+- #3568384 — [Discuss] Context graphs — closed 2026-02-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568384
+- #3570934 — Add content type context scope for MVP — closed 2026-02-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3570934
+- #3550896 — [Discuss] Usage of context tags taxonomy for categorization — closed 2026-02-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3550896
+- #3569313 — Create design for context list UI to include subcontext — closed 2026-02-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569313
+- #3567568 — [Discuss] Look at Progressive Disclosure for Context items using a progressive disclosure inspired by Claude Skills — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3567568
+- #3569312 — Add parent / child relationship for context — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569312
+- #3569514 — [Spike] Research what Google Analytics data can be used in CCC — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569514
+- #3557719 — [Spike] Research AI Context categories — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3557719
+- #3550034 — Add AI context item usage data and page — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3550034
+- #3571195 — Schema errors from scheduler after installing CCC — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571195
+- #3571006 — Clean up CCC install process and composer.json file — closed 2026-02-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571006
+- #3559379 — [Meta] CCC rearchitecture and roadmap — closed 2026-02-08, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3559379
+- #3571188 — Error on installation: The state 'draft' already exists in workflow — closed 2026-02-15, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571188
+- #3559384 — Add multilingual support to CCC — closed 2026-02-16, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3559384
+- #3547033 — AI CCC markdown editor integration — closed 2026-02-16, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547033
+- #3547035 — [Spike] Research PDF upload support for CCC — closed 2026-02-18, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547035
+- #3547034 — [Spike] Research URL support for CCC — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547034
+- #3571393 — Add GitLab CI linting to CCC project — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571393
+- #3567791 — [Spike] CCC MCP server integration PoC — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3567791
+- #3554221 — Setting context pools acts differently between agent form and context pool form — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3554221
+- #3558814 — [Spike] CCC 1.0 brainstorming — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3558814
+- #3572067 — Sprint 3 CCC roadmap updates, sprint planning, and issue triage — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3572067
+- #3571299 — Add D11 CCC install steps on the project page — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571299
+- #3571788 — Update subcontext feature to specify required vs conditional selection — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571788
+- #3556908 — Do not hardcode English language prompts in CCC — closed 2026-02-19, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3556908
+- #3572891 — Create docs for Cursor and Claude code quality for CCC — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3572891
+- #3568676 — Add site section context scope for MVP — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568676
+- #3570940 — Convert global option to context scope plugin — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3570940
+- #3568677 — Allow agents to subscribe to context scope — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568677
+- #3568674 — Switch context tags to be a context scope plugin — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568674
+- #3570933 — Add language context scope for MVP — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3570933
+- #3572160 — Switch target entities to be a context scope plugin — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3572160
+- #3573709 — Fix phpunit test errors in CCC — closed 2026-02-20, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3573709
+- #3568673 — Add context scope base code and use case context scope plugin — closed 2026-02-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3568673
+- #3569311 — [Meta] Subcontext feature in CCC — closed 2026-02-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569311
+- #3574923 — Remove _ESLINT_EXTRA in GitLab CI to avoid error in CCC project — closed 2026-02-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574923
+- #3564706 — [Meta] Context Scope feature — closed 2026-02-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564706
+- #3574420 — Add Drupal CMS 2.0 support to CCC — closed 2026-02-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574420
+- #3563107 — Remove "pool" and "pools" from CCC code — closed 2026-02-27, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563107
+- #3567571 — CCC MVP Demo: Create draft FinDrop context — closed 2026-03-04, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3567571
+- #3573719 — Sprint 4 CCC roadmap updates, sprint planning, and issue triage — closed 2026-03-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3573719
+- #3569967 — [Discuss] Figure out which CCC features can be optional for MVP — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569967
+- #3571794 — Update context list UI to include subcontext and scope — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571794
+- #3575595 — Format context item markdown on view page — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3575595
+- #3563366 — Create nicer context item view page — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3563366
+- #3571909 — Update context selection logic to handle subcontext — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3571909
+- #3573708 — Add optional debug logging to CCC — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3573708
+- #3573713 — Full architecture review of CCC in prep for 1.0 — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3573713
+- #3564629 — [Discuss] Analyze Cognizant MAKER approach for CCC context granularity, selection, and flagging — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3564629
+- #3573717 — Add automated testing to CCC in prep for 1.0 — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3573717
+- #3574936 — Add search or filters to context listing — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574936
+- #3576089 — Remove support for D10 for CCC — closed 2026-03-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3576089
+- #3577398 — Update CCC readme for new mdxeditor location — closed 2026-03-07, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577398
+
+## 1.0.0-beta2 (102 issues)
+
+closed 2026-03-24 through 2026-05-11 (before 1.0.0-beta2 tag).
+
+- #3577426 — Redo context item duplicate feature without ECA — closed 2026-03-24, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577426
+- #3574445 — Add Drupal CMS 2.0 CCC install steps on the project page — closed 2026-03-24, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574445
+- #3577656 — Remove zero badge when context has no subcontext — closed 2026-03-24, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577656
+- #3569776 — Adopt AI Core shared UI library in CCC and escape data before rendering — closed 2026-03-28, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3569776
+- #3578386 — Multiple entities can be set on the target entity reference autocomplete field but only 1 is saved — closed 2026-03-28, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3578386
+- #3577745 — Context item revision comparison is missing some scope info — closed 2026-03-28, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577745
+- #3577427 — Update context item revision diff feature for progressive enhancement — closed 2026-03-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577427
+- #3577512 — Duplicate Revisions tabs appear when editing an AI Context Item. — closed 2026-03-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577512
+- #3549849 — Update CCC readme in prep for beta1 — closed 2026-03-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3549849
+- #3578657 — Drupal 10: Error on /admin/ai/context/items/add: scheduler_content_moderation_integration module conflict — closed 2026-03-29, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3578657
+- #3574906 — CCC: Refactor to move key form validations into entity-level validators / presave — closed 2026-03-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574906
+- #3574904 — CCC: Refactor to remove N+1 patterns: batch children & term loads — closed 2026-03-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574904
+- #3579234 — Add context scope plugin target entities manage link — closed 2026-03-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579234
+- #3579396 — CCC target entity types settings not working — closed 2026-03-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579396
+- #3579394 — CCC icon doesn't show in vanilla Drupal 10 and Drupal 11 install — closed 2026-03-30, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579394
+- #3574908 — CCC: Refactor to convert entity HTML helpers to data-only methods and render arrays — closed 2026-03-31, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574908
+- #3579857 — CCC beta1 features list and blurbs for demos and promotions — closed 2026-03-31, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579857
+- #3578114 — Update context scope plugin manage link/url/route functionality — closed 2026-03-31, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3578114
+- #3579841 — Can't Apply Scheduler Patch — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579841
+- #3556909 — [Discuss] Decouple AI Context from AI Agents — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3556909
+- #3575590 — Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3575590
+- #3577379 — Sprint 5 CCC roadmap updates, sprint planning, and issue triage — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577379
+- #3577087 — CCC MVP Demo: Finalize FinDrop context — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577087
+- #3567570 — [Meta] Context Control Center MVP demo — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3567570
+- #3547037 — Add AI CCC documentation for beta1 — closed 2026-04-01, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547037
+- #3547038 — Update AI CCC project page for beta1 — closed 2026-04-02, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3547038
+- #3576102 — Pre-beta security review in prep for CCC beta1 — closed 2026-04-02, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3576102
+- #3579344 — Create CONTRIBUTORS.md for CCC — closed 2026-04-05, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579344
+- #3574359 — Refactor context selection logic — closed 2026-04-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574359
+- #3574910 — CCC: Refactor to harden function-call plugin / runtime surface (GetAiRelevantContext) — closed 2026-04-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574910
+- #3577669 — CCC beta1 QA — closed 2026-04-06, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577669
+- #3577667 — Create CCC beta1 release — closed 2026-04-07, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577667
+- #3577658 — CCC beta1 video — closed 2026-04-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577658
+- #3577644 — CCC beta1 release planning — closed 2026-04-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577644
+- #3577664 — CCC Chicago keynote slides — closed 2026-04-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577664
+- #3577661 — CCC Chicago session slides — closed 2026-04-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577661
+- #3577670 — CCC Chicago planning — closed 2026-04-14, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3577670
+- #3582562 — Increase gitlab ci timeout for CCC — closed 2026-04-15, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582562
+- #3582544 — Fix PHPStan errors in CCC after 2.1.45 release — closed 2026-04-16, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582544
+- #3581533 — Do not link to agent edit form unless the user has access — closed 2026-04-16, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3581533
+- #3581501 — ai_context_install breaks existing config site installs (and probably recipes) — closed 2026-04-16, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3581501
+- #3581498 — Required parameter '$logger_factory' missing in AiContextItemStorage — closed 2026-04-16, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3581498
+- #3580400 — CCC mkdocs failing in CI pipeline — closed 2026-04-16, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3580400
+- #3579354 — Generate CCC beta1 release notes with contributing organizations and individuals — closed 2026-04-16, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3579354
+- #3582536 — Sprint 6 CCC roadmap updates, sprint planning, and issue triage — closed 2026-04-16, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582536
+- #3574136 — Go through Chicago CCC test cases and make sure they work — closed 2026-04-21, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3574136
+- #3579372 — Test error: "The node_make_sticky_action plugin does not exist" when running CCC tests locally — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3579372
+- #3576094 — Fix local ./lint.sh stylelint script errors for CCC — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3576094
+- #3577428 — Update context item target entities for progressive enhancement — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3577428
+- #3586091 — Review CCC todo comments for action items — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586091
+- #3577425 — [Discuss] Possible styling updates for context listing — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3577425
+- #3583319 — Drupal Developer Days CCC contribution planning — closed 2026-04-21, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3583319
+- #3586144 — Testing ccc issue + mr connection — closed 2026-04-25, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3586144
+- #3586139 — Add regular CCC contributors as GitLab reporter members — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586139
+- #3585041 — Local tasks for scopes should be dynamically generated — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3585041
+- #3585917 — CCC beta testing at Drupal Dev Days (DDD) 2026 — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3585917
+- #3586138 — Still getting GitLab CI timeouts for CCC — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586138
+- #3586090 — Remove Scheduler content moderation integration CCC patch once a new release is available — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586090
+- #3582920 — Add entity type and bundle context scope plugin — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582920
+- #3584838 — Add convenience API for non-agent programmatic context retrieval — closed 2026-04-25, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3584838
+- #3586120 — Make subcontext feature optional — closed 2026-04-26, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586120
+- #3574907 — CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched — closed 2026-04-29, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3574907
+- #3576092 — [Discuss] Subcontext scope vs parent scope — closed 2026-04-29, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3576092
+- #3556881 — [Discuss] Finalize name for AI Context module (Context Control Center) — closed 2026-04-29, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3556881
+- #3582288 — SystemPromptSubscriber re-injects full context on every agent loop iteration — closed 2026-05-01, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582288
+- #3574905 — CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope — closed 2026-05-01, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3574905
+- #3582504 — Analyze CCC features and roadmap against context engineering best practices — closed 2026-05-01, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582504
+- #3582494 — Analyze CCC roadmap notes against issue queue — closed 2026-05-02, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3582494
+- #3585850 — Sprint 8 CCC roadmap updates, sprint planning, and issue triage — closed 2026-05-02, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3585850
+- #3576100 — [Discuss] CCC architecture audit decision log questions — closed 2026-05-02, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3576100
+- #3586146 — Normalize token/item limit naming — eliminate `tokenBudget` and align on `maxTokens`/`maxItems` — closed 2026-05-03, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586146
+- #3586190 — Allow AI Context provider/model setting to be explicitly unset — closed 2026-05-03, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586190
+- #3586185 — Document subcontext entity validation rules for RC1 — closed 2026-05-03, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586185
+- #3586149 — Question about "Subcontext type = Conditional - included based on relevance" — closed 2026-05-03, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586149
+- #3586152 — Test CCC using DrupalForge DrupalCon Chicago Driesnote template — closed 2026-05-03, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586152
+- #3571354 — Create CCC example module that adds scope plugin and extends existing plugins — closed 2026-05-03, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3571354
+- #3586193 — Test CCC on Drupal CMS 2.1 — closed 2026-05-04, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586193
+- #3586191 — Long context items are skipped instead of truncated when max token limit is reached — closed 2026-05-04, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586191
+- #3586184 — Add `AiContextSelectorInterface` before RC1 — closed 2026-05-04, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586184
+- #3586143 — ai_context overview CSS references missing   external.svg asset via bad relative path — closed 2026-05-04, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586143
+- #3586186 — Set default usage record retention to 90 days — closed 2026-05-04, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586186
+- #3586195 — (Discuss) Logic for multiple context scope items being handled separately — closed 2026-05-05, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586195
+- #3586194 — [Discuss] Conditional subcontext logic — closed 2026-05-05, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586194
+- #3586202 — CCC beta2 codebase review — closed 2026-05-06, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586202
+- #3573715 — Full UX review of CCC in prep for rc1 — closed 2026-05-07, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3573715
+- #3586183 — Sprint 9 CCC roadmap updates, sprint planning, and issue triage — closed 2026-05-07, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586183
+- #3586159 — Require provider for conditional subcontext before RC1 — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586159
+- #3586111 — Address todos in CCC subscription update logic and scope visibility in tests — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586111
+- #3586110 — Address todos in CCC empty scope / subscription handling tests — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586110
+- #3586189 — Stabilize global context item ordering before RC1 — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586189
+- #3586147 — Clean up CCC inconsistencies and DX issues before rc1 (part 1) — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586147
+- #3586158 — Fix custom path matching for site section scope — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586158
+- #3586142 — Configure GitLab metadata for CCC — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586142
+- #3586109 — Address todos in CCC taxonomy entity type dependency in kernel tests — closed 2026-05-08, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586109
+- #3585902 — CCC beta2 release planning — closed 2026-05-09, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3585902
+- #3586141 — Design for the Context Item single entity view (manual/markdown/text/static) — closed 2026-05-10, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586141
+- #3586224 — Design for the Context Item single entity view (connected/remote/dynamic) — closed 2026-05-10, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586224
+- #3586140 — Design Improved Context Items List View — closed 2026-05-10, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586140
+- #3586223 — Fatal errors when uninstalling CCC — closed 2026-05-10, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586223
+- #3586108 — Address todos in scope form rendering and persistence tests — closed 2026-05-10, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586108
+- #3586156 — CCC beta2 QA — closed 2026-05-11, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586156
+- #3586227 — CCC navigation icon missing due to menu changes — closed 2026-05-11, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586227
+
+## 1.0.0-beta3 (89 issues)
+
+closed on or after 2026-05-11 (current development).
+
+- #3585920 — Create CCC beta2 release — closed 2026-05-11, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3585920
+- #3586154 — Create CCC status update video — closed 2026-05-11, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3586154
+- #3577657 — CCC beta blog post — closed 2026-05-11, current milestone: 1.0.0-beta2 — https://git.drupalcode.org/project/ai_context/-/work_items/3577657
+- #3586145 — Handle the case when scope plugin values are no longer available — closed 2026-05-16, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586145
+- #3586201 — CCC slides and presentation for NYC Drupal AI Summit 2026 — closed 2026-05-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586201
+- #3586200 — CCC slides and presentation for DrupalSouth Wellington 2026 — closed 2026-05-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586200
+- #3586205 — Avoid recreating scope plugins during selection — closed 2026-05-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586205
+- #3586161 — Reserve pre-RC1 entity schema fields for CCC — closed 2026-05-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586161
+- #3586082 — Clean up follow-ups from target entity decoupling review — closed 2026-05-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586082
+- #3586160 — Add per-agent context injection limits and selection mode — closed 2026-05-25, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586160
+- #3586210 — Update use case context scope defaults — closed 2026-05-26, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586210
+- #3586230 — TypeError when trying to "Configure context items" from /admin/ai/context/settings/agents — closed 2026-05-26, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586230
+- #3586203 — Pre-rc1 CCC docs updates — closed 2026-05-26, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586203
+- #3586127 — Update context listing to show workflow state — closed 2026-05-26, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586127
+- #3586212 — Update max context items in general settings — closed 2026-05-27, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586212
+- #3586116 — Update context listing to not use target column — closed 2026-05-28, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586116
+- #3586198 — [Discuss] Associating adhoc vocabularies (freetagging) with context items — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586198
+- #3586225 — Sprint 10 CCC roadmap updates, sprint planning, and issue triage — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586225
+- #3586229 — CCC optional feature suggestions in UI — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586229
+- #3586236 — CCC UX sync 27 May 2026 — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586236
+- #3586238 — Fix PHPStan failures in CCC — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586238
+- #3586211 — Update CCC overview page with hide option and new wording — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586211
+- #3586169 — [Discuss] Selection extension points and diagnostics for context selection — closed 2026-05-29, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586169
+- #3586245 — Ignore AGENTS.md in AI Context — closed 2026-05-31, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586245
+- #3586240 — [Discuss] Default settings - "Show overview page" and "Enable subcontext hierarchy" — closed 2026-06-05, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586240
+- #3586239 — [Discuss] "Context Control Center" at top-level of admin menu? — closed 2026-06-05, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586239
+- #3586170 — [Discuss] Structured context content format and authoring model — closed 2026-06-06, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586170
+- #3586157 — Improve context selection cacheability and request-level scope performance — closed 2026-06-06, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586157
+- #3586214 — Hide additional context scope options if global is selected — closed 2026-06-06, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586214
+- #3586259 — Fix phpstan error in AiContextSubcontextToggleTrait — closed 2026-06-06, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586259
+- #3586253 — Move CCC menu from top-level to under AI configuration section — closed 2026-06-07, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586253
+- #3580063 — Publish the Docs to GitLab Pages — closed 2026-06-08, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3580063
+- #3586256 — Switch context item text fields to string_long for clean MDXEditor integration — closed 2026-06-09, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586256
+- #3586221 — Test Chicago Driesnote repo with cheaper models — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586221
+- #3586232 — Sprint 11 CCC roadmap updates, sprint planning, and issue triage — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586232
+- #3586257 — Assess AI Knowledge Connector and how it might work with CCC — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586257
+- #3584775 — Remove AiContextItemType — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3584775
+- #3586250 — [Discuss] Context item content entity bundles — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586250
+- #3586219 — Update context listing page per new design — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586219
+- #3586233 — Bump AI Context to AI Core 1.4 — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586233
+- #3586247 — [Discuss] Recipe naming conventions and locations for AI Context (CCC) recipes — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586247
+- #3586162 — Add stable selection pipeline events for contrib extension — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586162
+- #3586208 — CCC Non-Agent `match_all` Convenience API — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586208
+- #3586192 — Clean up CCC inconsistencies and DX issues before rc1 (part 2) — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586192
+- #3580910 — Improve config validation and use #config_target for settings form — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3580910
+- #3586148 — [Discuss] Usage of "Context scope" and "Target bundles" — closed 2026-06-12, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586148
+- #3586260 — Show this overview page checkbox is misaligned on vanilla Drupal 11 — closed 2026-06-18, current milestone: 1.0.0-rc1 — https://git.drupalcode.org/project/ai_context/-/work_items/3586260
+- #3586267 — Create SECURITY.md file for AI Context (CCC) — closed 2026-06-18, current milestone: 1.0.0-rc1 — https://git.drupalcode.org/project/ai_context/-/work_items/3586267
+- #3586252 — Update overview page description and docs — closed 2026-06-18, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586252
+- #3586155 — Create GitLab issue and merge request templates for ai_context project — closed 2026-06-18, current milestone: Infrastructure — https://git.drupalcode.org/project/ai_context/-/work_items/3586155
+- #3586251 — Update subcontext feature description and docs — closed 2026-06-20, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586251
+- #3586241 — Document supported vs internal CCC APIs — closed 2026-06-21, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586241
+- #3586270 — Clarify Context scope: Tags in documentation — closed 2026-06-21, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586270
+- #3586275 — Create Document Loader submodule for CCC — closed 2026-06-21, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586275
+- #3586196 — [Discuss] Context scope matching semantics: additive OR, filters, and UX clarity — closed 2026-06-21, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586196
+- #3586285 — Add Configure Link in Modules Page — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586285
+- #3586272 — Add context settings validation: max_global_items must not exceed max_items — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586272
+- #3586228 — Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586228
+- #3586284 — Copy and layout updates on context item scope form — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586284
+- #3586286 — `hook_ai_context_scope_values_alter()` is ignored by scope forms and labels — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586286
+- #3586249 — Evaluate empathy CCC integration — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586249
+- #3586244 — Provide test context items for testing CCC — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586244
+- #3586288 — Update core_version_requirement for all CCC submodules to be same as parent module — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586288
+- #3586246 — hook_ai_context_scope_values_alter() is not honored in scope value forms — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586246
+- #3586207 — Conditional Subcontext Provider Calls — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586207
+- #3586287 — No public API for building scope subscription forms; consumers must depend on the internal scope manager — closed 2026-06-23, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586287
+- #3569310 — [Meta] Context source plugin feature (context from PDF/MD/TXT/URL) — closed 2026-06-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3569310
+- #3574413 — Add PDF context source plugin to CCC — closed 2026-06-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3574413
+- #3574928 — Add MD context source plugin to CCC — closed 2026-06-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3574928
+- #3574414 — Add webpage (URL) context source plugin to CCC — closed 2026-06-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3574414
+- #3586209 — CCC Usage Tracking Query/Save Pattern — closed 2026-06-24, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586209
+- #3586277 — Sprint 12 CCC roadmap updates, sprint planning, and issue triage — closed 2026-06-25, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586277
+- #3586264 — [Discuss] Moderation status of subcontext vs parent context items — closed 2026-06-26, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586264
+- #3586258 — Test AI Best Practices skills on AI Context codebase — closed 2026-06-26, current milestone: Infrastructure — https://git.drupalcode.org/project/ai_context/-/work_items/3586258
+- #3577429 — Move scheduler feature to submodule or progressive enhancement — closed 2026-06-27, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3577429
+- #3586274 — UX improvements on new context listing page — closed 2026-06-27, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586274
+- #3586297 — Add warning on subcontext edit form if parent is unpublished — closed 2026-06-27, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586297
+- #3576093 — Fix eslint errors in GitLab UI even when pipeline is green — closed 2026-06-28, current milestone: Infrastructure — https://git.drupalcode.org/project/ai_context/-/work_items/3576093
+- #3586220 — Add full view layout for context item canonical and revision pages based on new design — closed 2026-06-30, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586220
+- #3586280 — Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes — closed 2026-06-30, current milestone: 1.0.0-beta4 — https://git.drupalcode.org/project/ai_context/-/work_items/3586280
+- #3586261 — Clean up bundleless context item follow-ups — closed 2026-07-01, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586261
+- #3586307 — Update project page to change to the correct paths in the Installation and Testing Steps section — closed 2026-07-02, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3586307
+- #3586312 — Unset inherit_parent_scope silently wipes stored scope on save (data loss) — closed 2026-07-02, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586312
+- #3586314 — Item form discards user-entered scope when the subcontext feature is disabled — closed 2026-07-02, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586314
+- #3586313 — Syncing saves bypass all integrity constraints instead of only the global cap — closed 2026-07-02, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586313
+- #3586316 — Harden update 10011: empty-chunk guard and NULL-only backfill — closed 2026-07-02, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586316
+- #3586294 — CCC beta3 codebase review (pre-release) — closed 2026-07-02, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586294
+- #3586317 — Documentation corrections: dependency requirements and AI module version — closed 2026-07-03, current milestone: 1.0.0-beta3 — https://git.drupalcode.org/project/ai_context/-/work_items/3586317
+- #3586318 — Beta vs 1.1 CCC API gap analysis — closed 2026-07-03, current milestone: (none) — https://git.drupalcode.org/project/ai_context/-/work_items/3586318

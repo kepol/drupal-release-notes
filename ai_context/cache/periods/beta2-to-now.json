@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-04T20:26:26.496007+00:00",
+  "generated_at": "2026-07-04T23:44:33.096429+00:00",
   "issues": [
     {
       "category": "feature",
-      "closed_at": "2026-06-24T15:59:00+00:00",
+      "closed_at": "2026-06-24T15:59:00.816000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -45,7 +45,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-24T16:01:58+00:00",
+      "closed_at": "2026-06-24T16:01:58.984000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -75,7 +75,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-24T16:06:41+00:00",
+      "closed_at": "2026-06-24T16:06:41.693000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -105,7 +105,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-24T16:03:47+00:00",
+      "closed_at": "2026-06-24T16:03:47.064000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -135,7 +135,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-28T01:40:54+00:00",
+      "closed_at": "2026-06-28T01:40:54.132000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -159,7 +159,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-27T02:18:06+00:00",
+      "closed_at": "2026-06-27T02:18:06.616000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -195,25 +195,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-11T18:31:35+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        }
-      ],
-      "iid": 3577657,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3577657",
-      "priority": "normal",
-      "title": "CCC beta blog post",
-      "uuid": "97633a69-1ce8-4de8-9af3-4d0bcbe8d239"
-    },
-    {
-      "category": "task",
-      "closed_at": "2026-06-08T16:24:20+00:00",
+      "closed_at": "2026-06-08T16:24:20.457000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -237,7 +219,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T23:16:28+00:00",
+      "closed_at": "2026-06-12T23:16:28.840000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -275,7 +257,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-12T17:46:59+00:00",
+      "closed_at": "2026-06-12T17:46:59.948000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -299,25 +281,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-11T04:01:10+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        }
-      ],
-      "iid": 3585920,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3585920",
-      "priority": "major",
-      "title": "Create CCC beta2 release",
-      "uuid": "4a9b64a6-9c6f-4bac-81b4-55e8f718a002"
-    },
-    {
-      "category": "task",
-      "closed_at": "2026-05-24T03:49:33+00:00",
+      "closed_at": "2026-05-24T03:49:33.249000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -347,7 +311,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-28T20:00:49+00:00",
+      "closed_at": "2026-05-28T20:00:49.152000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -365,7 +329,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-05-26T16:37:35+00:00",
+      "closed_at": "2026-05-26T16:37:35.356000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -383,7 +347,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-16T13:50:04+00:00",
+      "closed_at": "2026-05-16T13:50:04.332000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -413,7 +377,7 @@
     },
     {
       "category": "support",
-      "closed_at": "2026-06-12T23:20:08+00:00",
+      "closed_at": "2026-06-12T23:20:08.117000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -455,25 +419,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-11T18:30:08+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        }
-      ],
-      "iid": 3586154,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586154",
-      "priority": "normal",
-      "title": "Create CCC status update video",
-      "uuid": "fa71e6ef-5a69-4802-9d76-12781d85a943"
-    },
-    {
-      "category": "task",
-      "closed_at": "2026-06-18T22:49:08+00:00",
+      "closed_at": "2026-06-18T22:49:08.847000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -497,7 +443,7 @@
     },
     {
       "category": "bug",
-      "closed_at": "2026-06-06T05:59:26+00:00",
+      "closed_at": "2026-06-06T05:59:26.006000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -521,7 +467,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-05-25T22:57:29+00:00",
+      "closed_at": "2026-05-25T22:57:29.387000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -551,7 +497,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-23T18:42:37+00:00",
+      "closed_at": "2026-05-23T18:42:37.627000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -575,7 +521,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-12T22:48:08+00:00",
+      "closed_at": "2026-06-12T22:48:08.268000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -605,7 +551,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-05-29T23:20:01+00:00",
+      "closed_at": "2026-05-29T23:20:01.213000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -629,7 +575,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-06T01:47:25+00:00",
+      "closed_at": "2026-06-06T01:47:25.912000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -653,7 +599,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T23:13:37+00:00",
+      "closed_at": "2026-06-12T23:13:37.279000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -687,7 +633,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-21T21:03:50+00:00",
+      "closed_at": "2026-06-21T21:03:50.291000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -717,7 +663,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-05-29T03:13:21+00:00",
+      "closed_at": "2026-05-29T03:13:21.959000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -747,7 +693,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-23T17:52:44+00:00",
+      "closed_at": "2026-05-23T17:52:44.099000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -771,7 +717,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-23T16:44:12+00:00",
+      "closed_at": "2026-05-23T16:44:12.235000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -789,7 +735,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-26T06:10:07+00:00",
+      "closed_at": "2026-05-26T06:10:07.425000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -813,7 +759,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T20:27:29+00:00",
+      "closed_at": "2026-06-23T20:27:29.338000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -840,6 +786,18 @@
             "acquia"
           ],
           "user": "mglaman"
+        },
+        {
+          "orgs": [
+            "foster interactive inc."
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "orgs": [
+            "the university of edinburgh"
+          ],
+          "user": "emma-horrell"
         }
       ],
       "iid": 3586207,
@@ -850,7 +808,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T22:51:35+00:00",
+      "closed_at": "2026-06-12T22:51:35.509000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -875,7 +833,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-24T16:20:43+00:00",
+      "closed_at": "2026-06-24T16:20:43.555000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -900,7 +858,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-26T01:11:43+00:00",
+      "closed_at": "2026-05-26T01:11:43.096000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -936,7 +894,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-29T21:24:05+00:00",
+      "closed_at": "2026-05-29T21:24:05.063000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -972,7 +930,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-27T04:01:31+00:00",
+      "closed_at": "2026-05-27T04:01:31.192000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1000,7 +958,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-06T06:04:12+00:00",
+      "closed_at": "2026-06-06T06:04:12.387000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1036,7 +994,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-12T22:19:36+00:00",
+      "closed_at": "2026-06-12T22:19:36.393000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1078,7 +1036,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-30T20:51:57+00:00",
+      "closed_at": "2026-06-30T20:51:57.990000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1132,7 +1090,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T01:41:26+00:00",
+      "closed_at": "2026-06-12T01:41:26.494000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1168,7 +1126,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-05-29T05:04:14+00:00",
+      "closed_at": "2026-05-29T05:04:14.540000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1186,7 +1144,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T03:01:32+00:00",
+      "closed_at": "2026-06-23T03:01:32.243000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1228,7 +1186,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-05-29T06:37:53+00:00",
+      "closed_at": "2026-05-29T06:37:53.777000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1262,7 +1220,7 @@
     },
     {
       "category": "bug",
-      "closed_at": "2026-05-26T05:56:36+00:00",
+      "closed_at": "2026-05-26T05:56:36.873000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1292,7 +1250,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-12T02:39:57+00:00",
+      "closed_at": "2026-06-12T02:39:57.339000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1310,7 +1268,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T22:27:47+00:00",
+      "closed_at": "2026-06-12T22:27:47.928000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1338,7 +1296,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-29T06:56:46+00:00",
+      "closed_at": "2026-05-29T06:56:46.534000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1368,7 +1326,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-29T07:08:37+00:00",
+      "closed_at": "2026-05-29T07:08:37.027000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1386,7 +1344,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-05T22:13:34+00:00",
+      "closed_at": "2026-06-05T22:13:34.573000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1422,7 +1380,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-05T21:49:35+00:00",
+      "closed_at": "2026-06-05T21:49:35.011000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1458,7 +1416,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-21T04:34:21+00:00",
+      "closed_at": "2026-06-21T04:34:21.186000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1482,7 +1440,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-23T18:14:52+00:00",
+      "closed_at": "2026-06-23T18:14:52.333000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1512,7 +1470,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-05-31T21:11:33+00:00",
+      "closed_at": "2026-05-31T21:11:33.613000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1530,7 +1488,7 @@
     },
     {
       "category": "bug",
-      "closed_at": "2026-06-23T18:40:39+00:00",
+      "closed_at": "2026-06-23T18:40:39.456000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1566,7 +1524,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-12T22:42:37+00:00",
+      "closed_at": "2026-06-12T22:42:37.489000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1632,7 +1590,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T05:53:56+00:00",
+      "closed_at": "2026-06-23T05:53:56.712000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1656,7 +1614,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-12T18:59:52+00:00",
+      "closed_at": "2026-06-12T18:59:52.057000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1686,7 +1644,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-20T23:55:20+00:00",
+      "closed_at": "2026-06-20T23:55:20.391000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1710,7 +1668,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-18T21:18:13+00:00",
+      "closed_at": "2026-06-18T21:18:13.756000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1734,7 +1692,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-07T15:34:03+00:00",
+      "closed_at": "2026-06-07T15:34:03.648000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1752,7 +1710,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-09T19:44:36+00:00",
+      "closed_at": "2026-06-09T19:44:36.043000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1782,7 +1740,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-12T02:44:26+00:00",
+      "closed_at": "2026-06-12T02:44:26.016000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1800,7 +1758,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-26T20:57:52+00:00",
+      "closed_at": "2026-06-26T20:57:52.041000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1834,7 +1792,7 @@
     },
     {
       "category": "bug",
-      "closed_at": "2026-06-06T18:26:22+00:00",
+      "closed_at": "2026-06-06T18:26:22.597000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1851,38 +1809,8 @@
       "uuid": "c010a12e-d4f1-4455-ba38-5da5f21b86fe"
     },
     {
-      "category": "bug",
-      "closed_at": "2026-06-18T14:57:35+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        },
-        {
-          "orgs": [
-            "esinergia"
-          ],
-          "user": "jucs7"
-        },
-        {
-          "orgs": [
-            "mearra (formerly known as wunder)"
-          ],
-          "user": "tormi"
-        }
-      ],
-      "iid": 3586260,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586260",
-      "priority": "minor",
-      "title": "Show this overview page checkbox is misaligned on vanilla Drupal 11",
-      "uuid": "5ff0103e-bd9d-4c66-867f-40e32fc9e7ea"
-    },
-    {
       "category": "task",
-      "closed_at": "2026-07-01T00:16:29+00:00",
+      "closed_at": "2026-07-01T00:16:29.928000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1906,7 +1834,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-26T19:06:34+00:00",
+      "closed_at": "2026-06-26T19:06:34.148000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1936,35 +1864,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-18T15:22:35+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        },
-        {
-          "orgs": [
-            "optasy"
-          ],
-          "user": "danrod"
-        },
-        {
-          "orgs": [],
-          "user": "tormi"
-        }
-      ],
-      "iid": 3586267,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586267",
-      "priority": "major",
-      "title": "Create SECURITY.md file for AI Context (CCC)",
-      "uuid": "98f5589a-8e31-4693-b2cd-844c34b37cc0"
-    },
-    {
-      "category": "task",
-      "closed_at": "2026-06-21T05:00:40+00:00",
+      "closed_at": "2026-06-21T05:00:40.854000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -1994,7 +1894,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T03:01:05+00:00",
+      "closed_at": "2026-06-23T03:01:05.523000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2024,7 +1924,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-27T19:04:49+00:00",
+      "closed_at": "2026-06-27T19:04:49.797000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2060,7 +1960,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-21T17:23:53+00:00",
+      "closed_at": "2026-06-21T17:23:53.438000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2102,7 +2002,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-25T04:44:29+00:00",
+      "closed_at": "2026-06-25T04:44:29.238000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2126,37 +2026,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-30T23:24:17+00:00",
-      "contributors": [
-        {
-          "orgs": [
-            "esinergia"
-          ],
-          "user": "jucs7"
-        },
-        {
-          "orgs": [
-            "itty bitty byte",
-            "salsa digital"
-          ],
-          "user": "kepol"
-        },
-        {
-          "orgs": [
-            "vardot"
-          ],
-          "user": "ahmad-khader"
-        }
-      ],
-      "iid": 3586280,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280",
-      "priority": "normal",
-      "title": "Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes",
-      "uuid": "28aa8c69-1e79-4688-b8f9-145b2ae380e0"
-    },
-    {
-      "category": "task",
-      "closed_at": "2026-06-23T03:12:11+00:00",
+      "closed_at": "2026-06-23T03:12:11.040000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2186,7 +2056,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T01:08:46+00:00",
+      "closed_at": "2026-06-23T01:08:46.911000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2210,7 +2080,7 @@
     },
     {
       "category": "feature",
-      "closed_at": "2026-06-23T21:55:36+00:00",
+      "closed_at": "2026-06-23T21:55:36.129000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2234,7 +2104,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-06-23T18:21:57+00:00",
+      "closed_at": "2026-06-23T18:21:57.014000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2252,7 +2122,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-07-02T21:49:00+00:00",
+      "closed_at": "2026-07-02T21:49:00.032000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2270,7 +2140,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-06-27T21:17:31+00:00",
+      "closed_at": "2026-06-27T21:17:31.846000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2294,7 +2164,7 @@
     },
     {
       "category": "task",
-      "closed_at": "2026-07-02T00:45:48+00:00",
+      "closed_at": "2026-07-02T00:45:48.608000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2318,7 +2188,7 @@
     },
     {
       "category": "bug",
-      "closed_at": "2026-07-03T04:45:43+00:00",
+      "closed_at": "2026-07-03T04:45:43.412000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2343,7 +2213,7 @@
     },
     {
       "category": "plan",
-      "closed_at": "2026-07-03T19:07:02+00:00",
+      "closed_at": "2026-07-03T19:07:02.942000+00:00",
       "contributors": [
         {
           "orgs": [
@@ -2371,53 +2241,52 @@
     "drupalfit": 1,
     "dynamate": 1,
     "e-sepia web innovation": 1,
-    "esinergia": 4,
-    "foster interactive inc.": 20,
+    "esinergia": 2,
+    "foster interactive inc.": 21,
     "freelygive": 1,
     "imagex": 2,
     "integral vision ltd": 2,
-    "itty bitty byte": 83,
+    "itty bitty byte": 77,
     "kalamuna": 11,
     "kanopi studios": 1,
-    "mearra (formerly known as wunder)": 1,
     "opensense labs": 1,
-    "optasy": 8,
+    "optasy": 7,
     "point blank": 1,
     "qed42": 6,
     "reading room": 2,
-    "salsa digital": 83,
+    "salsa digital": 77,
     "sven decabooter": 1,
-    "the university of edinburgh": 16,
-    "vardot": 8
+    "the university of edinburgh": 17,
+    "vardot": 7
   },
   "period": {
-    "end": null,
-    "frozen": false,
+    "end": "2026-07-07T23:59:59+00:00",
+    "frozen": true,
     "slug": "beta2-to-now",
-    "start": "2026-05-11T03:38:14+00:00",
-    "title": "1.0.0-beta2 to now"
+    "start": "2026-05-11T00:00:00+00:00",
+    "title": "1.0.0-beta3"
   },
   "user_counts": {
     "a.dmitriiev": 2,
     "abhisekmazumdar": 4,
     "adaptative": 2,
-    "ahmad-khader": 8,
+    "ahmad-khader": 7,
     "ahmad-khalil-imagex": 6,
-    "aidanfoster": 20,
+    "aidanfoster": 21,
     "akhilbabu": 3,
     "annmarysruthy": 1,
     "axioteo": 1,
     "bbruno": 2,
     "codeitwisely": 1,
     "csakiistvan": 1,
-    "danrod": 8,
-    "emma-horrell": 16,
+    "danrod": 7,
+    "emma-horrell": 17,
     "erichomanchuk": 1,
     "gargsuchi": 1,
     "hestenet": 1,
     "joshua1234511": 3,
-    "jucs7": 4,
-    "kepol": 83,
+    "jucs7": 2,
+    "kepol": 77,
     "kieran.cott": 2,
     "leofishman": 1,
     "marcus_johansson": 1,
@@ -2430,7 +2299,6 @@
     "svendecabooter": 1,
     "tbalog": 1,
     "thejimbirch": 1,
-    "tormi": 2,
     "ultimike": 6,
     "vidit-anjaria": 1,
     "violaniko": 1,

@@ -1477,7 +1477,9 @@
     "record_url": "https://new.drupal.org/node/11440484",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571188",
     "title": "Error on installation: The state 'draft' already exists in workflow",
-    "uncredited": [],
+    "uncredited": [
+      "scottfalconer"
+    ],
     "uuid": "27a61313-9a69-4b83-ac71-3bd5d9eaad65"
   },
   {
@@ -1925,7 +1927,8 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574910",
     "title": "CCC: Refactor to harden function-call plugin / runtime surface (GetAiRelevantContext)",
     "uncredited": [
-      "rakhimandhania"
+      "rakhimandhania",
+      "scottfalconer"
     ],
     "uuid": "704d835b-20a5-4c9d-8f70-d6ec08db2297"
   },
@@ -2027,6 +2030,7 @@
     "credited": [
       "aidanfoster",
       "emma-horrell",
+      "flux423",
       "kepol",
       "scottfalconer"
     ],
@@ -2036,7 +2040,6 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3576092",
     "title": "[Discuss] Subcontext scope vs parent scope",
     "uncredited": [
-      "flux423",
       "rakhimandhania"
     ],
     "uuid": "e7b44d3f-d0b8-41cb-83ad-8cfca1e40814"
@@ -2503,7 +2506,7 @@
     "nid": 11445967,
     "record_url": "https://new.drupal.org/node/11445967",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579354",
-    "title": "Generate CCC beta1 release notes with contributing organizations and individuals",
+    "title": "Generate CCC beta release notes with contributing organizations and individuals",
     "uncredited": [],
     "uuid": "6af6e3b1-a29c-4400-aec9-99ef50566032"
   },
@@ -2560,6 +2563,7 @@
     "credited": [
       "kepol",
       "marcus_johansson",
+      "rajabnatshah",
       "robloach"
     ],
     "iid": 3579841,
@@ -2568,7 +2572,6 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
     "title": "Can't Apply Scheduler Patch",
     "uncredited": [
-      "rajabnatshah",
       "rakhimandhania"
     ],
     "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
@@ -3649,6 +3652,8 @@
     "credited": [
       "abhisekmazumdar",
       "ahmad-khalil-imagex",
+      "aidanfoster",
+      "emma-horrell",
       "kepol",
       "mglaman"
     ],
@@ -3658,7 +3663,6 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586207",
     "title": "Conditional Subcontext Provider Calls",
     "uncredited": [
-      "aidanfoster",
       "rakhimandhania"
     ],
     "uuid": "4fe44680-3527-449d-91d0-23f299832b0a"

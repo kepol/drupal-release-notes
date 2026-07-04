@@ -1,18 +1,19 @@
-# 0.1.0-alpha1 to 1.0.0-beta1
+# 1.0.0-beta1
 
-**88 credited issues**
+**128 credited issues**
 
-This release (0.1.0-alpha1 to 1.0.0-beta1) includes 88 credited issues. It includes 32 new features, 7 bug fixes, 15 other major contributions, 34 additional contributions.
+This release (1.0.0-beta1) includes 128 credited issues. It includes 34 new features, 15 bug fixes, 30 other major contributions, 49 additional contributions.
 
-_Generated 2026-07-04T18:06:13.556574+00:00_
+_Generated 2026-07-04T23:38:12.731752+00:00_
 
-## New Features (32)
+## New Features (34)
 
 * [#3547033](https://git.drupalcode.org/project/ai_context/-/work_items/3547033): AI CCC markdown editor integration
 * [#3547034](https://git.drupalcode.org/project/ai_context/-/work_items/3547034): [Spike] Research URL support for CCC
 * [#3547035](https://git.drupalcode.org/project/ai_context/-/work_items/3547035): [Spike] Research PDF upload support for CCC
 * [#3547050](https://git.drupalcode.org/project/ai_context/-/work_items/3547050): Add text filtering on AI CCC context agents page
 * [#3550034](https://git.drupalcode.org/project/ai_context/-/work_items/3550034): Add AI context item usage data and page
+* [#3556909](https://git.drupalcode.org/project/ai_context/-/work_items/3556909): [Discuss] Decouple AI Context from AI Agents
 * [#3559384](https://git.drupalcode.org/project/ai_context/-/work_items/3559384): Add multilingual support to CCC
 * [#3563049](https://git.drupalcode.org/project/ai_context/-/work_items/3563049): Add draft support to CCC
 * [#3563052](https://git.drupalcode.org/project/ai_context/-/work_items/3563052): Add revision support to CCC
@@ -39,9 +40,10 @@ _Generated 2026-07-04T18:06:13.556574+00:00_
 * [#3571788](https://git.drupalcode.org/project/ai_context/-/work_items/3571788): Update subcontext feature to specify required vs conditional selection
 * [#3571909](https://git.drupalcode.org/project/ai_context/-/work_items/3571909): Update context selection logic to handle subcontext
 * [#3572160](https://git.drupalcode.org/project/ai_context/-/work_items/3572160): Switch target entities to be a context scope plugin
+* [#3575590](https://git.drupalcode.org/project/ai_context/-/work_items/3575590): Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC
 * [#3575595](https://git.drupalcode.org/project/ai_context/-/work_items/3575595): Format context item markdown on view page
 
-## Bug Fixes (7)
+## Bug Fixes (15)
 
 * [#3554221](https://git.drupalcode.org/project/ai_context/-/work_items/3554221): Setting context pools acts differently between agent form and context pool form
 * [#3568115](https://git.drupalcode.org/project/ai_context/-/work_items/3568115): New context items do not default to published when setting is chosen
@@ -50,33 +52,56 @@ _Generated 2026-07-04T18:06:13.556574+00:00_
 * [#3571188](https://git.drupalcode.org/project/ai_context/-/work_items/3571188): Error on installation: The state 'draft' already exists in workflow
 * [#3571195](https://git.drupalcode.org/project/ai_context/-/work_items/3571195): Schema errors from scheduler after installing CCC
 * [#3571392](https://git.drupalcode.org/project/ai_context/-/work_items/3571392): Toolbar menu issue in Drupal 11.3 when CCC installed
+* [#3577512](https://git.drupalcode.org/project/ai_context/-/work_items/3577512): Duplicate Revisions tabs appear when editing an AI Context Item.
+* [#3577745](https://git.drupalcode.org/project/ai_context/-/work_items/3577745): Context item revision comparison is missing some scope info
+* [#3578114](https://git.drupalcode.org/project/ai_context/-/work_items/3578114): Update context scope plugin manage link/url/route functionality
+* [#3578386](https://git.drupalcode.org/project/ai_context/-/work_items/3578386): Multiple entities can be set on the target entity reference autocomplete field but only 1 is saved
+* [#3578657](https://git.drupalcode.org/project/ai_context/-/work_items/3578657): Drupal 10: Error on /admin/ai/context/items/add: scheduler_content_moderation_integration module conflict
+* [#3579394](https://git.drupalcode.org/project/ai_context/-/work_items/3579394): CCC icon doesn't show in vanilla Drupal 10 and Drupal 11 install
+* [#3579396](https://git.drupalcode.org/project/ai_context/-/work_items/3579396): CCC target entity types settings not working
+* [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
 
-## Other Major Contributions (15)
+## Other Major Contributions (30)
 
 * [#3545824](https://git.drupalcode.org/project/ai_context/-/work_items/3545824): Create demo Context Control Center for Vienna 2025
 * [#3558814](https://git.drupalcode.org/project/ai_context/-/work_items/3558814): [Spike] CCC 1.0 brainstorming
 * [#3559379](https://git.drupalcode.org/project/ai_context/-/work_items/3559379): [Meta] CCC rearchitecture and roadmap
 * [#3563000](https://git.drupalcode.org/project/ai_context/-/work_items/3563000): Switch the AiContext config entity to a content entity
 * [#3564709](https://git.drupalcode.org/project/ai_context/-/work_items/3564709): Switch global context to checkbox on context items
+* [#3566811](https://git.drupalcode.org/project/ai_context/-/work_items/3566811): Add AI usage to CCC issue template
 * [#3566842](https://git.drupalcode.org/project/ai_context/-/work_items/3566842): [META] Add overviews, better descriptions, and help text in CCC for better UX
+* [#3567570](https://git.drupalcode.org/project/ai_context/-/work_items/3567570): [Meta] Context Control Center MVP demo
+* [#3567571](https://git.drupalcode.org/project/ai_context/-/work_items/3567571): CCC MVP Demo: Create draft FinDrop context
 * [#3569514](https://git.drupalcode.org/project/ai_context/-/work_items/3569514): [Spike] Research what Google Analytics data can be used in CCC
+* [#3569776](https://git.drupalcode.org/project/ai_context/-/work_items/3569776): Adopt AI Core shared UI library in CCC and escape data before rendering
 * [#3569967](https://git.drupalcode.org/project/ai_context/-/work_items/3569967): [Discuss] Figure out which CCC features can be optional for MVP
+* [#3571299](https://git.drupalcode.org/project/ai_context/-/work_items/3571299): Add D11 CCC install steps on the project page
 * [#3571393](https://git.drupalcode.org/project/ai_context/-/work_items/3571393): Add GitLab CI linting to CCC project
 * [#3571794](https://git.drupalcode.org/project/ai_context/-/work_items/3571794): Update context list UI to include subcontext and scope
 * [#3573713](https://git.drupalcode.org/project/ai_context/-/work_items/3573713): Full architecture review of CCC in prep for 1.0
 * [#3573717](https://git.drupalcode.org/project/ai_context/-/work_items/3573717): Add automated testing to CCC in prep for 1.0
+* [#3574359](https://git.drupalcode.org/project/ai_context/-/work_items/3574359): Refactor context selection logic
 * [#3574420](https://git.drupalcode.org/project/ai_context/-/work_items/3574420): Add Drupal CMS 2.0 support to CCC
+* [#3574445](https://git.drupalcode.org/project/ai_context/-/work_items/3574445): Add Drupal CMS 2.0 CCC install steps on the project page
+* [#3574906](https://git.drupalcode.org/project/ai_context/-/work_items/3574906): CCC: Refactor to move key form validations into entity-level validators / presave
+* [#3574908](https://git.drupalcode.org/project/ai_context/-/work_items/3574908): CCC: Refactor to convert entity HTML helpers to data-only methods and render arrays
 * [#3574936](https://git.drupalcode.org/project/ai_context/-/work_items/3574936): Add search or filters to context listing
+* [#3576102](https://git.drupalcode.org/project/ai_context/-/work_items/3576102): Pre-beta security review in prep for CCC beta1
+* [#3577087](https://git.drupalcode.org/project/ai_context/-/work_items/3577087): CCC MVP Demo: Finalize FinDrop context
+* [#3577427](https://git.drupalcode.org/project/ai_context/-/work_items/3577427): Update context item revision diff feature for progressive enhancement
+* [#3577644](https://git.drupalcode.org/project/ai_context/-/work_items/3577644): CCC beta1 release planning
+* [#3577670](https://git.drupalcode.org/project/ai_context/-/work_items/3577670): CCC Chicago planning
+* [#3579857](https://git.drupalcode.org/project/ai_context/-/work_items/3579857): CCC beta1 features list and blurbs for demos and promotions
 
 ## Additional Contributions
 
-* Plan: 4
-* Task: 30
+* Plan: 5
+* Task: 44
 * Support: 0
 * Discuss: 0
 
 ## Contributors
 
-**People:** kepol (88), aidanfoster (16), emma-horrell (11), bbruno (9), scottfalconer (9), dstorozhuk (8), marcus_johansson (6), danrod (4), robloach (4), svendecabooter (4), kafmil (2), tedbow (2), kostiantyn (2), yautja_cetanu (2), b_sharpe (2), divyamdotfoo (2), nickolaj (2), a.dmitriiev (1), breidert (1), thamas (1), abhisekmazumdar (1), ahmad-khader (1), axioteo (1), fjgarlin (1), gantal (1), harivansh (1), jurgenhaas (1), nikro (1), rakhimandhania (1), shamir.vs (1), tonypaulbarker (1), unqunq (1), webbywe (1), ahmedj (1), ajv009 (1), horvan (1), hrishikesh-dalal (1), kumarimedha09 (1), sujal_31 (1), twiesing (1)
+**People:** kepol (126), aidanfoster (20), scottfalconer (18), bbruno (13), marcus_johansson (12), emma-horrell (11), dstorozhuk (10), danrod (9), erichomanchuk (6), robloach (6), svendecabooter (6), annmarysruthy (4), kostiantyn (3), b_sharpe (3), kafmil (2), tedbow (2), a.dmitriiev (2), breidert (2), yautja_cetanu (2), guptahemant (2), rakhimandhania (2), axioteo (2), tonypaulbarker (2), unqunq (2), divyamdotfoo (2), hrishikesh-dalal (2), nickolaj (2), thamas (1), akhilbabu (1), ahmad-khader (1), rajabnatshah (1), abhisekmazumdar (1), fjgarlin (1), gantal (1), harivansh (1), jurgenhaas (1), nexusnovaz (1), nikro (1), shamir.vs (1), webbywe (1), ahmedj (1), ajv009 (1), horvan (1), kumarimedha09 (1), naveen.prakash.work (1), root_emarketing (1), sujal_31 (1), twiesing (1)
 
-**Organizations:** itty bitty byte (88), salsa digital (88), foster interactive inc. (16), 1xinternet (12), the university of edinburgh (11), acquia (11), drupal ukraine community (9), itech4web (9), freelygive (7), optasy (4), kalamuna (4), sven decabooter (4), dynamate (4), entityone (2), imagex (2), civicactions (1), digitaltrotter (1), vardot (1), localgov drupal (1), annertech (1), drupalfit (1), opensense labs (1), lakedrops (1), zyxware technologies (1), dropsolid (1), elevated third (1), qed42 (1), e-sepia web innovation (1), drupal association (1)
+**Organizations:** salsa digital (126), itty bitty byte (126), foster interactive inc. (25), acquia (20), 1xinternet (17), freelygive (12), itech4web (12), drupal ukraine community (12), the university of edinburgh (11), optasy (9), qed42 (8), kalamuna (6), sven decabooter (6), dynamate (6), imagex (3), digitaltrotter (2), vardot (2), entityone (2), localgov drupal (2), annertech (2), e-sepia web innovation (2), civicactions (1), drupalfit (1), opensense labs (1), lakedrops (1), zyxware technologies (1), dropsolid (1), elevated third (1), drupal association (1), zoocha (1)

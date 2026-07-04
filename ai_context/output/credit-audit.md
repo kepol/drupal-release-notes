@@ -2,9 +2,9 @@
 
 Closed ai_context issues that may need credit review on [new.drupal.org](https://new.drupal.org).
 
-**2 issues need review** · **9 exempt (duplicate / won't fix)** · **74 ignored (PM labels only)** · **38 issues approved**
+**0 issues need review** · **9 exempt (duplicate / won't fix)** · **75 ignored (PM labels only)** · **40 issues approved**
 
-_Generated 2026-07-04T21:09:44.395811+00:00_
+_Generated 2026-07-04T23:45:08.894894+00:00_
 
 ## How to approve
 
@@ -41,32 +41,9 @@ _None._
 
 _None._
 
-## People listed but not credited (2)
+## People listed but not credited (0)
 
-* [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
-  * Contribution record: [node/11446290](https://new.drupal.org/node/11446290)
-  * Credited: kepol, marcus_johansson, robloach
-  * Uncredited: rajabnatshah
-  * `rajabnatshah` activity:
-    Issue comments by `rajabnatshah`:
-    - [2026-05-10 15:29:58] Thank you so much for working on the CCC module, it is so important. Hopping for a new tag release. as the patch is not longer needed.
-    - [2026-05-10 15:41:59] Thanks @kepol managing with ``` "composer-patches": { "ignore-dependency-patches": ["drupal/ai_context"] }, ``` Trying to manage a wiled card one in projects not to add a static one like ``` "compose…
-    - [2026-05-10 15:53:50] I confirm the issue still remain on Uninstall
-    - [2026-05-10 15:59:53] I talked with Adam about having something like `drupal/drupal_cms_patches` or `drupal/cmspatches` Much like the [drupal/webpatches](http://drupal.org/project/webpatches) with a bit of UI listing for…
-    Merge request comments by `rajabnatshah`: no linked MR found
-  * Approve `rajabnatshah`: `python3 scripts/credit_audit.py --project ai_context --approve 3579841:rajabnatshah`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3579841`
-
-* [#3586207](https://git.drupalcode.org/project/ai_context/-/work_items/3586207): Conditional Subcontext Provider Calls
-  * Contribution record: [node/11466693](https://new.drupal.org/node/11466693)
-  * Credited: abhisekmazumdar, ahmad-khalil-imagex, kepol, mglaman
-  * Uncredited: aidanfoster
-  * `aidanfoster` activity:
-    Issue comments by `aidanfoster`:
-    - [2026-06-24 17:46:47] Emma and I met and suggest: If context sub-item is created but the setting are changed to disable them we think they should: 1. Any agent calling the parent context ignores them. 2. They should appea…
-    Merge request comments by `aidanfoster`: no linked MR found
-  * Approve `aidanfoster`: `python3 scripts/credit_audit.py --project ai_context --approve 3586207:aidanfoster`
-  * Approve issue: `python3 scripts/credit_audit.py --project ai_context --approve 3586207`
+_None._
 
 ## No credits expected — duplicate / won't fix (9)
 
@@ -104,7 +81,7 @@ GitLab labels `why::duplicate` or `why::wontFix`. These issues do not need a con
 * [#3586316](https://git.drupalcode.org/project/ai_context/-/work_items/3586316): Harden update 10011: empty-chunk guard and NULL-only backfill
   * GitLab label: `why::duplicate` (duplicate)
 
-## Ignored uncredited — project managers (74)
+## Ignored uncredited — project managers (75)
 
 The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs who add labels, not code).
 
@@ -232,11 +209,6 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Credited: kepol, scottfalconer
   * Ignored (not expected to credit): rakhimandhania
   * Contribution record: [node/11442882](https://new.drupal.org/node/11442882)
-
-* [#3574910](https://git.drupalcode.org/project/ai_context/-/work_items/3574910): CCC: Refactor to harden function-call plugin / runtime surface (GetAiRelevantContext)
-  * Credited: kepol
-  * Ignored (not expected to credit): rakhimandhania
-  * Contribution record: [node/11442885](https://new.drupal.org/node/11442885)
 
 * [#3575590](https://git.drupalcode.org/project/ai_context/-/work_items/3575590): Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC
   * Credited: axioteo, kepol, scottfalconer, unqunq
@@ -368,6 +340,11 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Ignored (not expected to credit): rakhimandhania
   * Contribution record: [node/11445995](https://new.drupal.org/node/11445995)
 
+* [#3579841](https://git.drupalcode.org/project/ai_context/-/work_items/3579841): Can't Apply Scheduler Patch
+  * Credited: kepol, marcus_johansson, rajabnatshah, robloach
+  * Ignored (not expected to credit): rakhimandhania
+  * Contribution record: [node/11446290](https://new.drupal.org/node/11446290)
+
 * [#3580910](https://git.drupalcode.org/project/ai_context/-/work_items/3580910): Improve config validation and use #config_target for settings form
   * Credited: abhisekmazumdar, kepol, mglaman, svendecabooter
   * Ignored (not expected to credit): rakhimandhania
@@ -422,6 +399,11 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Credited: kepol, mglaman
   * Ignored (not expected to credit): rakhimandhania
   * Contribution record: [node/11454557](https://new.drupal.org/node/11454557)
+
+* [#3586207](https://git.drupalcode.org/project/ai_context/-/work_items/3586207): Conditional Subcontext Provider Calls
+  * Credited: abhisekmazumdar, ahmad-khalil-imagex, aidanfoster, emma-horrell, kepol, mglaman
+  * Ignored (not expected to credit): rakhimandhania
+  * Contribution record: [node/11466693](https://new.drupal.org/node/11466693)
 
 * [#3586208](https://git.drupalcode.org/project/ai_context/-/work_items/3586208): CCC Non-Agent `match_all` Convenience API
   * Credited: abhisekmazumdar, kepol
@@ -478,7 +460,7 @@ The only listed-but-uncredited people are in `ignore_uncredited_people.txt` (PMs
   * Ignored (not expected to credit): vidit-anjaria
   * Contribution record: [node/11467991](https://new.drupal.org/node/11467991)
 
-## Approved (38)
+## Approved (40)
 
 _These closed issues were marked reviewed. Use `--unapprove` to restore them to the audit._
 
@@ -502,4 +484,4 @@ _These closed issues were marked reviewed. Use `--unapprove` to restore them to 
 * [#3564714](https://git.drupalcode.org/project/ai_context/-/work_items/3564714): Allow context scoped to entities in CCC
 * [#3567571](https://git.drupalcode.org/project/ai_context/-/work_items/3567571): CCC MVP Demo: Create draft FinDrop context
 * [#3568673](https://git.drupalcode.org/project/ai_context/-/work_items/3568673): Add context scope base code and use case context scope plugin
-* … and 18 more
+* … and 20 more

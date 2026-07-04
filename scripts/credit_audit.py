@@ -36,6 +36,7 @@ from release_notes import (
 CREDIT_EXEMPT_WHY_LABELS = {
     "why::duplicate": "duplicate",
     "why::wontFix": "won't fix",
+    "why::worksAsDesigned": "works as designed",
 }
 
 
@@ -328,6 +329,7 @@ def refresh_closed_issue_in_cache(client: ApiClient, iid: int) -> None:
         "closed_at": issue.get("closed_at"),
         "web_url": issue.get("web_url", project.issue_url(iid)),
         "labels": issue.get("labels", []),
+        "milestone": issue.get("milestone"),
     }
     save_json(project.closed_issues_cache, cached)
     print(f"  refreshed GitLab metadata for issue #{iid}")
@@ -372,6 +374,7 @@ def fetch_closed_gitlab_issues(client: ApiClient, refresh: bool) -> dict[int, di
                 "closed_at": issue.get("closed_at"),
                 "web_url": issue.get("web_url", project.issue_url(iid)),
                 "labels": issue.get("labels", []),
+                "milestone": issue.get("milestone"),
             }
 
         print(f"  page {page}: {len(batch)} issues ({len(all_issues)} total)")

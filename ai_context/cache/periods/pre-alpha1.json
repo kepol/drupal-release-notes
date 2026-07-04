@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T18:06:13.555402+00:00",
+  "generated_at": "2026-07-04T23:38:12.729941+00:00",
   "issues": [
     {
       "category": "bug",
@@ -399,29 +399,47 @@
       "priority": "normal",
       "title": "Update CCC project components to be more useful and add tracker to issues",
       "uuid": "4f1a6e52-bfcb-46a3-8d29-cfe19246d38a"
+    },
+    {
+      "category": "task",
+      "closed_at": "2025-12-13T16:34:04+00:00",
+      "contributors": [
+        {
+          "orgs": [
+            "itty bitty byte",
+            "salsa digital"
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3563008,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3563008",
+      "priority": "major",
+      "title": "Tag ai_context for v2025 repo before rearchitecture",
+      "uuid": "dd51411a-e408-4cae-9d23-90ab9012b17d"
     }
   ],
   "org_counts": {
     "acquia": 7,
     "foster interactive inc.": 3,
     "freelygive": 9,
-    "itty bitty byte": 8,
-    "salsa digital": 15,
+    "itty bitty byte": 9,
+    "salsa digital": 16,
     "the university of edinburgh": 1
   },
   "period": {
-    "end": "2025-12-13T16:25:02+00:00",
+    "end": "2025-12-14T23:59:59+00:00",
     "frozen": true,
     "slug": "pre-alpha1",
-    "start": null,
-    "title": "Inception to 0.1.0-alpha1"
+    "start": "2025-09-12T00:00:00+00:00",
+    "title": "1.0.0-alpha"
   },
   "user_counts": {
     "ahmedj": 8,
     "aidanfoster": 2,
     "emma-horrell": 1,
     "erichomanchuk": 1,
-    "kepol": 8,
+    "kepol": 9,
     "mandclu": 2,
     "marcus_johansson": 8,
     "roromedia": 1,

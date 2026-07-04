@@ -70,9 +70,45 @@ Add `my_module/config.json`:
 ```json
 {
   "machine_name": "my_module",
-  "drupal_org_nid": 1234567
+  "drupal_org_nid": 1234567,
+  "period_source": "releases",
+  "milestone_close_grace_hours": 24
 }
 ```
+
+### Period source (`period_source`)
+
+Controls how `release_prep.py` maps issue close dates to milestones:
+
+| Value | Use when |
+|-------|----------|
+| `"releases"` (default) | No GitLab milestone dates, or you want windows derived from Drupal.org release tags |
+| `"milestones"` | GitLab milestones have meaningful start/due dates you can extend (e.g. beta1 due date pushed out while traveling) |
+
+With `"milestones"`, the tool reads each matching GitLab milestone's **start date** and **due date** (plus `milestone_close_grace_hours` after the due date). Adjust those dates on GitLab to finetune which issues belong to each release.
+
+With `"releases"`, windows come from Drupal.org tag timestamps instead.
+
+Optional filters when using `"milestones"`:
+
+```json
+{
+  "period_source": "milestones",
+  "milestone_exclude_titles": ["Future", "Enablement"],
+  "milestone_include_pattern": "^\\d+\\.\\d+\\.\\d+(-(alpha|beta|rc)\\d*)?$"
+}
+```
+
+`milestone_close_grace_hours` (default `24`) adds extra time after each boundary — after a **release tag** (`releases` mode) or after a milestone **due date** (`milestones` mode).
+
+Release **notes** follow `period_source` when set to `"milestones"`: each period maps to a GitLab milestone title, and credited issues are included when **assigned to that milestone** on GitLab. Close date within the milestone window is used only for issues with no milestone assignment. Rebuild after reassigning issues or changing milestone dates:
+
+```bash
+python3 scripts/release_notes.py --period alpha1-to-beta1 --rebuild-frozen
+python3 scripts/credit_audit.py --refresh   # refresh milestone assignments in cache
+```
+
+With `"releases"` (default), release notes use Drupal.org tag timestamps and GitLab close dates for issue placement.
 
 Find the project node ID (`drupal_org_nid`) on the project page URL, e.g. `https://www.drupal.org/project/my_module` → view source or API, or from `https://www.drupal.org/api-d7/node.json?type=project&field_project_machine_name=my_module`.
 
@@ -189,13 +225,16 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 | Line | Meaning |
 |------|---------|
 | **Open in milestone** | Open issues still in the milestone (with link to milestone page) |
-| **Credit audit pending** | Issues needing credit review; includes `--review` command when > 0 |
+| **Credit audit pending** | In-scope issues needing credit review; includes `--review` command when > 0 |
 | **QA issue** | Looks for a `CCC {release} QA` issue (e.g. `CCC beta3 QA`) |
-| **Release notes** | Current `{last}-to-now` period output and credited issue count |
-| **Duplicate d.o records** | Multiple Drupal.org nodes for the same GitLab issue |
-| **Missing contribution records** | Closed on GitLab but no record on new.drupal.org (action needed) |
-| **No record expected** | Closed with `why::duplicate` or `why::wontFix` — no record by design |
-| **Missing in milestone** | Subset of missing records that are in this milestone |
+| **Release notes** | Report for this milestone's release period (not always the current `-to-now` period) |
+| **Duplicate d.o records** | In-scope issues with multiple Drupal.org nodes |
+| **Missing contribution records** | In-scope closed issues with no record on new.drupal.org (action needed) |
+| **No record expected** | In-scope issues with `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` — no record by design |
+| **Wrong milestone** | In-scope issues where GitLab milestone is set but doesn't match close date |
+| **Missing in milestone** | Issues **assigned on GitLab** to this milestone without a contribution record |
+
+Sections marked **in scope** include issues assigned to the milestone on GitLab **or** closed within that release's time window. The window comes from `period_source` in `{project}/config.json` (GitLab milestone dates or Drupal.org release tags). The report header shows which source is active, e.g. `[milestones]` or `[releases]`.
 
 Example output:
 
@@ -224,11 +263,31 @@ Release status: ai_context (1.0.0-beta3)
     - #3586314: Item form discards user-entered scope when the subcontext feature is disabled
     - #3586316: Harden update 10011: empty-chunk guard and NULL-only backfill
 
+* Wrong milestone: 1 (close date maps to a different release than '1.0.0-beta3')
+    #3586149: Question about "Subcontext type = Conditional - included based on relevance" — closed 2026-05-03, '1.0.0-beta3' → '1.0.0-beta2' (https://git.drupalcode.org/project/ai_context/-/work_items/3586149)
+
 * Missing in milestone: 0 (closed in '1.0.0-beta3' without a record)
     (none)
 ```
 
 Run `python3 scripts/credit_audit.py --refresh` first if cache counts look stale.
+
+### Backfill missing milestones
+
+If GitLab milestones were not created for early releases (e.g. work started before the project moved to GitLab), list every closed issue grouped by the milestone it should have:
+
+```bash
+# All releases (alpha1, beta1, beta2, beta3, …)
+python3 scripts/release_prep.py --list-by-milestone --write-output
+
+# One release only
+python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta1"
+python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta2"
+```
+
+Each line includes the issue number, title, close date, **current** GitLab milestone (often `(none)`), and URL. Output is also written to `{project}/output/milestone-assignments.md` with `--write-output`.
+
+Create the missing milestones on GitLab, then assign issues from the list.
 
 ## Credit audit
 
@@ -238,7 +297,7 @@ Use `scripts/credit_audit.py` to find closed issues where credits may be incompl
 - **No credits granted** — record exists but nobody has “Credit this contributor” checked
 - **Uncredited people** — listed on the record but not granted credit (often reviewers or people you decided not to credit)
 
-Issues labeled `why::duplicate` or `why::wontFix` on GitLab are exempt (no record and/or no credits expected) and are excluded from `--review`.
+Issues labeled `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` on GitLab are exempt (no record and/or no credits expected) and are excluded from `--review` and from release-notes gap warnings.
 
 Project managers who only add labels (not code) can be listed in `{project}/ignore_uncredited_people.txt`. If they are the **only** uncredited people on an issue, it is omitted from `--review`.
 
@@ -365,7 +424,9 @@ These are omitted from **Other Major Contributions** lists but still counted in 
 
 ```
 --project NAME           Drupal project machine name (default: ai_context)
---milestone TITLE        GitLab milestone title (required, e.g. "1.0.0-beta3")
+--milestone TITLE        GitLab milestone title (required for status report)
+--list-by-milestone      List closed issues grouped by suggested milestone
+--write-output           With --list-by-milestone, write milestone-assignments.md
 ```
 
 ## Data sources
@@ -420,4 +481,5 @@ Add more projects as sibling directories (`my_module/`, etc.) with the same stru
 - GitLab issues and Drupal.org credits are separate systems linked by issue URL.
 - Per-record fetches use `resourceVersion=rel:latest-version` on new.drupal.org so contributor data reflects the latest revision.
 - If Drupal.org shows credits in the UI but `--refresh-issue` still reports someone as uncredited, new.drupal.org may be serving stale API data — try again later or use `--approve` to mark reviewed locally.
+- **Wrong milestone** compares GitLab assignment to the suggested milestone from `period_source` (milestone dates or release tags + grace). Release-day issues like [Create CCC beta2 release](https://git.drupalcode.org/project/ai_context/-/work_items/3585920) stay on that milestone when the due date or grace covers their close time.
 - Be respectful of API rate limits. This tool caches aggressively and fetches GitLab issues in paginated batches rather than one request per issue.

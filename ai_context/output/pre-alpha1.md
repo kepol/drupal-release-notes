@@ -1,10 +1,10 @@
-# Inception to 0.1.0-alpha1
+# 1.0.0-alpha
 
-**15 credited issues**
+**16 credited issues**
 
-This release (Inception to 0.1.0-alpha1) includes 15 credited issues. It includes 2 new features, 7 bug fixes, 6 additional contributions.
+This release (1.0.0-alpha) includes 16 credited issues. It includes 2 new features, 7 bug fixes, 1 other major contribution, 6 additional contributions.
 
-_Generated 2026-07-04T18:06:13.555402+00:00_
+_Generated 2026-07-04T23:38:12.729941+00:00_
 
 ## New Features (2)
 
@@ -21,6 +21,10 @@ _Generated 2026-07-04T18:06:13.555402+00:00_
 * [#3554277](https://git.drupalcode.org/project/ai_context/-/work_items/3554277): ai_context_ai_function_call_info_alter does not work with contexts only set via "always_include"
 * [#3554616](https://git.drupalcode.org/project/ai_context/-/work_items/3554616): Setting AI contexts has no effect on some agents
 
+## Other Major Contributions (1)
+
+* [#3563008](https://git.drupalcode.org/project/ai_context/-/work_items/3563008): Tag ai_context for v2025 repo before rearchitecture
+
 ## Additional Contributions
 
 * Plan: 0
@@ -30,6 +34,6 @@ _Generated 2026-07-04T18:06:13.555402+00:00_
 
 ## Contributors
 
-**People:** ahmedj (8), kepol (8), marcus_johansson (8), tedbow (5), yautja_cetanu (2), mandclu (2), aidanfoster (2), erichomanchuk (1), emma-horrell (1), roromedia (1)
+**People:** kepol (9), ahmedj (8), marcus_johansson (8), tedbow (5), yautja_cetanu (2), mandclu (2), aidanfoster (2), erichomanchuk (1), emma-horrell (1), roromedia (1)
 
-**Organizations:** salsa digital (15), freelygive (9), itty bitty byte (8), acquia (7), foster interactive inc. (3), the university of edinburgh (1)
+**Organizations:** salsa digital (16), freelygive (9), itty bitty byte (9), acquia (7), foster interactive inc. (3), the university of edinburgh (1)

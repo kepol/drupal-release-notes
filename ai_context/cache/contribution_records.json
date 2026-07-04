@@ -48,6 +48,12 @@
       },
       {
         "orgs": [
+          "freelygive"
+        ],
+        "user": "marcus_johansson"
+      },
+      {
+        "orgs": [
           "1xinternet"
         ],
         "user": "bbruno"
@@ -915,6 +921,12 @@
           "the university of edinburgh"
         ],
         "user": "emma-horrell"
+      },
+      {
+        "orgs": [
+          "freelygive"
+        ],
+        "user": "marcus_johansson"
       }
     ],
     "iid": 3558814,
@@ -978,6 +990,13 @@
           "1xinternet"
         ],
         "user": "thamas"
+      },
+      {
+        "orgs": [
+          "annertech",
+          "localgov drupal"
+        ],
+        "user": "tonypaulbarker"
       }
     ],
     "iid": 3559384,
@@ -1036,6 +1055,23 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563000",
     "title": "Switch the AiContext config entity to a content entity",
     "uuid": "e536978c-acf7-4a0e-964b-7e27c88cf16b"
+  },
+  {
+    "closed_at": "2025-12-13T16:34:04+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      }
+    ],
+    "iid": 3563008,
+    "nid": 11435038,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3563008",
+    "title": "Tag ai_context for v2025 repo before rearchitecture",
+    "uuid": "dd51411a-e408-4cae-9d23-90ab9012b17d"
   },
   {
     "closed_at": "2025-12-30T05:24:04+00:00",
@@ -1540,6 +1576,51 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3564714",
     "title": "Allow context scoped to entities in CCC",
     "uuid": "c44b4c16-4bee-4baf-a750-d41491c65126"
+  },
+  {
+    "closed_at": "2026-01-20T22:45:58+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      },
+      {
+        "orgs": [
+          "qed42"
+        ],
+        "user": "guptahemant"
+      },
+      {
+        "orgs": [
+          "1xinternet"
+        ],
+        "user": "bbruno"
+      },
+      {
+        "orgs": [
+          "freelygive"
+        ],
+        "user": "marcus_johansson"
+      },
+      {
+        "orgs": [],
+        "user": "rakhimandhania"
+      },
+      {
+        "orgs": [
+          "1xinternet"
+        ],
+        "user": "breidert"
+      }
+    ],
+    "iid": 3566811,
+    "nid": 11437529,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3566811",
+    "title": "Add AI usage to CCC issue template",
+    "uuid": "7354caf5-2b90-40d6-9559-ebe171359ec4"
   },
   {
     "closed_at": "2026-01-25T19:59:53+00:00",
@@ -2349,6 +2430,23 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571195",
     "title": "Schema errors from scheduler after installing CCC",
     "uuid": "5d86a842-f88d-4ed9-bdfa-9205a2bae342"
+  },
+  {
+    "closed_at": "2026-02-19T04:47:20+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      }
+    ],
+    "iid": 3571299,
+    "nid": 11440563,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3571299",
+    "title": "Add D11 CCC install steps on the project page",
+    "uuid": "0795d109-5191-419e-ad80-b3f4413e0a68"
   },
   {
     "closed_at": "2026-05-03T22:17:25+00:00",
@@ -3211,6 +3309,10 @@
         "user": "scottfalconer"
       },
       {
+        "orgs": [],
+        "user": "flux423"
+      },
+      {
         "orgs": [
           "the university of edinburgh"
         ],
@@ -3928,7 +4030,7 @@
     "iid": 3579354,
     "nid": 11445967,
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579354",
-    "title": "Generate CCC beta1 release notes with contributing organizations and individuals",
+    "title": "Generate CCC beta release notes with contributing organizations and individuals",
     "uuid": "6af6e3b1-a29c-4400-aec9-99ef50566032"
   },
   {
@@ -4011,6 +4113,59 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579396",
     "title": "CCC target entity types settings not working",
     "uuid": "7457dbf3-9f82-4d0f-b421-63ff9735b8a0"
+  },
+  {
+    "closed_at": "2026-04-01T00:35:03+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "kalamuna"
+        ],
+        "user": "robloach"
+      },
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      },
+      {
+        "orgs": [
+          "freelygive"
+        ],
+        "user": "marcus_johansson"
+      },
+      {
+        "orgs": [
+          "vardot",
+          "vardot"
+        ],
+        "user": "rajabnatshah"
+      }
+    ],
+    "iid": 3579841,
+    "nid": 11446290,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
+    "title": "Can't Apply Scheduler Patch",
+    "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
+  },
+  {
+    "closed_at": "2026-03-31T19:20:03+00:00",
+    "contributors": [
+      {
+        "orgs": [
+          "itty bitty byte",
+          "salsa digital"
+        ],
+        "user": "kepol"
+      }
+    ],
+    "iid": 3579857,
+    "nid": 11446302,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579857",
+    "title": "CCC beta1 features list and blurbs for demos and promotions",
+    "uuid": "6cf7d230-10c6-4769-a0a6-7dd0f6648ac6"
   },
   {
     "closed_at": "2026-06-08T16:24:20+00:00",
@@ -6925,6 +7080,18 @@
           "acquia"
         ],
         "user": "mglaman"
+      },
+      {
+        "orgs": [
+          "foster interactive inc."
+        ],
+        "user": "aidanfoster"
+      },
+      {
+        "orgs": [
+          "the university of edinburgh"
+        ],
+        "user": "emma-horrell"
       }
     ],
     "iid": 3586207,
@@ -7255,34 +7422,5 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586318",
     "title": "Beta vs 1.1 CCC API gap analysis",
     "uuid": "f5dbd122-b4e7-40cb-9a36-2990677e8b5f"
-  },
-  {
-    "closed_at": "2026-04-01T00:35:03+00:00",
-    "contributors": [
-      {
-        "orgs": [
-          "kalamuna"
-        ],
-        "user": "robloach"
-      },
-      {
-        "orgs": [
-          "itty bitty byte",
-          "salsa digital"
-        ],
-        "user": "kepol"
-      },
-      {
-        "orgs": [
-          "freelygive"
-        ],
-        "user": "marcus_johansson"
-      }
-    ],
-    "iid": 3579841,
-    "nid": 11446290,
-    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3579841",
-    "title": "Can't Apply Scheduler Patch",
-    "uuid": "346623cb-8f04-4481-8c3a-f6cc893deb07"
   }
 ]
