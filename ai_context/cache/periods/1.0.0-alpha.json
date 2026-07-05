@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-07-04T23:38:12.729941+00:00",
+  "generated_at": "2026-07-05T01:13:34.709835+00:00",
   "issues": [
     {
       "category": "bug",
       "closed_at": "2025-10-07T21:44:02+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -29,20 +41,38 @@
       "closed_at": "2025-10-22T01:59:02+00:00",
       "contributors": [
         {
+          "display_name": "mandclu",
+          "drupal_uid": 52136,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "mandclu"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -58,20 +88,38 @@
       "closed_at": "2025-10-14T07:09:05+00:00",
       "contributors": [
         {
+          "display_name": "mandclu",
+          "drupal_uid": 52136,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "mandclu"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -87,15 +135,31 @@
       "closed_at": "2025-10-22T01:59:02+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -111,21 +175,43 @@
       "closed_at": "2025-10-25T08:31:22+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -141,14 +227,26 @@
       "closed_at": "2025-10-25T08:33:31+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -164,14 +262,26 @@
       "closed_at": "2025-10-23T08:34:01+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -187,18 +297,32 @@
       "closed_at": "2025-10-25T08:31:57+00:00",
       "contributors": [
         {
+          "display_name": "roromedia",
+          "drupal_uid": 3245840,
           "orgs": [],
           "user": "roromedia"
         },
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -214,14 +338,26 @@
       "closed_at": "2025-10-25T08:31:41+00:00",
       "contributors": [
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "ahmedj"
         }
@@ -237,15 +373,31 @@
       "closed_at": "2025-11-22T05:17:31+00:00",
       "contributors": [
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -261,15 +413,31 @@
       "closed_at": "2025-11-23T20:19:11+00:00",
       "contributors": [
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -285,15 +453,31 @@
       "closed_at": "2025-11-22T06:24:33+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         }
@@ -309,27 +493,55 @@
       "closed_at": "2025-11-22T06:13:32+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "yautja_cetanu",
+          "drupal_uid": 626050,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "yautja_cetanu"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         }
@@ -345,33 +557,67 @@
       "closed_at": "2025-11-22T06:07:51+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "yautja_cetanu",
+          "drupal_uid": 626050,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "yautja_cetanu"
         }
@@ -387,9 +633,19 @@
       "closed_at": "2025-11-22T07:35:30+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -405,9 +661,19 @@
       "closed_at": "2025-12-13T16:34:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }

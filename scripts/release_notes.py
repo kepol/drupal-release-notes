@@ -21,7 +21,12 @@ from urllib.parse import quote, unquote
 import requests
 
 from html_report import (
+    a,
+    drupal_org_profile_url,
+    drupal_user_profile_url,
     em,
+    escape,
+    format_changes_since_line,
     format_issue_item,
     h2,
     h3,
@@ -106,7 +111,7 @@ class CreditedIssue:
     def orgs(self) -> list[str]:
         orgs: list[str] = []
         for entry in self.contributors:
-            orgs.extend(entry.get("orgs", []))
+            orgs.extend(org_keys(entry.get("orgs", [])))
         return orgs
 
     @property
@@ -115,7 +120,7 @@ class CreditedIssue:
         for entry in self.contributors:
             user = entry.get("user")
             if user:
-                mapping[user].update(entry.get("orgs", []))
+                mapping[user].update(org_keys(entry.get("orgs", [])))
         return mapping
 
 
@@ -132,6 +137,59 @@ class PeriodReport:
             for user in issue.users:
                 counts[user] += 1
         return counts
+
+    @property
+    def user_display_names(self) -> dict[str, str]:
+        """Map normalized git username keys to Drupal.org display names."""
+        names: dict[str, str] = {}
+        for issue in self.issues:
+            for entry in issue.contributors:
+                user = entry.get("user")
+                display = entry.get("display_name")
+                if user and display:
+                    names[user] = display
+        return names
+
+    @property
+    def user_profile_urls(self) -> dict[str, str]:
+        """Map normalized git username keys to Drupal.org profile URLs."""
+        urls: dict[str, str] = {}
+        for issue in self.issues:
+            for entry in issue.contributors:
+                user = entry.get("user")
+                uid = entry.get("drupal_uid")
+                if user and uid:
+                    urls[user] = drupal_user_profile_url(int(uid))
+        return urls
+
+    @property
+    def org_profile_urls(self) -> dict[str, str]:
+        """Map normalized organization keys to Drupal.org profile URLs."""
+        urls: dict[str, str] = {}
+        for issue in self.issues:
+            for entry in issue.contributors:
+                for org in entry.get("orgs", []):
+                    if not isinstance(org, dict):
+                        continue
+                    name = org_key(org)
+                    nid = org.get("nid")
+                    if name and nid:
+                        urls[name] = drupal_org_profile_url(int(nid))
+        return urls
+
+    @property
+    def org_display_titles(self) -> dict[str, str]:
+        """Map normalized organization keys to Drupal.org organization titles."""
+        titles: dict[str, str] = {}
+        for issue in self.issues:
+            for entry in issue.contributors:
+                for org in entry.get("orgs", []):
+                    if isinstance(org, dict):
+                        name = org_key(org)
+                        title = org.get("title")
+                        if name and title:
+                            titles[name] = title
+        return titles
 
     @property
     def org_counts(self) -> Counter[str]:
@@ -371,6 +429,100 @@ class ApiClient:
         return self.get_json(url, accept="application/vnd.api+json")
 
 
+class DrupalProfileAliasResolver:
+    """Resolve Drupal.org user/node IDs to public profile URLs via api-d7."""
+
+    def __init__(self, client: ApiClient, cache_path: Path, *, refresh: bool = False) -> None:
+        self.client = client
+        self.cache_path = cache_path
+        if refresh and cache_path.exists():
+            cache_path.unlink()
+        self._cache: dict[str, dict[str, str]] = load_json(
+            cache_path,
+            {"users": {}, "nodes": {}},
+        )
+        self._dirty = False
+
+    def save(self) -> None:
+        if self._dirty:
+            save_json(self.cache_path, self._cache)
+
+    def user_url(self, uid: int) -> str:
+        key = str(uid)
+        cached = self._cache.setdefault("users", {}).get(key)
+        if cached:
+            return cached
+        url = self._fetch_user_url(uid)
+        self._cache["users"][key] = url
+        self._dirty = True
+        return url
+
+    def org_url(self, nid: int) -> str:
+        key = str(nid)
+        cached = self._cache.setdefault("nodes", {}).get(key)
+        if cached:
+            return cached
+        url = self._fetch_org_url(nid)
+        self._cache["nodes"][key] = url
+        self._dirty = True
+        return url
+
+    def _fetch_user_url(self, uid: int) -> str:
+        try:
+            payload = self.client.get_json(
+                f"https://www.drupal.org/api-d7/user/{uid}.json"
+            )
+            url = payload.get("url")
+            if url:
+                return url
+        except requests.RequestException:
+            pass
+        return drupal_user_profile_url(uid)
+
+    def _fetch_org_url(self, nid: int) -> str:
+        try:
+            payload = self.client.get_json(
+                f"https://www.drupal.org/api-d7/node/{nid}.json"
+            )
+            url = payload.get("url")
+            if url:
+                return url
+        except requests.RequestException:
+            pass
+        return drupal_org_profile_url(nid)
+
+
+def build_user_profile_urls(
+    report: PeriodReport,
+    resolver: DrupalProfileAliasResolver,
+) -> dict[str, str]:
+    urls: dict[str, str] = {}
+    for issue in report.issues:
+        for entry in issue.contributors:
+            user = entry.get("user")
+            uid = entry.get("drupal_uid")
+            if user and uid and user not in urls:
+                urls[user] = resolver.user_url(int(uid))
+    return urls
+
+
+def build_org_profile_urls(
+    report: PeriodReport,
+    resolver: DrupalProfileAliasResolver,
+) -> dict[str, str]:
+    urls: dict[str, str] = {}
+    for issue in report.issues:
+        for entry in issue.contributors:
+            for org in entry.get("orgs", []):
+                if not isinstance(org, dict):
+                    continue
+                name = org_key(org)
+                nid = org.get("nid")
+                if name and nid and name not in urls:
+                    urls[name] = resolver.org_url(int(nid))
+    return urls
+
+
 def parse_dt(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
 
@@ -381,6 +533,16 @@ def normalize_username(name: str) -> str:
 
 def normalize_org(title: str) -> str:
     return title.strip().lower()
+
+
+def org_key(entry: str | dict[str, Any]) -> str:
+    if isinstance(entry, dict):
+        return entry.get("name") or normalize_org(entry.get("title", ""))
+    return entry
+
+
+def org_keys(orgs: list[str | dict[str, Any]]) -> list[str]:
+    return [org_key(org) for org in orgs if org_key(org)]
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -488,6 +650,43 @@ def build_periods(releases: list[ReleaseBoundary], project: ProjectConfig) -> li
     return periods
 
 
+def release_compare_versions(
+    period: ReportPeriod,
+    releases: list[ReleaseBoundary],
+) -> tuple[str, str] | None:
+    """Return (since_version, until_version) for a GitLab compare link."""
+    if not releases:
+        return None
+
+    versions = [release.version for release in releases]
+    title = period.title.strip()
+
+    if title in versions:
+        index = versions.index(title)
+        if index == 0:
+            return None
+        return versions[index - 1], title
+
+    if " to " not in title:
+        return None
+
+    since_part, until_part = title.split(" to ", 1)
+    if since_part.strip().lower() == "inception":
+        return None
+
+    since_version = since_part.strip()
+    until_label = until_part.strip()
+    if until_label.lower() == "now":
+        if since_version not in versions:
+            return None
+        return since_version, versions[-1]
+
+    until_version = until_label
+    if since_version in versions and until_version in versions:
+        return since_version, until_version
+    return None
+
+
 def next_release_version(version: str) -> str:
     """Return the next pre-release version (increment alpha/beta/rc suffix)."""
     match = re.search(
@@ -552,27 +751,41 @@ def parse_contributor_entries(
         paragraph = included_index.get("paragraph--contributor", {}).get(ref["id"])
         if not paragraph:
             continue
-        attrs = paragraph.get("attributes", {})
+        para_attrs = paragraph.get("attributes", {})
 
         user_name = None
+        display_name = None
+        drupal_uid = None
         user_ref = paragraph.get("relationships", {}).get("field_contributor_user", {}).get("data")
         if user_ref:
             user = included_index.get("user--user", {}).get(user_ref["id"])
             if user:
-                git_username = user["attributes"].get("field_git_username")
-                display = user["attributes"].get("display_name") or user["attributes"].get("name")
+                user_attrs = user.get("attributes", {})
+                drupal_uid = user_attrs.get("drupal_internal__uid")
+                display_name = (
+                    user_attrs.get("display_name") or user_attrs.get("name") or ""
+                ).strip()
+                git_username = user_attrs.get("field_git_username")
                 if git_username:
                     user_name = normalize_username(git_username)
-                elif display:
-                    user_name = normalize_username(display)
+                elif display_name:
+                    user_name = normalize_username(display_name)
 
-        orgs: list[str] = []
+        orgs: list[dict[str, Any]] = []
         org_refs = paragraph.get("relationships", {}).get("field_contributor_organisation", {}).get("data") or []
         customer_refs = paragraph.get("relationships", {}).get("field_contributor_customer", {}).get("data") or []
         for org_ref in org_refs + customer_refs:
             org = included_index.get("node--organization", {}).get(org_ref["id"])
             if org and org.get("attributes", {}).get("title"):
-                orgs.append(normalize_org(org["attributes"]["title"]))
+                attrs = org["attributes"]
+                title = attrs["title"].strip()
+                orgs.append(
+                    {
+                        "name": normalize_org(title),
+                        "title": title,
+                        "nid": attrs.get("drupal_internal__nid"),
+                    }
+                )
 
         if not user_name and not orgs:
             continue
@@ -582,8 +795,10 @@ def parse_contributor_entries(
         entries.append(
             {
                 "user": user_name,
+                "display_name": display_name or None,
+                "drupal_uid": drupal_uid,
                 "orgs": orgs,
-                "credited": bool(attrs.get("field_credit_this_contributor")),
+                "credited": bool(para_attrs.get("field_credit_this_contributor")),
             }
         )
 
@@ -599,7 +814,14 @@ def parse_credited_contributors(
         if not entry["credited"]:
             continue
         if entry["user"] or entry["orgs"]:
-            contributors.append({"user": entry["user"], "orgs": entry["orgs"]})
+            contributors.append(
+                {
+                    "user": entry["user"],
+                    "display_name": entry.get("display_name"),
+                    "drupal_uid": entry.get("drupal_uid"),
+                    "orgs": entry["orgs"],
+                }
+            )
     return contributors
 
 
@@ -1073,26 +1295,53 @@ def format_counter(counter: Counter[str]) -> str:
     return ", ".join(f"{name} ({count})" for name, count in counter.most_common())
 
 
+def format_org_counter(
+    report: PeriodReport,
+    profile_urls: dict[str, str] | None = None,
+) -> str:
+    org_counts = report.org_counts
+    display_titles = report.org_display_titles
+    profile_urls = profile_urls or report.org_profile_urls
+    parts: list[str] = []
+    for name, count in org_counts.most_common():
+        display = display_titles.get(name, name)
+        url = profile_urls.get(name)
+        label = a(url, display) if url else escape(display)
+        parts.append(f"{label} ({count})")
+    return ", ".join(parts)
+
+
 def top_org_count_for_user(user: str, user_orgs: set[str], org_counts: Counter[str]) -> int:
     if not user_orgs:
         return 0
     return max(org_counts.get(org, 0) for org in user_orgs)
 
 
-def format_people_counter(report: PeriodReport) -> str:
+def format_people_counter(
+    report: PeriodReport,
+    profile_urls: dict[str, str] | None = None,
+) -> str:
     user_counts = report.user_counts
     org_counts = report.org_counts
     user_orgs = report.user_org_map
+    display_names = report.user_display_names
+    profile_urls = profile_urls or report.user_profile_urls
 
     sorted_users = sorted(
         user_counts.keys(),
         key=lambda user: (
             -user_counts[user],
             -top_org_count_for_user(user, user_orgs[user], org_counts),
-            user,
+            display_names.get(user, user).casefold(),
         ),
     )
-    return ", ".join(f"{user} ({user_counts[user]})" for user in sorted_users)
+    parts: list[str] = []
+    for user in sorted_users:
+        display = display_names.get(user, user)
+        url = profile_urls.get(user)
+        label = a(url, display) if url else escape(display)
+        parts.append(f"{label} ({user_counts[user]})")
+    return ", ".join(parts)
 
 
 def load_manual_list_exclusions(path: Path) -> set[int]:
@@ -1240,6 +1489,9 @@ def render_html(
     report: PeriodReport,
     project: ProjectConfig,
     exclude_from_lists: set[int] | None = None,
+    *,
+    alias_resolver: DrupalProfileAliasResolver | None = None,
+    releases: list[ReleaseBoundary] | None = None,
 ) -> str:
     manual_excludes = exclude_from_lists or set()
     accountable = report.issues
@@ -1279,15 +1531,45 @@ def render_html(
             uncategorized_count=len(uncategorized),
         )
 
-    blocks: list[str] = [
-        h2(report.period.title),
-        p(strong(f"{total_issues} credited issues")),
-        p(summary),
-        p(em(f"Generated {report.generated_at}")),
-    ]
+    blocks: list[str] = []
+    if releases:
+        compare = release_compare_versions(report.period, releases)
+        if compare:
+            since_version, until_version = compare
+            blocks.append(
+                p(
+                    format_changes_since_line(
+                        since_version,
+                        since_url=project.drupal_release_url(since_version),
+                        compare_url=project.gitlab_compare_url(
+                            since_version,
+                            until_version,
+                        ),
+                    )
+                )
+            )
 
-    people = format_people_counter(report) or "none"
-    orgs = format_counter(report.org_counts) or "none"
+    blocks.extend(
+        [
+            h2(report.period.title),
+            p(strong(f"{total_issues} credited issues")),
+            p(summary),
+            p(em(f"Generated {report.generated_at}")),
+        ]
+    )
+
+    if alias_resolver is None:
+        client = ApiClient(project)
+        alias_resolver = DrupalProfileAliasResolver(
+            client,
+            project.profile_aliases_cache,
+        )
+    user_profile_urls = build_user_profile_urls(report, alias_resolver)
+    org_profile_urls = build_org_profile_urls(report, alias_resolver)
+    alias_resolver.save()
+
+    people = format_people_counter(report, user_profile_urls) or "none"
+    orgs = format_org_counter(report, org_profile_urls) or "none"
     blocks.extend(
         [
             h3("Contributors"),
@@ -1373,6 +1655,15 @@ def load_or_build_period_report(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
+        "--refresh-all",
+        action="store_true",
+        help=(
+            "Full refresh: re-fetch contribution records, GitLab issues, profile "
+            "aliases, rebuild all period caches and reports, then refresh the "
+            "credit audit cache and report."
+        ),
+    )
+    parser.add_argument(
         "--refresh-records",
         action="store_true",
         help="Re-fetch all contribution records from new.drupal.org.",
@@ -1381,6 +1672,11 @@ def parse_args() -> argparse.Namespace:
         "--refresh-issues",
         action="store_true",
         help="Re-fetch GitLab issue metadata even if cached.",
+    )
+    parser.add_argument(
+        "--refresh-aliases",
+        action="store_true",
+        help="Re-fetch Drupal.org profile URL aliases (api-d7) even if cached.",
     )
     parser.add_argument(
         "--rebuild-frozen",
@@ -1406,9 +1702,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--write-summary-prompts",
         action="store_true",
-        help=(
-            "Write {project}/summaries/{period}.prompt.md files for AI-assisted prose summaries."
-        ),
+        help=argparse.SUPPRESS,
     )
     add_project_argument(parser)
     return parser.parse_args()
@@ -1416,6 +1710,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    if args.refresh_all:
+        args.refresh_records = True
+        args.refresh_issues = True
+        args.refresh_aliases = True
+        args.rebuild_frozen = True
+
     project = ProjectConfig.load(args.project)
     project.ensure_dirs()
     exclude_list = args.exclude_list or project.exclude_list_file
@@ -1485,6 +1785,12 @@ def main() -> int:
     if exclude_from_lists:
         print(f"Loaded {len(exclude_from_lists)} manual list exclusions from {exclude_list}.")
 
+    alias_resolver = DrupalProfileAliasResolver(
+        client,
+        project.profile_aliases_cache,
+        refresh=args.refresh_aliases,
+    )
+
     for period in periods:
         report = load_or_build_period_report(
             client,
@@ -1495,23 +1801,45 @@ def main() -> int:
             closed_issues=closed_issues,
             ctx=ctx,
         )
-        html = render_html(report, project, exclude_from_lists=exclude_from_lists)
+        html = render_html(
+            report,
+            project,
+            exclude_from_lists=exclude_from_lists,
+            alias_resolver=alias_resolver,
+            releases=releases,
+        )
         output_path = project.release_notes_report(period.slug)
         output_path.write_text(html)
         print(f"Wrote {output_path}")
 
-        if args.write_summary_prompts:
-            accountable = report.issues
-            major_iids = major_contribution_iids(report.issues)
-            listable = [issue for issue in accountable if issue.iid not in exclude_from_lists]
-            prompt_path = write_summary_prompt(
-                project,
-                report.period,
-                accountable,
-                major_iids,
-                listable,
-            )
-            print(f"Wrote {prompt_path}")
+        accountable = report.issues
+        major_iids = major_contribution_iids(report.issues)
+        listable = [issue for issue in accountable if issue.iid not in exclude_from_lists]
+        prompt_path = write_summary_prompt(
+            project,
+            report.period,
+            accountable,
+            major_iids,
+            listable,
+        )
+        print(f"Wrote {prompt_path}")
+
+    if args.refresh_all:
+        print("\n--- Refreshing credit audit ---")
+        audit_script = REPO_ROOT / "scripts" / "credit_audit.py"
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(audit_script),
+                "--project",
+                project.machine_name,
+                "--refresh",
+                "--refresh-comments",
+            ],
+            cwd=REPO_ROOT,
+        )
+        if result.returncode != 0:
+            return result.returncode
 
     return 0
 

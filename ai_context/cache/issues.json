@@ -3095,7 +3095,7 @@
       "what::documentation"
     ],
     "priority": "major",
-    "title": "Generate CCC beta1 release notes with contributing organizations and individuals",
+    "title": "Generate CCC beta release notes with contributing organizations and individuals",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3579354"
   },
   "3579372": {
@@ -6906,5 +6906,22 @@
     "priority": "normal",
     "title": "Create a CCC release process and template",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586321"
+  },
+  "3586322": {
+    "category": "plan",
+    "iid": 3586322,
+    "labels": [
+      "AI Context Management",
+      "AI Initiative Sprint",
+      "AI Innovation",
+      "AI Sprint 13",
+      "category::plan",
+      "priority::normal",
+      "state::inProgress",
+      "what::planning"
+    ],
+    "priority": "normal",
+    "title": "Assess duadp module's integration with CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586322"
   }
 }

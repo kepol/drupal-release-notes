@@ -107,15 +107,15 @@
   },
   {
     "closed_at": "2026-01-12T00:34:59+00:00",
-    "credited": [],
+    "credited": [
+      "kepol"
+    ],
     "iid": 3547042,
     "nid": 11424635,
     "record_url": "https://new.drupal.org/node/11424635",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3547042",
     "title": "Update AI CCC project page",
-    "uncredited": [
-      "kepol"
-    ],
+    "uncredited": [],
     "uuid": "fccf81a1-5d34-46e5-91df-cadd0498ac68"
   },
   {

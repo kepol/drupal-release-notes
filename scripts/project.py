@@ -73,6 +73,10 @@ class ProjectConfig:
         return self.cache_dir / "state.json"
 
     @property
+    def profile_aliases_cache(self) -> Path:
+        return self.cache_dir / "profile_aliases.json"
+
+    @property
     def audit_records_cache(self) -> Path:
         return self.cache_dir / "credit_audit_records.json"
 
@@ -123,6 +127,15 @@ class ProjectConfig:
     @property
     def drupal_releases_url(self) -> str:
         return f"https://www.drupal.org/project/{self.machine_name}/releases"
+
+    def drupal_release_url(self, version: str) -> str:
+        return f"{self.drupal_releases_url}/{version}"
+
+    def gitlab_compare_url(self, since_version: str, until_version: str) -> str:
+        return (
+            f"https://git.drupalcode.org/project/{self.machine_name}"
+            f"/-/compare/{since_version}...{until_version}"
+        )
 
     @property
     def issue_iid_pattern(self) -> re.Pattern[str]:

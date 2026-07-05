@@ -51,6 +51,16 @@ def a(href: str, text: str) -> str:
     return tag("a", escape(text), href=href)
 
 
+def drupal_user_profile_url(uid: int) -> str:
+    """Fallback when api-d7 alias lookup is unavailable."""
+    return f"https://www.drupal.org/user/{uid}"
+
+
+def drupal_org_profile_url(nid: int) -> str:
+    """Fallback when api-d7 alias lookup is unavailable."""
+    return f"https://www.drupal.org/node/{nid}"
+
+
 def ul(items: Sequence[str]) -> str:
     if not items:
         return ""
@@ -73,6 +83,19 @@ def pre_block(content: str) -> str:
 
 def join_blocks(blocks: Sequence[str]) -> str:
     return "\n".join(block for block in blocks if block)
+
+
+def format_changes_since_line(
+    since_version: str,
+    *,
+    since_url: str,
+    compare_url: str,
+) -> str:
+    """Changes since {prev release} ({gitlab compare})."""
+    return (
+        f"Changes since {a(since_url, since_version)} "
+        f"({a(compare_url, 'compare')})"
+    )
 
 
 def format_issue_link(iid: int, url: str) -> str:

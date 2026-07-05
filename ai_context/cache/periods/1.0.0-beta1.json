@@ -1,34 +1,60 @@
 {
-  "generated_at": "2026-07-04T23:55:49.126319+00:00",
+  "generated_at": "2026-07-05T01:13:35.129876+00:00",
   "issues": [
     {
       "category": "task",
       "closed_at": "2026-01-25T19:36:54+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "yautja_cetanu",
+          "drupal_uid": 626050,
           "orgs": [],
           "user": "yautja_cetanu"
         },
         {
+          "display_name": "kurtfoster",
+          "drupal_uid": 403040,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kafmil"
         },
         {
+          "display_name": "ahmedjabar",
+          "drupal_uid": 3150677,
           "orgs": [],
           "user": "ahmedj"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         }
@@ -44,27 +70,55 @@
       "closed_at": "2026-02-16T20:31:33+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -80,37 +134,73 @@
       "closed_at": "2026-02-19T00:07:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "webbywe",
+          "drupal_uid": 571194,
           "orgs": [
-            "civicactions"
+            {
+              "name": "civicactions",
+              "nid": 1121122,
+              "title": "CivicActions"
+            }
           ],
           "user": "webbywe"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "ajv009",
+          "drupal_uid": 3653917,
           "orgs": [],
           "user": "ajv009"
         },
         {
+          "display_name": "unqunq",
+          "drupal_uid": 933228,
           "orgs": [
-            "digitaltrotter"
+            {
+              "name": "digitaltrotter",
+              "nid": 3002160,
+              "title": "DigitalTrotter"
+            }
           ],
           "user": "unqunq"
         },
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         }
@@ -126,33 +216,67 @@
       "closed_at": "2026-02-18T23:57:17+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         },
         {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
           "orgs": [
-            "vardot"
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
           ],
           "user": "ahmad-khader"
         }
@@ -168,21 +292,43 @@
       "closed_at": "2026-04-01T23:45:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         },
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         }
@@ -198,21 +344,43 @@
       "closed_at": "2026-04-02T22:55:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -224,13 +392,51 @@
       "uuid": "8be6a867-9cc0-4373-90b9-2cded5fa65a2"
     },
     {
+      "category": "task",
+      "closed_at": "2026-01-12T00:34:59+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3547042,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3547042",
+      "priority": "normal",
+      "title": "Update AI CCC project page",
+      "uuid": "fccf81a1-5d34-46e5-91df-cadd0498ac68"
+    },
+    {
       "category": "feature",
       "closed_at": "2026-01-21T00:04:05+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -246,19 +452,37 @@
       "closed_at": "2026-03-29T18:00:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "guptahemant",
+          "drupal_uid": 3278073,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "guptahemant"
         },
         {
+          "display_name": "naveenapj",
+          "drupal_uid": 3621466,
           "orgs": [],
           "user": "naveen.prakash.work"
         }
@@ -274,39 +498,79 @@
       "closed_at": "2026-02-06T07:07:12+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         }
@@ -322,21 +586,43 @@
       "closed_at": "2026-02-05T16:02:06+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -352,15 +638,31 @@
       "closed_at": "2026-02-19T00:34:33+00:00",
       "contributors": [
         {
+          "display_name": "tedbow",
+          "drupal_uid": 240860,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "tedbow"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -376,37 +678,77 @@
       "closed_at": "2026-02-19T06:35:56+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "joachim namyslo",
+          "drupal_uid": 275771,
           "orgs": [],
           "user": "horvan"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "medha kumari",
+          "drupal_uid": 3720799,
           "orgs": [],
           "user": "kumarimedha09"
         },
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "entityone",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "entityone",
+              "nid": 2423403,
+              "title": "EntityOne"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "breidert",
+          "drupal_uid": 135619,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "breidert"
         }
@@ -422,15 +764,31 @@
       "closed_at": "2026-04-01T00:40:03+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -446,21 +804,43 @@
       "closed_at": "2026-02-06T06:28:31+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -476,40 +856,84 @@
       "closed_at": "2026-02-19T02:59:23+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "yautja_cetanu",
+          "drupal_uid": 626050,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "yautja_cetanu"
         },
         {
+          "display_name": "tonypaulbarker",
+          "drupal_uid": 807484,
           "orgs": [
-            "annertech",
-            "localgov drupal"
+            {
+              "name": "annertech",
+              "nid": 1170976,
+              "title": "Annertech"
+            },
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            }
           ],
           "user": "tonypaulbarker"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         }
@@ -525,9 +949,19 @@
       "closed_at": "2026-02-08T00:29:51+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -543,9 +977,19 @@
       "closed_at": "2025-12-30T03:19:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -561,28 +1005,60 @@
       "closed_at": "2026-02-16T03:39:40+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "thamas",
+          "drupal_uid": 53339,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "thamas"
         },
         {
+          "display_name": "tonypaulbarker",
+          "drupal_uid": 807484,
           "orgs": [
-            "annertech",
-            "localgov drupal"
+            {
+              "name": "annertech",
+              "nid": 1170976,
+              "title": "Annertech"
+            },
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            }
           ],
           "user": "tonypaulbarker"
         }
@@ -598,9 +1074,19 @@
       "closed_at": "2026-01-07T04:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -616,9 +1102,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -634,9 +1130,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -652,9 +1158,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -670,9 +1186,19 @@
       "closed_at": "2026-01-01T15:24:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -688,9 +1214,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -706,9 +1242,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -724,9 +1270,19 @@
       "closed_at": "2026-01-21T00:32:28+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -742,9 +1298,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -760,16 +1326,36 @@
       "closed_at": "2026-02-27T01:58:48+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         }
@@ -785,9 +1371,19 @@
       "closed_at": "2025-12-30T05:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -803,22 +1399,48 @@
       "closed_at": "2026-01-29T18:34:20+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "harivansh",
+          "drupal_uid": 3678656,
           "orgs": [
-            "opensense labs",
-            "drupalfit"
+            {
+              "name": "opensense labs",
+              "nid": 2300801,
+              "title": "OpenSense Labs"
+            },
+            {
+              "name": "drupalfit",
+              "nid": 2935550,
+              "title": "DrupalFit"
+            }
           ],
           "user": "harivansh"
         },
         {
+          "display_name": "b_sharpe",
+          "drupal_uid": 2512258,
           "orgs": [
-            "imagex"
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
           ],
           "user": "b_sharpe"
         }
@@ -834,15 +1456,31 @@
       "closed_at": "2025-12-22T22:41:58+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "jurgenhaas",
+          "drupal_uid": 168924,
           "orgs": [
-            "lakedrops"
+            {
+              "name": "lakedrops",
+              "nid": 2843873,
+              "title": "LakeDrops"
+            }
           ],
           "user": "jurgenhaas"
         }
@@ -858,9 +1496,19 @@
       "closed_at": "2026-01-06T05:34:01+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -876,9 +1524,19 @@
       "closed_at": "2026-01-06T07:24:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -894,9 +1552,19 @@
       "closed_at": "2026-01-01T05:44:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -912,9 +1580,19 @@
       "closed_at": "2026-01-01T18:04:01+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -930,9 +1608,19 @@
       "closed_at": "2026-03-06T03:27:10+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -948,9 +1636,19 @@
       "closed_at": "2026-01-06T20:59:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -966,9 +1664,19 @@
       "closed_at": "2026-01-01T15:19:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -984,21 +1692,43 @@
       "closed_at": "2026-03-06T06:08:16+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "kurtfoster",
+          "drupal_uid": 403040,
           "orgs": [
-            "salsa digital"
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kafmil"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -1014,9 +1744,19 @@
       "closed_at": "2026-01-06T21:04:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1032,25 +1772,49 @@
       "closed_at": "2026-01-10T19:05:38+00:00",
       "contributors": [
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "sujal kshatri",
+          "drupal_uid": 3856988,
           "orgs": [],
           "user": "sujal_31"
         },
         {
+          "display_name": "shamir.vs",
+          "drupal_uid": 3653706,
           "orgs": [
-            "zyxware technologies"
+            {
+              "name": "zyxware technologies",
+              "nid": 1790158,
+              "title": "Zyxware Technologies"
+            }
           ],
           "user": "shamir.vs"
         }
@@ -1066,9 +1830,19 @@
       "closed_at": "2026-01-06T21:44:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1084,28 +1858,60 @@
       "closed_at": "2026-02-25T05:39:20+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         }
@@ -1121,9 +1927,19 @@
       "closed_at": "2026-01-07T04:24:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1139,15 +1955,31 @@
       "closed_at": "2026-01-17T06:30:35+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1163,37 +1995,73 @@
       "closed_at": "2026-01-20T22:45:58+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "guptahemant",
+          "drupal_uid": 3278073,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "guptahemant"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "rakhimandhania",
+          "drupal_uid": 2475028,
           "orgs": [],
           "user": "rakhimandhania"
         },
         {
+          "display_name": "breidert",
+          "drupal_uid": 135619,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "breidert"
         }
@@ -1209,9 +2077,19 @@
       "closed_at": "2026-01-25T19:59:53+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1227,15 +2105,31 @@
       "closed_at": "2026-01-17T06:59:59+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1251,15 +2145,31 @@
       "closed_at": "2026-01-16T22:15:49+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1275,15 +2185,31 @@
       "closed_at": "2026-01-20T23:24:07+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1299,15 +2225,31 @@
       "closed_at": "2026-01-20T20:34:56+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1323,15 +2265,31 @@
       "closed_at": "2026-01-21T00:03:10+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -1347,9 +2305,19 @@
       "closed_at": "2026-01-20T23:00:12+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1365,9 +2333,19 @@
       "closed_at": "2026-01-21T00:53:00+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1383,21 +2361,43 @@
       "closed_at": "2026-02-06T04:25:26+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -1413,15 +2413,31 @@
       "closed_at": "2026-04-01T01:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -1437,8 +2453,14 @@
       "closed_at": "2026-03-04T18:24:10+00:00",
       "contributors": [
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -1454,22 +2476,48 @@
       "closed_at": "2026-02-19T00:25:56+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "nikro",
+          "drupal_uid": 576416,
           "orgs": [
-            "dropsolid"
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            }
           ],
           "user": "nikro"
         },
         {
+          "display_name": "abhisekmazumdar",
+          "drupal_uid": 3557964,
           "orgs": [
-            "dropsolid",
-            "dropsolid"
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            },
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            }
           ],
           "user": "abhisekmazumdar"
         }
@@ -1485,9 +2533,19 @@
       "closed_at": "2026-01-21T01:08:19+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1503,15 +2561,31 @@
       "closed_at": "2026-01-29T18:37:58+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -1527,9 +2601,19 @@
       "closed_at": "2026-01-21T00:33:33+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1545,21 +2629,43 @@
       "closed_at": "2026-02-05T15:39:05+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -1575,28 +2681,60 @@
       "closed_at": "2026-02-25T05:06:53+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -1612,9 +2750,19 @@
       "closed_at": "2026-02-20T07:52:25+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1630,9 +2778,19 @@
       "closed_at": "2026-02-20T07:50:12+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1648,9 +2806,19 @@
       "closed_at": "2026-02-20T07:52:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1666,33 +2834,67 @@
       "closed_at": "2026-02-25T05:24:13+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -1708,19 +2910,37 @@
       "closed_at": "2026-02-06T06:21:29+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "nickolaj",
+          "drupal_uid": 2423164,
           "orgs": [],
           "user": "nickolaj"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -1736,25 +2956,49 @@
       "closed_at": "2026-02-05T16:08:48+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "nickolaj",
+          "drupal_uid": 2423164,
           "orgs": [],
           "user": "nickolaj"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -1770,21 +3014,43 @@
       "closed_at": "2026-02-06T06:23:55+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "gantal",
+          "drupal_uid": 3527782,
           "orgs": [
-            "elevated third"
+            {
+              "name": "elevated third",
+              "nid": 1315148,
+              "title": "Elevated Third"
+            }
           ],
           "user": "gantal"
         }
@@ -1800,33 +3066,67 @@
       "closed_at": "2026-03-28T02:45:03+00:00",
       "contributors": [
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         },
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         },
         {
+          "display_name": "b_sharpe",
+          "drupal_uid": 2512258,
           "orgs": [
-            "imagex"
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
           ],
           "user": "b_sharpe"
         }
@@ -1842,33 +3142,67 @@
       "closed_at": "2026-03-06T02:10:33+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "a.dmitriiev",
+          "drupal_uid": 3235287,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "a.dmitriiev"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -1884,9 +3218,19 @@
       "closed_at": "2026-02-20T07:52:56+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1902,9 +3246,19 @@
       "closed_at": "2026-02-20T07:51:40+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1920,17 +3274,41 @@
       "closed_at": "2026-02-06T07:12:17+00:00",
       "contributors": [
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "entityone",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "entityone",
+              "nid": 2423403,
+              "title": "EntityOne"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -1946,22 +3324,48 @@
       "closed_at": "2026-02-15T19:46:37+00:00",
       "contributors": [
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "b_sharpe",
+          "drupal_uid": 2512258,
           "orgs": [
-            "imagex"
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
           ],
           "user": "b_sharpe"
         }
@@ -1977,22 +3381,48 @@
       "closed_at": "2026-02-06T07:10:27+00:00",
       "contributors": [
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2008,9 +3438,19 @@
       "closed_at": "2026-02-19T04:47:20+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2026,9 +3466,19 @@
       "closed_at": "2026-02-04T00:08:24+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2044,23 +3494,53 @@
       "closed_at": "2026-02-19T00:20:52+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         },
         {
+          "display_name": "kostiantyn",
+          "drupal_uid": 3734614,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "kostiantyn"
         }
@@ -2076,15 +3556,31 @@
       "closed_at": "2026-02-19T05:20:11+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2100,33 +3596,67 @@
       "closed_at": "2026-03-06T02:12:49+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         },
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         },
         {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
           "orgs": [
-            "the university of edinburgh"
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
           ],
           "user": "emma-horrell"
         }
@@ -2142,9 +3672,19 @@
       "closed_at": "2026-03-06T03:28:56+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2160,15 +3700,31 @@
       "closed_at": "2026-02-19T04:42:15+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "rakhimandhania",
+          "drupal_uid": 2475028,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "rakhimandhania"
         }
@@ -2184,9 +3740,19 @@
       "closed_at": "2026-02-20T07:53:20+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2202,16 +3768,36 @@
       "closed_at": "2026-02-20T01:26:51+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         }
@@ -2227,22 +3813,48 @@
       "closed_at": "2026-03-06T04:18:16+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2258,9 +3870,19 @@
       "closed_at": "2026-02-20T18:23:17+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2276,15 +3898,31 @@
       "closed_at": "2026-03-06T04:19:56+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2300,15 +3938,31 @@
       "closed_at": "2026-03-06T06:10:37+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2324,9 +3978,19 @@
       "closed_at": "2026-03-05T19:52:29+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2342,27 +4006,55 @@
       "closed_at": "2026-04-06T02:30:01+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "akhil babu",
+          "drupal_uid": 3632866,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "akhilbabu"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         }
@@ -2378,30 +4070,60 @@
       "closed_at": "2026-02-25T05:51:53+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "divyamdotfoo",
+          "drupal_uid": 3859642,
           "orgs": [],
           "user": "divyamdotfoo"
         },
         {
+          "display_name": "kostiantyn",
+          "drupal_uid": 3734614,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "kostiantyn"
         },
         {
+          "display_name": "axioteo",
+          "drupal_uid": 3703169,
           "orgs": [
-            "e-sepia web innovation"
+            {
+              "name": "e-sepia web innovation",
+              "nid": 3049035,
+              "title": "E-Sepia Web Innovation"
+            }
           ],
           "user": "axioteo"
         },
         {
+          "display_name": "hrishikesh-dalal",
+          "drupal_uid": 3857030,
           "orgs": [],
           "user": "hrishikesh-dalal"
         }
@@ -2417,9 +4139,19 @@
       "closed_at": "2026-03-24T17:25:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2435,15 +4167,31 @@
       "closed_at": "2026-03-30T02:20:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2459,28 +4207,60 @@
       "closed_at": "2026-03-30T02:00:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -2496,15 +4276,31 @@
       "closed_at": "2026-03-31T19:05:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2520,9 +4316,19 @@
       "closed_at": "2026-04-06T02:40:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2538,23 +4344,43 @@
       "closed_at": "2026-02-25T05:33:13+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "fjgarlin",
+          "drupal_uid": 2495842,
           "orgs": [
-            "drupal association"
+            {
+              "name": "drupal association",
+              "nid": 1646370,
+              "title": "Drupal Association"
+            }
           ],
           "user": "fjgarlin"
         },
         {
+          "display_name": "twiesing",
+          "drupal_uid": 3653415,
           "orgs": [],
           "user": "twiesing"
         },
         {
+          "display_name": "divyamdotfoo",
+          "drupal_uid": 3859642,
           "orgs": [],
           "user": "divyamdotfoo"
         }
@@ -2570,9 +4396,19 @@
       "closed_at": "2026-03-06T06:35:55+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2588,27 +4424,55 @@
       "closed_at": "2026-04-01T01:30:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "axioteo",
+          "drupal_uid": 3703169,
           "orgs": [
-            "e-sepia web innovation"
+            {
+              "name": "e-sepia web innovation",
+              "nid": 3049035,
+              "title": "E-Sepia Web Innovation"
+            }
           ],
           "user": "axioteo"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "unqunq",
+          "drupal_uid": 933228,
           "orgs": [
-            "digitaltrotter"
+            {
+              "name": "digitaltrotter",
+              "nid": 3002160,
+              "title": "DigitalTrotter"
+            }
           ],
           "user": "unqunq"
         }
@@ -2624,22 +4488,48 @@
       "closed_at": "2026-03-06T02:48:00+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         }
@@ -2655,16 +4545,36 @@
       "closed_at": "2026-03-06T22:32:14+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         }
@@ -2680,15 +4590,31 @@
       "closed_at": "2026-04-02T23:25:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         }
@@ -2704,8 +4630,14 @@
       "closed_at": "2026-04-01T01:40:02+00:00",
       "contributors": [
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -2721,9 +4653,19 @@
       "closed_at": "2026-04-01T01:40:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2739,9 +4681,19 @@
       "closed_at": "2026-03-07T21:51:20+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2757,22 +4709,48 @@
       "closed_at": "2026-03-24T17:20:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "kostiantyn",
+          "drupal_uid": 3734614,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "kostiantyn"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -2788,40 +4766,84 @@
       "closed_at": "2026-03-29T03:05:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "a.dmitriiev",
+          "drupal_uid": 3235287,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "a.dmitriiev"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         },
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         },
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -2837,15 +4859,31 @@
       "closed_at": "2026-03-29T03:15:01+00:00",
       "contributors": [
         {
+          "display_name": "annmarysruthy",
+          "drupal_uid": 3664314,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "annmarysruthy"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2861,9 +4899,19 @@
       "closed_at": "2026-04-14T20:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2879,21 +4927,43 @@
       "closed_at": "2026-03-24T19:10:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "nexusnovaz",
+          "drupal_uid": 3783812,
           "orgs": [
-            "zoocha"
+            {
+              "name": "zoocha",
+              "nid": 2377277,
+              "title": "Zoocha"
+            }
           ],
           "user": "nexusnovaz"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -2909,9 +4979,19 @@
       "closed_at": "2026-04-14T20:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2927,15 +5007,31 @@
       "closed_at": "2026-04-14T21:25:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "aidanfoster"
         }
@@ -2951,9 +5047,19 @@
       "closed_at": "2026-04-14T21:25:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2969,9 +5075,19 @@
       "closed_at": "2026-04-07T00:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -2987,9 +5103,19 @@
       "closed_at": "2026-04-06T21:10:04+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -3005,9 +5131,19 @@
       "closed_at": "2026-04-14T22:15:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -3023,17 +5159,31 @@
       "closed_at": "2026-03-28T22:45:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "velmir_taky",
+          "drupal_uid": 3716467,
           "orgs": [],
           "user": "root_emarketing"
         },
         {
+          "display_name": "hrishikesh-dalal",
+          "drupal_uid": 3857030,
           "orgs": [],
           "user": "hrishikesh-dalal"
         }
@@ -3049,21 +5199,43 @@
       "closed_at": "2026-03-31T19:50:03+00:00",
       "contributors": [
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
           "orgs": [
-            "optasy"
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
           ],
           "user": "danrod"
         }
@@ -3079,27 +5251,55 @@
       "closed_at": "2026-03-28T03:30:01+00:00",
       "contributors": [
         {
+          "display_name": "erichomanchuk",
+          "drupal_uid": 299489,
           "orgs": [
-            "foster interactive inc."
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
           ],
           "user": "erichomanchuk"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "annmarysruthy",
+          "drupal_uid": 3664314,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "annmarysruthy"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -3115,28 +5315,60 @@
       "closed_at": "2026-03-29T21:15:03+00:00",
       "contributors": [
         {
+          "display_name": "dstorozhuk",
+          "drupal_uid": 1361080,
           "orgs": [
-            "itech4web",
-            "drupal ukraine community"
+            {
+              "name": "itech4web",
+              "nid": 3022394,
+              "title": "iTech4web"
+            },
+            {
+              "name": "drupal ukraine community",
+              "nid": 2631148,
+              "title": "Drupal Ukraine Community"
+            }
           ],
           "user": "dstorozhuk"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "annmarysruthy",
+          "drupal_uid": 3664314,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "annmarysruthy"
         },
         {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
           "orgs": [
-            "acquia"
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
           ],
           "user": "scottfalconer"
         }
@@ -3152,9 +5384,19 @@
       "closed_at": "2026-03-30T03:25:02+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -3170,9 +5412,19 @@
       "closed_at": "2026-04-05T19:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -3188,22 +5440,48 @@
       "closed_at": "2026-03-30T17:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "svendecabooter",
+          "drupal_uid": 35369,
           "orgs": [
-            "sven decabooter",
-            "dynamate"
+            {
+              "name": "sven decabooter",
+              "nid": 2552673,
+              "title": "Sven Decabooter"
+            },
+            {
+              "name": "dynamate",
+              "nid": 3320303,
+              "title": "Dynamate"
+            }
           ],
           "user": "svendecabooter"
         },
         {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
           "orgs": [
-            "1xinternet"
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
           ],
           "user": "bbruno"
         }
@@ -3219,15 +5497,31 @@
       "closed_at": "2026-03-30T17:50:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "annmarysruthy",
+          "drupal_uid": 3664314,
           "orgs": [
-            "qed42"
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
           ],
           "user": "annmarysruthy"
         }
@@ -3243,28 +5537,60 @@
       "closed_at": "2026-04-01T00:35:03+00:00",
       "contributors": [
         {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
           "orgs": [
-            "kalamuna"
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
           ],
           "user": "robloach"
         },
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         },
         {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
           "orgs": [
-            "freelygive"
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
           ],
           "user": "marcus_johansson"
         },
         {
+          "display_name": "rajab natshah",
+          "drupal_uid": 1414312,
           "orgs": [
-            "vardot",
-            "vardot"
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            },
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
           ],
           "user": "rajabnatshah"
         }
@@ -3280,9 +5606,19 @@
       "closed_at": "2026-03-31T19:20:03+00:00",
       "contributors": [
         {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
           "orgs": [
-            "itty bitty byte",
-            "salsa digital"
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
           ],
           "user": "kepol"
         }
@@ -3312,14 +5648,14 @@
     "freelygive": 12,
     "imagex": 3,
     "itech4web": 12,
-    "itty bitty byte": 126,
+    "itty bitty byte": 127,
     "kalamuna": 6,
     "lakedrops": 1,
     "localgov drupal": 2,
     "opensense labs": 1,
     "optasy": 9,
     "qed42": 8,
-    "salsa digital": 126,
+    "salsa digital": 127,
     "sven decabooter": 6,
     "the university of edinburgh": 11,
     "vardot": 2,
@@ -3359,7 +5695,7 @@
     "hrishikesh-dalal": 2,
     "jurgenhaas": 1,
     "kafmil": 2,
-    "kepol": 126,
+    "kepol": 127,
     "kostiantyn": 3,
     "kumarimedha09": 1,
     "marcus_johansson": 12,

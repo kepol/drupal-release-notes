@@ -9,6 +9,7 @@ Each project has its own directory (`{project}/cache/`, `{project}/reports/`, et
 | `scripts/release_notes.py` | Release credit reports per milestone or release period |
 | `scripts/credit_audit.py` | Find missing or incomplete credits; track reviewed issues |
 | `scripts/release_prep.py` | Pre-release checklist for a GitLab milestone |
+| `scripts/combined_milestone_report.py` | Merge multiple milestone reports; compare to Drupal.org |
 
 ## AI usage
 
@@ -53,10 +54,17 @@ python3 scripts/credit_audit.py
 
 Generated reports:
 
-- `ai_context/reports/release-notes-{milestone}.html` — release notes (e.g. `release-notes-1.0.0-beta3.html`)
+- `ai_context/reports/release-notes-{milestone}.html` — release notes (HTML for Drupal.org paste)
 - `ai_context/reports/credit-audit.html` — credit review report
+- `ai_context/summaries/{milestone}.prompt.md` — AI summary input (regenerated with release notes)
 
 Cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab on every run.
+
+**Refresh everything** (contribution records, GitLab issues, profile aliases, all milestone caches, all reports, credit audit):
+
+```bash
+python3 scripts/release_notes.py --refresh-all
+```
 
 ## How releases are scoped
 
@@ -64,14 +72,7 @@ Behavior is controlled by `period_source` in `{project}/config.json`.
 
 ### Milestones mode (`period_source: "milestones"`) — ai_context default
 
-One report per matching GitLab milestone. **Filenames and `--period` use the milestone title**:
-
-| File | Milestone |
-|------|-----------|
-| `reports/release-notes-1.0.0-alpha.html` | `1.0.0-alpha` |
-| `reports/release-notes-1.0.0-beta1.html` | `1.0.0-beta1` |
-| `reports/release-notes-1.0.0-beta2.html` | `1.0.0-beta2` |
-| `reports/release-notes-1.0.0-beta3.html` | `1.0.0-beta3` (current) |
+One report per matching GitLab milestone. **Filenames and `--period` use the milestone title**, e.g. `reports/release-notes-1.0.0-beta2.html` for milestone `1.0.0-beta2`.
 
 - **Release notes** include credited issues **assigned to that milestone** on GitLab.
 - **Release prep** scopes issues assigned to the milestone or closed within its date window.
@@ -105,31 +106,37 @@ For projects without GitLab milestone dates. Period boundaries come from Drupal.
 
 ## Common workflows
 
-### Preparing a new release (e.g. beta3)
+### Preparing a new release (e.g. beta4)
 
 ```bash
 # 1. Check milestone progress, credits, QA issue, release notes
-python3 scripts/release_prep.py --milestone "1.0.0-beta3"
+python3 scripts/release_prep.py --milestone "1.0.0-beta4"
 
 # 2. Review and resolve credit issues interactively
 python3 scripts/credit_audit.py --review
 
 # 3. Refresh release notes for the current milestone
-python3 scripts/release_notes.py --period "1.0.0-beta3" --refresh-records --refresh-issues
+python3 scripts/release_notes.py --period "1.0.0-beta4" --refresh-records --refresh-issues
 ```
 
 After publishing on Drupal.org:
 
 ```bash
 python3 scripts/release_notes.py --refresh-records --refresh-issues
-python3 scripts/release_notes.py --period "1.0.0-beta3" --write-summary-prompts
 ```
 
-### Full rebuild (rare)
+### Full refresh (re-fetch all API data and rebuild all reports)
 
 ```bash
-python3 scripts/release_notes.py --refresh-records --refresh-issues --rebuild-frozen
-python3 scripts/credit_audit.py --refresh
+python3 scripts/release_notes.py --refresh-all
+```
+
+This re-fetches contribution records, GitLab issue metadata, and Drupal.org profile URL aliases; rebuilds all frozen milestone caches; regenerates every release-notes HTML file and summary prompt; then refreshes the credit audit cache, GitLab comments, and `credit-audit.html`.
+
+To refresh only one milestone's HTML output (shared caches still update when combined with refresh flags):
+
+```bash
+python3 scripts/release_notes.py --period "1.0.0-beta4" --refresh-all
 ```
 
 ### Backfill missing milestones
@@ -142,6 +149,20 @@ python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta1"
 ```
 
 Writes `{project}/reports/milestone-assignments.html` with `--write-output`. Create milestones on GitLab, then assign issues from the list.
+
+### Combined milestone reports
+
+To merge several milestones into one release-notes file (e.g. for a Drupal.org release spanning multiple milestones):
+
+```bash
+python3 scripts/combined_milestone_report.py \
+  --milestones "1.0.0-alpha" "1.0.0-beta1" \
+  --slug "alpha-through-beta1" \
+  --title "1.0.0-alpha through 1.0.0-beta1" \
+  --drupal-release "1.0.0-beta1"
+```
+
+Writes `release-notes-{slug}.html` and `compare-drupalorg-{slug}.html`. Requires frozen period caches for each milestone (`--rebuild-frozen` or `--refresh-all` first).
 
 ## Release status (`release_prep.py`)
 
@@ -169,30 +190,32 @@ Example:
     #3586286: … — won't fix (why::wontFix) — …
 ```
 
-Run `python3 scripts/credit_audit.py --refresh` if cache counts look stale.
+Run `python3 scripts/release_notes.py --refresh-all` (or `python3 scripts/credit_audit.py --refresh`) if cache counts look stale.
 
 ## Release notes output
 
-Each `{project}/reports/release-notes-{milestone}.html` file includes:
+Each `{project}/reports/release-notes-{milestone}.html` file is HTML ready to paste into Drupal.org release notes. It includes:
 
-1. **Credited issue total**
-2. **Summary paragraph** (custom or auto-generated)
-3. **Contributors** — people and organizations with credit counts
-4. **New Features** — `category::feature`
-5. **Bug Fixes** — `category::bug`
-6. **Other Major Contributions** — major/critical plan, task, or support
-7. **Additional Contributions** — category counts (issues listed above excluded)
+1. **Changes since** — link to the previous Drupal.org release and a GitLab compare URL (when a prior tagged release exists)
+2. **Milestone title** and **credited issue total**
+3. **Summary paragraph** (custom or auto-generated)
+4. **Contributors** — people and organizations with credit counts; names link to Drupal.org profile URLs (`/u/…`, `/org-slug`)
+5. **New Features** — `category::feature`
+6. **Bug Fixes** — `category::bug`
+7. **Other Major Contributions** — major/critical plan, task, or support
+8. **Additional Contributions** — category counts (issues listed above excluded)
 
 Only issues with at least one granted credit on Drupal.org are included.
 
-Completed milestones are cached in `{project}/cache/periods/{milestone}.json` and only recomputed with `--rebuild-frozen`. The current milestone is regenerated on every run.
+Completed milestones are cached in `{project}/cache/periods/{milestone}.json` and only recomputed with `--rebuild-frozen` (included in `--refresh-all`). The current milestone is regenerated on every run.
 
 ### AI-written summary paragraph
 
-1. `python3 scripts/release_notes.py --period "1.0.0-beta3" --write-summary-prompts`
-2. Paste `summaries/1.0.0-beta3.prompt.md` into an AI; ask for 1–2 paragraphs.
-3. Save as `summaries/1.0.0-beta3.txt` (or `.md`).
-4. Re-run the report — custom summary replaces the auto-generated one.
+Each run writes `{project}/summaries/{milestone}.prompt.md` alongside the HTML report.
+
+1. Paste `summaries/1.0.0-beta4.prompt.md` into an AI; ask for 1–2 paragraphs.
+2. Save as `summaries/1.0.0-beta4.txt` (or `.md`).
+3. Re-run the report — custom summary replaces the auto-generated one.
 
 ### Manual fine-tuning
 
@@ -259,11 +282,13 @@ python3 scripts/credit_audit.py --project my_module
 ```
 --project NAME           Project machine name (default: ai_context)
 --period TITLE           Milestone title or 'all' (default: all)
---refresh-records        Re-fetch contribution records
+--refresh-all            Full refresh: records, issues, aliases, all periods,
+                         all reports, summary prompts, credit audit
+--refresh-records        Re-fetch contribution records from new.drupal.org
 --refresh-issues         Re-fetch GitLab issue metadata
---rebuild-frozen         Recompute frozen milestone reports
+--refresh-aliases        Re-fetch Drupal.org profile URL aliases (api-d7)
+--rebuild-frozen         Recompute frozen milestone period caches
 --exclude-list PATH      Alternate exclusion list
---write-summary-prompts  Write summaries/{milestone}.prompt.md
 ```
 
 ### `credit_audit.py`
@@ -281,6 +306,16 @@ python3 scripts/credit_audit.py --project my_module
 --clear-gitlab-token     Remove token from keychain
 ```
 
+### `combined_milestone_report.py`
+
+```
+--project NAME           Project machine name
+--milestones TITLE ...   Milestone titles to merge (in order)
+--slug SLUG              Filename slug (default: alpha-through-beta1)
+--title TITLE            Report heading
+--drupal-release VER     Drupal.org release label for comparison section
+```
+
 ### `release_prep.py`
 
 ```
@@ -296,7 +331,8 @@ python3 scripts/credit_audit.py --project my_module
 |------|--------|
 | Issue credits | [new.drupal.org](https://new.drupal.org) JSON:API — `contribution_record` nodes |
 | Issue labels, close dates, milestones | [git.drupalcode.org](https://git.drupalcode.org/project/ai_context) GitLab API |
-| Release tag dates | [drupal.org releases](https://www.drupal.org/project/ai_context/releases) (releases mode; mapping reference in milestones mode) |
+| Release tag dates | [drupal.org releases](https://www.drupal.org/project/ai_context/releases) (releases mode; compare links in milestones mode) |
+| Profile URLs | [drupal.org api-d7](https://www.drupal.org/api-d7/user/{uid}.json) — canonical `/u/…` and org slug URLs |
 
 Per-issue credit lookup:
 
@@ -308,27 +344,33 @@ https://new.drupal.org/contribution-record?source_link=ISSUE_URL&format=jsonapi
 
 ```
 scripts/
-  project.py              Per-project config and path helpers
-  release_prep.py         Pre-release milestone status
-  release_notes.py        Release credit reports
-  credit_audit.py         Credit audit + approvals
-  gitlab_activity.py      GitLab comment lookup
+  project.py                  Per-project config and path helpers
+  html_report.py              HTML helpers for Drupal.org-compatible output
+  period_context.py           Milestone windows and period building
+  release_prep.py             Pre-release milestone status
+  release_notes.py            Release credit reports
+  credit_audit.py             Credit audit + approvals
+  combined_milestone_report.py  Merge milestones; Drupal.org comparison
+  gitlab_activity.py          GitLab comment lookup
 
 ai_context/
   config.json
   cache/
-    periods/              Frozen report JSON per milestone
+    periods/                  Frozen report JSON per milestone
     contribution_records.json
     credit_audit_records.json
     closed_issues.json
     issues.json
+    profile_aliases.json      Cached Drupal.org profile URL aliases
+    credit_approvals.json
   reports/
     release-notes-{milestone}.html
     credit-audit.html
     milestone-assignments.html
+    compare-drupalorg-*.html  (from combined_milestone_report.py)
   summaries/
-    {milestone}.prompt.md
-    {milestone}.txt
+    {milestone}.prompt.md     Regenerated with release notes
+    {milestone}.txt           Optional AI-written summary (used in report)
 ```
 
 ## Notes
