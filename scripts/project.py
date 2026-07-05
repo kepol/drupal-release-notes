@@ -15,7 +15,11 @@ DEFAULT_PROJECT = "ai_context"
 RELEASE_NOTES_PREFIX = "release-notes-"
 REPORT_EXTENSION = ".html"
 NON_RELEASE_NOTE_REPORTS = frozenset(
-    {"credit-audit.html", "milestone-assignments.html"}
+    {
+        "credit-audit.html",
+        "contributors-all-releases.html",
+        "milestone-assignments.html",
+    }
 )
 NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-")
 
@@ -95,6 +99,10 @@ class ProjectConfig:
     @property
     def audit_output(self) -> Path:
         return self.reports_dir / "credit-audit.html"
+
+    @property
+    def contributors_totals_report(self) -> Path:
+        return self.reports_dir / "contributors-all-releases.html"
 
     @staticmethod
     def release_notes_filename(period_key: str) -> str:

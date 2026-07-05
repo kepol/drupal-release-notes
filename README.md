@@ -56,6 +56,7 @@ Generated reports:
 
 - `ai_context/reports/release-notes-{milestone}.html` — release notes (HTML for Drupal.org paste)
 - `ai_context/reports/credit-audit.html` — credit review report
+- `ai_context/reports/contributors-all-releases.html` — running totals of all credited people and organizations
 - `ai_context/summaries/{milestone}.prompt.md` — AI summary input (regenerated with release notes)
 
 Cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab on every run.
@@ -206,6 +207,8 @@ Each `{project}/reports/release-notes-{milestone}.html` file is HTML ready to pa
 8. **Additional Contributions** — category counts (issues listed above excluded)
 
 Only issues with at least one granted credit on Drupal.org are included.
+
+**Running contributor totals** — `{project}/reports/contributors-all-releases.html` aggregates people and organizations across all milestone reports (each issue counted once). Regenerated whenever release notes are generated.
 
 Completed milestones are cached in `{project}/cache/periods/{milestone}.json` and only recomputed with `--rebuild-frozen` (included in `--refresh-all`). The current milestone is regenerated on every run.
 
@@ -365,6 +368,7 @@ ai_context/
     credit_approvals.json
   reports/
     release-notes-{milestone}.html
+    contributors-all-releases.html
     credit-audit.html
     milestone-assignments.html
     compare-drupalorg-*.html  (from combined_milestone_report.py)

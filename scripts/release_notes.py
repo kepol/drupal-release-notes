@@ -34,6 +34,7 @@ from html_report import (
     li,
     p,
     strong,
+    table,
     ul,
 )
 from project import REPO_ROOT, ProjectConfig, add_project_argument
@@ -1291,6 +1292,137 @@ def deserialize_report(data: dict[str, Any]) -> PeriodReport:
     return PeriodReport(period=period, issues=issues, generated_at=data["generated_at"])
 
 
+def load_cached_period_reports(project: ProjectConfig) -> list[PeriodReport]:
+    """Load all frozen period reports from cache."""
+    if not project.periods_dir.is_dir():
+        return []
+    reports: list[PeriodReport] = []
+    for path in sorted(project.periods_dir.glob("*.json")):
+        data = load_json(path, {})
+        if not data.get("period"):
+            continue
+        reports.append(deserialize_report(data))
+    return reports
+
+
+def is_individual_release_period(
+    report: PeriodReport,
+    project: ProjectConfig,
+) -> bool:
+    """Return whether a cached period is one release milestone, not a merge."""
+    title = report.period.title
+    if project.period_source == "milestones":
+        return bool(re.match(project.milestone_include_pattern, title))
+    return " through " not in title and " to " not in title
+
+
+def aggregate_period_issues(reports: list[PeriodReport]) -> list[CreditedIssue]:
+    """Merge issues from multiple periods, counting each issue once."""
+    merged: dict[int, CreditedIssue] = {}
+    for report in reports:
+        for issue in report.issues:
+            merged[issue.iid] = issue
+    return sorted(merged.values(), key=lambda item: item.iid)
+
+
+def build_aggregate_contributor_report(
+    reports: list[PeriodReport],
+) -> PeriodReport:
+    issues = aggregate_period_issues(reports)
+    return PeriodReport(
+        period=ReportPeriod(
+            slug="all-releases",
+            title="All releases",
+            start=None,
+            end=None,
+            frozen=True,
+        ),
+        issues=issues,
+        generated_at=datetime.now(tz=timezone.utc).isoformat(),
+    )
+
+
+def render_contributors_totals_html(
+    project: ProjectConfig,
+    milestone_reports: list[PeriodReport],
+    aggregate: PeriodReport,
+    *,
+    alias_resolver: DrupalProfileAliasResolver,
+) -> str:
+    """Running totals of credited people and organizations across all milestones."""
+    user_profile_urls = build_user_profile_urls(aggregate, alias_resolver)
+    org_profile_urls = build_org_profile_urls(aggregate, alias_resolver)
+
+    milestone_rows: list[list[str]] = []
+    for report in sorted(milestone_reports, key=lambda item: item.period.title):
+        period = report.period
+        milestone_rows.append(
+            [
+                period.title,
+                str(len(report.issues)),
+                str(len(report.user_counts)),
+                str(len(report.org_counts)),
+            ]
+        )
+
+    people = format_people_counter(aggregate, user_profile_urls) or "none"
+    orgs = format_org_counter(aggregate, org_profile_urls) or "none"
+    issue_count = len(aggregate.issues)
+    milestone_count = len(milestone_reports)
+
+    blocks = [
+        h2("All releases — contributor totals"),
+        p(
+            f"Running totals across {strong(str(issue_count))} credited issues "
+            f"in {strong(str(milestone_count))} milestones "
+            "(each issue counted once)."
+        ),
+        p(em(f"Generated {aggregate.generated_at}")),
+        h3(f"People ({len(aggregate.user_counts)})"),
+        p(people),
+        h3(f"Organizations ({len(aggregate.org_counts)})"),
+        p(orgs),
+    ]
+    if milestone_rows:
+        blocks.extend(
+            [
+                h3("By milestone"),
+                table(
+                    ["Milestone", "Issues", "People", "Organizations"],
+                    milestone_rows,
+                ),
+            ]
+        )
+    return join_blocks(blocks) + "\n"
+
+
+def write_contributors_totals_report(
+    project: ProjectConfig,
+    *,
+    alias_resolver: DrupalProfileAliasResolver,
+) -> Path | None:
+    """Write aggregate contributor reference HTML from cached period reports."""
+    cached = load_cached_period_reports(project)
+    milestone_reports = [
+        report
+        for report in cached
+        if is_individual_release_period(report, project) and report.issues
+    ]
+    if not milestone_reports:
+        return None
+
+    aggregate = build_aggregate_contributor_report(milestone_reports)
+    html = render_contributors_totals_html(
+        project,
+        milestone_reports,
+        aggregate,
+        alias_resolver=alias_resolver,
+    )
+    output_path = project.contributors_totals_report
+    output_path.write_text(html)
+    return output_path
+
+
 def format_counter(counter: Counter[str]) -> str:
     return ", ".join(f"{name} ({count})" for name, count in counter.most_common())
 
@@ -1823,6 +1955,13 @@ def main() -> int:
             listable,
         )
         print(f"Wrote {prompt_path}")
+
+    totals_path = write_contributors_totals_report(
+        project,
+        alias_resolver=alias_resolver,
+    )
+    if totals_path:
+        print(f"Wrote {totals_path}")
 
     if args.refresh_all:
         print("\n--- Refreshing credit audit ---")
