@@ -183,8 +183,8 @@ def resolve_issue_state(
 
 
 def release_notes_info(project: ProjectConfig, milestone: str) -> tuple[str, int | None]:
-    relative = f"{project.machine_name}/reports/{milestone}.md"
-    path = project.reports_dir / f"{milestone}.md"
+    relative = project.release_notes_relative(milestone)
+    path = project.release_notes_report(milestone)
     period_cache = project.periods_dir / f"{milestone}.json"
     if period_cache.exists():
         count = len(load_json(period_cache, {}).get("issues", []))

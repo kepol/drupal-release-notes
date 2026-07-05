@@ -508,7 +508,10 @@ def migrate_legacy_period_files(project: ProjectConfig, ctx: PeriodContext) -> N
             directory.mkdir(parents=True, exist_ok=True)
             for ext in extensions:
                 old_path = directory / f"{old_slug}{ext}"
-                new_path = directory / f"{title}{ext}"
+                if directory == project.reports_dir and ext == ".md":
+                    new_path = directory / project.release_notes_filename(title)
+                else:
+                    new_path = directory / f"{title}{ext}"
                 if not old_path.exists():
                     continue
                 if new_path.exists():

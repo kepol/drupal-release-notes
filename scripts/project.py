@@ -12,6 +12,10 @@ from urllib.parse import quote
 SCRIPTS_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS_DIR.parent
 DEFAULT_PROJECT = "ai_context"
+RELEASE_NOTES_PREFIX = "release-notes-"
+NON_RELEASE_NOTE_REPORTS = frozenset(
+    {"credit-audit.md", "milestone-assignments.md"}
+)
 
 
 @dataclass(frozen=True)
@@ -86,6 +90,19 @@ class ProjectConfig:
     def audit_output(self) -> Path:
         return self.reports_dir / "credit-audit.md"
 
+    @staticmethod
+    def release_notes_filename(period_key: str) -> str:
+        return f"{RELEASE_NOTES_PREFIX}{period_key}.md"
+
+    def release_notes_report(self, period_key: str) -> Path:
+        return self.reports_dir / self.release_notes_filename(period_key)
+
+    def release_notes_relative(self, period_key: str) -> str:
+        return (
+            f"{self.machine_name}/reports/"
+            f"{self.release_notes_filename(period_key)}"
+        )
+
     @property
     def gitlab_project(self) -> str:
         return f"project/{self.machine_name}"
@@ -141,6 +158,7 @@ class ProjectConfig:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.periods_dir.mkdir(parents=True, exist_ok=True)
         self._migrate_output_dir()
+        self._migrate_release_notes_filenames()
         self.reports_dir.mkdir(parents=True, exist_ok=True)
         self.summaries_dir.mkdir(parents=True, exist_ok=True)
 
@@ -160,6 +178,22 @@ class ProjectConfig:
             path.rename(dest)
         if not any(legacy.iterdir()):
             legacy.rmdir()
+
+    def _migrate_release_notes_filenames(self) -> None:
+        """Prefix milestone release-note files with release-notes-."""
+        if not self.reports_dir.is_dir():
+            return
+        for path in self.reports_dir.glob("*.md"):
+            if (
+                path.name in NON_RELEASE_NOTE_REPORTS
+                or path.name.startswith(RELEASE_NOTES_PREFIX)
+            ):
+                continue
+            dest = self.reports_dir / self.release_notes_filename(path.stem)
+            if dest.exists():
+                continue
+            path.rename(dest)
+            print(f"Migrated report {path.name} → {dest.name}")
 
     @classmethod
     def load(cls, machine_name: str, root: Path = REPO_ROOT) -> ProjectConfig:

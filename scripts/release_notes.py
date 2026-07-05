@@ -1477,7 +1477,7 @@ def main() -> int:
             ctx=ctx,
         )
         markdown = render_markdown(report, project, exclude_from_lists=exclude_from_lists)
-        output_path = project.reports_dir / f"{period.slug}.md"
+        output_path = project.release_notes_report(period.slug)
         output_path.write_text(markdown)
         print(f"Wrote {output_path}")
 

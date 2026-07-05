@@ -55,7 +55,7 @@ python3 scripts/credit_audit.py
 
 Output:
 
-- `ai_context/reports/{milestone}.md` — release notes
+- `ai_context/reports/release-notes-{milestone}.md` — release notes
 - `ai_context/reports/credit-audit.md` — credit review report
 
 After cloning this repo, cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab.
@@ -106,14 +106,14 @@ Optional filters when using `"milestones"`:
 
 `milestone_close_grace_hours` (default `24`) adds extra time after each boundary — after a **release tag** (`releases` mode) or after a milestone **due date** (`milestones` mode).
 
-Release **notes** follow `period_source` when set to `"milestones"`: one report per GitLab milestone title (files like `reports/1.0.0-beta1.md`), and credited issues are included when **assigned to that milestone** on GitLab.
+Release **notes** follow `period_source` when set to `"milestones"`: one report per GitLab milestone title (files like `reports/release-notes-1.0.0-beta1.md`), and credited issues are included when **assigned to that milestone** on GitLab.
 
 ```bash
 python3 scripts/release_notes.py --period "1.0.0-beta1" --rebuild-frozen
 python3 scripts/credit_audit.py --refresh   # refresh milestone assignments in cache
 ```
 
-With `"releases"` (default), release notes use Drupal.org tag windows and release-derived slugs (e.g. `beta2-to-now.md`).
+With `"releases"` (default), release notes use Drupal.org tag windows and release-derived filenames (e.g. `release-notes-beta2-to-now.md`).
 
 Find the project node ID (`drupal_org_nid`) on the project page URL, e.g. `https://www.drupal.org/project/my_module` → view source or API, or from `https://www.drupal.org/api-d7/node.json?type=project&field_project_machine_name=my_module`.
 
@@ -140,10 +140,10 @@ One report per matching GitLab milestone. **Filenames and `--period` use the mil
 
 | File | Milestone |
 |------|-----------|
-| `reports/1.0.0-alpha.md` | `1.0.0-alpha` |
-| `reports/1.0.0-beta1.md` | `1.0.0-beta1` |
-| `reports/1.0.0-beta2.md` | `1.0.0-beta2` |
-| `reports/1.0.0-beta3.md` | `1.0.0-beta3` (current) |
+| `reports/release-notes-1.0.0-alpha.md` | `1.0.0-alpha` |
+| `reports/release-notes-1.0.0-beta1.md` | `1.0.0-beta1` |
+| `reports/release-notes-1.0.0-beta2.md` | `1.0.0-beta2` |
+| `reports/release-notes-1.0.0-beta3.md` | `1.0.0-beta3` (current) |
 
 Credited issues are included when assigned to that milestone on GitLab. Milestone start/due dates (plus grace) define the release window for unassigned issues and for `release_prep.py` scoping.
 
@@ -178,7 +178,7 @@ Completed periods are cached in `{project}/cache/periods/` and only recomputed w
 
 ## Output format
 
-Each `{project}/reports/{milestone}.md` file includes:
+Each `{project}/reports/release-notes-{milestone}.md` file includes:
 
 1. **Credited issue total** at the top
 2. **Summary paragraph** (custom or auto-generated from counts)
@@ -247,7 +247,7 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 | **Open in milestone** | Open issues still in the milestone (with link to milestone page) |
 | **Credit audit pending** | In-scope issues needing credit review; includes `--review` command when > 0 |
 | **QA issue** | Looks for a `CCC {release} QA` issue (e.g. `CCC beta3 QA`) |
-| **Release notes** | Report for this GitLab milestone (e.g. `reports/1.0.0-beta3.md`) |
+| **Release notes** | Report for this GitLab milestone (e.g. `reports/release-notes-1.0.0-beta3.md`) |
 | **Duplicate d.o records** | In-scope issues with multiple Drupal.org nodes |
 | **Missing contribution records** | In-scope closed issues with no record on new.drupal.org (action needed) |
 | **No record expected** | In-scope issues with `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` — no record by design |
@@ -269,7 +269,7 @@ Release status: ai_context (1.0.0-beta3)
 
 * QA issue: opened (https://git.drupalcode.org/project/ai_context/-/work_items/3586296)
 
-* Release notes: ai_context/reports/1.0.0-beta3.md (83 credited)
+* Release notes: ai_context/reports/release-notes-1.0.0-beta3.md (83 credited)
 
 * Duplicate d.o records: 1
     #3586238: Fix PHPStan failures in CCC — https://new.drupal.org/node/11454931, https://new.drupal.org/node/11454932
@@ -487,7 +487,9 @@ ai_context/               Example project (Context Control Center)
     issues.json               Cached GitLab issue metadata
     periods/                  Frozen period report JSON
   reports/                  Generated markdown reports (release notes, credit audit)
+    release-notes-{milestone}.md  Release notes per milestone
     credit-audit.md           Credit review report
+    milestone-assignments.md  Suggested milestone backfill list
   summaries/
     {period}.prompt.md        AI prompt input (optional to regenerate)
     {period}.txt              Custom summary paragraph (optional)
