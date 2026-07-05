@@ -16,6 +16,7 @@ RELEASE_NOTES_PREFIX = "release-notes-"
 NON_RELEASE_NOTE_REPORTS = frozenset(
     {"credit-audit.md", "milestone-assignments.md"}
 )
+NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-")
 
 
 @dataclass(frozen=True)
@@ -187,6 +188,7 @@ class ProjectConfig:
             if (
                 path.name in NON_RELEASE_NOTE_REPORTS
                 or path.name.startswith(RELEASE_NOTES_PREFIX)
+                or path.name.startswith(NON_RELEASE_NOTE_PREFIXES)
             ):
                 continue
             dest = self.reports_dir / self.release_notes_filename(path.stem)
