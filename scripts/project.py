@@ -13,8 +13,9 @@ SCRIPTS_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS_DIR.parent
 DEFAULT_PROJECT = "ai_context"
 RELEASE_NOTES_PREFIX = "release-notes-"
+REPORT_EXTENSION = ".html"
 NON_RELEASE_NOTE_REPORTS = frozenset(
-    {"credit-audit.md", "milestone-assignments.md"}
+    {"credit-audit.html", "milestone-assignments.html"}
 )
 NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-")
 
@@ -89,11 +90,11 @@ class ProjectConfig:
 
     @property
     def audit_output(self) -> Path:
-        return self.reports_dir / "credit-audit.md"
+        return self.reports_dir / "credit-audit.html"
 
     @staticmethod
     def release_notes_filename(period_key: str) -> str:
-        return f"{RELEASE_NOTES_PREFIX}{period_key}.md"
+        return f"{RELEASE_NOTES_PREFIX}{period_key}{REPORT_EXTENSION}"
 
     def release_notes_report(self, period_key: str) -> Path:
         return self.reports_dir / self.release_notes_filename(period_key)
@@ -137,6 +138,24 @@ class ProjectConfig:
             f"/-/work_items/{iid}"
         )
 
+    def format_issue_line(
+        self,
+        iid: int,
+        title: str,
+        *,
+        extra: str = "",
+        nested: list[str] | None = None,
+    ) -> str:
+        from html_report import format_issue_item
+
+        return format_issue_item(
+            iid,
+            title,
+            self.issue_url(iid),
+            extra=extra,
+            nested=nested,
+        )
+
     def merge_request_url(self, iid: int) -> str:
         return (
             f"https://git.drupalcode.org/project/{self.machine_name}"
@@ -159,9 +178,21 @@ class ProjectConfig:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.periods_dir.mkdir(parents=True, exist_ok=True)
         self._migrate_output_dir()
+        self._migrate_report_extensions()
         self._migrate_release_notes_filenames()
         self.reports_dir.mkdir(parents=True, exist_ok=True)
         self.summaries_dir.mkdir(parents=True, exist_ok=True)
+
+    def _migrate_report_extensions(self) -> None:
+        """Rename legacy .md report files to .html."""
+        if not self.reports_dir.is_dir():
+            return
+        for path in list(self.reports_dir.glob("*.md")):
+            dest = path.with_suffix(REPORT_EXTENSION)
+            if dest.exists():
+                continue
+            path.rename(dest)
+            print(f"Migrated report {path.name} → {dest.name}")
 
     def _migrate_output_dir(self) -> None:
         """Rename legacy output/ to reports/."""
@@ -184,7 +215,7 @@ class ProjectConfig:
         """Prefix milestone release-note files with release-notes-."""
         if not self.reports_dir.is_dir():
             return
-        for path in self.reports_dir.glob("*.md"):
+        for path in self.reports_dir.glob(f"*{REPORT_EXTENSION}"):
             if (
                 path.name in NON_RELEASE_NOTE_REPORTS
                 or path.name.startswith(RELEASE_NOTES_PREFIX)

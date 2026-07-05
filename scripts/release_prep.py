@@ -33,6 +33,7 @@ from period_context import (
     suggest_milestone_for_close,
     window_label_for,
 )
+from html_report import em, escape, format_issue_item, h2, h3, join_blocks, p, ul
 from project import ProjectConfig, add_project_argument
 from release_notes import (
     ApiClient,
@@ -64,7 +65,7 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help=(
             "With --list-by-milestone, also write "
-            "{project}/reports/milestone-assignments.md."
+            "{project}/reports/milestone-assignments.html."
         ),
     )
     add_project_argument(parser)
@@ -190,7 +191,7 @@ def release_notes_info(project: ProjectConfig, milestone: str) -> tuple[str, int
         count = len(load_json(period_cache, {}).get("issues", []))
         return relative, count
     if path.exists():
-        match = re.search(r"\*\*(\d+) credited issues\*\*", path.read_text())
+        match = re.search(r"<strong>(\d+) credited issues</strong>", path.read_text())
         if match:
             return relative, int(match.group(1))
         return relative, None
@@ -429,7 +430,13 @@ def format_report_issue_lines(
     prefix = "- " if bullet else ""
     lines: list[str] = []
     for issue in issues[:limit]:
-        lines.append(indented(f"{prefix}#{issue.iid}: {issue.title}"))
+        if isinstance(issue, dict):
+            iid = int(issue["iid"])
+            title = issue.get("title", f"Issue #{iid}")
+        else:
+            iid = int(issue.iid)
+            title = issue.title
+        lines.append(indented(f"{prefix}#{iid}: {title}"))
     if len(issues) > limit:
         lines.append(indented(f"… and {len(issues) - limit} more"))
     return lines
@@ -554,13 +561,17 @@ def group_issues_by_suggested_milestone(
     return grouped
 
 
-def format_assignment_line(assignment: MilestoneAssignment) -> str:
+def format_assignment_line(assignment: MilestoneAssignment, project: ProjectConfig) -> str:
     closed = assignment.closed_at.strftime("%Y-%m-%d")
     current = assignment.current or "(none)"
-    url = assignment.web_url or f"#{assignment.iid}"
-    return (
-        f"- #{assignment.iid} — {assignment.title} — "
-        f"closed {closed}, current milestone: {current} — {url}"
+    url = assignment.web_url or project.issue_url(assignment.iid)
+    return format_issue_item(
+        assignment.iid,
+        assignment.title,
+        url,
+        extra=(
+            f"— closed {escape(closed)}, current milestone: {escape(current)}"
+        ),
     )
 
 
@@ -568,18 +579,19 @@ def format_milestone_assignment_section(
     milestone: str,
     assignments: list[MilestoneAssignment],
     ctx: PeriodContext,
+    project: ProjectConfig,
 ) -> list[str]:
     window = window_label_for(milestone, ctx)
-    heading = f"## {milestone} ({len(assignments)} issues)"
-    lines = [heading, ""]
+    blocks = [h3(f"{milestone} ({len(assignments)} issues)")]
     if window:
-        lines.append(f"{window}.")
-        lines.append("")
+        blocks.append(p(f"{escape(window)}."))
     if assignments:
-        lines.extend(format_assignment_line(item) for item in assignments)
+        blocks.append(
+            ul(format_assignment_line(item, project) for item in assignments)
+        )
     else:
-        lines.append("(none)")
-    return lines
+        blocks.append(p(em("None")))
+    return blocks
 
 
 def list_by_milestone(
@@ -608,27 +620,40 @@ def list_by_milestone(
         if ctx.source == "milestones"
         else "Drupal.org release tags"
     )
-    lines = [
-        f"# Milestone assignments: {project.machine_name}",
-        "",
-        (
-            f"Suggested GitLab milestones from close dates and {source_note}. "
-            "Create missing milestones on GitLab, then assign each issue."
-        ),
-        "",
-    ]
     for milestone in milestones:
         assignments = grouped.get(milestone, [])
-        lines.extend(format_milestone_assignment_section(milestone, assignments, ctx))
-        lines.append("")
-
-    output = "\n".join(lines).rstrip() + "\n"
-    print(output, end="")
+        window = window_label_for(milestone, ctx)
+        print(f"\n## {milestone} ({len(assignments)} issues)")
+        if window:
+            print(f"{window}.")
+        if assignments:
+            for item in assignments:
+                closed = item.closed_at.strftime("%Y-%m-%d")
+                current = item.current or "(none)"
+                url = item.web_url or project.issue_url(item.iid)
+                print(
+                    f"- #{item.iid} — {item.title} — "
+                    f"closed {closed}, current milestone: {current} — {url}"
+                )
+        else:
+            print("(none)")
 
     if args.write_output:
-        path = project.reports_dir / "milestone-assignments.md"
+        blocks = [
+            h2(f"Milestone assignments: {project.machine_name}"),
+            p(
+                f"Suggested GitLab milestones from close dates and {escape(source_note)}. "
+                "Create missing milestones on GitLab, then assign each issue."
+            ),
+        ]
+        for milestone in milestones:
+            assignments = grouped.get(milestone, [])
+            blocks.extend(
+                format_milestone_assignment_section(milestone, assignments, ctx, project)
+            )
+        path = project.reports_dir / "milestone-assignments.html"
         project.reports_dir.mkdir(parents=True, exist_ok=True)
-        path.write_text(output)
+        path.write_text(join_blocks(blocks) + "\n")
         print(f"Wrote {path}", file=sys.stderr)
 
     return 0

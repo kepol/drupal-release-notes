@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from project import ProjectConfig
+from project import REPORT_EXTENSION, ProjectConfig
 from release_notes import (
     ApiClient,
     ReleaseBoundary,
@@ -502,13 +502,13 @@ def migrate_legacy_period_files(project: ProjectConfig, ctx: PeriodContext) -> N
 
     for old_slug, title in renames.items():
         for directory, extensions in [
-            (project.reports_dir, [".md"]),
+            (project.reports_dir, [REPORT_EXTENSION]),
             (project.summaries_dir, [".prompt.md", ".txt"]),
         ]:
             directory.mkdir(parents=True, exist_ok=True)
             for ext in extensions:
                 old_path = directory / f"{old_slug}{ext}"
-                if directory == project.reports_dir and ext == ".md":
+                if directory == project.reports_dir and ext == REPORT_EXTENSION:
                     new_path = directory / project.release_notes_filename(title)
                 else:
                     new_path = directory / f"{title}{ext}"

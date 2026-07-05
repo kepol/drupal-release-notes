@@ -11,7 +11,22 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from project import ProjectConfig, add_project_argument
+from html_report import (
+    a,
+    em,
+    escape,
+    format_issue_item,
+    h2,
+    h3,
+    h4,
+    join_blocks,
+    li,
+    p,
+    strong,
+    table,
+    ul,
+)
+from project import ProjectConfig, REPORT_EXTENSION, add_project_argument
 from release_notes import (
     BUG_CATEGORIES,
     FEATURE_CATEGORIES,
@@ -22,7 +37,7 @@ from release_notes import (
     format_people_counter,
     is_other_major_contribution,
     load_json,
-    render_markdown,
+    render_html,
 )
 
 # Drupal.org 1.0.0-beta1 page (includes pre-alpha work bundled into beta1 release).
@@ -255,6 +270,7 @@ def merged_people_counts(report: PeriodReport) -> Counter[str]:
 def render_comparison(
     report: PeriodReport,
     *,
+    project: ProjectConfig,
     milestones: list[str],
     drupal_release: str,
     closed_issues: dict[str, Any],
@@ -263,23 +279,26 @@ def render_comparison(
     do_iids = drupal_all_issues()
     by_iid = {issue.iid: issue for issue in report.issues}
 
-    lines = [
-        f"# Drupal.org vs repo: {report.period.title}",
-        "",
-        f"Compares [Drupal.org {drupal_release} release notes]"
-        f"(https://www.drupal.org/project/ai_context/releases/{drupal_release}) "
-        f"to merged repo milestones: {', '.join(milestones)}.",
-        "",
-        f"**Repo credited (combined):** {len(repo_iids)}",
-        f"**Drupal.org issues listed:** {len(do_iids)}",
-        f"**On both:** {len(repo_iids & do_iids)}",
-        "",
+    release_url = (
+        f"https://www.drupal.org/project/ai_context/releases/{drupal_release}"
+    )
+    blocks: list[str] = [
+        h2(f"Drupal.org vs repo: {report.period.title}"),
+        p(
+            "Compares "
+            f"{a(release_url, f'Drupal.org {drupal_release} release notes')} "
+            f"to merged repo milestones: {escape(', '.join(milestones))}."
+        ),
+        p(strong(f"Repo credited (combined): {len(repo_iids)}")),
+        p(strong(f"Drupal.org issues listed: {len(do_iids)}")),
+        p(strong(f"On both: {len(repo_iids & do_iids)}")),
     ]
 
     def append_issue_block(heading: str, iids: list[int]) -> None:
         if not iids:
             return
-        lines.extend([f"## {heading} ({len(iids)})", ""])
+        blocks.append(h3(f"{heading} ({len(iids)})"))
+        items = []
         for iid in iids:
             issue = by_iid.get(iid)
             title = issue.title if issue else closed_issues.get(str(iid), {}).get(
@@ -287,30 +306,48 @@ def render_comparison(
             )
             do_cats = drupal_category(iid)
             repo_cat = repo_section_for(issue) if issue else "—"
-            lines.append(
-                f"* #{iid}: {title} — repo: {repo_cat}; "
-                f"drupal.org: {', '.join(do_cats) or '—'}"
+            url = issue.issue_url if issue else project.issue_url(iid)
+            items.append(
+                format_issue_item(
+                    iid,
+                    title,
+                    url,
+                    extra=(
+                        f"— repo: {escape(repo_cat)}; "
+                        f"drupal.org: {escape(', '.join(do_cats) or '—')}"
+                    ),
+                )
             )
-        lines.append("")
+        blocks.append(ul(items))
 
     missing_on_do = sorted(repo_iids - do_iids)
     extra_on_do = sorted(do_iids - repo_iids)
 
     append_issue_block("Missing on Drupal.org (credited in repo)", missing_on_do)
 
-    lines.append(f"## On Drupal.org but not in repo ({len(extra_on_do)})")
-    lines.append("")
-    for iid in extra_on_do:
-        meta = closed_issues.get(str(iid), {})
-        labels = meta.get("labels") or []
-        exempt = [label for label in labels if label.startswith("why::")]
-        title = meta.get("title", f"Issue #{iid}")
-        reason = ", ".join(exempt) if exempt else "not credited / wrong milestone"
-        lines.append(
-            f"* #{iid}: {title} — drupal.org: {', '.join(drupal_category(iid))}; "
-            f"{reason}"
-        )
-    lines.append("")
+    blocks.append(h3(f"On Drupal.org but not in repo ({len(extra_on_do)})"))
+    if extra_on_do:
+        extra_items = []
+        for iid in extra_on_do:
+            meta = closed_issues.get(str(iid), {})
+            labels = meta.get("labels") or []
+            exempt = [label for label in labels if label.startswith("why::")]
+            title = meta.get("title", f"Issue #{iid}")
+            reason = ", ".join(exempt) if exempt else "not credited / wrong milestone"
+            extra_items.append(
+                format_issue_item(
+                    iid,
+                    title,
+                    project.issue_url(iid),
+                    extra=(
+                        f"— drupal.org: {escape(', '.join(drupal_category(iid)))}; "
+                        f"{escape(reason)}"
+                    ),
+                )
+            )
+        blocks.append(ul(extra_items))
+    else:
+        blocks.append(p(em("None.")))
 
     for category in ("feature", "task", "bug", "plan"):
         do_set = set(DRUPAL_ORG_BETA1[category])
@@ -344,11 +381,9 @@ def render_comparison(
                 missing_cat,
             )
 
-    lines.extend(["## Contributor differences", ""])
+    blocks.append(h3("Contributor differences"))
     repo_people = merged_people_counts(report)
-    lines.extend(["### People", ""])
-    lines.append("| Person | Drupal.org | Repo | Δ |")
-    lines.append("|--------|------------|------|---|")
+    blocks.append(h4("People"))
     all_people = set(repo_people) | {norm_key(name) for name in DRUPAL_PEOPLE}
     diffs = []
     for key in all_people:
@@ -368,16 +403,18 @@ def render_comparison(
                     break
         rc = repo_people.get(key, 0)
         if dc != rc:
-            diffs.append((display, dc, rc, rc - dc))
-    for display, dc, rc, delta in sorted(diffs, key=lambda item: -abs(item[3])):
-        lines.append(f"| {display} | {dc} | {rc} | {delta:+d} |")
-    if not diffs:
-        lines.append("_No differences._")
-    lines.append("")
+            diffs.append((display, str(dc), str(rc), f"{rc - dc:+d}"))
+    if diffs:
+        blocks.append(
+            table(
+                ["Person", "Drupal.org", "Repo", "Δ"],
+                sorted(diffs, key=lambda item: -abs(int(item[3]))),
+            )
+        )
+    else:
+        blocks.append(p(em("No differences.")))
 
-    lines.extend(["### Organizations", ""])
-    lines.append("| Organization | Drupal.org | Repo | Δ |")
-    lines.append("|--------------|------------|------|---|")
+    blocks.append(h4("Organizations"))
     repo_orgs: Counter[str] = Counter()
     for name, count in report.org_counts.items():
         repo_orgs[norm_key(name)] += count
@@ -387,14 +424,18 @@ def render_comparison(
         display, dc = do_orgs.get(key, (key, 0))
         rc = repo_orgs.get(key, 0)
         if dc != rc:
-            org_diffs.append((display, dc, rc, rc - dc))
-    for display, dc, rc, delta in sorted(org_diffs, key=lambda item: -abs(item[3])):
-        lines.append(f"| {display} | {dc} | {rc} | {delta:+d} |")
-    if not org_diffs:
-        lines.append("_No differences._")
-    lines.append("")
+            org_diffs.append((display, str(dc), str(rc), f"{rc - dc:+d}"))
+    if org_diffs:
+        blocks.append(
+            table(
+                ["Organization", "Drupal.org", "Repo", "Δ"],
+                sorted(org_diffs, key=lambda item: -abs(int(item[3]))),
+            )
+        )
+    else:
+        blocks.append(p(em("No differences.")))
 
-    return "\n".join(lines)
+    return join_blocks(blocks) + "\n"
 
 
 def main() -> int:
@@ -411,14 +452,15 @@ def main() -> int:
 
     notes_name = project.release_notes_filename(f"{args.slug}")
     notes_path = project.reports_dir / notes_name
-    notes_path.write_text(render_markdown(report, project))
+    notes_path.write_text(render_html(report, project))
     print(f"Wrote {notes_path} ({len(report.issues)} credited issues)")
 
     closed_raw = load_json(project.closed_issues_cache, {})
-    comparison_path = project.reports_dir / f"compare-drupalorg-{args.slug}.md"
+    comparison_path = project.reports_dir / f"compare-drupalorg-{args.slug}{REPORT_EXTENSION}"
     comparison_path.write_text(
         render_comparison(
             report,
+            project=project,
             milestones=args.milestones,
             drupal_release=args.drupal_release,
             closed_issues=closed_raw,

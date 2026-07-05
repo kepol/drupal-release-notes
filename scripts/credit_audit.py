@@ -18,6 +18,21 @@ from gitlab_activity import (
     enrich_issues_with_gitlab_activity,
     format_user_activity_lines,
 )
+from html_report import (
+    a,
+    code,
+    em,
+    escape,
+    format_issue_item,
+    h2,
+    h3,
+    join_blocks,
+    li,
+    p,
+    pre_block,
+    strong,
+    ul,
+)
 from project import ProjectConfig, add_project_argument
 from release_notes import (
     ApiClient,
@@ -592,20 +607,19 @@ def sort_pending_issues(pending: list[AuditIssue]) -> list[AuditIssue]:
 
 
 def append_uncredited_activity(
-    lines: list[str],
+    nested: list[str],
     issue: AuditIssue,
-    *,
-    indent: str = "  ",
 ) -> None:
     if not issue.uncredited:
         return
     for user in issue.uncredited:
-        lines.append(f"{indent}* `{user}` activity:")
+        activity_items: list[str] = [f"{code(user)} activity:"]
         if issue.user_activity:
             for activity_line in format_user_activity_lines(user, issue.user_activity):
-                lines.append(f"{indent}  {activity_line.strip()}")
+                activity_items.append(escape(activity_line.strip()))
         elif not gitlab_token_configured():
-            lines.append(f"{indent}  _{gitlab_token_setup_hint()}_")
+            activity_items.append(em(gitlab_token_setup_hint()))
+        nested.append(ul(activity_items))
 
 
 def format_issue_review(issue: AuditIssue, index: int, total: int) -> str:
@@ -748,7 +762,7 @@ def run_interactive_review(
     return approved_count, skipped_count, False
 
 
-def render_audit_markdown(
+def render_audit_html(
     project: ProjectConfig,
     pending: list[AuditIssue],
     approved_items: list[AuditIssue],
@@ -771,61 +785,67 @@ def render_audit_markdown(
         issue for issue in exempt_items if issue.problem == "ignored_uncredited_only"
     ]
 
-    lines = [
-        "# Credit audit",
-        "",
-        f"Closed {project.machine_name} issues that may need credit review on "
-        "[new.drupal.org](https://new.drupal.org).",
-        "",
-        f"**{len(pending)} issues need review** · "
-        f"**{len(label_exempt)} exempt (duplicate / won't fix)** · "
-        f"**{len(pm_exempt)} ignored (PM labels only)** · "
-        f"**{len(approved_items)} issues approved**",
-        "",
-        f"_Generated {generated_at}_",
-        "",
-        "## How to approve",
-        "",
-        "After reviewing an issue on Drupal.org, mark it so it won't appear again:",
-        "",
-        "```bash",
-        "# Interactive review (step through each issue)",
-        f"python3 scripts/credit_audit.py --project {project.machine_name} --review",
-        "",
-        "# Whole issue reviewed (no record, no credits, or all uncredited people OK)",
-        f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230",
-        "",
-        "# Only one listed-but-uncredited person is OK",
-        f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230:danrod",
-        "",
-        "# Undo",
-        f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230",
-        f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230:danrod",
-        "```",
-        "",
-        f"Approvals are stored in `{project.machine_name}/cache/credit_approvals.json`.",
-        "",
+    approve_cmds = "\n".join(
+        [
+            "# Interactive review (step through each issue)",
+            f"python3 scripts/credit_audit.py --project {project.machine_name} --review",
+            "",
+            "# Whole issue reviewed (no record, no credits, or all uncredited people OK)",
+            f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230",
+            "",
+            "# Only one listed-but-uncredited person is OK",
+            f"python3 scripts/credit_audit.py --project {project.machine_name} --approve 3586230:danrod",
+            "",
+            "# Undo",
+            f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230",
+            f"python3 scripts/credit_audit.py --project {project.machine_name} --unapprove 3586230:danrod",
+        ]
+    )
+
+    blocks: list[str] = [
+        h2("Credit audit"),
+        p(
+            f"Closed {escape(project.machine_name)} issues that may need credit review on "
+            f"{a('https://new.drupal.org', 'new.drupal.org')}."
+        ),
+        p(
+            f"{strong(f'{len(pending)} issues need review')} · "
+            f"{strong(f'{len(label_exempt)} exempt (duplicate / won\'t fix)')} · "
+            f"{strong(f'{len(pm_exempt)} ignored (PM labels only)')} · "
+            f"{strong(f'{len(approved_items)} issues approved')}"
+        ),
+        p(em(f"Generated {generated_at}")),
+        h3("How to approve"),
+        p("After reviewing an issue on Drupal.org, mark it so it won't appear again:"),
+        pre_block(approve_cmds),
+        p(f"Approvals are stored in {code(f'{project.machine_name}/cache/credit_approvals.json')}."),
     ]
 
     if duplicate_records:
-        lines.extend(
-            [
-                f"## Duplicate contribution records ({len(duplicate_records)})",
-                "",
+        blocks.append(h3(f"Duplicate contribution records ({len(duplicate_records)})"))
+        blocks.append(
+            p(
                 "Multiple published records point at the same GitLab issue. "
                 "The audit merges credits across them, preferring records that "
                 "have credits granted. Consider deleting stale duplicates on "
-                "Drupal.org.",
-                "",
-            ]
+                "Drupal.org."
+            )
         )
+        dup_items = []
         for record in duplicate_records:
             nids = record.get("duplicate_nids") or []
-            links = ", ".join(f"[node/{nid}](https://new.drupal.org/node/{nid})" for nid in nids)
-            lines.append(
-                f"* [#{record['iid']}]({record['source_link']}): {record['title']} — {links}"
+            links = ", ".join(
+                a(f"https://new.drupal.org/node/{nid}", f"node/{nid}") for nid in nids
             )
-        lines.append("")
+            dup_items.append(
+                format_issue_item(
+                    record["iid"],
+                    record["title"],
+                    record["source_link"],
+                    extra=f"— {links}",
+                )
+            )
+        blocks.append(ul(dup_items))
 
     section_titles = {
         "no_record": "No contribution record",
@@ -835,102 +855,146 @@ def render_audit_markdown(
 
     for problem, title in section_titles.items():
         issues = by_problem[problem]
-        lines.extend([f"## {title} ({len(issues)})", ""])
+        blocks.append(h3(f"{title} ({len(issues)})"))
         if not issues:
-            lines.append("_None._")
-            lines.append("")
+            blocks.append(p(em("None.")))
             continue
 
+        issue_items = []
         for issue in issues:
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
+            nested: list[str] = []
             if issue.record_url:
-                lines.append(f"  * Contribution record: [node/{issue.record_nid}]({issue.record_url})")
+                nested.append(
+                    li(
+                        "Contribution record: "
+                        f"{a(issue.record_url, f'node/{issue.record_nid}')}"
+                    )
+                )
             if issue.credited:
-                lines.append(f"  * Credited: {', '.join(issue.credited)}")
+                nested.append(li(f"Credited: {escape(', '.join(issue.credited))}"))
             if issue.uncredited:
-                lines.append(f"  * Uncredited: {', '.join(issue.uncredited)}")
-                append_uncredited_activity(lines, issue)
+                nested.append(li(f"Uncredited: {escape(', '.join(issue.uncredited))}"))
+                append_uncredited_activity(nested, issue)
             if problem == "no_record":
-                lines.append(
-                    "  * Create a contribution record on Drupal.org and credit contributors."
+                nested.append(
+                    li("Create a contribution record on Drupal.org and credit contributors.")
                 )
             elif problem == "no_credits":
-                lines.append(
-                    "  * Grant credit to at least one contributor, or approve if intentional."
+                nested.append(
+                    li("Grant credit to at least one contributor, or approve if intentional.")
                 )
             else:
                 for user in issue.uncredited:
-                    lines.append(
-                        f"  * Approve `{user}`: "
-                        f"`python3 scripts/credit_audit.py --project {project.machine_name} "
-                        f"--approve {issue.iid}:{user}`"
+                    nested.append(
+                        li(
+                            f"Approve {code(user)}: "
+                            f"{code(f'python3 scripts/credit_audit.py --project {project.machine_name} --approve {issue.iid}:{user}')}"
+                        )
                     )
-            lines.append(
-                f"  * Approve issue: `python3 scripts/credit_audit.py --project {project.machine_name} --approve {issue.iid}`"
+            nested.append(
+                li(
+                    f"Approve issue: "
+                    f"{code(f'python3 scripts/credit_audit.py --project {project.machine_name} --approve {issue.iid}')}"
+                )
             )
-            lines.append("")
+            issue_items.append(
+                format_issue_item(
+                    issue.iid,
+                    issue.title,
+                    issue.issue_url,
+                    nested=nested,
+                )
+            )
+        blocks.append(ul(issue_items))
 
     if label_exempt:
-        lines.extend(
-            [
-                f"## No credits expected — duplicate / won't fix ({len(label_exempt)})",
-                "",
-                "GitLab labels `why::duplicate` or `why::wontFix`. These issues do not "
-                "need a contribution record or granted credits.",
-                "",
-            ]
+        blocks.append(h3(f"No credits expected — duplicate / won't fix ({len(label_exempt)})"))
+        blocks.append(
+            p(
+                "GitLab labels "
+                f"{code('why::duplicate')} or {code('why::wontFix')}. These issues do not "
+                "need a contribution record or granted credits."
+            )
         )
+        exempt_items_html = []
         for issue in label_exempt:
             label = next(
                 (label for label in issue.labels if label in CREDIT_EXEMPT_WHY_LABELS),
                 issue.exemption or "",
             )
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
-            lines.append(f"  * GitLab label: `{label}` ({issue.exemption})")
+            nested = [li(f"GitLab label: {code(label)} ({escape(issue.exemption or '')})")]
             if issue.record_url:
-                lines.append(
-                    f"  * Contribution record: [node/{issue.record_nid}]({issue.record_url})"
+                nested.append(
+                    li(
+                        "Contribution record: "
+                        f"{a(issue.record_url, f'node/{issue.record_nid}')}"
+                    )
                 )
-            lines.append("")
+            exempt_items_html.append(
+                format_issue_item(
+                    issue.iid,
+                    issue.title,
+                    issue.issue_url,
+                    nested=nested,
+                )
+            )
+        blocks.append(ul(exempt_items_html))
 
     if pm_exempt:
-        lines.extend(
-            [
-                f"## Ignored uncredited — project managers ({len(pm_exempt)})",
-                "",
+        blocks.append(h3(f"Ignored uncredited — project managers ({len(pm_exempt)})"))
+        blocks.append(
+            p(
                 "The only listed-but-uncredited people are in "
-                "`ignore_uncredited_people.txt` (PMs who add labels, not code).",
-                "",
-            ]
+                f"{code('ignore_uncredited_people.txt')} (PMs who add labels, not code)."
+            )
         )
+        pm_items = []
         for issue in pm_exempt:
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
+            nested = []
             if issue.credited:
-                lines.append(f"  * Credited: {', '.join(issue.credited)}")
-            lines.append(
-                f"  * Ignored (not expected to credit): "
-                f"{', '.join(issue.ignored_uncredited)}"
+                nested.append(li(f"Credited: {escape(', '.join(issue.credited))}"))
+            nested.append(
+                li(
+                    "Ignored (not expected to credit): "
+                    f"{escape(', '.join(issue.ignored_uncredited))}"
+                )
             )
             if issue.record_url:
-                lines.append(
-                    f"  * Contribution record: [node/{issue.record_nid}]({issue.record_url})"
+                nested.append(
+                    li(
+                        "Contribution record: "
+                        f"{a(issue.record_url, f'node/{issue.record_nid}')}"
+                    )
                 )
-            lines.append("")
+            pm_items.append(
+                format_issue_item(
+                    issue.iid,
+                    issue.title,
+                    issue.issue_url,
+                    nested=nested,
+                )
+            )
+        blocks.append(ul(pm_items))
 
     if approved_items:
-        lines.extend([f"## Approved ({len(approved_items)})", ""])
-        lines.append(
-            "_These closed issues were marked reviewed. "
-            "Use `--unapprove` to restore them to the audit._"
+        blocks.append(h3(f"Approved ({len(approved_items)})"))
+        blocks.append(
+            p(
+                em(
+                    "These closed issues were marked reviewed. "
+                    "Use --unapprove to restore them to the audit."
+                )
+            )
         )
-        lines.append("")
-        for issue in approved_items[:20]:
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
+        approved_html = [
+            format_issue_item(issue.iid, issue.title, issue.issue_url)
+            for issue in approved_items[:20]
+        ]
         if len(approved_items) > 20:
-            lines.append(f"* … and {len(approved_items) - 20} more")
-        lines.append("")
+            approved_html.append(li(f"… and {len(approved_items) - 20} more"))
+        blocks.append(ul(approved_html))
 
-    return "\n".join(lines)
+    return join_blocks(blocks) + "\n"
 
 
 def parse_approval_target(value: str) -> tuple[int, str | None]:
@@ -1125,7 +1189,7 @@ def main() -> int:
 
     generated_at = datetime.now(tz=timezone.utc).isoformat()
     duplicate_records = duplicate_contribution_records(records)
-    markdown = render_audit_markdown(
+    html = render_audit_html(
         project,
         pending,
         approved_items,
@@ -1133,7 +1197,7 @@ def main() -> int:
         generated_at,
         duplicate_records=duplicate_records,
     )
-    project.audit_output.write_text(markdown)
+    project.audit_output.write_text(html)
     print(f"Wrote {project.audit_output}")
 
     counts = {

@@ -53,8 +53,8 @@ python3 scripts/credit_audit.py
 
 Generated reports:
 
-- `ai_context/reports/release-notes-{milestone}.md` — release notes (e.g. `release-notes-1.0.0-beta3.md`)
-- `ai_context/reports/credit-audit.md` — credit review report
+- `ai_context/reports/release-notes-{milestone}.html` — release notes (e.g. `release-notes-1.0.0-beta3.html`)
+- `ai_context/reports/credit-audit.html` — credit review report
 
 Cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab on every run.
 
@@ -68,10 +68,10 @@ One report per matching GitLab milestone. **Filenames and `--period` use the mil
 
 | File | Milestone |
 |------|-----------|
-| `reports/release-notes-1.0.0-alpha.md` | `1.0.0-alpha` |
-| `reports/release-notes-1.0.0-beta1.md` | `1.0.0-beta1` |
-| `reports/release-notes-1.0.0-beta2.md` | `1.0.0-beta2` |
-| `reports/release-notes-1.0.0-beta3.md` | `1.0.0-beta3` (current) |
+| `reports/release-notes-1.0.0-alpha.html` | `1.0.0-alpha` |
+| `reports/release-notes-1.0.0-beta1.html` | `1.0.0-beta1` |
+| `reports/release-notes-1.0.0-beta2.html` | `1.0.0-beta2` |
+| `reports/release-notes-1.0.0-beta3.html` | `1.0.0-beta3` (current) |
 
 - **Release notes** include credited issues **assigned to that milestone** on GitLab.
 - **Release prep** scopes issues assigned to the milestone or closed within its date window.
@@ -101,7 +101,7 @@ Optional milestone filters:
 
 ### Releases mode (`period_source: "releases"`)
 
-For projects without GitLab milestone dates. Period boundaries come from Drupal.org release tags; issues are placed by GitLab close date within each tag window. Report files use release-derived keys, e.g. `reports/release-notes-beta2-to-now.md`. Pass `--period beta2-to-now` (or `all`).
+For projects without GitLab milestone dates. Period boundaries come from Drupal.org release tags; issues are placed by GitLab close date within each tag window. Report files use release-derived keys, e.g. `reports/release-notes-beta2-to-now.html`. Pass `--period beta2-to-now` (or `all`).
 
 ## Common workflows
 
@@ -141,7 +141,7 @@ python3 scripts/release_prep.py --list-by-milestone --write-output
 python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta1"
 ```
 
-Writes `{project}/reports/milestone-assignments.md` with `--write-output`. Create milestones on GitLab, then assign issues from the list.
+Writes `{project}/reports/milestone-assignments.html` with `--write-output`. Create milestones on GitLab, then assign issues from the list.
 
 ## Release status (`release_prep.py`)
 
@@ -164,7 +164,7 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 Example:
 
 ```
-* Release notes: ai_context/reports/release-notes-1.0.0-beta3.md (83 credited) — milestone has 86
+* Release notes: ai_context/reports/release-notes-1.0.0-beta3.html (83 credited) — milestone has 86
     3 closed in milestone not in release notes (duplicate / won't fix / works as designed):
     #3586286: … — won't fix (why::wontFix) — …
 ```
@@ -173,7 +173,7 @@ Run `python3 scripts/credit_audit.py --refresh` if cache counts look stale.
 
 ## Release notes output
 
-Each `{project}/reports/release-notes-{milestone}.md` file includes:
+Each `{project}/reports/release-notes-{milestone}.html` file includes:
 
 1. **Credited issue total**
 2. **Summary paragraph** (custom or auto-generated)
@@ -211,7 +211,7 @@ Finds closed issues where credits may be incomplete:
 Issues with `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` are exempt.
 
 ```bash
-python3 scripts/credit_audit.py                    # write credit-audit.md
+python3 scripts/credit_audit.py                    # write credit-audit.html
 python3 scripts/credit_audit.py --review           # interactive review
 python3 scripts/credit_audit.py --refresh          # refresh all caches
 python3 scripts/credit_audit.py --refresh-issue 3579841
@@ -287,7 +287,7 @@ python3 scripts/credit_audit.py --project my_module
 --project NAME           Project machine name
 --milestone TITLE        GitLab milestone title (required for status report)
 --list-by-milestone      List closed issues grouped by suggested milestone
---write-output           Write reports/milestone-assignments.md
+--write-output           Write reports/milestone-assignments.html
 ```
 
 ## Data sources
@@ -323,9 +323,9 @@ ai_context/
     closed_issues.json
     issues.json
   reports/
-    release-notes-{milestone}.md
-    credit-audit.md
-    milestone-assignments.md
+    release-notes-{milestone}.html
+    credit-audit.html
+    milestone-assignments.html
   summaries/
     {milestone}.prompt.md
     {milestone}.txt

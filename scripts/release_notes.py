@@ -20,6 +20,17 @@ from urllib.parse import quote, unquote
 
 import requests
 
+from html_report import (
+    em,
+    format_issue_item,
+    h2,
+    h3,
+    join_blocks,
+    li,
+    p,
+    strong,
+    ul,
+)
 from project import REPO_ROOT, ProjectConfig, add_project_argument
 
 DEFAULT_MILESTONE_CLOSE_GRACE_HOURS = 24.0
@@ -1224,7 +1235,7 @@ def write_summary_prompt(
     return path
 
 
-def render_markdown(
+def render_html(
     report: PeriodReport,
     project: ProjectConfig,
     exclude_from_lists: set[int] | None = None,
@@ -1267,57 +1278,60 @@ def render_markdown(
             uncategorized_count=len(uncategorized),
         )
 
-    lines: list[str] = [
-        f"# {report.period.title}",
-        "",
-        f"**{total_issues} credited issues**",
-        "",
-        summary,
-        "",
-        f"_Generated {report.generated_at}_",
-        "",
+    blocks: list[str] = [
+        h2(report.period.title),
+        p(strong(f"{total_issues} credited issues")),
+        p(summary),
+        p(em(f"Generated {report.generated_at}")),
     ]
 
     if features:
-        lines.extend([f"## New Features ({len(features)})", ""])
-        for issue in sorted(features, key=lambda item: item.iid):
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
-        lines.append("")
+        blocks.append(h3(f"New Features ({len(features)})"))
+        blocks.append(
+            ul(
+                format_issue_item(issue.iid, issue.title, issue.issue_url)
+                for issue in sorted(features, key=lambda item: item.iid)
+            )
+        )
 
     if bugs:
-        lines.extend([f"## Bug Fixes ({len(bugs)})", ""])
-        for issue in sorted(bugs, key=lambda item: item.iid):
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
-        lines.append("")
+        blocks.append(h3(f"Bug Fixes ({len(bugs)})"))
+        blocks.append(
+            ul(
+                format_issue_item(issue.iid, issue.title, issue.issue_url)
+                for issue in sorted(bugs, key=lambda item: item.iid)
+            )
+        )
 
     if other_major_display or other_major_accounted:
-        lines.extend(
-            [f"## Other Major Contributions ({len(other_major_accounted)})", ""]
+        blocks.append(h3(f"Other Major Contributions ({len(other_major_accounted)})"))
+        blocks.append(
+            ul(
+                format_issue_item(issue.iid, issue.title, issue.issue_url)
+                for issue in sorted(other_major_display, key=lambda item: item.iid)
+            )
         )
-        for issue in sorted(other_major_display, key=lambda item: item.iid):
-            lines.append(f"* [#{issue.iid}]({issue.issue_url}): {issue.title}")
-        lines.append("")
 
-    lines.extend(["## Additional Contributions", ""])
-    for category in ("plan", "task", "support", "discuss"):
-        count = other_counts.get(category, 0)
-        label = category.capitalize()
-        lines.append(f"* {label}: {count}")
+    blocks.append(h3("Additional Contributions"))
+    blocks.append(
+        ul(
+            li(f"{category.capitalize()}: {other_counts.get(category, 0)}")
+            for category in ("plan", "task", "support", "discuss")
+        )
+    )
     if uncategorized:
-        lines.append(f"* Uncategorized credited issues: {len(uncategorized)}")
-    lines.append("")
+        blocks.append(ul([li(f"Uncategorized credited issues: {len(uncategorized)}")]))
 
-    lines.extend(
+    people = format_people_counter(report) or "none"
+    orgs = format_counter(report.org_counts) or "none"
+    blocks.extend(
         [
-            "## Contributors",
-            "",
-            f"**People:** {format_people_counter(report) or 'none'}",
-            "",
-            f"**Organizations:** {format_counter(report.org_counts) or 'none'}",
-            "",
+            h3("Contributors"),
+            p(f"{strong('People:')} {people}"),
+            p(f"{strong('Organizations:')} {orgs}"),
         ]
     )
-    return "\n".join(lines)
+    return join_blocks(blocks) + "\n"
 
 
 def load_or_build_period_report(
@@ -1476,9 +1490,9 @@ def main() -> int:
             closed_issues=closed_issues,
             ctx=ctx,
         )
-        markdown = render_markdown(report, project, exclude_from_lists=exclude_from_lists)
+        html = render_html(report, project, exclude_from_lists=exclude_from_lists)
         output_path = project.release_notes_report(period.slug)
-        output_path.write_text(markdown)
+        output_path.write_text(html)
         print(f"Wrote {output_path}")
 
         if args.write_summary_prompts:

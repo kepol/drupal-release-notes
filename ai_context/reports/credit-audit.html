@@ -1,0 +1,378 @@
+<h2>Credit audit</h2>
+<p>Closed ai_context issues that may need credit review on <a href="https://new.drupal.org">new.drupal.org</a>.</p>
+<p><strong>0 issues need review</strong> · <strong>9 exempt (duplicate / won&#x27;t fix)</strong> · <strong>75 ignored (PM labels only)</strong> · <strong>40 issues approved</strong></p>
+<p><em>Generated 2026-07-05T00:36:37.159774+00:00</em></p>
+<h3>How to approve</h3>
+<p>After reviewing an issue on Drupal.org, mark it so it won't appear again:</p>
+<pre><code># Interactive review (step through each issue)
+python3 scripts/credit_audit.py --project ai_context --review
+
+# Whole issue reviewed (no record, no credits, or all uncredited people OK)
+python3 scripts/credit_audit.py --project ai_context --approve 3586230
+
+# Only one listed-but-uncredited person is OK
+python3 scripts/credit_audit.py --project ai_context --approve 3586230:danrod
+
+# Undo
+python3 scripts/credit_audit.py --project ai_context --unapprove 3586230
+python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod</code></pre>
+<p>Approvals are stored in <code>ai_context/cache/credit_approvals.json</code>.</p>
+<h3>Duplicate contribution records (1)</h3>
+<p>Multiple published records point at the same GitLab issue. The audit merges credits across them, preferring records that have credits granted. Consider deleting stale duplicates on Drupal.org.</p>
+<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586238">#3586238</a>: Fix PHPStan failures in CCC. — <a href="https://new.drupal.org/node/11454931">node/11454931</a>, <a href="https://new.drupal.org/node/11454932">node/11454932</a></li></ul>
+<h3>No contribution record (0)</h3>
+<p><em>None.</em></p>
+<h3>Contribution record with no credits granted (0)</h3>
+<p><em>None.</em></p>
+<h3>People listed but not credited (0)</h3>
+<p><em>None.</em></p>
+<h3>No credits expected — duplicate / won&#x27;t fix (9)</h3>
+<p>GitLab labels <code>why::duplicate</code> or <code>why::wontFix</code>. These issues do not need a contribution record or granted credits.</p>
+<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547042">#3547042</a>: Update AI CCC project page.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11424635">node/11424635</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3570934">#3570934</a>: Add content type context scope for MVP.
+<ul><li>GitLab label: <code>why::wontFix</code> (won&#x27;t fix)</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11440303">node/11440303</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586190">#3586190</a>: Allow AI Context provider/model setting to be explicitly unset.
+<ul><li>GitLab label: <code>why::wontFix</code> (won&#x27;t fix)</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454558">node/11454558</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586205">#3586205</a>: Avoid recreating scope plugins during selection.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454536">node/11454536</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586286">#3586286</a>: `hook_ai_context_scope_values_alter()` is ignored by scope forms and labels.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586312">#3586312</a>: Unset inherit_parent_scope silently wipes stored scope on save (data loss).
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11468778">node/11468778</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586313">#3586313</a>: Syncing saves bypass all integrity constraints instead of only the global cap.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586314">#3586314</a>: Item form discards user-entered scope when the subcontext feature is disabled.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586316">#3586316</a>: Harden update 10011: empty-chunk guard and NULL-only backfill.
+<ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li></ul>
+<h3>Ignored uncredited — project managers (75)</h3>
+<p>The only listed-but-uncredited people are in <code>ignore_uncredited_people.txt</code> (PMs who add labels, not code).</p>
+<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547034">#3547034</a>: [Spike] Research URL support for CCC.
+<ul><li>Credited: aidanfoster, ajv009, kepol, robloach, unqunq, webbywe</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11424627">node/11424627</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547037">#3547037</a>: Add AI CCC documentation for beta1.
+<ul><li>Credited: danrod, kepol, robloach</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11424630">node/11424630</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547038">#3547038</a>: Update AI CCC project page for beta1.
+<ul><li>Credited: danrod, erichomanchuk, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11424631">node/11424631</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3549849">#3549849</a>: Update CCC readme in prep for beta1.
+<ul><li>Credited: guptahemant, kepol, naveen.prakash.work</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11426492">node/11426492</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3556881">#3556881</a>: [Discuss] Finalize name for AI Context module (Context Control Center).
+<ul><li>Credited: aidanfoster, danrod, emma-horrell, jibran, kepol, robloach, ronaldtebrake, scottfalconer, wouters_frederik</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11431121">node/11431121</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3556908">#3556908</a>: Do not hardcode English language prompts in CCC.
+<ul><li>Credited: breidert, horvan, kepol, kumarimedha09, marcus_johansson, svendecabooter</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11431135">node/11431135</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3556909">#3556909</a>: [Discuss] Decouple AI Context from AI Agents.
+<ul><li>Credited: kepol, marcus_johansson</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11431136">node/11431136</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3564667">#3564667</a>: Add a composer.json to CCC.
+<ul><li>Credited: kepol, marcus_johansson, shamir.vs, sujal_31</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11436040">node/11436040</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566852">#3566852</a>: Add CCC overview page.
+<ul><li>Credited: bbruno, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437557">node/11437557</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566858">#3566858</a>: Update context items page with description and link when there are empty results.
+<ul><li>Credited: bbruno, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437562">node/11437562</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566861">#3566861</a>: Update CCC general settings page descriptions.
+<ul><li>Credited: bbruno, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437565">node/11437565</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566862">#3566862</a>: Update context items settings page descriptions.
+<ul><li>Credited: bbruno, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437566">node/11437566</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566863">#3566863</a>: Update CCC agents settings page description and table.
+<ul><li>Credited: bbruno, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437567">node/11437567</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566865">#3566865</a>: Update context item edit form field descriptions.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437569">node/11437569</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3566866">#3566866</a>: Update agent context edit form description, help text, and table.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11437570">node/11437570</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3567791">#3567791</a>: [Spike] CCC MCP server integration PoC.
+<ul><li>Credited: abhisekmazumdar, kepol, nikro</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11438236">node/11438236</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3569776">#3569776</a>: Adopt AI Core shared UI library in CCC and escape data before rendering.
+<ul><li>Credited: aidanfoster, b_sharpe, bbruno, erichomanchuk, kepol</li>
+<li>Ignored (not expected to credit): arianraeesi, rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11439560">node/11439560</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3572891">#3572891</a>: Create docs for Cursor and Claude code quality for CCC.
+<ul><li>Credited: dstorozhuk, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11441564">node/11441564</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3573715">#3573715</a>: Full UX review of CCC in prep for rc1.
+<ul><li>Credited: aidanfoster, bbruno, emma-horrell, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442054">node/11442054</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574136">#3574136</a>: Go through Chicago CCC test cases and make sure they work.
+<ul><li>Credited: aidanfoster, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442377">node/11442377</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574420">#3574420</a>: Add Drupal CMS 2.0 support to CCC.
+<ul><li>Credited: axioteo, divyamdotfoo, hrishikesh-dalal, kepol, kostiantyn</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442549">node/11442549</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574445">#3574445</a>: Add Drupal CMS 2.0 CCC install steps on the project page.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442566">node/11442566</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574905">#3574905</a>: CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope.
+<ul><li>Credited: abhisekmazumdar, kepol, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442880">node/11442880</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574906">#3574906</a>: CCC: Refactor to move key form validations into entity-level validators / presave.
+<ul><li>Credited: danrod, kepol, scottfalconer, svendecabooter</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442881">node/11442881</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3574907">#3574907</a>: CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched.
+<ul><li>Credited: kepol, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11442882">node/11442882</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3575590">#3575590</a>: Add ai_agents_debugger debug and ai_agents_explorer explore operations and links in CCC.
+<ul><li>Credited: axioteo, kepol, scottfalconer, unqunq</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11443348">node/11443348</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3576093">#3576093</a>: Fix eslint errors in GitLab UI even when pipeline is green.
+<ul><li>Credited: kepol, kieran.cott</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11443755">node/11443755</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3576100">#3576100</a>: [Discuss] CCC architecture audit decision log questions.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11443761">node/11443761</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3576102">#3576102</a>: Pre-beta security review in prep for CCC beta1.
+<ul><li>Credited: erichomanchuk, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11443762">node/11443762</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577379">#3577379</a>: Sprint 5 CCC roadmap updates, sprint planning, and issue triage.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444732">node/11444732</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577398">#3577398</a>: Update CCC readme for new mdxeditor location.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444748">node/11444748</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577425">#3577425</a>: [Discuss] Possible styling updates for context listing.
+<ul><li>Credited: aidanfoster, bbruno, emma-horrell, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444768">node/11444768</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577426">#3577426</a>: Redo context item duplicate feature without ECA.
+<ul><li>Credited: kepol, kostiantyn, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444769">node/11444769</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577427">#3577427</a>: Update context item revision diff feature for progressive enhancement.
+<ul><li>Credited: a.dmitriiev, danrod, dstorozhuk, erichomanchuk, kepol, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444770">node/11444770</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577428">#3577428</a>: Update context item target entities for progressive enhancement.
+<ul><li>Credited: annmarysruthy, danrod, kepol, kostiantyn, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444771">node/11444771</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577512">#3577512</a>: Duplicate Revisions tabs appear when editing an AI Context Item.
+<ul><li>Credited: annmarysruthy, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444830">node/11444830</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577644">#3577644</a>: CCC beta1 release planning.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444907">node/11444907</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577656">#3577656</a>: Remove zero badge when context has no subcontext.
+<ul><li>Credited: bbruno, kepol, nexusnovaz</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444918">node/11444918</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577657">#3577657</a>: CCC beta blog post.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444919">node/11444919</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577658">#3577658</a>: CCC beta1 video.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444920">node/11444920</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577661">#3577661</a>: CCC Chicago session slides.
+<ul><li>Credited: aidanfoster, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444922">node/11444922</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577664">#3577664</a>: CCC Chicago keynote slides.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444924">node/11444924</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577667">#3577667</a>: Create CCC beta1 release.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444926">node/11444926</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577669">#3577669</a>: CCC beta1 QA.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444927">node/11444927</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3577670">#3577670</a>: CCC Chicago planning.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11444928">node/11444928</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3578114">#3578114</a>: Update context scope plugin manage link/url/route functionality.
+<ul><li>Credited: danrod, erichomanchuk, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445189">node/11445189</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3578386">#3578386</a>: Multiple entities can be set on the target entity reference autocomplete field but only 1 is saved.
+<ul><li>Credited: annmarysruthy, erichomanchuk, kepol, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445363">node/11445363</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3578657">#3578657</a>: Drupal 10: Error on /admin/ai/context/items/add: scheduler_content_moderation_integration module conflict.
+<ul><li>Credited: annmarysruthy, dstorozhuk, kepol, scottfalconer</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445570">node/11445570</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3579344">#3579344</a>: Create CONTRIBUTORS.md for CCC.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445962">node/11445962</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3579394">#3579394</a>: CCC icon doesn&#x27;t show in vanilla Drupal 10 and Drupal 11 install.
+<ul><li>Credited: bbruno, kepol, svendecabooter</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445994">node/11445994</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3579396">#3579396</a>: CCC target entity types settings not working.
+<ul><li>Credited: annmarysruthy, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11445995">node/11445995</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3579841">#3579841</a>: Can&#x27;t Apply Scheduler Patch.
+<ul><li>Credited: kepol, marcus_johansson, rajabnatshah, robloach</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11446290">node/11446290</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3580910">#3580910</a>: Improve config validation and use #config_target for settings form.
+<ul><li>Credited: abhisekmazumdar, kepol, mglaman, svendecabooter</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11446936">node/11446936</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3584775">#3584775</a>: Remove AiContextItemType.
+<ul><li>Credited: kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11449473">node/11449473</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586116">#3586116</a>: Update context listing to not use target column.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11450408">node/11450408</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586127">#3586127</a>: Update context listing to show workflow state.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11450416">node/11450416</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586155">#3586155</a>: Create GitLab issue and merge request templates for ai_context project.
+<ul><li>Credited: kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11466339">node/11466339</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586169">#3586169</a>: [Discuss] Selection extension points and diagnostics for context selection.
+<ul><li>Credited: kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11455040">node/11455040</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586170">#3586170</a>: [Discuss] Structured context content format and authoring model.
+<ul><li>Credited: kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11459797">node/11459797</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586192">#3586192</a>: Clean up CCC inconsistencies and DX issues before rc1 (part 2).
+<ul><li>Credited: ahmad-khalil-imagex, jucs7, kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11459794">node/11459794</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586196">#3586196</a>: [Discuss] Context scope matching semantics: additive OR, filters, and UX clarity.
+<ul><li>Credited: aidanfoster, emma-horrell, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania, vidit-anjaria</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11466433">node/11466433</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586198">#3586198</a>: [Discuss] Associating adhoc vocabularies (freetagging) with context items.
+<ul><li>Credited: aidanfoster, emma-horrell, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454919">node/11454919</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586203">#3586203</a>: Pre-rc1 CCC docs updates.
+<ul><li>Credited: kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454557">node/11454557</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586207">#3586207</a>: Conditional Subcontext Provider Calls.
+<ul><li>Credited: abhisekmazumdar, ahmad-khalil-imagex, aidanfoster, emma-horrell, kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11466693">node/11466693</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586208">#3586208</a>: CCC Non-Agent `match_all` Convenience API.
+<ul><li>Credited: abhisekmazumdar, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11459796">node/11459796</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586209">#3586209</a>: CCC Usage Tracking Query/Save Pattern.
+<ul><li>Credited: abhisekmazumdar, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11466797">node/11466797</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586210">#3586210</a>: Update use case context scope defaults.
+<ul><li>Credited: aidanfoster, emma-horrell, kepol, mglaman</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454404">node/11454404</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586211">#3586211</a>: Update CCC overview page with hide option and new wording.
+<ul><li>Credited: aidanfoster, bbruno, emma-horrell, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11452454">node/11452454</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586212">#3586212</a>: Update max context items in general settings.
+<ul><li>Credited: ahmad-khalil-imagex, aidanfoster, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11452452">node/11452452</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586214">#3586214</a>: Hide additional context scope options if global is selected.
+<ul><li>Credited: aidanfoster, emma-horrell, jucs7, kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11452451">node/11452451</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586228">#3586228</a>: Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule.
+<ul><li>Credited: ahmad-khader, aidanfoster, emma-horrell, kepol, robloach</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454420">node/11454420</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586229">#3586229</a>: CCC optional feature suggestions in UI.
+<ul><li>Credited: ahmad-khalil-imagex, aidanfoster, kepol, robloach</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11454917">node/11454917</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586259">#3586259</a>: Fix phpstan error in AiContextSubcontextToggleTrait.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): vidit-anjaria</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11459798">node/11459798</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586261">#3586261</a>: Clean up bundleless context item follow-ups.
+<ul><li>Credited: kepol, kieran.cott</li>
+<li>Ignored (not expected to credit): vidit-anjaria</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11468032">node/11468032</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586280">#3586280</a>: Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes.
+<ul><li>Credited: ahmad-khader, jucs7, kepol</li>
+<li>Ignored (not expected to credit): vidit-anjaria</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11467991">node/11467991</a></li></ul></li></ul>
+<h3>Approved (40)</h3>
+<p><em>These closed issues were marked reviewed. Use --unapprove to restore them to the audit.</em></p>
+<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3545824">#3545824</a>: Create demo Context Control Center for Vienna 2025.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547892">#3547892</a>: CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3549081">#3549081</a>: Group AI Context menu items.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3549082">#3549082</a>: Within the Context Pools UI, link the Context for the forms to see the details of each context.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3550034">#3550034</a>: Add AI context item usage data and page.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3550892">#3550892</a>: Show description instead of id in the AI Contexts listing page.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3550895">#3550895</a>: CCC tags should be required.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3552972">#3552972</a>: Wrong dependency definition in info.yml causes composer to not install.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3554277">#3554277</a>: ai_context_ai_function_call_info_alter does not work with contexts only set via &quot;always_include&quot;.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3557719">#3557719</a>: [Spike] Research AI Context categories.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3558583">#3558583</a>: AI Context UX meeting 18 Nov 2025.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3558814">#3558814</a>: [Spike] CCC 1.0 brainstorming.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3563043">#3563043</a>: Add toolbar icon to CCC top level menu item.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3563089">#3563089</a>: Add revision comparison diff support for context item revisions.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3563127">#3563127</a>: Add created date to context item entity.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3563975">#3563975</a>: Something in CCC is causing node form to not show some fields.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3564706">#3564706</a>: [Meta] Context Scope feature.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3564714">#3564714</a>: Allow context scoped to entities in CCC.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3567571">#3567571</a>: CCC MVP Demo: Create draft FinDrop context.</li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3568673">#3568673</a>: Add context scope base code and use case context scope plugin.</li>
+<li>… and 20 more</li></ul>
