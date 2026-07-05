@@ -1,10 +1,11 @@
 # Issue numbers to hide from release note list sections:
 #   - New Features
 #   - Bug Fixes
-#   - Other Major Contributions
+#   - Other Major Issues
+#   - Additional Code Issues
 #
-# Excluded issues are still counted in Additional Contributions category
-# totals (Plan, Task, Support, Discuss) and in contributor totals.
+# Excluded issues are still counted in Additional Non-Code Contributions
+# category totals (Plan, Task, Support) and in contributor totals.
 # Major/critical issues stay in the major bucket unless auto-excluded
 # by title pattern (sprint planning, release creation, QA, etc.).
 #

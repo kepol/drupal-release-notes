@@ -8,7 +8,7 @@ import re
 import sys
 import time
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from credit_audit import (
@@ -24,8 +24,12 @@ from credit_audit import (
 )
 from period_context import (
     PERIOD_SOURCE_MILESTONES,
+    FutureMilestoneClosure,
     PeriodContext,
     build_period_context,
+    current_milestone_title,
+    find_closed_future_milestone_issues,
+    latest_released_milestone_title,
     milestone_period_summary,
     milestone_scope_iids,
     milestone_window_for,
@@ -504,6 +508,75 @@ def format_milestone_mismatch_line(mismatch: MilestoneMismatch) -> str:
     )
 
 
+def format_future_milestone_closure_line(closure: FutureMilestoneClosure) -> str:
+    closed = closure.closed_at.strftime("%Y-%m-%d")
+    url = closure.web_url or f"#{closure.iid}"
+    return indented(
+        f"#{closure.iid}: {closure.title} — closed {closed}, "
+        f"assigned {closure.assigned!r} → reassign to "
+        f"{closure.current_milestone!r} ({url})"
+    )
+
+
+def render_future_milestone_closures_html(
+    project: ProjectConfig,
+    closures: list[FutureMilestoneClosure],
+    *,
+    current_milestone: str,
+    latest_released: str | None,
+    generated_at: str,
+) -> str:
+    blocks = [
+        h2("Closed issues on future milestones"),
+        p(
+            "These issues are closed on GitLab but still assigned to a milestone "
+            f"after the current release ({escape(current_milestone)}). "
+            "Latest Drupal.org release: "
+            f"{escape(latest_released or '(unknown)')}."
+        ),
+        p(em(f"Generated {generated_at}")),
+    ]
+    if closures:
+        items = []
+        for closure in closures:
+            url = closure.web_url or project.issue_url(closure.iid)
+            items.append(
+                format_issue_item(
+                    closure.iid,
+                    (
+                        f"{closure.title} — closed "
+                        f"{closure.closed_at.strftime('%Y-%m-%d')}, assigned "
+                        f"{closure.assigned} → reassign to "
+                        f"{closure.current_milestone}"
+                    ),
+                    url,
+                )
+            )
+        blocks.append(ul(items))
+    else:
+        blocks.append(p(em("None")))
+    return join_blocks(blocks) + "\n"
+
+
+def write_future_milestone_closures_report(
+    project: ProjectConfig,
+    closures: list[FutureMilestoneClosure],
+    ctx: PeriodContext,
+) -> Path:
+    current = current_milestone_title(ctx) or "(unknown)"
+    html = render_future_milestone_closures_html(
+        project,
+        closures,
+        current_milestone=current,
+        latest_released=latest_released_milestone_title(ctx),
+        generated_at=datetime.now(tz=timezone.utc).isoformat(),
+    )
+    path = project.future_milestone_closures_report
+    project.reports_dir.mkdir(parents=True, exist_ok=True)
+    path.write_text(html)
+    return path
+
+
 @dataclass(frozen=True)
 class MilestoneAssignment:
     iid: int
@@ -793,6 +866,32 @@ def main() -> int:
     ]
     if period_summary:
         lines.append(period_summary)
+
+    future_closures = find_closed_future_milestone_issues(closed_issues, ctx)
+    current_release = current_milestone_title(ctx)
+    latest_released = latest_released_milestone_title(ctx)
+    if ctx.source == PERIOD_SOURCE_MILESTONES and current_release:
+        future_details = (
+            [format_future_milestone_closure_line(closure) for closure in future_closures]
+            if future_closures
+            else [format_report_none()]
+        )
+        append_section(
+            lines,
+            (
+                f"Closed on future milestone: {len(future_closures)} "
+                f"(current release {current_release!r}; "
+                f"latest Drupal.org tag {latest_released!r})"
+            ),
+            future_details,
+        )
+        report_path = write_future_milestone_closures_report(
+            project,
+            future_closures,
+            ctx,
+        )
+        lines.append("")
+        lines.append(f"Report: {report_path.relative_to(project.project_dir)}")
 
     append_section(
         lines,

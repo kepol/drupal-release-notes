@@ -203,6 +203,96 @@ def milestone_titles(ctx: PeriodContext) -> list[str]:
     return titles
 
 
+def latest_released_milestone_title(ctx: PeriodContext) -> str | None:
+    """Latest GitLab milestone title that has a matching Drupal.org release tag."""
+    if not ctx.releases:
+        return None
+    if ctx.source != PERIOD_SOURCE_MILESTONES or not ctx.windows:
+        return ctx.releases[-1].version
+    window_titles = {window.title for window in ctx.windows}
+    matched: str | None = None
+    for release in ctx.releases:
+        if release.version in window_titles:
+            matched = release.version
+    return matched
+
+
+def current_milestone_title(ctx: PeriodContext) -> str | None:
+    """GitLab milestone for the release currently being prepared."""
+    if ctx.source != PERIOD_SOURCE_MILESTONES or not ctx.windows:
+        if ctx.releases:
+            try:
+                return next_release_version(ctx.releases[-1].version)
+            except ValueError:
+                return ctx.releases[-1].version
+        return None
+
+    latest_released = latest_released_milestone_title(ctx)
+    window_titles = [window.title for window in ctx.windows]
+    if latest_released and latest_released in window_titles:
+        index = window_titles.index(latest_released)
+        if index + 1 < len(window_titles):
+            return window_titles[index + 1]
+    return window_titles[-1] if window_titles else None
+
+
+@dataclass(frozen=True)
+class FutureMilestoneClosure:
+    """Closed issue still assigned to a milestone after the current release."""
+
+    iid: int
+    title: str
+    web_url: str
+    assigned: str
+    current_milestone: str
+    closed_at: datetime
+
+
+def find_closed_future_milestone_issues(
+    closed_issues: dict[int, dict[str, Any]],
+    ctx: PeriodContext,
+) -> list[FutureMilestoneClosure]:
+    """Find closed issues assigned to a milestone after the current release."""
+    if ctx.source != PERIOD_SOURCE_MILESTONES or not ctx.windows:
+        return []
+
+    current = current_milestone_title(ctx)
+    if not current:
+        return []
+
+    window_titles = [window.title for window in ctx.windows]
+    try:
+        current_index = window_titles.index(current)
+    except ValueError:
+        return []
+
+    closures: list[FutureMilestoneClosure] = []
+    for iid, issue in closed_issues.items():
+        closed_raw = issue.get("closed_at")
+        if not closed_raw:
+            continue
+        milestone = issue.get("milestone") or {}
+        assigned = milestone.get("title")
+        if not assigned or assigned not in window_titles:
+            continue
+        assigned_index = window_titles.index(assigned)
+        if assigned_index <= current_index:
+            continue
+        closures.append(
+            FutureMilestoneClosure(
+                iid=int(iid),
+                title=issue.get("title", f"Issue #{iid}"),
+                web_url=issue.get("web_url", ""),
+                assigned=assigned,
+                current_milestone=current,
+                closed_at=parse_dt(closed_raw),
+            )
+        )
+
+    closures.sort(key=lambda item: (window_titles.index(item.assigned), item.closed_at))
+    return closures
+
+
 def window_label_for(milestone: str, ctx: PeriodContext) -> str:
     if ctx.source == PERIOD_SOURCE_MILESTONES:
         for window in ctx.windows:

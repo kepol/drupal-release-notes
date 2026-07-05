@@ -19,6 +19,7 @@ NON_RELEASE_NOTE_REPORTS = frozenset(
         "credit-audit.html",
         "contributors-all-releases.html",
         "milestone-assignments.html",
+        "milestone-closed-on-future.html",
     }
 )
 NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-")
@@ -103,6 +104,10 @@ class ProjectConfig:
     @property
     def contributors_totals_report(self) -> Path:
         return self.reports_dir / "contributors-all-releases.html"
+
+    @property
+    def future_milestone_closures_report(self) -> Path:
+        return self.reports_dir / "milestone-closed-on-future.html"
 
     @staticmethod
     def release_notes_filename(period_key: str) -> str:

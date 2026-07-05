@@ -181,6 +181,7 @@ python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 | **Missing contribution records** | Closed in scope with no record on new.drupal.org |
 | **No record expected** | `why::duplicate`, `why::wontFix`, or `why::worksAsDesigned` |
 | **Wrong milestone** | Assigned milestone does not match close date / window |
+| **Closed on future milestone** | Closed but assigned to a milestone after the current release (see below) |
 | **Missing in milestone** | Assigned to milestone without a contribution record |
 
 Example:
@@ -193,6 +194,18 @@ Example:
 
 Run `python3 scripts/release_notes.py --refresh-all` (or `python3 scripts/credit_audit.py --refresh`) if cache counts look stale.
 
+### Closed on future milestone
+
+Release notes and beta3 prep only include issues **assigned to that milestone on GitLab**. A closed issue on `1.0.0-beta4` will not appear in beta3 data even if it closed during the beta3 window.
+
+`release_prep.py` flags closed issues assigned to any milestone **after the current release** (next GitLab milestone after the latest Drupal.org tag). Reassign them on GitLab, then refresh:
+
+```bash
+python3 scripts/release_prep.py --milestone "1.0.0-beta3"
+```
+
+Writes `reports/milestone-closed-on-future.html` when using milestones mode.
+
 ## Release notes output
 
 Each `{project}/reports/release-notes-{milestone}.html` file is HTML ready to paste into Drupal.org release notes. It includes:
@@ -203,8 +216,9 @@ Each `{project}/reports/release-notes-{milestone}.html` file is HTML ready to pa
 4. **Contributors** — people and organizations with credit counts; names link to Drupal.org profile URLs (`/u/…`, `/org-slug`)
 5. **New Features** — `category::feature`
 6. **Bug Fixes** — `category::bug`
-7. **Other Major Contributions** — major/critical plan, task, or support
-8. **Additional Contributions** — category counts (issues listed above excluded)
+7. **Other Major Issues** — major/critical plan, task, or support (non-feature/non-bug)
+8. **Additional Code Issues** — credited issues with a related merge request not listed above
+9. **Additional Non-Code Contributions** — everything else, by category count (Plan, Task, Support)
 
 Only issues with at least one granted credit on Drupal.org are included.
 
@@ -222,9 +236,11 @@ Each run writes `{project}/summaries/{milestone}.prompt.md` alongside the HTML r
 
 ### Manual fine-tuning
 
-**Hide issues from lists** — add IIDs to `{project}/exclude_from_lists.txt`. Hidden issues stay in contributor counts and Additional Contributions totals.
+**Hide issues from lists** — add IIDs to `{project}/exclude_from_lists.txt`. Hidden issues stay in contributor counts and additional section totals.
 
-**Automatic exclusions from Other Major lists** — sprint planning, sessions/meetings, release-creation tasks, QA tasks (still counted in Additional Contributions).
+**Automatic exclusions from Other Major lists** — sprint planning, sessions/meetings, release-creation tasks, QA tasks (still counted in Additional Non-Code Contributions or Additional Code Issues when applicable).
+
+**Merge request detection** — GitLab related-MR lookup is cached on each credited issue (`has_merge_request` in `{project}/cache/issues.json`). Issues labeled `what::code` count as code issues when MR metadata is not yet cached.
 
 ## Credit audit
 
@@ -371,6 +387,7 @@ ai_context/
     contributors-all-releases.html
     credit-audit.html
     milestone-assignments.html
+    milestone-closed-on-future.html
     compare-drupalorg-*.html  (from combined_milestone_report.py)
   summaries/
     {milestone}.prompt.md     Regenerated with release notes

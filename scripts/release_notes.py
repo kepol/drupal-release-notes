@@ -53,6 +53,7 @@ GITLAB_KEYCHAIN_ACCOUNT = "git.drupalcode.org"
 
 CATEGORY_LABEL = re.compile(r"^category::(\w+)$")
 PRIORITY_LABEL = re.compile(r"^priority::(\w+)$")
+WHAT_CODE_LABEL = "what::code"
 
 FEATURE_CATEGORIES = {"feature"}
 BUG_CATEGORIES = {"bug"}
@@ -1029,6 +1030,66 @@ def save_issues_cache(project: ProjectConfig, cache: dict[str, dict[str, Any]]) 
     save_json(project.issues_cache, cache)
 
 
+def issue_has_merge_request(meta: dict[str, Any]) -> bool:
+    """True when GitLab reports a related MR or the issue carries what::code."""
+    if meta.get("has_merge_request"):
+        return True
+    return WHAT_CODE_LABEL in meta.get("labels", [])
+
+
+def merge_request_metadata_incomplete(
+    iids: set[int],
+    issues_cache: dict[str, dict[str, Any]],
+) -> bool:
+    for iid in iids:
+        entry = issues_cache.get(str(iid))
+        if entry is None or "has_merge_request" not in entry:
+            return True
+    return False
+
+
+def enrich_merge_request_metadata(
+    client: ApiClient,
+    issues_cache: dict[str, dict[str, Any]],
+    iids: set[int],
+    *,
+    refresh: bool = False,
+) -> None:
+    """Populate has_merge_request on cached issue entries via GitLab API."""
+    from gitlab_activity import find_merge_requests
+
+    pending = sorted(
+        iid
+        for iid in iids
+        if refresh or "has_merge_request" not in issues_cache.get(str(iid), {})
+    )
+    if not pending:
+        return
+
+    print(f"Checking merge requests for {len(pending)} credited issues...")
+    for index, iid in enumerate(pending, start=1):
+        key = str(iid)
+        entry = issues_cache.setdefault(
+            key,
+            {
+                "iid": iid,
+                "title": f"Issue #{iid}",
+                "labels": [],
+                "category": None,
+                "priority": None,
+                "web_url": client.project.issue_url(iid),
+            },
+        )
+        merge_requests = find_merge_requests(client, iid)
+        entry["has_merge_request"] = bool(merge_requests)
+        entry["merge_request_urls"] = [
+            merge_request["web_url"] for merge_request in merge_requests
+        ]
+        if index % 25 == 0 or index == len(pending):
+            print(f"  {index}/{len(pending)} issues checked")
+        time.sleep(0.1)
+
+
 def parse_issue_entry(issue: dict[str, Any], project: ProjectConfig) -> dict[str, Any]:
     iid = int(issue["iid"])
     category = None
@@ -1162,6 +1223,16 @@ def fetch_issue_metadata(
             f"{still_missing[:5]}{'...' if len(still_missing) > 5 else ''}",
             file=sys.stderr,
         )
+
+    needs_mr = refresh or merge_request_metadata_incomplete(iids, issues_cache)
+    if needs_mr:
+        enrich_merge_request_metadata(
+            client,
+            issues_cache,
+            iids,
+            refresh=refresh,
+        )
+        save_issues_cache(project, issues_cache)
 
     return {iid: issues_cache[str(iid)] for iid in iids if str(iid) in issues_cache}
 
@@ -1516,6 +1587,81 @@ def major_contribution_iids(issues: list[CreditedIssue]) -> set[int]:
     return {issue.iid for issue in issues if is_other_major_contribution(issue)}
 
 
+def primary_release_iids(issues: list[CreditedIssue]) -> set[int]:
+    """Feature, bug, and other-major issues (used to bucket the remainder)."""
+    primary: set[int] = set()
+    for issue in issues:
+        if issue.category in FEATURE_CATEGORIES | BUG_CATEGORIES:
+            primary.add(issue.iid)
+        elif is_other_major_contribution(issue):
+            primary.add(issue.iid)
+    return primary
+
+
+@dataclass
+class ClassifiedReleaseIssues:
+    features: list[CreditedIssue]
+    bugs: list[CreditedIssue]
+    other_major_display: list[CreditedIssue]
+    other_major_accounted: list[CreditedIssue]
+    additional_code_display: list[CreditedIssue]
+    additional_code_accounted: int
+    non_code_counts: Counter[str]
+    non_code_uncategorized: int
+
+
+def classify_release_issues(
+    accountable: list[CreditedIssue],
+    listable: list[CreditedIssue],
+    issue_meta: dict[int, dict[str, Any]],
+) -> ClassifiedReleaseIssues:
+    features = [issue for issue in listable if issue.category in FEATURE_CATEGORIES]
+    bugs = [issue for issue in listable if issue.category in BUG_CATEGORIES]
+    other_major_display = [
+        issue for issue in listable if is_other_major_contribution(issue)
+    ]
+    other_major_accounted = [
+        issue for issue in accountable if is_other_major_contribution(issue)
+    ]
+    primary_iids = primary_release_iids(accountable)
+
+    additional_code_display = [
+        issue
+        for issue in listable
+        if issue.iid not in primary_iids
+        and issue_has_merge_request(issue_meta.get(issue.iid, {}))
+    ]
+    additional_code_accounted = sum(
+        1
+        for issue in accountable
+        if issue.iid not in primary_iids
+        and issue_has_merge_request(issue_meta.get(issue.iid, {}))
+    )
+
+    non_code_counts: Counter[str] = Counter()
+    non_code_uncategorized = 0
+    for issue in accountable:
+        if issue.iid in primary_iids:
+            continue
+        if issue_has_merge_request(issue_meta.get(issue.iid, {})):
+            continue
+        if issue.category in OTHER_CATEGORIES:
+            non_code_counts[issue.category] += 1
+        else:
+            non_code_uncategorized += 1
+
+    return ClassifiedReleaseIssues(
+        features=features,
+        bugs=bugs,
+        other_major_display=other_major_display,
+        other_major_accounted=other_major_accounted,
+        additional_code_display=additional_code_display,
+        additional_code_accounted=additional_code_accounted,
+        non_code_counts=non_code_counts,
+        non_code_uncategorized=non_code_uncategorized,
+    )
+
+
 def load_summary_paragraph(project: ProjectConfig, period_slug: str) -> str | None:
     """Load optional AI-written summary from summaries/{slug}.txt."""
     for suffix in (".txt", ".md"):
@@ -1534,8 +1680,9 @@ def generate_factual_summary(
     feature_count: int,
     bug_count: int,
     major_count: int,
-    other_counts: Counter[str],
-    uncategorized_count: int,
+    additional_code_count: int,
+    non_code_counts: Counter[str],
+    non_code_uncategorized: int,
 ) -> str:
     """Fallback summary from section counts when no summaries/{slug}.txt exists."""
     parts: list[str] = [
@@ -1548,11 +1695,19 @@ def generate_factual_summary(
         breakdown.append(f"{bug_count} bug fix{'es' if bug_count != 1 else ''}")
     if major_count:
         breakdown.append(
-            f"{major_count} other major contribution{'s' if major_count != 1 else ''}"
+            f"{major_count} other major issue{'s' if major_count != 1 else ''}"
         )
-    additional = sum(other_counts.values()) + uncategorized_count
-    if additional:
-        breakdown.append(f"{additional} additional contribution{'s' if additional != 1 else ''}")
+    if additional_code_count:
+        breakdown.append(
+            f"{additional_code_count} additional code issue"
+            f"{'s' if additional_code_count != 1 else ''}"
+        )
+    non_code_total = sum(non_code_counts.values()) + non_code_uncategorized
+    if non_code_total:
+        breakdown.append(
+            f"{non_code_total} additional non-code contribution"
+            f"{'s' if non_code_total != 1 else ''}"
+        )
     if breakdown:
         parts.append("It includes " + ", ".join(breakdown) + ".")
     return " ".join(parts)
@@ -1562,28 +1717,26 @@ def write_summary_prompt(
     project: ProjectConfig,
     period: ReportPeriod,
     accountable: list[CreditedIssue],
-    major_iids: set[int],
     listable: list[CreditedIssue],
+    issue_meta: dict[int, dict[str, Any]],
 ) -> Path:
     """Write a prompt file to feed to an AI for a prose release summary."""
     project.summaries_dir.mkdir(parents=True, exist_ok=True)
     path = project.summaries_dir / f"{period.slug}.prompt.md"
+    classified = classify_release_issues(accountable, listable, issue_meta)
+    primary_iids = primary_release_iids(accountable)
+    non_code_issues = [
+        issue
+        for issue in accountable
+        if issue.iid not in primary_iids
+        and not issue_has_merge_request(issue_meta.get(issue.iid, {}))
+    ]
 
     def group_lines(issues: list[CreditedIssue]) -> list[str]:
         return [
             f"- #{issue.iid}: {issue.title}"
             for issue in sorted(issues, key=lambda item: item.iid)
         ]
-
-    features = [i for i in listable if i.category in FEATURE_CATEGORIES]
-    bugs = [i for i in listable if i.category in BUG_CATEGORIES]
-    major = [i for i in accountable if i.iid in major_iids]
-    other: list[CreditedIssue] = []
-    for issue in accountable:
-        if issue.iid in major_iids:
-            continue
-        if issue.category in OTHER_CATEGORIES:
-            other.append(issue)
 
     def append_section(lines: list[str], heading: str, issues: list[CreditedIssue]) -> None:
         if not issues:
@@ -1601,10 +1754,23 @@ def write_summary_prompt(
         f"Credited issues in this report: {len(accountable)}",
         "",
     ]
-    append_section(lines, "## New Features", features)
-    append_section(lines, "## Bug Fixes", bugs)
-    append_section(lines, "## Other Major Contributions", major)
-    append_section(lines, "## Additional Contributions (titles only)", other)
+    append_section(lines, "## New Features", classified.features)
+    append_section(lines, "## Bug Fixes", classified.bugs)
+    append_section(
+        lines,
+        "## Other Major Issues",
+        classified.other_major_accounted,
+    )
+    append_section(
+        lines,
+        "## Additional Code Issues",
+        classified.additional_code_display,
+    )
+    append_section(
+        lines,
+        "## Additional Non-Code Contributions (titles only)",
+        non_code_issues,
+    )
     lines.extend(
         [
             "---",
@@ -1622,33 +1788,19 @@ def render_html(
     project: ProjectConfig,
     exclude_from_lists: set[int] | None = None,
     *,
+    issue_meta: dict[int, dict[str, Any]] | None = None,
     alias_resolver: DrupalProfileAliasResolver | None = None,
     releases: list[ReleaseBoundary] | None = None,
 ) -> str:
     manual_excludes = exclude_from_lists or set()
     accountable = report.issues
-    major_iids = major_contribution_iids(report.issues)
     listable = [issue for issue in accountable if issue.iid not in manual_excludes]
-
-    features = [issue for issue in listable if issue.category in FEATURE_CATEGORIES]
-    bugs = [issue for issue in listable if issue.category in BUG_CATEGORIES]
-    other_major_display = [issue for issue in listable if is_other_major_contribution(issue)]
-    other_major_accounted = [issue for issue in accountable if is_other_major_contribution(issue)]
-    other_counts = Counter(
-        issue.category
-        for issue in accountable
-        if issue.category in OTHER_CATEGORIES and issue.iid not in major_iids
-    )
-    uncategorized = [
-        issue
-        for issue in accountable
-        if issue.category not in FEATURE_CATEGORIES | BUG_CATEGORIES | OTHER_CATEGORIES
-        and issue.iid not in major_iids
-    ]
+    meta = issue_meta or {}
+    classified = classify_release_issues(accountable, listable, meta)
 
     feature_count = len([i for i in accountable if i.category in FEATURE_CATEGORIES])
     bug_count = len([i for i in accountable if i.category in BUG_CATEGORIES])
-    major_count = len(other_major_accounted)
+    major_count = len(classified.other_major_accounted)
     total_issues = len(accountable)
 
     summary = load_summary_paragraph(project, report.period.slug)
@@ -1659,8 +1811,9 @@ def render_html(
             feature_count=feature_count,
             bug_count=bug_count,
             major_count=major_count,
-            other_counts=other_counts,
-            uncategorized_count=len(uncategorized),
+            additional_code_count=classified.additional_code_accounted,
+            non_code_counts=classified.non_code_counts,
+            non_code_uncategorized=classified.non_code_uncategorized,
         )
 
     blocks: list[str] = []
@@ -1710,45 +1863,76 @@ def render_html(
         ]
     )
 
-    if features:
-        blocks.append(h3(f"New Features ({len(features)})"))
+    if classified.features:
+        blocks.append(h3(f"New Features ({len(classified.features)})"))
         blocks.append(
             ul(
                 format_issue_item(issue.iid, issue.title, issue.issue_url)
-                for issue in sorted(features, key=lambda item: item.iid)
+                for issue in sorted(classified.features, key=lambda item: item.iid)
             )
         )
 
-    if bugs:
-        blocks.append(h3(f"Bug Fixes ({len(bugs)})"))
+    if classified.bugs:
+        blocks.append(h3(f"Bug Fixes ({len(classified.bugs)})"))
         blocks.append(
             ul(
                 format_issue_item(issue.iid, issue.title, issue.issue_url)
-                for issue in sorted(bugs, key=lambda item: item.iid)
+                for issue in sorted(classified.bugs, key=lambda item: item.iid)
             )
         )
 
-    if other_major_display or other_major_accounted:
-        blocks.append(h3(f"Other Major Contributions ({len(other_major_accounted)})"))
+    if classified.other_major_display or classified.other_major_accounted:
+        blocks.append(
+            h3(f"Other Major Issues ({len(classified.other_major_accounted)})")
+        )
         blocks.append(
             ul(
                 format_issue_item(issue.iid, issue.title, issue.issue_url)
-                for issue in sorted(other_major_display, key=lambda item: item.iid)
+                for issue in sorted(
+                    classified.other_major_display,
+                    key=lambda item: item.iid,
+                )
             )
         )
 
-    blocks.append(h3("Additional Contributions"))
-    additional_items = [
-        li(f"{category.capitalize()}: {other_counts[category]}")
-        for category in ADDITIONAL_CATEGORY_ORDER
-        if other_counts.get(category, 0)
-    ]
-    if uncategorized:
-        additional_items.append(
-            li(f"Uncategorized credited issues: {len(uncategorized)}")
+    if classified.additional_code_display or classified.additional_code_accounted:
+        blocks.append(
+            h3(
+                f"Additional Code Issues ({classified.additional_code_accounted})"
+            )
         )
-    if additional_items:
-        blocks.append(ul(additional_items))
+        if classified.additional_code_display:
+            blocks.append(
+                ul(
+                    format_issue_item(issue.iid, issue.title, issue.issue_url)
+                    for issue in sorted(
+                        classified.additional_code_display,
+                        key=lambda item: item.iid,
+                    )
+                )
+            )
+
+    non_code_total = (
+        sum(classified.non_code_counts.values())
+        + classified.non_code_uncategorized
+    )
+    if non_code_total:
+        blocks.append(
+            h3(f"Additional Non-Code Contributions ({non_code_total})")
+        )
+        non_code_items = [
+            li(f"{category.capitalize()}: {classified.non_code_counts[category]}")
+            for category in ADDITIONAL_CATEGORY_ORDER
+            if classified.non_code_counts.get(category, 0)
+        ]
+        if classified.non_code_uncategorized:
+            non_code_items.append(
+                li(
+                    "Uncategorized credited issues: "
+                    f"{classified.non_code_uncategorized}"
+                )
+            )
+        blocks.append(ul(non_code_items))
 
     return join_blocks(blocks) + "\n"
 
@@ -1937,6 +2121,7 @@ def main() -> int:
             report,
             project,
             exclude_from_lists=exclude_from_lists,
+            issue_meta=issue_meta,
             alias_resolver=alias_resolver,
             releases=releases,
         )
@@ -1945,14 +2130,13 @@ def main() -> int:
         print(f"Wrote {output_path}")
 
         accountable = report.issues
-        major_iids = major_contribution_iids(report.issues)
         listable = [issue for issue in accountable if issue.iid not in exclude_from_lists]
         prompt_path = write_summary_prompt(
             project,
             report.period,
             accountable,
-            major_iids,
             listable,
+            issue_meta,
         )
         print(f"Wrote {prompt_path}")
 

@@ -36,6 +36,7 @@ from release_notes import (
     format_counter,
     format_people_counter,
     is_other_major_contribution,
+    load_issues_cache,
     load_json,
     render_html,
 )
@@ -452,7 +453,13 @@ def main() -> int:
 
     notes_name = project.release_notes_filename(f"{args.slug}")
     notes_path = project.reports_dir / notes_name
-    notes_path.write_text(render_html(report, project))
+    issues_cache = load_issues_cache(project)
+    issue_meta = {
+        int(iid): entry for iid, entry in issues_cache.items() if str(iid).isdigit()
+    }
+    notes_path.write_text(
+        render_html(report, project, issue_meta=issue_meta)
+    )
     print(f"Wrote {notes_path} ({len(report.issues)} credited issues)")
 
     closed_raw = load_json(project.closed_issues_cache, {})
