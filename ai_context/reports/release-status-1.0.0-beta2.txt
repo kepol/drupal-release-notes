@@ -1,0 +1,33 @@
+----------------------------------------
+Release status: ai_context (1.0.0-beta2) [milestones]
+----------------------------------------
+Release window: 2026-04-15 → 2026-05-12 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 0 (current release '1.0.0-beta3'; latest Drupal.org tag '1.0.0-beta2')
+    (none)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 0 of 68 — https://git.drupalcode.org/project/ai_context/-/milestones/1
+
+* Credit audit pending: 0
+
+* QA issue: closed (https://git.drupalcode.org/project/ai_context/-/work_items/3586156)
+
+* Release notes: ai_context/reports/release-notes-1.0.0-beta2.html (66 credited) — milestone has 68; 1 not in release notes
+    #3586144: Testing ccc issue + mr connection — contribution record exists but no credits granted — https://git.drupalcode.org/project/ai_context/-/work_items/3586144
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 0 (in '1.0.0-beta2' scope, nothing on new.drupal.org)
+    (none)
+
+* No record expected (duplicate / won't fix): 0 (in '1.0.0-beta2' scope, closed without a Drupal.org record by design)
+    (none)
+
+* Wrong milestone: 0 (assigned milestone != close date within '1.0.0-beta2' scope)
+    (none)
+
+* Missing in milestone: 0 (in '1.0.0-beta2' scope without a contribution record)
+    (none)

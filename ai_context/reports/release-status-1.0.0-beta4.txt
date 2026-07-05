@@ -1,0 +1,67 @@
+----------------------------------------
+Release status: ai_context (1.0.0-beta4) [milestones]
+----------------------------------------
+Release window: 2026-07-11 → 2026-07-25 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 0 (current release '1.0.0-beta3'; latest Drupal.org tag '1.0.0-beta2')
+    (none)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 35 of 35 — https://git.drupalcode.org/project/ai_context/-/milestones/8
+
+* Credit audit pending: 0
+
+* QA issue: not found
+
+* Release notes: ai_context/reports/release-notes-1.0.0-beta4.html (0 credited) — milestone has 35; 35 not in release notes
+    #3574937: Review and update CCC permissions — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3574937
+    #3581955: Inject context into ai_ckeditor requests — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3581955
+    #3586197: [Discuss] Add boundaries / exclusions to scope plugins — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586197
+    #3586199: Tune conditional subcontext logic — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586199
+    #3586206: Avoid Full Published-ID Scans Before Scope Prefiltering — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586206
+    #3586234: CCC beta / pre-rc1 community testing — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586234
+    #3586235: Recruit CCC beta testers — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586235
+    #3586237: Create multi-vocabulary taxonomy scope plugin — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586237
+    #3586242: Add opt-in AiContextSelectionDiagnostics to selection results — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586242
+    #3586243: Complete scope plugin persistence API: manager orchestration, target entity encapsulation, and plugin-driven admin/selection — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586243
+    #3586248: Add CCC beta tester info to the project page — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586248
+    #3586262: Allow scope plugins to declare an optional icon for UI display — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586262
+    #3586263: Update relevant CCC skipped tests — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586263
+    #3586268: Evaluate Annotations module and how it might work with CCC — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586268
+    #3586271: Clean up CCC inconsistencies and DX issues before rc1 (part 3) — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586271
+    #3586273: [Discuss] Extensible "role" architecture for context items (examples, rubrics, and future types) — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586273
+    #3586276: Rename entity bundle and target entity scope plugins for better DX — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586276
+    #3586278: Update project page to make it more clear that CCC is for agents — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586278
+    #3586281: Introduce explicit scope types and item inclusion modes; clarify selection in UI and docs — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586281
+    #3586282: Promote Document Loader: Context Importer from experimental to stable — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586282
+    #3586283: Finalize Context Importer naming and review Extensions page UI/UX — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586283
+    #3586289: [Feature] Add ExternalContextProviderInterface and ContextQueryInterface to support RAG/vector store integrations — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586289
+    #3586290: Error when running database updates from beta2 to latest -dev — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586290
+    #3586292: Improve conditional subcontext disabled-state behavior and admin UX — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586292
+    #3586293: Sprint 13 CCC roadmap updates, sprint planning, and issue triage — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586293
+    #3586298: [Meta] Fix CCC issues based on AI Best Practices results — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586298
+    #3586299: Clean up CCC test and documentation consistency before rc1 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586299
+    #3586300: Clean up CCC cacheability and access metadata — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586300
+    #3586301: Clean up CCC accessible interactive links and external links — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586301
+    #3586302: Clean up CCC tooltip, truncation, and icon-only content — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586302
+    #3586303: Clean up CCC JavaScript filter feedback — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586303
+    #3586304: Clean up CCC form and table accessibility cleanup — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586304
+    #3586305: Clean up CCC documentation and API consistency — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586305
+    #3586309: [Meta] CCC cleanup and API hardening from code review findings for beta4 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586309
+    #3586322: Assess duadp module's integration with CCC — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586322
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 0 (in '1.0.0-beta4' scope, nothing on new.drupal.org)
+    (none)
+
+* No record expected (duplicate / won't fix): 0 (in '1.0.0-beta4' scope, closed without a Drupal.org record by design)
+    (none)
+
+* Wrong milestone: 0 (assigned milestone != close date within '1.0.0-beta4' scope)
+    (none)
+
+* Missing in milestone: 0 (in '1.0.0-beta4' scope without a contribution record)
+    (none)

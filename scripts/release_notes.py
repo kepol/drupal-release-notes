@@ -1937,6 +1937,47 @@ def render_html(
     return join_blocks(blocks) + "\n"
 
 
+def frozen_period_cache_stale(
+    report: PeriodReport,
+    records: list[dict[str, Any]],
+    closed_issues: dict[int, dict[str, Any]] | None,
+    ctx: Any | None,
+) -> bool:
+    """True when GitLab milestone assignments no longer match a frozen period cache."""
+    from period_context import (
+        PERIOD_SOURCE_MILESTONES,
+        issue_in_milestone_release_period,
+        issue_milestone_title,
+    )
+
+    if ctx is None or ctx.source != PERIOD_SOURCE_MILESTONES:
+        return False
+
+    closed_lookup = closed_issues or {}
+    cached_iids = {issue.iid for issue in report.issues}
+
+    for issue in report.issues:
+        assigned = issue_milestone_title(closed_lookup.get(issue.iid, {}))
+        if assigned and assigned != report.period.title:
+            return True
+
+    for record in records:
+        iid = int(record["iid"])
+        if iid in cached_iids:
+            continue
+        closed_at = issue_closed_at_for_period(record, closed_lookup)
+        if issue_in_milestone_release_period(
+            iid,
+            report.period.title,
+            ctx,
+            closed_lookup,
+            closed_at,
+        ):
+            return True
+
+    return False
+
+
 def load_or_build_period_report(
     client: ApiClient,
     period: ReportPeriod,
@@ -1949,8 +1990,15 @@ def load_or_build_period_report(
     project = client.project
     cache_path = project.periods_dir / f"{period.slug}.json"
     if period.frozen and cache_path.exists() and not rebuild_frozen:
-        print(f"Using frozen cache for {period.slug}")
-        return deserialize_report(load_json(cache_path, {}))
+        cached = deserialize_report(load_json(cache_path, {}))
+        if frozen_period_cache_stale(cached, records, closed_issues, ctx):
+            print(
+                f"Rebuilding {period.slug}: milestone assignments changed "
+                "since this period was frozen."
+            )
+        else:
+            print(f"Using frozen cache for {period.slug}")
+            return cached
 
     report = build_period_report(
         period,
@@ -1975,8 +2023,8 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help=(
             "Full refresh: re-fetch contribution records, GitLab issues, profile "
-            "aliases, rebuild all period caches and reports, then refresh the "
-            "credit audit cache and report."
+            "aliases, rebuild all period caches and reports, refresh the credit "
+            "audit cache and report, and run release prep for the current milestone."
         ),
     )
     parser.add_argument(
@@ -2091,6 +2139,7 @@ def main() -> int:
                 client,
                 closed_issues,
                 iids,
+                refresh_credited=args.refresh_issues or args.refresh_all,
             )
             save_json(
                 project.closed_issues_cache,
@@ -2163,6 +2212,39 @@ def main() -> int:
         )
         if result.returncode != 0:
             return result.returncode
+
+        if ctx.source == PERIOD_SOURCE_MILESTONES:
+            from period_context import current_milestone_title
+
+            current_milestone = current_milestone_title(ctx)
+            if current_milestone:
+                print(
+                    f"\n--- Refreshing release prep ({current_milestone}) ---"
+                )
+                prep_script = REPO_ROOT / "scripts" / "release_prep.py"
+                result = subprocess.run(
+                    [
+                        sys.executable,
+                        str(prep_script),
+                        "--project",
+                        project.machine_name,
+                        "--milestone",
+                        current_milestone,
+                    ],
+                    cwd=REPO_ROOT,
+                )
+                if result.returncode != 0:
+                    return result.returncode
+
+            from credit_audit import load_cached_closed_issues
+
+            closed_issues = load_cached_closed_issues(project)
+
+    if ctx.source == PERIOD_SOURCE_MILESTONES and closed_issues:
+        from release_prep import write_milestone_support_reports
+
+        for path in write_milestone_support_reports(project, ctx, closed_issues):
+            print(f"Wrote {path}")
 
     return 0
 

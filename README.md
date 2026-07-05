@@ -57,15 +57,18 @@ Generated reports:
 - `ai_context/reports/release-notes-{milestone}.html` — release notes (HTML for Drupal.org paste)
 - `ai_context/reports/credit-audit.html` — credit review report
 - `ai_context/reports/contributors-all-releases.html` — running totals of all credited people and organizations
+- `ai_context/reports/release-status-{milestone}.txt` — release prep checklist (written by `release_prep.py` and `--refresh-all`)
 - `ai_context/summaries/{milestone}.prompt.md` — AI summary input (regenerated with release notes)
 
 Cached data under `{project}/cache/` is reused so you do not need to refetch everything from Drupal.org and GitLab on every run.
 
-**Refresh everything** (contribution records, GitLab issues, profile aliases, all milestone caches, all reports, credit audit):
+**Refresh everything** (contribution records, GitLab issues, profile aliases, all milestone caches, all reports, credit audit, release prep for the current milestone):
 
 ```bash
 python3 scripts/release_notes.py --refresh-all
 ```
+
+Also regenerates `milestone-assignments.html` and `milestone-closed-on-future.html` on every release notes run.
 
 ## How releases are scoped
 
@@ -132,6 +135,8 @@ python3 scripts/release_notes.py --refresh-records --refresh-issues
 python3 scripts/release_notes.py --refresh-all
 ```
 
+This also runs `release_prep.py` for the current GitLab milestone (console status summary, `release-status-{milestone}.txt`, and `milestone-closed-on-future.html`).
+
 This re-fetches contribution records, GitLab issue metadata, and Drupal.org profile URL aliases; rebuilds all frozen milestone caches; regenerates every release-notes HTML file and summary prompt; then refreshes the credit audit cache, GitLab comments, and `credit-audit.html`.
 
 To refresh only one milestone's HTML output (shared caches still update when combined with refresh flags):
@@ -149,7 +154,7 @@ python3 scripts/release_prep.py --list-by-milestone --write-output
 python3 scripts/release_prep.py --list-by-milestone --milestone "1.0.0-beta1"
 ```
 
-Writes `{project}/reports/milestone-assignments.html` with `--write-output`. Create milestones on GitLab, then assign issues from the list.
+Writes `{project}/reports/milestone-assignments.html` with `--write-output`, or automatically when generating release notes.
 
 ### Combined milestone reports
 
@@ -170,6 +175,8 @@ Writes `release-notes-{slug}.html` and `compare-drupalorg-{slug}.html`. Requires
 ```bash
 python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 ```
+
+Writes `{project}/reports/release-status-{milestone}.txt` with the same checklist shown on the console.
 
 | Line | Meaning |
 |------|---------|
@@ -201,10 +208,16 @@ Release notes and beta3 prep only include issues **assigned to that milestone on
 `release_prep.py` flags closed issues assigned to any milestone **after the current release** (next GitLab milestone after the latest Drupal.org tag). Reassign them on GitLab, then refresh:
 
 ```bash
+python3 scripts/release_notes.py --refresh-all
+```
+
+Or run release prep alone for the current milestone:
+
+```bash
 python3 scripts/release_prep.py --milestone "1.0.0-beta3"
 ```
 
-Writes `reports/milestone-closed-on-future.html` when using milestones mode.
+`milestone-closed-on-future.html` is also regenerated whenever release notes are generated.
 
 ## Release notes output
 
@@ -388,6 +401,7 @@ ai_context/
     credit-audit.html
     milestone-assignments.html
     milestone-closed-on-future.html
+    release-status-{milestone}.txt
     compare-drupalorg-*.html  (from combined_milestone_report.py)
   summaries/
     {milestone}.prompt.md     Regenerated with release notes

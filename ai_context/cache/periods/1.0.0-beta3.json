@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T01:47:43.091289+00:00",
+  "generated_at": "2026-07-05T22:28:30.091687+00:00",
   "issues": [
     {
       "category": "feature",
@@ -3608,6 +3608,58 @@
     },
     {
       "category": "task",
+      "closed_at": "2026-06-30T23:24:17.725000+00:00",
+      "contributors": [
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia",
+              "nid": 2346463,
+              "title": "ESINERGIA"
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        }
+      ],
+      "iid": 3586280,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280",
+      "priority": "normal",
+      "title": "Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes",
+      "uuid": "28aa8c69-1e79-4688-b8f9-145b2ae380e0"
+    },
+    {
+      "category": "task",
       "closed_at": "2026-06-23T03:12:11.040000+00:00",
       "contributors": [
         {
@@ -3959,12 +4011,12 @@
     "drupalfit": 1,
     "dynamate": 1,
     "e-sepia web innovation": 1,
-    "esinergia": 3,
+    "esinergia": 4,
     "foster interactive inc.": 21,
     "freelygive": 1,
     "imagex": 2,
     "integral vision ltd": 2,
-    "itty bitty byte": 79,
+    "itty bitty byte": 80,
     "kalamuna": 11,
     "kanopi studios": 1,
     "mearra (formerly known as wunder)": 1,
@@ -3973,23 +4025,23 @@
     "point blank": 1,
     "qed42": 6,
     "reading room": 2,
-    "salsa digital": 79,
+    "salsa digital": 80,
     "sven decabooter": 1,
     "the university of edinburgh": 17,
-    "vardot": 7
+    "vardot": 8
   },
   "period": {
-    "end": "2026-07-07T23:59:59+00:00",
+    "end": "2026-07-11T23:59:59+00:00",
     "frozen": true,
     "slug": "1.0.0-beta3",
-    "start": "2026-05-11T00:00:00+00:00",
+    "start": "2026-05-12T00:00:00+00:00",
     "title": "1.0.0-beta3"
   },
   "user_counts": {
     "a.dmitriiev": 2,
     "abhisekmazumdar": 4,
     "adaptative": 2,
-    "ahmad-khader": 7,
+    "ahmad-khader": 8,
     "ahmad-khalil-imagex": 6,
     "aidanfoster": 21,
     "akhilbabu": 3,
@@ -4004,8 +4056,8 @@
     "gargsuchi": 1,
     "hestenet": 1,
     "joshua1234511": 3,
-    "jucs7": 3,
-    "kepol": 79,
+    "jucs7": 4,
+    "kepol": 80,
     "kieran.cott": 2,
     "leofishman": 1,
     "marcus_johansson": 1,

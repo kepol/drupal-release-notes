@@ -9,6 +9,7 @@ import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 
 from credit_audit import (
@@ -558,6 +559,24 @@ def render_future_milestone_closures_html(
     return join_blocks(blocks) + "\n"
 
 
+def write_milestone_support_reports(
+    project: ProjectConfig,
+    ctx: PeriodContext,
+    closed_issues: dict[int, dict[str, Any]],
+) -> list[Path]:
+    """Write milestone assignment and future-milestone closure HTML reports."""
+    from period_context import find_closed_future_milestone_issues
+
+    return [
+        write_milestone_assignments_report(project, ctx, closed_issues),
+        write_future_milestone_closures_report(
+            project,
+            find_closed_future_milestone_issues(closed_issues, ctx),
+            ctx,
+        ),
+    ]
+
+
 def write_future_milestone_closures_report(
     project: ProjectConfig,
     closures: list[FutureMilestoneClosure],
@@ -632,6 +651,44 @@ def group_issues_by_suggested_milestone(
     for assignments in grouped.values():
         assignments.sort(key=lambda item: item.closed_at)
     return grouped
+
+
+def write_milestone_assignments_report(
+    project: ProjectConfig,
+    ctx: PeriodContext,
+    closed_issues: list[dict[str, Any]] | dict[int, dict[str, Any]],
+    *,
+    milestones: list[str] | None = None,
+) -> Path:
+    """Write the milestone assignment backfill report from closed issue data."""
+    if isinstance(closed_issues, dict):
+        issues_list = list(closed_issues.values())
+    else:
+        issues_list = closed_issues
+
+    grouped = group_issues_by_suggested_milestone(issues_list, ctx)
+    milestone_list = milestones or milestone_titles(ctx)
+    source_note = (
+        "GitLab milestone start/due dates"
+        if ctx.source == "milestones"
+        else "Drupal.org release tags"
+    )
+    blocks = [
+        h2(f"Milestone assignments: {project.machine_name}"),
+        p(
+            f"Suggested GitLab milestones from close dates and {escape(source_note)}. "
+            "Create missing milestones on GitLab, then assign each issue."
+        ),
+    ]
+    for milestone in milestone_list:
+        assignments = grouped.get(milestone, [])
+        blocks.extend(
+            format_milestone_assignment_section(milestone, assignments, ctx, project)
+        )
+    path = project.reports_dir / "milestone-assignments.html"
+    project.reports_dir.mkdir(parents=True, exist_ok=True)
+    path.write_text(join_blocks(blocks) + "\n")
+    return path
 
 
 def format_assignment_line(assignment: MilestoneAssignment, project: ProjectConfig) -> str:
@@ -712,21 +769,12 @@ def list_by_milestone(
             print("(none)")
 
     if args.write_output:
-        blocks = [
-            h2(f"Milestone assignments: {project.machine_name}"),
-            p(
-                f"Suggested GitLab milestones from close dates and {escape(source_note)}. "
-                "Create missing milestones on GitLab, then assign each issue."
-            ),
-        ]
-        for milestone in milestones:
-            assignments = grouped.get(milestone, [])
-            blocks.extend(
-                format_milestone_assignment_section(milestone, assignments, ctx, project)
-            )
-        path = project.reports_dir / "milestone-assignments.html"
-        project.reports_dir.mkdir(parents=True, exist_ok=True)
-        path.write_text(join_blocks(blocks) + "\n")
+        path = write_milestone_assignments_report(
+            project,
+            ctx,
+            closed_issues,
+            milestones=milestones,
+        )
         print(f"Wrote {path}", file=sys.stderr)
 
     return 0
@@ -743,42 +791,34 @@ def append_section(
     lines.extend(detail_lines)
 
 
-def main() -> int:
-    args = parse_args()
-    project = ProjectConfig.load(args.project)
-    client = ApiClient(project)
-
-    if args.list_by_milestone:
-        return list_by_milestone(args, project, client)
-
-    open_in_milestone = fetch_gitlab_issues(
-        client,
-        milestone=args.milestone,
-        state="opened",
-    )
-
-    ctx = build_period_context(project, client)
-    from period_context import migrate_legacy_period_files
-
-    migrate_legacy_period_files(project, ctx)
-    releases = ctx.releases
-
+def build_release_status_lines(
+    project: ProjectConfig,
+    client: ApiClient,
+    milestone: str,
+    ctx: PeriodContext,
+) -> list[str]:
+    """Build the text release-prep status summary for one milestone."""
     records = load_cached_audit_records(project)
     closed_issues = load_cached_closed_issues(project)
     issues_cache = load_json(project.issues_cache, {})
     approvals = load_approvals(project)
     ignored_users = load_ignored_uncredited_people(project.ignore_uncredited_file)
 
+    open_in_milestone = fetch_gitlab_issues(
+        client,
+        milestone=milestone,
+        state="opened",
+    )
     milestone_closed = fetch_gitlab_issues(
         client,
-        milestone=args.milestone,
+        milestone=milestone,
         state="closed",
     )
     assigned_iids = {
         int(issue["iid"]) for issue in (*open_in_milestone, *milestone_closed)
     }
     scope_iids = milestone_scope_iids(
-        args.milestone,
+        milestone,
         ctx,
         closed_issues,
         assigned_iids=assigned_iids,
@@ -791,7 +831,6 @@ def main() -> int:
     )
     missing_records = filter_by_iids(missing_records, scope_iids)
     exempt_missing = filter_by_iids(exempt_missing, scope_iids)
-
     missing_in_milestone = filter_by_iids(missing_records, assigned_iids)
 
     pending, _approved, _exempt = build_audit_findings(
@@ -803,9 +842,9 @@ def main() -> int:
     )
     pending = filter_by_iids(pending, scope_iids)
 
-    if milestone_window_for(args.milestone, ctx):
-        notes_path, notes_count = release_notes_info(project, args.milestone)
-        period_iids = load_period_issue_iids(project, args.milestone)
+    if milestone_window_for(milestone, ctx):
+        notes_path, notes_count = release_notes_info(project, milestone)
+        period_iids = load_period_issue_iids(project, milestone)
     else:
         notes_path = f"{project.machine_name}/reports/(no matching milestone)"
         notes_count = None
@@ -828,7 +867,7 @@ def main() -> int:
     qa_issue = find_qa_issue(
         client,
         issues_cache,
-        milestone_release_short(args.milestone),
+        milestone_release_short(milestone),
     )
     duplicate_records = [
         record
@@ -846,19 +885,19 @@ def main() -> int:
         ctx,
         scope_iids=scope_iids,
     )
-    milestone_url = fetch_milestone_url(client, args.milestone)
+    milestone_url = fetch_milestone_url(client, milestone)
     open_count, milestone_total = milestone_issue_counts(
         client,
-        args.milestone,
+        milestone,
         open_issues=open_in_milestone,
         closed_issues=milestone_closed,
     )
 
     status_heading = (
-        f"Release status: {project.machine_name} ({args.milestone}) "
+        f"Release status: {project.machine_name} ({milestone}) "
         f"[{ctx.source}]"
     )
-    period_summary = milestone_period_summary(args.milestone, ctx)
+    period_summary = milestone_period_summary(milestone, ctx)
     lines: list[str] = [
         SECTION_RULE,
         status_heading,
@@ -912,10 +951,10 @@ def main() -> int:
 
     if notes_count is not None:
         notes_line = f"Release notes: {notes_path} ({notes_count} credited)"
-    elif milestone_window_for(args.milestone, ctx):
+    elif milestone_window_for(milestone, ctx):
         notes_line = f"Release notes: {notes_path} (not generated yet)"
     else:
-        notes_line = f"Release notes: no GitLab milestone {args.milestone!r}"
+        notes_line = f"Release notes: no GitLab milestone {milestone!r}"
 
     notes_details: list[str] = []
     if release_notes_gaps:
@@ -969,7 +1008,7 @@ def main() -> int:
         lines,
         (
             f"Missing contribution records: {len(missing_records)} "
-            f"(in {args.milestone!r} scope, nothing on new.drupal.org)"
+            f"(in {milestone!r} scope, nothing on new.drupal.org)"
         ),
         missing_details,
     )
@@ -983,7 +1022,7 @@ def main() -> int:
         lines,
         (
             f"No record expected (duplicate / won't fix): {len(exempt_missing)} "
-            f"(in {args.milestone!r} scope, closed without a Drupal.org record by design)"
+            f"(in {milestone!r} scope, closed without a Drupal.org record by design)"
         ),
         exempt_details,
     )
@@ -997,7 +1036,7 @@ def main() -> int:
         lines,
         (
             f"Wrong milestone: {len(milestone_mismatches)} "
-            f"(assigned milestone != close date within {args.milestone!r} scope)"
+            f"(assigned milestone != close date within {milestone!r} scope)"
         ),
         mismatch_details,
     )
@@ -1011,13 +1050,45 @@ def main() -> int:
         lines,
         (
             f"Missing in milestone: {len(missing_in_milestone)} "
-            f"(in {args.milestone!r} scope without a contribution record)"
+            f"(in {milestone!r} scope without a contribution record)"
         ),
         milestone_missing_details,
     )
 
-    print("\n".join(lines))
+    return lines
 
+
+def write_release_status_report(
+    project: ProjectConfig,
+    milestone: str,
+    lines: list[str],
+) -> Path:
+    path = project.release_status_report(milestone)
+    project.reports_dir.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n")
+    return path
+
+
+def main() -> int:
+    args = parse_args()
+    project = ProjectConfig.load(args.project)
+    client = ApiClient(project)
+
+    if args.list_by_milestone:
+        return list_by_milestone(args, project, client)
+
+    ctx = build_period_context(project, client)
+    from period_context import migrate_legacy_period_files
+
+    migrate_legacy_period_files(project, ctx)
+
+    lines = build_release_status_lines(project, client, args.milestone, ctx)
+    print("\n".join(lines))
+    status_path = write_release_status_report(project, args.milestone, lines)
+    print(f"Wrote {status_path}", file=sys.stderr)
+
+    records = load_cached_audit_records(project)
+    closed_issues = load_cached_closed_issues(project)
     if not records and not closed_issues:
         print(
             "\nNo cached audit data. Run:\n"

@@ -22,7 +22,7 @@ NON_RELEASE_NOTE_REPORTS = frozenset(
         "milestone-closed-on-future.html",
     }
 )
-NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-")
+NON_RELEASE_NOTE_PREFIXES = ("compare-", "drupalorg-", "release-status-")
 
 
 @dataclass(frozen=True)
@@ -108,6 +108,9 @@ class ProjectConfig:
     @property
     def future_milestone_closures_report(self) -> Path:
         return self.reports_dir / "milestone-closed-on-future.html"
+
+    def release_status_report(self, milestone: str) -> Path:
+        return self.reports_dir / f"release-status-{milestone}.txt"
 
     @staticmethod
     def release_notes_filename(period_key: str) -> str:

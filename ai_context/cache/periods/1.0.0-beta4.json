@@ -1,75 +1,13 @@
 {
-  "generated_at": "2026-07-05T01:52:32.167762+00:00",
-  "issues": [
-    {
-      "category": "task",
-      "closed_at": "2026-06-30T23:24:17.725000+00:00",
-      "contributors": [
-        {
-          "display_name": "jucs7",
-          "drupal_uid": 3845119,
-          "orgs": [
-            {
-              "name": "esinergia",
-              "nid": 2346463,
-              "title": "ESINERGIA"
-            }
-          ],
-          "user": "jucs7"
-        },
-        {
-          "display_name": "kristen pol",
-          "drupal_uid": 8389,
-          "orgs": [
-            {
-              "name": "itty bitty byte",
-              "nid": 3190689,
-              "title": "Itty Bitty Byte"
-            },
-            {
-              "name": "salsa digital",
-              "nid": 2603032,
-              "title": "Salsa Digital"
-            }
-          ],
-          "user": "kepol"
-        },
-        {
-          "display_name": "ahmad khader",
-          "drupal_uid": 3727855,
-          "orgs": [
-            {
-              "name": "vardot",
-              "nid": 1388322,
-              "title": "Vardot"
-            }
-          ],
-          "user": "ahmad-khader"
-        }
-      ],
-      "iid": 3586280,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280",
-      "priority": "normal",
-      "title": "Add #[RunTestsInSeparateProcesses] attribute to all kernel test classes",
-      "uuid": "28aa8c69-1e79-4688-b8f9-145b2ae380e0"
-    }
-  ],
-  "org_counts": {
-    "esinergia": 1,
-    "itty bitty byte": 1,
-    "salsa digital": 1,
-    "vardot": 1
-  },
+  "generated_at": "2026-07-05T22:28:30.098122+00:00",
+  "issues": [],
+  "org_counts": {},
   "period": {
-    "end": "2026-07-11T23:59:59+00:00",
+    "end": "2026-07-25T23:59:59+00:00",
     "frozen": true,
     "slug": "1.0.0-beta4",
-    "start": "2026-06-30T00:00:00+00:00",
+    "start": "2026-07-11T00:00:00+00:00",
     "title": "1.0.0-beta4"
   },
-  "user_counts": {
-    "ahmad-khader": 1,
-    "jucs7": 1,
-    "kepol": 1
-  }
+  "user_counts": {}
 }

@@ -1,0 +1,35 @@
+----------------------------------------
+Release status: ai_context (1.0.0-beta1) [milestones]
+----------------------------------------
+Release window: 2025-12-14 → 2026-04-15 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 0 (current release '1.0.0-beta3'; latest Drupal.org tag '1.0.0-beta2')
+    (none)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 0 of 131 — https://git.drupalcode.org/project/ai_context/-/milestones/12
+
+* Credit audit pending: 0
+
+* QA issue: closed (https://git.drupalcode.org/project/ai_context/-/work_items/3577669)
+
+* Release notes: ai_context/reports/release-notes-1.0.0-beta1.html (129 credited) — milestone has 131
+    2 closed in milestone not in release notes (duplicate / won't fix / works as designed):
+    #3563975: Something in CCC is causing node form to not show some fields — works as designed (why::worksAsDesigned) — https://git.drupalcode.org/project/ai_context/-/work_items/3563975
+    #3570934: Add content type context scope for MVP — won't fix (why::wontFix) — https://git.drupalcode.org/project/ai_context/-/work_items/3570934
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 0 (in '1.0.0-beta1' scope, nothing on new.drupal.org)
+    (none)
+
+* No record expected (duplicate / won't fix): 0 (in '1.0.0-beta1' scope, closed without a Drupal.org record by design)
+    (none)
+
+* Wrong milestone: 0 (assigned milestone != close date within '1.0.0-beta1' scope)
+    (none)
+
+* Missing in milestone: 0 (in '1.0.0-beta1' scope without a contribution record)
+    (none)

@@ -513,19 +513,25 @@ def enrich_closed_issues_milestones(
     client: ApiClient,
     closed_issues: dict[int, dict[str, Any]],
     iids: set[int],
+    *,
+    refresh_credited: bool = False,
 ) -> dict[int, dict[str, Any]]:
-    """Fill missing GitLab milestone assignments for credited issues."""
-    needed = {
-        iid
-        for iid in iids
-        if not issue_milestone_title(closed_issues.get(iid, {}))
-    }
+    """Fill or refresh GitLab milestone assignments for credited issues."""
+    if refresh_credited:
+        needed = set(iids)
+    else:
+        needed = {
+            iid
+            for iid in iids
+            if not issue_milestone_title(closed_issues.get(iid, {}))
+        }
     if not needed:
         return closed_issues
 
     project = client.project
     enriched = dict(closed_issues)
-    print(f"Fetching GitLab milestone assignment for {len(needed)} issues...")
+    action = "Refreshing" if refresh_credited else "Fetching"
+    print(f"{action} GitLab milestone assignment for {len(needed)} issues...")
     page = 1
     per_page = 100
     while needed:
