@@ -177,11 +177,11 @@ Each `{project}/reports/release-notes-{milestone}.html` file includes:
 
 1. **Credited issue total**
 2. **Summary paragraph** (custom or auto-generated)
-3. **New Features** — `category::feature`
-4. **Bug Fixes** — `category::bug`
-5. **Other Major Contributions** — major/critical plan, task, support, or discuss
-6. **Additional Contributions** — category counts (issues listed above excluded)
-7. **Contributors** — people and organizations with credit counts
+3. **Contributors** — people and organizations with credit counts
+4. **New Features** — `category::feature`
+5. **Bug Fixes** — `category::bug`
+6. **Other Major Contributions** — major/critical plan, task, or support
+7. **Additional Contributions** — category counts (issues listed above excluded)
 
 Only issues with at least one granted credit on Drupal.org are included.
 

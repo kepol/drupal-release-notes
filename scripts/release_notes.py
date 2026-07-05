@@ -50,7 +50,8 @@ PRIORITY_LABEL = re.compile(r"^priority::(\w+)$")
 
 FEATURE_CATEGORIES = {"feature"}
 BUG_CATEGORIES = {"bug"}
-OTHER_CATEGORIES = {"plan", "task", "support", "discuss"}
+OTHER_CATEGORIES = {"plan", "task", "support"}
+ADDITIONAL_CATEGORY_ORDER = ("plan", "task", "support")
 HIGH_PRIORITIES = {"critical", "major"}
 IGNORED_CONTRIBUTOR_USERNAMES = {"system message", "system_message"}
 SPRINT_PLANNING_TITLE = re.compile(
@@ -1285,6 +1286,16 @@ def render_html(
         p(em(f"Generated {report.generated_at}")),
     ]
 
+    people = format_people_counter(report) or "none"
+    orgs = format_counter(report.org_counts) or "none"
+    blocks.extend(
+        [
+            h3("Contributors"),
+            p(f"{strong('People:')} {people}"),
+            p(f"{strong('Organizations:')} {orgs}"),
+        ]
+    )
+
     if features:
         blocks.append(h3(f"New Features ({len(features)})"))
         blocks.append(
@@ -1313,24 +1324,18 @@ def render_html(
         )
 
     blocks.append(h3("Additional Contributions"))
-    blocks.append(
-        ul(
-            li(f"{category.capitalize()}: {other_counts.get(category, 0)}")
-            for category in ("plan", "task", "support", "discuss")
-        )
-    )
+    additional_items = [
+        li(f"{category.capitalize()}: {other_counts[category]}")
+        for category in ADDITIONAL_CATEGORY_ORDER
+        if other_counts.get(category, 0)
+    ]
     if uncategorized:
-        blocks.append(ul([li(f"Uncategorized credited issues: {len(uncategorized)}")]))
+        additional_items.append(
+            li(f"Uncategorized credited issues: {len(uncategorized)}")
+        )
+    if additional_items:
+        blocks.append(ul(additional_items))
 
-    people = format_people_counter(report) or "none"
-    orgs = format_counter(report.org_counts) or "none"
-    blocks.extend(
-        [
-            h3("Contributors"),
-            p(f"{strong('People:')} {people}"),
-            p(f"{strong('Organizations:')} {orgs}"),
-        ]
-    )
     return join_blocks(blocks) + "\n"
 
 
