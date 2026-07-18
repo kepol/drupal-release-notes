@@ -32,6 +32,7 @@ AI initiative partners as of 5 July, 2026:
 - Integral Vision Ltd
 - Kalamuna
 - OPTASY
+- Drupal Association
 
 # Previous partners
 

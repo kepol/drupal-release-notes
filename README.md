@@ -235,7 +235,7 @@ Each `{project}/reports/release-notes-{milestone}.html` file is HTML ready to pa
 
 Only issues with at least one granted credit on Drupal.org are included.
 
-**Running contributor totals** — `{project}/reports/contributors-all-releases.html` aggregates people and organizations across all milestone reports (each issue counted once). Regenerated whenever release notes are generated.
+**Running contributor totals** — `{project}/reports/contributors-all-releases.html` aggregates people and organizations across all milestone reports (each issue counted once). Regenerated whenever release notes are generated. People and organizations linked to names in `scripts/ai-initiative-partners.md` are marked with `(*)`.
 
 Completed milestones are cached in `{project}/cache/periods/{milestone}.json` and only recomputed with `--rebuild-frozen` (included in `--refresh-all`). The current milestone is regenerated on every run.
 

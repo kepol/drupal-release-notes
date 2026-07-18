@@ -48,6 +48,7 @@ CONTRIBUTOR_INCLUDE = (
 )
 
 GITLAB_TOKEN_FILE = REPO_ROOT / ".gitlab-token"
+AI_INITIATIVE_PARTNERS_FILE = REPO_ROOT / "scripts" / "ai-initiative-partners.md"
 GITLAB_KEYCHAIN_SERVICE = "issue-credit-report"
 GITLAB_KEYCHAIN_ACCOUNT = "git.drupalcode.org"
 
@@ -535,6 +536,82 @@ def normalize_username(name: str) -> str:
 
 def normalize_org(title: str) -> str:
     return title.strip().lower()
+
+
+def partner_lookup_keys(name: str) -> set[str]:
+    """Normalized keys for matching Drupal.org org names to partner list entries."""
+    normalized = normalize_org(name)
+    compact = re.sub(r"[^a-z0-9]", "", normalized)
+    keys = {normalized}
+    if compact:
+        keys.add(compact)
+    return keys
+
+
+def load_ai_initiative_partner_keys(
+    path: Path = AI_INITIATIVE_PARTNERS_FILE,
+) -> frozenset[str]:
+    """Load current and former AI Initiative partner names from markdown."""
+    if not path.exists():
+        return frozenset()
+
+    keys: set[str] = set()
+    in_partner_section = False
+    for line in path.read_text().splitlines():
+        stripped = line.strip()
+        if re.match(r"^#\s*Current partners\s*$", stripped, re.IGNORECASE):
+            in_partner_section = True
+            continue
+        if re.match(r"^#\s*Previous partners\s*$", stripped, re.IGNORECASE):
+            in_partner_section = True
+            continue
+        if re.match(r"^#\s*Updating", stripped, re.IGNORECASE):
+            break
+        if in_partner_section and stripped.startswith("- "):
+            keys.update(partner_lookup_keys(stripped[2:].strip()))
+    return frozenset(keys)
+
+
+def org_matches_ai_initiative_partner(
+    org_key_name: str,
+    display_title: str,
+    partner_keys: frozenset[str],
+) -> bool:
+    if not partner_keys:
+        return False
+    for candidate in (display_title, org_key_name):
+        if partner_lookup_keys(candidate) & partner_keys:
+            return True
+    return False
+
+
+def ai_initiative_partner_orgs_in_report(
+    report: PeriodReport,
+    partner_keys: frozenset[str],
+) -> set[str]:
+    """Return org keys in the report that match the AI Initiative partner list."""
+    matched: set[str] = set()
+    display_titles = report.org_display_titles
+    for name in report.org_counts:
+        display = display_titles.get(name, name)
+        if org_matches_ai_initiative_partner(name, display, partner_keys):
+            matched.add(name)
+    return matched
+
+
+def ai_initiative_partner_people_in_report(
+    report: PeriodReport,
+    partner_orgs: set[str],
+) -> set[str]:
+    """Return users credited with at least one AI Initiative partner organization."""
+    if not partner_orgs:
+        return set()
+    matched: set[str] = set()
+    user_orgs = report.user_org_map
+    for user in report.user_counts:
+        if user_orgs.get(user, set()) & partner_orgs:
+            matched.add(user)
+    return matched
 
 
 def org_key(entry: str | dict[str, Any]) -> str:
@@ -1413,6 +1490,79 @@ def build_aggregate_contributor_report(
     )
 
 
+@dataclass(frozen=True)
+class ContributorIssueTier:
+    label: str
+    minimum: int
+    maximum: int | None = None
+
+
+CONTRIBUTOR_ISSUE_TIERS = (
+    ContributorIssueTier("50+ issues", 50),
+    ContributorIssueTier("25 to 49 issues", 25, 49),
+    ContributorIssueTier("10 to 24 issues", 10, 24),
+    ContributorIssueTier("2 to 9 issues", 2, 9),
+    ContributorIssueTier("1 issue", 1, 1),
+)
+
+
+def count_in_contributor_tier(
+    counts: Counter[str],
+    tier: ContributorIssueTier,
+) -> int:
+    bucket = 0
+    for count in counts.values():
+        if count < tier.minimum:
+            continue
+        if tier.maximum is not None and count > tier.maximum:
+            continue
+        bucket += 1
+    return bucket
+
+
+def integer_percentages(bucket_counts: list[int], total: int) -> list[int]:
+    """Whole-number percentages that always sum to 100."""
+    if not total:
+        return [0 for _ in bucket_counts]
+
+    exact = [count / total * 100 for count in bucket_counts]
+    rounded = [int(value) for value in exact]
+    shortfall = 100 - sum(rounded)
+    if shortfall:
+        remainders = sorted(
+            ((exact[index] - rounded[index], index) for index in range(len(exact))),
+            reverse=True,
+        )
+        for _, index in remainders[:shortfall]:
+            rounded[index] += 1
+    return rounded
+
+
+def format_contributor_tier_stats(
+    counts: Counter[str],
+    *,
+    contributor_label: str,
+) -> list[str]:
+    """Return list items for issue-count distribution by contributor."""
+    total = len(counts)
+    if not total:
+        return []
+
+    bucket_counts = [
+        count_in_contributor_tier(counts, tier) for tier in CONTRIBUTOR_ISSUE_TIERS
+    ]
+    percentages = integer_percentages(bucket_counts, total)
+    items: list[str] = []
+    for tier, percentage in zip(CONTRIBUTOR_ISSUE_TIERS, percentages):
+        items.append(
+            li(
+                f"{percentage}% {contributor_label} contributed to "
+                f"{tier.label}"
+            )
+        )
+    return items
+
+
 def render_contributors_totals_html(
     project: ProjectConfig,
     milestone_reports: list[PeriodReport],
@@ -1423,6 +1573,9 @@ def render_contributors_totals_html(
     """Running totals of credited people and organizations across all milestones."""
     user_profile_urls = build_user_profile_urls(aggregate, alias_resolver)
     org_profile_urls = build_org_profile_urls(aggregate, alias_resolver)
+    partner_keys = load_ai_initiative_partner_keys()
+    partner_orgs = ai_initiative_partner_orgs_in_report(aggregate, partner_keys)
+    partner_people = ai_initiative_partner_people_in_report(aggregate, partner_orgs)
 
     milestone_rows: list[list[str]] = []
     for report in sorted(milestone_reports, key=lambda item: item.period.title):
@@ -1436,8 +1589,22 @@ def render_contributors_totals_html(
             ]
         )
 
-    people = format_people_counter(aggregate, user_profile_urls) or "none"
-    orgs = format_org_counter(aggregate, org_profile_urls) or "none"
+    people = (
+        format_people_counter(
+            aggregate,
+            user_profile_urls,
+            mark_partner_users=partner_people,
+        )
+        or "none"
+    )
+    orgs = (
+        format_org_counter(
+            aggregate,
+            org_profile_urls,
+            mark_partner_orgs=partner_orgs,
+        )
+        or "none"
+    )
     issue_count = len(aggregate.issues)
     milestone_count = len(milestone_reports)
 
@@ -1451,9 +1618,39 @@ def render_contributors_totals_html(
         p(em(f"Generated {aggregate.generated_at}")),
         h3(f"People ({len(aggregate.user_counts)})"),
         p(people),
-        h3(f"Organizations ({len(aggregate.org_counts)})"),
-        p(orgs),
     ]
+    if partner_people:
+        blocks.append(
+            p(
+                f"(*) {len(partner_people)} people are associated with an "
+                "organization that is or was part of the Drupal AI Initiative"
+            )
+        )
+    people_tier_stats = format_contributor_tier_stats(
+        aggregate.user_counts,
+        contributor_label="people",
+    )
+    if people_tier_stats:
+        blocks.append(ul(people_tier_stats))
+    blocks.extend(
+        [
+            h3(f"Organizations ({len(aggregate.org_counts)})"),
+            p(orgs),
+        ]
+    )
+    if partner_orgs:
+        blocks.append(
+            p(
+                f"(*) {len(partner_orgs)} organizations are or were part of the "
+                "Drupal AI Initiative"
+            )
+        )
+    org_tier_stats = format_contributor_tier_stats(
+        aggregate.org_counts,
+        contributor_label="organizations",
+    )
+    if org_tier_stats:
+        blocks.append(ul(org_tier_stats))
     if milestone_rows:
         blocks.extend(
             [
@@ -1501,15 +1698,22 @@ def format_counter(counter: Counter[str]) -> str:
 def format_org_counter(
     report: PeriodReport,
     profile_urls: dict[str, str] | None = None,
+    *,
+    mark_partner_orgs: set[str] | None = None,
 ) -> str:
     org_counts = report.org_counts
     display_titles = report.org_display_titles
     profile_urls = profile_urls or report.org_profile_urls
+    partner_marks = mark_partner_orgs or set()
     parts: list[str] = []
     for name, count in org_counts.most_common():
         display = display_titles.get(name, name)
         url = profile_urls.get(name)
-        label = a(url, display) if url else escape(display)
+        if name in partner_marks:
+            label_text = f"{display} (*)"
+        else:
+            label_text = display
+        label = a(url, label_text) if url else escape(label_text)
         parts.append(f"{label} ({count})")
     return ", ".join(parts)
 
@@ -1523,12 +1727,15 @@ def top_org_count_for_user(user: str, user_orgs: set[str], org_counts: Counter[s
 def format_people_counter(
     report: PeriodReport,
     profile_urls: dict[str, str] | None = None,
+    *,
+    mark_partner_users: set[str] | None = None,
 ) -> str:
     user_counts = report.user_counts
     org_counts = report.org_counts
     user_orgs = report.user_org_map
     display_names = report.user_display_names
     profile_urls = profile_urls or report.user_profile_urls
+    partner_marks = mark_partner_users or set()
 
     sorted_users = sorted(
         user_counts.keys(),
@@ -1542,7 +1749,11 @@ def format_people_counter(
     for user in sorted_users:
         display = display_names.get(user, user)
         url = profile_urls.get(user)
-        label = a(url, display) if url else escape(display)
+        if user in partner_marks:
+            label_text = f"{display} (*)"
+        else:
+            label_text = display
+        label = a(url, label_text) if url else escape(label_text)
         parts.append(f"{label} ({user_counts[user]})")
     return ", ".join(parts)
 
