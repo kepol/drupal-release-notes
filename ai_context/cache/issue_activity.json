@@ -161,5 +161,67 @@
         "merge_requests": []
       }
     }
+  },
+  "3586283": {
+    "fetched_at": "2026-07-18T02:42:33.536846+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 188,
+        "title": "Issue #3586283: Finalize Context Importer and Extensions page.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/188"
+      }
+    ],
+    "users": {
+      "me": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586301": {
+    "fetched_at": "2026-07-18T02:42:35.036401+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 200,
+        "title": "Issue #3586301: Clean up CCC accessible interactive links and external links.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/200"
+      },
+      {
+        "iid": 216,
+        "title": "Issue #3586326: Add basic accessibility test coverage",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/216"
+      }
+    ],
+    "users": {
+      "jucs7": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-07-07 12:26:37"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-07-07 15:54:10"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586328": {
+    "fetched_at": "2026-07-18T02:42:36.820630+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 215,
+        "title": "Issue #3586328: Add manage links to scope settings pages when not self-referential.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/215"
+      }
+    ],
+    "users": {
+      "me": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
   }
 }

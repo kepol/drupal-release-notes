@@ -1,31 +1,28 @@
 ----------------------------------------
 Release status: ai_context (1.0.0-beta3) [milestones]
 ----------------------------------------
-Release window: 2026-05-12 → 2026-07-11 23:59 UTC (+24h grace)
+Release window: 2026-05-12 → 2026-07-19 23:59 UTC (+24h grace)
 
 * Closed on future milestone: 0 (current release '1.0.0-beta3'; latest Drupal.org tag '1.0.0-beta2')
     (none)
 
 Report: reports/milestone-closed-on-future.html
 
-* Open in milestone: 8 of 94 — https://git.drupalcode.org/project/ai_context/-/milestones/5
+* Open in milestone: 4 of 107 — https://git.drupalcode.org/project/ai_context/-/milestones/5
 
-* Credit audit pending: 0
+* Credit audit pending: 3 — python3 scripts/credit_audit.py --project ai_context --review
 
 * QA issue: opened (https://git.drupalcode.org/project/ai_context/-/work_items/3586296)
 
-* Release notes: ai_context/reports/release-notes-1.0.0-beta3.html (80 credited) — milestone has 94; 8 not in release notes
+* Release notes: ai_context/reports/release-notes-1.0.0-beta3.html (97 credited) — milestone has 107; 4 not in release notes
     #3586182: CCC beta3 release planning — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586182
-    #3586218: Allow subcontext scope to override parent scope — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586218
-    #3586222: Gather CCC contribution stats for code and non-code contributions for release notes — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586222
     #3586295: Create CCC beta3 release — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586295
     #3586296: CCC beta3 QA — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586296
-    #3586310: [Meta] CCC cleanup from beta3 code review findings for beta3 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586310
-    #3586311: Usage record page renders context item content without an entity access check — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586311
-    #3586315: Selector loads the entire catalog when an agent has no scope subscriptions — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586315
+    #3586321: Create a CCC release process and template — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586321
 
-* Duplicate d.o records: 1
+* Duplicate d.o records: 2
     #3586238: Fix PHPStan failures in CCC — https://new.drupal.org/node/11454931, https://new.drupal.org/node/11454932
+    #3586301: Clean up CCC accessible interactive links and external links — https://new.drupal.org/node/11470235, https://new.drupal.org/node/11470236
 
 * Missing contribution records: 0 (in '1.0.0-beta3' scope, nothing on new.drupal.org)
     (none)

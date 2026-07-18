@@ -1,7 +1,7 @@
 <h2>Credit audit</h2>
 <p>Closed ai_context issues that may need credit review on <a href="https://new.drupal.org">new.drupal.org</a>.</p>
-<p><strong>0 issues need review</strong> · <strong>8 exempt (duplicate / won&#x27;t fix)</strong> · <strong>75 ignored (PM labels only)</strong> · <strong>40 issues approved</strong></p>
-<p><em>Generated 2026-07-05T22:22:07.775794+00:00</em></p>
+<p><strong>0 issues need review</strong> · <strong>8 exempt (duplicate / won&#x27;t fix)</strong> · <strong>77 ignored (PM labels only)</strong> · <strong>43 issues approved</strong></p>
+<p><em>Generated 2026-07-18T02:47:07.845622+00:00</em></p>
 <h3>How to approve</h3>
 <p>After reviewing an issue on Drupal.org, mark it so it won't appear again:</p>
 <pre><code># Interactive review (step through each issue)
@@ -17,9 +17,10 @@ python3 scripts/credit_audit.py --project ai_context --approve 3586230:danrod
 python3 scripts/credit_audit.py --project ai_context --unapprove 3586230
 python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod</code></pre>
 <p>Approvals are stored in <code>ai_context/cache/credit_approvals.json</code>.</p>
-<h3>Duplicate contribution records (1)</h3>
+<h3>Duplicate contribution records (2)</h3>
 <p>Multiple published records point at the same GitLab issue. The audit merges credits across them, preferring records that have credits granted. Consider deleting stale duplicates on Drupal.org.</p>
-<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586238">#3586238</a>: Fix PHPStan failures in CCC. — <a href="https://new.drupal.org/node/11454931">node/11454931</a>, <a href="https://new.drupal.org/node/11454932">node/11454932</a></li></ul>
+<ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586238">#3586238</a>: Fix PHPStan failures in CCC. — <a href="https://new.drupal.org/node/11454931">node/11454931</a>, <a href="https://new.drupal.org/node/11454932">node/11454932</a></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586301">#3586301</a>: Clean up CCC accessible interactive links and external links. — <a href="https://new.drupal.org/node/11470235">node/11470235</a>, <a href="https://new.drupal.org/node/11470236">node/11470236</a></li></ul>
 <h3>No contribution record (0)</h3>
 <p><em>None.</em></p>
 <h3>Contribution record with no credits granted (0)</h3>
@@ -48,7 +49,7 @@ python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod<
 <ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li>
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586316">#3586316</a>: Harden update 10011: empty-chunk guard and NULL-only backfill.
 <ul><li>GitLab label: <code>why::duplicate</code> (duplicate)</li></ul></li></ul>
-<h3>Ignored uncredited — project managers (75)</h3>
+<h3>Ignored uncredited — project managers (77)</h3>
 <p>The only listed-but-uncredited people are in <code>ignore_uncredited_people.txt</code> (PMs who add labels, not code).</p>
 <ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547034">#3547034</a>: [Spike] Research URL support for CCC.
 <ul><li>Credited: aidanfoster, ajv009, kepol, robloach, unqunq, webbywe</li>
@@ -330,6 +331,14 @@ python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod<
 <ul><li>Credited: aidanfoster, emma-horrell, jucs7, kepol</li>
 <li>Ignored (not expected to credit): rakhimandhania</li>
 <li>Contribution record: <a href="https://new.drupal.org/node/11452451">node/11452451</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586218">#3586218</a>: Allow subcontext scope to override parent scope.
+<ul><li>Credited: adaptative, ahmad-khader, ahmad-khalil-imagex, danrod, joshua1234511, kepol, kieran.cott, mglaman, robloach</li>
+<li>Ignored (not expected to credit): rakhimandhania</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11471658">node/11471658</a></li></ul></li>
+<li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586222">#3586222</a>: Gather CCC contribution stats for code and non-code contributions for release notes.
+<ul><li>Credited: kepol</li>
+<li>Ignored (not expected to credit): rakhimandhania, vidit-anjaria</li>
+<li>Contribution record: <a href="https://new.drupal.org/node/11469100">node/11469100</a></li></ul></li>
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3586228">#3586228</a>: Create list of modules and configuration steps for how to integrate CCC with Document Loader MDXEditor submodule.
 <ul><li>Credited: ahmad-khader, aidanfoster, emma-horrell, kepol, robloach</li>
 <li>Ignored (not expected to credit): rakhimandhania</li>
@@ -350,7 +359,7 @@ python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod<
 <ul><li>Credited: ahmad-khader, jucs7, kepol</li>
 <li>Ignored (not expected to credit): vidit-anjaria</li>
 <li>Contribution record: <a href="https://new.drupal.org/node/11467991">node/11467991</a></li></ul></li></ul>
-<h3>Approved (40)</h3>
+<h3>Approved (43)</h3>
 <p><em>These closed issues were marked reviewed. Use --unapprove to restore them to the audit.</em></p>
 <ul><li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3545824">#3545824</a>: Create demo Context Control Center for Vienna 2025.</li>
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3547892">#3547892</a>: CCC Function Call should load ContextDefinitionNormalizer via Dependency Injection.</li>
@@ -372,4 +381,4 @@ python3 scripts/credit_audit.py --project ai_context --unapprove 3586230:danrod<
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3564714">#3564714</a>: Allow context scoped to entities in CCC.</li>
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3567571">#3567571</a>: CCC MVP Demo: Create draft FinDrop context.</li>
 <li>Issue <a href="https://git.drupalcode.org/project/ai_context/-/work_items/3568673">#3568673</a>: Add context scope base code and use case context scope plugin.</li>
-<li>… and 20 more</li></ul>
+<li>… and 23 more</li></ul>

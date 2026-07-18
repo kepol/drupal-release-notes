@@ -3771,6 +3771,29 @@
     "uuid": "c7754aca-fb81-44ce-8197-40549a795ebe"
   },
   {
+    "closed_at": "2026-07-16T23:09:05+00:00",
+    "credited": [
+      "adaptative",
+      "ahmad-khader",
+      "ahmad-khalil-imagex",
+      "danrod",
+      "joshua1234511",
+      "kepol",
+      "kieran.cott",
+      "mglaman",
+      "robloach"
+    ],
+    "iid": 3586218,
+    "nid": 11471658,
+    "record_url": "https://new.drupal.org/node/11471658",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586218",
+    "title": "Allow subcontext scope to override parent scope",
+    "uncredited": [
+      "rakhimandhania"
+    ],
+    "uuid": "6507df67-c72f-4df9-a90f-18bccda35745"
+  },
+  {
     "closed_at": "2026-06-12T22:19:36+00:00",
     "credited": [
       "adaptative",
@@ -3823,6 +3846,22 @@
     "title": "Test Chicago Driesnote repo with cheaper models",
     "uncredited": [],
     "uuid": "52a3afb2-176d-47d4-9219-fd0ff3915322"
+  },
+  {
+    "closed_at": "2026-07-05T23:32:29+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586222,
+    "nid": 11469100,
+    "record_url": "https://new.drupal.org/node/11469100",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586222",
+    "title": "Gather CCC contribution stats for code and non-code contributions for release notes",
+    "uncredited": [
+      "rakhimandhania",
+      "vidit-anjaria"
+    ],
+    "uuid": "db37f26f-6aba-4bca-8b1d-d0f3a5b7c0fd"
   },
   {
     "closed_at": "2026-05-10T16:46:10+00:00",
@@ -4393,6 +4432,25 @@
     "uuid": "28aa8c69-1e79-4688-b8f9-145b2ae380e0"
   },
   {
+    "closed_at": "2026-07-16T22:19:40+00:00",
+    "credited": [
+      "aidanfoster",
+      "danrod",
+      "emma-horrell",
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586283,
+    "nid": 11467708,
+    "record_url": "https://new.drupal.org/node/11467708",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586283",
+    "title": "Finalize Context Importer naming and review Extensions page UI/UX",
+    "uncredited": [
+      "me"
+    ],
+    "uuid": "3ae01f10-bce9-4955-b560-af72deb00b43"
+  },
+  {
     "closed_at": "2026-06-23T03:12:11+00:00",
     "credited": [
       "aidanfoster",
@@ -4449,6 +4507,19 @@
     "uuid": "ecbf3cbb-3662-42f1-9e66-f11e6a97b81c"
   },
   {
+    "closed_at": "2026-07-10T05:00:37+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586293,
+    "nid": 11470329,
+    "record_url": "https://new.drupal.org/node/11470329",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586293",
+    "title": "Sprint 13 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "4bcbab70-c07c-429d-a05e-d6c0624a0c51"
+  },
+  {
     "closed_at": "2026-07-02T21:49:00+00:00",
     "credited": [
       "kepol"
@@ -4476,6 +4547,123 @@
     "uuid": "c1cbe458-47bf-4077-8a30-8b3fd4c7caf7"
   },
   {
+    "closed_at": "2026-07-08T16:52:16+00:00",
+    "credited": [
+      "kepol",
+      "merilainen",
+      "pravesh_poonia"
+    ],
+    "iid": 3586299,
+    "nid": 11468785,
+    "record_url": "https://new.drupal.org/node/11468785",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586299",
+    "title": "Clean up CCC test and documentation consistency before rc1",
+    "uncredited": [],
+    "uuid": "49b61a67-de0f-4c03-b72a-f438596e962b"
+  },
+  {
+    "closed_at": "2026-07-08T18:28:53+00:00",
+    "credited": [
+      "adaptative",
+      "csakiistvan",
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586300,
+    "nid": 11470090,
+    "record_url": "https://new.drupal.org/node/11470090",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586300",
+    "title": "Clean up CCC cacheability and access metadata",
+    "uncredited": [],
+    "uuid": "56dc1784-7e56-4a69-8b96-488a38bc36a2"
+  },
+  {
+    "closed_at": "2026-07-09T18:32:21+00:00",
+    "credited": [
+      "adaptative",
+      "kepol",
+      "pravesh_poonia",
+      "violaniko"
+    ],
+    "duplicate_nids": [
+      11470235,
+      11470236
+    ],
+    "iid": 3586301,
+    "nid": 11470235,
+    "record_url": "https://new.drupal.org/node/11470235",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586301",
+    "title": "Clean up CCC accessible interactive links and external links",
+    "uncredited": [
+      "jucs7"
+    ],
+    "uuid": "4e77264f-f467-49bb-9faf-547015c59648"
+  },
+  {
+    "closed_at": "2026-07-09T19:42:27+00:00",
+    "credited": [
+      "adaptative",
+      "kepol",
+      "merilainen",
+      "pravesh_poonia"
+    ],
+    "iid": 3586303,
+    "nid": 11470244,
+    "record_url": "https://new.drupal.org/node/11470244",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586303",
+    "title": "Clean up CCC JavaScript filter feedback",
+    "uncredited": [],
+    "uuid": "ceb5ba1e-cc2e-4379-a0bb-725ad34a4db9"
+  },
+  {
+    "closed_at": "2026-07-08T02:06:44+00:00",
+    "credited": [
+      "danrod",
+      "jucs7",
+      "kepol",
+      "merilainen"
+    ],
+    "iid": 3586304,
+    "nid": 11468394,
+    "record_url": "https://new.drupal.org/node/11468394",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586304",
+    "title": "Clean up CCC form and table accessibility cleanup",
+    "uncredited": [],
+    "uuid": "3c559695-614e-4d23-9090-dec0cb426a83"
+  },
+  {
+    "closed_at": "2026-07-08T02:39:14+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "joshua1234511",
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586305,
+    "nid": 11468786,
+    "record_url": "https://new.drupal.org/node/11468786",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586305",
+    "title": "Clean up CCC documentation and API consistency",
+    "uncredited": [],
+    "uuid": "6877c964-84bf-41f4-b7cf-3ac6b7ca320a"
+  },
+  {
+    "closed_at": "2026-07-17T23:49:33+00:00",
+    "credited": [
+      "kepol",
+      "merilainen",
+      "robloach",
+      "tbalog"
+    ],
+    "iid": 3586306,
+    "nid": 11471786,
+    "record_url": "https://new.drupal.org/node/11471786",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586306",
+    "title": "Clean up CCC configuration policy checks",
+    "uncredited": [],
+    "uuid": "af39d212-09a1-4dac-a73a-ee4582fac904"
+  },
+  {
     "closed_at": "2026-07-02T00:45:48+00:00",
     "credited": [
       "danrod",
@@ -4490,6 +4678,37 @@
     "uuid": "5c5d6f22-7ae8-4118-b053-8abfc0b0f8a9"
   },
   {
+    "closed_at": "2026-07-12T03:57:33+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586310,
+    "nid": 11470737,
+    "record_url": "https://new.drupal.org/node/11470737",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586310",
+    "title": "[Meta] CCC cleanup from beta3 code review findings for beta3",
+    "uncredited": [],
+    "uuid": "886fc1a9-1630-4572-985f-64c78fdbf844"
+  },
+  {
+    "closed_at": "2026-07-16T21:07:23+00:00",
+    "credited": [
+      "adaptative",
+      "danrod",
+      "jucs7",
+      "kepol",
+      "merilainen",
+      "pravesh_poonia"
+    ],
+    "iid": 3586311,
+    "nid": 11471641,
+    "record_url": "https://new.drupal.org/node/11471641",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586311",
+    "title": "Usage record page leaks context item content and grants links without access checks",
+    "uncredited": [],
+    "uuid": "5bb27e49-6df8-49db-a60b-45d77d66e3fb"
+  },
+  {
     "closed_at": "2026-07-02T21:29:50+00:00",
     "credited": [],
     "iid": 3586312,
@@ -4501,6 +4720,21 @@
       "kepol"
     ],
     "uuid": "3ae7843c-aa84-4a6c-9bcf-9b7fb9608b03"
+  },
+  {
+    "closed_at": "2026-07-09T18:23:51+00:00",
+    "credited": [
+      "kepol",
+      "pravesh_poonia",
+      "violaniko"
+    ],
+    "iid": 3586315,
+    "nid": 11468792,
+    "record_url": "https://new.drupal.org/node/11468792",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586315",
+    "title": "Selector loads the entire catalog when an agent has no scope subscriptions",
+    "uncredited": [],
+    "uuid": "af66bbd6-a71b-413c-881e-39644f0ac7fb"
   },
   {
     "closed_at": "2026-07-03T04:45:43+00:00",
@@ -4528,5 +4762,49 @@
     "title": "Beta vs 1.1 CCC API gap analysis",
     "uncredited": [],
     "uuid": "f5dbd122-b4e7-40cb-9a36-2990677e8b5f"
+  },
+  {
+    "closed_at": "2026-07-07T22:57:26+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586323,
+    "nid": 11469700,
+    "record_url": "https://new.drupal.org/node/11469700",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586323",
+    "title": "AiContextAgentSettingsTest fails with ai_agents 1.3.2+ due to hardcoded edit form path",
+    "uncredited": [],
+    "uuid": "abb79ac7-a57f-495a-ad7f-9e696f5ac1ba"
+  },
+  {
+    "closed_at": "2026-07-16T20:32:06+00:00",
+    "credited": [
+      "abhisekmazumdar",
+      "kepol",
+      "kieran.cott"
+    ],
+    "iid": 3586328,
+    "nid": 11471635,
+    "record_url": "https://new.drupal.org/node/11471635",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586328",
+    "title": "Add manage links to scope edit admin pages for certain scope links",
+    "uncredited": [
+      "me"
+    ],
+    "uuid": "cb6e7ef9-9251-43ad-a289-35dc8d9ff5f5"
+  },
+  {
+    "closed_at": "2026-07-16T20:01:53+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "kepol"
+    ],
+    "iid": 3586331,
+    "nid": 11471634,
+    "record_url": "https://new.drupal.org/node/11471634",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586331",
+    "title": "CCC CI pipelines failing across MRs from new phpstan rules",
+    "uncredited": [],
+    "uuid": "3c4083ea-c8ab-4e1b-83b8-964e29d351f0"
   }
 ]
