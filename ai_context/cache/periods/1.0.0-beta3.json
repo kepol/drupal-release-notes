@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T02:41:50.606240+00:00",
+  "generated_at": "2026-07-19T02:13:10.569521+00:00",
   "issues": [
     {
       "category": "feature",
@@ -1030,6 +1030,34 @@
       "priority": "major",
       "title": "[Discuss] Structured context content format and authoring model",
       "uuid": "1652c9d3-ed49-46c9-9cb3-80370c5f2817"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-18T04:21:23.578000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586182,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586182",
+      "priority": "major",
+      "title": "CCC beta3 release planning",
+      "uuid": "672d6d96-1508-4971-99a2-bb3e76503db6"
     },
     {
       "category": "task",
@@ -4127,6 +4155,62 @@
       "uuid": "604c96dc-3b81-4b59-a54a-8730c6570143"
     },
     {
+      "category": "task",
+      "closed_at": "2026-07-19T02:03:45.425000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586295,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586295",
+      "priority": "critical",
+      "title": "Create CCC beta3 release",
+      "uuid": "b8da38bf-0cee-480e-8644-dace74e81244"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-18T04:07:09.366000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586296,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586296",
+      "priority": "major",
+      "title": "CCC beta3 QA",
+      "uuid": "47c85ba8-bd68-4df1-a73d-a60a84572222"
+    },
+    {
       "category": "plan",
       "closed_at": "2026-06-27T21:17:31.846000+00:00",
       "contributors": [
@@ -4919,6 +5003,34 @@
       "uuid": "f5dbd122-b4e7-40cb-9a36-2990677e8b5f"
     },
     {
+      "category": "task",
+      "closed_at": "2026-07-18T04:19:23.615000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586321,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586321",
+      "priority": "normal",
+      "title": "Create a CCC release process",
+      "uuid": "25e05b58-c490-421a-b4f5-b542b3a5a6db"
+    },
+    {
       "category": "bug",
       "closed_at": "2026-07-07T22:57:26.213000+00:00",
       "contributors": [
@@ -5060,7 +5172,7 @@
     "freelygive": 1,
     "imagex": 8,
     "integral vision ltd": 5,
-    "itty bitty byte": 97,
+    "itty bitty byte": 101,
     "kalamuna": 13,
     "kanopi studios": 1,
     "mearra (formerly known as wunder)": 6,
@@ -5069,13 +5181,13 @@
     "point blank": 1,
     "qed42": 6,
     "reading room": 4,
-    "salsa digital": 97,
+    "salsa digital": 101,
     "sven decabooter": 1,
     "the university of edinburgh": 18,
     "vardot": 9
   },
   "period": {
-    "end": "2026-07-19T23:59:59+00:00",
+    "end": "2026-07-20T23:59:59+00:00",
     "frozen": true,
     "slug": "1.0.0-beta3",
     "start": "2026-05-12T00:00:00+00:00",
@@ -5101,7 +5213,7 @@
     "hestenet": 1,
     "joshua1234511": 7,
     "jucs7": 6,
-    "kepol": 97,
+    "kepol": 101,
     "kieran.cott": 4,
     "leofishman": 1,
     "marcus_johansson": 1,

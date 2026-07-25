@@ -5162,6 +5162,7 @@
   },
   "3586182": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586182,
     "labels": [
       "2026Sprint10",
@@ -5174,9 +5175,10 @@
       "ai::inside",
       "category::plan",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "CCC beta3 release planning",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586182"
@@ -7373,6 +7375,7 @@
   },
   "3586295": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586295,
     "labels": [
       "2026Sprint14",
@@ -7380,15 +7383,17 @@
       "ai::context",
       "category::task",
       "priority::critical",
-      "state::blocked",
+      "state::fixed",
       "what::management"
     ],
+    "merge_request_urls": [],
     "priority": "critical",
     "title": "Create CCC beta3 release",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586295"
   },
   "3586296": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586296,
     "labels": [
       "2026Sprint14",
@@ -7396,9 +7401,10 @@
       "ai::inside",
       "category::task",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::testing"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "CCC beta3 QA",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586296"
@@ -7899,6 +7905,7 @@
   },
   "3586321": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586321,
     "labels": [
       "2026Sprint13",
@@ -7907,11 +7914,12 @@
       "ai::context",
       "category::task",
       "priority::normal",
-      "state::blocked",
+      "state::fixed",
       "what::management"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
-    "title": "Create a CCC release process and template",
+    "title": "Create a CCC release process",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586321"
   },
   "3586322": {
@@ -8124,5 +8132,22 @@
     "priority": "normal",
     "title": "Create CCC beta3 and status update video",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586333"
+  },
+  "3586334": {
+    "category": "task",
+    "iid": 3586334,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::context",
+      "category::task",
+      "priority::normal",
+      "sprint candidate",
+      "state::accepted",
+      "what::management"
+    ],
+    "priority": "normal",
+    "title": "Create a CCC release process issue template",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586334"
   }
 }

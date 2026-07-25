@@ -2011,7 +2011,7 @@ def render_html(
 
     feature_count = len([i for i in accountable if i.category in FEATURE_CATEGORIES])
     bug_count = len([i for i in accountable if i.category in BUG_CATEGORIES])
-    major_count = len(classified.other_major_accounted)
+    major_count = len(classified.other_major_display)
     total_issues = len(accountable)
 
     summary = load_summary_paragraph(project, report.period.slug)
@@ -2092,9 +2092,9 @@ def render_html(
             )
         )
 
-    if classified.other_major_display or classified.other_major_accounted:
+    if classified.other_major_display:
         blocks.append(
-            h3(f"Other Major Issues ({len(classified.other_major_accounted)})")
+            h3(f"Other Major Issues ({len(classified.other_major_display)})")
         )
         blocks.append(
             ul(
