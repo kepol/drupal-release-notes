@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:13:10.569521+00:00",
+  "generated_at": "2026-09-06T05:28:17.219787+00:00",
   "issues": [
     {
       "category": "feature",
@@ -1109,9 +1109,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -1736,9 +1736,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -3362,9 +3362,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -3516,7 +3516,13 @@
         {
           "display_name": "tormi",
           "drupal_uid": 16010,
-          "orgs": [],
+          "orgs": [
+            {
+              "name": "mearra (formerly known as wunder)",
+              "nid": 1269866,
+              "title": "Mearra (formerly known as Wunder)"
+            }
+          ],
           "user": "tormi"
         }
       ],
@@ -3819,9 +3825,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -4518,9 +4524,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -4841,9 +4847,9 @@
           "drupal_uid": 3845119,
           "orgs": [
             {
-              "name": "esinergia",
+              "name": "esinergia.",
               "nid": 2346463,
-              "title": "ESINERGIA"
+              "title": "esinergia."
             }
           ],
           "user": "jucs7"
@@ -5167,7 +5173,7 @@
     "drupalfit": 7,
     "dynamate": 1,
     "e-sepia web innovation": 1,
-    "esinergia": 6,
+    "esinergia.": 6,
     "foster interactive inc.": 22,
     "freelygive": 1,
     "imagex": 8,
@@ -5175,7 +5181,7 @@
     "itty bitty byte": 101,
     "kalamuna": 13,
     "kanopi studios": 1,
-    "mearra (formerly known as wunder)": 6,
+    "mearra (formerly known as wunder)": 7,
     "opensense labs": 7,
     "optasy": 12,
     "point blank": 1,

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-09-06T05:28:32.979015+00:00",
+  "issues": [
+    {
+      "category": "plan",
+      "closed_at": "2026-09-05T03:26:46.514000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "marcus_johansson"
+        }
+      ],
+      "iid": 3586465,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586465",
+      "priority": "normal",
+      "title": "Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor",
+      "uuid": "a2f2dbb1-045b-43bd-b372-0210b0b9bcfe"
+    }
+  ],
+  "org_counts": {
+    "freelygive": 1,
+    "itty bitty byte": 1,
+    "salsa digital": 1
+  },
+  "period": {
+    "end": "2026-10-10T23:59:59+00:00",
+    "frozen": true,
+    "slug": "1.0.1",
+    "start": "2026-09-20T00:00:00+00:00",
+    "title": "1.0.1"
+  },
+  "user_counts": {
+    "kepol": 1,
+    "marcus_johansson": 1
+  }
+}

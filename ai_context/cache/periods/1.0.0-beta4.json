@@ -1,13 +1,4157 @@
 {
-  "generated_at": "2026-07-18T02:41:59.803038+00:00",
-  "issues": [],
-  "org_counts": {},
+  "generated_at": "2026-09-06T05:28:23.978712+00:00",
+  "issues": [
+    {
+      "category": "task",
+      "closed_at": "2026-08-06T19:08:58.667000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "breidert",
+          "drupal_uid": 135619,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "breidert"
+        }
+      ],
+      "iid": 3571104,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571104",
+      "priority": "normal",
+      "title": "Create graphic to explain how context scope works",
+      "uuid": "691d6fe9-52ac-4a43-a4b7-269c5c5f44c0"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-05T00:25:41.001000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "adrianodias",
+          "drupal_uid": 2692181,
+          "orgs": [],
+          "user": "adrianodias"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "a.dmitriiev",
+          "drupal_uid": 3235287,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "a.dmitriiev"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3571115,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571115",
+      "priority": "major",
+      "title": "[Discuss] Integrating content reviews based on context",
+      "uuid": "33509e24-1b54-470a-82fb-b4140ac15d10"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-28T17:25:24.401000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3574924,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574924",
+      "priority": "normal",
+      "title": "Allow freeform searching by any context scope",
+      "uuid": "989ef883-ddec-4834-9cca-cf340fbb3dcb"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-28T21:05:56.742000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "annmarysruthy",
+          "drupal_uid": 3664314,
+          "orgs": [
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
+          ],
+          "user": "annmarysruthy"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3574937,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574937",
+      "priority": "normal",
+      "title": "Review and update CCC permissions for beta3",
+      "uuid": "20a61fbb-6a3a-49d9-a774-18355485493d"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T04:52:17.313000+00:00",
+      "contributors": [
+        {
+          "display_name": "jessehs",
+          "drupal_uid": 620440,
+          "orgs": [],
+          "user": "jessehs"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ajv009",
+          "drupal_uid": 3653917,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "ajv009"
+        },
+        {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        },
+        {
+          "display_name": "a.dmitriiev",
+          "drupal_uid": 3235287,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "a.dmitriiev"
+        },
+        {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
+          "orgs": [
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
+          ],
+          "user": "robloach"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        }
+      ],
+      "iid": 3581955,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581955",
+      "priority": "normal",
+      "title": "[Discuss] Inject context into ai_ckeditor requests",
+      "uuid": "cca6f945-2750-402a-84a7-aaf0064bc4c3"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-11T18:32:12.013000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "mglaman",
+          "drupal_uid": 2416470,
+          "orgs": [
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
+          ],
+          "user": "mglaman"
+        },
+        {
+          "display_name": "scott falconer",
+          "drupal_uid": 52557,
+          "orgs": [
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
+          ],
+          "user": "scottfalconer"
+        },
+        {
+          "display_name": "ronaldtebrake",
+          "drupal_uid": 2314038,
+          "orgs": [
+            {
+              "name": "open social",
+              "nid": 2630826,
+              "title": "Open Social"
+            }
+          ],
+          "user": "ronaldtebrake"
+        },
+        {
+          "display_name": "zorz",
+          "drupal_uid": 1924846,
+          "orgs": [
+            {
+              "name": "point blank",
+              "nid": 2562565,
+              "title": "Point Blank"
+            }
+          ],
+          "user": "zorz"
+        }
+      ],
+      "iid": 3586150,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586150",
+      "priority": "normal",
+      "title": "[Spike] Add Site Architecture context source for Drupal site behavior contracts",
+      "uuid": "bd9b2c21-94d3-4e48-a7bb-9dfa226f284a"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-08T04:27:27.338000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        }
+      ],
+      "iid": 3586199,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586199",
+      "priority": "major",
+      "title": "Tune conditional subcontext logic",
+      "uuid": "822dff6d-af2d-4805-b033-f1631af41b2c"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:26:11.915000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "rakhimandhania",
+          "drupal_uid": 2475028,
+          "orgs": [
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
+          ],
+          "user": "rakhimandhania"
+        },
+        {
+          "display_name": "mglaman",
+          "drupal_uid": 2416470,
+          "orgs": [
+            {
+              "name": "acquia",
+              "nid": 1204416,
+              "title": "Acquia"
+            }
+          ],
+          "user": "mglaman"
+        }
+      ],
+      "iid": 3586206,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586206",
+      "priority": "normal",
+      "title": "[Discuss] Avoid Full Published-ID Scans Before Scope Prefiltering",
+      "uuid": "8d3a3f3d-c44f-44c3-afb4-b5c63a4b1110"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-24T03:01:25.221000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        },
+        {
+          "display_name": "valthebald",
+          "drupal_uid": 239562,
+          "orgs": [
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            }
+          ],
+          "user": "valthebald"
+        }
+      ],
+      "iid": 3586234,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586234",
+      "priority": "major",
+      "title": "CCC beta1 to beta2 community testing",
+      "uuid": "22d913af-f01a-4a1c-9da7-34525ddbe4db"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-08T01:50:26.437000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586235,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586235",
+      "priority": "major",
+      "title": "Recruit additional CCC beta testers",
+      "uuid": "ebf8e28f-3ef1-4e7a-9d0a-60a4d6e494e1"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-08-14T16:23:31.337000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "kieran.cott",
+          "drupal_uid": 3690632,
+          "orgs": [
+            {
+              "name": "reading room",
+              "nid": 2091073,
+              "title": "Reading Room"
+            }
+          ],
+          "user": "kieran.cott"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        }
+      ],
+      "iid": 3586237,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586237",
+      "priority": "normal",
+      "title": "Create multi-vocabulary taxonomy scope plugin",
+      "uuid": "0ef8e47d-dd62-455d-8f2d-ff27e4af5696"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T20:28:31.358000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586243,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586243",
+      "priority": "major",
+      "title": "[Spike] Complete scope plugin persistence API: manager orchestration, target entity encapsulation, and plugin-driven admin/selection",
+      "uuid": "274b895b-e0c6-42fa-8785-e508eb7dd66c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-08T01:49:12.204000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "webchick",
+          "drupal_uid": 24967,
+          "orgs": [],
+          "user": "webchick"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        }
+      ],
+      "iid": 3586248,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586248",
+      "priority": "normal",
+      "title": "Add CCC beta tester info to the project page",
+      "uuid": "311c3a1f-5719-481c-af05-9700aba638a6"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-07-31T15:56:04.093000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "jesus_md",
+          "drupal_uid": 3710541,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "jezusito"
+        }
+      ],
+      "iid": 3586262,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586262",
+      "priority": "normal",
+      "title": "Allow scope plugins to declare an optional icon for UI display",
+      "uuid": "b09965dd-285b-437c-8db9-7018d4085218"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-30T04:17:03.416000+00:00",
+      "contributors": [
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586263,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586263",
+      "priority": "normal",
+      "title": "Update relevant CCC skipped tests",
+      "uuid": "cd7c0739-4e4d-46f0-86ab-6be9d3f9e50b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-24T03:22:44.039000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "niklp",
+          "drupal_uid": 71221,
+          "orgs": [
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            },
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            }
+          ],
+          "user": "niklp"
+        },
+        {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        }
+      ],
+      "iid": 3586268,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586268",
+      "priority": "normal",
+      "title": "[Discuss] Evaluate Annotations module and how it might work with CCC",
+      "uuid": "2f40ea0b-896b-4a77-b603-23d6e5e0ff92"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-06T05:39:09.315000+00:00",
+      "contributors": [
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        },
+        {
+          "display_name": "cobadger",
+          "drupal_uid": 1102918,
+          "orgs": [
+            {
+              "name": "pare & co",
+              "nid": 2500707,
+              "title": "Pare & Co"
+            }
+          ],
+          "user": "cobadger"
+        }
+      ],
+      "iid": 3586271,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586271",
+      "priority": "major",
+      "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 3)",
+      "uuid": "f53e5229-65f7-4eac-a631-171b8e39e61e"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:27:20.333000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        }
+      ],
+      "iid": 3586273,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586273",
+      "priority": "major",
+      "title": "[Discuss] Extensible \"role\" architecture for context items (examples, rubrics, and future types)",
+      "uuid": "37ac58fa-9a4a-49da-90b2-ada865d6e9d3"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T19:11:09.445000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        },
+        {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
+          "orgs": [
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
+          ],
+          "user": "robloach"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "kieran.cott",
+          "drupal_uid": 3690632,
+          "orgs": [
+            {
+              "name": "reading room",
+              "nid": 2091073,
+              "title": "Reading Room"
+            }
+          ],
+          "user": "kieran.cott"
+        }
+      ],
+      "iid": 3586276,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586276",
+      "priority": "major",
+      "title": "Rename entity bundle and target entity scope plugins for better DX",
+      "uuid": "d518e904-3b1e-4b2e-83e5-dc04b4e2acff"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:36:41.650000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "violaniko",
+          "drupal_uid": 3448125,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "violaniko"
+        }
+      ],
+      "iid": 3586279,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586279",
+      "priority": "normal",
+      "title": "[Discuss] Provide real sample context items for end user use",
+      "uuid": "7e2a44ab-7135-496e-bbd6-c806d86a7da1"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:39:34.046000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586281,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586281",
+      "priority": "major",
+      "title": "[Discuss] Introduce explicit scope types and item inclusion modes; clarify selection in UI and docs",
+      "uuid": "f2934e67-ab53-418e-8631-c950943e2ef4"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-07-24T03:53:23.349000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        }
+      ],
+      "iid": 3586282,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586282",
+      "priority": "major",
+      "title": "Promote Document Loader: Context Importer from experimental to stable",
+      "uuid": "706c74d9-b1f9-41ed-b1fc-0853387412f1"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:43:50.709000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "josecarlosmedero",
+          "drupal_uid": 3733072,
+          "orgs": [],
+          "user": "josecarlosmedero"
+        },
+        {
+          "display_name": "niklp",
+          "drupal_uid": 71221,
+          "orgs": [
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            },
+            {
+              "name": "localgov drupal",
+              "nid": 3233097,
+              "title": "LocalGov Drupal"
+            }
+          ],
+          "user": "niklp"
+        }
+      ],
+      "iid": 3586289,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586289",
+      "priority": "major",
+      "title": "[Discuss] Add ExternalContextProviderInterface and ContextQueryInterface to support RAG/vector store integrations",
+      "uuid": "be55c410-1600-4062-9098-8400a4cef696"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-07-28T22:49:37.536000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        }
+      ],
+      "iid": 3586290,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586290",
+      "priority": "major",
+      "title": "Add regression coverage for the default view display post-update failure",
+      "uuid": "806da44e-fdee-45d4-ad02-ef62b71cfd43"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-05T03:06:33.094000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "merilainen",
+          "drupal_uid": 304437,
+          "orgs": [
+            {
+              "name": "mearra (formerly known as wunder)",
+              "nid": 1269866,
+              "title": "Mearra (formerly known as Wunder)"
+            }
+          ],
+          "user": "merilainen"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "bbruno"
+        }
+      ],
+      "iid": 3586292,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586292",
+      "priority": "normal",
+      "title": "Improve conditional subcontext disabled-state behavior and admin UX",
+      "uuid": "ecdf3fbc-d40c-4b0f-8a9d-17f68a054b75"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-03T16:46:11.151000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586298,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586298",
+      "priority": "major",
+      "title": "[Meta] Fix CCC issues based on AI Best Practices results",
+      "uuid": "9c21af24-95bc-4687-997c-d80186408f1c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-01T00:07:25.897000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "violaniko",
+          "drupal_uid": 3448125,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "violaniko"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "bbruno",
+          "drupal_uid": 3691195,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "bbruno"
+        },
+        {
+          "display_name": "pravesh_poonia",
+          "drupal_uid": 3745124,
+          "orgs": [
+            {
+              "name": "opensense labs",
+              "nid": 2300801,
+              "title": "OpenSense Labs"
+            },
+            {
+              "name": "drupalfit",
+              "nid": 2935550,
+              "title": "DrupalFit"
+            }
+          ],
+          "user": "pravesh_poonia"
+        }
+      ],
+      "iid": 3586302,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586302",
+      "priority": "major",
+      "title": "Clean up CCC tooltip, truncation, and icon-only content",
+      "uuid": "adc94f2f-27b7-40bf-931c-36748026967d"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-07-24T05:46:40.546000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3586308,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586308",
+      "priority": "major",
+      "title": "Allow agents to opt-out of context auto-injection (context push)",
+      "uuid": "8c3d1630-30a1-4c18-816c-7baa9eee5039"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-06T21:15:22.108000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586309,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586309",
+      "priority": "major",
+      "title": "[Meta] CCC cleanup and API hardening from code review findings for beta4",
+      "uuid": "f242e3b6-1c24-47bb-b988-1597ca973ab2"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T05:17:03.063000+00:00",
+      "contributors": [
+        {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "marcus_johansson"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "a.dmitriiev",
+          "drupal_uid": 3235287,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "a.dmitriiev"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        }
+      ],
+      "iid": 3586319,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586319",
+      "priority": "critical",
+      "title": "[Discuss] Move from agent-specific to generic context consumer API",
+      "uuid": "36fe334a-5028-4b98-87de-93933a980aa3"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T04:02:11.850000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        }
+      ],
+      "iid": 3586320,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586320",
+      "priority": "major",
+      "title": "[Discuss] Context scope subscription approach",
+      "uuid": "34f84fdf-c2db-4131-a103-71fb4a38106b"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-28T17:53:58.610000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "flux423",
+          "drupal_uid": 246399,
+          "orgs": [],
+          "user": "flux423"
+        }
+      ],
+      "iid": 3586322,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586322",
+      "priority": "normal",
+      "title": "Assess duadp module's integration with CCC",
+      "uuid": "bdc36f54-8363-42fa-bd48-7c376930ed87"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-07-24T05:01:07.146000+00:00",
+      "contributors": [
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "violaniko",
+          "drupal_uid": 3448125,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "violaniko"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586324,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586324",
+      "priority": "major",
+      "title": "Replace brittle hardcoded admin path assertions in functional and kernel tests with route-derived URLs",
+      "uuid": "d7bcb71c-30dc-4184-a9de-e3fa24d65112"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-31T17:05:20.874000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "pravesh_poonia",
+          "drupal_uid": 3745124,
+          "orgs": [
+            {
+              "name": "opensense labs",
+              "nid": 2300801,
+              "title": "OpenSense Labs"
+            },
+            {
+              "name": "drupalfit",
+              "nid": 2935550,
+              "title": "DrupalFit"
+            }
+          ],
+          "user": "pravesh_poonia"
+        }
+      ],
+      "iid": 3586325,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586325",
+      "priority": "normal",
+      "title": "Avoid functional-test dual-container traps",
+      "uuid": "811dba6e-86e3-4fd2-970a-be7d4de4f5fc"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-28T23:29:33.238000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "violaniko",
+          "drupal_uid": 3448125,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "violaniko"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        }
+      ],
+      "iid": 3586326,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586326",
+      "priority": "normal",
+      "title": "Add basic accessibility test coverage",
+      "uuid": "58f8d390-5277-4d8b-855a-a09673610f07"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T03:54:03.126000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "merilainen",
+          "drupal_uid": 304437,
+          "orgs": [
+            {
+              "name": "mearra (formerly known as wunder)",
+              "nid": 1269866,
+              "title": "Mearra (formerly known as Wunder)"
+            }
+          ],
+          "user": "merilainen"
+        },
+        {
+          "display_name": "csakiistvan",
+          "drupal_uid": 491514,
+          "orgs": [
+            {
+              "name": "1xinternet",
+              "nid": 2428817,
+              "title": "1xINTERNET"
+            }
+          ],
+          "user": "csakiistvan"
+        }
+      ],
+      "iid": 3586327,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586327",
+      "priority": "normal",
+      "title": "[Discuss] Cannot transition away from \"Unpublished\" Context Item",
+      "uuid": "4acef72c-3f7e-43cd-8cda-b470a56142bc"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T03:17:12.418000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586329,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586329",
+      "priority": "major",
+      "title": "Sprint 14 CCC roadmap updates, sprint planning, and issue triage",
+      "uuid": "203e8816-ed18-46b8-b6f1-dd8cbe4ff53e"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-06T21:13:16.603000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586330,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586330",
+      "priority": "major",
+      "title": "Sprint 15 CCC roadmap updates, sprint planning, and issue triage",
+      "uuid": "01a3daed-6ee5-4e46-868e-7d66998e08ea"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-31T03:32:37.614000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "phillipamartin",
+          "drupal_uid": 3717013,
+          "orgs": [],
+          "user": "phillipamartin"
+        }
+      ],
+      "iid": 3586332,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586332",
+      "priority": "normal",
+      "title": "CCC beta3 blog post",
+      "uuid": "993dae96-ef5a-477f-b3f1-2342eb1d48f1"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-28T18:01:31.261000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586334,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586334",
+      "priority": "normal",
+      "title": "Create a CCC release process issue template",
+      "uuid": "ab3d610b-4d1e-447a-8b36-4639879ba42c"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-07-24T02:54:59.095000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        }
+      ],
+      "iid": 3586335,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586335",
+      "priority": "major",
+      "title": "CCC beta testing UX sync 19 July 2026",
+      "uuid": "4eda6bbb-aa59-424e-8390-6fe463eda47e"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-07-23T19:49:50.298000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "rajab natshah",
+          "drupal_uid": 1414312,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "rajabnatshah"
+        },
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        }
+      ],
+      "iid": 3586336,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586336",
+      "priority": "major",
+      "title": "Composer patch for Drupal Canvas breaks dependent project installs (relative path)",
+      "uuid": "b5dc4e2a-14b6-4789-88a3-3b276867d864"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-08-05T05:33:30.411000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        }
+      ],
+      "iid": 3586337,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586337",
+      "priority": "major",
+      "title": "Design an indicator for the CCC UI that conveys subscription limits",
+      "uuid": "b6eb2869-e79b-4432-81c3-9c04af366c99"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-08-03T18:59:10.691000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
+          "orgs": [
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
+          ],
+          "user": "robloach"
+        },
+        {
+          "display_name": "reinimax",
+          "drupal_uid": 3801403,
+          "orgs": [],
+          "user": "reinimax"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        }
+      ],
+      "iid": 3586338,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586338",
+      "priority": "critical",
+      "title": "Restore Drupal 10 compatibility and repair incomplete beta3 upgrades",
+      "uuid": "ef809a46-da06-4c06-b9b5-730d66e94042"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-07-24T03:18:13.812000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "reinimax",
+          "drupal_uid": 3801403,
+          "orgs": [],
+          "user": "reinimax"
+        }
+      ],
+      "iid": 3586341,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586341",
+      "priority": "major",
+      "title": "WSOD on certain settings tabs",
+      "uuid": "67c517d3-f991-439d-8593-25dea4ca4969"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-07-31T23:13:38.609000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "danrod",
+          "drupal_uid": 19150,
+          "orgs": [
+            {
+              "name": "optasy",
+              "nid": 2765755,
+              "title": "OPTASY"
+            }
+          ],
+          "user": "danrod"
+        }
+      ],
+      "iid": 3586343,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586343",
+      "priority": "major",
+      "title": "beta2 upgrade fails at updates 10006 and 10011 after bundleless entity conversion",
+      "uuid": "9c0b7b92-717e-44ae-8cf1-4bb29ed941a5"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-07-31T18:14:24.713000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        }
+      ],
+      "iid": 3586345,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586345",
+      "priority": "major",
+      "title": "Add a dedicated editorial workflow for AI Context Items",
+      "uuid": "b3d5e5df-c5c0-4f4d-a720-e01cf59ec885"
+    },
+    {
+      "category": null,
+      "closed_at": "2026-08-15T04:24:22.523000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "aivazashvilit",
+          "drupal_uid": 3830578,
+          "orgs": [
+            {
+              "name": "omedia",
+              "nid": 2828043,
+              "title": "Omedia"
+            },
+            {
+              "name": "pantheon",
+              "nid": 1482316,
+              "title": "Pantheon"
+            }
+          ],
+          "user": "aivazashvilit"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        },
+        {
+          "display_name": "cadence96",
+          "drupal_uid": 3520894,
+          "orgs": [
+            {
+              "name": "seed em",
+              "nid": 1122070,
+              "title": "SeeD EM"
+            }
+          ],
+          "user": "cadence96"
+        },
+        {
+          "display_name": "kieran.cott",
+          "drupal_uid": 3690632,
+          "orgs": [
+            {
+              "name": "reading room",
+              "nid": 2091073,
+              "title": "Reading Room"
+            }
+          ],
+          "user": "kieran.cott"
+        }
+      ],
+      "iid": 3586348,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586348",
+      "priority": "major",
+      "title": "Clarify scope eligibility, ranking, and limits in UI help and documentation",
+      "uuid": "cab7978c-b26e-4857-a24e-1c7757afe68b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T19:01:16.395000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586351,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586351",
+      "priority": "major",
+      "title": "Test current conditional subcontext selection before changing the prompt",
+      "uuid": "25c0dae3-7bba-4af6-9b28-c1f92ec741b2"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-05T03:53:24.067000+00:00",
+      "contributors": [
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        },
+        {
+          "display_name": "cobadger",
+          "drupal_uid": 1102918,
+          "orgs": [
+            {
+              "name": "pare & co",
+              "nid": 2500707,
+              "title": "Pare & Co"
+            }
+          ],
+          "user": "cobadger"
+        }
+      ],
+      "iid": 3586353,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586353",
+      "priority": "normal",
+      "title": "Add Scheduler to CCC Extensions page",
+      "uuid": "09672044-cc72-4631-b2ca-58b090c404e3"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-31T21:05:12.657000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        }
+      ],
+      "iid": 3586355,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586355",
+      "priority": "normal",
+      "title": "Avoid loading the full published catalog on the CCC overview page",
+      "uuid": "d28e01a9-383b-48f1-94ea-7e7209ebd65b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-06T20:09:30.550000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        },
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        }
+      ],
+      "iid": 3586356,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586356",
+      "priority": "normal",
+      "title": "Harden CCC context item access checks and document the authoring trust model",
+      "uuid": "581272b3-9b80-4f51-bbc1-4c67ee822d01"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T20:15:30.248000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586358,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586358",
+      "priority": "major",
+      "title": "Review and update CCC permissions before rc1",
+      "uuid": "d81f0c96-b24b-4ba0-9dfe-4f7125efa38b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-05T03:45:42.797000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "abhisekmazumdar",
+          "drupal_uid": 3557964,
+          "orgs": [
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            },
+            {
+              "name": "dropsolid",
+              "nid": 2047613,
+              "title": "Dropsolid"
+            }
+          ],
+          "user": "abhisekmazumdar"
+        }
+      ],
+      "iid": 3586359,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586359",
+      "priority": "normal",
+      "title": "CCC DX/docs polish before rc1 (api.php, @internal, config/docs, small standards nits)",
+      "uuid": "c8eff7fc-e30e-4599-9964-198f52d6b165"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-06T07:05:19.874000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tbalog",
+          "drupal_uid": 3856167,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "tbalog"
+        },
+        {
+          "display_name": "aivazashvilit",
+          "drupal_uid": 3830578,
+          "orgs": [
+            {
+              "name": "omedia",
+              "nid": 2828043,
+              "title": "Omedia"
+            },
+            {
+              "name": "pantheon",
+              "nid": 1482316,
+              "title": "Pantheon"
+            }
+          ],
+          "user": "aivazashvilit"
+        }
+      ],
+      "iid": 3586361,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586361",
+      "priority": "normal",
+      "title": "Decouple context item form descriptions from scope plugin descriptions",
+      "uuid": "cbeffba5-d19c-4d6e-b42c-e8e1b9a29d3b"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-01T18:21:41.447000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "kazima abbas",
+          "drupal_uid": 3738334,
+          "orgs": [],
+          "user": "kazima_abbas"
+        },
+        {
+          "display_name": "ben-peter",
+          "drupal_uid": 3756984,
+          "orgs": [],
+          "user": "ben-peter"
+        }
+      ],
+      "iid": 3586362,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586362",
+      "priority": "normal",
+      "title": "Prepare info for TheDropTimes CCC beta3 blog post",
+      "uuid": "644efd35-97a9-4529-847c-e4e240f06885"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-06T21:05:36.325000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586363,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586363",
+      "priority": "major",
+      "title": "Assess possible 1.0 and 1.1 features and UX/DX improvements following TDT questions",
+      "uuid": "a26353c8-3d04-43d3-8c9e-ba1bf38ce4d0"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-05T00:22:18.880000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3586364,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586364",
+      "priority": "major",
+      "title": "[Discuss] Adding priority to context item to affect ranking",
+      "uuid": "8f5fcb6f-27cf-449e-ab11-eb11923e8bc4"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T18:42:42.093000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ultimike",
+          "drupal_uid": 51132,
+          "orgs": [
+            {
+              "name": "drupaleasy",
+              "nid": 2077811,
+              "title": "DrupalEasy"
+            }
+          ],
+          "user": "ultimike"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3586365,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586365",
+      "priority": "major",
+      "title": "Review and document context selection ranking factors before 1.0",
+      "uuid": "55c2307c-e21b-4c9b-9464-969757376853"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-07-31T18:28:48.183000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586366,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586366",
+      "priority": "normal",
+      "title": "Update CCC maintainers in README.md",
+      "uuid": "957a4da1-a271-4d3b-972e-efc4adda0276"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-08-12T01:51:33.931000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "shqshqnk",
+          "drupal_uid": 3687447,
+          "orgs": [],
+          "user": "shqshqnk"
+        },
+        {
+          "display_name": "cobadger",
+          "drupal_uid": 1102918,
+          "orgs": [
+            {
+              "name": "pare & co",
+              "nid": 2500707,
+              "title": "Pare & Co"
+            }
+          ],
+          "user": "cobadger"
+        },
+        {
+          "display_name": "doxigo",
+          "drupal_uid": 1331334,
+          "orgs": [
+            {
+              "name": "ramsalt lab",
+              "nid": 2577573,
+              "title": "Ramsalt Lab"
+            }
+          ],
+          "user": "doxigo"
+        }
+      ],
+      "iid": 3586369,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586369",
+      "priority": "normal",
+      "title": "\"Global context\" checkbox description renders a literal <br> instead of a line break",
+      "uuid": "1ec4d181-1fa1-498a-a8cf-c9b44a863053"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-08-08T01:27:27.976000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586374,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586374",
+      "priority": "major",
+      "title": "CCC beta4 codebase review (pre-release)",
+      "uuid": "af03dce6-26a3-4bea-9a8f-c988aa6182e3"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-08-11T19:09:34.996000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        }
+      ],
+      "iid": 3586375,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586375",
+      "priority": "normal",
+      "title": "Install `target_entities` field storage when Dynamic Entity Reference is enabled on existing sites",
+      "uuid": "09d43245-5011-47ac-aa8c-879039abee9e"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-08-11T05:05:12.921000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "violaniko",
+          "drupal_uid": 3448125,
+          "orgs": [
+            {
+              "name": "integral vision ltd",
+              "nid": 1973588,
+              "title": "Integral Vision Ltd"
+            }
+          ],
+          "user": "violaniko"
+        }
+      ],
+      "iid": 3586376,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586376",
+      "priority": "major",
+      "title": "Add context item Priority field and use it for selection ordering",
+      "uuid": "7feeb390-6335-4143-b667-beaf6f0ae32e"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-11T04:07:18.557000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "afoster",
+          "drupal_uid": 594458,
+          "orgs": [
+            {
+              "name": "foster interactive inc.",
+              "nid": 2590293,
+              "title": "Foster Interactive Inc."
+            }
+          ],
+          "user": "aidanfoster"
+        },
+        {
+          "display_name": "emma horrell",
+          "drupal_uid": 3714625,
+          "orgs": [
+            {
+              "name": "the university of edinburgh",
+              "nid": 2968462,
+              "title": "The University of Edinburgh"
+            }
+          ],
+          "user": "emma-horrell"
+        }
+      ],
+      "iid": 3586378,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586378",
+      "priority": "critical",
+      "title": "Remove max_items context limit and rely on the token budget",
+      "uuid": "e417005c-a68e-4979-940d-b17d07ec7030"
+    },
+    {
+      "category": "feature",
+      "closed_at": "2026-08-13T07:18:19.990000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        },
+        {
+          "display_name": "joshua1234511",
+          "drupal_uid": 3362218,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "joshua1234511"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        }
+      ],
+      "iid": 3586379,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586379",
+      "priority": "major",
+      "title": "Persist context-item token counts and show token-budget usage in CCC UI",
+      "uuid": "61e2950b-6dcc-4004-9af8-61dae0a4eac1"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-10T03:58:58.254000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586382,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586382",
+      "priority": "normal",
+      "title": "Pre-1.0 documentation, trust, and compatibility follow-up to issue 3586363",
+      "uuid": "4a54fd70-7b28-4ecf-8ce7-061a88fdc433"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-15T02:40:55.149000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "cadence96",
+          "drupal_uid": 3520894,
+          "orgs": [
+            {
+              "name": "seed em",
+              "nid": 1122070,
+              "title": "SeeD EM"
+            }
+          ],
+          "user": "cadence96"
+        },
+        {
+          "display_name": "jucs7",
+          "drupal_uid": 3845119,
+          "orgs": [
+            {
+              "name": "esinergia.",
+              "nid": 2346463,
+              "title": "esinergia."
+            }
+          ],
+          "user": "jucs7"
+        },
+        {
+          "display_name": "adhariwal",
+          "drupal_uid": 1888818,
+          "orgs": [
+            {
+              "name": "axelerant",
+              "nid": 2157309,
+              "title": "Axelerant"
+            }
+          ],
+          "user": "adaptative"
+        },
+        {
+          "display_name": "kieran.cott",
+          "drupal_uid": 3690632,
+          "orgs": [
+            {
+              "name": "reading room",
+              "nid": 2091073,
+              "title": "Reading Room"
+            }
+          ],
+          "user": "kieran.cott"
+        }
+      ],
+      "iid": 3586383,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586383",
+      "priority": "major",
+      "title": "Pre-1.0 context selection reliability and diagnostics follow-up to issue 3586363",
+      "uuid": "f9361082-ed37-49a8-b6c3-11917bce95b2"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-12T21:00:54.519000+00:00",
+      "contributors": [
+        {
+          "display_name": "lbesenyei",
+          "drupal_uid": 2626013,
+          "orgs": [
+            {
+              "name": "brainsum",
+              "nid": 1958648,
+              "title": "Brainsum"
+            }
+          ],
+          "user": "leventeb"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "sjpagan",
+          "drupal_uid": 3164127,
+          "orgs": [],
+          "user": "sjpagan"
+        },
+        {
+          "display_name": "tormi",
+          "drupal_uid": 16010,
+          "orgs": [
+            {
+              "name": "mearra (formerly known as wunder)",
+              "nid": 1269866,
+              "title": "Mearra (formerly known as Wunder)"
+            }
+          ],
+          "user": "tormi"
+        }
+      ],
+      "iid": 3586388,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586388",
+      "priority": "major",
+      "title": "Align scope scoring, language service, and contextual selection behavior",
+      "uuid": "7b2d861f-76cb-4060-80a1-21d750eec6bb"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-09T22:26:05.240000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586390,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586390",
+      "priority": "major",
+      "title": "Document Purpose field guidance for conditional subcontext selection",
+      "uuid": "e9c66e5f-8b9c-453b-8c7a-13407b14afdd"
+    },
+    {
+      "category": "bug",
+      "closed_at": "2026-08-11T18:12:09.475000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "aivazashvilit",
+          "drupal_uid": 3830578,
+          "orgs": [
+            {
+              "name": "omedia",
+              "nid": 2828043,
+              "title": "Omedia"
+            },
+            {
+              "name": "pantheon",
+              "nid": 1482316,
+              "title": "Pantheon"
+            }
+          ],
+          "user": "aivazashvilit"
+        }
+      ],
+      "iid": 3586391,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586391",
+      "priority": "normal",
+      "title": "Resolve `use_default` provider config for conditional subcontext selection",
+      "uuid": "fb6cdc0e-2b7f-4fd5-a524-322de18e52c4"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-12T20:06:38.553000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "tormi",
+          "drupal_uid": 16010,
+          "orgs": [
+            {
+              "name": "mearra (formerly known as wunder)",
+              "nid": 1269866,
+              "title": "Mearra (formerly known as Wunder)"
+            }
+          ],
+          "user": "tormi"
+        }
+      ],
+      "iid": 3586392,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586392",
+      "priority": "normal",
+      "title": "Clarify and stabilize the scope plugin extension boundary for 1.0",
+      "uuid": "e009a655-7d90-43d5-82eb-c1c983123078"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-10T06:48:48.265000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586395,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586395",
+      "priority": "normal",
+      "title": "Document the AI Context role and permission matrix for 1.0",
+      "uuid": "66d87945-b737-4ff7-a64a-9592fbd43d28"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-14T16:43:42.572000+00:00",
+      "contributors": [
+        {
+          "display_name": "robloach",
+          "drupal_uid": 61114,
+          "orgs": [
+            {
+              "name": "kalamuna",
+              "nid": 1915736,
+              "title": "Kalamuna"
+            }
+          ],
+          "user": "robloach"
+        },
+        {
+          "display_name": "brunocarvalho",
+          "drupal_uid": 3857893,
+          "orgs": [
+            {
+              "name": "zoocha",
+              "nid": 2377277,
+              "title": "Zoocha"
+            }
+          ],
+          "user": "brunocarvalho"
+        },
+        {
+          "display_name": "ahmad khader",
+          "drupal_uid": 3727855,
+          "orgs": [
+            {
+              "name": "vardot",
+              "nid": 1388322,
+              "title": "Vardot"
+            }
+          ],
+          "user": "ahmad-khader"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "brunaemerich",
+          "drupal_uid": 3844343,
+          "orgs": [
+            {
+              "name": "zoocha",
+              "nid": 2377277,
+              "title": "Zoocha"
+            }
+          ],
+          "user": "brunaemerich"
+        }
+      ],
+      "iid": 3586396,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586396",
+      "priority": "normal",
+      "title": "Content Import - Unordered and ordered lists are not loading correctly",
+      "uuid": "91e88733-9fc5-45c1-982d-97e42510d6fd"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-16T05:05:40.960000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586397,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586397",
+      "priority": "critical",
+      "title": "Create CCC beta4 release",
+      "uuid": "bd52a1ff-4146-461c-95ab-5cf60b690f6c"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-08-16T04:47:56.469000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "brunocarvalho",
+          "drupal_uid": 3857893,
+          "orgs": [
+            {
+              "name": "zoocha",
+              "nid": 2377277,
+              "title": "Zoocha"
+            }
+          ],
+          "user": "brunocarvalho"
+        },
+        {
+          "display_name": "brunaemerich",
+          "drupal_uid": 3844343,
+          "orgs": [
+            {
+              "name": "zoocha",
+              "nid": 2377277,
+              "title": "Zoocha"
+            }
+          ],
+          "user": "brunaemerich"
+        }
+      ],
+      "iid": 3586399,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586399",
+      "priority": "major",
+      "title": "CCC beta4 QA",
+      "uuid": "ba919333-4a4b-4d22-8f11-bd96d47e6936"
+    }
+  ],
+  "org_counts": {
+    "1xinternet": 8,
+    "acquia": 2,
+    "axelerant": 11,
+    "brainsum": 9,
+    "dropsolid": 2,
+    "drupaleasy": 9,
+    "drupalfit": 2,
+    "esinergia.": 8,
+    "foster interactive inc.": 13,
+    "freelygive": 3,
+    "imagex": 8,
+    "integral vision ltd": 12,
+    "itty bitty byte": 76,
+    "kalamuna": 4,
+    "localgov drupal": 2,
+    "mearra (formerly known as wunder)": 4,
+    "omedia": 3,
+    "open social": 1,
+    "opensense labs": 2,
+    "optasy": 8,
+    "pantheon": 3,
+    "pare & co": 3,
+    "point blank": 1,
+    "qed42": 2,
+    "ramsalt lab": 1,
+    "reading room": 4,
+    "salsa digital": 76,
+    "seed em": 2,
+    "the university of edinburgh": 12,
+    "vardot": 6,
+    "zoocha": 2
+  },
   "period": {
-    "end": "2026-08-03T23:59:59+00:00",
+    "end": "2026-08-17T23:59:59+00:00",
     "frozen": true,
     "slug": "1.0.0-beta4",
-    "start": "2026-07-19T00:00:00+00:00",
+    "start": "2026-07-20T00:00:00+00:00",
     "title": "1.0.0-beta4"
   },
-  "user_counts": {}
+  "user_counts": {
+    "a.dmitriiev": 3,
+    "abhisekmazumdar": 1,
+    "adaptative": 8,
+    "adrianodias": 1,
+    "ahmad-khader": 5,
+    "ahmad-khalil-imagex": 8,
+    "aidanfoster": 13,
+    "aivazashvilit": 3,
+    "ajv009": 1,
+    "annmarysruthy": 1,
+    "bbruno": 2,
+    "ben-peter": 1,
+    "breidert": 1,
+    "brunaemerich": 2,
+    "brunocarvalho": 2,
+    "cadence96": 2,
+    "cobadger": 3,
+    "csakiistvan": 1,
+    "danrod": 8,
+    "doxigo": 1,
+    "emma-horrell": 12,
+    "flux423": 1,
+    "jessehs": 1,
+    "jezusito": 1,
+    "josecarlosmedero": 1,
+    "joshua1234511": 7,
+    "jucs7": 8,
+    "kazima_abbas": 1,
+    "kepol": 76,
+    "kieran.cott": 4,
+    "leventeb": 9,
+    "marcus_johansson": 3,
+    "merilainen": 2,
+    "mglaman": 2,
+    "niklp": 2,
+    "phillipamartin": 1,
+    "pravesh_poonia": 2,
+    "rajabnatshah": 1,
+    "rakhimandhania": 1,
+    "reinimax": 2,
+    "robloach": 4,
+    "ronaldtebrake": 1,
+    "scottfalconer": 1,
+    "shqshqnk": 1,
+    "sjpagan": 1,
+    "tbalog": 9,
+    "tormi": 2,
+    "ultimike": 9,
+    "valthebald": 1,
+    "violaniko": 5,
+    "webchick": 1,
+    "zorz": 1
+  }
 }
