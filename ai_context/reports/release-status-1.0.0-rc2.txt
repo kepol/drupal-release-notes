@@ -1,0 +1,32 @@
+----------------------------------------
+Release status: ai_context (1.0.0-rc2) [milestones]
+----------------------------------------
+Release window: 2026-09-05 → 2026-09-12 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 1 (current release '1.0.0-rc2'; latest Drupal.org tag '1.0.0-beta5')
+    #3586465: Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor — closed 2026-09-05, assigned '1.0.1' → reassign to '1.0.0-rc2' (https://git.drupalcode.org/project/ai_context/-/work_items/3586465)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 0 of 0 — https://git.drupalcode.org/project/ai_context/-/milestones/2
+
+* Credit audit pending: 0
+
+* QA issue: not found
+
+* Release notes: ai_context/reports/release-notes-1.0.0-rc2.html (0 credited)
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 0 (in '1.0.0-rc2' scope, nothing on new.drupal.org)
+    (none)
+
+* No record expected (duplicate / won't fix): 0 (in '1.0.0-rc2' scope, closed without a Drupal.org record by design)
+    (none)
+
+* Wrong milestone: 1 (assigned milestone != close date within '1.0.0-rc2' scope)
+    #3586465: Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor — closed 2026-09-05, '1.0.1' → '1.0.0-rc2' (https://git.drupalcode.org/project/ai_context/-/work_items/3586465)
+
+* Missing in milestone: 0 (in '1.0.0-rc2' scope without a contribution record)
+    (none)
