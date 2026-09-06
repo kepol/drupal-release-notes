@@ -13440,7 +13440,7 @@
       "beta5 must have",
       "category::task",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::code"
     ],
     "milestone": {
@@ -13875,7 +13875,12 @@
   "3586467": {
     "closed_at": "2026-08-31T18:53:14.601Z",
     "iid": 3586467,
-    "labels": [],
+    "labels": [
+      "category::task",
+      "state::closed",
+      "what::code",
+      "why::invalid"
+    ],
     "milestone": {
       "created_at": "2026-08-03T20:43:01.976Z",
       "description": "",
@@ -14186,7 +14191,7 @@
       "needs follow-up issue",
       "priority::normal",
       "sprint candidate",
-      "state::rtbc",
+      "state::fixed",
       "what::code"
     ],
     "milestone": {

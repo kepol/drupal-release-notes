@@ -10422,7 +10422,7 @@
       "beta5 must have",
       "category::task",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::code"
     ],
     "priority": "major",
@@ -10828,9 +10828,14 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586466"
   },
   "3586467": {
-    "category": null,
+    "category": "task",
     "iid": 3586467,
-    "labels": [],
+    "labels": [
+      "category::task",
+      "state::closed",
+      "what::code",
+      "why::invalid"
+    ],
     "priority": null,
     "title": "Minor clean up after MR !288",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586467"
@@ -11157,7 +11162,7 @@
       "needs follow-up issue",
       "priority::normal",
       "sprint candidate",
-      "state::rtbc",
+      "state::fixed",
       "what::code"
     ],
     "priority": "normal",

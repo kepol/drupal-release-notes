@@ -3,17 +3,14 @@ AI initiative partners as of 5 July, 2026:
 # Current partners
 
 - 1xINTERNET
+- Acquia
 - Dropsolid
 - FreelyGive
 - Salsa Digital
-- Acquia
+
 - amazee.io
-- Axelerant
-- EPAM
-- E-Sepia Web Innovation
-- ESINERGIA
+- esinergia.
 - Mearra (formerly known as Wunder)
-- Morpht
 - OpenSense Labs
 - Pantheon
 - QED42
@@ -22,21 +19,32 @@ AI initiative partners as of 5 July, 2026:
 - Tag1 Consulting, Inc.
 - Vardot
 - Zoocha
+
 - Brainsum
+- Calibrate
+- Cambridge University Press & Assessment
 - Cinder Systems Corp.
+- CivicActions
 - drunomics
 - Drupal Forge
 - Elevated Third
 - ImageX
 - Foster Interactive Inc.
-- Integral Vision Ltd
 - Kalamuna
-- OPTASY
+- Oomph
+- Pare & Co
+- Specbee
 - Drupal Association
 
 # Previous partners
 
+- Axelerant
+- EPAM
+- E-Sepia Web Innovation
+- Integral Vision Ltd
 - iTech4web
+- Morpht
+- OPTASY
 - Zivtech
 
 # Updating lists

@@ -1,5 +1,13 @@
 # issue credit report
 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+REMEMBER TO UPDATE THE AI INITIATIVE PARTNER LIST BEFORE REFRESHING THE REPORTS
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
 Tools for Drupal contrib release preparation: release notes, contributor credit audits, and pre-release status checks.
 
 Each project has its own directory (`{project}/cache/`, `{project}/reports/`, etc.). The default project is [ai_context](https://www.drupal.org/project/ai_context) (Context Control Center), configured for **GitLab milestone**–based releases.
