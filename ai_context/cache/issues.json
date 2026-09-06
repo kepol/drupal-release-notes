@@ -773,7 +773,7 @@
       "category::task",
       "mvp",
       "priority::normal",
-      "state::closed",
+      "state::fixed",
       "version::v1.0.x-dev",
       "what::code"
     ],
@@ -904,12 +904,20 @@
   },
   "3563106": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3563106,
     "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
       "category::task",
+      "needs follow-up issue",
       "priority::normal",
-      "state::postponed",
+      "state::fixed",
       "what::ideas"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288"
     ],
     "priority": "normal",
     "title": "[Discuss] Use of AI context items with automators",
@@ -1541,15 +1549,19 @@
     "category": "plan",
     "iid": 3567798,
     "labels": [
+      "1.0 must have",
       "2026Sprint10",
       "2026Sprint11",
       "2026Sprint12",
+      "2026Sprint16",
+      "2026Sprint17",
+      "2026Sprint18",
       "2026Sprint9",
-      "AI Context Management",
       "AI Initiative Sprint",
+      "ai::internal",
       "category::plan",
       "priority::critical",
-      "state::needsWork",
+      "state::blocked",
       "what::planning"
     ],
     "priority": "critical",
@@ -1566,7 +1578,7 @@
       "what::discussion"
     ],
     "priority": "major",
-    "title": "[Discuss] Observability support for CCC",
+    "title": "[Discuss] Usage tracking vs AI Observability for CCC",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3567803"
   },
   "3568086": {
@@ -1956,7 +1968,7 @@
       "state::closed",
       "version::v1.0.x-dev",
       "what::code",
-      "why::wontFix"
+      "why::duplicate"
     ],
     "priority": "major",
     "title": "Add content type context scope for MVP",
@@ -2008,39 +2020,55 @@
   },
   "3571104": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3571104,
     "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::task",
       "priority::normal",
-      "state::postponed",
+      "state::fixed",
       "what::documentation"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
     "title": "Create graphic to explain how context scope works",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571104"
   },
   "3571115": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3571115,
     "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
       "category::plan",
       "priority::major",
-      "state::postponed",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Discuss] Integrating content reviews based on context",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571115"
   },
   "3571117": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3571117,
     "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
       "category::plan",
+      "needs follow-up issue",
       "priority::major",
-      "state::postponed",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Discuss] Approach for CCC+agent integration testing",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3571117"
@@ -2410,11 +2438,14 @@
     "category": "task",
     "iid": 3573716,
     "labels": [
+      "1.0 must have",
+      "2026Sprint18",
+      "ai::internal",
       "blocker::stable",
       "category::task",
-      "needs prioritization",
       "priority::major",
-      "state::postponed",
+      "sprint candidate",
+      "state::blocked",
       "what::miscellaneous"
     ],
     "priority": "major",
@@ -2781,13 +2812,21 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574923"
   },
   "3574924": {
-    "category": "feature",
+    "category": "task",
+    "has_merge_request": true,
     "iid": 3574924,
     "labels": [
-      "category::feature",
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
       "priority::normal",
-      "state::postponed",
-      "what::code"
+      "state::closed",
+      "what::code",
+      "why::outdated"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/152"
     ],
     "priority": "normal",
     "title": "Allow freeform searching by any context scope",
@@ -2807,16 +2846,11 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574925"
   },
   "3574926": {
-    "category": "plan",
+    "category": null,
     "iid": 3574926,
-    "labels": [
-      "category::plan",
-      "priority::normal",
-      "state::postponed",
-      "what::planning"
-    ],
-    "priority": "normal",
-    "title": "Add CCC tools using tool API",
+    "labels": [],
+    "priority": null,
+    "title": "[Discuss] Evaluate Tool API integration for CCC context tools",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574926"
   },
   "3574927": {
@@ -2887,21 +2921,23 @@
   },
   "3574937": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3574937,
     "labels": [
       "2026Sprint15",
+      "AI Initiative Sprint",
       "ai::inside",
-      "blocker::stable",
       "category::task",
-      "must have",
-      "needs ux review",
-      "priority::major",
-      "sprint candidate",
-      "state::blocked",
-      "what::code"
+      "priority::normal",
+      "state::closed",
+      "what::code",
+      "why::outdated"
     ],
-    "priority": "major",
-    "title": "Review and update CCC permissions",
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/78"
+    ],
+    "priority": "normal",
+    "title": "Review and update CCC permissions for beta3",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3574937"
   },
   "3575590": {
@@ -2992,9 +3028,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -3236,7 +3272,9 @@
     ],
     "merge_request_urls": [
       "https://git.drupalcode.org/project/ai_context/-/merge_requests/92",
-      "https://git.drupalcode.org/project/ai_context/-/merge_requests/178"
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/178",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/228",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/231"
     ],
     "priority": "major",
     "title": "Move scheduler feature to submodule or progressive enhancement",
@@ -3562,9 +3600,13 @@
     "category": "task",
     "iid": 3579235,
     "labels": [
+      "2026Sprint18",
+      "ai::internal",
       "category::task",
+      "consider for 1.0",
       "priority::normal",
-      "state::blocked",
+      "sprint candidate",
+      "state::toBeTriaged",
       "what::code"
     ],
     "priority": "normal",
@@ -3833,7 +3875,8 @@
       "what::code"
     ],
     "merge_request_urls": [
-      "https://git.drupalcode.org/project/ai_context/-/merge_requests/109"
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/109",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/266"
     ],
     "priority": "major",
     "title": "ai_context_install breaks existing config site installs (and probably recipes)",
@@ -3862,21 +3905,25 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581533"
   },
   "3581955": {
-    "category": "feature",
+    "category": "plan",
+    "has_merge_request": true,
     "iid": 3581955,
     "labels": [
       "2026Sprint14",
       "2026Sprint9",
       "AI Initiative Sprint",
       "ai::inside",
-      "category::feature",
+      "category::plan",
       "needs ux review",
       "priority::normal",
-      "state::needsReview",
-      "what::code"
+      "state::fixed",
+      "what::discussion"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/116"
     ],
     "priority": "normal",
-    "title": "Inject context into ai_ckeditor requests",
+    "title": "[Discuss] Inject context into ai_ckeditor requests",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3581955"
   },
   "3582288": {
@@ -4632,7 +4679,8 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586149"
   },
   "3586150": {
-    "category": "feature",
+    "category": "task",
+    "has_merge_request": true,
     "iid": 3586150,
     "labels": [
       "2026Sprint10",
@@ -4640,25 +4688,31 @@
       "2026Sprint9",
       "AI Context Management",
       "AI Innovation",
-      "category::feature",
-      "needs prioritization",
+      "category::task",
       "priority::normal",
-      "sprint candidate",
-      "state::postponed",
-      "what::code"
+      "state::fixed",
+      "what::ideas"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/126",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/146"
     ],
     "priority": "normal",
-    "title": "Add Site Architecture context source for Drupal site behavior contracts",
+    "title": "[Spike] Add Site Architecture context source for Drupal site behavior contracts",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586150"
   },
   "3586151": {
     "category": "task",
     "iid": 3586151,
     "labels": [
+      "2026Sprint18",
+      "ai::internal",
       "category::task",
       "needs prioritization",
       "priority::major",
-      "state::postponed",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
       "what::code"
     ],
     "priority": "major",
@@ -4686,15 +4740,11 @@
     "category": "task",
     "iid": 3586153,
     "labels": [
-      "2026Sprint15",
-      "ai::inside",
       "category::task",
-      "demo",
-      "needs ux review",
       "priority::normal",
-      "sprint candidate",
       "state::postponed",
-      "what::documentation"
+      "what::documentation",
+      "why::outdated"
     ],
     "priority": "normal",
     "title": "Create CCC video showing how to configure it",
@@ -4728,9 +4778,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::major",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -4943,10 +4993,10 @@
       "category::feature",
       "priority::major",
       "state::postponed",
-      "what::code"
+      "what::discussion"
     ],
     "priority": "major",
-    "title": "Add agent-level context isolation and governance controls",
+    "title": "[Discuss] Add agent-level context isolation and governance controls",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586166"
   },
   "3586167": {
@@ -5452,13 +5502,9 @@
     "labels": [
       "2026Sprint10",
       "2026Sprint11",
-      "AI Context Management",
-      "AI Innovation",
       "category::task",
-      "must have",
       "priority::major",
-      "sprint candidate",
-      "state::blocked",
+      "state::postponed",
       "what::discussion"
     ],
     "priority": "major",
@@ -5486,18 +5532,16 @@
   },
   "3586199": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586199,
     "labels": [
-      "2026Sprint15",
-      "ai::inside",
-      "blocker::stable",
       "category::task",
-      "must have",
       "priority::major",
-      "sprint candidate",
-      "state::postponed",
-      "what::code"
+      "state::closed",
+      "what::code",
+      "why::outdated"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "Tune conditional subcontext logic",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586199"
@@ -5609,7 +5653,8 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586205"
   },
   "3586206": {
-    "category": "task",
+    "category": "plan",
+    "has_merge_request": false,
     "iid": 3586206,
     "labels": [
       "2026Sprint10",
@@ -5617,17 +5662,18 @@
       "2026Sprint12",
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::inside",
-      "category::task",
-      "must have",
+      "category::plan",
       "performance",
       "priority::normal",
-      "state::needsReview",
-      "what::code"
+      "state::fixed",
+      "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
-    "title": "Avoid Full Published-ID Scans Before Scope Prefiltering",
+    "title": "[Discuss] Avoid Full Published-ID Scans Before Scope Prefiltering",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586206"
   },
   "3586207": {
@@ -5737,9 +5783,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -5759,10 +5805,10 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "blocker::stable",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -5777,7 +5823,6 @@
     "category": "feature",
     "iid": 3586213,
     "labels": [
-      "AI UX",
       "category::feature",
       "priority::normal",
       "state::postponed",
@@ -5798,10 +5843,10 @@
       "AI Initiative Sprint",
       "AI Innovation",
       "AI UX",
+      "Quick Win",
       "category::task",
       "must have",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -5844,12 +5889,12 @@
     "category": "task",
     "iid": 3586217,
     "labels": [
-      "2026Sprint15",
-      "ai::context",
+      "2026Sprint19",
+      "ai::internal",
       "category::task",
       "priority::normal",
       "sprint candidate",
-      "state::accepted",
+      "state::postponed",
       "what::documentation"
     ],
     "priority": "normal",
@@ -5956,7 +6001,7 @@
   },
   "3586222": {
     "category": "task",
-    "has_merge_request": false,
+    "has_merge_request": true,
     "iid": 3586222,
     "labels": [
       "2026Sprint13",
@@ -5968,7 +6013,9 @@
       "state::fixed",
       "what::documentation"
     ],
-    "merge_request_urls": [],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/230"
+    ],
     "priority": "normal",
     "title": "Gather CCC contribution stats for code and non-code contributions for release notes",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586222"
@@ -6035,17 +6082,23 @@
   },
   "3586226": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586226,
     "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
       "blocker::stable",
       "category::task",
-      "needs prioritization",
       "priority::major",
-      "state::blocked",
-      "what::miscellaneous"
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/243"
     ],
     "priority": "major",
-    "title": "CCC QA scripts for 1.0 testing",
+    "title": "Create sample CCC QA scripts for testing",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586226"
   },
   "3586227": {
@@ -6080,9 +6133,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::major",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6103,9 +6156,9 @@
       "AI Initiative Sprint",
       "AI Innovation",
       "AI UX",
+      "Quick Win",
       "category::feature",
       "priority::normal",
-      "quick win",
       "state::closed",
       "what::ux"
     ],
@@ -6181,11 +6234,11 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "blocker::stable",
       "category::task",
       "must have",
       "priority::major",
-      "quick win",
       "state::fixed"
     ],
     "merge_request_urls": [
@@ -6197,6 +6250,7 @@
   },
   "3586234": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586234,
     "labels": [
       "2026Sprint11",
@@ -6209,27 +6263,29 @@
       "category::task",
       "must have",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::testing"
     ],
+    "merge_request_urls": [],
     "priority": "major",
-    "title": "CCC beta / pre-rc1 community testing",
+    "title": "CCC beta1 to beta2 community testing",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586234"
   },
   "3586235": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586235,
     "labels": [
-      "2026Sprint15",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "priority::major",
-      "sprint candidate",
-      "state::blocked",
-      "what::miscellaneous"
+      "state::closed",
+      "what::miscellaneous",
+      "why::outdated"
     ],
+    "merge_request_urls": [],
     "priority": "major",
-    "title": "Recruit CCC beta testers",
+    "title": "Recruit additional CCC beta testers",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586235"
   },
   "3586236": {
@@ -6254,15 +6310,20 @@
   },
   "3586237": {
     "category": "feature",
+    "has_merge_request": true,
     "iid": 3586237,
     "labels": [
-      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
       "ai::inside",
       "category::feature",
       "priority::normal",
-      "sprint candidate",
-      "state::blocked",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/242",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/250"
     ],
     "priority": "normal",
     "title": "Create multi-vocabulary taxonomy scope plugin",
@@ -6319,10 +6380,10 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "must have",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::discussion"
     ],
@@ -6340,9 +6401,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6368,20 +6429,24 @@
   },
   "3586243": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586243,
     "labels": [
       "2026Sprint11",
-      "2026Sprint15",
-      "ai::inside",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::task",
       "must have",
       "priority::major",
-      "sprint candidate",
-      "state::blocked",
+      "state::fixed",
       "what::code"
     ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/164"
+    ],
     "priority": "major",
-    "title": "Complete scope plugin persistence API: manager orchestration, target entity encapsulation, and plugin-driven admin/selection",
+    "title": "[Spike] Complete scope plugin persistence API: manager orchestration, target entity encapsulation, and plugin-driven admin/selection",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586243"
   },
   "3586244": {
@@ -6393,9 +6458,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::feature",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::testing"
     ],
@@ -6459,10 +6524,10 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::plan",
       "needs ux review",
       "priority::major",
-      "quick win",
       "state::fixed",
       "what::discussion"
     ],
@@ -6473,17 +6538,17 @@
   },
   "3586248": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586248,
     "labels": [
-      "2026Sprint15",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "priority::normal",
-      "quick win",
-      "sprint candidate",
-      "state::blocked",
-      "what::documentation"
+      "state::closed",
+      "what::documentation",
+      "why::outdated"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
     "title": "Add CCC beta tester info to the project page",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586248"
@@ -6540,9 +6605,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6563,9 +6628,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6592,7 +6657,8 @@
       "what::ux"
     ],
     "merge_request_urls": [
-      "https://git.drupalcode.org/project/ai_context/-/merge_requests/171"
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/171",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/262"
     ],
     "priority": "normal",
     "title": "Move CCC menu from top-level to under AI configuration section",
@@ -6675,9 +6741,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::testing"
     ],
@@ -6695,9 +6761,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::bug",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -6718,9 +6784,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::bug",
       "priority::minor",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -6740,11 +6806,11 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "blocker::stable",
       "category::task",
       "must have",
       "priority::major",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -6756,16 +6822,20 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586261"
   },
   "3586262": {
-    "category": null,
+    "category": "feature",
+    "has_merge_request": true,
     "iid": 3586262,
     "labels": [
       "2026Sprint15",
+      "AI Initiative Sprint",
       "ai::inside",
-      "blocker::stable",
+      "category::feature",
       "priority::normal",
-      "sprint candidate",
-      "state::blocked",
+      "state::fixed",
       "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/227"
     ],
     "priority": "normal",
     "title": "Allow scope plugins to declare an optional icon for UI display",
@@ -6773,15 +6843,19 @@
   },
   "3586263": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586263,
     "labels": [
-      "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::inside",
       "category::task",
       "priority::normal",
-      "state::readyForWork",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/235"
     ],
     "priority": "normal",
     "title": "Update relevant CCC skipped tests",
@@ -6796,9 +6870,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::plan",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -6827,10 +6901,13 @@
     "category": "task",
     "iid": 3586266,
     "labels": [
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::task",
       "priority::normal",
-      "sprint candidate",
-      "state::postponed",
+      "rc1 must have",
+      "state::readyForWork",
       "what::marketing"
     ],
     "priority": "normal",
@@ -6847,11 +6924,11 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "blocker::stable",
       "category::task",
       "must have",
       "priority::major",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6864,6 +6941,7 @@
   },
   "3586268": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586268,
     "labels": [
       "2026Sprint13",
@@ -6873,13 +6951,13 @@
       "blocker::stable",
       "category::task",
       "must have",
-      "needs ux review",
       "priority::normal",
-      "state::needsReview",
-      "what::testing"
+      "state::fixed",
+      "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
-    "title": "Evaluate Annotations module and how it might work with CCC",
+    "title": "[Discuss] Evaluate Annotations module and how it might work with CCC",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586268"
   },
   "3586269": {
@@ -6904,9 +6982,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::documentation"
     ],
@@ -6919,18 +6997,23 @@
   },
   "3586271": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586271,
     "labels": [
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::inside",
       "blocker::stable",
       "category::task",
       "must have",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/211"
     ],
     "priority": "major",
     "title": "Clean up CCC inconsistencies and DX issues before rc1 (part 3)",
@@ -6945,9 +7028,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -6960,18 +7043,19 @@
   },
   "3586273": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586273,
     "labels": [
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::outside",
-      "blocker::stable",
       "category::plan",
-      "needs ux review",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Discuss] Extensible \"role\" architecture for context items (examples, rubrics, and future types)",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586273"
@@ -6986,9 +7070,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -7023,19 +7107,28 @@
   },
   "3586276": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586276,
     "labels": [
       "2026Sprint12",
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
+      "2026Sprint16",
       "AI Initiative Sprint",
       "ai::inside",
       "blocker::stable",
       "category::task",
       "must have",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/195",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/242",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/249",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/277"
     ],
     "priority": "major",
     "title": "Rename entity bundle and target entity scope plugins for better DX",
@@ -7064,11 +7157,10 @@
     "category": "task",
     "iid": 3586278,
     "labels": [
-      "2026Sprint15",
+      "2026Sprint19",
       "AI UX",
-      "ai::inside",
       "category::task",
-      "needs ux review",
+      "consider for 1.0",
       "priority::normal",
       "sprint candidate",
       "state::blocked",
@@ -7080,18 +7172,19 @@
   },
   "3586279": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586279,
     "labels": [
       "2026Sprint13",
       "2026Sprint15",
+      "AI Initiative Sprint",
       "ai::inside",
       "category::plan",
-      "needs ux review",
       "priority::normal",
-      "sprint candidate",
-      "state::needsWork",
+      "state::fixed",
       "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
     "title": "[Discuss] Provide real sample context items for end user use",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586279"
@@ -7105,9 +7198,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -7120,35 +7213,42 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586280"
   },
   "3586281": {
-    "category": "task",
+    "category": "plan",
+    "has_merge_request": false,
     "iid": 3586281,
     "labels": [
       "2026Sprint15",
+      "AI Initiative Sprint",
       "ai::inside",
       "blocker::stable",
-      "category::task",
+      "category::plan",
       "must have",
       "priority::major",
-      "sprint candidate",
-      "state::blocked",
-      "what::code"
+      "state::fixed",
+      "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "major",
-    "title": "Introduce explicit scope types and item inclusion modes; clarify selection in UI and docs",
+    "title": "[Discuss] Introduce explicit scope types and item inclusion modes; clarify selection in UI and docs",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586281"
   },
   "3586282": {
-    "category": null,
+    "category": "feature",
+    "has_merge_request": true,
     "iid": 3586282,
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
+      "Quick Win",
       "ai::inside",
       "blocker::stable",
+      "category::feature",
       "priority::major",
-      "quick win",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/220"
     ],
     "priority": "major",
     "title": "Promote Document Loader: Context Importer from experimental to stable",
@@ -7185,9 +7285,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -7207,9 +7307,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::task",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::code"
     ],
@@ -7280,27 +7380,43 @@
   },
   "3586289": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586289,
     "labels": [
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::outside",
-      "blocker::stable",
       "category::plan",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::discussion"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Discuss] Add ExternalContextProviderInterface and ContextQueryInterface to support RAG/vector store integrations",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586289"
   },
   "3586290": {
-    "category": null,
+    "category": "bug",
+    "has_merge_request": true,
     "iid": 3586290,
-    "labels": [],
-    "priority": null,
-    "title": "Error when running database updates from beta2 to latest -dev",
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "blocker::beta",
+      "category::bug",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/228"
+    ],
+    "priority": "major",
+    "title": "Add regression coverage for the default view display post-update failure",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586290"
   },
   "3586291": {
@@ -7318,16 +7434,22 @@
   },
   "3586292": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586292,
     "labels": [
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::inside",
       "category::task",
       "priority::normal",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/194",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/226"
     ],
     "priority": "normal",
     "title": "Improve conditional subcontext disabled-state behavior and admin UX",
@@ -7380,7 +7502,7 @@
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "priority::critical",
       "state::fixed",
@@ -7419,9 +7541,9 @@
       "AI Context Management",
       "AI Initiative Sprint",
       "AI Innovation",
+      "Quick Win",
       "category::plan",
       "priority::normal",
-      "quick win",
       "state::fixed",
       "what::ux"
     ],
@@ -7434,17 +7556,22 @@
   },
   "3586298": {
     "category": "plan",
+    "has_merge_request": true,
     "iid": 3586298,
     "labels": [
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "blocker::stable",
       "category::plan",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::planning"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/201"
     ],
     "priority": "major",
     "title": "[Meta] Fix CCC issues based on AI Best Practices results",
@@ -7510,6 +7637,7 @@
       "what::code"
     ],
     "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/199",
       "https://git.drupalcode.org/project/ai_context/-/merge_requests/200",
       "https://git.drupalcode.org/project/ai_context/-/merge_requests/216"
     ],
@@ -7518,18 +7646,24 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586301"
   },
   "3586302": {
-    "category": "plan",
+    "category": "task",
+    "has_merge_request": true,
     "iid": 3586302,
     "labels": [
       "2026Sprint13",
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::inside",
       "blocker::stable",
-      "category::plan",
+      "category::task",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/199",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/216"
     ],
     "priority": "major",
     "title": "Clean up CCC tooltip, truncation, and icon-only content",
@@ -7646,33 +7780,38 @@
   },
   "3586308": {
     "category": "feature",
+    "has_merge_request": true,
     "iid": 3586308,
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
       "ai::inside",
       "category::feature",
-      "needs ux review",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
     ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/218"
+    ],
     "priority": "major",
-    "title": "Allow agents to opt-out of context auto-injection",
+    "title": "Allow agents to opt-out of context auto-injection (context push)",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586308"
   },
   "3586309": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586309,
     "labels": [
       "2026Sprint15",
-      "ai::inside",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::plan",
       "priority::major",
-      "sprint candidate",
-      "state::readyForWork",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Meta] CCC cleanup and API hardening from code review findings for beta4",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586309"
@@ -7685,7 +7824,7 @@
       "2026Sprint13",
       "2026Sprint14",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "blocker::beta",
       "category::plan",
       "priority::major",
@@ -7866,26 +8005,30 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586318"
   },
   "3586319": {
-    "category": "feature",
+    "category": "plan",
+    "has_merge_request": true,
     "iid": 3586319,
     "labels": [
       "2026Sprint14",
-      "2026Sprint15",
       "AI Initiative Sprint",
       "ai::outside",
       "blocker::stable",
-      "category::feature",
+      "category::plan",
       "must have",
       "priority::critical",
-      "state::needsReview",
-      "what::code"
+      "state::fixed",
+      "what::discussion"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/283"
     ],
     "priority": "critical",
-    "title": "Move from agent-specific to generic context consumer API",
+    "title": "[Discuss] Move from agent-specific to generic context consumer API",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586319"
   },
   "3586320": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586320,
     "labels": [
       "2026Sprint13",
@@ -7894,46 +8037,50 @@
       "ai::inside",
       "blocker::stable",
       "category::plan",
-      "needs ux review",
       "priority::major",
-      "state::needsReview",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "[Discuss] Context scope subscription approach",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586320"
   },
   "3586321": {
     "category": "task",
-    "has_merge_request": false,
+    "has_merge_request": true,
     "iid": 3586321,
     "labels": [
       "2026Sprint13",
       "2026Sprint14",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "priority::normal",
       "state::fixed",
       "what::management"
     ],
-    "merge_request_urls": [],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/230"
+    ],
     "priority": "normal",
     "title": "Create a CCC release process",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586321"
   },
   "3586322": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586322,
     "labels": [
       "2026Sprint15",
+      "AI Initiative Sprint",
       "ai::outside",
       "category::plan",
       "priority::normal",
-      "sprint candidate",
-      "state::inProgress",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
     "title": "Assess duadp module's integration with CCC",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586322"
@@ -7964,17 +8111,21 @@
   },
   "3586324": {
     "category": "bug",
+    "has_merge_request": true,
     "iid": 3586324,
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
+      "Quick Win",
       "ai::inside",
       "blocker::stable",
       "category::bug",
       "priority::major",
-      "quick win",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/217"
     ],
     "priority": "major",
     "title": "Replace brittle hardcoded admin path assertions in functional and kernel tests with route-derived URLs",
@@ -7982,13 +8133,21 @@
   },
   "3586325": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586325,
     "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
       "category::task",
       "priority::normal",
-      "sprint candidate",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/207",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/225"
     ],
     "priority": "normal",
     "title": "Avoid functional-test dual-container traps",
@@ -7996,15 +8155,21 @@
   },
   "3586326": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586326,
     "labels": [
       "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::inside",
       "category::task",
       "priority::normal",
-      "state::needsReview",
+      "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/207",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/216"
     ],
     "priority": "normal",
     "title": "Add basic accessibility test coverage",
@@ -8012,6 +8177,7 @@
   },
   "3586327": {
     "category": "plan",
+    "has_merge_request": true,
     "iid": 3586327,
     "labels": [
       "2026Sprint13",
@@ -8021,8 +8187,11 @@
       "blocker::stable",
       "category::plan",
       "priority::normal",
-      "state::needsReview",
+      "state::fixed",
       "what::discussion"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/214"
     ],
     "priority": "normal",
     "title": "[Discuss] Cannot transition away from \"Unpublished\" Context Item",
@@ -8051,32 +8220,36 @@
   },
   "3586329": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586329,
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "category::plan",
       "priority::major",
-      "state::inProgress",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "Sprint 14 CCC roadmap updates, sprint planning, and issue triage",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586329"
   },
   "3586330": {
     "category": "plan",
+    "has_merge_request": false,
     "iid": 3586330,
     "labels": [
       "2026Sprint15",
-      "ai::context",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::plan",
       "priority::major",
-      "sprint candidate",
-      "state::blocked",
+      "state::fixed",
       "what::planning"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "Sprint 15 CCC roadmap updates, sprint planning, and issue triage",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586330"
@@ -8088,7 +8261,7 @@
     "labels": [
       "2026Sprint14",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "blocker::beta",
       "category::bug",
       "priority::critical",
@@ -8104,50 +8277,3112 @@
   },
   "3586332": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586332,
     "labels": [
-      "2026Sprint14",
+      "2026Sprint15",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "demo",
       "priority::normal",
+      "state::fixed",
       "what::documentation"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
     "title": "CCC beta3 blog post",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586332"
   },
   "3586333": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586333,
     "labels": [
-      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
       "category::task",
       "demo",
       "priority::normal",
-      "sprint candidate",
+      "state::fixed",
       "what::documentation"
     ],
+    "merge_request_urls": [],
     "priority": "normal",
-    "title": "Create CCC beta3 and status update video",
+    "title": "Create CCC beta3 and beta4 and status update video",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586333"
   },
   "3586334": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586334,
     "labels": [
       "2026Sprint15",
       "AI Initiative Sprint",
-      "ai::context",
+      "ai::internal",
       "category::task",
       "priority::normal",
-      "sprint candidate",
-      "state::accepted",
+      "state::fixed",
       "what::management"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/230"
     ],
     "priority": "normal",
     "title": "Create a CCC release process issue template",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586334"
+  },
+  "3586335": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586335,
+    "labels": [
+      "2026Sprint14",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "blocker::stable",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::discussion"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "CCC beta testing UX sync 19 July 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586335"
+  },
+  "3586336": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586336,
+    "labels": [
+      "2026Sprint14",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "blocker::stable",
+      "category::bug",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/221",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/222"
+    ],
+    "priority": "major",
+    "title": "Composer patch for Drupal Canvas breaks dependent project installs (relative path)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586336"
+  },
+  "3586337": {
+    "category": "feature",
+    "has_merge_request": false,
+    "iid": 3586337,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "AI UX",
+      "ai::inside",
+      "blocker::stable",
+      "category::feature",
+      "needs ux review",
+      "priority::major",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "Design an indicator for the CCC UI that conveys subscription limits",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586337"
+  },
+  "3586338": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586338,
+    "labels": [
+      "2026Sprint14",
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::beta",
+      "category::bug",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/223",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/253"
+    ],
+    "priority": "critical",
+    "title": "Restore Drupal 10 compatibility and repair incomplete beta3 upgrades",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586338"
+  },
+  "3586339": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586339,
+    "labels": [
+      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "AI UX",
+      "ai::inside",
+      "category::feature",
+      "needs ux review",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/267"
+    ],
+    "priority": "normal",
+    "title": "Create university sample context items as markdown",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586339"
+  },
+  "3586340": {
+    "category": "feature",
+    "iid": 3586340,
+    "labels": [
+      "ai::internal",
+      "category::feature",
+      "priority::major",
+      "state::postponed",
+      "what::ux"
+    ],
+    "priority": "major",
+    "title": "Create Mad Libs style template for the CCC",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586340"
+  },
+  "3586341": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586341,
+    "labels": [
+      "2026Sprint14",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "blocker::beta",
+      "category::bug",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/224"
+    ],
+    "priority": "major",
+    "title": "WSOD on certain settings tabs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586341"
+  },
+  "3586342": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586342,
+    "labels": [
+      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "QA team start testing CCC to get familiar with functionality",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586342"
+  },
+  "3586343": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586343,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::beta",
+      "category::bug",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/229",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/268"
+    ],
+    "priority": "major",
+    "title": "beta2 upgrade fails at updates 10006 and 10011 after bundleless entity conversion",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586343"
+  },
+  "3586344": {
+    "category": "bug",
+    "iid": 3586344,
+    "labels": [
+      "blocker::beta",
+      "category::bug",
+      "priority::major",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "priority": "major",
+    "title": "Drupal 10 does not invoke attribute-based theme and Scheduler hooks",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586344"
+  },
+  "3586345": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586345,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/236",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/238"
+    ],
+    "priority": "major",
+    "title": "Add a dedicated editorial workflow for AI Context Items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586345"
+  },
+  "3586346": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586346,
+    "labels": [
+      "2026Sprint15",
+      "2026Sprint16",
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::outside",
+      "blocker::stable",
+      "category::feature",
+      "must have",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/283",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/286",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/291"
+    ],
+    "priority": "critical",
+    "title": "Implement plugin-based generic context consumers and unified consumer configuration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586346"
+  },
+  "3586347": {
+    "category": "task",
+    "iid": 3586347,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "consider for 1.0",
+      "performance",
+      "priority::normal",
+      "sprint candidate",
+      "state::needsReview",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Avoid full published-ID scans during subscribed scope prefiltering",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586347"
+  },
+  "3586348": {
+    "category": null,
+    "has_merge_request": true,
+    "iid": 3586348,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/252",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+    ],
+    "priority": "major",
+    "title": "Clarify scope eligibility, ranking, and limits in UI help and documentation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586348"
+  },
+  "3586349": {
+    "category": "plan",
+    "iid": 3586349,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::discussion"
+    ],
+    "priority": "major",
+    "title": "[Discuss] Revisit scope roles and context inclusion priorities after 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586349"
+  },
+  "3586350": {
+    "category": "feature",
+    "iid": 3586350,
+    "labels": [
+      "category::feature",
+      "priority::major",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Allow context consumers to add temporary scope subscriptions from the current AI request",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586350"
+  },
+  "3586351": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586351,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/246"
+    ],
+    "priority": "major",
+    "title": "Test current conditional subcontext selection before changing the prompt",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586351"
+  },
+  "3586352": {
+    "category": "plan",
+    "iid": 3586352,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "[Plan] Reassess external context integration for RAG and dynamic context sources",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586352"
+  },
+  "3586353": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586353,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/231"
+    ],
+    "priority": "normal",
+    "title": "Add Scheduler to CCC Extensions page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586353"
+  },
+  "3586354": {
+    "category": "plan",
+    "iid": 3586354,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "[Spike] Prototype content-review consumption of context-item kinds (examples/rubrics)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586354"
+  },
+  "3586355": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586355,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::normal",
+      "state::fixed"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/232"
+    ],
+    "priority": "normal",
+    "title": "Avoid loading the full published catalog on the CCC overview page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586355"
+  },
+  "3586356": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586356,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/233"
+    ],
+    "priority": "normal",
+    "title": "Harden CCC context item access checks and document the authoring trust model",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586356"
+  },
+  "3586357": {
+    "category": "task",
+    "iid": 3586357,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Separate CCC UI access from published-context consumption for end users",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586357"
+  },
+  "3586358": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586358,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/254"
+    ],
+    "priority": "major",
+    "title": "Review and update CCC permissions before rc1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586358"
+  },
+  "3586359": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586359,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/234",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/239"
+    ],
+    "priority": "normal",
+    "title": "CCC DX/docs polish before rc1 (api.php, @internal, config/docs, small standards nits)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586359"
+  },
+  "3586360": {
+    "category": "task",
+    "iid": 3586360,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "[Meta] CCC 1.1 follow-ups from beta4 code-review hardening",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586360"
+  },
+  "3586361": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586361,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/239",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/240"
+    ],
+    "priority": "normal",
+    "title": "Decouple context item form descriptions from scope plugin descriptions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586361"
+  },
+  "3586362": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586362,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::marketing"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "Prepare info for TheDropTimes CCC beta3 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586362"
+  },
+  "3586363": {
+    "category": "plan",
+    "has_merge_request": true,
+    "iid": 3586363,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/252",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/253"
+    ],
+    "priority": "major",
+    "title": "Assess possible 1.0 and 1.1 features and UX/DX improvements following TDT questions",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586363"
+  },
+  "3586364": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586364,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "[Discuss] Adding priority to context item to affect ranking",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586364"
+  },
+  "3586365": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586365,
+    "labels": [
+      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/241",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/242"
+    ],
+    "priority": "major",
+    "title": "Review and document context selection ranking factors before 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586365"
+  },
+  "3586366": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586366,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/237"
+    ],
+    "priority": "normal",
+    "title": "Update CCC maintainers in README.md",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586366"
+  },
+  "3586367": {
+    "category": "plan",
+    "iid": 3586367,
+    "labels": [
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "normal",
+    "title": "[Plan] Consider something like the ECA guide for CCC with MCP and skills",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586367"
+  },
+  "3586368": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586368,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "Sprint 16 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586368"
+  },
+  "3586369": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586369,
+    "labels": [
+      "2026Sprint15",
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/240",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+    ],
+    "priority": "normal",
+    "title": "\"Global context\" checkbox description renders a literal <br> instead of a line break",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586369"
+  },
+  "3586370": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586370,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::documentation",
+      "why::wontFix"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "Switch CCC documentation link to clean version",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586370"
+  },
+  "3586371": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586371,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::outside",
+      "category::task",
+      "nice to have",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/255"
+    ],
+    "priority": "normal",
+    "title": "Document how to use RAG with CCC 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586371"
+  },
+  "3586372": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586372,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "nice to have",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/256"
+    ],
+    "priority": "normal",
+    "title": "Document real-world use cases for CCC 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586372"
+  },
+  "3586373": {
+    "category": "plan",
+    "iid": 3586373,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "[Meta] CCC 1.1 release planning",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586373"
+  },
+  "3586374": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586374,
+    "labels": [
+      "2026Sprint15",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "blocker::stable",
+      "category::plan",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "CCC beta4 codebase review (pre-release)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586374"
+  },
+  "3586375": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586375,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/248",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/251"
+    ],
+    "priority": "normal",
+    "title": "Install `target_entities` field storage when Dynamic Entity Reference is enabled on existing sites",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586375"
+  },
+  "3586376": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586376,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/245",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/252"
+    ],
+    "priority": "major",
+    "title": "Add context item Priority field and use it for selection ordering",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586376"
+  },
+  "3586377": {
+    "category": "task",
+    "iid": 3586377,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::postponed",
+      "what::ux"
+    ],
+    "priority": "normal",
+    "title": "Improve disabled conditional subcontext row visibility in the context item listing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586377"
+  },
+  "3586378": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586378,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/244",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/252",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+    ],
+    "priority": "critical",
+    "title": "Remove max_items context limit and rely on the token budget",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586378"
+  },
+  "3586379": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586379,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/248"
+    ],
+    "priority": "major",
+    "title": "Persist context-item token counts and show token-budget usage in CCC UI",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586379"
+  },
+  "3586380": {
+    "category": "task",
+    "iid": 3586380,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Add query_access handler so context item entity queries honor view access",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586380"
+  },
+  "3586381": {
+    "category": "task",
+    "iid": 3586381,
+    "labels": [
+      "category::task",
+      "performance",
+      "priority::normal",
+      "state::postponed",
+      "what::testing"
+    ],
+    "priority": "normal",
+    "title": "Add reproducible performance benchmarks for context selection and rendering",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586381"
+  },
+  "3586382": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586382,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/253"
+    ],
+    "priority": "normal",
+    "title": "Pre-1.0 documentation, trust, and compatibility follow-up to issue 3586363",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586382"
+  },
+  "3586383": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586383,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/252",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+    ],
+    "priority": "major",
+    "title": "Pre-1.0 context selection reliability and diagnostics follow-up to issue 3586363",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586383"
+  },
+  "3586384": {
+    "category": "plan",
+    "iid": 3586384,
+    "labels": [
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "[Meta] CCC 1.1 UX, governance, and integration roadmap follow-up",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586384"
+  },
+  "3586385": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586385,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "Rotterdam2026",
+      "ai::inside",
+      "category::feature",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/267"
+    ],
+    "priority": "major",
+    "title": "Create PoC CCC recipe for Inside Rotterdam demo [step 1]: install CCC and university context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586385"
+  },
+  "3586386": {
+    "category": "plan",
+    "iid": 3586386,
+    "labels": [
+      "1.0 must have",
+      "2026Sprint16",
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "Rotterdam2026",
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "state::blocked",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "[Meta] Prepare CCC for Inside AI Rotterdam demo",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586386"
+  },
+  "3586387": {
+    "category": "plan",
+    "iid": 3586387,
+    "labels": [
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::discussion"
+    ],
+    "priority": "normal",
+    "title": "CCC Outside AI roadmap discussion meeting August 2026",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586387"
+  },
+  "3586388": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586388,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/242",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+    ],
+    "priority": "major",
+    "title": "Align scope scoring, language service, and contextual selection behavior",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586388"
+  },
+  "3586389": {
+    "category": "task",
+    "iid": 3586389,
+    "labels": [
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "[Meta] CCC rc cleanup from non-pressing beta code review items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586389"
+  },
+  "3586390": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586390,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/246"
+    ],
+    "priority": "major",
+    "title": "Document Purpose field guidance for conditional subcontext selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586390"
+  },
+  "3586391": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586391,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/247"
+    ],
+    "priority": "normal",
+    "title": "Resolve `use_default` provider config for conditional subcontext selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586391"
+  },
+  "3586392": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586392,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/249",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+    ],
+    "priority": "normal",
+    "title": "Clarify and stabilize the scope plugin extension boundary for 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586392"
+  },
+  "3586393": {
+    "category": "plan",
+    "iid": 3586393,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "[Meta] Add capability-based scope persistence and integration APIs (1.1)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586393"
+  },
+  "3586394": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586394,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::feature",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/259",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/261",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/276",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/281",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/287"
+    ],
+    "priority": "critical",
+    "title": "Redesign selection modes as a nested Minimal / Relevant / Broad ladder with a site-wide default",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586394"
+  },
+  "3586395": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586395,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/254"
+    ],
+    "priority": "normal",
+    "title": "Document the AI Context role and permission matrix for 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586395"
+  },
+  "3586396": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586396,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "Content Import - Unordered and ordered lists are not loading correctly",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586396"
+  },
+  "3586397": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586397,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::critical",
+      "state::fixed",
+      "what::management"
+    ],
+    "merge_request_urls": [],
+    "priority": "critical",
+    "title": "Create CCC beta4 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586397"
+  },
+  "3586398": {
+    "category": "task",
+    "iid": 3586398,
+    "labels": [
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "beta5 must have",
+      "category::task",
+      "priority::critical",
+      "state::fixed",
+      "what::management"
+    ],
+    "priority": "critical",
+    "title": "Create CCC beta5 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586398"
+  },
+  "3586399": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586399,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "CCC beta4 QA",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586399"
+  },
+  "3586400": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586400,
+    "labels": [
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "beta5 must have",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "CCC beta5 QA",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586400"
+  },
+  "3586401": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586401,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "CCC beta4 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586401"
+  },
+  "3586402": {
+    "category": "task",
+    "iid": 3586402,
+    "labels": [
+      "2026Sprint18",
+      "ai::internal",
+      "category::task",
+      "consider for 1.0",
+      "demo",
+      "priority::normal",
+      "sprint candidate",
+      "state::blocked",
+      "what::documentation"
+    ],
+    "priority": "normal",
+    "title": "CCC rc1 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586402"
+  },
+  "3586403": {
+    "category": "plan",
+    "iid": 3586403,
+    "labels": [
+      "category::plan",
+      "priority::major",
+      "state::closed",
+      "what::planning",
+      "why::duplicate"
+    ],
+    "priority": "major",
+    "title": "CCC beta4 codebase review (pre-release)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586403"
+  },
+  "3586404": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586404,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "blocker::beta",
+      "category::plan",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "CCC beta5 codebase review (pre-release)",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586404"
+  },
+  "3586405": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586405,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/258",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/259",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/265",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/267",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/268",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/270"
+    ],
+    "priority": "critical",
+    "title": "Replace the context item scope map field with a multi-value scope_id + value field",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586405"
+  },
+  "3586406": {
+    "category": "plan",
+    "has_merge_request": true,
+    "iid": 3586406,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "blocker::stable",
+      "category::plan",
+      "priority::critical",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/271"
+    ],
+    "priority": "critical",
+    "title": "CCC beta5 architecture review",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586406"
+  },
+  "3586407": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586407,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/282"
+    ],
+    "priority": "normal",
+    "title": "Support Dynamic Entity Reference fields in Taxonomy Terms scope matching",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586407"
+  },
+  "3586408": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586408,
+    "labels": [
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+    ],
+    "priority": "normal",
+    "title": "Treat language scope as unavailable on single-language sites",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586408"
+  },
+  "3586409": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586409,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "Test on beta4: Fatal \"non-existent service DiffHooks\" on Drupal 10: hook classes are never registered",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586409"
+  },
+  "3586410": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586410,
+    "labels": [
+      "2026Sprint16",
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/262",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/268"
+    ],
+    "priority": "normal",
+    "title": "CCC usage view still uses old path on existing sites",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586410"
+  },
+  "3586411": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586411,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "Sprint 17 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586411"
+  },
+  "3586412": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586412,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/271",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/276",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280"
+    ],
+    "priority": "normal",
+    "title": "Preserve stored scope and agent subscriptions when a scope is disabled or unavailable",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586412"
+  },
+  "3586413": {
+    "category": "task",
+    "iid": 3586413,
+    "labels": [
+      "2026Sprint18",
+      "ai::internal",
+      "category::task",
+      "consider for 1.0",
+      "demo",
+      "priority::normal",
+      "sprint candidate",
+      "state::blocked",
+      "what::documentation"
+    ],
+    "priority": "normal",
+    "title": "CCC beta5 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586413"
+  },
+  "3586414": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586414,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::feature",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/260",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/278"
+    ],
+    "priority": "normal",
+    "title": "Update Entity Types context scope plugin to allow all from a type without specifying bundle",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586414"
+  },
+  "3586415": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586415,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::feature",
+      "nice to have",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/261",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/276",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/281"
+    ],
+    "priority": "normal",
+    "title": "Add Roles scope plugin to limit context items by the acting user's roles",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586415"
+  },
+  "3586416": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586416,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/278",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/294"
+    ],
+    "priority": "normal",
+    "title": "Clean stale scope values when options are deleted",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586416"
+  },
+  "3586417": {
+    "category": "plan",
+    "iid": 3586417,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::plan",
+      "needs follow-up issue",
+      "priority::major",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::discussion"
+    ],
+    "priority": "major",
+    "title": "[Discuss] Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586417"
+  },
+  "3586418": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586418,
+    "labels": [
+      "2026Sprint16",
+      "ai::internal",
+      "category::bug",
+      "priority::normal",
+      "state::closed",
+      "version::v1.0.x-dev",
+      "what::code",
+      "why::worksAsDesigned"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/266"
+    ],
+    "priority": "normal",
+    "title": "moderation_state field silently missing after installing ai_context via recipe or config sync",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586418"
+  },
+  "3586419": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586419,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::feature",
+      "must have",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/276",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/277",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280"
+    ],
+    "priority": "critical",
+    "title": "Split `supportsSubscriptions()` into explicit scope capabilities",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586419"
+  },
+  "3586420": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586420,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "performance",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/287"
+    ],
+    "priority": "normal",
+    "title": "Prefilter Relevant context selection so it does not scan the full catalog",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586420"
+  },
+  "3586421": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586421,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "must have",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/262",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/268"
+    ],
+    "priority": "critical",
+    "title": "Early update hooks fail when context scope field is still stored as a serialized map",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586421"
+  },
+  "3586422": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586422,
+    "labels": [
+      "2026Sprint16",
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "must have",
+      "needs manual testing",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/270",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/286"
+    ],
+    "priority": "normal",
+    "title": "Honor entity view access and bubble scope-label cacheability",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586422"
+  },
+  "3586423": {
+    "category": "feature",
+    "iid": 3586423,
+    "labels": [
+      "category::feature",
+      "priority::normal",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "priority": "normal",
+    "title": "Extend the Drupal token API to cover tag, taxonomy, language, site_section, and entity_type scopes",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586423"
+  },
+  "3586424": {
+    "category": "feature",
+    "iid": 3586424,
+    "labels": [
+      "1.0 must have",
+      "2026Sprint18",
+      "Rotterdam2026",
+      "ai::internal",
+      "category::feature",
+      "priority::major",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Create PoC CCC recipe for Inside Rotterdam demo [step 2]: content review agent/consumer configuration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586424"
+  },
+  "3586425": {
+    "category": "feature",
+    "iid": 3586425,
+    "labels": [
+      "1.0 must have",
+      "2026Sprint18",
+      "Rotterdam2026",
+      "ai::internal",
+      "category::feature",
+      "priority::major",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Create PoC CCC recipe for Inside Rotterdam demo [step 3]: translate agent/consumer configuration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586425"
+  },
+  "3586426": {
+    "category": "feature",
+    "iid": 3586426,
+    "labels": [
+      "1.0 must have",
+      "2026Sprint18",
+      "Rotterdam2026",
+      "ai::internal",
+      "category::feature",
+      "priority::major",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Create PoC CCC recipe for Inside Rotterdam demo [step 4]: CKEditor / non-agent consumer configuration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586426"
+  },
+  "3586427": {
+    "category": "feature",
+    "iid": 3586427,
+    "labels": [
+      "1.0 must have",
+      "2026Sprint16",
+      "2026Sprint17",
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "Rotterdam2026",
+      "ai::internal",
+      "category::feature",
+      "priority::major",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "[Meta] Create PoC CCC recipe for Inside Rotterdam demo",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586427"
+  },
+  "3586428": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586428,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "category::task",
+      "nice to have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/281",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/286"
+    ],
+    "priority": "major",
+    "title": "Add automated CCC tests with dummy echoai provider to test integration",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586428"
+  },
+  "3586429": {
+    "category": "task",
+    "iid": 3586429,
+    "labels": [
+      "category::task",
+      "priority::major",
+      "state::closed",
+      "what::code",
+      "why::duplicate"
+    ],
+    "priority": "major",
+    "title": "Add more automated CCC tests using EchoAI test provider",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586429"
+  },
+  "3586430": {
+    "category": "task",
+    "has_merge_request": false,
+    "iid": 3586430,
+    "labels": [
+      "2026Sprint17",
+      "ai::inside",
+      "blocker::stable",
+      "category::task",
+      "needs follow-up issue",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [],
+    "priority": "major",
+    "title": "QA team to provide feedback on CCC QA testing docs and missing info",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586430"
+  },
+  "3586431": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586431,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "nice to have",
+      "priority::major",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/272"
+    ],
+    "priority": "major",
+    "title": "Create sample university context items in recipe and in documentation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586431"
+  },
+  "3586432": {
+    "category": "feature",
+    "iid": 3586432,
+    "labels": [
+      "AI UX",
+      "category::feature",
+      "priority::normal",
+      "state::postponed",
+      "what::ux"
+    ],
+    "priority": "normal",
+    "title": "Create more sample context items",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586432"
+  },
+  "3586433": {
+    "category": "plan",
+    "iid": 3586433,
+    "labels": [
+      "2026Sprint19",
+      "accessibility",
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "normal",
+    "title": "[Meta] CCC accessibility testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586433"
+  },
+  "3586434": {
+    "category": "task",
+    "iid": 3586434,
+    "labels": [
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "accessibility",
+      "category::task",
+      "nice to have",
+      "priority::normal",
+      "state::readyForWork",
+      "what::testing"
+    ],
+    "priority": "normal",
+    "title": "Accessibility Testing: CCC overview dashboard",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586434"
+  },
+  "3586435": {
+    "category": "task",
+    "iid": 3586435,
+    "labels": [
+      "2026Sprint19",
+      "accessibility",
+      "category::task",
+      "priority::normal",
+      "sprint candidate",
+      "state::readyForWork",
+      "what::testing"
+    ],
+    "priority": "normal",
+    "title": "Accessibility Testing: CCC extensions page",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586435"
+  },
+  "3586436": {
+    "category": "task",
+    "iid": 3586436,
+    "labels": [
+      "2026Sprint19",
+      "accessibility",
+      "category::task",
+      "priority::normal",
+      "sprint candidate",
+      "state::readyForWork",
+      "what::testing"
+    ],
+    "priority": "normal",
+    "title": "Accessibility Testing: CCC scope settings overview",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586436"
+  },
+  "3586437": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586437,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/279"
+    ],
+    "priority": "normal",
+    "title": "Document that recipe and config-sync installs must import ai_context's own config",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586437"
+  },
+  "3586438": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586438,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/285"
+    ],
+    "priority": "major",
+    "title": "Split scope display weight from subscription scoring weight",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586438"
+  },
+  "3586439": {
+    "category": "plan",
+    "iid": 3586439,
+    "labels": [
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::discussion"
+    ],
+    "priority": "normal",
+    "title": "[Discuss] Follow up Roles audience targeting after 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586439"
+  },
+  "3586440": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586440,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/273",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/274",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/275"
+    ],
+    "priority": "normal",
+    "title": "Context + content association QA evaluation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586440"
+  },
+  "3586441": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586441,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/273",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/275"
+    ],
+    "priority": "major",
+    "title": "Inherit omitted agent_id from the running agent on opted-in context tools",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586441"
+  },
+  "3586442": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586442,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/273",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/274",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/277"
+    ],
+    "priority": "major",
+    "title": "Site Sections cannot match the real page on API-proxy routes like /api/deepchat",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586442"
+  },
+  "3586443": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586443,
+    "labels": [
+      "2026Sprint16",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "must have",
+      "priority::normal",
+      "state::fixed",
+      "what::documentation"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/273"
+    ],
+    "priority": "normal",
+    "title": "Clarify Specific Entities exclusion in help text and document chatbot context delivery",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586443"
+  },
+  "3586444": {
+    "category": "task",
+    "iid": 3586444,
+    "labels": [
+      "2026Sprint17",
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "beta5 must have",
+      "category::task",
+      "priority::major",
+      "state::inProgress",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Review public CCC API and finalize before beta5 is tagged",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586444"
+  },
+  "3586445": {
+    "category": "task",
+    "iid": 3586445,
+    "labels": [
+      "2026Sprint19",
+      "category::task",
+      "consider for 1.0",
+      "priority::major",
+      "sprint candidate",
+      "state::blocked",
+      "what::documentation"
+    ],
+    "priority": "major",
+    "title": "Fact check all CCC documentation prior to 1.0 release",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586445"
+  },
+  "3586446": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586446,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "Rotterdam2026",
+      "ai::inside",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/283"
+    ],
+    "priority": "major",
+    "title": "Test CCC with AI Translate agent MR",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586446"
+  },
+  "3586447": {
+    "category": null,
+    "has_merge_request": false,
+    "iid": 3586447,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "priority::normal",
+      "state::fixed",
+      "what::testing"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "Test CCC after updating the ai_context_editorial workflow",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586447"
+  },
+  "3586448": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586448,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/280"
+    ],
+    "priority": "major",
+    "title": "Disable agent subscriptions for Languages and gate Specific Entities on availability",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586448"
+  },
+  "3586449": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586449,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/277"
+    ],
+    "priority": "normal",
+    "title": "Rename context scope plugin \"current\" methods to request terminology",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586449"
+  },
+  "3586450": {
+    "category": "task",
+    "iid": 3586450,
+    "labels": [
+      "category::task",
+      "priority::major",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "[Discuss] Consider removing DER as backing for Entity Items (Specific Entities) context scope plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586450"
+  },
+  "3586451": {
+    "category": "feature",
+    "has_merge_request": true,
+    "iid": 3586451,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::feature",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288"
+    ],
+    "priority": "major",
+    "title": "Create automators context consumer plugin",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586451"
+  },
+  "3586452": {
+    "category": "plan",
+    "iid": 3586452,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "needs follow-up issue",
+      "priority::major",
+      "state::fixed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "Create ai_ckeditor context consumer plugin issue and track it",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586452"
+  },
+  "3586453": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586453,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::critical",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/284"
+    ],
+    "priority": "critical",
+    "title": "Rename public selection APIs from Request to Selection",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586453"
+  },
+  "3586454": {
+    "category": "plan",
+    "has_merge_request": true,
+    "iid": 3586454,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::plan",
+      "priority::normal",
+      "state::fixed",
+      "what::planning"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/286"
+    ],
+    "priority": "normal",
+    "title": "[Plan] Review CCC automated test suite for material gaps",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586454"
+  },
+  "3586455": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586455,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/286",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/291"
+    ],
+    "priority": "normal",
+    "title": "Add automated CCC tests for remaining 1.0 coverage gaps",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586455"
+  },
+  "3586456": {
+    "category": "task",
+    "iid": 3586456,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::task",
+      "priority::normal",
+      "state::needsWork",
+      "what::management"
+    ],
+    "priority": "normal",
+    "title": "Review all closed CCC issues for follow-up items that didn't get issues created",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586456"
+  },
+  "3586457": {
+    "category": "plan",
+    "iid": 3586457,
+    "labels": [
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "normal",
+    "title": "Update Chicago demo with generic consumer patch after 1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586457"
+  },
+  "3586458": {
+    "category": "task",
+    "iid": 3586458,
+    "labels": [
+      "category::task",
+      "priority::major",
+      "state::postponed",
+      "what::documentation"
+    ],
+    "priority": "major",
+    "title": "[Meta] Create simple CCC tutorial videos post-1.0",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586458"
+  },
+  "3586459": {
+    "category": "task",
+    "iid": 3586459,
+    "labels": [
+      "category::task",
+      "demo",
+      "priority::normal",
+      "state::blocked",
+      "what::documentation"
+    ],
+    "priority": "normal",
+    "title": "CCC 1.0 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586459"
+  },
+  "3586460": {
+    "category": "task",
+    "iid": 3586460,
+    "labels": [
+      "2026Sprint18",
+      "ai::internal",
+      "category::task",
+      "priority::critical",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "critical",
+    "title": "[Meta] Heavy QA before rc1",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586460"
+  },
+  "3586461": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586461,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/289"
+    ],
+    "priority": "normal",
+    "title": "Harden leftover consumer-plugin edge cases from generic consumer plugin implementation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586461"
+  },
+  "3586462": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586462,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/290"
+    ],
+    "priority": "normal",
+    "title": "Fix leftover consumer admin UX from generic consumer implementation",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586462"
+  },
+  "3586463": {
+    "category": "task",
+    "iid": 3586463,
+    "labels": [
+      "category::task",
+      "priority::normal",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Remove temporary automator context plugin ID-tag and widget-only bridges",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586463"
+  },
+  "3586464": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586464,
+    "labels": [
+      "2026Sprint17",
+      "ai::internal",
+      "category::bug",
+      "priority::normal",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/290"
+    ],
+    "priority": "normal",
+    "title": "Make breadcrumb match CCC page and tabs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586464"
+  },
+  "3586465": {
+    "category": "plan",
+    "has_merge_request": false,
+    "iid": 3586465,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "needs follow-up issue",
+      "priority::normal",
+      "state::fixed",
+      "what::ideas"
+    ],
+    "merge_request_urls": [],
+    "priority": "normal",
+    "title": "Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586465"
+  },
+  "3586466": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586466,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::inside",
+      "blocker::beta",
+      "category::bug",
+      "must have",
+      "priority::major",
+      "state::fixed",
+      "version::v1.0.x-dev",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/292",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/296"
+    ],
+    "priority": "major",
+    "title": "Consumer include/exclude config stores context item entity IDs instead of UUIDs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586466"
+  },
+  "3586467": {
+    "category": null,
+    "iid": 3586467,
+    "labels": [],
+    "priority": null,
+    "title": "Minor clean up after MR !288",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586467"
+  },
+  "3586468": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586468,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "Quick Win",
+      "ai::inside",
+      "category::task",
+      "priority::normal",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/293"
+    ],
+    "priority": "normal",
+    "title": "Minor CCC automator test clean up",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586468"
+  },
+  "3586469": {
+    "category": "plan",
+    "iid": 3586469,
+    "labels": [
+      "category::plan",
+      "priority::normal",
+      "state::postponed",
+      "what::discussion"
+    ],
+    "priority": "normal",
+    "title": "[Discuss] CCC support for multisite installations or sharing context items across multiple sites",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586469"
+  },
+  "3586470": {
+    "category": "bug",
+    "has_merge_request": true,
+    "iid": 3586470,
+    "labels": [
+      "2026Sprint17",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::bug",
+      "must have",
+      "needs follow-up issue",
+      "priority::major",
+      "state::fixed",
+      "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/291",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/294"
+    ],
+    "priority": "major",
+    "title": "Fix CCC beta4-to-beta5 upgrade and config-import path",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586470"
+  },
+  "3586471": {
+    "category": "bug",
+    "iid": 3586471,
+    "labels": [
+      "2026Sprint18",
+      "category::bug",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "major",
+    "title": "Fix CCC scope index, stored-value cleanup, and request matching",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586471"
+  },
+  "3586472": {
+    "category": "bug",
+    "iid": 3586472,
+    "labels": [
+      "2026Sprint18",
+      "category::bug",
+      "priority::normal",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Isolate CCC context push and harden leftover consumer runtime edge cases",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586472"
+  },
+  "3586473": {
+    "category": "bug",
+    "iid": 3586473,
+    "labels": [
+      "2026Sprint18",
+      "category::bug",
+      "consider for 1.0",
+      "priority::normal",
+      "sprint candidate",
+      "state::blocked",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Fix CCC selection cache metadata and evict scanned items from memory",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586473"
+  },
+  "3586474": {
+    "category": "task",
+    "iid": 3586474,
+    "labels": [
+      "category::task",
+      "performance",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Cache CCC selection results across AI requests",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586474"
+  },
+  "3586475": {
+    "category": "task",
+    "iid": 3586475,
+    "labels": [
+      "category::task",
+      "performance",
+      "priority::normal",
+      "state::postponed",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Tighten remaining CCC selection, render, and usage costs",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586475"
+  },
+  "3586476": {
+    "category": null,
+    "iid": 3586476,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Variable autocomplete in MDX prompt editor doesn't work with the configured {{ trigger",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586476"
+  },
+  "3586477": {
+    "category": null,
+    "iid": 3586477,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Title: Inserted token/variable elements in MDX prompt editor have no hover tooltip with help text",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586477"
+  },
+  "3586478": {
+    "category": null,
+    "iid": 3586478,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Clicking the \"Automator FAQ Field\" widget action button does nothing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586478"
+  },
+  "3586479": {
+    "category": null,
+    "iid": 3586479,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Clicking the \"Automator Metatag\" button on a node form does nothing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586479"
+  },
+  "3586480": {
+    "category": null,
+    "iid": 3586480,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Field Widget Action for Telephone field: Clicking the \"Automator Telephone\" field widget action often does nothing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586480"
+  },
+  "3586481": {
+    "category": null,
+    "iid": 3586481,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Field Widget Action for Moderation State: Clicking the \"Automator Moderation State\" field widget action does nothing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586481"
+  },
+  "3586482": {
+    "category": null,
+    "iid": 3586482,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "Field Widget Action for Office Hours: Clicking the \"Automator Office Hours\" field widget action always fails with \"The AI automator failed to run.",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586482"
+  },
+  "3586483": {
+    "category": null,
+    "iid": 3586483,
+    "labels": [
+      "state::closed",
+      "why::invalid"
+    ],
+    "priority": null,
+    "title": "\"Check with exclusion tag\" test case references an \"Exclusion tags\" field that does not exist in any ai_logging version",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586483"
+  },
+  "3586484": {
+    "category": "bug",
+    "iid": 3586484,
+    "labels": [
+      "2026Sprint18",
+      "category::bug",
+      "needs manual testing",
+      "priority::normal",
+      "rc1 must have",
+      "sprint candidate",
+      "state::needsWork",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Rename leftover AI Agents tool limits from `agent_id` to `consumer_id`",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586484"
+  },
+  "3586485": {
+    "category": "plan",
+    "iid": 3586485,
+    "labels": [
+      "2026Sprint18",
+      "ai::internal",
+      "blocker::stable",
+      "category::plan",
+      "consider for 1.0",
+      "needs follow-up issue",
+      "priority::major",
+      "sprint candidate",
+      "state::needsReview",
+      "what::discussion"
+    ],
+    "priority": "major",
+    "title": "[Discuss] Decouple context specfic consumer settings from AI Context consumer configurations",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586485"
+  },
+  "3586486": {
+    "category": "task",
+    "iid": 3586486,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "consider for 1.0",
+      "needs manual testing",
+      "priority::normal",
+      "sprint candidate",
+      "state::needsWork",
+      "what::ux"
+    ],
+    "priority": "normal",
+    "title": "Add Type and Automatic push filters on the context consumers listing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586486"
+  },
+  "3586487": {
+    "category": "task",
+    "has_merge_request": true,
+    "iid": 3586487,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "consider for 1.0",
+      "priority::normal",
+      "sprint candidate",
+      "state::fixed",
+      "what::ux"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/298"
+    ],
+    "priority": "normal",
+    "title": "Make On/Off and Enabled/Disabled/Unavailable easier to scan on CCC listings",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586487"
+  },
+  "3586488": {
+    "category": "task",
+    "iid": 3586488,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "consider for 1.0",
+      "needs manual testing",
+      "priority::normal",
+      "sprint candidate",
+      "state::needsWork",
+      "what::ux"
+    ],
+    "priority": "normal",
+    "title": "Use a more user-friendly automator context consumer description and change admin link",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586488"
+  },
+  "3586489": {
+    "category": "bug",
+    "iid": 3586489,
+    "labels": [
+      "2026Sprint18",
+      "ai::internal",
+      "beta5 must have",
+      "category::bug",
+      "needs follow-up issue",
+      "priority::normal",
+      "sprint candidate",
+      "state::rtbc",
+      "what::code"
+    ],
+    "priority": "normal",
+    "title": "Remove stale consumer config when a host entity is deleted",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586489"
+  },
+  "3586490": {
+    "category": "task",
+    "iid": 3586490,
+    "labels": [
+      "2026Sprint19",
+      "ai::internal",
+      "category::task",
+      "demo",
+      "priority::normal",
+      "sprint candidate",
+      "state::blocked",
+      "what::documentation"
+    ],
+    "priority": "normal",
+    "title": "CCC 1.0 blog post",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586490"
+  },
+  "3586491": {
+    "category": "task",
+    "iid": 3586491,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Test context item creation and workflow",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586491"
+  },
+  "3586492": {
+    "category": "task",
+    "iid": 3586492,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA:  Context scope testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586492"
+  },
+  "3586493": {
+    "category": "task",
+    "iid": 3586493,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Usage testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586493"
+  },
+  "3586494": {
+    "category": "task",
+    "iid": 3586494,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Overview testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586494"
+  },
+  "3586495": {
+    "category": "task",
+    "iid": 3586495,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: General settings testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586495"
+  },
+  "3586496": {
+    "category": "task",
+    "iid": 3586496,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Context items settings testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586496"
+  },
+  "3586497": {
+    "category": "task",
+    "iid": 3586497,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Consumer types testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586497"
+  },
+  "3586498": {
+    "category": "task",
+    "iid": 3586498,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Agent consumer testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586498"
+  },
+  "3586499": {
+    "category": "task",
+    "iid": 3586499,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Automator consumer testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586499"
+  },
+  "3586500": {
+    "category": "task",
+    "iid": 3586500,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: CKEditor consumer testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586500"
+  },
+  "3586501": {
+    "category": "task",
+    "iid": 3586501,
+    "labels": [
+      "2026Sprint18",
+      "category::task",
+      "needs manual testing",
+      "priority::major",
+      "rc1 must have",
+      "sprint candidate",
+      "state::blocked",
+      "what::testing"
+    ],
+    "priority": "major",
+    "title": "CCC Pre-rc1 QA: Extensions page testing",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586501"
+  },
+  "3586502": {
+    "category": "plan",
+    "iid": 3586502,
+    "labels": [
+      "2026Sprint18",
+      "AI Initiative Sprint",
+      "ai::internal",
+      "category::plan",
+      "priority::major",
+      "rc1 must have",
+      "state::postponed",
+      "what::planning"
+    ],
+    "priority": "major",
+    "title": "Sprint 18 CCC roadmap updates, sprint planning, and issue triage",
+    "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586502"
   }
 }

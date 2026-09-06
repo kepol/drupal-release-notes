@@ -30,6 +30,123 @@
       }
     }
   },
+  "3574924": {
+    "fetched_at": "2026-08-15T00:09:40.331175+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 152,
+        "title": "Issue #3586219: Update context listing page per new design",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/152"
+      }
+    ],
+    "users": {
+      "kepol": {
+        "issue": [
+          {
+            "body": "> _Migrated from comment #2 posted 06 Mar 2026 at 21:37 UTC_ This is partially done by: https://git.drupalcode.org/project/ai_context/-/work_items/3574936 But we don't show all the scope values, whic\u2026",
+            "created_at": "2026-04-22 22:21:29"
+          },
+          {
+            "body": "I think this is all covered but needs some thought before closing",
+            "created_at": "2026-07-24 19:41:33"
+          },
+          {
+            "body": "gpt 5.6 sol analysis ## Verdict Yes\u2014[#3574924](https://git.drupalcode.org/project/ai_context/-/work_items/3574924) is complete and can be closed as fixed. The functionality landed through [MR !152](h\u2026",
+            "created_at": "2026-07-26 19:44:02"
+          },
+          {
+            "body": "Closing as outdated",
+            "created_at": "2026-07-28 17:25:25"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "Tested and feedback copied from issue (see screenshots there) --- Feedback: 1. 0K (zero+K) looks like \"OK\" (okay)... maybe that's okay :D 2. The scope dropdown could potentially get very large. Note\u2026",
+                "created_at": "2026-05-26 00:51:46"
+              },
+              {
+                "body": "I'm seeing that only target entities are showing up in the scope column (and the scope dropdown). It should be all scope except use cases. --- AI thoughts on this ## What's actually wrong Both places\u2026",
+                "created_at": "2026-05-26 00:59:04"
+              },
+              {
+                "body": "Composer 2.5 review Compared `3586219-issue-branch` to `1.0.x`: **15 files, +889 / \u2212130 lines**, across **17 commits** (mostly #3586219 listing work, plus the latest enabled-scope fix). ## What chang\u2026",
+                "created_at": "2026-06-12 01:55:27"
+              },
+              {
+                "body": "I reviewed the code myself. Maybe we'll want to pull the icons into files at some point, but fine for now. -- Opus 4.8 review The assessment is accurate in substance but now **stale on the numbers**,\u2026",
+                "created_at": "2026-06-12 02:05:20"
+              },
+              {
+                "body": "I'll set to auto-merge.",
+                "created_at": "2026-06-12 02:07:25"
+              },
+              {
+                "body": "Note that there will be UX follow-up on this because we may want to 1) combine Use Case and Scope columns as it takes a lot of real estate, and 2) remove the Scope filter (the text box can be used).",
+                "created_at": "2026-06-12 02:16:16"
+              },
+              {
+                "body": "![screencapture-c2026-ddev-site-admin-config-ai-context-items-2026-06-11-19_13_40](/uploads/2368deb45fbe7e0bd5bcc0da649c5668/screencapture-c2026-ddev-site-admin-config-ai-context-items-2026-06-11-19_\u2026",
+                "created_at": "2026-06-12 02:16:25"
+              },
+              {
+                "body": "Thanks!",
+                "created_at": "2026-06-12 20:14:43"
+              },
+              {
+                "body": "Finally!",
+                "created_at": "2026-06-12 22:18:55"
+              }
+            ],
+            "mr_iid": 152,
+            "mr_title": "Issue #3586219: Update context listing page per new design",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/152"
+          }
+        ]
+      },
+      "mglaman": {
+        "issue": [],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "**Follow-up split out: sortable columns (work item point 11)** Sortable column headers are intentionally **not** in this MR. They are higher risk and need their own issue: - The list builder loads ro\u2026",
+                "created_at": "2026-05-19 16:34:11"
+              },
+              {
+                "body": "This re-implements scope-label collection that already exists as `AiContextScopeManager::buildScopeSummaryFromEntity()` (used by `AiContextItemForm`). The return shapes differ here (a flat label arra\u2026",
+                "created_at": "2026-06-09 20:01:15"
+              },
+              {
+                "body": "`format(0)` returns \"0K\" \u2014 for an item with empty content the Tokens column reads \"0K\" rather than something cleaner like \"0\" or a dash. Minor cosmetic; worth special-casing zero if empty items are e\u2026",
+                "created_at": "2026-06-09 20:01:17"
+              },
+              {
+                "body": "The Scope filter options come only from `scopeFilterOptions`, which is populated while rendering rows (line ~322). With a pager, the select then lists only scope values present on the current page \u2014\u2026",
+                "created_at": "2026-06-09 20:01:34"
+              },
+              {
+                "body": "**Per-row plugin instantiation** (`AiContextItemListBuilder::buildRow`, ~line 290): `createInstance('use_case')` runs once per row. `getScopePlugins()` is cached on the manager, but `createInstance()\u2026",
+                "created_at": "2026-06-09 20:01:35"
+              },
+              {
+                "body": "## Review + manual test Code is solid. Clean output escaping (TranslatableMarkup + Twig auto-escape, `strip_tags` on tooltips), accessible inline SVG subcontext icons (`currentColor`, `aria-hidden`),\u2026",
+                "created_at": "2026-06-09 20:01:48"
+              },
+              {
+                "body": "Thanks @adaptative \u2014 reviewed 421e200. The collector, plugin memoization, page-scoped filter doc, and the 0K fix all look good. Verified locally: PHPCS clean, PHPStan level 2 clean, AiContextScopeMan\u2026",
+                "created_at": "2026-06-11 14:24:05"
+              }
+            ],
+            "mr_iid": 152,
+            "mr_title": "Issue #3586219: Update context listing page per new design",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/152"
+          }
+        ]
+      }
+    }
+  },
   "3576092": {
     "fetched_at": "2026-07-04T20:34:34.780953+00:00",
     "merge_request_refs": [],
@@ -141,6 +258,26 @@
       }
     }
   },
+  "3586248": {
+    "fetched_at": "2026-08-15T00:09:41.799887+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "valthebald": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586268": {
+    "fetched_at": "2026-08-15T00:09:42.562801+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kristen": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3586275": {
     "fetched_at": "2026-07-04T20:34:43.724091+00:00",
     "merge_request_refs": [
@@ -162,6 +299,16 @@
       }
     }
   },
+  "3586281": {
+    "fetched_at": "2026-08-15T00:09:43.451549+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3586283": {
     "fetched_at": "2026-07-18T02:42:33.536846+00:00",
     "merge_request_refs": [
@@ -175,6 +322,39 @@
       "me": {
         "issue": [],
         "merge_requests": []
+      }
+    }
+  },
+  "3586298": {
+    "fetched_at": "2026-08-15T00:09:44.644149+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 201,
+        "title": "Issue #3586298: Fix context prefix default alignment and stale getManageUrl docs.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/201"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "Hi @kepol , the MR has been updated, please review",
+            "created_at": "2026-07-02 11:46:39"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "Hi @kepol , yes \u2014 these fixes are covered by #3586305 (sections 6.1 and 6.2). I'll close this MR and open a new one on that issue instead. Thanks for the guidance!",
+                "created_at": "2026-06-30 18:36:53"
+              }
+            ],
+            "mr_iid": 201,
+            "mr_title": "Issue #3586298: Fix context prefix default alignment and stale getManageUrl docs.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/201"
+          }
+        ]
       }
     }
   },
@@ -208,6 +388,39 @@
       }
     }
   },
+  "3586324": {
+    "fetched_at": "2026-08-15T00:09:46.034755+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 217,
+        "title": "Issue #3586324: Replace hardcoded admin path assertions in tests with...",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/217"
+      }
+    ],
+    "users": {
+      "abhisekmazumdar": {
+        "issue": [
+          {
+            "body": "/do:assign @me",
+            "created_at": "2026-07-13 15:28:43"
+          },
+          {
+            "body": "/do:unassign @me",
+            "created_at": "2026-07-14 15:03:22"
+          },
+          {
+            "body": "I have some other priorities this week and won't be able to work on this.",
+            "created_at": "2026-07-14 15:03:50"
+          }
+        ],
+        "merge_requests": []
+      },
+      "me": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3586328": {
     "fetched_at": "2026-07-18T02:42:36.820630+00:00",
     "merge_request_refs": [
@@ -220,6 +433,654 @@
     "users": {
       "me": {
         "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586342": {
+    "fetched_at": "2026-09-06T05:29:22.854720+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kepol": {
+        "issue": [
+          {
+            "body": "/do:assign ignore, was playing with the command",
+            "created_at": "2026-07-27 15:23:04"
+          },
+          {
+            "body": "/do:assign me ignore, was playing with the command",
+            "created_at": "2026-07-27 15:23:17"
+          },
+          {
+            "body": "I'm checking with Bruna to get a sense of timing on this one",
+            "created_at": "2026-08-03 17:49:06"
+          },
+          {
+            "body": "They are working on it this week :tada:",
+            "created_at": "2026-08-03 17:56:32"
+          },
+          {
+            "body": "Draft QA script here: #3586226+s",
+            "created_at": "2026-08-08 02:42:39"
+          },
+          {
+            "body": "Bruna's team has been making great progress on this and are creating a happy path test notes document",
+            "created_at": "2026-08-19 22:04:27"
+          },
+          {
+            "body": "I'm going to split this into two issues and close out this one",
+            "created_at": "2026-08-20 18:08:19"
+          },
+          {
+            "body": "They've already done a ton of work and are familiar with CCC now so closing this issue for that part of it",
+            "created_at": "2026-08-20 18:09:22"
+          },
+          {
+            "body": "Follow-up issue: #3586430+s",
+            "created_at": "2026-08-20 18:12:34"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586346": {
+    "fetched_at": "2026-09-06T05:29:23.796105+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 257,
+        "title": "Issue #3586348: Clarify scope eligibility, ranking, and limits in UI help and documentation.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+      },
+      {
+        "iid": 283,
+        "title": "Issue #3586346: Implement plugin-based generic context consumers and unified consumer configuration.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/283"
+      },
+      {
+        "iid": 286,
+        "title": "Issue #3586455: Add automated CCC tests for remaining 1.0 coverage gaps.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/286"
+      },
+      {
+        "iid": 288,
+        "title": "Issue #3586451: Add Automator consumer type and temporary widget bridges.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/288"
+      },
+      {
+        "iid": 291,
+        "title": "Issue #3586444: Finalize public CCC API.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/291"
+      }
+    ],
+    "users": {
+      "jibran": {
+        "issue": [],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "This should also be included in the suggestion section.",
+                "created_at": "2026-08-29 23:21:41"
+              },
+              {
+                "body": "This should also be included in the suggestion section.",
+                "created_at": "2026-08-29 23:21:52"
+              },
+              {
+                "body": "We have 4 different versions of `createAutomator` maybe consider creating a trait.",
+                "created_at": "2026-08-29 23:26:13"
+              },
+              {
+                "body": "Just some late non-blocking review. :slight_smile:",
+                "created_at": "2026-08-29 23:32:59"
+              },
+              {
+                "body": "Created https://git.drupalcode.org/project/ai_context/-/merge_requests/293",
+                "created_at": "2026-08-31 18:58:55"
+              }
+            ],
+            "mr_iid": 288,
+            "mr_title": "Issue #3586451: Add Automator consumer type and temporary widget bridges.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/288"
+          }
+        ]
+      },
+      "joshua1234511": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586348": {
+    "fetched_at": "2026-09-06T05:29:29.944925+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 252,
+        "title": "Issue #3586383: Pre-1.0 context selection reliability and diagnostics follow-up.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/252"
+      },
+      {
+        "iid": 257,
+        "title": "Issue #3586348: Clarify scope eligibility, ranking, and limits in UI help and documentation.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+      },
+      {
+        "iid": 259,
+        "title": "Issue #3586394: Redesign selection modes as Minimal / Relevant / Broad with a site-wide default.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+      }
+    ],
+    "users": {
+      "abhisekmazumdar": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586359": {
+    "fetched_at": "2026-08-15T00:09:47.687242+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 234,
+        "title": "Issue #3586359: Polish developer APIs and internal documentation",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/234"
+      },
+      {
+        "iid": 239,
+        "title": "Issue #3586361: Decouple context item form descriptions from scope plugin descriptions.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/239"
+      }
+    ],
+    "users": {
+      "aivazashvilit": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "me": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586369": {
+    "fetched_at": "2026-08-15T00:09:49.473187+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 240,
+        "title": "Issue #3586369: Global context checkbox description renders a literal <br> instead of a line break.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/240"
+      },
+      {
+        "iid": 257,
+        "title": "Issue #3586348: Clarify scope eligibility, ranking, and limits in UI help and documentation.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+      }
+    ],
+    "users": {
+      "danrod": {
+        "issue": [
+          {
+            "body": "/do:assign @danrod",
+            "created_at": "2026-08-07 01:26:29"
+          },
+          {
+            "body": "/do:unassign @danrod",
+            "created_at": "2026-08-10 10:54:17"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586371": {
+    "fetched_at": "2026-09-06T05:29:33.429242+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 255,
+        "title": "Issue #3586371: Document how to use RAG with CCC",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/255"
+      }
+    ],
+    "users": {
+      "jibran": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586376": {
+    "fetched_at": "2026-08-15T00:09:51.544545+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 245,
+        "title": "Issue #3586376: Add context item priority field and selection tie-breakers.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/245"
+      },
+      {
+        "iid": 252,
+        "title": "Issue #3586383: Pre-1.0 context selection reliability and diagnostics follow-up.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/252"
+      }
+    ],
+    "users": {
+      "adaptative": {
+        "issue": [
+          {
+            "body": "/do:assign @adaptative",
+            "created_at": "2026-08-11 09:58:30"
+          },
+          {
+            "body": "/do:unassign @adaptative",
+            "created_at": "2026-08-11 10:01:05"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586378": {
+    "fetched_at": "2026-08-15T00:09:53.908999+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 244,
+        "title": "Issue #3586378: Remove max_items context limit and rely on token budget.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/244"
+      },
+      {
+        "iid": 252,
+        "title": "Issue #3586383: Pre-1.0 context selection reliability and diagnostics follow-up.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/252"
+      },
+      {
+        "iid": 257,
+        "title": "Issue #3586348: Clarify scope eligibility, ranking, and limits in UI help and documentation.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/257"
+      }
+    ],
+    "users": {
+      "aivazashvilit": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586391": {
+    "fetched_at": "2026-08-15T00:09:56.662851+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 247,
+        "title": "Issue #3586391: Resolve use_default provider for conditional subcontext.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/247"
+      }
+    ],
+    "users": {
+      "cadence96": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586399": {
+    "fetched_at": "2026-09-06T05:29:34.666421+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "bruno_carvalho": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586405": {
+    "fetched_at": "2026-09-06T05:29:35.617216+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 258,
+        "title": "Issue #3586405: Replace the scope map field with a multi-value scope_id + value field.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/258"
+      },
+      {
+        "iid": 259,
+        "title": "Issue #3586394: Redesign selection modes as Minimal / Relevant / Broad with a site-wide default.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+      },
+      {
+        "iid": 265,
+        "title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
+      },
+      {
+        "iid": 267,
+        "title": "Draft: DO NOT MERGE / PoC ONLY / Issue #3586385: University demo recipe Step 1 (CCC + context items)",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/267"
+      },
+      {
+        "iid": 268,
+        "title": "Issue #3586421: Read map-backed scope field from SQL in early update hooks.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/268"
+      },
+      {
+        "iid": 270,
+        "title": "Issue #3586422: Honor entity view access and bubble scope-label cacheability.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/270"
+      }
+    ],
+    "users": {
+      "bharatkelotra": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586408": {
+    "fetched_at": "2026-09-06T05:29:40.868271+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 259,
+        "title": "Issue #3586394: Redesign selection modes as Minimal / Relevant / Broad with a site-wide default.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/259"
+      }
+    ],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586409": {
+    "fetched_at": "2026-09-06T05:29:43.154474+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kepol": {
+        "issue": [
+          {
+            "body": "Should be fixed in dev already Beta4 will probably go out tonight",
+            "created_at": "2026-08-16 04:27:02"
+          },
+          {
+            "body": "@joshua1234511 Please test :pray: https://www.drupal.org/project/ai_context/releases/1.0.0-beta4",
+            "created_at": "2026-08-16 05:02:54"
+          },
+          {
+            "body": "Nice \ud83d\ude4c",
+            "created_at": "2026-08-17 06:37:59"
+          },
+          {
+            "body": "Arian said I can move this into the inside sprint (it's done!)",
+            "created_at": "2026-08-19 20:08:55"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586412": {
+    "fetched_at": "2026-09-06T05:29:43.963501+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 271,
+        "title": "Issue #3586412: Preserve stored scope and agent subscriptions when a scope is...",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/271"
+      },
+      {
+        "iid": 276,
+        "title": "Issue #3586419: Split supportsSubscriptions() into explicit scope capabilities.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/276"
+      },
+      {
+        "iid": 280,
+        "title": "Issue #3586448: Disable agent subscriptions for Languages and gate Specific Entities on availability.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/280"
+      }
+    ],
+    "users": {
+      "aivazashvilit": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586417": {
+    "fetched_at": "2026-09-06T05:29:46.455119+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 265,
+        "title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
+      }
+    ],
+    "users": {
+      "a.dmitriiev": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "jibran": {
+        "issue": [
+          {
+            "body": "*Updated the labels via Drupal.org issue edit .*",
+            "created_at": "2026-08-17 06:40:27"
+          },
+          {
+            "body": "/do:unassign me /do:label ~\"state::needsReview\"",
+            "created_at": "2026-08-17 13:06:00"
+          },
+          {
+            "body": "*Updated the labels and linked issues via Drupal.org issue edit .*",
+            "created_at": "2026-08-17 18:04:13"
+          },
+          {
+            "body": "Thanks for looking into it. #3586405 got merged so it needs a rework.",
+            "created_at": "2026-08-18 01:46:14"
+          },
+          {
+            "body": "Pushed the fixes from review: the `1.0.x` merge conflict from #3586405, and the tactical items from the first review pass (token browser registration, the `user`-only entity resolution bug, test cove\u2026",
+            "created_at": "2026-08-18 15:30:52"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "@kepol Pushed a round addressing the merge conflict and your first review pass. **Merge fix:** `AiContextScopeGlobal::VALUE_GLOBAL` renamed to `GLOBAL_VALUE` (by #3586405, already merged to `1.0.x`).\u2026",
+                "created_at": "2026-08-18 15:30:49"
+              }
+            ],
+            "mr_iid": 265,
+            "mr_title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
+          }
+        ]
+      },
+      "joshua1234511": {
+        "issue": [
+          {
+            "body": "Sharing an integrator data point `ai_empathy_ccc` https://git.drupalcode.org/project/ai_empathy/-/tree/1.2.x/modules/ai_empathy_ccc is a non-agent CCC consumer (it injects context into empathy evalua\u2026",
+            "created_at": "2026-08-29 04:43:22"
+          }
+        ],
+        "merge_requests": []
+      },
+      "kepol": {
+        "issue": [
+          {
+            "body": "Thanks! I'll take a look. Note @Marcus_Johansson and @a.dmitriiev has mentioned using tokens for context (I've heard when listening to dev standup meeting notes) but I haven't had discussions with th\u2026",
+            "created_at": "2026-08-17 20:13:58"
+          },
+          {
+            "body": "Putting in beta5 but not sure this can happen in time. I need to wedge a lot and try to get beta5 out in a week somehow :grimacing:",
+            "created_at": "2026-08-17 20:20:22"
+          },
+          {
+            "body": "For now, bumping to future bucket because I'm not sure about this one. See notes on MR. I need to let this sit in my brain for a bit, so unassigning for now.",
+            "created_at": "2026-08-17 20:45:16"
+          },
+          {
+            "body": "Given all the other things I need to work on for beta5 (which should be the last beta release), I don't see this one getting in. Unassigning for now.",
+            "created_at": "2026-08-20 23:52:06"
+          },
+          {
+            "body": "Added different ideas for automators from opus 5 here: #3563106+",
+            "created_at": "2026-08-22 05:48:22"
+          },
+          {
+            "body": "ootb, with token installed, you can get the ai_context content field which may be useful for automators and other use cases --- For **one saved entity instance**, Token gives you a token type named a\u2026",
+            "created_at": "2026-08-22 20:55:32"
+          },
+          {
+            "body": "I asked Pravesh to review but I should have been more clear This code won\u2019t be merged The discussion needs review, not the code",
+            "created_at": "2026-08-24 18:17:12"
+          },
+          {
+            "body": "Ready for review: #3586451+",
+            "created_at": "2026-08-29 04:56:00"
+          },
+          {
+            "body": "Note that #3586346+ is merged (though still open to allow additional testing until Monday)",
+            "created_at": "2026-08-29 06:26:50"
+          },
+          {
+            "body": "Still leaving open in case anyone wasn't done reviewing here I'll create a follow-up issue to revisit adding tokens in 1.1",
+            "created_at": "2026-08-29 18:37:27"
+          },
+          {
+            "body": "Closing this but leaving assigned to create follow up issue",
+            "created_at": "2026-08-30 05:38:11"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "Maybe a bit cumbersome to do what you need this way given there are many scope plugins and values",
+                "created_at": "2026-08-17 20:16:41"
+              },
+              {
+                "body": "Some other thoughts: - Token for specific context item - Token for all context that would come from using a function call I need to think about this more",
+                "created_at": "2026-08-17 20:18:18"
+              },
+              {
+                "body": "The changes are pretty simple given it focuses only on global and use cases. I'm not sure this would be of enough value for automators though. I need to think more about this.",
+                "created_at": "2026-08-17 20:21:32"
+              },
+              {
+                "body": "grok review ## Verdict [MR !265](https://git.drupalcode.org/project/ai_context/-/merge_requests/265) is a solid first cut of the no-code pull path in [#3586417](https://git.drupalcode.org/project/ai_\u2026",
+                "created_at": "2026-08-17 20:23:40"
+              },
+              {
+                "body": "fable's opinion I think your instinct is right, though for slightly different reasons than \"the changes are simple.\" ## My take: the value is real but narrow, and the strategic cost is higher than th\u2026",
+                "created_at": "2026-08-17 20:27:39"
+              },
+              {
+                "body": "On my thought of pulling in certain context items directly: --- A direct-item token (`[ai_context:item:123]`) is a better idea than the scope tokens, and I'd support it \u2014 with one important design ch\u2026",
+                "created_at": "2026-08-17 20:39:37"
+              },
+              {
+                "body": "I need to let this sit in my brain for a bit, so unassigning",
+                "created_at": "2026-08-17 20:44:30"
+              },
+              {
+                "body": "Added different ideas for automators from opus 5 here: #3563106+",
+                "created_at": "2026-08-22 05:15:13"
+              },
+              {
+                "body": "Closing this as I've converted the issue into a discussion issue. If we move forward with tokens, they will be added in a separate issue and probably handled generically.",
+                "created_at": "2026-08-27 01:22:35"
+              }
+            ],
+            "mr_iid": 265,
+            "mr_title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
+          }
+        ]
+      },
+      "marcus_johansson": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-08-24 18:01:13"
+          },
+          {
+            "body": "Hi @kepol , I reviewed the code and tests for this MR carefully. **`AiContextTokenHooks.php`:** * `global` token correctly uses `AiContextScopeGlobal::PLUGIN_ID` / `GLOBAL_VALUE` constants \u2014 no magic\u2026",
+            "created_at": "2026-08-24 18:11:54"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-08-24 18:12:09"
+          },
+          {
+            "body": "/do:label \\~state::rtbc",
+            "created_at": "2026-08-24 18:12:16"
+          },
+          {
+            "body": "Hi @kepol , Apologies for my initial comment. I\u2019ve gone through the code as well and reviewed it in more detail.\\ On the design, I think the token approach (`[ai_context:global]`, `[ai_context:use_ca\u2026",
+            "created_at": "2026-08-27 18:21:21"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586428": {
+    "fetched_at": "2026-09-06T05:29:47.920825+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 281,
+        "title": "Issue #3586428: Add EchoAI kernel tests for remaining selection families and injection path.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/281"
+      },
+      {
+        "iid": 286,
+        "title": "Issue #3586455: Add automated CCC tests for remaining 1.0 coverage gaps.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/286"
+      }
+    ],
+    "users": {
+      "danrod": {
+        "issue": [
+          {
+            "body": "/do:assign @danrod",
+            "created_at": "2026-08-24 17:03:57"
+          },
+          {
+            "body": "/do:unassign @danrod",
+            "created_at": "2026-08-25 18:38:13"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586438": {
+    "fetched_at": "2026-09-06T05:29:49.869808+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 280,
+        "title": "Issue #3586448: Disable agent subscriptions for Languages and gate Specific Entities on availability.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/280"
+      },
+      {
+        "iid": 285,
+        "title": "Issue #3586438: Split scope display weight from subscription scoring weight",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/285"
+      }
+    ],
+    "users": {
+      "tormi": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-08-25 07:04:07"
+          },
+          {
+            "body": "No problems! /do:unassign me",
+            "created_at": "2026-08-25 07:16:22"
+          }
+        ],
         "merge_requests": []
       }
     }
