@@ -9520,6 +9520,7 @@
   },
   "3586398": {
     "category": "task",
+    "has_merge_request": false,
     "iid": 3586398,
     "labels": [
       "2026Sprint18",
@@ -9530,6 +9531,7 @@
       "state::fixed",
       "what::management"
     ],
+    "merge_request_urls": [],
     "priority": "critical",
     "title": "Create CCC beta5 release",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586398"
@@ -9897,6 +9899,7 @@
   },
   "3586417": {
     "category": "plan",
+    "has_merge_request": true,
     "iid": 3586417,
     "labels": [
       "2026Sprint17",
@@ -9908,6 +9911,9 @@
       "state::fixed",
       "version::v1.0.x-dev",
       "what::discussion"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
     ],
     "priority": "major",
     "title": "[Discuss] Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
@@ -10413,6 +10419,7 @@
   },
   "3586444": {
     "category": "task",
+    "has_merge_request": true,
     "iid": 3586444,
     "labels": [
       "2026Sprint17",
@@ -10424,6 +10431,11 @@
       "priority::major",
       "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/291",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/296"
     ],
     "priority": "major",
     "title": "Review public CCC API and finalize before beta5 is tagged",
@@ -10468,7 +10480,7 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586446"
   },
   "3586447": {
-    "category": null,
+    "category": "task",
     "has_merge_request": false,
     "iid": 3586447,
     "labels": [
@@ -10476,6 +10488,7 @@
       "AI Initiative Sprint",
       "Quick Win",
       "ai::inside",
+      "category::task",
       "priority::normal",
       "state::fixed",
       "what::testing"
@@ -10560,6 +10573,7 @@
   },
   "3586452": {
     "category": "plan",
+    "has_merge_request": true,
     "iid": 3586452,
     "labels": [
       "2026Sprint17",
@@ -10570,6 +10584,11 @@
       "priority::major",
       "state::fixed",
       "what::planning"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_ckeditor/-/merge_requests/12",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/283",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/288"
     ],
     "priority": "major",
     "title": "Create ai_ckeditor context consumer plugin issue and track it",
@@ -11153,6 +11172,7 @@
   },
   "3586489": {
     "category": "bug",
+    "has_merge_request": true,
     "iid": 3586489,
     "labels": [
       "2026Sprint18",
@@ -11164,6 +11184,10 @@
       "sprint candidate",
       "state::fixed",
       "what::code"
+    ],
+    "merge_request_urls": [
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/291",
+      "https://git.drupalcode.org/project/ai_context/-/merge_requests/297"
     ],
     "priority": "normal",
     "title": "Remove stale consumer config when a host entity is deleted",
