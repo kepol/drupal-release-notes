@@ -1,0 +1,42 @@
+----------------------------------------
+Release status: ai_context (1.0.0-rc1) [milestones]
+----------------------------------------
+Release window: 2026-09-06 → 2026-09-27 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 0 (current release '1.0.0'; latest Drupal.org tag '1.0.0-rc1')
+    (none)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 0 of 69 — https://git.drupalcode.org/project/ai_context/-/milestones/20
+
+* Credit audit pending: 10 — python3 scripts/credit_audit.py --project ai_context --review
+
+* QA issue: not found
+
+* Release notes: ai_context/reports/release-notes-1.0.0-rc1.html (0 credited) — milestone has 69; 3 not in release notes
+    #3586485: [Discuss] Decouple context specific consumer settings from AI Context consumer configurations — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586485
+    #3586508: Update overview page to link to samples and use consumer language — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586508
+    #3586569: Adjust token budget limits for Rotterdam demo — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586569
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 3 (in '1.0.0-rc1' scope, nothing on new.drupal.org)
+    #3586485: [Discuss] Decouple context specific consumer settings from AI Context consumer configurations
+    #3586508: Update overview page to link to samples and use consumer language
+    #3586569: Adjust token budget limits for Rotterdam demo
+
+* No record expected (duplicate / won't fix): 4 (in '1.0.0-rc1' scope, closed without a Drupal.org record by design)
+    - #3586459: CCC 1.0 blog post
+    - #3586507: Add automators as optional dependency and on extensions tab
+    - #3586509: Docs bug for ccc recipe installation?
+    - #3586520: Docs: under a recipe, config/install is filtered to <module>.* rather than skipped — which is why the list is seven
+
+* Wrong milestone: 1 (assigned milestone != close date within '1.0.0-rc1' scope)
+    #3586465: Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor — closed 2026-09-05, '1.0.0-rc1' → '1.0.0-beta5' (https://git.drupalcode.org/project/ai_context/-/work_items/3586465)
+
+* Missing in milestone: 3 (in '1.0.0-rc1' scope without a contribution record)
+    - #3586485: [Discuss] Decouple context specific consumer settings from AI Context consumer configurations
+    - #3586508: Update overview page to link to samples and use consumer language
+    - #3586569: Adjust token budget limits for Rotterdam demo

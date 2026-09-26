@@ -842,7 +842,7 @@
     }
   },
   "3586417": {
-    "fetched_at": "2026-09-06T06:04:44.471264+00:00",
+    "fetched_at": "2026-09-25T22:52:04.625564+00:00",
     "merge_request_refs": [
       {
         "iid": 265,
@@ -855,172 +855,8 @@
         "issue": [],
         "merge_requests": []
       },
-      "jibran": {
-        "issue": [
-          {
-            "body": "*Updated the labels via Drupal.org issue edit .*",
-            "created_at": "2026-08-17 06:40:27"
-          },
-          {
-            "body": "/do:unassign me /do:label ~\"state::needsReview\"",
-            "created_at": "2026-08-17 13:06:00"
-          },
-          {
-            "body": "*Updated the labels and linked issues via Drupal.org issue edit .*",
-            "created_at": "2026-08-17 18:04:13"
-          },
-          {
-            "body": "Thanks for looking into it. #3586405 got merged so it needs a rework.",
-            "created_at": "2026-08-18 01:46:14"
-          },
-          {
-            "body": "Pushed the fixes from review: the `1.0.x` merge conflict from #3586405, and the tactical items from the first review pass (token browser registration, the `user`-only entity resolution bug, test cove\u2026",
-            "created_at": "2026-08-18 15:30:52"
-          }
-        ],
-        "merge_requests": [
-          {
-            "comments": [
-              {
-                "body": "@kepol Pushed a round addressing the merge conflict and your first review pass. **Merge fix:** `AiContextScopeGlobal::VALUE_GLOBAL` renamed to `GLOBAL_VALUE` (by #3586405, already merged to `1.0.x`).\u2026",
-                "created_at": "2026-08-18 15:30:49"
-              }
-            ],
-            "mr_iid": 265,
-            "mr_title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
-            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
-          }
-        ]
-      },
-      "joshua1234511": {
-        "issue": [
-          {
-            "body": "Sharing an integrator data point `ai_empathy_ccc` https://git.drupalcode.org/project/ai_empathy/-/tree/1.2.x/modules/ai_empathy_ccc is a non-agent CCC consumer (it injects context into empathy evalua\u2026",
-            "created_at": "2026-08-29 04:43:22"
-          }
-        ],
-        "merge_requests": []
-      },
-      "kepol": {
-        "issue": [
-          {
-            "body": "Thanks! I'll take a look. Note @Marcus_Johansson and @a.dmitriiev has mentioned using tokens for context (I've heard when listening to dev standup meeting notes) but I haven't had discussions with th\u2026",
-            "created_at": "2026-08-17 20:13:58"
-          },
-          {
-            "body": "Putting in beta5 but not sure this can happen in time. I need to wedge a lot and try to get beta5 out in a week somehow :grimacing:",
-            "created_at": "2026-08-17 20:20:22"
-          },
-          {
-            "body": "For now, bumping to future bucket because I'm not sure about this one. See notes on MR. I need to let this sit in my brain for a bit, so unassigning for now.",
-            "created_at": "2026-08-17 20:45:16"
-          },
-          {
-            "body": "Given all the other things I need to work on for beta5 (which should be the last beta release), I don't see this one getting in. Unassigning for now.",
-            "created_at": "2026-08-20 23:52:06"
-          },
-          {
-            "body": "Added different ideas for automators from opus 5 here: #3563106+",
-            "created_at": "2026-08-22 05:48:22"
-          },
-          {
-            "body": "ootb, with token installed, you can get the ai_context content field which may be useful for automators and other use cases --- For **one saved entity instance**, Token gives you a token type named a\u2026",
-            "created_at": "2026-08-22 20:55:32"
-          },
-          {
-            "body": "I asked Pravesh to review but I should have been more clear This code won\u2019t be merged The discussion needs review, not the code",
-            "created_at": "2026-08-24 18:17:12"
-          },
-          {
-            "body": "Ready for review: #3586451+",
-            "created_at": "2026-08-29 04:56:00"
-          },
-          {
-            "body": "Note that #3586346+ is merged (though still open to allow additional testing until Monday)",
-            "created_at": "2026-08-29 06:26:50"
-          },
-          {
-            "body": "Still leaving open in case anyone wasn't done reviewing here I'll create a follow-up issue to revisit adding tokens in 1.1",
-            "created_at": "2026-08-29 18:37:27"
-          },
-          {
-            "body": "Closing this but leaving assigned to create follow up issue",
-            "created_at": "2026-08-30 05:38:11"
-          }
-        ],
-        "merge_requests": [
-          {
-            "comments": [
-              {
-                "body": "Maybe a bit cumbersome to do what you need this way given there are many scope plugins and values",
-                "created_at": "2026-08-17 20:16:41"
-              },
-              {
-                "body": "Some other thoughts: - Token for specific context item - Token for all context that would come from using a function call I need to think about this more",
-                "created_at": "2026-08-17 20:18:18"
-              },
-              {
-                "body": "The changes are pretty simple given it focuses only on global and use cases. I'm not sure this would be of enough value for automators though. I need to think more about this.",
-                "created_at": "2026-08-17 20:21:32"
-              },
-              {
-                "body": "grok review ## Verdict [MR !265](https://git.drupalcode.org/project/ai_context/-/merge_requests/265) is a solid first cut of the no-code pull path in [#3586417](https://git.drupalcode.org/project/ai_\u2026",
-                "created_at": "2026-08-17 20:23:40"
-              },
-              {
-                "body": "fable's opinion I think your instinct is right, though for slightly different reasons than \"the changes are simple.\" ## My take: the value is real but narrow, and the strategic cost is higher than th\u2026",
-                "created_at": "2026-08-17 20:27:39"
-              },
-              {
-                "body": "On my thought of pulling in certain context items directly: --- A direct-item token (`[ai_context:item:123]`) is a better idea than the scope tokens, and I'd support it \u2014 with one important design ch\u2026",
-                "created_at": "2026-08-17 20:39:37"
-              },
-              {
-                "body": "I need to let this sit in my brain for a bit, so unassigning",
-                "created_at": "2026-08-17 20:44:30"
-              },
-              {
-                "body": "Added different ideas for automators from opus 5 here: #3563106+",
-                "created_at": "2026-08-22 05:15:13"
-              },
-              {
-                "body": "Closing this as I've converted the issue into a discussion issue. If we move forward with tokens, they will be added in a separate issue and probably handled generically.",
-                "created_at": "2026-08-27 01:22:35"
-              }
-            ],
-            "mr_iid": 265,
-            "mr_title": "Issue #3586417: Provide a Drupal token that renders CCC context, for no-code injection into AI Automator (and other token-based) prompts",
-            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/265"
-          }
-        ]
-      },
       "marcus_johansson": {
         "issue": [],
-        "merge_requests": []
-      },
-      "pravesh_poonia": {
-        "issue": [
-          {
-            "body": "/do:assign me",
-            "created_at": "2026-08-24 18:01:13"
-          },
-          {
-            "body": "Hi @kepol , I reviewed the code and tests for this MR carefully. **`AiContextTokenHooks.php`:** * `global` token correctly uses `AiContextScopeGlobal::PLUGIN_ID` / `GLOBAL_VALUE` constants \u2014 no magic\u2026",
-            "created_at": "2026-08-24 18:11:54"
-          },
-          {
-            "body": "/do:unassign me",
-            "created_at": "2026-08-24 18:12:09"
-          },
-          {
-            "body": "/do:label \\~state::rtbc",
-            "created_at": "2026-08-24 18:12:16"
-          },
-          {
-            "body": "Hi @kepol , Apologies for my initial comment. I\u2019ve gone through the code as well and reviewed it in more detail.\\ On the design, I think the token approach (`[ai_context:global]`, `[ai_context:use_ca\u2026",
-            "created_at": "2026-08-27 18:21:21"
-          }
-        ],
         "merge_requests": []
       }
     }
@@ -1079,6 +915,179 @@
           {
             "body": "No problems! /do:unassign me",
             "created_at": "2026-08-25 07:16:22"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586471": {
+    "fetched_at": "2026-09-25T22:52:06.059015+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 306,
+        "title": "Issue #3586471: Fix CCC scope index, stored-value cleanup, and request matching",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/306"
+      }
+    ],
+    "users": {
+      "me": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "tazo_vekua": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586491": {
+    "fetched_at": "2026-09-25T22:52:07.863773+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "tazo_vekua": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586496": {
+    "fetched_at": "2026-09-25T22:52:08.708445+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 309,
+        "title": "Issue #3586515: Remove \"Create new revisions by default\"; revisions always happen.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/309"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "Hi @kepol ## QA Report: Context Items Settings Testing **Environment:** Drupal 11.4.5 \u00b7 ai_context 1.0.x \u00b7 PHP 8.x built-in server (localhost:8888) \u00b7 BigPipe disabled for local testing **Tested:** 20\u2026",
+            "created_at": "2026-09-12 15:37:08"
+          },
+          {
+            "body": "/do:label ~\"state::rtbc\"",
+            "created_at": "2026-09-12 15:37:36"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586498": {
+    "fetched_at": "2026-09-25T22:52:10.132022+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-09-14 12:41:57"
+          },
+          {
+            "body": "**KRISTEN EDITING THIS COMMENT** - **THIS IS NOT THE CORRECT ISSUE FOR THESE RESULTS** I'm putting it into a details fieldset --- Hi @kepol ## CCC Pre-rc1 QA: Automator consumer testing \u2014 results All\u2026",
+            "created_at": "2026-09-14 12:59:37"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-09-14 13:00:36"
+          },
+          {
+            "body": "/do:label ~\"state::needsReview\"",
+            "created_at": "2026-09-14 13:02:22"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586505": {
+    "fetched_at": "2026-09-25T22:52:11.056681+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 318,
+        "title": "Issue #3586533: Restore scope field schema after beta4 10026 cron purge.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/318"
+      }
+    ],
+    "users": {
+      "abhisekmazumdar": {
+        "issue": [
+          {
+            "body": "/do:label ~\"state::rtbc\" I was giving it a try but looks like its not working for me too...",
+            "created_at": "2026-09-16 13:29:45"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586508": {
+    "fetched_at": "2026-09-25T22:57:58.594098+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kepol": {
+        "issue": [
+          {
+            "body": "I already did this View sample context: https://ai-context-b13f05.pages.drupalcode.org/features/sample_context/ Consumer Settings: /admin/config/ai/context/settings/consumers",
+            "created_at": "2026-09-08 04:03:51"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586512": {
+    "fetched_at": "2026-09-25T22:52:12.639213+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 304,
+        "title": "Issue #3586512: Add update hook to register md/markdown extensions on config-imported sites.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/304"
+      }
+    ],
+    "users": {
+      "danrod": {
+        "issue": [
+          {
+            "body": "/do:assign @danrod",
+            "created_at": "2026-09-14 17:36:26"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586523": {
+    "fetched_at": "2026-09-25T22:52:14.360899+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-09-17 05:56:44"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-09-17 06:25:24"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586569": {
+    "fetched_at": "2026-09-25T22:58:08.234729+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kepol": {
+        "issue": [
+          {
+            "body": "Adjusting to 15% and 30% for now in #3586537+s",
+            "created_at": "2026-09-25 20:55:07"
           }
         ],
         "merge_requests": []
