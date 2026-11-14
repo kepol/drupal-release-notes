@@ -25074,7 +25074,7 @@
     "iid": 3586387,
     "nid": 11490212,
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586387",
-    "title": "CCC Outside AI roadmap discussion meeting October 2026",
+    "title": "[Discuss] CCC Outside AI roadmap discussion meeting October 2026",
     "uuid": "02f26cb7-3a51-4923-9168-3bc9ab66b132"
   },
   {
@@ -28269,5 +28269,32 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586712",
     "title": "Require drupal/ai 1.4.11 or later on 1.4, or 1.5.2 or later",
     "uuid": "6e7b6d45-208c-44d5-a073-b33e3d64afef"
+  },
+  {
+    "closed_at": "2026-11-14T00:01:12+00:00",
+    "contributors": [
+      {
+        "display_name": "kristen pol",
+        "drupal_uid": 8389,
+        "orgs": [
+          {
+            "name": "itty bitty byte",
+            "nid": 3190689,
+            "title": "Itty Bitty Byte"
+          },
+          {
+            "name": "salsa digital",
+            "nid": 2603032,
+            "title": "Salsa Digital"
+          }
+        ],
+        "user": "kepol"
+      }
+    ],
+    "iid": 3586601,
+    "nid": 11497633,
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586601",
+    "title": "Create CCC rc2 release",
+    "uuid": "dcd08134-b7aa-43d9-b084-21eb96017438"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T19:02:22.567674+00:00",
+  "generated_at": "2026-11-14T19:13:57.937495+00:00",
   "issues": [
     {
       "category": "task",
@@ -1529,6 +1529,34 @@
       "priority": "normal",
       "title": "Recommended pattern for a contrib module consuming CCC context from a background queue worker (Content Studio)",
       "uuid": "3b495bcb-e8d3-42c6-947a-3d0c779e7316"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-11-14T00:01:12.163000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586601,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586601",
+      "priority": "major",
+      "title": "Create CCC rc2 release",
+      "uuid": "dcd08134-b7aa-43d9-b084-21eb96017438"
     },
     {
       "category": "bug",
@@ -3770,7 +3798,7 @@
     "foster interactive inc.": 5,
     "freelygive": 3,
     "imagex": 5,
-    "itty bitty byte": 62,
+    "itty bitty byte": 63,
     "kalamuna": 2,
     "mearra": 6,
     "omedia": 4,
@@ -3779,7 +3807,7 @@
     "pare & co": 2,
     "qed42": 4,
     "reading room": 14,
-    "salsa digital": 62,
+    "salsa digital": 63,
     "seed em": 6,
     "soapbox": 1,
     "specbee": 4,
@@ -3814,7 +3842,7 @@
     "jeroendost": 1,
     "jucs7": 10,
     "kati.vera": 6,
-    "kepol": 62,
+    "kepol": 63,
     "kieran.cott": 14,
     "leventeb": 4,
     "marcus_johansson": 1,

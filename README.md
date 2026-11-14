@@ -338,7 +338,8 @@ python3 scripts/credit_audit.py --project my_module
 --period TITLE           Milestone title or 'all' (default: all)
 --refresh-all            Full refresh: records, issues, aliases, all periods,
                          all reports, summary prompts, credit audit
---refresh-records        Re-fetch contribution records from new.drupal.org
+--refresh-records        Re-fetch contribution records from new.drupal.org,
+                         and refresh the credit audit records too
 --refresh-issues         Re-fetch GitLab issue metadata
 --refresh-aliases        Re-fetch Drupal.org profile URL aliases (api-d7)
 --rebuild-frozen         Recompute frozen milestone period caches

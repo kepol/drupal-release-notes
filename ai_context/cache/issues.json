@@ -13449,6 +13449,8 @@
   },
   "3586601": {
     "category": "task",
+    "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586601,
     "labels": [
       "2026Sprint21",
@@ -13461,6 +13463,7 @@
       "state::fixed",
       "what::code"
     ],
+    "merge_request_urls": [],
     "priority": "major",
     "title": "Create CCC rc2 release",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586601"

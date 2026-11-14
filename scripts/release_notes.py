@@ -2417,7 +2417,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--refresh-records",
         action="store_true",
-        help="Re-fetch all contribution records from new.drupal.org.",
+        help=(
+            "Re-fetch all contribution records from new.drupal.org, and "
+            "refresh the credit audit records (credit_audit.py --refresh)."
+        ),
     )
     parser.add_argument(
         "--refresh-issues",
@@ -2582,6 +2585,24 @@ def main() -> int:
     )
     if totals_path:
         print(f"Wrote {totals_path}")
+
+    if args.refresh_records and not args.refresh_all:
+        # The credit audit keeps its own copy of the contribution records.
+        # Refresh it too, so credit_audit.py --review sees the same credits.
+        print("\n--- Refreshing credit audit records ---")
+        audit_script = REPO_ROOT / "scripts" / "credit_audit.py"
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(audit_script),
+                "--project",
+                project.machine_name,
+                "--refresh",
+            ],
+            cwd=REPO_ROOT,
+        )
+        if result.returncode != 0:
+            return result.returncode
 
     if args.refresh_all:
         print("\n--- Refreshing credit audit ---")

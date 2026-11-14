@@ -8545,6 +8545,19 @@
     "uuid": "0d8cc5c9-063b-412d-a0c7-c26b05fa9dd6"
   },
   {
+    "closed_at": "2026-11-14T00:01:12+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586601,
+    "nid": 11497633,
+    "record_url": "https://new.drupal.org/node/11497633",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586601",
+    "title": "Create CCC rc2 release",
+    "uncredited": [],
+    "uuid": "dcd08134-b7aa-43d9-b084-21eb96017438"
+  },
+  {
     "closed_at": "2026-11-02T23:22:37+00:00",
     "credited": [
       "kepol",
