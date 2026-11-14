@@ -3627,6 +3627,7 @@
   "3579235": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3579235,
     "labels": [
       "2026Sprint18",
@@ -3635,7 +3636,7 @@
       "category::task",
       "priority::normal",
       "state::fixed",
-      "what::code"
+      "what::testing"
     ],
     "merge_request_urls": [],
     "priority": "normal",
@@ -9391,6 +9392,7 @@
   "3586386": {
     "category": "plan",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586386,
     "labels": [
       "2026Sprint16",
@@ -9414,6 +9416,7 @@
   "3586387": {
     "category": "plan",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586387,
     "labels": [
       "2026Sprint19",
@@ -9426,7 +9429,7 @@
     ],
     "merge_request_urls": [],
     "priority": "normal",
-    "title": "CCC Outside AI roadmap discussion meeting October 2026",
+    "title": "[Discuss] CCC Outside AI roadmap discussion meeting October 2026",
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586387"
   },
   "3586388": {
@@ -9698,6 +9701,7 @@
   "3586402": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586402,
     "labels": [
       "2026Sprint19",
@@ -10197,6 +10201,7 @@
   "3586426": {
     "category": "feature",
     "has_merge_request": true,
+    "has_own_merged_merge_request": false,
     "iid": 3586426,
     "labels": [
       "2026Sprint19",
@@ -10216,8 +10221,9 @@
     "web_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586426"
   },
   "3586427": {
-    "category": "feature",
+    "category": "plan",
     "has_merge_request": true,
+    "has_own_merged_merge_request": false,
     "iid": 3586427,
     "labels": [
       "2026Sprint16",
@@ -10227,11 +10233,11 @@
       "AI Initiative Sprint",
       "Rotterdam2026",
       "ai::internal",
-      "category::feature",
+      "category::plan",
       "must have",
       "priority::major",
       "state::fixed",
-      "what::code"
+      "what::planning"
     ],
     "merge_request_urls": [
       "https://git.drupalcode.org/project/ai_context/-/merge_requests/267"
@@ -10370,6 +10376,7 @@
   "3586435": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586435,
     "labels": [
       "2026Sprint19",
@@ -10390,6 +10397,7 @@
   "3586436": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": false,
     "iid": 3586436,
     "labels": [
       "2026Sprint20",
@@ -11874,6 +11882,7 @@
   "3586516": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586516,
     "labels": [
       "2026Sprint19",
@@ -11989,6 +11998,7 @@
   "3586522": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586522,
     "labels": [
       "2026Sprint18",
@@ -12088,6 +12098,7 @@
   "3586527": {
     "category": "feature",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586527,
     "labels": [
       "2026Sprint18",
@@ -12137,6 +12148,7 @@
   "3586530": {
     "category": "plan",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586530,
     "labels": [
       "2026Sprint19",
@@ -12349,6 +12361,7 @@
   "3586541": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586541,
     "labels": [
       "1.0 should have",
@@ -12534,6 +12547,7 @@
   "3586551": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586551,
     "labels": [
       "2026Sprint19",
@@ -12640,6 +12654,7 @@
   "3586556": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586556,
     "labels": [
       "2026Sprint19",
@@ -12649,7 +12664,7 @@
       "priority::major",
       "rc1 must have",
       "state::fixed",
-      "what::ux"
+      "what::management"
     ],
     "merge_request_urls": [],
     "priority": "major",
@@ -12854,6 +12869,7 @@
   "3586570": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586570,
     "labels": [
       "2026Sprint19",
@@ -12877,6 +12893,7 @@
   "3586571": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586571,
     "labels": [
       "2026Sprint20",
@@ -12918,6 +12935,7 @@
   "3586573": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586573,
     "labels": [
       "2026Sprint19",
@@ -12969,6 +12987,7 @@
   "3586576": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586576,
     "labels": [
       "2026Sprint19",
@@ -12977,7 +12996,7 @@
       "category::task",
       "priority::major",
       "state::fixed",
-      "what::marketing"
+      "what::documentation"
     ],
     "merge_request_urls": [],
     "priority": "major",
@@ -12987,6 +13006,7 @@
   "3586577": {
     "category": "feature",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586577,
     "labels": [
       "2026Sprint19",
@@ -13053,6 +13073,7 @@
   "3586581": {
     "category": "bug",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586581,
     "labels": [
       "2026Sprint19",
@@ -13143,6 +13164,7 @@
   "3586586": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586586,
     "labels": [
       "2026Sprint19",
@@ -13202,6 +13224,7 @@
   "3586589": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": false,
     "iid": 3586589,
     "labels": [
       "2026Sprint19",
@@ -13224,6 +13247,7 @@
   "3586590": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586590,
     "labels": [
       "2026Sprint19",
@@ -13278,6 +13302,7 @@
   "3586593": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586593,
     "labels": [
       "2026Sprint20",
@@ -13317,6 +13342,7 @@
   "3586595": {
     "category": "plan",
     "has_merge_request": true,
+    "has_own_merged_merge_request": false,
     "iid": 3586595,
     "labels": [
       "2026Sprint20",
@@ -13458,6 +13484,7 @@
   "3586603": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586603,
     "labels": [
       "2026Sprint20",
@@ -13494,6 +13521,7 @@
   "3586605": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586605,
     "labels": [
       "2026Sprint21",
@@ -13584,6 +13612,7 @@
   "3586610": {
     "category": "plan",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586610,
     "labels": [
       "2026Sprint20",
@@ -13616,6 +13645,7 @@
   "3586612": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586612,
     "labels": [
       "2026Sprint20",
@@ -13671,6 +13701,7 @@
   "3586615": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586615,
     "labels": [
       "2026Sprint19",
@@ -13691,6 +13722,7 @@
   "3586616": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586616,
     "labels": [
       "2026Sprint20",
@@ -13713,6 +13745,7 @@
   "3586617": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586617,
     "labels": [
       "2026Sprint21",
@@ -13735,6 +13768,7 @@
   "3586618": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586618,
     "labels": [
       "2026Sprint20",
@@ -13756,6 +13790,7 @@
   "3586619": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586619,
     "labels": [
       "2026Sprint20",
@@ -13779,6 +13814,7 @@
   "3586620": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586620,
     "labels": [
       "2026Sprint21",
@@ -13816,6 +13852,7 @@
   "3586622": {
     "category": "plan",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586622,
     "labels": [
       "2026Sprint20",
@@ -14083,6 +14120,7 @@
   "3586638": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586638,
     "labels": [
       "2026Sprint20",
@@ -14105,6 +14143,7 @@
   "3586639": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586639,
     "labels": [
       "2026Sprint20",
@@ -14126,6 +14165,7 @@
   "3586640": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586640,
     "labels": [
       "2026Sprint20",
@@ -14166,6 +14206,7 @@
   "3586642": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586642,
     "labels": [
       "2026Sprint20",
@@ -14222,6 +14263,7 @@
   "3586645": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586645,
     "labels": [
       "2026Sprint21",
@@ -14243,6 +14285,7 @@
   "3586646": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586646,
     "labels": [
       "1.0 should have",
@@ -14282,6 +14325,7 @@
   "3586648": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586648,
     "labels": [
       "2026Sprint20",
@@ -14304,6 +14348,7 @@
   "3586649": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586649,
     "labels": [
       "2026Sprint20",
@@ -14326,6 +14371,7 @@
   "3586650": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586650,
     "labels": [
       "2026Sprint20",
@@ -14347,6 +14393,7 @@
   "3586651": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586651,
     "labels": [
       "2026Sprint21",
@@ -14401,6 +14448,7 @@
   "3586654": {
     "category": "task",
     "has_merge_request": false,
+    "has_own_merged_merge_request": false,
     "iid": 3586654,
     "labels": [
       "2026Sprint20",
@@ -14497,6 +14545,7 @@
   "3586660": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586660,
     "labels": [
       "2026Sprint20",
@@ -14518,6 +14567,7 @@
   "3586661": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586661,
     "labels": [
       "2026Sprint21",
@@ -14571,6 +14621,7 @@
   "3586664": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586664,
     "labels": [
       "accessibility",
@@ -14767,6 +14818,7 @@
   "3586677": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586677,
     "labels": [
       "2026Sprint20",
@@ -14788,6 +14840,7 @@
   "3586678": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586678,
     "labels": [
       "1.0 should have",
@@ -14810,6 +14863,7 @@
   "3586679": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586679,
     "labels": [
       "2026Sprint20",
@@ -14937,6 +14991,7 @@
   "3586687": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586687,
     "labels": [
       "2026Sprint21",
@@ -15076,6 +15131,7 @@
   "3586696": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586696,
     "labels": [
       "2026Sprint21",
@@ -15143,6 +15199,7 @@
   "3586700": {
     "category": "task",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586700,
     "labels": [
       "2026Sprint21",
@@ -15163,6 +15220,7 @@
   "3586701": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586701,
     "labels": [
       "2026Sprint21",
@@ -15185,6 +15243,7 @@
   "3586702": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586702,
     "labels": [
       "2026Sprint21",
@@ -15209,6 +15268,7 @@
   "3586703": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586703,
     "labels": [
       "2026Sprint21",
@@ -15263,6 +15323,7 @@
   "3586706": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586706,
     "labels": [
       "2026Sprint21",
@@ -15368,6 +15429,7 @@
   "3586712": {
     "category": "bug",
     "has_merge_request": true,
+    "has_own_merged_merge_request": true,
     "iid": 3586712,
     "labels": [
       "2026Sprint21",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:35:00.730354+00:00",
+  "generated_at": "2026-11-14T19:02:22.567674+00:00",
   "issues": [
     {
       "category": "task",
@@ -111,7 +111,7 @@
       "iid": 3586387,
       "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586387",
       "priority": "normal",
-      "title": "CCC Outside AI roadmap discussion meeting October 2026",
+      "title": "[Discuss] CCC Outside AI roadmap discussion meeting October 2026",
       "uuid": "02f26cb7-3a51-4923-9168-3bc9ab66b132"
     },
     {
@@ -171,7 +171,7 @@
       "uuid": "aed83a35-0b8c-48df-97da-488bd624419a"
     },
     {
-      "category": "feature",
+      "category": "plan",
       "closed_at": "2026-09-28T20:23:16.798000+00:00",
       "contributors": [
         {

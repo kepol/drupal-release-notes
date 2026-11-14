@@ -67,17 +67,29 @@ SPRINT_PLANNING_TITLE = re.compile(
     re.IGNORECASE,
 )
 SESSION_OR_MEETING_TITLE = re.compile(
-    r"\b(?:slides|sync|meeting|presentation)\b",
+    r"\b(?:slides|sync|meeting|presentation|videos?|blog post)\b",
     re.IGNORECASE,
 )
+TUTORIAL_TITLE = re.compile(r"\btutorials?\b", re.IGNORECASE)
 CREATE_CCC_RELEASE_TITLE = re.compile(
     r"^Create CCC .+ release$",
     re.IGNORECASE,
 )
 CCC_QA_TITLE = re.compile(
-    r"^CCC .+ QA$",
+    r"^(?:CCC .+ QA|QA (?:of )?CCC\b.*)$",
     re.IGNORECASE,
 )
+# Meta, plan and discussion issues, and issues about planning, management,
+# discussion, marketing or ideas, always go to Additional Non-Code
+# Contributions, whatever their category, priority or merge requests.
+NON_CODE_TITLE = re.compile(r"^\s*\[(?:meta|plan|discuss)\]", re.IGNORECASE)
+NON_CODE_WHAT_LABELS = {
+    "what::planning",
+    "what::management",
+    "what::discussion",
+    "what::marketing",
+    "what::ideas",
+}
 
 
 # Matches a display name that is an email address.
@@ -1114,9 +1126,15 @@ def save_issues_cache(project: ProjectConfig, cache: dict[str, dict[str, Any]]) 
 
 
 def issue_has_merge_request(meta: dict[str, Any]) -> bool:
-    """True when GitLab reports a related MR or the issue carries what::code."""
-    if meta.get("has_merge_request"):
-        return True
+    """True when the issue has its own merged MR.
+
+    Older cache entries have only has_merge_request (any related MR). When MR
+    metadata is not cached at all, the what::code label is used instead.
+    """
+    if "has_own_merged_merge_request" in meta:
+        return bool(meta["has_own_merged_merge_request"])
+    if "has_merge_request" in meta:
+        return bool(meta["has_merge_request"])
     return WHAT_CODE_LABEL in meta.get("labels", [])
 
 
@@ -1168,6 +1186,17 @@ def enrich_merge_request_metadata(
         entry["merge_request_urls"] = [
             merge_request["web_url"] for merge_request in merge_requests
         ]
+        # An MR that only mentions the issue in its description is not the
+        # issue's own code change. Count merged MRs whose title or source
+        # branch names the issue.
+        entry["has_own_merged_merge_request"] = any(
+            merge_request.get("state") == "merged"
+            and (
+                str(iid) in (merge_request.get("title") or "")
+                or str(iid) in (merge_request.get("source_branch") or "")
+            )
+            for merge_request in merge_requests
+        )
         if index % 25 == 0 or index == len(pending):
             print(f"  {index}/{len(pending)} issues checked")
         time.sleep(0.1)
@@ -1781,12 +1810,27 @@ def load_manual_list_exclusions(path: Path) -> set[int]:
 
 
 def is_excluded_from_other_major(title: str) -> bool:
+    # Tutorials (for example tutorial videos) are user-facing, so they can
+    # show in Other Major Issues.
+    session_or_meeting = bool(
+        SESSION_OR_MEETING_TITLE.search(title)
+    ) and not TUTORIAL_TITLE.search(title)
     return bool(
         SPRINT_PLANNING_TITLE.search(title)
-        or SESSION_OR_MEETING_TITLE.search(title)
+        or session_or_meeting
         or CREATE_CCC_RELEASE_TITLE.search(title)
         or CCC_QA_TITLE.search(title)
     )
+
+
+def is_non_code_contribution(
+    issue: CreditedIssue,
+    meta: dict[str, Any],
+) -> bool:
+    """True for meta, plan, discussion, management and similar issues."""
+    if NON_CODE_TITLE.search(issue.title):
+        return True
+    return bool(NON_CODE_WHAT_LABELS.intersection(meta.get("labels", [])))
 
 
 def is_other_major_contribution(issue: CreditedIssue) -> bool:
@@ -1832,6 +1876,15 @@ def classify_release_issues(
     listable: list[CreditedIssue],
     issue_meta: dict[int, dict[str, Any]],
 ) -> ClassifiedReleaseIssues:
+    non_code_forced = [
+        issue
+        for issue in accountable
+        if is_non_code_contribution(issue, issue_meta.get(issue.iid, {}))
+    ]
+    forced_iids = {issue.iid for issue in non_code_forced}
+    accountable = [issue for issue in accountable if issue.iid not in forced_iids]
+    listable = [issue for issue in listable if issue.iid not in forced_iids]
+
     features = [issue for issue in listable if issue.category in FEATURE_CATEGORIES]
     bugs = [issue for issue in listable if issue.category in BUG_CATEGORIES]
     other_major_display = [
@@ -1866,6 +1919,11 @@ def classify_release_issues(
             non_code_counts[issue.category] += 1
         else:
             non_code_uncategorized += 1
+    for issue in non_code_forced:
+        # A meta or planning issue labeled as a feature or bug is counted
+        # as a plan.
+        category = issue.category if issue.category in OTHER_CATEGORIES else "plan"
+        non_code_counts[category] += 1
 
     return ClassifiedReleaseIssues(
         features=features,

@@ -66,6 +66,8 @@ def find_merge_requests(client: ApiClient, issue_iid: int) -> list[dict[str, Any
                     {
                         "iid": mr_iid,
                         "title": title,
+                        "source_branch": branch,
+                        "state": merge_request.get("state"),
                         "web_url": merge_request.get(
                             "web_url",
                             project.merge_request_url(mr_iid),
