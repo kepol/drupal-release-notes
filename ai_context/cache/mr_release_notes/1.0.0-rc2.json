@@ -1,0 +1,547 @@
+{
+  "entries": [
+    {
+      "iid": 3586516,
+      "merge_requests": [
+        310
+      ],
+      "notes": [],
+      "source": "none",
+      "title": "Automator consumers disappear from listing when consumer type is unavailable"
+    },
+    {
+      "iid": 3586541,
+      "merge_requests": [
+        327
+      ],
+      "notes": [
+        {
+          "mr_iid": 327,
+          "text": "When `ai_context.consumers` has more than one row with the same consumer ID, the first row now takes effect everywhere: on the **Consumers** settings page, at runtime and in the consumer editor. Before this change, the listing showed the last row while runtime used the first row, and saving any consumer failed with a \"Duplicate consumer ID\" error. Now, saving any consumer removes the later rows and shows a warning that names the IDs, and **Remove configuration** deletes every row with that ID. The UI and config import cannot create a duplicate, so this applies only after a direct write to active config, for example from custom code or a database edit."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Make duplicate consumer_id rows resolve consistently and map validator errors to the right row"
+    },
+    {
+      "iid": 3586551,
+      "merge_requests": [
+        326
+      ],
+      "notes": [
+        {
+          "mr_iid": 326,
+          "text": "Saved consumer settings now stay when a module uninstall deletes their agent or automator, and deleting one agent or automator outside an uninstall still removes its row. Before this change, an uninstall deleted some rows in `ai_context.consumers` without a message, for example when you uninstalled `ai_automators` with automators on automator chain fields, or a module that an agent or automator depends on. After an uninstall, the **Consumers** page lists the row as **Off (type unavailable)** or **Off (stale)** until you use **Remove configuration**, or until an agent or automator with the same ID exists again. Run `drush cr` after the update."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Keep consumer overrides during any module uninstall, including automators on automator chain fields"
+    },
+    {
+      "iid": 3586570,
+      "merge_requests": [
+        344
+      ],
+      "notes": [
+        {
+          "mr_iid": 344,
+          "text": "None. This change affects only CCC's own development dependencies. `composer.json` no longer pins `twig/twig` to `~3.29.0` in `require-dev`, so CI now tests with Twig 3.30 or later. Sites see no change."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Remove temporary Twig 3.29 development pin in CCC composer"
+    },
+    {
+      "iid": 3586571,
+      "merge_requests": [
+        337
+      ],
+      "notes": [
+        {
+          "mr_iid": 337,
+          "text": "When scheduling is on, saving a context item with a **Publish on** date that has already passed now sets its moderation state to **Published**. Before this change, the item was published, but its moderation state stayed **Draft**: the context items list showed **Draft**, while selection and the global count treated the item as published. Publishing through cron for a future date does not change. Run `drush cr` after the update; this change does not repair items that were saved this way before the update."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Scheduled publish on save can leave context item Draft in the listing"
+    },
+    {
+      "iid": 3586573,
+      "merge_requests": [
+        338
+      ],
+      "notes": [
+        {
+          "mr_iid": 338,
+          "text": "You can now add a **Context** item to the top level of the admin menu with the new **Add to main menu** setting on the CCC **General Settings** page (`/admin/config/ai/context/settings/general`). The setting is off by default, and **Menu item title** changes the link text; run `drush updatedb` to add both settings to existing sites. The item is in the Navigation sidebar when Navigation is installed, and in the Toolbar admin menu otherwise; it opens the overview page when **Show overview page** is on, and the context items list when it is off. Scope value checkboxes, for example role names, now show HTML in their labels as plain text."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Add setting to add CCC to main menu"
+    },
+    {
+      "iid": 3586586,
+      "merge_requests": [
+        352
+      ],
+      "notes": [
+        {
+          "mr_iid": 352,
+          "text": "The context items listing (`/admin/config/ai/context/items`) now opens with **Status** set to **Published**, and the consumers listing (`/admin/config/ai/context/settings/consumers`) opens with **Automatic push** set to **On**, instead of **All**. **Published** includes every workflow state that publishes an item, so a published workflow state, for example a custom Approved state, no longer has its own **Status** option. After you change the search or a filter, a new **Reset** button shows on both listings and clears the search and restores the default filters, but on the consumers listing it keeps a **Type** that a `?type=` link selected. Run `drush cr` after the update so that the listings use the new JavaScript and CSS."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Update context items listing status filter to published and consumers listing push filter to on and add reset buttons"
+    },
+    {
+      "iid": 3586593,
+      "merge_requests": [
+        351
+      ],
+      "notes": [
+        {
+          "mr_iid": 351,
+          "text": "Entity Types scope matching now reads the bundle only from a request entity the current user can view. An entity the user cannot view is treated like an entity ID that does not exist, so items scoped to its bundle are not selected. This also affects:\n\n- edit forms for editors who can edit an entity but cannot view it\n- background runs on unpublished or restricted content, such as cron or queue workers running as Anonymous\n\nGive editor roles permission to view the content they edit. Callers that need bundle matching in background runs can run as an account that can view the entity, or send a bundle hint with `setEntityBundle()` or `entity_context` metadata. The hint matches only when that account has **Use Published AI Context in AI Features**.\n\nSelection results for a request entity now also carry the cache metadata of the view access check on that entity, also when access is denied. A result varies by `user` when the access check varies by user. Examples in core:\n\n- The request entity is an unpublished node, and the current user is authenticated and has **View own unpublished content**.\n- The request entity is an unpublished media item, and the current user has **View own unpublished media**.\n\nIn both cases this applies to the owner and to all other users with that permission. Two users with the same roles therefore do not share a cached result. On sites with a node access module, results for nodes also vary by `user.node_grants:view`. Users who can view published content through their permissions still share one result. Consumers that cache selection results must use the cache metadata of the result.\n\n`AiContextRequestInfoResolver` (internal) now also takes the `current_user` service and has a new method, `getContentEntityAccessResult()`. After the update, run `drush cr`. There is no update hook."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Entity Types scope loads the request entity without a view access check"
+    },
+    {
+      "iid": 3586603,
+      "merge_requests": [
+        371
+      ],
+      "notes": [
+        {
+          "mr_iid": 371,
+          "text": "Scope cleanup now unpublishes a context item when removing a stale value would let the item reach more users, pages, or content. This happens when cleanup removes the last value of Roles, Languages, Site Sections, Entity Types, Taxonomy Terms or a custom stored-value scope, or the last Specific Entities reference. Context Tags only rank items. Removing a tag, including the last one, leaves the item published. Global items stay published.\n\nEvery published translation is unpublished; on moderated sites the state becomes Archived. Scheduled publishing of the item is cancelled, and a new revision says why. The user who started the cleanup sees one warning with the number of items, and Recent log messages has one warning for each item. A custom workflow needs an unpublished state that is a default revision state, like Archived. Without one, cleanup does not save the item. The stale value stays stored and is not shown on the item. The user sees a warning, and Recent log messages has an error.\n\nAfter you delete roles, languages, terms, vocabularies, bundles or referenced content, change Site Section or Entity Types settings, or uninstall modules, check the context item list for newly unpublished or archived items.\n\nSites that already ran post-update `0006` on 1.0.0-beta5 or 1.0.0-rc1 do not run it again. On those sites, review published items that have no Roles, Languages, Site Sections, Entity Types, Taxonomy Terms or Specific Entities value.\n\nRun `drush updb`, then `drush cr`, because the cleanup service has new constructor arguments and there is a new helper service."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Scope cleanup can leave an item published with an emptied hard-filter scope"
+    },
+    {
+      "iid": 3586605,
+      "merge_requests": [
+        355
+      ],
+      "notes": [
+        {
+          "mr_iid": 355,
+          "text": "Corrected the Language scope help text, the conditional parent limit label, and the consumer help about which scopes leave a context item out (it now names Roles). Behavior did not change.\n\nTranslators: seven source strings changed: two Language scope strings, three consumer form help strings, and the title and description of the cap field."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Correct the Language scope fail-open text and the conditional parent cap label"
+    },
+    {
+      "iid": 3586612,
+      "merge_requests": [
+        349
+      ],
+      "notes": [
+        {
+          "mr_iid": 349,
+          "text": "Documentation: The README and the docs no longer say that CCC is in beta. They now say that from 1.0.0, public APIs follow the deprecation policy on the API Stability page, and they link to the upgrade policy for upgrades from beta and release candidate versions. Three headings have new names, so links to the old anchors `#beta-api-stability` (docs home page), `#beta-status-and-release-line` and `#skipping-intermediate-beta-releases` (upgrade policy) no longer open those sections. The docs site now shows `!!! note` blocks, for example on the Usage Tracking page, as note boxes."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Update the README and docs for the 1.0.0 release"
+    },
+    {
+      "iid": 3586616,
+      "merge_requests": [
+        350
+      ],
+      "notes": [
+        {
+          "mr_iid": 350,
+          "text": "On multilingual sites, an unpublished translation of a context item (for example, Draft or Archived) is no longer delivered to AI prompts or tool output. The published default-language text is used instead, and the item is left out when that is not published either. This applies to every user. Users with **Administer AI Context** or permission to view unpublished items no longer receive unpublished translations in prompts. A published translation of a draft source is now delivered to non-admin users in that language. Context push no longer fails for non-admin users when a selected item has an unpublished translation in the request language."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Unpublished context item translations can be delivered to AI prompts"
+    },
+    {
+      "iid": 3586617,
+      "merge_requests": [
+        376
+      ],
+      "notes": [
+        {
+          "mr_iid": 376,
+          "text": "Subcontext children are now checked before they are delivered with a parent, on both the selector path and the Load tool. Every child is checked on the translation that is delivered: that translation must be published, and the current user must be able to view it. A child with its own scope must also pass the hard filters (for example, Roles) for the current request. A child that fails these checks is no longer sent to the AI provider for the conditional decision. Children that use the parent's scope behave as before. Sites that rely on a custom-scope child reaching users outside its scope must change the child's scope."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Filter subcontext children by view access and hard scope"
+    },
+    {
+      "iid": 3586618,
+      "merge_requests": [
+        353
+      ],
+      "notes": [
+        {
+          "mr_iid": 353,
+          "text": "Drupal tokens in context item text are no longer replaced when context reaches AI. Before this change, AI Agents replaced tokens such as `[user:mail]` in item text with data of the user who ran the agent, and `[user:uuid]` stopped the agent run with an error. This happened in pushed context and in the output of the List, Load and Get Relevant tools when a site used them as default information tools. CCC now neutralizes Drupal tokens on every path, for example `[user:mail]` becomes `[user : mail]`: pushed agent and chat context, the three context tools for every caller, and the public selection API, including text that `TEXT_RENDERED` subscribers add. The token budget is checked on the neutralized text. Undeclared types that look like tokens, such as `[current_user:mail]` from ECA, and ECA data paths such as `[current_user.mail.value]` are neutralized too. Bracketed text that looks like a token, such as `[note:intro]` or `items[i:j]`, also gets the spaces, and so do some IPv6 addresses, such as `[fd12:3456::1]`, and dotted Markdown links whose first part is a token type, such as `[node.js](https://nodejs.org)`. Other bracketed text, such as times, JSON, URLs and `[2]`, is unchanged. Some forms that other modules replace are not covered, for example `[current_user]` with ECA, which becomes the ID of the user who runs the agent, and undeclared tokens whose name has whitespace, `/` or `@` before its first colon. See \"Authoring trust\" in `access-boundaries.md`. Tokens in the **Context prefix** setting are still replaced on the agent path. Sites that used tokens in item text on purpose must write the values into the text instead. Items that document real token patterns, for example for Metatag or URL aliases, show them with a space on both sides of the colon. Custom code that needs the item text with its tokens as written must load the context item entity."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Drupal tokens in context item text are replaced on the agent path only"
+    },
+    {
+      "iid": 3586619,
+      "merge_requests": [
+        354
+      ],
+      "notes": [
+        {
+          "mr_iid": 354,
+          "text": "Context items and usage records are no longer available through core JSON:API. Before this change, a site that enabled JSON:API gave every account with **Use Published AI Context in AI Features** a bulk HTTP read of all published context items with their raw fields, without the CCC delivery rules. Usage records are now an internal entity type, so core REST and other integrations that skip internal types no longer offer them either. Context items remain non-internal for Content Moderation and Workspaces. Sites that read or synced context items through JSON:API, for example with Entity Share, lose that access, and this release has no supported replacement. Run `drush cr` after the update. Until the caches are rebuilt, the resources stay available. If the site enabled a core REST resource for usage records, delete it before you rebuild the router, that is before you run `drush cr` or `drush updatedb`: run `drush config:delete rest.resource.entity.ai_context_usage`, and remove it from config sync. Otherwise the router rebuild fails, because the REST plugin for usage records no longer exists. Workspaces now ignores usage records, so usage is also recorded while a non-default workspace is active."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Hide context items and usage records from JSON:API"
+    },
+    {
+      "iid": 3586620,
+      "merge_requests": [
+        367
+      ],
+      "notes": [
+        {
+          "mr_iid": 367,
+          "text": "The context items listing (`/admin/config/ai/context/items`) now keeps its `ai_context_item_list` cache tag and its view access cache data, such as the `user` cache context for Draft items. Before this change, the listing replaced this cache data instead of merging it. Sites with default caching see no change, because Dynamic Page Cache does not cache admin routes. If custom code makes this listing cacheable (for example, by removing `_admin_route` from its route), new items now show without a cache clear, and a cached listing no longer shows a Draft item to a user who cannot view it, or hides a Draft item from its owner."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Context items listing replaces its cache metadata instead of merging it"
+    },
+    {
+      "iid": 3586638,
+      "merge_requests": [
+        357
+      ],
+      "notes": [
+        {
+          "mr_iid": 357,
+          "text": "On **Scope Settings** (`/admin/config/ai/context/settings/scope`), each **Edit** link now has an accessible name that includes its scope, for example \"Edit Global\", and the scope name is now the row header of its row. Before this change, screen readers announced every link only as \"Edit\", so users could not tell which scope each link opened. The visible link text is still **Edit**, so voice control users can still say \"Edit\". Custom tests or theme code that look for the scope name in a `td` cell must now look for a `th` cell with `scope=\"row\"`."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Scope settings table: Edit links do not say which scope they are for (WCAG 2.4.4)"
+    },
+    {
+      "iid": 3586639,
+      "merge_requests": [
+        358
+      ],
+      "notes": [
+        {
+          "mr_iid": 358,
+          "text": "Status badges on CCC admin pages now keep the same contrast when the mouse is over their table row. Before this change, the color of a hovered row showed through the semi-transparent badge colors, and the **Unavailable** badge on **Scope Settings** fell below the 4.5:1 contrast that WCAG 2.2 Level AA requires. This change does not fix the red badges, for example **Disabled** and **Unpublished**, which have low contrast in light mode also without hover (#3586662+s). Run `drush cr` after the update so that the changed CSS loads."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Status badge contrast (WCAG 1.4.3): Unavailable fails on row hover"
+    },
+    {
+      "iid": 3586640,
+      "merge_requests": [
+        359
+      ],
+      "notes": [
+        {
+          "mr_iid": 359,
+          "text": "Documentation: On the API Stability page, the \"Configuration: Post-update 0010\" link now opens the \"Post-update 0010: tool consumer_id limits\" section of the Configuration page. Before this change, the link used an incorrect anchor and opened the Configuration page at the top."
+        }
+      ],
+      "source": "merge_request",
+      "title": "API stability docs link to Post-update 0010 uses the wrong anchor"
+    },
+    {
+      "iid": 3586642,
+      "merge_requests": [
+        360
+      ],
+      "notes": [
+        {
+          "mr_iid": 360,
+          "text": "Documentation: The docblock of `AiContextScopeInterface::getSelectedValueLabels()` and the Scope API docs now say what the method returns. The result is a list of display labels, not a map keyed by value. The list can be shorter than the selected values, so custom code must not pair labels with values by position. `getSelectedValueLabelsWithCacheability()` and `AiContextScopeBase::mapSelectedValueLabels()` now declare `@return array` instead of `@return string[]`, because a label can be translatable markup."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Document the return value of getSelectedValueLabels()"
+    },
+    {
+      "iid": 3586645,
+      "merge_requests": [
+        363
+      ],
+      "notes": [
+        {
+          "mr_iid": 363,
+          "text": "Usage records and the generic-path invocation result (`item_ids` and `item_count`) now list only the context items that reached the prompt, so an item that the token budget left out is no longer recorded as used. An item that the budget only shortened still counts as used, and existing usage records do not change. For custom code, `AiContextSelectionResult` has the new methods `getOmittedItemIds()` and `getDeliveredItemIds()`, `AiContextSelectionTextRenderedEvent` has the new method `getOmittedItemIds()`, and `AiContextSelectionResult::getSelectedItemIds()` does not change (see \"Beta upgrade: usage and item_ids count delivered items\" in `docs/developers/api-stability.md`). If the budget leaves out every selected item but an `AiContextSelectionEvents::TEXT_RENDERED` subscriber added text, that text is still pushed, with status `pushed` and an empty `item_ids` list."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Usage records and the invocation result count items that the token budget left out"
+    },
+    {
+      "iid": 3586646,
+      "merge_requests": [
+        361
+      ],
+      "notes": [
+        {
+          "mr_iid": 361,
+          "text": "Documentation: The developer docs now list the `entity_context` request metadata keys and the top-level `path` key as public API, with the rules that CCC applies to them (for example, CCC ignores an entity ID that is not numeric, such as a UUID). A new \"Background jobs and queue workers\" section in the consumer API docs tells how to pull context from a queue worker, a cron hook or a Drush command. It says that the account that runs the job decides what is selected, that entity context stays on the current request between pulls, that pull does not enforce the push gates, and that pull writes no usage record. The usage tracking docs now say that a usage record lists the selected items before the token budget is applied, so a record can list items that were shortened or not delivered."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Document the entity_context keys as public API and how to pull context from background jobs"
+    },
+    {
+      "iid": 3586648,
+      "merge_requests": [
+        362
+      ],
+      "notes": [
+        {
+          "mr_iid": 362,
+          "text": "New sites now get a default token budget of 20,000 in **Max tokens for injection**. Before this change, the default and the code fallback `AiContextSelection::DEFAULT_MAX_TOKENS` were 1,200, which fits only one or two typical context items. Existing sites keep their saved value, because there is no update hook: after the update, check **Max tokens for injection** at `/admin/config/ai/context/settings/general` and raise it if your consumers need more context. A consumer can also set its own budget in **Max tokens for injection** under **Advanced** on its edit form, for example a higher budget for an agent with many context items."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Raise the default token budget for new sites to 20,000"
+    },
+    {
+      "iid": 3586649,
+      "merge_requests": [
+        364
+      ],
+      "notes": [
+        {
+          "mr_iid": 364,
+          "text": "Uninstalling Dynamic Entity Reference is now blocked while a context item uses Specific Entities on its current revision or a pending draft. Old revisions get a revision log note that lists the entities they referenced, so the values can be entered again by hand."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Uninstalling Dynamic Entity Reference deletes Specific Entities values and removes the item restriction"
+    },
+    {
+      "iid": 3586650,
+      "merge_requests": [
+        366
+      ],
+      "notes": [
+        {
+          "mr_iid": 366,
+          "text": "Documentation: The feature docs now include the corrections from the rc1 QA in #3586589+s for the overview page, context items, consumer configuration, usage tracking, revisions and scheduling. A new **Test page and entity context** section in the context delivery docs shows how to run an agent consumer with an entity or page path that you choose, with the AI Agents Debugger and its **Spoof Tokens**. The docs now specify Document Loader `^2.0.7`, which fixes a fatal error during import and needs AI 1.5 or higher. CCC does not enforce this version, so sites that use **Document Loader: Context File Importer** should run `composer require 'drupal/document_loader:^2.0.7'`."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Correct the feature docs from the rc1 QA"
+    },
+    {
+      "iid": 3586660,
+      "merge_requests": [
+        369
+      ],
+      "notes": [
+        {
+          "mr_iid": 369,
+          "text": "None. This change affects only CCC's own CI. The `phpunit` jobs now fill the tiktoken vocab cache one time before the tests run in parallel, which stops random `Could not decode token` failures. Sites see no change."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Warm the tiktoken vocab cache before the parallel phpunit runs in CI"
+    },
+    {
+      "iid": 3586661,
+      "merge_requests": [
+        370
+      ],
+      "notes": [
+        {
+          "mr_iid": 370,
+          "text": "On sites where the tokenizer cannot download or read its vocabulary file, saving context items no longer fails. AI Context stores an approximate token count, trims context by bytes, logs one warning, and recalculates the stored counts on cron after the vocabulary loads. See \"When the tokenizer vocabulary cannot be loaded\" in `docs/developers/configuration.md`. The token estimator and the token recount services have new constructor arguments, so run `drush cr` after the update."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Saving or rendering context items fails when the tiktoken vocab cannot be loaded"
+    },
+    {
+      "iid": 3586664,
+      "merge_requests": [
+        372
+      ],
+      "notes": [
+        {
+          "mr_iid": 372,
+          "text": "Documentation: A new **Known issues** page lists problems that are not fixed yet and their workarounds, and `README.md` and the docs home page link to it. The first entry is about the **Content** editor on the context item form: in rich text mode, Tab and Shift+Tab do not move keyboard focus out of the editor (WCAG 2.2 SC 2.1.2). To move focus out, press Escape and then Tab, or switch to Source mode. The fix belongs in the AI module (project/ai#3586814+s) and is not in a release yet."
+        }
+      ],
+      "source": "merge_request",
+      "title": "[Accessibility] Document the Content editor keyboard trap as a known issue before 1.0.0"
+    },
+    {
+      "iid": 3586677,
+      "merge_requests": [
+        373
+      ],
+      "notes": [
+        {
+          "mr_iid": 373,
+          "text": "The stored token count of each context item (`AiContextItem::getTokenCount()`) now includes the ID, label and purpose header and the indentation of its rendered block, not only the guidance text. Before this change, the badges in the **Tokens** column on `/admin/config/ai/context/items` and the consumer budget summary showed too low a figure, so items could be cut off while the summary said that they were within budget. Run `drush updatedb`, then `drush cr`. Update 10032 recounts every revision and translation. Selection and rendering do not change, but expect higher token badges, tooltip percentages and budget totals, and possibly a **Context budget exceeded** message for a consumer that is near its **Max tokens for injection**. The warning about cut-off items now gives the number of items that did not fit, the token budget, the consumer ID when the selection has a consumer, and the item IDs."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Getting a \"AiContextSelector: Items cut off due to token limit: 4\" warning and I don't understand why..."
+    },
+    {
+      "iid": 3586678,
+      "merge_requests": [
+        374
+      ],
+      "notes": [
+        {
+          "mr_iid": 374,
+          "text": "- **Last Used** on the Context usage page (`/admin/config/ai/context/usage`) now changes every time a context item is used. Before, a repeat use through the same consumer on the same route stopped changing it after the second use, so it showed an early use instead of the last one.\n- Usage cleanup on cron reads **Last Used**. A usage record that is still in use is no longer deleted by the maximum age rule.\n- Run `drush cr` after the update. The `ai_context.usage_tracker` service has a new constructor argument."
+        }
+      ],
+      "source": "merge_request",
+      "title": "\"Last used\" value of \"Context usage\" table acts more like \"first used\" when used on new content entities"
+    },
+    {
+      "iid": 3586679,
+      "merge_requests": [
+        375
+      ],
+      "notes": [
+        {
+          "mr_iid": 375,
+          "text": "Documentation: The docs now say that the Automator consumer type works fully only with AI 1.5.0 or later, which sends the `ai_automator:id:{id}` request tag and the `entity_context` metadata. On AI 1.4.x, direct or cron runs on a field with more than one automator get no context, and the **Entity Types**, **Taxonomy Terms** and **Specific Entities** scopes do not match automator requests. The `drupal/ai` requirement stays `^1.4 || ^2`. See `docs/features/consumer_configuration.md`."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Document that full Automator consumer support needs AI core 1.5.0 or later"
+    },
+    {
+      "iid": 3586687,
+      "merge_requests": [
+        378
+      ],
+      "notes": [
+        {
+          "mr_iid": 378,
+          "text": "Context selection results now vary by a new `ai_context.request_path` cache context, which holds the path that the **Site Sections** scope filters on. That path can come from an `ai_context_path` request attribute, a posted `path` parameter, a `path` key in a JSON body, or a same-site `Referer` on an asynchronous request, and not only from the URL. Before this change, two requests to one endpoint with different supplied paths could select different items but get the same cache keys, so custom code that cached a selection, or a render array built from one, could serve items from the wrong site section. Run `drush cr` after the update so that Drupal registers the new cache context, and make sure that custom code that caches a selection uses all of the selection's cache metadata."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Site Sections hard-filters on the supplied request path, but the selection's cache contexts carry only url.path and route"
+    },
+    {
+      "iid": 3586696,
+      "merge_requests": [
+        381
+      ],
+      "notes": [
+        {
+          "mr_iid": 381,
+          "text": "The Load tool has a new plugin ID, `ai_context:load_ai_context_items`, with the tool name \"Load AI Context Items\". The old plugin ID, `ai_context:load_ai_context_item_by_id`, is now a deprecated alias with the same parameters, permission checks and output. The alias is removed in 2.0.0. The agent tool list shows it as \"Load AI Context Item By ID (deprecated)\". Run `drush cr` after the update, so that the new plugin is discovered.\n\nFor new agents, select **Load AI Context Items**. Existing agents that use the old ID keep working until 2.0.0. No database update changes them. To move an agent to the new ID, make these changes by hand, and then export the configuration:\n\n- Agent tools: select **Load AI Context Items**, clear the old tool, and copy its tool settings.\n- **Default information tools** on the agent form: change `tool: ai_context:load_ai_context_item_by_id` to `tool: ai_context:load_ai_context_items`.\n- AI Agents agent overrides: change the old ID in the tools to add or remove, the tool settings and the tool usage limits.\n- Agent prompts: this update does not change prompt text. Edit each prompt that names the old tool. Change `ai_context:load_ai_context_item_by_id` to `ai_context:load_ai_context_items`, and `ai_context_load_ai_context_item_by_id` to `ai_context_load_ai_context_items`.\n\nEach run of the old tool triggers an `E_USER_DEPRECATED` notice. Listing the tools does not. Usage records show the old ID for agents that were not moved. Use them to find the agents to change. See \"Upgrade from 1.0.0-rc1: Load tool plugin ID\" in `docs/developers/api-stability.md`."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Add the load_ai_context_items function call and deprecate load_ai_context_item_by_id"
+    },
+    {
+      "iid": 3586700,
+      "merge_requests": [
+        382
+      ],
+      "notes": [
+        {
+          "mr_iid": 382,
+          "text": "None. This change affects only CCC's own CI. The `phpunit` job now runs as three jobs, split by test type: unit and kernel tests, functional tests, and functional JavaScript tests. The `phpunit (previous major)` and `phpunit (max PHP version)` jobs get the same split, and the `test-only changes` job stays one job. The GitLab runner stops every job at 30 minutes, and the full test suite in one job took longer than that on a busy runner. Sites see no change."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Split the phpunit CI jobs by test type so that they finish within the runner time limit"
+    },
+    {
+      "iid": 3586701,
+      "merge_requests": [
+        385
+      ],
+      "notes": [
+        {
+          "mr_iid": 385,
+          "text": "Fixes a bug with a security impact. Core's **View any unpublished content** and **View the latest version** permissions no longer give access to unpublished context items. This applies to the item page, the CCC listing, the **Latest version** tab, and the revision pages. Before this fix, a role with **View any unpublished content**, for example the Content editor role on Drupal CMS, could read draft and archived context items without an AI Context permission. Sites that used these core permissions so that editors can see context drafts must give those roles **View any unpublished AI Context Item**. Custom access hooks can no longer allow view of unpublished context items. Run `drush cr` after the update."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Core \"view any unpublished content\" permission shows unpublished context items"
+    },
+    {
+      "iid": 3586702,
+      "merge_requests": [
+        386
+      ],
+      "notes": [
+        {
+          "mr_iid": 386,
+          "text": "On sites with usage tracking on, a user with \"Use Published AI Context in AI Features\" who could use a chatbot could make usage records very large, so AI requests became slow or failed. Each usage record now keeps only the last 20 request paths, each 255 characters or less, and a path hint that is longer than 2,048 characters is ignored. A record that was saved before this update is cut the next time a path is added to it. An error in usage tracking during an agent run is now logged, and the agent run continues. If a consumer already fails because of large usage records, first turn off usage tracking at `/admin/config/ai/context/settings/usage`. Then clear the records at `/admin/config/ai/context/settings/usage/clear`. If the clear page also fails, empty the `ai_context_usage` table (for example, `drush sql:query \"TRUNCATE TABLE ai_context_usage\"`) and rebuild the caches."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Usage records keep every request path with no limit on number or length"
+    },
+    {
+      "iid": 3586703,
+      "merge_requests": [
+        387
+      ],
+      "notes": [
+        {
+          "mr_iid": 387,
+          "text": "Diff pages for context items now need the **View all AI Context Item revisions** permission, as the revision history page does. Before, on sites with Diff 8.x-1.x, 2.0.0, or 2.1.0, any user with **Use Published AI Context in AI Features** could compare older published revisions. Review which roles have **View all AI Context Item revisions**. After the update, rebuild the caches (`drush cr`), so that the router uses the new requirement."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Diff pages show older context item revisions without the revision permission"
+    },
+    {
+      "iid": 3586706,
+      "merge_requests": [
+        389
+      ],
+      "notes": [
+        {
+          "mr_iid": 389,
+          "text": "**Duplicate** now always creates a draft copy. This applies to every user, also to users who may use the publish transition, and also when **Publish by default** is on. Review the copy, and then publish it. Before this change, a user who could not use the publish transition could get a published copy without the publish transition. To duplicate an item, a user now needs the **Create new draft** transition (**AI Context editorial workflow: Use Create new draft transition**). A user without it gets a form error, also when the user may use the publish transition. The copy belongs to the user who made it, and each translation of the copy gets new created and changed dates. The copy does not keep the publishing schedule or the revision log message of the original. The description of **Publish by default** now says that **Duplicate** always creates a draft copy. On earlier versions, a copy has the same label and the same created date as its original. To find copies that were published this way, look for published items that have the same label or the same created date as another item, and review them. This check also finds copies that a user with the publish transition made. It does not find a copy whose original was deleted."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Duplicate publishes the copy for users who may not use the publish transition"
+    },
+    {
+      "iid": 3586712,
+      "merge_requests": [
+        395
+      ],
+      "notes": [
+        {
+          "mr_iid": 395,
+          "text": "CCC now requires drupal/ai 1.4.11 or later on the 1.4 branch, or 1.5.2 or later (`~1.4.11 || ^1.5.2 || ^2`). These drupal/ai versions show admin tooltips as text. With older drupal/ai versions, HTML in a long context item description or AI agent description runs as script when an administrator opens the CCC consumer pages. Update drupal/ai together with CCC, for example with `composer update drupal/ai_context drupal/ai -W`, and then run `drush updatedb`. To stay on AI 1.4, use `composer update drupal/ai_context drupal/ai -W --with drupal/ai:~1.4.11`. Composer does not check the commit of a dev branch. If your site uses a drupal/ai dev branch, for example `1.4.x-dev`, `1.5.x-dev`, `1.6.x-dev`, `1.x-dev`, `2.0.x-dev` or `2.x-dev`, update it to the current branch head. drupal/ai 2.x has no release yet, so every site on drupal/ai 2 uses a dev branch. With these drupal/ai versions, scope pill tooltips, the `+N` overflow tooltip and the Automator description tooltip show HTML entities such as `&amp;` or `&#039;`. #3586705+s (milestone 1.0.1) fixes this."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Require drupal/ai 1.4.11 or later on 1.4, or 1.5.2 or later"
+    }
+  ],
+  "generated_at": "2026-11-14T18:02:30.025949+00:00",
+  "milestone": "1.0.0-rc2"
+}

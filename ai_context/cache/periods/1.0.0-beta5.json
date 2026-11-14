@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T06:51:05.197511+00:00",
+  "generated_at": "2026-11-13T17:33:01.887902+00:00",
   "issues": [
     {
       "category": "task",
@@ -768,7 +768,13 @@
         {
           "display_name": "bharat.kelotra",
           "drupal_uid": 3182045,
-          "orgs": [],
+          "orgs": [
+            {
+              "name": "qed42",
+              "nid": 2149203,
+              "title": "QED42"
+            }
+          ],
           "user": "bharatkelotra"
         }
       ],
@@ -1786,7 +1792,18 @@
         {
           "display_name": "tazo_vekua",
           "drupal_uid": 3870744,
-          "orgs": [],
+          "orgs": [
+            {
+              "name": "omedia",
+              "nid": 2828043,
+              "title": "Omedia"
+            },
+            {
+              "name": "pantheon",
+              "nid": 1482316,
+              "title": "Pantheon"
+            }
+          ],
           "user": "tazo_vekua"
         },
         {
@@ -2373,7 +2390,7 @@
       "uuid": "d5d86435-a39c-47df-88b2-b38cbb67de18"
     },
     {
-      "category": null,
+      "category": "task",
       "closed_at": "2026-08-25T00:49:21.133000+00:00",
       "contributors": [
         {
@@ -3247,11 +3264,12 @@
     "kalamuna": 4,
     "mearra (formerly known as wunder)": 6,
     "morpht": 6,
-    "omedia": 1,
+    "omedia": 2,
     "opensense labs": 31,
     "optasy": 1,
-    "pantheon": 1,
+    "pantheon": 2,
     "pare & co": 3,
+    "qed42": 1,
     "reading room": 3,
     "salsa digital": 61,
     "seed em": 11,

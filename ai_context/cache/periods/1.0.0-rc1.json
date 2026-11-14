@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T23:15:51.328301+00:00",
+  "generated_at": "2026-11-13T17:33:03.107964+00:00",
   "issues": [
     {
       "category": "task",
@@ -646,6 +646,58 @@
       "priority": "normal",
       "title": "Rename leftover AI Agents tool limits from `agent_id` to `consumer_id`",
       "uuid": "d34b23bc-9f3c-4423-a8a3-a1ff56388281"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-09-15T17:32:41.155000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "jibran",
+          "drupal_uid": 1198144,
+          "orgs": [
+            {
+              "name": "morpht",
+              "nid": 2269857,
+              "title": "Morpht"
+            }
+          ],
+          "user": "jibran"
+        },
+        {
+          "display_name": "marcus_johansson",
+          "drupal_uid": 385947,
+          "orgs": [
+            {
+              "name": "freelygive",
+              "nid": 2457831,
+              "title": "FreelyGive"
+            }
+          ],
+          "user": "marcus_johansson"
+        }
+      ],
+      "iid": 3586485,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586485",
+      "priority": "major",
+      "title": "[Discuss] Decouple context specific consumer settings from AI Context consumer configurations",
+      "uuid": "d930aafb-4b05-489d-b264-c5d8e276c830"
     },
     {
       "category": "task",
@@ -3288,12 +3340,12 @@
     "drupalfit": 29,
     "esinergia.": 4,
     "foster interactive inc.": 3,
-    "freelygive": 2,
+    "freelygive": 3,
     "imagex": 8,
-    "itty bitty byte": 62,
+    "itty bitty byte": 63,
     "mearra": 1,
     "mearra (formerly known as wunder)": 4,
-    "morpht": 1,
+    "morpht": 2,
     "omedia": 10,
     "opensense labs": 29,
     "optasy": 2,
@@ -3301,7 +3353,7 @@
     "previousnext": 1,
     "qed42": 7,
     "reading room": 9,
-    "salsa digital": 62,
+    "salsa digital": 63,
     "seed em": 3,
     "specbee": 2,
     "the university of edinburgh": 1,
@@ -3331,13 +3383,13 @@
     "emma-horrell": 1,
     "erichomanchuk": 1,
     "jerseycheese": 1,
-    "jibran": 1,
+    "jibran": 2,
     "jucs7": 4,
     "kati.vera": 1,
-    "kepol": 62,
+    "kepol": 63,
     "kieran.cott": 9,
     "larowlan": 1,
-    "marcus_johansson": 2,
+    "marcus_johansson": 3,
     "merilainen": 4,
     "phillipamartin": 1,
     "pravesh_poonia": 24,

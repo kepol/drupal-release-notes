@@ -80,6 +80,10 @@ CCC_QA_TITLE = re.compile(
 )
 
 
+# Matches a display name that is an email address.
+EMAIL_LIKE = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
+
+
 @dataclass(frozen=True)
 class ReleaseBoundary:
     version: str
@@ -149,7 +153,9 @@ class PeriodReport:
             for entry in issue.contributors:
                 user = entry.get("user")
                 display = entry.get("display_name")
-                if user and display:
+                # Some Drupal.org accounts use an email address as their
+                # display name. Do not publish it; use the username instead.
+                if user and display and not EMAIL_LIKE.search(display):
                     names[user] = display
         return names
 
@@ -2050,9 +2056,10 @@ def render_html(
             h2(report.period.title),
             p(strong(f"{total_issues} credited issues")),
             p(summary),
-            p(em(f"Generated {report.generated_at}")),
         ]
     )
+    blocks.extend(render_upgrade_notes(project, report.period.slug))
+    blocks.append(p(em(f"Generated {report.generated_at}")))
 
     if alias_resolver is None:
         client = ApiClient(project)
@@ -2145,7 +2152,118 @@ def render_html(
             )
         blocks.append(ul(non_code_items))
 
+    blocks.extend(render_mr_release_notes(project, report.period.slug))
+
     return join_blocks(blocks) + "\n"
+
+
+def mr_release_notes_cache_path(project: ProjectConfig, period_slug: str) -> Path:
+    """Return the cache file that mr_release_notes.py writes for a period."""
+    return project.cache_dir / "mr_release_notes" / f"{period_slug}.json"
+
+
+_MD_CODE_SPAN = re.compile(r"(`+[^`]*`+)")
+_MD_LIST_ITEM = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
+
+
+def _markdown_text_part(text: str, project: ProjectConfig) -> str:
+    """Escape raw HTML and link issue references in non-code Markdown text."""
+    text = text.replace("<", "&lt;")
+    text = re.sub(
+        r"\bproject/([a-z0-9_]+)#(\d{6,})\+s\b",
+        lambda match: (
+            f"[project/{match.group(1)}#{match.group(2)}]"
+            f"(https://git.drupalcode.org/project/{match.group(1)}"
+            f"/-/work_items/{match.group(2)})"
+        ),
+        text,
+    )
+    return re.sub(
+        r"(?<![\w/\[])#(\d{6,})(?:\+s)?\b",
+        lambda match: (
+            f"[#{match.group(1)}]({project.issue_url(int(match.group(1)))})"
+        ),
+        text,
+    )
+
+
+def mr_markdown_to_html(text: str, project: ProjectConfig) -> str:
+    """Convert the Markdown of an MR release note to Drupal.org-safe HTML.
+
+    Raw HTML in the note is escaped, so the note can only produce Markdown
+    elements. Issue references such as #1234567+s become issue links.
+    """
+    import markdown
+
+    lines: list[str] = []
+    previous = ""
+    for line in text.split("\n"):
+        # Python-Markdown needs a blank line before a list.
+        if (
+            _MD_LIST_ITEM.match(line)
+            and previous.strip()
+            and not _MD_LIST_ITEM.match(previous)
+            and not previous.startswith((" ", "\t"))
+        ):
+            lines.append("")
+        lines.append(line)
+        previous = line
+    source = "\n".join(lines)
+
+    parts = _MD_CODE_SPAN.split(source)
+    prepared = "".join(
+        part if index % 2 else _markdown_text_part(part, project)
+        for index, part in enumerate(parts)
+    )
+    return markdown.markdown(prepared, extensions=["sane_lists"])
+
+
+def upgrade_notes_path(project: ProjectConfig, period_slug: str) -> Path:
+    """Return the optional Markdown upgrade notes file for a period."""
+    return project.summaries_dir / f"{period_slug}.upgrade.md"
+
+
+def render_upgrade_notes(project: ProjectConfig, period_slug: str) -> list[str]:
+    """Render summaries/{slug}.upgrade.md under an "Upgrade notes" heading."""
+    path = upgrade_notes_path(project, period_slug)
+    if not path.exists():
+        return []
+    text = path.read_text().strip()
+    if not text:
+        return []
+    return [h3("Upgrade notes"), mr_markdown_to_html(text, project)]
+
+
+def render_mr_release_notes(
+    project: ProjectConfig,
+    period_slug: str,
+) -> list[str]:
+    """Render the MR release notes that mr_release_notes.py collected."""
+    from html_report import format_issue_text, tag
+
+    data = load_json(mr_release_notes_cache_path(project, period_slug), {})
+    entries = [entry for entry in data.get("entries", []) if entry.get("notes")]
+    if not entries:
+        return []
+
+    blocks = [
+        h3("Release notes from merge requests"),
+        p(
+            "These notes come from the merge requests in this release. "
+            "They describe what changed and what to do after you update."
+        ),
+    ]
+    for entry in sorted(entries, key=lambda item: item["iid"]):
+        iid = int(entry["iid"])
+        blocks.append(
+            tag(
+                "h4",
+                format_issue_text(iid, entry["title"], project.issue_url(iid)),
+            )
+        )
+        for note in entry["notes"]:
+            blocks.append(mr_markdown_to_html(note["text"], project))
+    return blocks
 
 
 def frozen_period_cache_stale(

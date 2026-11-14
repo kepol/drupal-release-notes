@@ -1,4 +1,14 @@
 {
+  "3556881": {
+    "fetched_at": "2026-11-14T17:28:24.258883+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "kristen": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3571188": {
     "fetched_at": "2026-07-04T22:56:24.899866+00:00",
     "merge_request_refs": [
@@ -156,6 +166,25 @@
           {
             "body": "> _Migrated from comment #7 posted 25 Mar 2026 at 18:38 UTC_ We just shipped duadp_ai_context , an optional bridge module that maps DUADP federation trust-tier metadata into a CCC scope dimension. It\u2026",
             "created_at": "2026-04-22 22:20:40"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3579235": {
+    "fetched_at": "2026-11-13T17:34:05.631423+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "danrod": {
+        "issue": [
+          {
+            "body": "> _Migrated from comment #3 posted 14 Mar 2026 at 15:22 UTC_ I would like to jump on this",
+            "created_at": "2026-04-22 22:16:59"
+          },
+          {
+            "body": "> _Migrated from comment #4 posted 14 Mar 2026 at 15:22 UTC_ ``` - Assigned: Unassigned + Assigned: danrod ```",
+            "created_at": "2026-04-22 22:17:00"
           }
         ],
         "merge_requests": []
@@ -705,6 +734,16 @@
       }
     }
   },
+  "3586387": {
+    "fetched_at": "2026-11-13T17:34:06.552579+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "zorz": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3586391": {
     "fetched_at": "2026-08-15T00:09:56.662851+00:00",
     "merge_request_refs": [
@@ -885,6 +924,133 @@
           {
             "body": "/do:unassign @danrod",
             "created_at": "2026-08-25 18:38:13"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586434": {
+    "fetched_at": "2026-11-13T17:34:07.680863+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586435": {
+    "fetched_at": "2026-11-13T17:34:08.827134+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586436": {
+    "fetched_at": "2026-11-13T17:34:09.990534+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 357,
+        "title": "Issue #3586638: Identify each Edit link by scope and add row headers.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/357"
+      },
+      {
+        "iid": 358,
+        "title": "Issue #3586639: Give status badges an opaque base so row colors cannot bleed through.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/358"
+      }
+    ],
+    "users": {
+      "kati.vera": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-10-12 19:50:26"
+          },
+          {
+            "body": "@kepol I added the report here yesterday, but I removed it as I noticed you had added new instructions to the comments in work item #3586433. I'll edit the report and re-attach.",
+            "created_at": "2026-10-20 10:10:10"
+          },
+          {
+            "body": "Here is the updated accessibility report: [Drupal_AI_CCC_Scope settings_3586436_Accessibility_Report_2026-10-19.pdf](/uploads/732fdea82805ec1b75ee53caf53625a0/Drupal_AI_CCC_Scope_settings_3586436_Acc\u2026",
+            "created_at": "2026-10-20 10:46:16"
+          },
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-10-23 10:37:38"
+          }
+        ],
+        "merge_requests": []
+      },
+      "kepol": {
+        "issue": [
+          {
+            "body": "I've read through the summary and did some cleanup",
+            "created_at": "2026-08-20 21:21:36"
+          },
+          {
+            "body": "I'll move into the sprint once it's assigned",
+            "created_at": "2026-08-22 07:02:13"
+          },
+          {
+            "body": "Assigning to myself so they are saved for Kati Kati can self-assign before working on it",
+            "created_at": "2026-08-22 20:42:01"
+          },
+          {
+            "body": "Thanks \ud83d\ude4f I\u2019ll plan on creating another batch of 3 this weekend for you If you need work in the meantime, perhaps try out the ai demo and look for any UX improvements and report in the ai_demo project\u2026",
+            "created_at": "2026-10-20 17:06:20"
+          },
+          {
+            "body": "The two CCC findings are being addressed in: - #3586638+s - #3586639+s These can be tested again once rc2 is tagged: #3586676+s Tagging with needs follow-up issue to see if the Gin/Coffee/core issues\u2026",
+            "created_at": "2026-10-27 20:21:01"
+          },
+          {
+            "body": "@kati.vera There are some new accessibility issues in the \"second batch\" in the meta: https://git.drupalcode.org/project/ai_context/-/work_items/3586433#second-batch",
+            "created_at": "2026-10-27 20:22:51"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "This MR was checked by opus and looks ready to merge.",
+                "created_at": "2026-10-22 06:08:05"
+              }
+            ],
+            "mr_iid": 357,
+            "mr_title": "Issue #3586638: Identify each Edit link by scope and add row headers.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/357"
+          },
+          {
+            "comments": [
+              {
+                "body": "Thanks @Pravesh_Poonia. The CSS change looks right. This MR closes the issue, so a few things need to be done before I merge. If it is faster, change \"Closes #3586639\" to \"Related to #3586639\" in the\u2026",
+                "created_at": "2026-10-22 05:57:00"
+              }
+            ],
+            "mr_iid": 358,
+            "mr_title": "Issue #3586639: Give status badges an opaque base so row colors cannot bleed through.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/358"
+          }
+        ]
+      },
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-09-24 17:21:07"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-09-24 17:23:24"
+          },
+          {
+            "body": "Triage (2026-10-20), reviewing Kati's report of 19\u201320 October. @kepol asked me to split the findings by project and flag anything pressing for 1.0.0. Axe found no violations originating in the Scope\u2026",
+            "created_at": "2026-10-20 17:46:58"
           }
         ],
         "merge_requests": []
@@ -1079,6 +1245,46 @@
       }
     }
   },
+  "3586527": {
+    "fetched_at": "2026-11-13T17:34:11.452489+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-09-28 06:17:12"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-09-28 17:24:37"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586541": {
+    "fetched_at": "2026-11-13T17:34:12.468802+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 311,
+        "title": "Issue #3586472: Isolate CCC context push and harden consumer runtime edge cases.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/311"
+      },
+      {
+        "iid": 327,
+        "title": "Issue #3586541: Resolve a duplicate consumer ID to the first row everywhere.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/327"
+      }
+    ],
+    "users": {
+      "dcgoodwin": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
   "3586569": {
     "fetched_at": "2026-09-25T22:58:08.234729+00:00",
     "merge_request_refs": [],
@@ -1090,6 +1296,332 @@
             "created_at": "2026-09-25 20:55:07"
           }
         ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586571": {
+    "fetched_at": "2026-11-13T17:34:14.254997+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 337,
+        "title": "Issue #3586571: Set moderation state when Scheduler publishes on save.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/337"
+      },
+      {
+        "iid": 366,
+        "title": "Issue #3586650: Correct the feature docs from the rc1 QA",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/366"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586581": {
+    "fetched_at": "2026-11-13T17:34:15.957761+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586586": {
+    "fetched_at": "2026-11-13T17:34:17.310081+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 343,
+        "title": "Issue #3586586: Update listing filter defaults and add reset buttons.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/343"
+      },
+      {
+        "iid": 346,
+        "title": "Issue #3586567: Filter the context items listing across every page.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/346"
+      },
+      {
+        "iid": 352,
+        "title": "Issue #3586586: Default listing filters and add reset buttons",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/352"
+      },
+      {
+        "iid": 367,
+        "title": "Issue #3586620: Merge listing cache metadata instead of replacing it",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/367"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586593": {
+    "fetched_at": "2026-11-14T17:28:25.202820+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 350,
+        "title": "Issue #3586616: Deliver only published context item translations.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/350"
+      },
+      {
+        "iid": 351,
+        "title": "Issue #3586593: Read the Entity Types bundle only from viewable entities.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/351"
+      }
+    ],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586595": {
+    "fetched_at": "2026-11-13T17:34:22.135170+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 361,
+        "title": "Issue #3586646: Document the entity_context keys as public API and how to pull...",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/361"
+      }
+    ],
+    "users": {
+      "aidanfoster": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586598": {
+    "fetched_at": "2026-11-13T17:34:23.485829+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 356,
+        "title": "Draft: Issues #3586598 and #3586681, Rosetta spike prototype (modules/ai_context_rosetta)",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/356"
+      },
+      {
+        "iid": 360,
+        "title": "Issue #3586642: Document the return value of getSelectedValueLabels().",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/360"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586603": {
+    "fetched_at": "2026-11-13T17:34:25.686187+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 371,
+        "title": "Issue #3586603: Scope cleanup can leave an item published with an emptied hard-filter scope.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/371"
+      }
+    ],
+    "users": {
+      "kieran.cott": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-10-30 09:23:14"
+          },
+          {
+            "body": "Apologies, didn't have the time I thought I would to address the above today - unassigning in case someone else wants to pick this up.",
+            "created_at": "2026-10-30 09:42:23"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-10-30 09:42:25"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586610": {
+    "fetched_at": "2026-11-14T17:28:27.222454+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "aidanfoster": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "ajabhinavjha30": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "cadence96": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "csakiistvan": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "dcgoodwin": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "greeniguana-joe": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "jbiswas": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "jucs7": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "kieran.cott": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "leventeb": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "robloach": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "shqshqnk": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586612": {
+    "fetched_at": "2026-11-13T17:34:29.273965+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 349,
+        "title": "Issue #3586612: Update the README and docs for the 1.0.0 release.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/349"
+      },
+      {
+        "iid": 350,
+        "title": "Issue #3586616: Deliver only published context item translations.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/350"
+      },
+      {
+        "iid": 366,
+        "title": "Issue #3586650: Correct the feature docs from the rc1 QA",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/366"
+      }
+    ],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586617": {
+    "fetched_at": "2026-11-13T17:34:31.248559+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 350,
+        "title": "Issue #3586616: Deliver only published context item translations.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/350"
+      },
+      {
+        "iid": 376,
+        "title": "Issue #3586617: Filter subcontext children by view access and hard scope.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/376"
+      }
+    ],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "kieran.cott": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586635": {
+    "fetched_at": "2026-11-13T17:34:32.920392+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "marcus_johansson": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "scottfalconer": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586660": {
+    "fetched_at": "2026-11-13T17:34:34.134863+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 369,
+        "title": "Issue #3586660: Warm the tiktoken vocab cache before parallel phpunit runs.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/369"
+      },
+      {
+        "iid": 382,
+        "title": "Issue #3586700: Split the phpunit CI jobs by test type so that they finish within the runner time limit.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/382"
+      }
+    ],
+    "users": {
+      "scotteuser_git": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586661": {
+    "fetched_at": "2026-11-13T17:34:36.091225+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 370,
+        "title": "Issue #3586661: Fall back to approximate token counts when the tiktoken vocab cannot load.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/370"
+      },
+      {
+        "iid": 373,
+        "title": "Issue #3586677: Count what an item really costs, and say what the truncation warning means.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/373"
+      }
+    ],
+    "users": {
+      "message": {
+        "issue": [],
         "merge_requests": []
       }
     }

@@ -18,6 +18,7 @@ Each project has its own directory (`{project}/cache/`, `{project}/reports/`, et
 | `scripts/credit_audit.py` | Find missing or incomplete credits; track reviewed issues |
 | `scripts/release_prep.py` | Pre-release checklist for a GitLab milestone |
 | `scripts/combined_milestone_report.py` | Merge multiple milestone reports; compare to Drupal.org |
+| `scripts/mr_release_notes.py` | Collect the "Release notes" sections of merged MRs for a milestone |
 
 ## AI usage
 
@@ -247,6 +248,17 @@ Only issues with at least one granted credit on Drupal.org are included.
 
 Completed milestones are cached in `{project}/cache/periods/{milestone}.json` and only recomputed with `--rebuild-frozen` (included in `--refresh-all`). The current milestone is regenerated on every run.
 
+### Release notes from merge requests
+
+Most merge requests have a "Release note" or "Release notes" section in their description. To add these sections at the end of a milestone report, under the heading **Release notes from merge requests**:
+
+```bash
+python3 scripts/mr_release_notes.py --milestone "1.0.0-rc2"
+python3 scripts/release_notes.py --period "1.0.0-rc2"
+```
+
+`mr_release_notes.py` reads the merged MRs whose title names a closed issue in the milestone (`Issue #1234: ...`). When an MR has no such section, it uses the "Release notes snippet" section of the issue. It saves the notes to `{project}/cache/mr_release_notes/{milestone}.json`, and every later run of `release_notes.py` for that milestone adds them to the report. Run `mr_release_notes.py` again after MR descriptions change. Raw HTML in the notes is escaped, and issue references such as `#1234567+s` become issue links.
+
 ### AI-written summary paragraph
 
 Each run writes `{project}/summaries/{milestone}.prompt.md` alongside the HTML report.
@@ -254,6 +266,8 @@ Each run writes `{project}/summaries/{milestone}.prompt.md` alongside the HTML r
 1. Paste `summaries/1.0.0-beta4.prompt.md` into an AI; ask for 1–2 paragraphs.
 2. Save as `summaries/1.0.0-beta4.txt` (or `.md`).
 3. Re-run the report — custom summary replaces the auto-generated one.
+
+Optional upgrade notes: write Markdown in `summaries/{milestone}.upgrade.md`. The report shows it under an **Upgrade notes** heading after the summary. Raw HTML is escaped, and issue references such as `#1234567+s` become issue links.
 
 ### Manual fine-tuning
 

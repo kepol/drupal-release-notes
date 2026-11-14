@@ -1,32 +1,38 @@
 ----------------------------------------
 Release status: ai_context (1.0.0-rc2) [milestones]
 ----------------------------------------
-Release window: 2026-09-05 → 2026-09-12 23:59 UTC (+24h grace)
+Release window: 2026-09-27 → 2026-11-14 23:59 UTC (+24h grace)
 
-* Closed on future milestone: 1 (current release '1.0.0-rc2'; latest Drupal.org tag '1.0.0-beta5')
-    #3586465: Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor — closed 2026-09-05, assigned '1.0.1' → reassign to '1.0.0-rc2' (https://git.drupalcode.org/project/ai_context/-/work_items/3586465)
+* Closed on future milestone: 3 (current release '1.0.1'; latest Drupal.org tag '1.0.0-rc2')
+    #3586598: [Spike] Rosetta: Describe the context item catalog once with Tool API and use it in several places — closed 2026-11-07, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586598)
+    #3586681: [Spike] Rosetta phase 2: Get Relevant and Load as Tool API plugins, consumer ID inheritance, invoker gate — closed 2026-11-11, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586681)
+    #3586635: [Plan] Draft the MCP plan for DrupalCon Orlando 2027 — closed 2026-11-13, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586635)
 
 Report: reports/milestone-closed-on-future.html
 
-* Open in milestone: 0 of 0 — https://git.drupalcode.org/project/ai_context/-/milestones/2
+* Open in milestone: 0 of 65 — https://git.drupalcode.org/project/ai_context/-/milestones/3
 
-* Credit audit pending: 0
+* Credit audit pending: 3 — python3 scripts/credit_audit.py --project ai_context --review
 
 * QA issue: not found
 
-* Release notes: ai_context/reports/release-notes-1.0.0-rc2.html (0 credited)
+* Release notes: ai_context/reports/release-notes-1.0.0-rc2.html (62 credited) — milestone has 65; 2 not in release notes
+    #3586591: Rotterdam 2026 contribution day CCC testing — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586591
+    #3586601: Create CCC rc2 release — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586601
 
 * Duplicate d.o records: 0
     (none)
 
-* Missing contribution records: 0 (in '1.0.0-rc2' scope, nothing on new.drupal.org)
-    (none)
+* Missing contribution records: 2 (in '1.0.0-rc2' scope, nothing on new.drupal.org)
+    #3586591: Rotterdam 2026 contribution day CCC testing
+    #3586601: Create CCC rc2 release
 
-* No record expected (duplicate / won't fix): 0 (in '1.0.0-rc2' scope, closed without a Drupal.org record by design)
-    (none)
+* No record expected (duplicate / won't fix): 1 (in '1.0.0-rc2' scope, closed without a Drupal.org record by design)
+    - #3586506: Store taxonomy and Specific Entities references as UUIDs
 
 * Wrong milestone: 1 (assigned milestone != close date within '1.0.0-rc2' scope)
-    #3586465: Assess use of CCC context consumer plugins beyond agents, automators, and ckeditor — closed 2026-09-05, '1.0.1' → '1.0.0-rc2' (https://git.drupalcode.org/project/ai_context/-/work_items/3586465)
+    #3586556: Rotterdam demo ccc changes — closed 2026-09-26, '1.0.0-rc2' → '1.0.0-rc1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586556)
 
-* Missing in milestone: 0 (in '1.0.0-rc2' scope without a contribution record)
-    (none)
+* Missing in milestone: 2 (in '1.0.0-rc2' scope without a contribution record)
+    - #3586591: Rotterdam 2026 contribution day CCC testing
+    - #3586601: Create CCC rc2 release

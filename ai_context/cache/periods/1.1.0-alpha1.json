@@ -1,13 +1,101 @@
 {
-  "generated_at": "2026-09-06T06:03:52.634629+00:00",
-  "issues": [],
-  "org_counts": {},
+  "generated_at": "2026-11-13T17:33:06.930771+00:00",
+  "issues": [
+    {
+      "category": "task",
+      "closed_at": "2026-11-07T19:55:12.506000+00:00",
+      "contributors": [
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586598,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586598",
+      "priority": "major",
+      "title": "[Spike] Rosetta: Describe the context item catalog once with Tool API and use it in several places",
+      "uuid": "0d8cc5c9-063b-412d-a0c7-c26b05fa9dd6"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-11-11T07:05:39.752000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        },
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        }
+      ],
+      "iid": 3586681,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586681",
+      "priority": "major",
+      "title": "[Spike] Rosetta phase 2: Get Relevant and Load as Tool API plugins, consumer ID inheritance, invoker gate",
+      "uuid": "dc617d2a-bbc6-440f-9da8-027be9da2b1c"
+    }
+  ],
+  "org_counts": {
+    "imagex": 2,
+    "itty bitty byte": 2,
+    "salsa digital": 2
+  },
   "period": {
-    "end": "2026-12-12T23:59:59+00:00",
+    "end": "2027-02-13T23:59:59+00:00",
     "frozen": true,
     "slug": "1.1.0-alpha1",
-    "start": "2026-09-19T00:00:00+00:00",
+    "start": "2026-12-19T00:00:00+00:00",
     "title": "1.1.0-alpha1"
   },
-  "user_counts": {}
+  "user_counts": {
+    "ahmad-khalil-imagex": 2,
+    "kepol": 2
+  }
 }
