@@ -2141,7 +2141,6 @@ def render_html(
         ]
     )
     blocks.extend(render_upgrade_notes(project, report.period.slug))
-    blocks.append(p(em(f"Generated {report.generated_at}")))
 
     if alias_resolver is None:
         client = ApiClient(project)
