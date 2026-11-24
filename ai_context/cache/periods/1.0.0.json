@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-13T17:32:19.581983+00:00",
+  "generated_at": "2026-11-24T02:07:27.857796+00:00",
   "issues": [],
   "org_counts": {},
   "period": {
-    "end": null,
+    "end": "2026-12-01T23:59:59+00:00",
     "frozen": true,
     "slug": "1.0.0",
-    "start": null,
+    "start": "2026-11-25T00:00:00+00:00",
     "title": "1.0.0"
   },
   "user_counts": {}

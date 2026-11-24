@@ -1,0 +1,46 @@
+----------------------------------------
+Release status: ai_context (1.0.0) [milestones]
+----------------------------------------
+Release window: 2026-11-25 → 2026-12-01 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 5 (current release '1.0.0'; latest Drupal.org tag '1.0.0-rc3')
+    #3586598: [Spike] Rosetta: Describe the context item catalog once with Tool API and use it in several places — closed 2026-11-07, assigned '1.1.0-alpha1' → reassign to '1.0.0' (https://git.drupalcode.org/project/ai_context/-/work_items/3586598)
+    #3586681: [Spike] Rosetta phase 2: Get Relevant and Load as Tool API plugins, consumer ID inheritance, invoker gate — closed 2026-11-11, assigned '1.1.0-alpha1' → reassign to '1.0.0' (https://git.drupalcode.org/project/ai_context/-/work_items/3586681)
+    #3586635: [Plan] Draft the MCP plan for DrupalCon Orlando 2027 — closed 2026-11-13, assigned '1.1.0-alpha1' → reassign to '1.0.0' (https://git.drupalcode.org/project/ai_context/-/work_items/3586635)
+    #3574926: [Plan] Evaluate and plan the Tool API integration for CCC context tools — closed 2026-11-14, assigned '1.1.0-alpha1' → reassign to '1.0.0' (https://git.drupalcode.org/project/ai_context/-/work_items/3574926)
+    #3586624: [Discuss] Agree on the shared foundations for reading CCC context — closed 2026-11-15, assigned '1.1.0-alpha1' → reassign to '1.0.0' (https://git.drupalcode.org/project/ai_context/-/work_items/3586624)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 10 of 10 — https://git.drupalcode.org/project/ai_context/-/milestones/25
+
+* Credit audit pending: 0
+
+* QA issue: not found
+
+* Release notes: ai_context/reports/release-notes-1.0.0.html (0 credited) — milestone has 10; 10 not in release notes
+    #3567798: [Meta] CCC MVP 1.0 roadmap — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3567798
+    #3573716: [Meta] CCC QA in prep for 1.0 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3573716
+    #3586602: Create CCC 1.0.0 release — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586602
+    #3586722: Sprint 22 CCC roadmap updates, sprint planning, and issue triage — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586722
+    #3586772: [Meta] QA CCC 1.0.0-rc3 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586772
+    #3586773: QA CCC 1.0.0-rc3: Drupal CMS 2.2 fresh install, upgrade from rc2, and UI changes — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586773
+    #3586774: QA CCC 1.0.0-rc3: Drupal 10 Composer, upgrade from rc2, and Claro — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586774
+    #3586775: QA CCC 1.0.0-rc3: editorial workflow and scheduling — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586775
+    #3586776: QA CCC 1.0.0-rc3: what reaches AI prompts — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586776
+    #3586777: QA CCC 1.0.0-rc3: token name for a context item — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586777
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 0 (in '1.0.0' scope, nothing on new.drupal.org)
+    (none)
+
+* No record expected (duplicate / won't fix): 0 (in '1.0.0' scope, closed without a Drupal.org record by design)
+    (none)
+
+* Wrong milestone: 0 (assigned milestone != close date within '1.0.0' scope)
+    (none)
+
+* Missing in milestone: 0 (in '1.0.0' scope without a contribution record)
+    (none)

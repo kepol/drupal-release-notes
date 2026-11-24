@@ -1,71 +1,7 @@
 {
-  "generated_at": "2026-11-13T17:33:06.928598+00:00",
-  "issues": [
-    {
-      "category": "task",
-      "closed_at": "2026-11-07T05:42:13.722000+00:00",
-      "contributors": [
-        {
-          "display_name": "kristen pol",
-          "drupal_uid": 8389,
-          "orgs": [
-            {
-              "name": "itty bitty byte",
-              "nid": 3190689,
-              "title": "Itty Bitty Byte"
-            },
-            {
-              "name": "salsa digital",
-              "nid": 2603032,
-              "title": "Salsa Digital"
-            }
-          ],
-          "user": "kepol"
-        },
-        {
-          "display_name": "kati.vera",
-          "drupal_uid": 3869205,
-          "orgs": [
-            {
-              "name": "mearra",
-              "nid": 1121356,
-              "title": "Mearra"
-            }
-          ],
-          "user": "kati.vera"
-        },
-        {
-          "display_name": "pravesh_poonia",
-          "drupal_uid": 3745124,
-          "orgs": [
-            {
-              "name": "opensense labs",
-              "nid": 2300801,
-              "title": "OpenSense Labs"
-            },
-            {
-              "name": "drupalfit",
-              "nid": 2935550,
-              "title": "DrupalFit"
-            }
-          ],
-          "user": "pravesh_poonia"
-        }
-      ],
-      "iid": 3586651,
-      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586651",
-      "priority": "normal",
-      "title": "Accessibility Testing: CCC context item view page",
-      "uuid": "b799f0cb-457f-4580-a670-16c44255e171"
-    }
-  ],
-  "org_counts": {
-    "drupalfit": 1,
-    "itty bitty byte": 1,
-    "mearra": 1,
-    "opensense labs": 1,
-    "salsa digital": 1
-  },
+  "generated_at": "2026-11-14T19:44:21.604218+00:00",
+  "issues": [],
+  "org_counts": {},
   "period": {
     "end": "2026-12-19T23:59:59+00:00",
     "frozen": true,
@@ -73,9 +9,5 @@
     "start": "2026-11-07T00:00:00+00:00",
     "title": "1.0.1"
   },
-  "user_counts": {
-    "kati.vera": 1,
-    "kepol": 1,
-    "pravesh_poonia": 1
-  }
+  "user_counts": {}
 }

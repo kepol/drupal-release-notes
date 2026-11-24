@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T17:33:06.930771+00:00",
+  "generated_at": "2026-11-14T19:44:21.605571+00:00",
   "issues": [
     {
       "category": "task",
@@ -40,6 +40,46 @@
       "priority": "major",
       "title": "[Spike] Rosetta: Describe the context item catalog once with Tool API and use it in several places",
       "uuid": "0d8cc5c9-063b-412d-a0c7-c26b05fa9dd6"
+    },
+    {
+      "category": "plan",
+      "closed_at": "2026-11-13T06:11:03.317000+00:00",
+      "contributors": [
+        {
+          "display_name": "ahmad-khalil-imagex",
+          "drupal_uid": 3858078,
+          "orgs": [
+            {
+              "name": "imagex",
+              "nid": 1121256,
+              "title": "ImageX"
+            }
+          ],
+          "user": "ahmad-khalil-imagex"
+        },
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586635,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586635",
+      "priority": "major",
+      "title": "[Plan] Draft the MCP plan for DrupalCon Orlando 2027",
+      "uuid": "85383006-76dd-4fd0-b445-b7207700ed70"
     },
     {
       "category": "task",
@@ -83,9 +123,9 @@
     }
   ],
   "org_counts": {
-    "imagex": 2,
-    "itty bitty byte": 2,
-    "salsa digital": 2
+    "imagex": 3,
+    "itty bitty byte": 3,
+    "salsa digital": 3
   },
   "period": {
     "end": "2027-02-13T23:59:59+00:00",
@@ -95,7 +135,7 @@
     "title": "1.1.0-alpha1"
   },
   "user_counts": {
-    "ahmad-khalil-imagex": 2,
-    "kepol": 2
+    "ahmad-khalil-imagex": 3,
+    "kepol": 3
   }
 }

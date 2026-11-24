@@ -1,0 +1,88 @@
+----------------------------------------
+Release status: ai_context (1.0.0-rc3) [milestones]
+----------------------------------------
+Release window: 2026-11-14 → 2026-11-25 23:59 UTC (+24h grace)
+
+* Closed on future milestone: 46 (current release '1.0.1'; latest Drupal.org tag '1.0.0-rc2')
+    #3586723: Add a Release notes section to the merge request template and update the checklist — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586723)
+    #3586621: Create CCC 1.0.0 blog post for the marketing team — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586621)
+    #3586710: On AI agents, conditional subcontext uses the agent instructions as the task, not the user request — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586710)
+    #3586389: CCC rc cleanup from non-pressing beta code review items — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586389)
+    #3586652: Accessibility Testing: CCC context item delete and duplicate forms — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586652)
+    #3586613: Create BADCamp CCC slides, present, and share slides — closed 2026-11-14, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586613)
+    #3586692: Context items listing does not show its empty text or the "Add one" link — closed 2026-11-15, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586692)
+    #3586606: Document which AI modules receive pushed context, and what external agents can and cannot do in 1.0.x — closed 2026-11-17, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586606)
+    #3586739: Sprint 21 CCC roadmap updates, sprint planning, and issue triage — closed 2026-11-18, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586739)
+    #3586725: QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 10 (QA team only) — closed 2026-11-18, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586725)
+    #3586708: Leading-zero item IDs in tool input skip Never include — closed 2026-11-18, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586708)
+    #3586737: QA CCC 1.0.0-rc2: developer checks — closed 2026-11-18, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586737)
+    #3586732: QA CCC 1.0.0-rc2: listings, settings and usage (QA team only) — closed 2026-11-18, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586732)
+    #3586730: QA CCC 1.0.0-rc2: generic push path and automators on AI 1.5.2 (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586730)
+    #3586726: QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 11 (QA team only) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586726)
+    #3586729: QA CCC 1.0.0-rc2: agent tools and Drupal tokens (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586729)
+    #3586731: QA CCC 1.0.0-rc2: scheduling and editorial workflow (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586731)
+    #3586734: QA CCC 1.0.0-rc2: what reaches AI prompts (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586734)
+    #3586735: QA CCC 1.0.0-rc2: token budget and token counts (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586735)
+    #3586736: QA CCC 1.0.0-rc2: generic push path and automators on AI 1.4.11 (developer testing allowed) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586736)
+    #3586743: AI CKEditor 1.5.0-beta5 breaks the service container on Drupal 10.5 (report it upstream) — closed 2026-11-19, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586743)
+    #3586727: QA CCC 1.0.0-rc2: smoke test on Drupal CMS 2.2 (QA team only) — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586727)
+    #3586758: Saving a new field with an AI Automator fails to add the ai_automator_status field — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586758)
+    #3586749: Consumer settings form and post-update 0008 fail with a database error when a stored include list has a non-ASCII value (MariaDB and MySQL) — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586749)
+    #3586741: Get Relevant fails with a database error when an include list has a non-ASCII value (MariaDB and MySQL) — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586741)
+    #3586728: QA CCC 1.0.0-rc2: permissions, revisions and copies (developer testing allowed) — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586728)
+    #3586724: Require AI 1.4.12, or document the lost generic-path context on AI 1.4.11 — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586724)
+    #3586746: Site Section patterns do not match paths that have a language prefix — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586746)
+    #3586721: Translators can change the shared scopes of a context item from the translation form — closed 2026-11-20, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586721)
+    #3586711: Two CCC Scheduler permissions are never checked, and the item form saves schedules that cron cannot run — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586711)
+    #3586658: Document how to test CCC with the AI Agents debugger and the Tools explorer — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586658)
+    #3586762: Main menu item title help text loses the "<" character on Drupal CMS — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586762)
+    #3586733: QA CCC 1.0.0-rc2: accessibility — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586733)
+    #3586747: Fix the docs errors from the 1.0.0-rc2 smoke test before 1.0.0 — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586747)
+    #3586764: The ai_context_usage view is missing the table CSS class option, which is deprecated in Drupal 11.2 — closed 2026-11-21, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586764)
+    #3586709: Automator context is added again for each field value, and is lost on AI 1.4.11 and earlier — closed 2026-11-22, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586709)
+    #3586742: A detached "Same as parent" subcontext stays published in its other translations — closed 2026-11-22, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586742)
+    #3586738: CCC rc2 blog post — closed 2026-11-22, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586738)
+    #3586265: Create Bluefly CCC presentation — closed 2026-11-22, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586265)
+    #3586676: [Meta] QA CCC 1.0.0-rc2 — closed 2026-11-22, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586676)
+    #3586760: Add a token name to a context item, so its text is available as a Drupal token — closed 2026-11-23, assigned '1.0.0-rc3' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586760)
+    #3586598: [Spike] Rosetta: Describe the context item catalog once with Tool API and use it in several places — closed 2026-11-07, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586598)
+    #3586681: [Spike] Rosetta phase 2: Get Relevant and Load as Tool API plugins, consumer ID inheritance, invoker gate — closed 2026-11-11, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586681)
+    #3586635: [Plan] Draft the MCP plan for DrupalCon Orlando 2027 — closed 2026-11-13, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586635)
+    #3574926: [Plan] Evaluate and plan the Tool API integration for CCC context tools — closed 2026-11-14, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3574926)
+    #3586624: [Discuss] Agree on the shared foundations for reading CCC context — closed 2026-11-15, assigned '1.1.0-alpha1' → reassign to '1.0.1' (https://git.drupalcode.org/project/ai_context/-/work_items/3586624)
+
+Report: reports/milestone-closed-on-future.html
+
+* Open in milestone: 1 of 42 — https://git.drupalcode.org/project/ai_context/-/milestones/24
+
+* Credit audit pending: 21 — python3 scripts/credit_audit.py --project ai_context --review
+
+* QA issue: not found
+
+* Release notes: ai_context/reports/release-notes-1.0.0-rc3.html (34 credited) — milestone has 42; 6 not in release notes
+    #3586676: [Meta] QA CCC 1.0.0-rc2 — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586676
+    #3586725: QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 10 (QA team only) — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586725
+    #3586730: QA CCC 1.0.0-rc2: generic push path and automators on AI 1.5.2 (developer testing allowed) — contribution record exists but no credits granted — https://git.drupalcode.org/project/ai_context/-/work_items/3586730
+    #3586742: A detached "Same as parent" subcontext stays published in its other translations — contribution record exists but no credits granted — https://git.drupalcode.org/project/ai_context/-/work_items/3586742
+    #3586762: Main menu item title help text loses the "<" character on Drupal CMS — contribution record exists but no credits granted — https://git.drupalcode.org/project/ai_context/-/work_items/3586762
+    #3586767: Create CCC 1.0.0-rc3 release — no contribution record on new.drupal.org — https://git.drupalcode.org/project/ai_context/-/work_items/3586767
+
+* Duplicate d.o records: 0
+    (none)
+
+* Missing contribution records: 2 (in '1.0.0-rc3' scope, nothing on new.drupal.org)
+    #3586676: [Meta] QA CCC 1.0.0-rc2
+    #3586725: QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 10 (QA team only)
+
+* No record expected (duplicate / won't fix): 2 (in '1.0.0-rc3' scope, closed without a Drupal.org record by design)
+    - #3586389: CCC rc cleanup from non-pressing beta code review items
+    - #3586621: Create CCC 1.0.0 blog post for the marketing team
+
+* Wrong milestone: 3 (assigned milestone != close date within '1.0.0-rc3' scope)
+    #3574926: [Plan] Evaluate and plan the Tool API integration for CCC context tools — closed 2026-11-14, '1.1.0-alpha1' → '1.0.0-rc3' (https://git.drupalcode.org/project/ai_context/-/work_items/3574926)
+    #3586624: [Discuss] Agree on the shared foundations for reading CCC context — closed 2026-11-15, '1.1.0-alpha1' → '1.0.0-rc3' (https://git.drupalcode.org/project/ai_context/-/work_items/3586624)
+    #3586631: [Plan] Draft the Outside AI plan for DrupalCon Orlando 2027 — closed 2026-11-23, 'Future' → '1.0.0-rc3' (https://git.drupalcode.org/project/ai_context/-/work_items/3586631)
+
+* Missing in milestone: 2 (in '1.0.0-rc3' scope without a contribution record)
+    - #3586676: [Meta] QA CCC 1.0.0-rc2
+    - #3586725: QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 10 (QA team only)

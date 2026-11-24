@@ -1584,6 +1584,73 @@
       }
     }
   },
+  "3586648": {
+    "fetched_at": "2026-11-24T01:35:08.279888+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 362,
+        "source_branch": "3586648-raise-the-default-token",
+        "state": "merged",
+        "title": "Issue #3586648: Raise the default token budget for new sites to 20,000.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/362"
+      }
+    ],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586651": {
+    "fetched_at": "2026-11-24T01:35:09.681594+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 414,
+        "source_branch": "3586662-disabled-and-unpublished-status",
+        "state": "opened",
+        "title": "Issue #3586662: Disabled and Unpublished status badges fail contrast at rest (4.19:1).",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/414"
+      },
+      {
+        "iid": 422,
+        "source_branch": "3586690-accessibility-context-item-view",
+        "state": "opened",
+        "title": "Issue #3586690: Give the context item page headings, clear links and icons that follow the text color.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/422"
+      }
+    ],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "For reference, the item page status badges (Unpublished, Archived and custom states at 4.19:1) are fixed in #3586662 (MR !414) for Claro, and the Gin colour is reported in gin#3598634. The count badg\u2026",
+            "created_at": "2026-11-19 14:01:30"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586652": {
+    "fetched_at": "2026-11-24T01:35:11.131557+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-10-22 07:16:19"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-10-22 07:16:34"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
   "3586660": {
     "fetched_at": "2026-11-13T17:34:34.134863+00:00",
     "merge_request_refs": [
@@ -1621,6 +1688,534 @@
     ],
     "users": {
       "message": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586676": {
+    "fetched_at": "2026-11-24T01:46:48.748936+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586696": {
+    "fetched_at": "2026-11-24T01:35:11.892152+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 381,
+        "source_branch": "3586696-load-ai-context-items-function",
+        "state": "merged",
+        "title": "Issue #3586696: Add the load_ai_context_items function call and deprecate load_ai_context_item_by_id.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/381"
+      }
+    ],
+    "users": {
+      "jucs7": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "kotekirkitadze": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586708": {
+    "fetched_at": "2026-11-24T01:35:13.179808+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 390,
+        "source_branch": "3586708-leading-zero-item-ids-in",
+        "state": "merged",
+        "title": "Issue #3586708: Give tool input one spelling per context item ID, so Never include holds.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/390"
+      }
+    ],
+    "users": {
+      "ahmad-khalil-imagex": {
+        "issue": [],
+        "merge_requests": []
+      },
+      "csakiistvan": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586725": {
+    "fetched_at": "2026-11-24T01:47:00.285324+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586726": {
+    "fetched_at": "2026-11-24T01:35:14.903670+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586727": {
+    "fetched_at": "2026-11-24T01:35:15.739202+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586728": {
+    "fetched_at": "2026-11-24T01:35:16.655553+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586729": {
+    "fetched_at": "2026-11-24T01:35:17.783858+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586730": {
+    "fetched_at": "2026-11-24T01:52:28.678892+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586731": {
+    "fetched_at": "2026-11-24T01:35:19.752966+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586732": {
+    "fetched_at": "2026-11-24T01:35:20.860994+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586733": {
+    "fetched_at": "2026-11-24T01:35:21.854505+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586734": {
+    "fetched_at": "2026-11-24T01:35:22.780586+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586735": {
+    "fetched_at": "2026-11-24T01:35:23.801121+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586736": {
+    "fetched_at": "2026-11-24T01:35:24.788776+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586737": {
+    "fetched_at": "2026-11-24T01:35:25.707979+00:00",
+    "merge_request_refs": [],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-14 21:37:20"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-11-15 03:48:06"
+          }
+        ],
+        "merge_requests": []
+      },
+      "brunaemerich": {
+        "issue": [],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586741": {
+    "fetched_at": "2026-11-24T01:35:26.966132+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 405,
+        "source_branch": "3586741-get-relevant-fails-with",
+        "state": "merged",
+        "title": "Issue #3586741: Look up only valid UUIDs from context item include lists",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/405"
+      },
+      {
+        "iid": 412,
+        "source_branch": "3586666-importing-a-beta4-sync",
+        "state": "opened",
+        "title": "Issue #3586666: Convert item and term IDs when a Beta4 sync is imported, and log the conversion only on import.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/412"
+      }
+    ],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-17 23:22:25"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-11-17 23:49:01"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586742": {
+    "fetched_at": "2026-11-24T00:17:01.161028+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 401,
+        "source_branch": "3586742-a-detached-same-as",
+        "state": "merged",
+        "title": "Issue #3586742: A detached \"Same as parent\" subcontext stays published in its other translations.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/401"
+      }
+    ],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-17 23:49:10"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-11-18 00:25:12"
+          },
+          {
+            "body": "/do:label \\~\"state::needsReview\"",
+            "created_at": "2026-11-18 01:44:16"
+          }
+        ],
+        "merge_requests": []
+      },
+      "dcgoodwin": {
+        "issue": [
+          {
+            "body": "/do:label ~\"category::bug\" ~\"priority::normal\" ~\"state::toBeTriaged\"",
+            "created_at": "2026-11-16 22:58:06"
+          },
+          {
+            "body": "@kepol no problem at all! Looks like @ajabhinavjha30 already grabbed it, but I should be able to handle review when the MR lands \ud83d\udc4d",
+            "created_at": "2026-11-17 23:56:04"
+          },
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-18 00:37:44"
+          },
+          {
+            "body": "## Review of !401 at `e6b28c2`: the issue's rows are fixed on both paths; one should-fix for draft saves Hi @ajabhinavjha30 :wave: Thanks for picking this one up. I completed a review and found a few\u2026",
+            "created_at": "2026-11-18 14:05:43"
+          },
+          {
+            "body": "/do:label ~\"state::needsWork\" /do:unassign me",
+            "created_at": "2026-11-18 14:06:05"
+          },
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-20 21:58:08"
+          },
+          {
+            "body": "## Delta review since `e6b28c2`: `f50d7ad4` and `c3d3276c` @kepol I did another review pass and had one more finding below. Please let me know if you need any additional info on this one. F1 and the\u2026",
+            "created_at": "2026-11-20 22:51:50"
+          },
+          {
+            "body": "/do:label ~\"state::needsWork\" /do:unassign me",
+            "created_at": "2026-11-20 22:51:55"
+          }
+        ],
+        "merge_requests": []
+      },
+      "kepol": {
+        "issue": [
+          {
+            "body": "@dcgoodwin Thanks for finding this, and for the clear report. I triaged it for 1.0.1 in Sprint 22, with priority major. The fix: when a \"Same as parent\" item is detached, unpublish every published tr\u2026",
+            "created_at": "2026-11-17 23:23:28"
+          },
+          {
+            "body": "@dcgoodwin Thanks for the detailed review of !401 at `e6b28c2`, with the F1 test and the mutation table. I pushed `c3d3276c` on top of a 1.0.x merge (`f50d7ad4`). Could you do a delta review of `e6b2\u2026",
+            "created_at": "2026-11-20 20:51:01"
+          },
+          {
+            "body": "@kieran.cott Thanks for `3e7224f0`! @dcgoodwin Thanks for the delta review and the tested fix that it is based on. I reviewed `3e7224f0`. The review table is in the [MR comment](https://git.drupalcod\u2026",
+            "created_at": "2026-11-21 03:51:20"
+          },
+          {
+            "body": "Update on row 9 of the [review](https://git.drupalcode.org/project/ai_context/-/merge_requests/401#note_6434616): I tried two fixes, and neither is ready for rc3, so row 9 moves to a follow-up for 1.\u2026",
+            "created_at": "2026-11-21 04:38:55"
+          },
+          {
+            "body": "I've reviewed the code manually and made some minor changes. It was tested yesterday and none of these changes make a difference, so I set the MR to auto merge.",
+            "created_at": "2026-11-22 00:00:50"
+          },
+          {
+            "body": "Merged!",
+            "created_at": "2026-11-23 23:47:27"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "opus check Review at c3d3276c: the leak fix and all review points are done; waits for a delta review ## Verdict !401 unpublishes every published translation of a detached \"Same as parent\" subcontext\u2026",
+                "created_at": "2026-11-20 21:04:24"
+              },
+              {
+                "body": "Changes since the review at `e6b28c2`: * `f50d7ad4`: merge of 1.0.x (`d3f6d5ff`). * `c3d3276c`: a draft save with the hierarchy off keeps the editor's text in the latest revision (F1); an error is lo\u2026",
+                "created_at": "2026-11-20 21:24:29"
+              },
+              {
+                "body": "opus check Review at 3e7224f0: dcgoodwin's should-fix and both notes are fixed. One new should-fix in the pending-draft path. Needs a 1.0.x merge ## Verdict `3e7224f0` fixes the should-fix from the d\u2026",
+                "created_at": "2026-11-21 03:35:07"
+              },
+              {
+                "body": "Row 9 of the review above, step by step. Everything below happens to one **child item** (C). The **parent item** (P) does not change. It only exists so that C can use \"Same as parent\". **Setup** - **\u2026",
+                "created_at": "2026-11-21 03:35:08"
+              },
+              {
+                "body": "Browser test of !401 at `c276c713` (1.0.x at `7ec1fa3a` merged), on Drupal CMS 2.2 (Drupal 11.4, Gin, MariaDB) with English and Afrikaans and the default editorial workflow. | # | Check | Result | |\u2026",
+                "created_at": "2026-11-21 09:00:37"
+              },
+              {
+                "body": "fable check Check at ffc92c47 before the merge: no must-have items; 2 nice-to-have items and 6 nits, all small A second read of the full diff against 1.0.x. Each item was checked against the code. No\u2026",
+                "created_at": "2026-11-21 20:01:36"
+              },
+              {
+                "body": "I merged 1.0.x (`dd1def9c`) and fixed the 8 items from the [fable check](https://git.drupalcode.org/project/ai_context/-/merge_requests/401#note_6440572) in `87b20c0`: 1. The docblock of `saveDetache\u2026",
+                "created_at": "2026-11-21 22:32:40"
+              },
+              {
+                "body": "check if revision log messages are normally translated",
+                "created_at": "2026-11-21 23:54:53"
+              },
+              {
+                "body": "core does it, all good",
+                "created_at": "2026-11-21 23:57:33"
+              },
+              {
+                "body": "I've reviewed the code manually. It was tested yesterday and none of these changes make a difference, so I'll set to auto merge.",
+                "created_at": "2026-11-22 00:00:07"
+              }
+            ],
+            "mr_iid": 401,
+            "mr_title": "Issue #3586742: A detached \"Same as parent\" subcontext stays published in its other translations.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/401"
+          }
+        ]
+      },
+      "kieran.cott": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-21 02:11:34"
+          },
+          {
+            "body": "### Commit 3e7224f07cb4f1e8c9023a33d3ddc13ee35edd69 A pending draft now checks the published default revision\u2019s scope before archiving any translations. If the published revision has its own scope, i\u2026",
+            "created_at": "2026-11-21 02:45:22"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586747": {
+    "fetched_at": "2026-11-24T01:35:28.854661+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 402,
+        "source_branch": "3586747-fix-the-docs-errors",
+        "state": "merged",
+        "title": "Issue #3586747: Fix the docs errors from the 1.0.0-rc2 smoke test.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/402"
+      }
+    ],
+    "users": {
+      "ajabhinavjha30": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-18 02:08:48"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-11-18 06:54:53"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586760": {
+    "fetched_at": "2026-11-24T01:35:30.420174+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 416,
+        "source_branch": "3586760-item-token-name",
+        "state": "merged",
+        "title": "Issue #3586760: Add a token name to a context item, so its text is available as a Drupal token.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/416"
+      }
+    ],
+    "users": {
+      "jucs7": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-20 20:14:23"
+          }
+        ],
+        "merge_requests": []
+      }
+    }
+  },
+  "3586762": {
+    "fetched_at": "2026-11-24T00:17:05.933768+00:00",
+    "merge_request_refs": [
+      {
+        "iid": 418,
+        "source_branch": "3586762-main-menu-item-title",
+        "state": "merged",
+        "title": "Issue #3586762: Write the menu title help text without a bare \"<\", and reword the error.",
+        "web_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/418"
+      }
+    ],
+    "users": {
+      "bbruno": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-20 08:29:20"
+          },
+          {
+            "body": "Thanks @Pravesh_Poonia! Tested !418 on Drupal CMS (Drupal 11, Klaro enabled) | | Before (1.0.x) | After (!418) | |---|---|---| | Help text | ![1-before-help-text](/uploads/fd26eea20714bdff0f72dd68575\u2026",
+            "created_at": "2026-11-20 09:26:18"
+          }
+        ],
+        "merge_requests": []
+      },
+      "kepol": {
+        "issue": [
+          {
+            "body": "Thanks @bbruno for testing !418 on Drupal CMS with Klaro! Your test covers the MR before `8b6f5e01`. That commit came after your test. It changes the help text again (\"Write the menu title help text\u2026",
+            "created_at": "2026-11-20 18:59:08"
+          },
+          {
+            "body": "Correction to my earlier comment: your test does cover the current head. !418 has only one pushed version, `8b6f5e01`, and it was pushed at 06:41 UTC, before your test at 09:26 UTC. The later time I\u2026",
+            "created_at": "2026-11-20 22:33:15"
+          },
+          {
+            "body": "Set MR to auto merge",
+            "created_at": "2026-11-21 04:23:18"
+          },
+          {
+            "body": "Merged!",
+            "created_at": "2026-11-23 23:49:26"
+          }
+        ],
+        "merge_requests": [
+          {
+            "comments": [
+              {
+                "body": "opus check Review at 019ac2fd: help text and error message are correct; tested on Drupal CMS; ready to merge ## Verdict !418 writes the ` ` in the **Menu item title** help text as `&lt;` and `&gt;`,\u2026",
+                "created_at": "2026-11-21 04:09:22"
+              },
+              {
+                "body": "Set to auto merge",
+                "created_at": "2026-11-21 04:23:08"
+              }
+            ],
+            "mr_iid": 418,
+            "mr_title": "Issue #3586762: Write the menu title help text without a bare \"<\", and reword the error.",
+            "mr_url": "https://git.drupalcode.org/project/ai_context/-/merge_requests/418"
+          }
+        ]
+      },
+      "pravesh_poonia": {
+        "issue": [
+          {
+            "body": "/do:assign me",
+            "created_at": "2026-11-20 05:27:32"
+          },
+          {
+            "body": "Hi @kepol, I opened an MR for this. Thank you for the clear report! - The help text now writes `&lt;` and `&gt;`, as you suggested, so a script that parses the page again keeps the `<`. - The error m\u2026",
+            "created_at": "2026-11-20 06:43:05"
+          },
+          {
+            "body": "/do:label ~\"state::needsReview\"",
+            "created_at": "2026-11-20 06:43:43"
+          },
+          {
+            "body": "/do:unassign me",
+            "created_at": "2026-11-20 06:43:52"
+          }
+        ],
+        "merge_requests": []
+      },
+      "tazo_vekua": {
         "issue": [],
         "merge_requests": []
       }

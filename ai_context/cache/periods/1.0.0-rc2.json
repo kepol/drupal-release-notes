@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T19:13:57.937495+00:00",
+  "generated_at": "2026-11-15T00:11:35.053544+00:00",
   "issues": [
     {
       "category": "task",
@@ -931,7 +931,7 @@
       "uuid": "f3ec0971-fc91-4370-9dfc-1402edd27c89"
     },
     {
-      "category": "task",
+      "category": "feature",
       "closed_at": "2026-11-03T03:47:58.765000+00:00",
       "contributors": [
         {
@@ -1756,6 +1756,34 @@
       "priority": "normal",
       "title": "Update the README and docs for the 1.0.0 release",
       "uuid": "e3af4289-854f-4454-a9d0-d39df997971a"
+    },
+    {
+      "category": "task",
+      "closed_at": "2026-11-14T23:55:49.820000+00:00",
+      "contributors": [
+        {
+          "display_name": "kristen pol",
+          "drupal_uid": 8389,
+          "orgs": [
+            {
+              "name": "itty bitty byte",
+              "nid": 3190689,
+              "title": "Itty Bitty Byte"
+            },
+            {
+              "name": "salsa digital",
+              "nid": 2603032,
+              "title": "Salsa Digital"
+            }
+          ],
+          "user": "kepol"
+        }
+      ],
+      "iid": 3586613,
+      "issue_url": "https://git.drupalcode.org/project/ai_context/-/work_items/3586613",
+      "priority": "normal",
+      "title": "Create BADCamp CCC slides, present, and share slides",
+      "uuid": "5a347e8b-f70b-4908-8c2e-9c00b5451b83"
     },
     {
       "category": "task",
@@ -3492,7 +3520,7 @@
       "uuid": "1ff31b75-f271-4313-a608-8694d2e08ac1"
     },
     {
-      "category": "task",
+      "category": "feature",
       "closed_at": "2026-11-08T07:59:42.453000+00:00",
       "contributors": [
         {
@@ -3798,7 +3826,7 @@
     "foster interactive inc.": 5,
     "freelygive": 3,
     "imagex": 5,
-    "itty bitty byte": 63,
+    "itty bitty byte": 64,
     "kalamuna": 2,
     "mearra": 6,
     "omedia": 4,
@@ -3807,7 +3835,7 @@
     "pare & co": 2,
     "qed42": 4,
     "reading room": 14,
-    "salsa digital": 63,
+    "salsa digital": 64,
     "seed em": 6,
     "soapbox": 1,
     "specbee": 4,
@@ -3842,7 +3870,7 @@
     "jeroendost": 1,
     "jucs7": 10,
     "kati.vera": 6,
-    "kepol": 63,
+    "kepol": 64,
     "kieran.cott": 14,
     "leventeb": 4,
     "marcus_johansson": 1,

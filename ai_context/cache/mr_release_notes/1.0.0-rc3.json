@@ -1,0 +1,244 @@
+{
+  "entries": [
+    {
+      "iid": 3586606,
+      "merge_requests": [
+        347
+      ],
+      "notes": [
+        {
+          "mr_iid": 347,
+          "text": "Added documentation of which AI modules receive pushed context (Supported AI modules) and of what external agents can and cannot do with CCC in 1.0.x (Access boundaries, Outside the site). Corrected the **Administer AI Context** permission description: it also bypasses revision access checks."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Document which AI modules receive pushed context, and what external agents can and cannot do in 1.0.x"
+    },
+    {
+      "iid": 3586658,
+      "merge_requests": [
+        368
+      ],
+      "notes": [
+        {
+          "mr_iid": 368,
+          "text": "None. Documentation only."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Document how to test CCC with the AI Agents debugger and the Tools explorer"
+    },
+    {
+      "iid": 3586692,
+      "merge_requests": [
+        380
+      ],
+      "notes": [
+        {
+          "mr_iid": null,
+          "text": "The empty context items listing now shows an \"Add one\" link for users who can create context items."
+        }
+      ],
+      "source": "issue",
+      "title": "Context items listing does not show its empty text or the \"Add one\" link"
+    },
+    {
+      "iid": 3586708,
+      "merge_requests": [
+        390
+      ],
+      "notes": [
+        {
+          "mr_iid": 390,
+          "text": "Never include now also removes an item when the Always include or Never include list of the Get Relevant tool gives the item ID with leading zeros, for example `\"0123\"` for item 123. Before this change, the Get Relevant tool could deliver an item that the consumer has in Never include. The include lists still keep item IDs above `2147483647`.\n\nThe Load tool now accepts only integers and strings of digits from 1 to `2147483647`, with optional leading zeros and spaces. It ignores other values, such as `\"1e0\"`, `\"1.0\"` or `\"+1\"`, which loaded item 1 on MySQL and MariaDB before this change. No post-merge steps are necessary. There are no API changes: `AiContextNumeric` is `@internal`."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Leading-zero item IDs in tool input skip Never include"
+    },
+    {
+      "iid": 3586709,
+      "merge_requests": [
+        394
+      ],
+      "notes": [
+        {
+          "mr_iid": 394,
+          "text": "Automator requests now get one context block each. Before this change, each value of a multi-value base field added one more context block to the next request, on all supported AI versions. Known limit: when a later request of the same automator does not push context, OpenAI-based providers can still send the context block of the earlier request. This needs a fix in AI Automators. See \"Known issues\" in the CCC docs.\n\nNo post-merge steps. No API or hook changes."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Automator context is added again for each field value, and is lost on AI 1.4.11 and earlier"
+    },
+    {
+      "iid": 3586710,
+      "merge_requests": [
+        392
+      ],
+      "notes": [
+        {
+          "mr_iid": 392,
+          "text": "On AI agents, the selection task is now the user request. Before, it was the agent system prompt.\n\n* Behavior change: conditional subcontext decisions on agents now use the user question. `AiContextSelection::getTask()` returns the user request on agents, or an empty string when the run has no user text. Subscribers of `ai_context.selection.items_selected` and `ai_context.selection.text_rendered` get this task. Code that uses the task as a search query must accept an empty task.\n* Privacy change: the decision provider (\"AI Provider/Model\" in the CCC general settings) now receives the first 500 characters of the user request, not of the agent instructions. The generic chat path already does this. A site that does not want this can turn off \"Enable conditional subcontext AI decisions\", or use the same provider as its agents.\n* Known limit: when the run has no user text (in the chat input, the task description or the chat history), the task is empty, and conditional subcontext still makes one decision call for each conditional parent, with an empty \"Current task\". This is rare. #3586636+s skips conditional decisions when the task is empty.\n* Known limit: CCC keeps the user request for each agent ID until the PHP process ends. If the same agent runs again in one process and its first loop is above 0, for example an agent that calls itself as a sub-agent, the later loops use the user request of the last run that started at loop 0."
+        }
+      ],
+      "source": "merge_request",
+      "title": "On AI agents, conditional subcontext uses the agent instructions as the task, not the user request"
+    },
+    {
+      "iid": 3586711,
+      "merge_requests": [
+        393
+      ],
+      "notes": [
+        {
+          "mr_iid": 393,
+          "text": "The CCC permissions **Schedule publishing of AI Context Items** (`schedule publishing of ai context items`) and **View scheduled AI Context Item** (`view scheduled ai context item`) are removed. No code checked them. Scheduler checks only its own permissions for context items.\n\n* To let a role set \"Publish on\" and \"Unpublish on\" dates, give it Scheduler's **Schedule publishing and unpublishing of AI Context Item** (`schedule publishing of ai_context_item`). The role also needs the workflow transition that the date starts from the current state of the item: **AI Context editorial workflow: Use Publish transition** for \"Publish on\" from Draft or Published, **AI Context editorial workflow: Use Restore transition** for \"Publish on\" from Archived, and **AI Context editorial workflow: Use Archive transition** for \"Unpublish on\". An Archived item also needs **AI Context editorial workflow: Use Restore transition** for \"Unpublish on\".\n* Scheduler's **View scheduled AI Context Item** (`view scheduled ai_context_item`) has no effect on context items now, because context items have no list of scheduled items.\n* The update removes the old permissions from all roles. When Scheduler is installed, the update gives Scheduler's matching permission to each role that had an old one. Admin roles already have every permission, so the update only removes the old names from their stored configuration. When Scheduler is not installed, give Scheduler's permission yourself after you install Scheduler. The update message names the roles that it changed.\n* If a recipe, an install profile, or a configuration export has the old permission names, change them to Scheduler's names.\n\nAfter `drush updatedb`, export your configuration and commit it. The update changes role configuration. If you import configuration that you exported before the update, the import puts the removed permissions back on the roles and removes the Scheduler permissions that the update gave. Core then removes the old names the next time someone saves the role, and logs \"Non-existent permission(s) assigned to role\". Do the export before you deploy with `drush deploy`, because it runs `drush updatedb` and then imports configuration.\n\nThe context item form now shows an error on \"Publish on\" or \"Unpublish on\" when the workflow cannot run the scheduled date. Content Moderation's \"Change to\" form on the item page shows an error when the new state makes the schedule unable to run."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Two CCC Scheduler permissions are never checked, and the item form saves schedules that cron cannot run"
+    },
+    {
+      "iid": 3586721,
+      "merge_requests": [
+        398
+      ],
+      "notes": [
+        {
+          "mr_iid": 398,
+          "text": "The translation form of a context item no longer shows the settings that apply to all languages: the Context Scope settings, Priority, Specific Entities, **Same as parent** and the empty **Subcontext settings** box. Before this change, a user who could translate an item but not edit it could change these settings for all languages, for example remove a Roles scope or mark the item global. The save worked only for items outside the editorial workflow; for items in the workflow, Drupal core refused it. For items in the editorial workflow, the shared settings are now also hidden on the item's own edit form in another language, for example `/af/admin/config/ai/context/items/[id]/edit`. Edit the shared settings on the item's edit form in the original language. For items outside the workflow, users who can edit context items can still change them while they add or edit a translation, as in core.\n\nThis also fixes translations of subcontext child items. Before this change, a translator could not save the translation of a child item, and editors could not save it for items in the editorial workflow. The save failed with \"Subcontext type is required when a parent context is selected.\" No post-merge steps. No API or hook changes."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Translators can change the shared scopes of a context item from the translation form"
+    },
+    {
+      "iid": 3586723,
+      "merge_requests": [
+        397
+      ],
+      "notes": [
+        {
+          "mr_iid": 397,
+          "text": "None. This change affects only the merge request template for CCC contributors. Sites see no change."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Add a Release notes section to the merge request template and update the checklist"
+    },
+    {
+      "iid": 3586724,
+      "merge_requests": [
+        399
+      ],
+      "notes": [
+        {
+          "mr_iid": 399,
+          "text": "CCC now requires AI 1.4.12 or later on the 1.4 branch, or AI 1.5.2 or later (`~1.4.12 || ^1.5.2 || ^2`). On AI 1.4.11 and earlier, context that CCC pushed into automator requests and other generic chat requests did not reach OpenAI-based providers, although the debug log and the Usage tab reported the push. Sites on AI 1.4.11 or earlier must update AI before they update CCC.\n\nNo other post-merge steps. No API or hook changes."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Require AI 1.4.12, or document the lost generic-path context on AI 1.4.11"
+    },
+    {
+      "iid": 3586741,
+      "merge_requests": [
+        405
+      ],
+      "notes": [
+        {
+          "mr_iid": 405,
+          "text": "The Get Relevant tool, stored consumer include lists, the consumer settings form and post-update 0008 now ignore an include-list value that is not a numeric context item ID or a lower-case UUID. Before this change, on MariaDB and MySQL, a value with a non-ASCII character (for example `caf\u00e9`) caused a database error: in the Get Relevant tool, when any consumer was saved, and in `drush updatedb` at post-update 0008. An item whose stored UUID is not in the lower-case 8-4-4-4-12 form (possible after a default_content or migrate import) is no longer matched by include lists.\n\nNo post-merge steps. No API or hook change."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Get Relevant fails with a database error when an include list has a non-ASCII value (MariaDB and MySQL)"
+    },
+    {
+      "iid": 3586742,
+      "merge_requests": [
+        401
+      ],
+      "notes": [
+        {
+          "mr_iid": 401,
+          "text": "When a subcontext item that uses its parent's scope is detached, because its parent is deleted or because it is saved while \"Enable subcontext hierarchy\" is off, every published translation is now unpublished, and a pending Publish on date is cleared. Before, only one translation was unpublished, and the others could reach users outside the parent's scope through the List tool and Broad selections. On moderated sites each other translation is saved in its own revision, so content moderation records it as Archived. A draft save on a published item keeps the editor's text in the latest revision. When the workflow has no unpublished default-revision state, the item stays published and an error is logged. When a draft is saved and the published revision has a scope of its own, the published revision stays published and the draft stays pending.\n\nNo post-merge steps. Items that were detached before this change are not changed; check translated items that have no scope and no parent. No API or hook changes: the two new methods on `AiContextItem` are internal."
+        }
+      ],
+      "source": "merge_request",
+      "title": "A detached \"Same as parent\" subcontext stays published in its other translations"
+    },
+    {
+      "iid": 3586746,
+      "merge_requests": [
+        406
+      ],
+      "notes": [
+        {
+          "mr_iid": 406,
+          "text": "Site Section patterns now match pages that have a language URL prefix (for example `/af/about/team` for `/about/*`). Patterns that include the prefix still work."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Site Section patterns do not match paths that have a language prefix"
+    },
+    {
+      "iid": 3586747,
+      "merge_requests": [
+        402
+      ],
+      "notes": [
+        {
+          "mr_iid": 402,
+          "text": "None. Documentation only. The 1.0.0 release notes list the known issues from `docs/known-issues.md` separately, in #3586602+s."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Fix the docs errors from the 1.0.0-rc2 smoke test before 1.0.0"
+    },
+    {
+      "iid": 3586760,
+      "merge_requests": [
+        416
+      ],
+      "notes": [
+        {
+          "mr_iid": 416,
+          "text": "Context items have a new optional **Token name** field. Administrators can set it in the \"Token\" section of the item form. When an item has the token name `brand_voice`, the token `[ai_context:item:brand_voice]` gives the published content of the item and of its required subcontext children that the current user can view, for example in an AI agent system prompt. Otherwise the token gives an empty value. The scope rules, including Roles, do not apply to the token, and the token works in every token field, not only in AI prompts. A warning shows when a token name changes or is removed, and when a change makes the token empty in a language: an unpublish in the item form or the Content Moderation form, a delete, a revert, or a Scheduler **Unpublish on** date. The token neutralizer now also breaks an open `[` at the end of the pushed context block and of tool outputs. Run `drush updb`, then `drush cr`: the update adds the field, and the item delete form, the translation delete form and the token hooks are new."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Add a token name to a context item, so its text is available as a Drupal token"
+    },
+    {
+      "iid": 3586762,
+      "merge_requests": [
+        418
+      ],
+      "notes": [
+        {
+          "mr_iid": 418,
+          "text": "None. Only a help text and an error message changed."
+        }
+      ],
+      "source": "merge_request",
+      "title": "Main menu item title help text loses the \"<\" character on Drupal CMS"
+    },
+    {
+      "iid": 3586764,
+      "merge_requests": [
+        419
+      ],
+      "notes": [
+        {
+          "mr_iid": 419,
+          "text": "None. The shipped `ai_context_usage` view now has the table CSS class option that Drupal 11.2 expects, so installing CCC no longer triggers a deprecation. On Drupal 10 the option is declared in the config schema and has no effect. Existing sites already get the option from core's views update; no steps are needed."
+        }
+      ],
+      "source": "merge_request",
+      "title": "The ai_context_usage view is missing the table CSS class option, which is deprecated in Drupal 11.2"
+    }
+  ],
+  "generated_at": "2026-11-24T00:08:36.502971+00:00",
+  "milestone": "1.0.0-rc3"
+}

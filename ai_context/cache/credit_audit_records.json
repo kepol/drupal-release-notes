@@ -2029,6 +2029,21 @@
     "uuid": "989ef883-ddec-4834-9cca-cf340fbb3dcb"
   },
   {
+    "closed_at": "2026-11-14T23:16:58+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "kepol",
+      "marcus_johansson"
+    ],
+    "iid": 3574926,
+    "nid": 11442898,
+    "record_url": "https://new.drupal.org/node/11442898",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3574926",
+    "title": "[Plan] Evaluate and plan the Tool API integration for CCC context tools",
+    "uncredited": [],
+    "uuid": "64a36eeb-4258-4be6-9723-3baba78d4a75"
+  },
+  {
     "closed_at": "2026-06-24T16:03:47+00:00",
     "credited": [
       "ahmad-khader",
@@ -4667,6 +4682,19 @@
     "uuid": "0c026d16-e556-4b86-bc39-f75e6f8479d9"
   },
   {
+    "closed_at": "2026-11-22T00:50:43+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586265,
+    "nid": 11499521,
+    "record_url": "https://new.drupal.org/node/11499521",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586265",
+    "title": "Create Bluefly CCC presentation",
+    "uncredited": [],
+    "uuid": "0a7e611e-54a3-41ae-a7d4-6ab7abbaa626"
+  },
+  {
     "closed_at": "2026-09-14T00:09:50+00:00",
     "credited": [
       "kepol"
@@ -6260,7 +6288,7 @@
     "nid": 11490212,
     "record_url": "https://new.drupal.org/node/11490212",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586387",
-    "title": "CCC Outside AI roadmap discussion meeting October 2026",
+    "title": "[Discuss] CCC Outside AI roadmap discussion meeting October 2026",
     "uncredited": [
       "zorz"
     ],
@@ -8488,6 +8516,19 @@
     "uuid": "7e6ec24d-6fdf-4541-b6f2-8578e4526502"
   },
   {
+    "closed_at": "2026-10-08T01:59:15+00:00",
+    "credited": [],
+    "iid": 3586591,
+    "nid": 11497632,
+    "record_url": "https://new.drupal.org/node/11497632",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586591",
+    "title": "Rotterdam 2026 contribution day CCC testing",
+    "uncredited": [
+      "kepol"
+    ],
+    "uuid": "642a993f-d1b8-46a9-a84c-56292a812ce5"
+  },
+  {
     "closed_at": "2026-10-31T21:10:25+00:00",
     "credited": [
       "adamzsolt90",
@@ -8593,6 +8634,24 @@
     "uuid": "81f41e05-f92c-4044-9adc-6dcfe8c1a444"
   },
   {
+    "closed_at": "2026-11-17T22:00:07+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "cmoeser",
+      "jbiswas",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586606,
+    "nid": 11498248,
+    "record_url": "https://new.drupal.org/node/11498248",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586606",
+    "title": "Document which AI modules receive pushed context, and what external agents can and cannot do in 1.0.x",
+    "uncredited": [],
+    "uuid": "d832171f-c1b0-4c8b-8af2-608085f7aeba"
+  },
+  {
     "closed_at": "2026-11-02T08:14:12+00:00",
     "credited": [
       "kepol"
@@ -8637,6 +8696,19 @@
       "pravesh_poonia"
     ],
     "uuid": "e3af4289-854f-4454-a9d0-d39df997971a"
+  },
+  {
+    "closed_at": "2026-11-14T23:55:49+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586613,
+    "nid": 11497677,
+    "record_url": "https://new.drupal.org/node/11497677",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586613",
+    "title": "Create BADCamp CCC slides, present, and share slides",
+    "uncredited": [],
+    "uuid": "5a347e8b-f70b-4908-8c2e-9c00b5451b83"
   },
   {
     "closed_at": "2026-10-24T23:53:06+00:00",
@@ -8753,6 +8825,34 @@
     "title": "[Discuss] Explore how people on the site see CCC context items",
     "uncredited": [],
     "uuid": "65245287-076a-4ac4-8c12-6c5cb21d3759"
+  },
+  {
+    "closed_at": "2026-11-15T00:47:39+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "kepol"
+    ],
+    "iid": 3586624,
+    "nid": 11497681,
+    "record_url": "https://new.drupal.org/node/11497681",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586624",
+    "title": "[Discuss] Agree on the shared foundations for reading CCC context",
+    "uncredited": [],
+    "uuid": "72134146-2853-4941-9ac2-bdc32d99f1f2"
+  },
+  {
+    "closed_at": "2026-11-23T15:25:44+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "kepol"
+    ],
+    "iid": 3586631,
+    "nid": 11499735,
+    "record_url": "https://new.drupal.org/node/11499735",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586631",
+    "title": "[Plan] Draft the Outside AI plan for DrupalCon Orlando 2027",
+    "uncredited": [],
+    "uuid": "7b99e66a-9a08-4bfc-9ea9-c53f30f24a97"
   },
   {
     "closed_at": "2026-11-13T06:11:03+00:00",
@@ -8883,7 +8983,10 @@
     "record_url": "https://new.drupal.org/node/11493540",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586648",
     "title": "Raise the default token budget for new sites to 20,000",
-    "uncredited": [],
+    "uncredited": [
+      "ahmad-khalil-imagex",
+      "arianraeesi"
+    ],
     "uuid": "916ff181-5eaa-434b-97ee-63b7f21eede0"
   },
   {
@@ -8938,9 +9041,26 @@
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586651",
     "title": "Accessibility Testing: CCC context item view page",
     "uncredited": [
+      "ajabhinavjha30",
       "arianraeesi"
     ],
     "uuid": "b799f0cb-457f-4580-a670-16c44255e171"
+  },
+  {
+    "closed_at": "2026-11-14T22:47:55+00:00",
+    "credited": [
+      "kati.vera",
+      "kepol"
+    ],
+    "iid": 3586652,
+    "nid": 11497314,
+    "record_url": "https://new.drupal.org/node/11497314",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586652",
+    "title": "Accessibility Testing: CCC context item delete and duplicate forms",
+    "uncredited": [
+      "pravesh_poonia"
+    ],
+    "uuid": "f36e3e46-a331-4b47-919c-d9a7c373db56"
   },
   {
     "closed_at": "2026-10-22T22:35:28+00:00",
@@ -8956,6 +9076,26 @@
     "title": "Assess ideas from the DrupalCon Rotterdam 2026 CCC session",
     "uncredited": [],
     "uuid": "6a3af077-79cb-4124-9fa8-91977dd890b1"
+  },
+  {
+    "closed_at": "2026-11-21T04:14:59+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "kotekirkitadze",
+      "pranavdoodleweb",
+      "pravesh_poonia"
+    ],
+    "iid": 3586658,
+    "nid": 11499272,
+    "record_url": "https://new.drupal.org/node/11499272",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586658",
+    "title": "Document how to test CCC with the AI Agents debugger and the Tools explorer",
+    "uncredited": [
+      "arianraeesi"
+    ],
+    "uuid": "b49fb993-b997-47b4-8ff2-9c8291827712"
   },
   {
     "closed_at": "2026-10-24T16:08:40+00:00",
@@ -9096,8 +9236,26 @@
     "record_url": "https://new.drupal.org/node/11495463",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586687",
     "title": "Site Sections hard-filters on the supplied request path, but the selection's cache contexts carry only url.path and route",
-    "uncredited": [],
+    "uncredited": [
+      "arianraeesi"
+    ],
     "uuid": "1ff31b75-f271-4313-a608-8694d2e08ac1"
+  },
+  {
+    "closed_at": "2026-11-15T01:59:36+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586692,
+    "nid": 11497684,
+    "record_url": "https://new.drupal.org/node/11497684",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586692",
+    "title": "Context items listing does not show its empty text or the \"Add one\" link",
+    "uncredited": [],
+    "uuid": "03f84d33-77aa-49e2-9c9c-cfe33daea688"
   },
   {
     "closed_at": "2026-11-08T07:59:42+00:00",
@@ -9111,7 +9269,10 @@
     "record_url": "https://new.drupal.org/node/11495497",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586696",
     "title": "Add the load_ai_context_items function call and deprecate load_ai_context_item_by_id",
-    "uncredited": [],
+    "uncredited": [
+      "jucs7",
+      "kotekirkitadze"
+    ],
     "uuid": "f81b1f08-dfb4-4866-9683-ca57a9f1bc07"
   },
   {
@@ -9138,7 +9299,9 @@
     "record_url": "https://new.drupal.org/node/11495570",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586701",
     "title": "Core \"view any unpublished content\" permission shows unpublished context items",
-    "uncredited": [],
+    "uncredited": [
+      "arianraeesi"
+    ],
     "uuid": "ec56bf1e-214e-4a62-812e-40545ce02b75"
   },
   {
@@ -9152,7 +9315,9 @@
     "record_url": "https://new.drupal.org/node/11495571",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586702",
     "title": "Usage records keep every request path with no limit on number or length",
-    "uncredited": [],
+    "uncredited": [
+      "arianraeesi"
+    ],
     "uuid": "6f79bd64-1a59-4634-87ba-c97fcfa62b9e"
   },
   {
@@ -9166,7 +9331,9 @@
     "record_url": "https://new.drupal.org/node/11495572",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586703",
     "title": "Diff pages show older context item revisions without the revision permission",
-    "uncredited": [],
+    "uncredited": [
+      "arianraeesi"
+    ],
     "uuid": "9b146241-ba30-40d8-9d23-6263250bc9bc"
   },
   {
@@ -9180,8 +9347,85 @@
     "record_url": "https://new.drupal.org/node/11495573",
     "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586706",
     "title": "Duplicate publishes the copy for users who may not use the publish transition",
-    "uncredited": [],
+    "uncredited": [
+      "arianraeesi"
+    ],
     "uuid": "962bfbe0-49a0-48d6-86d0-df3bd481baac"
+  },
+  {
+    "closed_at": "2026-11-18T03:45:42+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586708,
+    "nid": 11498290,
+    "record_url": "https://new.drupal.org/node/11498290",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586708",
+    "title": "Leading-zero item IDs in tool input skip Never include",
+    "uncredited": [
+      "ahmad-khalil-imagex",
+      "arianraeesi",
+      "csakiistvan"
+    ],
+    "uuid": "e109f8eb-5197-4ac2-a78a-f0638cc4c9a2"
+  },
+  {
+    "closed_at": "2026-11-22T00:01:24+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "csakiistvan",
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586709,
+    "nid": 11499516,
+    "record_url": "https://new.drupal.org/node/11499516",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586709",
+    "title": "Automator context is added again for each field value, and is lost on AI 1.4.11 and earlier",
+    "uncredited": [
+      "arianraeesi"
+    ],
+    "uuid": "9ec9f4f3-f453-4874-b84c-09a3615c4e89"
+  },
+  {
+    "closed_at": "2026-11-14T20:43:54+00:00",
+    "credited": [
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586710,
+    "nid": 11497683,
+    "record_url": "https://new.drupal.org/node/11497683",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586710",
+    "title": "On AI agents, conditional subcontext uses the agent instructions as the task, not the user request",
+    "uncredited": [
+      "arianraeesi"
+    ],
+    "uuid": "e579fd37-d025-4b1e-87f0-1b7228c2ba47"
+  },
+  {
+    "closed_at": "2026-11-21T02:43:07+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586711,
+    "nid": 11499233,
+    "record_url": "https://new.drupal.org/node/11499233",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586711",
+    "title": "Two CCC Scheduler permissions are never checked, and the item form saves schedules that cron cannot run",
+    "uncredited": [
+      "arianraeesi"
+    ],
+    "uuid": "95777152-75e2-48da-a500-d51c222d7d84"
   },
   {
     "closed_at": "2026-11-13T06:57:19+00:00",
@@ -9195,5 +9439,465 @@
     "title": "Require drupal/ai 1.4.11 or later on 1.4, or 1.5.2 or later",
     "uncredited": [],
     "uuid": "6e7b6d45-208c-44d5-a073-b33e3d64afef"
+  },
+  {
+    "closed_at": "2026-11-20T21:44:05+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia",
+      "shqshqnk"
+    ],
+    "iid": 3586721,
+    "nid": 11497689,
+    "record_url": "https://new.drupal.org/node/11497689",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586721",
+    "title": "Translators can change the shared scopes of a context item from the translation form",
+    "uncredited": [
+      "arianraeesi"
+    ],
+    "uuid": "b9fae9ab-146f-4dc5-8323-dc779d28951f"
+  },
+  {
+    "closed_at": "2026-11-14T18:44:53+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586723,
+    "nid": 11497634,
+    "record_url": "https://new.drupal.org/node/11497634",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586723",
+    "title": "Add a Release notes section to the merge request template and update the checklist",
+    "uncredited": [],
+    "uuid": "aca6b7eb-beae-490c-8cf6-d78508636911"
+  },
+  {
+    "closed_at": "2026-11-20T18:57:01+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586724,
+    "nid": 11497729,
+    "record_url": "https://new.drupal.org/node/11497729",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586724",
+    "title": "Require AI 1.4.12, or document the lost generic-path context on AI 1.4.11",
+    "uncredited": [],
+    "uuid": "afd7c73f-d7e1-4d9f-908e-5c58f99a3229"
+  },
+  {
+    "closed_at": "2026-11-19T22:11:36+00:00",
+    "credited": [
+      "kepol",
+      "tazo_vekua"
+    ],
+    "iid": 3586726,
+    "nid": 11499008,
+    "record_url": "https://new.drupal.org/node/11499008",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586726",
+    "title": "QA CCC 1.0.0-rc2: smoke test on vanilla Drupal 11 (QA team only)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "dbcc6f88-8591-4f28-954b-58fa78f91d63"
+  },
+  {
+    "closed_at": "2026-11-20T04:09:22+00:00",
+    "credited": [
+      "kepol",
+      "tazo_vekua"
+    ],
+    "iid": 3586727,
+    "nid": 11499054,
+    "record_url": "https://new.drupal.org/node/11499054",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586727",
+    "title": "QA CCC 1.0.0-rc2: smoke test on Drupal CMS 2.2 (QA team only)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "39cf7948-1d66-4a96-bcc2-22ad64b2a676"
+  },
+  {
+    "closed_at": "2026-11-20T17:40:58+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586728,
+    "nid": 11499156,
+    "record_url": "https://new.drupal.org/node/11499156",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586728",
+    "title": "QA CCC 1.0.0-rc2: permissions, revisions and copies (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "e7e08af5-6f64-4d17-a18b-ed64df51de3c"
+  },
+  {
+    "closed_at": "2026-11-19T22:14:05+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3586729,
+    "nid": 11499009,
+    "record_url": "https://new.drupal.org/node/11499009",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586729",
+    "title": "QA CCC 1.0.0-rc2: agent tools and Drupal tokens (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "24b6b205-b805-4e81-ae1d-bc5e17a37ba5"
+  },
+  {
+    "closed_at": "2026-11-19T21:31:43+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "ajabhinavjha30",
+      "kepol"
+    ],
+    "iid": 3586730,
+    "nid": 11499615,
+    "record_url": "https://new.drupal.org/node/11499615",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586730",
+    "title": "QA CCC 1.0.0-rc2: generic push path and automators on AI 1.5.2 (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "e2adbd68-4ab8-4053-8ece-0bc4a4cbc7db"
+  },
+  {
+    "closed_at": "2026-11-19T22:29:35+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "dcgoodwin",
+      "kepol"
+    ],
+    "iid": 3586731,
+    "nid": 11499010,
+    "record_url": "https://new.drupal.org/node/11499010",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586731",
+    "title": "QA CCC 1.0.0-rc2: scheduling and editorial workflow (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "0b558c0a-bb3b-4f02-9ee2-81d95f99d6a4"
+  },
+  {
+    "closed_at": "2026-11-18T22:31:29+00:00",
+    "credited": [
+      "brunopl",
+      "kepol"
+    ],
+    "iid": 3586732,
+    "nid": 11498642,
+    "record_url": "https://new.drupal.org/node/11498642",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586732",
+    "title": "QA CCC 1.0.0-rc2: listings, settings and usage (QA team only)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "5822ae10-c99c-4b22-80b7-5432ee060228"
+  },
+  {
+    "closed_at": "2026-11-21T08:46:51+00:00",
+    "credited": [
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586733,
+    "nid": 11499362,
+    "record_url": "https://new.drupal.org/node/11499362",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586733",
+    "title": "QA CCC 1.0.0-rc2: accessibility",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "53c4809b-be0f-4334-a006-ccd7720ee6ec"
+  },
+  {
+    "closed_at": "2026-11-19T22:30:32+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3586734,
+    "nid": 11499011,
+    "record_url": "https://new.drupal.org/node/11499011",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586734",
+    "title": "QA CCC 1.0.0-rc2: what reaches AI prompts (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "b97d8d86-b44b-43d1-8f30-d37236996619"
+  },
+  {
+    "closed_at": "2026-11-19T22:31:50+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3586735,
+    "nid": 11499012,
+    "record_url": "https://new.drupal.org/node/11499012",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586735",
+    "title": "QA CCC 1.0.0-rc2: token budget and token counts (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "436b709e-75c3-446d-8a2c-6474b018cf1e"
+  },
+  {
+    "closed_at": "2026-11-19T22:42:27+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "ajabhinavjha30",
+      "annmarysruthy",
+      "kepol"
+    ],
+    "iid": 3586736,
+    "nid": 11499015,
+    "record_url": "https://new.drupal.org/node/11499015",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586736",
+    "title": "QA CCC 1.0.0-rc2: generic push path and automators on AI 1.4.11 (developer testing allowed)",
+    "uncredited": [
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "5e75cf4c-3819-4bb5-b39b-1f41291fadc9"
+  },
+  {
+    "closed_at": "2026-11-18T22:31:27+00:00",
+    "credited": [
+      "ahmad-khalil-imagex",
+      "dcgoodwin",
+      "kepol",
+      "pravesh_poonia"
+    ],
+    "iid": 3586737,
+    "nid": 11498641,
+    "record_url": "https://new.drupal.org/node/11498641",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586737",
+    "title": "QA CCC 1.0.0-rc2: developer checks",
+    "uncredited": [
+      "ajabhinavjha30",
+      "arianraeesi",
+      "brunaemerich"
+    ],
+    "uuid": "fa682afa-a3f1-47b2-bca7-6e2aedd7710e"
+  },
+  {
+    "closed_at": "2026-11-22T00:49:20+00:00",
+    "credited": [
+      "kepol",
+      "phillipamartin"
+    ],
+    "iid": 3586738,
+    "nid": 11499520,
+    "record_url": "https://new.drupal.org/node/11499520",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586738",
+    "title": "CCC rc2 blog post",
+    "uncredited": [],
+    "uuid": "212468a5-a8b4-4062-9cef-a7fc51556abc"
+  },
+  {
+    "closed_at": "2026-11-18T01:40:25+00:00",
+    "credited": [
+      "kepol"
+    ],
+    "iid": 3586739,
+    "nid": 11498276,
+    "record_url": "https://new.drupal.org/node/11498276",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586739",
+    "title": "Sprint 21 CCC roadmap updates, sprint planning, and issue triage",
+    "uncredited": [],
+    "uuid": "4511a2d3-04b4-491f-923c-5e94bbe34928"
+  },
+  {
+    "closed_at": "2026-11-20T06:05:42+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586741,
+    "nid": 11499064,
+    "record_url": "https://new.drupal.org/node/11499064",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586741",
+    "title": "Get Relevant fails with a database error when an include list has a non-ASCII value (MariaDB and MySQL)",
+    "uncredited": [
+      "ajabhinavjha30"
+    ],
+    "uuid": "8894e077-7af3-442f-95a5-40e989a0439f"
+  },
+  {
+    "closed_at": "2026-11-22T00:11:19+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott"
+    ],
+    "iid": 3586742,
+    "nid": 11499522,
+    "record_url": "https://new.drupal.org/node/11499522",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586742",
+    "title": "A detached \"Same as parent\" subcontext stays published in its other translations",
+    "uncredited": [],
+    "uuid": "0a89b588-34b1-4925-a2a8-9547cd17e760"
+  },
+  {
+    "closed_at": "2026-11-19T23:29:36+00:00",
+    "credited": [
+      "kepol",
+      "pravesh_poonia",
+      "tazo_vekua"
+    ],
+    "iid": 3586743,
+    "nid": 11499020,
+    "record_url": "https://new.drupal.org/node/11499020",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586743",
+    "title": "AI CKEditor 1.5.0-beta5 breaks the service container on Drupal 10.5 (report it upstream)",
+    "uncredited": [],
+    "uuid": "686d66fc-c0aa-43f2-af2b-53b5a264b55e"
+  },
+  {
+    "closed_at": "2026-11-20T21:05:26+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "annmarysruthy",
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586746,
+    "nid": 11499274,
+    "record_url": "https://new.drupal.org/node/11499274",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586746",
+    "title": "Site Section patterns do not match paths that have a language prefix",
+    "uncredited": [],
+    "uuid": "71864129-faef-4b71-94ab-8f313cd1a596"
+  },
+  {
+    "closed_at": "2026-11-21T19:53:17+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "kotekirkitadze",
+      "pravesh_poonia",
+      "tazo_vekua"
+    ],
+    "iid": 3586747,
+    "nid": 11498283,
+    "record_url": "https://new.drupal.org/node/11498283",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586747",
+    "title": "Fix the docs errors from the 1.0.0-rc2 smoke test before 1.0.0",
+    "uncredited": [
+      "ajabhinavjha30"
+    ],
+    "uuid": "35f4225c-832f-4768-925b-bff0b32dfefb"
+  },
+  {
+    "closed_at": "2026-11-20T06:05:42+00:00",
+    "credited": [
+      "dcgoodwin",
+      "kepol",
+      "kieran.cott",
+      "pravesh_poonia"
+    ],
+    "iid": 3586749,
+    "nid": 11499065,
+    "record_url": "https://new.drupal.org/node/11499065",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586749",
+    "title": "Consumer settings form and post-update 0008 fail with a database error when a stored include list has a non-ASCII value (MariaDB and MySQL)",
+    "uncredited": [],
+    "uuid": "c6f5bbd3-ba1e-4368-a968-9bbbf7177d4e"
+  },
+  {
+    "closed_at": "2026-11-20T04:18:02+00:00",
+    "credited": [
+      "kepol",
+      "tazo_vekua"
+    ],
+    "iid": 3586758,
+    "nid": 11499055,
+    "record_url": "https://new.drupal.org/node/11499055",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586758",
+    "title": "Saving a new field with an AI Automator fails to add the ai_automator_status field",
+    "uncredited": [],
+    "uuid": "3ceebaf9-a696-4e34-affe-6b37edae4a4c"
+  },
+  {
+    "closed_at": "2026-11-23T23:17:49+00:00",
+    "credited": [
+      "a.dmitriiev",
+      "ahmad-khalil-imagex",
+      "breidert",
+      "joshua1234511",
+      "kepol",
+      "marcus_johansson",
+      "pravesh_poonia",
+      "robloach",
+      "svendecabooter"
+    ],
+    "iid": 3586760,
+    "nid": 11499153,
+    "record_url": "https://new.drupal.org/node/11499153",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586760",
+    "title": "Add a token name to a context item, so its text is available as a Drupal token",
+    "uncredited": [
+      "jucs7"
+    ],
+    "uuid": "de25c1c7-d4c2-46fc-b651-f033784c1b04"
+  },
+  {
+    "closed_at": "2026-11-21T05:06:56+00:00",
+    "credited": [
+      "bbruno",
+      "kepol",
+      "pravesh_poonia",
+      "tazo_vekua"
+    ],
+    "iid": 3586762,
+    "nid": 11499618,
+    "record_url": "https://new.drupal.org/node/11499618",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586762",
+    "title": "Main menu item title help text loses the \"<\" character on Drupal CMS",
+    "uncredited": [],
+    "uuid": "9c3ba739-04b6-40b8-81d4-dcb227682e62"
+  },
+  {
+    "closed_at": "2026-11-21T20:05:48+00:00",
+    "credited": [
+      "ajabhinavjha30",
+      "joshua1234511",
+      "kepol"
+    ],
+    "iid": 3586764,
+    "nid": 11499502,
+    "record_url": "https://new.drupal.org/node/11499502",
+    "source_link": "https://git.drupalcode.org/project/ai_context/-/work_items/3586764",
+    "title": "The ai_context_usage view is missing the table CSS class option, which is deprecated in Drupal 11.2",
+    "uncredited": [],
+    "uuid": "fc922ebd-3785-4455-acf4-e3c670e48f88"
   }
 ]
