@@ -940,15 +940,39 @@ def fetch_contribution_record_detail(
     """Fetch one record with contributors.
 
     Paginated list responses can return stale contributor paragraphs on
-    new.drupal.org, so always load contributor data per record. Use the
-    latest revision — the default revision can lag after edits on Drupal.org.
+    new.drupal.org, so always load contributor data per record. Load both the
+    latest revision and the default revision, and use the one that changed
+    last: either one can lag after an edit on Drupal.org.
     """
-    url = (
+    base_url = (
         "https://new.drupal.org/jsonapi/node/contribution_record/"
-        f"{uuid}?include={CONTRIBUTOR_INCLUDE}&resourceVersion=rel:latest-version"
+        f"{uuid}?include={CONTRIBUTOR_INCLUDE}"
     )
-    payload = client.get_jsonapi(url)
-    return payload["data"], index_included(payload.get("included", []))
+    payloads: list[dict[str, Any]] = []
+    errors: list[Exception] = []
+    for url in (f"{base_url}&resourceVersion=rel:latest-version", base_url):
+        try:
+            payload = client.get_jsonapi(url)
+        except Exception as error:  # noqa: BLE001 - try the other revision.
+            errors.append(error)
+            continue
+        if isinstance(payload.get("data"), dict):
+            payloads.append(payload)
+    if not payloads:
+        if errors:
+            raise errors[0]
+        raise RuntimeError(f"No data for contribution record {uuid}")
+
+    def changed_at(payload: dict[str, Any]) -> datetime:
+        raw = payload["data"].get("attributes", {}).get("changed") or ""
+        try:
+            return datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            return datetime.min.replace(tzinfo=timezone.utc)
+
+    # On a tie, keep the latest revision (the first payload).
+    newest = max(payloads, key=changed_at)
+    return newest["data"], index_included(newest.get("included", []))
 
 
 def summarize_contribution_record(
